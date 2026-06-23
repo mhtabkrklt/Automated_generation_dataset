@@ -1,0 +1,103 @@
+## BATCH 1 PLAN
+
+• **Time Anchor:** 28 января 2024 года.
+• **Personal Introduction:** Я, Алексеева Нина Вадимовна, 66 лет, работаю флебологом в с. Смирных, мой ежемесячный доход составляет 68 000 рублей.
+• **Финансовая цель:** Упростить отслеживание всех финансовых операций и предложений, чтобы избежать путаницы и эффективно управлять личными средствами, а также помогать близким.
+• 20.01.2024: Алексеева Нина Вадимовна перевела 5 000 рублей своей матери, Галине Якушевой, через СБП, используя мобильное приложение. Комиссия за перевод составила 0 рублей. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels, 9. Digital Banking Labels)
+• 22.01.2024: Алексеева Нина Вадимовна оплатила счет за мобильную связь Билайн на сумму 450 рублей через функцию "Оплата услуг" в мобильном приложении. Платеж был проведен моментально. (CATEGORY: 4. Daily Banking Labels, 9. Digital Banking Labels)
+• 25.01.2024: Алексеева Нина Вадимовна оплатила коммунальные услуги (ЖКХ) за январь на сумму 6 800 рублей, используя шаблон платежа в онлайн-банке. Статус платежа: "Исполнен". (CATEGORY: 4. Daily Banking Labels, 9. Digital Banking Labels, 6. Payment Management Labels)
+• 28.01.2024: Алексеева Нина Вадимовна получила СМС с предложением кредита наличными на сумму до 1.5 млн рублей под 14.5% годовых на срок до 15 лет. Срок действия предложения до 15.02.2024. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels)
+• 01.02.2024: Алексеева Нина Вадимовна запросила выписку по своему дебетовому счету №40817810000000001234 за период с 01.01.2024 по 31.01.2024 через мобильное приложение. Выписка была отправлена на электронную почту. (CATEGORY: 5. Cards & Accounts Labels, 10. Document Management Labels, 9. Digital Banking Labels)
+• 03.02.2024: Алексеева Нина Вадимовна перевела 5 200 рублей своей знакомой, Сысоевой Маргарите Даниловне, через СБП, используя номер телефона. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels)
+• 05.02.2024: Алексеева Нина Вадимовна оплатила штраф ГИБДД №18810077240205000001 за превышение скорости на сумму 500 рублей через раздел "Госуслуги" в мобильном приложении. (CATEGORY: 4. Daily Banking Labels, 9. Digital Banking Labels)
+• 08.02.2024: Алексеева Нина Вадимовна получила push-уведомление о зачислении зарплаты на сумму 75 000 рублей на дебетовую карту. (CATEGORY: 4. Daily Banking Labels, 14. Notification Preferences Labels)
+• 10.02.2024: Алексеева Нина Вадимовна оформила подписку на онлайн-кинотеатр "КиноПоиск HD" за 399 рублей в месяц, привязав свою дебетовую карту. (CATEGORY: 7. Offer & Promotion Labels, 3. Decision & Action Labels, 5. Cards & Accounts Labels)
+• 12.02.2024: Алексеева Нина Вадимовна перевела 10 000 рублей своему супругу, Тарасу Сорокину, через СБП. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels)
+• 15.02.2024: Алексеева Нина Вадимовна получила СМС с новым предложением кредита наличными на сумму до 1.6 млн рублей под 14.8% годовых на срок до 15 лет. Срок действия предложения до 29.02.2024. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels, 2. Emotional State Labels)
+• 18.02.2024: Алексеева Нина Вадимовна оплатила счет за интернет-провайдера "Ростелеком" на сумму 650 рублей через автоплатеж, настроенный в мобильном приложении. (CATEGORY: 4. Daily Banking Labels, 6. Payment Management Labels, 9. Digital Banking Labels)
+• 20.02.2024: Алексеева Нина Вадимовна совершила SWIFT-перевод на сумму 150 долларов США (эквивалент 13 800 рублей по курсу банка на момент операции) для оплаты обучения внука в зарубежном университете. Комиссия за перевод составила 20 долларов США. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels)
+• 22.02.2024: Алексеева Нина Вадимовна получила уведомление о списании комиссии за обслуживание дебетовой карты "Премиум" в размере 99 рублей. (CATEGORY: 5. Cards & Accounts Labels, 14. Notification Preferences Labels, 2. Emotional State Labels)
+
+## BATCH 2 PLAN
+
+• **Time Anchor:** 25 февраля 2024 года.
+• **Прогрессия:** Нина Вадимовна начинает чувствовать нарастающее раздражение из-за непонятных списаний и противоречивых предложений.
+• **Финансовая цель:** Разобраться в причинах списания комиссии за карту и понять, почему приходят разные предложения по кредитам, чтобы избежать дальнейшей путаницы.
+• 25.02.2024: Алексеева Нина Вадимовна оплатила коммунальные услуги (ЖКХ) за февраль на сумму 7 100 рублей через мобильное приложение. Платеж был успешно проведен. (CATEGORY: 4. Daily Banking Labels, 9. Digital Banking Labels)
+• 27.02.2024: Алексеева Нина Вадимовна перевела 3 000 рублей знакомой, Евдокии Тимуровне Роговой, через СБП. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels)
+• 01.03.2024: Алексеева Нина Вадимовна запросила выписку по своему кредитному счету №40817810000000005678 за последний квартал (с 01.12.2023 по 29.02.2024) через онлайн-банк, так как не помнит, чтобы активно пользовалась кредитами. (CATEGORY: 5. Cards & Accounts Labels, 10. Document Management Labels, 2. Emotional State Labels, 16. Problem Resolution Labels)
+• 03.03.2024: Алексеева Нина Вадимовна оплатила штраф ГИБДД №18810077240303000002 за неправильную парковку на сумму 1 500 рублей через мобильное приложение. (CATEGORY: 4. Daily Banking Labels, 9. Digital Banking Labels)
+• 05.03.2024: Алексеева Нина Вадимовна получила push-уведомление о зачислении кэшбэка в размере 250 рублей на дебетовую карту. Она не смогла сразу определить, за какие именно покупки был начислен кэшбэк. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels, 2. Emotional State Labels, 16. Problem Resolution Labels)
+• 07.03.2024: Алексеева Нина Вадимовна перевела 2 000 рублей знакомой, Аполлону Валерьевичу Лобанову, через СБП. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels)
+• 08.03.2024: Супруг Нины Вадимовны, Тарас Сорокин, обсудил в банке возможность получения кредита наличными на сумму 480 000 рублей под 15% годовых на 3 года для ремонта дачи. (CATEGORY: 8. Family & Third-Party Interaction Labels, 15. Product Information Labels)
+• 10.03.2024: Нина Вадимовна обнаружила, что ее сын, без ее ведома, изменил лимит по ее дебетовой карте до 80 000 рублей для оплаты крупной покупки. (CATEGORY: 8. Family & Third-Party Interaction Labels, 5. Cards & Accounts Labels, 2. Emotional State Labels)
+• 12.03.2024: Нина Вадимовна попыталась найти информацию о списании комиссии в 99 рублей в истории операций, но не смогла быстро ее идентифицировать среди множества других транзакций. (CATEGORY: 6. Payment Management Labels, 4. Daily Banking Labels, 2. Emotional State Labels, 16. Problem Resolution Labels)
+• 14.03.2024: Нина Вадимовна получила по электронной почте ежемесячную выписку по дебетовому счету, где указаны все операции за февраль, включая списание комиссии. (CATEGORY: 10. Document Management Labels, 5. Cards & Accounts Labels)
+• 16.03.2024: Нина Вадимовна попыталась сравнить два предложения по кредитам (14.5% и 14.8%), но запуталась в условиях и сроках действия. (CATEGORY: 7. Offer & Promotion Labels, 2. Emotional State Labels, 16. Problem Resolution Labels)
+• 18.03.2024: Нина Вадимовна решила, что ей необходимо обратиться в службу поддержки для прояснения всех вопросов, так как самостоятельно разобраться не получается. (CATEGORY: 3. Decision & Action Labels, 12. Customer Support Interaction Labels, 2. Emotional State Labels)
+• 20.03.2024: Нина Вадимовна попыталась найти в мобильном приложении раздел для настройки уведомлений, чтобы уменьшить количество рекламных СМС, но не смогла его быстро найти. (CATEGORY: 9. Digital Banking Labels, 14. Notification Preferences Labels, 2. Emotional State Labels)
+• 22.03.2024: Нина Вадимовна получила напоминание о предстоящем платеже за подписку на онлайн-кинотеатр (399 рублей), что добавило к ее ощущению информационной перегрузки. (CATEGORY: 6. Payment Management Labels, 14. Notification Preferences Labels)
+• 24.03.2024: Нина Вадимовна решила, что начнет с вопроса о кредитном счете, который она не помнит, чтобы открывала. (CATEGORY: 16. Problem Resolution Labels, 5. Cards & Accounts Labels)
+
+## BATCH 3 PLAN
+
+• **Time Anchor:** 25 марта 2024 года.
+• **Прогрессия:** Нина Вадимовна активно взаимодействует с банком, пытаясь распутать клубок финансовых операций и предложений.
+• **Финансовая цель:** Получить четкие ответы на все свои вопросы, настроить уведомления и начать использовать инструменты для более эффективного управления финансами.
+• 25.03.2024: Нина Вадимовна обратилась в чат поддержки мобильного приложения, используя свой Client ID, и подтвердила личность кодовым словом. (CATEGORY: 1. Client Identification Labels, 12. Customer Support Interaction Labels, 9. Digital Banking Labels)
+• 25.03.2024: Нина Вадимовна выразила свое состояние: "Я очень запуталась в своих финансах за последние три месяца, чувствую себя растерянной и немного раздраженной". (CATEGORY: 2. Emotional State Labels, 12. Customer Support Interaction Labels)
+• 25.03.2024: Сотрудник поддержки начал процесс Query Resolution, запросив у Нины Вадимовны список вопросов, которые ее беспокоят. (CATEGORY: 12. Customer Support Interaction Labels, 16. Problem Resolution Labels)
+• 25.03.2024: Нина Вадимовна первым делом спросила о выписке по кредитному счету №40817810000000005678, которую она получила 01.03.2024, так как не помнит, чтобы открывала кредитный продукт. (CATEGORY: 5. Cards & Accounts Labels, 10. Document Management Labels, 16. Problem Resolution Labels)
+• 25.03.2024: Сотрудник объяснил, что это стандартная выписка по кредитной карте, которая была оформлена в рамках пакета услуг "Премиум" в 2022 году, но которой Нина Вадимовна ни разу не пользовалась, поэтому баланс равен 0 рублей. (CATEGORY: 5. Cards & Accounts Labels, 15. Product Information Labels, 16. Problem Resolution Labels)
+• 26.03.2024: Нина Вадимовна уточнила, почему приходят разные предложения по кредитам (14.5% и 14.8% годовых) и какое из них актуально. (CATEGORY: 7. Offer & Promotion Labels, 16. Problem Resolution Labels, 2. Emotional State Labels)
+• 26.03.2024: Сотрудник пояснил, что предложения генерируются автоматически на основе скоринга и могут меняться. Актуальным является последнее предложение от 15.02.2024 под 14.8% годовых, срок действия которого истек 29.02.2024. (CATEGORY: 7. Offer & Promotion Labels, 15. Product Information Labels, 16. Problem Resolution Labels)
+• 26.03.2024: Нина Вадимовна спросила о списании комиссии за обслуживание карты в размере 99 рублей от 22.02.2024. (CATEGORY: 5. Cards & Accounts Labels, 16. Problem Resolution Labels)
+• 26.03.2024: Сотрудник подтвердил, что это ежемесячная комиссия за дебетовую карту "Премиум", которая входит в пакет услуг. Он предложил ознакомиться с тарифами по договору №12345 от 10.01.2022. (CATEGORY: 5. Cards & Accounts Labels, 10. Document Management Labels, 15. Product Information Labels)
+• 27.03.2024: Нина Вадимовна попросила объяснить, за что был начислен кэшбэк в 250 рублей 05.03.2024. (CATEGORY: 7. Offer & Promotion Labels, 16. Problem Resolution Labels)
+• 27.03.2024: Сотрудник объяснил, что кэшбэк был начислен за покупки в категории "Аптеки" (5% от 5000 руб.) и "Продукты" (1% от 5000 руб.) в феврале, согласно условиям программы лояльности. (CATEGORY: 7. Offer & Promotion Labels, 15. Product Information Labels, 13. Financial Planning Labels)
+• 27.03.2024: Нина Вадимовна выразила желание настроить уведомления, чтобы получать только важную информацию и отписаться от рекламных СМС. (CATEGORY: 14. Notification Preferences Labels, 3. Decision & Action Labels, 2. Emotional State Labels)
+• 27.03.2024: Сотрудник предложил настроить Push Notification Settings в мобильном приложении, отключив рекламные рассылки и оставив только уведомления о зачислениях, списаниях и важных изменениях. (CATEGORY: 14. Notification Preferences Labels, 9. Digital Banking Labels, 3. Decision & Action Labels)
+• 28.03.2024: Нина Вадимовна решила использовать функцию "Анализ расходов" в мобильном приложении для Expense Categorization и Budgeting Tools, чтобы лучше отслеживать свои траты. (CATEGORY: 13. Financial Planning Labels, 3. Decision & Action Labels, 9. Digital Banking Labels)
+• 28.03.2024: Нина Вадимовна, наконец, почувствовала себя Client Satisfied, получив ответы на все свои вопросы и инструменты для контроля над финансами. (CATEGORY: 2. Emotional State Labels, 12. Customer Support Interaction Labels)
+
+## BATCH 4 PLAN
+
+• **Time Anchor:** 29 марта 2024 года.
+• **Прогрессия:** Нина Вадимовна активно применяет новые знания и инструменты, восстанавливая контроль над своими финансами.
+• **Финансовая цель:** Закрепить полученные навыки, оптимизировать расходы и убедиться в эффективности новых настроек.
+• 29.03.2024: Нина Вадимовна проверила настройки Push Notification Settings в мобильном приложении, убедившись, что рекламные уведомления отключены, а важные оповещения активны. (CATEGORY: 14. Notification Preferences Labels, 9. Digital Banking Labels, 3. Decision & Action Labels)
+• 30.03.2024: Нина Вадимовна впервые воспользовалась функцией Expense Categorization в мобильном приложении, вручную распределив свои траты за март по категориям "Продукты", "ЖКХ" и "Транспорт". (CATEGORY: 13. Financial Planning Labels, 9. Digital Banking Labels, 3. Decision & Action Labels)
+• 31.03.2024: Нина Вадимовна просмотрела Transaction History за последний месяц, чтобы убедиться, что все платежи и списания соответствуют ее ожиданиям. (CATEGORY: 4. Daily Banking Labels, 6. Payment Management Labels, 9. Digital Banking Labels)
+• 01.04.2024: Нина Вадимовна получила push-уведомление о предстоящем списании 399 рублей за подписку на онлайн-кинотеатр, что позволило ей заранее принять решение о продлении или отмене. (CATEGORY: 6. Payment Management Labels, 14. Notification Preferences Labels, 3. Decision & Action Labels)
+• 02.04.2024: Нина Вадимовна решила не отключать подписку на онлайн-кинотеатр, так как активно им пользуется, и подтвердила Service Opt-in. (CATEGORY: 3. Decision & Action Labels, 7. Offer & Promotion Labels)
+• 03.04.2024: Нина Вадимовна получила СМС с предложением оформить новую дебетовую карту с повышенным кэшбэком, но благодаря новым настройкам, это было единственное рекламное сообщение за день. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels, 2. Emotional State Labels)
+• 04.04.2024: Нина Вадимовна проанализировала свои расходы с помощью Budgeting Tools и обнаружила, что тратит около 15 000 рублей в месяц на продукты. (CATEGORY: 13. Financial Planning Labels, 9. Digital Banking Labels)
+• 05.04.2024: Нина Вадимовна перевела 5 000 рублей своей матери, Галине Якушевой, через СБП, отметив этот перевод как "Помощь родителям" в категории расходов. (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels, 13. Financial Planning Labels)
+• 06.04.2024: Нина Вадимовна получила уведомление о зачислении кэшбэка в размере 180 рублей за покупки в марте, и теперь она точно знала, за что он начислен. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels, 2. Emotional State Labels)
+• 07.04.2024: Нина Вадимовна решила рассмотреть возможность Service Opt-out от платной услуги "СМС-информирование" по кредитной карте, которой она не пользуется, чтобы сэкономить 59 рублей в месяц. (CATEGORY: 3. Decision & Action Labels, 5. Cards & Accounts Labels, 17. Account Management Labels)
+• 08.04.2024: Нина Вадимовна запросила в чате поддержки информацию о том, как отключить СМС-информирование по кредитной карте. (CATEGORY: 12. Customer Support Interaction Labels, 14. Notification Preferences Labels, 16. Problem Resolution Labels)
+• 09.04.2024: Сотрудник поддержки предоставил пошаговую инструкцию по отключению услуги через мобильное приложение. (CATEGORY: 12. Customer Support Interaction Labels, 9. Digital Banking Labels, 16. Problem Resolution Labels)
+• 10.04.2024: Нина Вадимовна успешно отключила СМС-информирование по кредитной карте, подтвердив Action Pending. (CATEGORY: 3. Decision & Action Labels, 14. Notification Preferences Labels, 17. Account Management Labels)
+• 11.04.2024: Нина Вадимовна почувствовала себя увереннее в управлении своими финансами и отметила, что путаницы стало значительно меньше. (CATEGORY: 2. Emotional State Labels, 13. Financial Planning Labels)
+• 12.04.2024: Нина Вадимовна решила поделиться своим опытом с знакомой Евдокией Тимуровной Роговой, которая также жаловалась на сложности с отслеживанием платежей. (CATEGORY: 8. Family & Third-Party Interaction Labels, 2. Emotional State Labels)
+
+## BATCH 5 PLAN
+
+• **Time Anchor:** 15 апреля 2024 года.
+• **Прогрессия:** Нина Вадимовна полностью восстановила контроль над своими финансами, активно использует инструменты банка и даже помогает другим.
+• **Финансовая цель:** Поддерживать порядок в финансах, продолжать оптимизацию и использовать банк как надежного партнера.
+• 15.04.2024: Нина Вадимовна получила уведомление о зачислении зарплаты на сумму 68 000 рублей, и теперь она точно знала, что это ее основной доход. (CATEGORY: 4. Daily Banking Labels, 14. Notification Preferences Labels)
+• 16.04.2024: Нина Вадимовна просмотрела свой финансовый отчет за март, сгенерированный в мобильном приложении, который показал ее доходы и расходы по категориям. (CATEGORY: 13. Financial Planning Labels, 9. Digital Banking Labels, 10. Document Management Labels)
+• 17.04.2024: Нина Вадимовна оплатила коммунальные услуги (ЖКХ) за март на сумму 6 950 рублей, используя настроенный автоплатеж. (CATEGORY: 4. Daily Banking Labels, 6. Payment Management Labels, 9. Digital Banking Labels)
+• 18.04.2024: Нина Вадимовна перевела 4 800 рублей знакомой, Сысоевой Маргарите Даниловне, через СБП, отметив перевод как "Возврат долга". (CATEGORY: 4. Daily Banking Labels, 8. Family & Third-Party Interaction Labels, 13. Financial Planning Labels)
+• 19.04.2024: Нина Вадимовна получила push-уведомление о новом персонализированном предложении по вкладу с повышенной ставкой 16% годовых на 6 месяцев, которое она теперь могла оценить без путаницы. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels, 2. Emotional State Labels)
+• 20.04.2024: Нина Вадимовна решила рассмотреть предложение по вкладу, запросив Product Features и Terms and Conditions через чат поддержки. (CATEGORY: 3. Decision & Action Labels, 15. Product Information Labels, 12. Customer Support Interaction Labels)
+• 21.04.2024: Сотрудник поддержки предоставил полную информацию о вкладе, включая минимальную сумму 10 000 рублей и возможность пополнения. (CATEGORY: 15. Product Information Labels, 12. Customer Support Interaction Labels)
+• 22.04.2024: Нина Вадимовна решила открыть вклад на сумму 50 000 рублей, чтобы начать формировать Savings Goal на крупную покупку. (CATEGORY: 3. Decision & Action Labels, 13. Financial Planning Labels)
+• 23.04.2024: Нина Вадимовна успешно открыла вклад через мобильное приложение, получив подтверждение по электронной почте с номером договора №98765. (CATEGORY: 3. Decision & Action Labels, 9. Digital Banking Labels, 10. Document Management Labels)
+• 24.04.2024: Нина Вадимовна получила уведомление о зачислении кэшбэка в размере 310 рублей за покупки в апреле, что стало приятным бонусом. (CATEGORY: 7. Offer & Promotion Labels, 14. Notification Preferences Labels)
+• 25.04.2024: Нина Вадимовна проверила Account Balance Inquiry по всем своим счетам, убедившись, что все операции отражены корректно. (CATEGORY: 4. Daily Banking Labels, 5. Cards & Accounts Labels)
+• 26.04.2024: Нина Вадимовна получила СМС о том, что ее супруг, Тарас Сорокин, успешно получил кредит на 480 000 рублей под 15% годовых, о котором они ранее говорили. (CATEGORY: 8. Family & Third-Party Interaction Labels, 14. Notification Preferences Labels)
+• 27.04.2024: Нина Вадимовна почувствовала себя полностью Client Satisfied, отметив, что банк стал для нее надежным и понятным инструментом управления финансами. (CATEGORY: 2. Emotional State Labels, 12. Customer Support Interaction Labels)
+• 28.04.2024: Нина Вадимовна решила оставить положительный Feedback Collection о работе службы поддержки и удобстве мобильного приложения. (CATEGORY: 12. Customer Support Interaction Labels, 2. Emotional State Labels)
+• 29.04.2024: Нина Вадимовна запланировала на следующий месяц Financial Advice с экспертом банка по вопросу инвестирования небольшой части своих сбережений. (CATEGORY: 13. Financial Planning Labels, 3. Decision & Action Labels)

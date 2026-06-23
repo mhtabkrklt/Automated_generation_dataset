@@ -1,0 +1,2352 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Открытие расчетного счета и первый валютный перевод"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Завершение валютного контроля и подключение эквайринга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Подписание зарплатного проекта и заявка на кредит МСП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya",
+      "type": "person",
+      "label": "Белозерова Лидия Григорьевна",
+      "attributes": {
+        "age": 66,
+        "occupation": "Системный администратор",
+        "personal_income": 173000,
+        "role": "ИП",
+        "location": "д. Ставрополь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "daughter_Marfa",
+      "type": "person",
+      "label": "Марфа",
+      "attributes": {
+        "relation": "дочь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "mother_Elizaveta",
+      "type": "person",
+      "label": "Елизавета Блинова",
+      "attributes": {
+        "relation": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "friend_Raisa",
+      "type": "person",
+      "label": "Раиса Вениаминовна Степанова",
+      "attributes": {
+        "relation": "подруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "son_Kasyan",
+      "type": "person",
+      "label": "Касьян",
+      "attributes": {
+        "relation": "сын",
+        "role": "сотрудник"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "husband_Bazhen",
+      "type": "person",
+      "label": "Иванов Бажен Викентьевич",
+      "attributes": {
+        "relation": "супруг"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "employee_Petrov",
+      "type": "person",
+      "label": "Петров И.С.",
+      "attributes": {
+        "role": "менеджер по продажам",
+        "is_employee": true
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "employee_Sidorova",
+      "type": "person",
+      "label": "Сидорова А.В.",
+      "attributes": {
+        "role": "бухгалтер",
+        "is_employee": true
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital",
+      "type": "organization",
+      "label": "Банк Надежный Капитал",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "company_KazTech",
+      "type": "organization",
+      "label": "KazTech Solutions",
+      "attributes": {
+        "type": "контрагент",
+        "country": "Казахстан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "company_ITResheniya",
+      "type": "organization",
+      "label": "IT-Решения для Дома",
+      "attributes": {
+        "type": "торговая точка",
+        "owner": "Белозерова Л.Г."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "account_IP_40802",
+      "type": "account",
+      "label": "Расчетный счет ИП №40802810000000001234",
+      "attributes": {
+        "type": "расчетный",
+        "number": "40802810000000001234",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "account_transit_40702",
+      "type": "account",
+      "label": "Транзитный счет №40702840000000005678",
+      "attributes": {
+        "type": "транзитный",
+        "number": "40702840000000005678",
+        "currency": "EUR"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "account_currency_IP",
+      "type": "account",
+      "label": "Валютный счет ИП",
+      "attributes": {
+        "type": "валютный",
+        "currency": "EUR"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "card_Sberbank_Marfa",
+      "type": "account",
+      "label": "Карта Сбербанка Марфы",
+      "attributes": {
+        "type": "дебетовая",
+        "bank": "Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "account_husband_40817",
+      "type": "account",
+      "label": "Счет супруга №40817810000000009876",
+      "attributes": {
+        "type": "личный",
+        "number": "40817810000000009876"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_BiznesStart",
+      "type": "product",
+      "label": "Тариф Бизнес-Старт",
+      "attributes": {
+        "type": "РКО",
+        "free_period": "3 месяца"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "service_SBP",
+      "type": "product",
+      "label": "Система Быстрых Платежей (СБП)",
+      "attributes": {
+        "type": "платежная система",
+        "speed": "мгновенно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "product_Acquiring",
+      "type": "product",
+      "label": "Торговый эквайринг",
+      "attributes": {
+        "commission": "1.8%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll",
+      "type": "product",
+      "label": "Зарплатный проект",
+      "attributes": {
+        "free_service": true,
+        "employees_count": 3,
+        "payment_schedule": "аванс 5-го, зарплата 20-го"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "product_Loan_MSP",
+      "type": "product",
+      "label": "Кредит для МСП",
+      "attributes": {
+        "amount": 2000000,
+        "currency": "RUB",
+        "interest_rate": "14%",
+        "term": "36 месяцев"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "concept_ZalogNedvizhimosti",
+      "type": "event",
+      "label": "Залог коммерческой недвижимости",
+      "attributes": {
+        "type": "обеспечение кредита",
+        "cadastral_number": "77:01:0000000:12345"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "concept_ValyutnyKontrol",
+      "type": "event",
+      "label": "Валютный контроль",
+      "attributes": {
+        "regulatory_act": "ФЗ №115-ФЗ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "concept_ClientSatisfaction",
+      "type": "event",
+      "label": "Удовлетворение клиента",
+      "attributes": {
+        "cause": "найден путь к финансированию"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "doc_Contract_KZ",
+      "type": "document",
+      "label": "Договор №KZ-2023/04-01",
+      "attributes": {
+        "type": "контракт",
+        "amount": "5000 EUR"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Invoice_INV",
+      "type": "document",
+      "label": "Инвойс №INV-2023/04-05",
+      "attributes": {
+        "type": "инвойс",
+        "amount": "5000 EUR"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Arenda",
+      "type": "document",
+      "label": "Договор аренды",
+      "attributes": {
+        "type": "договор",
+        "address": "ул. Мира, 15",
+        "valid_until": "31.12.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Payroll_ZP",
+      "type": "document",
+      "label": "Договор Зарплатного проекта №ZP-2023/05-02",
+      "attributes": {
+        "type": "договор",
+        "number": "ZP-2023/05-02"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_HusbandStatement",
+      "type": "document",
+      "label": "Выписка по счету супруга",
+      "attributes": {
+        "type": "финансовый документ",
+        "period": "01.12.2022-31.05.2023"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "doc_ZalogDocs",
+      "type": "document",
+      "label": "Документы на право собственности",
+      "attributes": {
+        "type": "правоустанавливающие"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "app_Acquiring_EQ2023",
+      "type": "product",
+      "label": "Заявка на эквайринг №EQ-2023/05-01",
+      "attributes": {
+        "number": "EQ-2023/05-01",
+        "status": "одобрена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "app_Loan_CR2023",
+      "type": "product",
+      "label": "Заявка на кредит №CR-2023/06-01",
+      "attributes": {
+        "number": "CR-2023/06-01",
+        "status": "предварительно одобрена"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "business_Lidiya",
+      "type": "event",
+      "label": "Бизнес Лидии Григорьевны",
+      "attributes": {
+        "type": "ИП",
+        "target_revenue": 700000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "goal_OptimizeBanking",
+      "type": "event",
+      "label": "Оптимизация банковского обслуживания",
+      "ground_truth": false,
+      "attributes": {}
+    },
+    {
+      "id": "goal_AttractInvestments",
+      "type": "event",
+      "label": "Привлечение инвестиций",
+      "ground_truth": false,
+      "attributes": {}
+    },
+    {
+      "id": "goal_ExpandCloud",
+      "type": "event",
+      "label": "Расширение облачных услуг",
+      "ground_truth": false,
+      "attributes": {}
+    },
+    {
+      "id": "location_Stavropol",
+      "type": "organization",
+      "label": "д. Ставрополь",
+      "attributes": {
+        "type": "населенный пункт"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "location_Kazakhstan",
+      "type": "organization",
+      "label": "Казахстан",
+      "attributes": {
+        "type": "страна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "location_Mira15",
+      "type": "organization",
+      "label": "ул. Мира, 15",
+      "attributes": {
+        "type": "адрес",
+        "purpose": "торговая точка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "channel_MobileApp",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {
+        "type": "цифровой"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "channel_OnlineChat",
+      "type": "product",
+      "label": "Онлайн-чат",
+      "attributes": {
+        "type": "цифровой"
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "occ_husband_Bazhen_ep3",
+      "source": "husband_Bazhen",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_account_husband_40817_ep3",
+      "source": "account_husband_40817",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_product_Loan_MSP_ep3",
+      "source": "product_Loan_MSP",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_concept_ZalogNedvizhimosti_ep3",
+      "source": "concept_ZalogNedvizhimosti",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_concept_ClientSatisfaction_ep3",
+      "source": "concept_ClientSatisfaction",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_HusbandStatement_ep3",
+      "source": "doc_HusbandStatement",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_ZalogDocs_ep3",
+      "source": "doc_ZalogDocs",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_app_Loan_CR2023_ep3",
+      "source": "app_Loan_CR2023",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_OptimizeBanking_ep1",
+      "source": "goal_OptimizeBanking",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_AttractInvestments_ep1",
+      "source": "goal_AttractInvestments",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_ExpandCloud_ep3",
+      "source": "goal_ExpandCloud",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_location_Stavropol_ep1",
+      "source": "location_Stavropol",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_location_Kazakhstan_ep1",
+      "source": "location_Kazakhstan",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_location_Mira15_ep2",
+      "source": "location_Mira15",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_channel_MobileApp_ep1",
+      "source": "channel_MobileApp",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_channel_MobileApp_ep2",
+      "source": "channel_MobileApp",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_channel_MobileApp_ep3",
+      "source": "channel_MobileApp",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_channel_OnlineChat_ep1",
+      "source": "channel_OnlineChat",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_channel_OnlineChat_ep2",
+      "source": "channel_OnlineChat",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_channel_OnlineChat_ep3",
+      "source": "channel_OnlineChat",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_daughter_Marfa",
+      "source": "client_Lidiya",
+      "target": "daughter_Marfa",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_mother_Elizaveta",
+      "source": "client_Lidiya",
+      "target": "mother_Elizaveta",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_friend_Raisa",
+      "source": "client_Lidiya",
+      "target": "friend_Raisa",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_son_Kasyan",
+      "source": "client_Lidiya",
+      "target": "son_Kasyan",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_husband_Bazhen",
+      "source": "client_Lidiya",
+      "target": "husband_Bazhen",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_is_owner_of_business_Lidiya",
+      "source": "client_Lidiya",
+      "target": "business_Lidiya",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_pursues_goal_OptimizeBanking",
+      "source": "client_Lidiya",
+      "target": "goal_OptimizeBanking",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_pursues_goal_AttractInvestments",
+      "source": "client_Lidiya",
+      "target": "goal_AttractInvestments",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_pursues_goal_ExpandCloud",
+      "source": "client_Lidiya",
+      "target": "goal_ExpandCloud",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "business_Lidiya_aims_for_target_revenue",
+      "source": "business_Lidiya",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "amount": 700000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "business_Lidiya_located_in_Stavropol",
+      "source": "business_Lidiya",
+      "target": "location_Stavropol",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_opened_account_IP_40802",
+      "source": "client_Lidiya",
+      "target": "account_IP_40802",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_IP_40802_in_bank_NadezhnyKapital",
+      "source": "account_IP_40802",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_MobileApp_to_open_account",
+      "source": "client_Lidiya",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {
+        "action": "открытие счета"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_IP_40802_has_product_BiznesStart",
+      "source": "account_IP_40802",
+      "target": "product_BiznesStart",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_BiznesStart_offers_free_RKO",
+      "source": "product_BiznesStart",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "feature": "бесплатное РКО на 3 месяца"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_BiznesStart_supports_goal_OptimizeBanking",
+      "source": "product_BiznesStart",
+      "target": "goal_OptimizeBanking",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_transferred_to_daughter_Marfa",
+      "source": "client_Lidiya",
+      "target": "daughter_Marfa",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 15000,
+        "currency": "RUB",
+        "date": "20.03.2023",
+        "purpose": "оплата обучения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_service_SBP_for_transfer",
+      "source": "client_Lidiya",
+      "target": "service_SBP",
+      "relation": "contains",
+      "attributes": {
+        "transaction_type": "перевод"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "daughter_Marfa_received_money_on_card_Sberbank_Marfa",
+      "source": "daughter_Marfa",
+      "target": "card_Sberbank_Marfa",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_MobileApp_for_transfer",
+      "source": "client_Lidiya",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {
+        "action": "перевод СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "company_KazTech_sent_currency_transfer",
+      "source": "company_KazTech",
+      "target": "account_transit_40702",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 5000,
+        "currency": "EUR",
+        "date": "20.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_transit_40702_received_from_Kazakhstan",
+      "source": "account_transit_40702",
+      "target": "location_Kazakhstan",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "currency_transfer_under_doc_Contract_KZ",
+      "source": "account_transit_40702",
+      "target": "doc_Contract_KZ",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Contract_KZ_from_company_KazTech",
+      "source": "doc_Contract_KZ",
+      "target": "company_KazTech",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "currency_transfer_requires_concept_ValyutnyKontrol",
+      "source": "account_transit_40702",
+      "target": "concept_ValyutnyKontrol",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_sent_push_notification_VC",
+      "source": "bank_NadezhnyKapital",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "type": "push",
+        "content": "необходимость документов для валютного контроля",
+        "date": "21.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_submitted_docs_for_VC",
+      "source": "client_Lidiya",
+      "target": "doc_Contract_KZ",
+      "relation": "submitted",
+      "attributes": {
+        "date": "22.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_submitted_invoice_for_VC",
+      "source": "client_Lidiya",
+      "target": "doc_Invoice_INV",
+      "relation": "submitted",
+      "attributes": {
+        "date": "22.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_MobileApp_for_doc_submission",
+      "source": "client_Lidiya",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {
+        "action": "предоставление документов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Contract_KZ_and_doc_Invoice_INV_for_concept_ValyutnyKontrol",
+      "source": "doc_Contract_KZ",
+      "target": "concept_ValyutnyKontrol",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_inquired_VC_status_via_OnlineChat",
+      "source": "client_Lidiya",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {
+        "topic": "статус валютного контроля",
+        "date": "22.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_responded_VC_status",
+      "source": "bank_NadezhnyKapital",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "info": "документы приняты, срок до 3 раб. дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_completed_concept_ValyutnyKontrol",
+      "source": "bank_NadezhnyKapital",
+      "target": "concept_ValyutnyKontrol",
+      "relation": "contains",
+      "attributes": {
+        "date": "25.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "currency_conversion_from_account_transit_40702",
+      "source": "account_transit_40702",
+      "target": "account_IP_40802",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount_eur": 2500,
+        "amount_rub": 226250,
+        "exchange_rate": 90.5
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "remaining_currency_on_account_currency_IP",
+      "source": "account_transit_40702",
+      "target": "account_currency_IP",
+      "relation": "contains",
+      "attributes": {
+        "amount": 2500,
+        "currency": "EUR"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_paid_for_mother_Elizaveta",
+      "source": "client_Lidiya",
+      "target": "mother_Elizaveta",
+      "relation": "paid",
+      "attributes": {
+        "amount": 3800,
+        "currency": "RUB",
+        "service": "коммунальные услуги",
+        "date": "28.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_MobileApp_for_payment",
+      "source": "client_Lidiya",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {
+        "action": "автоплатеж"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_applied_for_app_Acquiring_EQ2023",
+      "source": "client_Lidiya",
+      "target": "app_Acquiring_EQ2023",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "10.05.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_Acquiring_EQ2023_for_company_ITResheniya",
+      "source": "app_Acquiring_EQ2023",
+      "target": "company_ITResheniya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "company_ITResheniya_plans_turnover",
+      "source": "company_ITResheniya",
+      "target": "product_Acquiring",
+      "relation": "contains",
+      "attributes": {
+        "amount": 300000,
+        "period": "месяц"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_OnlineChat_for_acquiring_app",
+      "source": "client_Lidiya",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {
+        "action": "подача заявки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_requested_doc_Arenda",
+      "source": "bank_NadezhnyKapital",
+      "target": "doc_Arenda",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "12.05.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Arenda_for_location_Mira15",
+      "source": "doc_Arenda",
+      "target": "location_Mira15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_submitted_doc_Arenda",
+      "source": "client_Lidiya",
+      "target": "doc_Arenda",
+      "relation": "submitted",
+      "attributes": {
+        "date": "13.05.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_MobileApp_for_doc_Arenda_submission",
+      "source": "client_Lidiya",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {
+        "action": "загрузка документа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_approved_app_Acquiring_EQ2023",
+      "source": "bank_NadezhnyKapital",
+      "target": "app_Acquiring_EQ2023",
+      "relation": "approved",
+      "attributes": {
+        "date": "18.05.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_Acquiring_EQ2023_has_product_Acquiring",
+      "source": "app_Acquiring_EQ2023",
+      "target": "product_Acquiring",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_offered_product_Payroll",
+      "source": "bank_NadezhnyKapital",
+      "target": "product_Payroll",
+      "relation": "contains",
+      "attributes": {
+        "recipient": "client_Lidiya"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_inquired_product_Payroll_details",
+      "source": "client_Lidiya",
+      "target": "product_Payroll",
+      "relation": "contains",
+      "attributes": {
+        "channel": "онлайн-чат"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_includes_free_cards",
+      "source": "product_Payroll",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "feature": "бесплатные дебетовые карты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_integrates_with_1C",
+      "source": "product_Payroll",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "system": "1С",
+        "format": "XML"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_transferred_to_friend_Raisa",
+      "source": "client_Lidiya",
+      "target": "friend_Raisa",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 5000,
+        "currency": "RUB",
+        "date": "20.05.2023",
+        "purpose": "подарок на день рождения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_service_SBP_for_friend_transfer",
+      "source": "client_Lidiya",
+      "target": "service_SBP",
+      "relation": "contains",
+      "attributes": {
+        "transaction_type": "перевод"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_signed_doc_Payroll_ZP",
+      "source": "client_Lidiya",
+      "target": "doc_Payroll_ZP",
+      "relation": "signed",
+      "attributes": {
+        "date": "25.05.2023",
+        "method": "электронная подпись"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Payroll_ZP_for_product_Payroll",
+      "source": "doc_Payroll_ZP",
+      "target": "product_Payroll",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_includes_son_Kasyan",
+      "source": "product_Payroll",
+      "target": "son_Kasyan",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_includes_employee_Petrov",
+      "source": "product_Payroll",
+      "target": "employee_Petrov",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_includes_employee_Sidorova",
+      "source": "product_Payroll",
+      "target": "employee_Sidorova",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_1",
+      "source": "client_Lidiya",
+      "target": "app_Loan_CR2023",
+      "relation": "contains",
+      "attributes": {
+        "step": 1,
+        "date": "10.06.2023",
+        "purpose": "покупка серверного оборудования"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "app_Loan_CR2023_for_product_Loan_MSP",
+      "source": "app_Loan_CR2023",
+      "target": "product_Loan_MSP",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Loan_MSP_supports_goal_ExpandCloud",
+      "source": "product_Loan_MSP",
+      "target": "goal_ExpandCloud",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_used_channel_OnlineChat_for_loan_app",
+      "source": "client_Lidiya",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {
+        "action": "подача заявки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_notified_loan_status",
+      "source": "bank_NadezhnyKapital",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "type": "push",
+        "content": "заявка на андеррайтинге",
+        "date": "12.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_2",
+      "source": "app_Loan_CR2023",
+      "target": "doc_HusbandStatement",
+      "relation": "applied_for",
+      "attributes": {
+        "step": 2,
+        "date": "15.06.2023",
+        "reason": "оценка совокупной кредитоспособности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_NadezhnyKapital_requested_doc_HusbandStatement",
+      "source": "bank_NadezhnyKapital",
+      "target": "doc_HusbandStatement",
+      "relation": "applied_for",
+      "attributes": {
+        "recipient": "client_Lidiya"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_HusbandStatement_is_for_husband_Bazhen",
+      "source": "doc_HusbandStatement",
+      "target": "husband_Bazhen",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_HusbandStatement_from_account_husband_40817",
+      "source": "doc_HusbandStatement",
+      "target": "account_husband_40817",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_explained_request",
+      "source": "bank_NadezhnyKapital",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "policy": "стандартное требование для ИП при крупных кредитах"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_3",
+      "source": "client_Lidiya",
+      "target": "doc_HusbandStatement",
+      "relation": "submitted",
+      "attributes": {
+        "step": 3,
+        "date": "17.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "client_Lidiya_used_channel_OnlineChat_for_doc_HusbandStatement_submission",
+      "source": "client_Lidiya",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {
+        "action": "загрузка документа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_4",
+      "source": "bank_NadezhnyKapital",
+      "target": "app_Loan_CR2023",
+      "relation": "approved",
+      "attributes": {
+        "step": 4,
+        "date": "20.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "app_Loan_CR2023_pre_approved_with_conditions",
+      "source": "app_Loan_CR2023",
+      "target": "product_Loan_MSP",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_5",
+      "source": "app_Loan_CR2023",
+      "target": "concept_ZalogNedvizhimosti",
+      "relation": "contains",
+      "attributes": {
+        "step": 5,
+        "condition": "поручительство третьего лица или залог недвижимости"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "product_Loan_MSP_requires_concept_ZalogNedvizhimosti",
+      "source": "product_Loan_MSP",
+      "target": "concept_ZalogNedvizhimosti",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_6",
+      "source": "client_Lidiya",
+      "target": "concept_ZalogNedvizhimosti",
+      "relation": "contains",
+      "attributes": {
+        "step": 6,
+        "channel": "онлайн-чат"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "client_Lidiya_used_channel_OnlineChat_for_collateral_inquiry",
+      "source": "client_Lidiya",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {
+        "action": "уточнение условий"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chain_edge_7",
+      "source": "bank_NadezhnyKapital",
+      "target": "doc_ZalogDocs",
+      "relation": "applied_for",
+      "attributes": {
+        "step": 7,
+        "confirmation": "возможность залога коммерческой недвижимости"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_NadezhnyKapital_confirmed_concept_ZalogNedvizhimosti",
+      "source": "bank_NadezhnyKapital",
+      "target": "concept_ZalogNedvizhimosti",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "concept_ZalogNedvizhimosti_requires_doc_ZalogDocs",
+      "source": "concept_ZalogNedvizhimosti",
+      "target": "doc_ZalogDocs",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_experiences_concept_ClientSatisfaction",
+      "source": "client_Lidiya",
+      "target": "concept_ClientSatisfaction",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "concept_ClientSatisfaction_due_to_loan_path",
+      "source": "concept_ClientSatisfaction",
+      "target": "product_Loan_MSP",
+      "relation": "contains",
+      "attributes": {
+        "reason": "реальный путь к получению финансирования"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "product_Loan_MSP_supports_business_Lidiya_growth",
+      "source": "product_Loan_MSP",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Loan_MSP_supports_goal_AttractInvestments",
+      "source": "product_Loan_MSP",
+      "target": "goal_AttractInvestments",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_uses_channel_MobileApp_frequently",
+      "source": "client_Lidiya",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_uses_channel_OnlineChat_frequently",
+      "source": "client_Lidiya",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_provides_channel_MobileApp",
+      "source": "bank_NadezhnyKapital",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_provides_channel_OnlineChat",
+      "source": "bank_NadezhnyKapital",
+      "target": "channel_OnlineChat",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "business_Lidiya_uses_account_IP_40802",
+      "source": "business_Lidiya",
+      "target": "account_IP_40802",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "business_Lidiya_uses_account_currency_IP",
+      "source": "business_Lidiya",
+      "target": "account_currency_IP",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "company_ITResheniya_is_part_of_business_Lidiya",
+      "source": "company_ITResheniya",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Acquiring_for_company_ITResheniya_location",
+      "source": "product_Acquiring",
+      "target": "location_Mira15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_is_provided_by_bank_NadezhnyKapital",
+      "source": "product_Payroll",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Loan_MSP_is_provided_by_bank_NadezhnyKapital",
+      "source": "product_Loan_MSP",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "concept_ValyutnyKontrol_is_regulatory_process",
+      "source": "concept_ValyutnyKontrol",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Contract_KZ_is_between_client_Lidiya_and_company_KazTech",
+      "source": "doc_Contract_KZ",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "party2": "company_KazTech"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Invoice_INV_is_from_company_KazTech",
+      "source": "doc_Invoice_INV",
+      "target": "company_KazTech",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Arenda_is_for_company_ITResheniya",
+      "source": "doc_Arenda",
+      "target": "company_ITResheniya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Payroll_ZP_signed_by_client_Lidiya",
+      "source": "doc_Payroll_ZP",
+      "target": "client_Lidiya",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_HusbandStatement_requested_by_bank_NadezhnyKapital",
+      "source": "doc_HusbandStatement",
+      "target": "bank_NadezhnyKapital",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_ZalogDocs_requested_by_bank_NadezhnyKapital",
+      "source": "doc_ZalogDocs",
+      "target": "bank_NadezhnyKapital",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_Acquiring_EQ2023_submitted_by_client_Lidiya",
+      "source": "app_Acquiring_EQ2023",
+      "target": "client_Lidiya",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_Loan_CR2023_submitted_by_client_Lidiya",
+      "source": "app_Loan_CR2023",
+      "target": "client_Lidiya",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "goal_OptimizeBanking_is_business_goal",
+      "source": "goal_OptimizeBanking",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_AttractInvestments_is_business_goal",
+      "source": "goal_AttractInvestments",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_ExpandCloud_is_business_goal",
+      "source": "goal_ExpandCloud",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "location_Stavropol_is_home_of_client_Lidiya",
+      "source": "location_Stavropol",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "location_Kazakhstan_is_origin_of_company_KazTech",
+      "source": "location_Kazakhstan",
+      "target": "company_KazTech",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "location_Mira15_is_address_of_company_ITResheniya",
+      "source": "location_Mira15",
+      "target": "company_ITResheniya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "channel_MobileApp_is_digital_tool",
+      "source": "channel_MobileApp",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "channel_OnlineChat_is_digital_tool",
+      "source": "channel_OnlineChat",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_BiznesStart_is_for_IP",
+      "source": "product_BiznesStart",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "client_type": "ИП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "service_SBP_is_fast",
+      "source": "service_SBP",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "benefit": "скорость"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Acquiring_increases_business_revenue",
+      "source": "product_Acquiring",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_manages_employees",
+      "source": "product_Payroll",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Loan_MSP_provides_funding",
+      "source": "product_Loan_MSP",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "concept_ZalogNedvizhimosti_is_collateral_for_product_Loan_MSP",
+      "source": "concept_ZalogNedvizhimosti",
+      "target": "product_Loan_MSP",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "concept_ValyutnyKontrol_is_required_by_law",
+      "source": "concept_ValyutnyKontrol",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "mandate": "ФЗ №115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_is_system_administrator",
+      "source": "client_Lidiya",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "skill": "системный администратор"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_personal_income",
+      "source": "client_Lidiya",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "income": 173000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_offers_various_products",
+      "source": "bank_NadezhnyKapital",
+      "target": "product_BiznesStart",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_offers_product_Acquiring",
+      "source": "bank_NadezhnyKapital",
+      "target": "product_Acquiring",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_offers_product_Payroll",
+      "source": "bank_NadezhnyKapital",
+      "target": "product_Payroll",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_offers_product_Loan_MSP",
+      "source": "bank_NadezhnyKapital",
+      "target": "product_Loan_MSP",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_IP_40802_is_main_account",
+      "source": "account_IP_40802",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_transit_40702_is_temporary_account",
+      "source": "account_transit_40702",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_currency_IP_holds_foreign_currency",
+      "source": "account_currency_IP",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "card_Sberbank_Marfa_is_personal_card",
+      "source": "card_Sberbank_Marfa",
+      "target": "daughter_Marfa",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_husband_40817_is_personal_account",
+      "source": "account_husband_40817",
+      "target": "husband_Bazhen",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "product_BiznesStart_has_free_RKO",
+      "source": "product_BiznesStart",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "feature": "бесплатное РКО"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Acquiring_has_commission",
+      "source": "product_Acquiring",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "commission": "1.8%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Payroll_has_free_service",
+      "source": "product_Payroll",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "feature": "бесплатное обслуживание"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_Loan_MSP_has_interest_rate",
+      "source": "product_Loan_MSP",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "interest_rate": "14%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "product_Loan_MSP_has_term",
+      "source": "product_Loan_MSP",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "term": "36 месяцев"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "concept_ZalogNedvizhimosti_is_commercial_property",
+      "source": "concept_ZalogNedvizhimosti",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "type": "коммерческая"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "doc_Contract_KZ_is_for_foreign_trade",
+      "source": "doc_Contract_KZ",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "activity": "внешнеэкономическая деятельность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Invoice_INV_is_for_foreign_trade",
+      "source": "doc_Invoice_INV",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "activity": "внешнеэкономическая деятельность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Arenda_confirms_business_location",
+      "source": "doc_Arenda",
+      "target": "company_ITResheniya",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_Payroll_ZP_defines_employee_terms",
+      "source": "doc_Payroll_ZP",
+      "target": "product_Payroll",
+      "relation": "contains",
+      "attributes": {
+        "terms": "выплата аванса и зарплаты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "doc_HusbandStatement_used_for_risk_assessment",
+      "source": "doc_HusbandStatement",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "doc_ZalogDocs_proves_ownership",
+      "source": "doc_ZalogDocs",
+      "target": "concept_ZalogNedvizhimosti",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "app_Acquiring_EQ2023_has_status_approved",
+      "source": "app_Acquiring_EQ2023",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "status": "одобрена"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_Loan_CR2023_has_status_pre_approved",
+      "source": "app_Loan_CR2023",
+      "target": "bank_NadezhnyKapital",
+      "relation": "contains",
+      "attributes": {
+        "status": "предварительно одобрена"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "business_Lidiya_is_developing",
+      "source": "business_Lidiya",
+      "target": "client_Lidiya",
+      "relation": "contains",
+      "attributes": {
+        "stage": "активное развитие"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_OptimizeBanking_is_achieved_by_product_BiznesStart",
+      "source": "goal_OptimizeBanking",
+      "target": "product_BiznesStart",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_AttractInvestments_is_supported_by_product_Loan_MSP",
+      "source": "goal_AttractInvestments",
+      "target": "product_Loan_MSP",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_ExpandCloud_is_supported_by_product_Loan_MSP",
+      "source": "goal_ExpandCloud",
+      "target": "product_Loan_MSP",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_is_66_years_old",
+      "source": "client_Lidiya",
+      "target": "ep_1",
+      "relation": "contains",
+      "attributes": {
+        "age": 66
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_is_sysadmin",
+      "source": "client_Lidiya",
+      "target": "ep_1",
+      "relation": "contains",
+      "attributes": {
+        "occupation": "системный администратор"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_has_income_173000",
+      "source": "client_Lidiya",
+      "target": "ep_1",
+      "relation": "contains",
+      "attributes": {
+        "income": 173000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_located_in_Stavropol_ep1",
+      "source": "client_Lidiya",
+      "target": "location_Stavropol",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_Lidiya_aims_for_business_scaling",
+      "source": "client_Lidiya",
+      "target": "business_Lidiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_processes_currency_transfers",
+      "source": "bank_NadezhnyKapital",
+      "target": "account_transit_40702",
+      "relation": "contains",
+      "attributes": {
+        "transaction_type": "валютный перевод"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_manages_compliance",
+      "source": "bank_NadezhnyKapital",
+      "target": "concept_ValyutnyKontrol",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_NadezhnyKapital_provides_digital_services",
+      "source": "bank_NadezhnyKapital",
+      "target": "channel_MobileApp",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

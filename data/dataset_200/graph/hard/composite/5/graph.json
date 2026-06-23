@@ -1,0 +1,5062 @@
+{
+  "nodes": [
+    {
+      "id": "person_sigizmund_galkin",
+      "type": "person",
+      "label": "Сигизмунд Валерианович Галкин",
+      "attributes": {
+        "age": "51",
+        "occupation": "сборщик",
+        "income": "188000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "sms_phishing_1",
+      "type": "event",
+      "label": "Фишинговое СМС",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "10:15",
+        "sender": "+7 (903) 123-45-67",
+        "text": "Срочно подтвердите данные для предотвращения подозрительной активности по Вашему счету. Иначе Ваш счет будет заблокирован. Ссылка: [фишинговая ссылка]"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "phishing_website_access",
+      "type": "event",
+      "label": "Переход по фишинговой ссылке",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "10:25"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "account_compromise_1",
+      "type": "event",
+      "label": "Компрометация учетных данных",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "10:27",
+        "login": "SigizmundG",
+        "password": "MySecretPass123"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "transaction_fraud_1",
+      "type": "event",
+      "label": "Несанкционированная транзакция",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "11:30",
+        "amount": "35000 руб.",
+        "card_number": "4567 **** **** 1234",
+        "recipient": "онлайн-магазин \"ТехноМир\""
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "chargeback_request_1",
+      "type": "event",
+      "label": "Заявление на чарджбэк",
+      "attributes": {
+        "date": "03.04.2024",
+        "time": "10:00",
+        "amount": "35000 руб.",
+        "request_number": "54321"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "chargeback_pre_approval",
+      "type": "event",
+      "label": "Предварительное одобрение чарджбэка",
+      "attributes": {
+        "date": "15.04.2024",
+        "time": "11:30",
+        "amount": "35000 руб."
+      },
+      "ground_truth": false,
+      "episode_hint": 6
+    },
+    {
+      "id": "chargeback_confirmation",
+      "type": "event",
+      "label": "Подтверждение чарджбэка",
+      "attributes": {
+        "date": "18.04.2024",
+        "time": "10:00",
+        "amount": "35000 руб."
+      },
+      "ground_truth": false,
+      "episode_hint": 7
+    },
+    {
+      "id": "funds_return_1",
+      "type": "event",
+      "label": "Возврат средств по чарджбэку",
+      "attributes": {
+        "date": "21.04.2024",
+        "time": "12:00",
+        "amount": "35000 руб."
+      },
+      "ground_truth": false,
+      "episode_hint": 8
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Договор банковского обслуживания",
+      "attributes": {
+        "number": "ДБО-123456",
+        "date": "01.03.2020"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "event",
+      "label": "Регистрация в интернет-банке",
+      "attributes": {
+        "date": "05.03.2020",
+        "channel": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "person",
+      "label": "Яков Киселев",
+      "attributes": {
+        "age": "49",
+        "occupation": "бухгалтер",
+        "relationship": "супруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Накопление на теплицу",
+      "attributes": {
+        "amount": "150000 руб.",
+        "deadline": "конец лета 2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "Онлайн-магазин \"ТехноМир\"",
+      "attributes": {
+        "INN": "7700123456",
+        "website": "technomir.ru"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "account",
+      "label": "Дебетовый счет Сигизмунда Галкина",
+      "attributes": {
+        "number": "40817810100001234567",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "product",
+      "label": "Дебетовая карта Сигизмунда Галкина",
+      "attributes": {
+        "number": "4567 **** **** 1234",
+        "type": "Visa Classic",
+        "status": "активна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Оплата ЖКУ",
+      "attributes": {
+        "date": "15.03.2024",
+        "amount": "4500 руб.",
+        "category": "коммунальные услуги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "person",
+      "label": "Фомичева Клавдия Кирилловна",
+      "attributes": {
+        "age": "75",
+        "relationship": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Перевод на день рождения маме",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "10.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "event",
+      "label": "Беспокойство и тревога",
+      "attributes": {
+        "intensity": "высокая",
+        "reason": "мошенничество"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Внеплановая проверка баланса",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "11:45",
+        "reason": "подозрительное СМС"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "document",
+      "label": "Паспорт Сигизмунда Галкина",
+      "attributes": {
+        "series": "4500",
+        "number": "123456",
+        "issue_date": "10.03.2000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Ожидание помощи от банка",
+      "attributes": {
+        "urgency": "высокая",
+        "focus": "возврат средств"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "product",
+      "label": "Контакт-центр банка",
+      "attributes": {
+        "phone": "8-800-111-22-33",
+        "type": "горячая линия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Обсуждение кредита на холодильник",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "11:00",
+        "amount": "480000 руб.",
+        "interest_rate": "14.9%",
+        "duration": "3 года"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "organization",
+      "label": "Другой банк (для вклада мамы)",
+      "attributes": {
+        "type": "банк",
+        "name": "Надежный Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Открытие вклада \"Надежный\"",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "12:00",
+        "amount": "95000 руб.",
+        "interest_rate": "12.5%",
+        "duration": "6 месяцев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Обнаружение несанкционированной транзакции",
+      "attributes": {
+        "date": "02.04.2024",
+        "time": "09:00",
+        "channel": "банкомат"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Звонок в банк по факту мошенничества",
+      "attributes": {
+        "date": "02.04.2024",
+        "time": "09:00",
+        "phone": "8-800-111-22-33"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Блокировка дебетовой карты",
+      "attributes": {
+        "date": "02.04.2024",
+        "time": "09:15",
+        "card_number": "4567 **** **** 1234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Обращение о мошенничестве",
+      "attributes": {
+        "number": "789012",
+        "date": "02.04.2024",
+        "status": "зарегистрировано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "product",
+      "label": "Отделение банка",
+      "attributes": {
+        "address": "ул. Ленина, 10"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Скриншот фишингового СМС",
+      "attributes": {
+        "date_created": "01.04.2024",
+        "content_type": "изображение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Разочарование и стресс",
+      "attributes": {
+        "intensity": "высокая",
+        "reason": "жертва мошенничества"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Статус рассмотрения чарджбэка",
+      "attributes": {
+        "status": "На рассмотрении",
+        "expected_term": "до 30 рабочих дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "document",
+      "label": "Выписка по счету",
+      "attributes": {
+        "period": "последние 3 месяца",
+        "date_requested": "03.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "product",
+      "label": "Новая дебетовая карта Сигизмунда Галкина",
+      "attributes": {
+        "number": "4567 **** **** 5678",
+        "type": "Visa Classic",
+        "status": "не активирована"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Внутреннее расследование банка",
+      "attributes": {
+        "status": "инициировано",
+        "focus": "факт мошенничества"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Запрос объяснений по фишингу",
+      "attributes": {
+        "date": "03.04.2024",
+        "topic": "как отличить фишинг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "person",
+      "label": "Муравьев Анисим Жоресович",
+      "attributes": {
+        "age": "71",
+        "relationship": "отец"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Перевод от отца знакомой",
+      "attributes": {
+        "date": "03.04.2024",
+        "time": "14:00",
+        "amount": "37000 руб.",
+        "reason": "помощь с лечением"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Уточнение необходимых документов",
+      "attributes": {
+        "date": "03.04.2024",
+        "topic": "подтверждение невиновности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "document",
+      "label": "Памятка о безопасности онлайн-банкинга",
+      "attributes": {
+        "date_issued": "03.04.2024",
+        "content_type": "инструкция"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Надежда на возврат средств",
+      "attributes": {
+        "urgency": "высокая",
+        "amount": "35000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Звонок от \"сотрудника ЦБ РФ\"",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "14:30",
+        "sender": "+7 (495) 987-65-43",
+        "caller_name": "Петр Иванов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "organization",
+      "label": "Центральный Банк РФ",
+      "attributes": {
+        "type": "регулятор",
+        "region": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Убеждение перевести средства на \"безопасный счет\"",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "14:45",
+        "method": "социальная инженерия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "account",
+      "label": "Безопасный счет ЦБ РФ (мошеннический)",
+      "attributes": {
+        "number": "+7 (999) 876-54-32",
+        "type": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Перевод средств на \"безопасный счет\"",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "15:00",
+        "amount": "150000 руб.",
+        "channel": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Сильное давление и поддался уговорам",
+      "attributes": {
+        "intensity": "высокая",
+        "reason": "угроза хищения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Рассказ супруге о звонке",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "19:00",
+        "recipient": "Яков Киселев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Подозрение на мошенничество у супруги",
+      "attributes": {
+        "reason": "новости о схемах",
+        "date": "06.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Настояние супруги связаться с банком",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "19:30",
+        "urgency": "немедленно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "person",
+      "label": "Власова Кира Борисовна",
+      "attributes": {
+        "age": "31",
+        "relationship": "знакомая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Подозрительный звонок знакомой",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "10:00",
+        "caller_id": "служба безопасности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Подача заявления на чарджбэк Яковом Киселевым",
+      "attributes": {
+        "date": "03.04.2024",
+        "time": "11:30",
+        "amount": "36500 руб.",
+        "request_number": "54322"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "organization",
+      "label": "Онлайн-магазин \"Электроника для дома\"",
+      "attributes": {
+        "INN": "7700654321",
+        "website": "electrodom.ru"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Одобрение чарджбэка банком",
+      "attributes": {
+        "date": "15.04.2024",
+        "time": "11:30",
+        "amount": "35000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Завершение расследования банка",
+      "attributes": {
+        "date": "17.04.2024",
+        "outcome": "мошенничество подтверждено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Уведомление о подтверждении чарджбэка",
+      "attributes": {
+        "date": "18.04.2024",
+        "time": "10:00",
+        "channel": "СМС"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Зачисление средств на счет",
+      "attributes": {
+        "date": "21.04.2024",
+        "time": "12:00",
+        "amount": "35000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Чувство облегчения",
+      "attributes": {
+        "intensity": "высокая",
+        "reason": "возврат средств"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Активация новой дебетовой карты",
+      "attributes": {
+        "date": "04.04.2024",
+        "time": "14:00",
+        "card_number": "4567 **** **** 5678"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Покупка продуктов",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "09:00",
+        "amount": "2500 руб.",
+        "card_number": "4567 **** **** 5678"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "organization",
+      "label": "Магазин \"Пятерочка\"",
+      "attributes": {
+        "type": "продуктовый магазин"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Попытка перевода маме",
+      "attributes": {
+        "date": "10.04.2024",
+        "time": "10:00",
+        "amount": "10000 руб.",
+        "status": "отменено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Повышенная бдительность",
+      "attributes": {
+        "intensity": "высокая",
+        "reason": "предыдущие инциденты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Консультация с юристом",
+      "attributes": {
+        "date": "07.04.2024",
+        "time": "10:00",
+        "topic": "возврат средств от мошенников"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "person",
+      "label": "Юрист Иван Петров",
+      "attributes": {
+        "occupation": "юрист по финансовым спорам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Подача заявления в полицию",
+      "attributes": {
+        "date": "07.04.2024",
+        "time": "12:00",
+        "case_number": "УД-2024-001"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "organization",
+      "label": "Отдел полиции г. Амурск",
+      "attributes": {
+        "type": "правоохранительные органы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Получение выписки по счету",
+      "attributes": {
+        "date": "04.04.2024",
+        "time": "16:00",
+        "channel": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Получение новой карты",
+      "attributes": {
+        "date": "03.04.2024",
+        "time": "11:00",
+        "channel": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Получение памятки",
+      "attributes": {
+        "date": "03.04.2024",
+        "time": "10:30",
+        "channel": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Звонок в банк по второму мошенничеству",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "20:00",
+        "phone": "8-800-111-22-33"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "document",
+      "label": "Обращение о втором мошенничестве",
+      "attributes": {
+        "number": "789013",
+        "date": "06.04.2024",
+        "status": "зарегистрировано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Чувство вины",
+      "attributes": {
+        "intensity": "средняя",
+        "reason": "повторное мошенничество"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_1",
+      "type": "organization",
+      "label": "Центральный Банк РФ",
+      "attributes": {
+        "type": "регулятор",
+        "jurisdiction": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_2",
+      "type": "person",
+      "label": "Петр Иванов",
+      "attributes": {
+        "role": "мошенник",
+        "alias": "сотрудник ЦБ РФ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_3",
+      "type": "account",
+      "label": "Безопасный счет ЦБ РФ",
+      "attributes": {
+        "type": "мошеннический",
+        "number": "+7 (999) 876-54-32"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_4",
+      "type": "event",
+      "label": "Звонок от мошенников (ЦБ)",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "14:30",
+        "caller_id": "+7 (495) 987-65-43"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_5",
+      "type": "event",
+      "label": "Перевод на 'безопасный счет'",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "15:00",
+        "amount": "150000 руб.",
+        "channel": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_6",
+      "type": "person",
+      "label": "Яков Киселев",
+      "attributes": {
+        "relationship": "супруга",
+        "age": "49",
+        "occupation": "бухгалтер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_7",
+      "type": "event",
+      "label": "Обсуждение мошенничества с супругой",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "19:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_8",
+      "type": "event",
+      "label": "Рекомендация обратиться в банк",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "19:15",
+        "source": "Яков Киселев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_9",
+      "type": "person",
+      "label": "Власова Кира Борисовна",
+      "attributes": {
+        "relationship": "знакомая",
+        "age": "31",
+        "occupation": "менеджер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_10",
+      "type": "event",
+      "label": "Подозрительный звонок знакомой",
+      "attributes": {
+        "date": "06.04.2024",
+        "time": "10:00",
+        "caller_id": "неизвестен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_receives_sms_1",
+      "source": "person_sigizmund_galkin",
+      "target": "sms_phishing_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1,
+        "date": "01.04.2024",
+        "time": "10:15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_clicks_link_1",
+      "source": "sms_phishing_1",
+      "target": "phishing_website_access",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "01.04.2024",
+        "time": "10:25"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_leads_to_compromise_1",
+      "source": "phishing_website_access",
+      "target": "account_compromise_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "01.04.2024",
+        "time": "10:27"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_compromise_leads_to_fraud_1",
+      "source": "account_compromise_1",
+      "target": "transaction_fraud_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "01.04.2024",
+        "time": "11:30",
+        "amount": "35000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_fraud_leads_to_chargeback_request_1",
+      "source": "transaction_fraud_1",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "03.04.2024",
+        "time": "10:00",
+        "amount": "35000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_2",
+      "relation": "signed",
+      "attributes": {
+        "date": "01.03.2020"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_2",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.03.2020"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_3",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_7",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_7",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_8",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_8",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_9",
+      "target": "ctx_node_8",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_12",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_13",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_14",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_15",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_4",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_10",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_19",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_21",
+      "relation": "caused",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_21",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_22",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_21",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_24",
+      "relation": "submitted",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_28",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_22",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_29",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_1",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_23",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_32",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_34",
+      "relation": "caused",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_1",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_35",
+      "relation": "received",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_37",
+      "relation": "received",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_37",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_37",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_39",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_41",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_41",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_39",
+      "target": "ctx_node_42",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_43",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_44",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_45",
+      "target": "person_sigizmund_galkin",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_46",
+      "target": "ctx_node_47",
+      "relation": "received",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_4",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_48",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "chargeback_pre_approval",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_30",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_51",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "chargeback_confirmation",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_50",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "funds_return_1",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_52",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_53",
+      "target": "ctx_node_54",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_29",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_56",
+      "target": "ctx_node_29",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_56",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_58",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_41",
+      "target": "ctx_node_59",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_60",
+      "relation": "caused",
+      "attributes": {
+        "date": "07.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_60",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_62",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "07.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_62",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_41",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_28",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_29",
+      "target": "ctx_node_65",
+      "relation": "received",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_35",
+      "target": "ctx_node_66",
+      "relation": "received",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_67",
+      "relation": "caused",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_67",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_67",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_41",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_1",
+      "source": "x2_node_4",
+      "target": "person_sigizmund_galkin",
+      "relation": "resulted_in",
+      "attributes": {
+        "method": "телефонный звонок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_2",
+      "source": "x2_node_2",
+      "target": "x2_node_4",
+      "relation": "caused",
+      "attributes": {
+        "role": "мошенник"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_3",
+      "source": "x2_node_2",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "сотрудник"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_4",
+      "source": "x2_node_4",
+      "target": "x2_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_5",
+      "source": "person_sigizmund_galkin",
+      "target": "x2_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "перевод средств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_6",
+      "source": "x2_node_5",
+      "target": "x2_node_3",
+      "relation": "transferred_to",
+      "attributes": {
+        "type": "мошеннический счет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_7",
+      "source": "person_sigizmund_galkin",
+      "target": "x2_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "мошенничество"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_8",
+      "source": "x2_node_6",
+      "target": "x2_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "супруга"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_9",
+      "source": "x2_node_7",
+      "target": "x2_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_10",
+      "source": "x2_node_6",
+      "target": "x2_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "advice": "обратиться в банк"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_11",
+      "source": "x2_node_8",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "звонок в банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_12",
+      "source": "x2_node_9",
+      "target": "x2_node_10",
+      "relation": "received",
+      "attributes": {
+        "type": "подозрительный звонок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_13",
+      "source": "x2_node_10",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "мошенническая схема"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_14",
+      "source": "person_sigizmund_galkin",
+      "target": "x2_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_15",
+      "source": "x2_node_6",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024",
+        "time": "11:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_16",
+      "source": "x2_node_6",
+      "target": "ctx_node_36",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "03.04.2024",
+        "time": "11:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_17",
+      "source": "x2_node_5",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_impact": "сильное разочарование"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_18",
+      "source": "x2_node_4",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "category": "социальная инженерия"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_19",
+      "source": "x2_node_1",
+      "target": "x2_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "сотрудник"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_20",
+      "source": "x2_node_3",
+      "target": "x2_node_5",
+      "relation": "received",
+      "attributes": {
+        "type": "мошеннический счет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_21",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024",
+        "time": "09:00",
+        "channel": "телефон"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_22",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_23",
+      "source": "ctx_node_23",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_24",
+      "source": "chargeback_request_1",
+      "target": "chargeback_pre_approval",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_25",
+      "source": "chargeback_pre_approval",
+      "target": "chargeback_confirmation",
+      "relation": "followed_by",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_26",
+      "source": "chargeback_confirmation",
+      "target": "funds_return_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_27",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024",
+        "time": "09:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_28",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "звонок в банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_29",
+      "source": "ctx_node_23",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {
+        "emotional_impact": "стресс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_30",
+      "source": "ctx_node_24",
+      "target": "chargeback_request_1",
+      "relation": "signed",
+      "attributes": {
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_31",
+      "source": "ctx_node_25",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "срок рассмотрения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_32",
+      "source": "ctx_node_26",
+      "target": "ctx_node_25",
+      "relation": "applied_for",
+      "attributes": {
+        "action": "выписка по счету"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_33",
+      "source": "ctx_node_27",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_status": "заблокирована"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_34",
+      "source": "ctx_node_28",
+      "target": "ctx_node_24",
+      "relation": "caused",
+      "attributes": {
+        "type": "внутреннее расследование"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_35",
+      "source": "ctx_node_29",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "фишинговые сообщения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_36",
+      "source": "ctx_node_31",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {
+        "emotional_impact": "беспокойство"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_37",
+      "source": "ctx_node_32",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "document_type": "подтверждение невиновности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_38",
+      "source": "ctx_node_33",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "правила безопасности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_39",
+      "source": "ctx_node_34",
+      "target": "funds_return_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "35000 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_40",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_1",
+      "relation": "owns",
+      "attributes": {
+        "account_type": "дебетовый"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_41",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "теплица",
+        "amount": "150000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_42",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "category": "фишинговая атака"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_43",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_4",
+      "relation": "caused",
+      "attributes": {
+        "emotional_impact": "обеспокоенность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_44",
+      "source": "phishing_website_access",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "target": "интернет-банк"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_45",
+      "source": "account_compromise_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "data": "логин и пароль"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_46",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "recipient_type": "онлайн-магазин"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_47",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_number": "4567 **** **** 1234"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_48",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "service": "ЖКУ",
+        "amount": "4500 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_49",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_10",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10000 руб.",
+        "recipient": "мама"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_50",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "беспокойство и тревога"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_51",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "внепланово"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_52",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "личное посещение"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_53",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "паспорт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_54",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "операции с счетом"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_55",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_56",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "кредит"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_57",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "bank": "другой банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_58",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "банкомат"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_59",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_60",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "блокировка карты"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_61",
+      "source": "ctx_node_23",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "подача заявления"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_62",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_24",
+      "relation": "signed",
+      "attributes": {
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_63",
+      "source": "ctx_node_24",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "срок рассмотрения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_64",
+      "source": "ctx_node_25",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "запрос выписки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_65",
+      "source": "ctx_node_23",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "выдача новой карты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_66",
+      "source": "ctx_node_24",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "process": "внутреннее расследование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_67",
+      "source": "ctx_node_25",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "фишинговые сообщения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_68",
+      "source": "ctx_node_30",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "разочарование и стресс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_69",
+      "source": "ctx_node_31",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {
+        "person": "Сигизмунд Галкин"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_70",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "document_type": "подтверждение невиновности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_71",
+      "source": "ctx_node_29",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "item": "памятка безопасности"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_72",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "возврат средств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_73",
+      "source": "ctx_node_35",
+      "target": "ctx_node_36",
+      "relation": "applied_for",
+      "attributes": {
+        "amount": "36500 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_74",
+      "source": "ctx_node_37",
+      "target": "ctx_node_38",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "37000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_75",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "беспокойство"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_76",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "outcome": "возврат средств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_77",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_4",
+      "relation": "caused",
+      "attributes": {
+        "emotional_response": "обеспокоенность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_78",
+      "source": "phishing_website_access",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "design": "привычный"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_79",
+      "source": "account_compromise_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "credentials": "логин и пароль"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_81",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_8",
+      "relation": "paid",
+      "attributes": {
+        "type": "дебетовая карта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_82",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "payment_type": "коммунальные услуги"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_83",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_10",
+      "relation": "paid",
+      "attributes": {
+        "reason": "день рождения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_84",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotion": "тревога"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_85",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "раз в неделю"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_86",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "app": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_87",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_14",
+      "relation": "owns",
+      "attributes": {
+        "document_type": "паспорт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_88",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "statement": "не давал согласия"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_89",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "expectation": "банк поможет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_90",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "product": "кредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_91",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "deposit_type": "вклад \"Надежный\""
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_92",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_93",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "caused",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_94",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_number": "4567 **** **** 1234"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_95",
+      "source": "ctx_node_23",
+      "target": "chargeback_request_1",
+      "relation": "followed_by",
+      "attributes": {
+        "action": "подача заявления"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_96",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_97",
+      "source": "ctx_node_24",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "duration": "до 30 рабочих дней"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_98",
+      "source": "ctx_node_25",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "выписка по счету"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_99",
+      "source": "ctx_node_23",
+      "target": "ctx_node_27",
+      "relation": "caused",
+      "attributes": {
+        "new_card_number": "4567 **** **** 5678"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_100",
+      "source": "ctx_node_24",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "process": "расследование"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_101",
+      "source": "ctx_node_25",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "отличие фишинга"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_102",
+      "source": "ctx_node_30",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "стресс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_103",
+      "source": "ctx_node_31",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "беспокойство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_104",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "дополнительные документы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_105",
+      "source": "ctx_node_29",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "item": "памятка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_106",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_34",
+      "relation": "cancelled",
+      "attributes": {
+        "goal": "возврат средств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_107",
+      "source": "ctx_node_35",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "merchant": "Электроника для дома"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_108",
+      "source": "ctx_node_37",
+      "target": "ctx_node_38",
+      "relation": "paid",
+      "attributes": {
+        "reason": "лечение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_109",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_status": "активный"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_110",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "теплица"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_111",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "fraud_type": "фишинг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_112",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_4",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "обеспокоенность"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_113",
+      "source": "phishing_website_access",
+      "target": "ctx_node_5",
+      "relation": "signed",
+      "attributes": {
+        "target": "интернет-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_114",
+      "source": "account_compromise_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "data_type": "учетные данные"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_115",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity_type": "онлайн-магазин"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_116",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_type": "дебетовая"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_117",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "payment_for": "ЖКУ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_118",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_10",
+      "relation": "transferred_to",
+      "attributes": {
+        "recipient_relation": "мама"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_119",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotion": "беспокойство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_120",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "раз в неделю"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_121",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_122",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "паспорт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_123",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "несанкционированные операции"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_124",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_125",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "financial_product": "кредит"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_126",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "investment_type": "вклад"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_127",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "выписка по счету"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_128",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_129",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_status": "заблокирована"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_130",
+      "source": "ctx_node_23",
+      "target": "chargeback_request_1",
+      "relation": "followed_by",
+      "attributes": {
+        "action": "подача заявления"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_131",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_24",
+      "relation": "received",
+      "attributes": {
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_132",
+      "source": "ctx_node_24",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "duration": "до 30 рабочих дней"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_133",
+      "source": "ctx_node_25",
+      "target": "ctx_node_26",
+      "relation": "applied_for",
+      "attributes": {
+        "document_type": "выписка"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_134",
+      "source": "ctx_node_23",
+      "target": "ctx_node_27",
+      "relation": "caused",
+      "attributes": {
+        "new_card_status": "не активирована"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_135",
+      "source": "ctx_node_24",
+      "target": "ctx_node_28",
+      "relation": "contains",
+      "attributes": {
+        "process_step": "внутреннее расследование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_136",
+      "source": "ctx_node_25",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "фишинговые сообщения"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_137",
+      "source": "ctx_node_30",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "разочарование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_138",
+      "source": "ctx_node_31",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "беспокойство"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_139",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "документы для подтверждения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_140",
+      "source": "ctx_node_29",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "info_type": "памятка безопасности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_141",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "вернуть средства"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_142",
+      "source": "ctx_node_35",
+      "target": "ctx_node_36",
+      "relation": "applied_for",
+      "attributes": {
+        "transaction_type": "несанкционированная"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_143",
+      "source": "ctx_node_37",
+      "target": "ctx_node_38",
+      "relation": "transferred_to",
+      "attributes": {
+        "recipient_type": "знакомая"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_144",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "клиент"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_145",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "накопить на теплицу"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_146",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "fraud_category": "фишинг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_147",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_response": "обеспокоенность"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_148",
+      "source": "phishing_website_access",
+      "target": "ctx_node_5",
+      "relation": "signed",
+      "attributes": {
+        "target": "страница входа в интернет-банк"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_149",
+      "source": "account_compromise_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "data_type": "логин и пароль"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_150",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "merchant": "ТехноМир"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_151",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_8",
+      "relation": "signed",
+      "attributes": {
+        "instrument": "дебетовая карта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_152",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "expense_type": "ЖКУ"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_153",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "recipient_relation": "мама"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_154",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotion": "беспокойство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_155",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "раз в неделю"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_156",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_157",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "паспорт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_158",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "операции с счетом"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_159",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_160",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "financial_product": "кредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_161",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "bank": "другой банк"
+      },
+      "valid": false,
+      "ground_truth": false,
+      "stale": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "account_compromise_1",
+      "target": "transaction_fraud_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "01.02.2024",
+        "time": "11:30",
+        "amount": "35000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "transaction_fraud_1",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "03.02.2024",
+        "time": "10:00",
+        "amount": "35000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "sms_phishing_1",
+      "target": "phishing_website_access",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "01.03.2024",
+        "time": "10:25"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_67",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "банкомат"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "03.04.2024",
+        "time": "10:00",
+        "amount": "35000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_7",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "expense_type": "ЖКУ"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_22",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 0
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_21",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_20",
+      "relation": "owns",
+      "attributes": {
+        "account_type": "дебетовый"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "recipient_type": "онлайн-магазин"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_23",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "6,64.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "transaction_fraud_1",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "банкомат"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_43",
+      "target": "x2_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,44.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_41",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "звонок в банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_45",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "document": "паспорт"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "x2_node_6",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,14.2024",
+        "time": "11:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "x2_node_7",
+      "target": "ctx_node_4",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "обеспокоенность"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "phishing_website_access",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {
+        "target": "интернет-банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_20",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "документы для подтверждения"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_63",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "беспокойство"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "sms_phishing_1",
+      "target": "x2_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "01.04.2024",
+        "time": "10:25"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "transaction_fraud_1",
+      "target": "x2_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_type": "дебетовая"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "ctx_node_35",
+      "target": "chargeback_pre_approval",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_25",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "запрос выписки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "x2_node_8",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotion": "беспокойство"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "x2_node_4",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,44.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "x2_node_9",
+      "target": "ctx_node_56",
+      "relation": "received",
+      "attributes": {
+        "type": "подозрительный звонок"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_2",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "2,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_19",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "deposit_type": "вклад \"Надежный\""
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_63",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_36",
+      "target": "chargeback_request_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "подача заявления"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_31",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotional_state": "беспокойство"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "x2_node_6",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "супруга"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,44.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "ctx_node_15",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "card_number": "5023,7 **** **** 1234"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "ctx_node_53",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,53.2020"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "x2_node_5",
+      "target": "ctx_node_14",
+      "relation": "owns",
+      "attributes": {
+        "document_type": "паспорт"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "x2_node_6",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "клиент"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "ctx_node_23",
+      "target": "ctx_node_66",
+      "relation": "caused",
+      "attributes": {
+        "emotional_impact": "стресс"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "chargeback_request_1",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 0
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "ctx_node_67",
+      "target": "ctx_node_62",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "6,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "ctx_node_2",
+      "target": "ctx_node_5",
+      "relation": "signed",
+      "attributes": {
+        "target": "интернет-банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "ctx_node_28",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "теплица",
+        "amount": "165000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "chargeback_pre_approval",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "design": "привычный"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv47",
+      "source": "x2_node_3",
+      "target": "x2_node_10",
+      "relation": "received",
+      "attributes": {
+        "type": "мошеннический счет"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv48",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "банкомат"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv49",
+      "source": "ctx_node_2",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv50",
+      "source": "ctx_node_24",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "duration": "до 33 рабочих дней"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv51",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "клиент"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv52",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "теплица"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv53",
+      "source": "ctx_node_40",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv54",
+      "source": "ctx_node_65",
+      "target": "ctx_node_67",
+      "relation": "caused",
+      "attributes": {
+        "date": "6,64.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv55",
+      "source": "ctx_node_24",
+      "target": "phishing_website_access",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "01.03.2024",
+        "time": "10:25"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv56",
+      "source": "x2_node_1",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "сотрудник"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv57",
+      "source": "ctx_node_7",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "emotion": "тревога"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv58",
+      "source": "ctx_node_24",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "duration": "до 27 рабочих дней"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv59",
+      "source": "ctx_node_51",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "expectation": "банк поможет"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv60",
+      "source": "ctx_node_3",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv61",
+      "source": "x2_node_2",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "сотрудник"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv62",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv63",
+      "source": "chargeback_confirmation",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,44.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv64",
+      "source": "x2_node_3",
+      "target": "chargeback_request_1",
+      "relation": "signed",
+      "attributes": {
+        "status": "на рассмотрении"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv65",
+      "source": "ctx_node_21",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "звонок в банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv66",
+      "source": "person_sigizmund_galkin",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,84.2024",
+        "time": "09:00",
+        "channel": "телефон"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_sigizmund_galkin",
+      "source": "person_sigizmund_galkin",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_sms_phishing_1",
+      "source": "sms_phishing_1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_phishing_website_access",
+      "source": "phishing_website_access",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_account_compromise_1",
+      "source": "account_compromise_1",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_transaction_fraud_1",
+      "source": "transaction_fraud_1",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_chargeback_request_1",
+      "source": "chargeback_request_1",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

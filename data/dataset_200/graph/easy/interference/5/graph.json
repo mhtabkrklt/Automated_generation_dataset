@@ -1,0 +1,1778 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Клиент Сазонов Конон Ермолаевич запрашивает справку и сталкивается с первыми ошибками в данных."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Клиент запрашивает доверенности, получает уведомление KYC и обнаруживает новые ошибки в персональных данных."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Клиент сталкивается с критической ошибкой в имени, что приводит к ускоренной проверке и окончательному исправлению данных."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_sazonov_konon",
+      "type": "person",
+      "label": "Сазонов Конон Ермолаевич",
+      "attributes": {
+        "age": 41,
+        "occupation": "Трейдер",
+        "income": "146000 RUB/month",
+        "location": "ст. Соболево",
+        "financial_approach": "консервативный",
+        "gender": "female"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_sharova_alina",
+      "type": "person",
+      "label": "Шарова Алина Юльевна",
+      "attributes": {
+        "relation_to_konon": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_dementev_elisey",
+      "type": "person",
+      "label": "Дементьев Елисей Антонович",
+      "attributes": {
+        "relation_to_konon": "друг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_blokhin_sofon",
+      "type": "person",
+      "label": "Блохин Софон Антипович",
+      "attributes": {
+        "role": "Менеджер банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_ivanov_artem",
+      "type": "person",
+      "label": "Иванов Артем Сергеевич",
+      "attributes": {
+        "role": "Представитель по доверенности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_ivanov_arkady",
+      "type": "person",
+      "label": "Иванов Аркадий Петрович",
+      "attributes": {
+        "role": "Представитель по доверенности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_elizaveta",
+      "type": "person",
+      "label": "Елизавета",
+      "attributes": {
+        "relation_to_konon": "дочь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "org_bank",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "org_tax_service",
+      "type": "organization",
+      "label": "Налоговая служба",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "org_rosreestr",
+      "type": "organization",
+      "label": "Росреестр",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "org_visa_center",
+      "type": "organization",
+      "label": "Визовый центр",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "account_current_konon",
+      "type": "account",
+      "label": "Текущий счет",
+      "attributes": {
+        "number": "40817810000000001234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "card_visa_gold_konon",
+      "type": "product",
+      "label": "Дебетовая карта Visa Gold",
+      "attributes": {
+        "number_suffix": "8901"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "account_savings_konon",
+      "type": "account",
+      "label": "Накопительный счет",
+      "attributes": {
+        "goal_amount": "1.5 млн руб.",
+        "interest_rate": "12% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_nadezhny_konon",
+      "type": "product",
+      "label": "Вклад 'Надежный'",
+      "attributes": {
+        "balance": "870000 руб.",
+        "interest_rate": "13.5% годовых",
+        "opened_on": "15.02.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_statement_accounts_ep1",
+      "type": "document",
+      "label": "Справка о наличии счетов и вкладов (Эп.1)",
+      "attributes": {
+        "status": "В обработке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "req_data_correction_gender_ep1",
+      "type": "event",
+      "label": "Запрос на исправление пола (ID 789012)",
+      "attributes": {
+        "id": "789012",
+        "status": "Принят"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_power_attorney_artem",
+      "type": "document",
+      "label": "Генеральная доверенность (Артем)",
+      "attributes": {
+        "purpose": "налоговый вычет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_power_attorney_arkady",
+      "type": "document",
+      "label": "Генеральная доверенность (Аркадий)",
+      "attributes": {
+        "purpose": "регистрация права собственности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_kyc_notification",
+      "type": "event",
+      "label": "Уведомление KYC",
+      "attributes": {
+        "type": "обновление персональных данных"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_statement_accounts_ep2",
+      "type": "document",
+      "label": "Справка о наличии счетов и вкладов (Эп.2)",
+      "attributes": {
+        "status": "Ожидает подтверждения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "req_data_correction_address_gender_ep2",
+      "type": "event",
+      "label": "Запрос на исправление адреса и пола (ID 987654)",
+      "attributes": {
+        "id": "987654",
+        "status": "Зарегистрирован"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_credit_1",
+      "type": "event",
+      "label": "Предложение по кредиту 1",
+      "attributes": {
+        "amount": "1.5 млн руб.",
+        "rate": "14.5% годовых",
+        "term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_credit_2",
+      "type": "event",
+      "label": "Предложение по кредиту 2",
+      "attributes": {
+        "amount": "1.2 млн руб.",
+        "rate": "14.8% годовых",
+        "term": "15 лет"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "doc_passport",
+      "type": "document",
+      "label": "Паспорт",
+      "attributes": {
+        "series_old": "4500",
+        "number_old": "123456",
+        "series_new": "4501",
+        "number_new": "654321",
+        "issued_new": "15.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_2ndfl_2023",
+      "type": "document",
+      "label": "Справка 2-НДФЛ за 2023 год",
+      "attributes": {
+        "purpose": "визовый центр",
+        "status": "Ожидает готовности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_deposit_statement_error_ep3",
+      "type": "document",
+      "label": "Справка о наличии вклада (Эп.3, с ошибкой)",
+      "attributes": {
+        "error_type": "имя/отчество"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "req_internal_check_ep3",
+      "type": "event",
+      "label": "Ускоренная внутренняя проверка (ID 112233)",
+      "attributes": {
+        "id": "112233",
+        "status": "Инициирована"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_corrected_documents_ep3",
+      "type": "document",
+      "label": "Исправленный комплект документов (Эп.3)",
+      "attributes": {
+        "status": "Получен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "loc_sobolevo",
+      "type": "organization",
+      "label": "ст. Соболево",
+      "attributes": {
+        "type": "населенный пункт"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "loc_address_lenina_10_5",
+      "type": "organization",
+      "label": "ул. Ленина, д. 10, кв. 5",
+      "attributes": {
+        "type": "адрес проживания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "loc_address_mira_7_bank_branch",
+      "type": "organization",
+      "label": "ул. Мира, д. 7 (Отделение банка)",
+      "attributes": {
+        "type": "адрес отделения банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "channel_mobile_app",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "channel_call_center",
+      "type": "product",
+      "label": "Колл-центр",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "channel_bank_branch",
+      "type": "product",
+      "label": "Отделение банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "channel_internet_bank",
+      "type": "product",
+      "label": "Интернет-банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "channel_sms",
+      "type": "product",
+      "label": "SMS",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "issue_incorrect_deposit_date",
+      "type": "event",
+      "label": "Некорректная дата вклада",
+      "attributes": {
+        "details": "15.02.2024 вместо 15.02.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "issue_incorrect_gender",
+      "type": "event",
+      "label": "Некорректный пол",
+      "attributes": {
+        "details": "Мужской вместо Женского"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "issue_incorrect_address",
+      "type": "event",
+      "label": "Некорректный адрес",
+      "attributes": {
+        "details": "кв. 6 вместо кв. 5"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "issue_incorrect_name_patronymic",
+      "type": "event",
+      "label": "Некорректное имя/отчество",
+      "attributes": {
+        "details": "Евгеньевич вместо Ермолаевич"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1_2",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2_3",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_sazonov_konon_ep1",
+      "source": "person_sazonov_konon",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_sazonov_konon_ep2",
+      "source": "person_sazonov_konon",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_sazonov_konon_ep3",
+      "source": "person_sazonov_konon",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_account_current_konon_ep1",
+      "source": "account_current_konon",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_account_savings_konon_ep1",
+      "source": "account_savings_konon",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_deposit_nadezhny_konon_ep1",
+      "source": "deposit_nadezhny_konon",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_card_visa_gold_konon_ep1",
+      "source": "card_visa_gold_konon",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_statement_accounts_ep1_ep1",
+      "source": "doc_statement_accounts_ep1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_req_data_correction_gender_ep1_ep1",
+      "source": "req_data_correction_gender_ep1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_issue_incorrect_deposit_date_ep1",
+      "source": "issue_incorrect_deposit_date",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_issue_incorrect_gender_ep1",
+      "source": "issue_incorrect_gender",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_power_attorney_artem_ep2",
+      "source": "doc_power_attorney_artem",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_power_attorney_arkady_ep2",
+      "source": "doc_power_attorney_arkady",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_kyc_notification_ep2",
+      "source": "doc_kyc_notification",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_statement_accounts_ep2_ep2",
+      "source": "doc_statement_accounts_ep2",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_issue_incorrect_address_ep2",
+      "source": "issue_incorrect_address",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_issue_incorrect_gender_ep2",
+      "source": "issue_incorrect_gender",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_req_data_correction_address_gender_ep2_ep2",
+      "source": "req_data_correction_address_gender_ep2",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_credit_1_ep3",
+      "source": "offer_credit_1",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_credit_2_ep3",
+      "source": "offer_credit_2",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_passport_ep3",
+      "source": "doc_passport",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_2ndfl_2023_ep3",
+      "source": "doc_2ndfl_2023",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_deposit_statement_error_ep3_ep3",
+      "source": "doc_deposit_statement_error_ep3",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_issue_incorrect_name_patronymic_ep3",
+      "source": "issue_incorrect_name_patronymic",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_req_internal_check_ep3_ep3",
+      "source": "req_internal_check_ep3",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_corrected_documents_ep3_ep3",
+      "source": "doc_corrected_documents_ep3",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_works_as",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "role": "трейдер"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_has_income",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "received",
+      "attributes": {
+        "amount": "146000 RUB/month"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_lives_in_sobolevo",
+      "source": "person_sazonov_konon",
+      "target": "loc_sobolevo",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_has_conservative_approach",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "type": "консервативный"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_avoids_credits",
+      "source": "person_sazonov_konon",
+      "target": "offer_credit_1",
+      "relation": "contains",
+      "attributes": {
+        "category": "кредиты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_aims_safety_cushion",
+      "source": "person_sazonov_konon",
+      "target": "account_savings_konon",
+      "relation": "contains",
+      "attributes": {
+        "goal": "подушка безопасности",
+        "amount": "1.5 млн руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_owns_savings_account",
+      "source": "person_sazonov_konon",
+      "target": "account_savings_konon",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_owns_deposit_nadezhny",
+      "source": "person_sazonov_konon",
+      "target": "deposit_nadezhny_konon",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_deposit_nadezhny_opened_on",
+      "source": "deposit_nadezhny_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.02.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_deposit_nadezhny_has_balance",
+      "source": "deposit_nadezhny_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "amount": "870000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_deposit_nadezhny_has_rate",
+      "source": "deposit_nadezhny_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "rate": "13.5% годовых"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_savings_account_has_rate",
+      "source": "account_savings_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "rate": "12% годовых"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_owns_current_account",
+      "source": "person_sazonov_konon",
+      "target": "account_current_konon",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_owns_card_visa_gold",
+      "source": "person_sazonov_konon",
+      "target": "card_visa_gold_konon",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_lives_at_lenina_10_5",
+      "source": "person_sazonov_konon",
+      "target": "loc_address_lenina_10_5",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_transfer_to_mother",
+      "source": "person_sazonov_konon",
+      "target": "person_sharova_alina",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "15.03.2024",
+        "channel": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_transfer_to_mother_from_account",
+      "source": "account_current_konon",
+      "target": "person_sharova_alina",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_transfer_to_mother_confirmed_by_sms",
+      "source": "org_bank",
+      "target": "channel_sms",
+      "relation": "approved",
+      "attributes": {
+        "operation": "перевод 5000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_transfer_to_friend",
+      "source": "person_sazonov_konon",
+      "target": "person_dementev_elisey",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "16.03.2024",
+        "channel": "СБП",
+        "purpose": "оплата книг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_transfer_to_friend_from_card",
+      "source": "card_visa_gold_konon",
+      "target": "person_dementev_elisey",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "16.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_pay_utilities_jan",
+      "source": "person_sazonov_konon",
+      "target": "loc_address_lenina_10_5",
+      "relation": "paid",
+      "attributes": {
+        "amount": "7850 руб.",
+        "date": "25.01.2024",
+        "period": "январь"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_pay_utilities_jan_via_mobile_app",
+      "source": "person_sazonov_konon",
+      "target": "channel_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "action": "оплата коммунальных услуг",
+        "date": "25.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_requested_doc_ep1",
+      "source": "person_sazonov_konon",
+      "target": "doc_statement_accounts_ep1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "17.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_request_doc_ep1_via_mobile_app",
+      "source": "person_sazonov_konon",
+      "target": "channel_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "action": "запрос справки",
+        "date": "17.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep1_includes_savings",
+      "source": "doc_statement_accounts_ep1",
+      "target": "account_savings_konon",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep1_includes_deposit",
+      "source": "doc_statement_accounts_ep1",
+      "target": "deposit_nadezhny_konon",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep1_has_status",
+      "source": "doc_statement_accounts_ep1",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "status": "В обработке"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_called_call_center_ep1",
+      "source": "person_sazonov_konon",
+      "target": "channel_call_center",
+      "relation": "contains",
+      "attributes": {
+        "date": "18.03.2024",
+        "purpose": "уточнение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep1_has_date_discrepancy",
+      "source": "doc_statement_accounts_ep1",
+      "target": "issue_incorrect_deposit_date",
+      "relation": "contains",
+      "attributes": {
+        "field": "дата открытия вклада"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_felt_unease_ep1",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "легкое беспокойство",
+        "reason": "некорректная дата"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_visited_branch_ep1",
+      "source": "person_sazonov_konon",
+      "target": "channel_bank_branch",
+      "relation": "contains",
+      "attributes": {
+        "date": "19.03.2024",
+        "purpose": "получение справки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_visited_branch_location_ep1",
+      "source": "person_sazonov_konon",
+      "target": "loc_address_mira_7_bank_branch",
+      "relation": "contains",
+      "attributes": {
+        "date": "19.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_blokhin_assisted_konon_ep1",
+      "source": "person_blokhin_sofon",
+      "target": "person_sazonov_konon",
+      "relation": "contains",
+      "attributes": {
+        "task": "исправление справки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep1_corrected_by_blokhin",
+      "source": "person_blokhin_sofon",
+      "target": "doc_statement_accounts_ep1",
+      "relation": "approved",
+      "attributes": {
+        "field": "дата вклада"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep1_has_gender_discrepancy",
+      "source": "doc_statement_accounts_ep1",
+      "target": "issue_incorrect_gender",
+      "relation": "contains",
+      "attributes": {
+        "field": "пол"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_konon_felt_puzzled_ep1",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "недоумение",
+        "reason": "некорректный пол"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_reported_gender_issue_ep1",
+      "source": "person_sazonov_konon",
+      "target": "issue_incorrect_gender",
+      "relation": "contains",
+      "attributes": {
+        "date": "19.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_bank_accepted_gender_correction_req_ep1",
+      "source": "org_bank",
+      "target": "req_data_correction_gender_ep1",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_req_gender_correction_notified_by_sms_ep1",
+      "source": "req_data_correction_gender_ep1",
+      "target": "channel_sms",
+      "relation": "contains",
+      "attributes": {
+        "event": "коррекция данных"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_pay_utilities_feb",
+      "source": "person_sazonov_konon",
+      "target": "loc_address_lenina_10_5",
+      "relation": "paid",
+      "attributes": {
+        "amount": "8120 руб.",
+        "date": "25.02.2024",
+        "period": "февраль"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_pay_utilities_feb_via_internet_bank",
+      "source": "person_sazonov_konon",
+      "target": "channel_internet_bank",
+      "relation": "contains",
+      "attributes": {
+        "action": "оплата коммунальных услуг",
+        "date": "25.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_pay_utilities_feb_from_current_account",
+      "source": "account_current_konon",
+      "target": "loc_address_lenina_10_5",
+      "relation": "paid",
+      "attributes": {
+        "amount": "8120 руб.",
+        "date": "25.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_requested_poa_artem",
+      "source": "person_sazonov_konon",
+      "target": "doc_power_attorney_artem",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_poa_artem_for_tax_service",
+      "source": "doc_power_attorney_artem",
+      "target": "org_tax_service",
+      "relation": "contains",
+      "attributes": {
+        "purpose": "налоговый вычет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_poa_artem_for_ivanov_artem",
+      "source": "doc_power_attorney_artem",
+      "target": "person_ivanov_artem",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_requested_poa_arkady",
+      "source": "person_sazonov_konon",
+      "target": "doc_power_attorney_arkady",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_poa_arkady_for_rosreestr",
+      "source": "doc_power_attorney_arkady",
+      "target": "org_rosreestr",
+      "relation": "contains",
+      "attributes": {
+        "purpose": "регистрация права собственности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_poa_arkady_for_ivanov_arkady",
+      "source": "doc_power_attorney_arkady",
+      "target": "person_ivanov_arkady",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_poa_arkady_for_land_in_sobolevo",
+      "source": "doc_power_attorney_arkady",
+      "target": "loc_sobolevo",
+      "relation": "contains",
+      "attributes": {
+        "item": "земельный участок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_bank_sent_kyc_notification",
+      "source": "org_bank",
+      "target": "doc_kyc_notification",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_kyc_notification_requires_passport_update",
+      "source": "doc_kyc_notification",
+      "target": "doc_passport",
+      "relation": "changed_to",
+      "attributes": {
+        "data_type": "паспортные данные"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_kyc_notification_requires_phone_update",
+      "source": "doc_kyc_notification",
+      "target": "person_sazonov_konon",
+      "relation": "changed_to",
+      "attributes": {
+        "data_type": "контактный телефон"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_felt_irritated_kyc",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "легкое раздражение",
+        "reason": "повторяющиеся запросы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_requested_doc_ep2",
+      "source": "person_sazonov_konon",
+      "target": "doc_statement_accounts_ep2",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "16.04.2024",
+        "purpose": "проверка исправлений"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_request_doc_ep2_via_mobile_app",
+      "source": "person_sazonov_konon",
+      "target": "channel_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "action": "повторный запрос справки",
+        "date": "16.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_doc_ep2_has_status",
+      "source": "doc_statement_accounts_ep2",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "status": "Ожидает подтверждения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_felt_anxious_doc_ep2",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "тревога",
+        "reason": "проверка исправлений"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_tried_update_phone_internet_bank",
+      "source": "person_sazonov_konon",
+      "target": "channel_internet_bank",
+      "relation": "contains",
+      "attributes": {
+        "action": "попытка обновления телефона",
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_system_error_phone_update",
+      "source": "channel_internet_bank",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "error_message": "Несоответствие данных",
+        "action": "обновление телефона"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_discovered_address_error",
+      "source": "person_sazonov_konon",
+      "target": "issue_incorrect_address",
+      "relation": "contains",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_felt_frustrated_address_error",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "явная фрустрация",
+        "reason": "некорректный адрес"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_called_call_center_ep2",
+      "source": "person_sazonov_konon",
+      "target": "channel_call_center",
+      "relation": "contains",
+      "attributes": {
+        "date": "17.04.2024",
+        "purpose": "сообщение об ошибке адреса"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_call_center_explained_error",
+      "source": "channel_call_center",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "reason": "системный сбой при обновлении данных"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_issue_incorrect_address_caused_by_system_glitch",
+      "source": "issue_incorrect_address",
+      "target": "org_bank",
+      "relation": "caused",
+      "attributes": {
+        "reason": "системный сбой"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_discovered_gender_issue_again_ep2",
+      "source": "person_sazonov_konon",
+      "target": "issue_incorrect_gender",
+      "relation": "contains",
+      "attributes": {
+        "date": "17.04.2024",
+        "context": "внутренняя система"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_konon_felt_confusion_distrust_ep2",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "путаница и недоверие",
+        "reason": "неисправленный пол"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_bank_registered_new_correction_req_ep2",
+      "source": "org_bank",
+      "target": "req_data_correction_address_gender_ep2",
+      "relation": "applied_for",
+      "attributes": {
+        "id": "987654",
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_req_correction_ep2_requires_branch_visit",
+      "source": "req_data_correction_address_gender_ep2",
+      "target": "channel_bank_branch",
+      "relation": "contains",
+      "attributes": {
+        "action": "личная верификация"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_decided_to_visit_branch_ep2",
+      "source": "person_sazonov_konon",
+      "target": "channel_bank_branch",
+      "relation": "contains",
+      "attributes": {
+        "date": "22.04.2024",
+        "purpose": "контроль обновления данных"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_felt_critical_risk_ep2",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "критический риск",
+        "reason": "путаница информации"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_bank_offered_credit_1",
+      "source": "org_bank",
+      "target": "offer_credit_1",
+      "relation": "contains",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_rejected_credit_1",
+      "source": "person_sazonov_konon",
+      "target": "offer_credit_1",
+      "relation": "rejected",
+      "attributes": {
+        "date": "01.03.2024",
+        "reason": "избегает кредитов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_bank_offered_credit_2",
+      "source": "org_bank",
+      "target": "offer_credit_2",
+      "relation": "contains",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_konon_rejected_credit_2",
+      "source": "person_sazonov_konon",
+      "target": "offer_credit_2",
+      "relation": "rejected",
+      "attributes": {
+        "date": "05.03.2024",
+        "reason": "избегает кредитов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_felt_annoyed_credit_offers",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "раздражение",
+        "reason": "повторные предложения кредитов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_updated_passport",
+      "source": "person_sazonov_konon",
+      "target": "doc_passport",
+      "relation": "changed_to",
+      "attributes": {
+        "date": "20.02.2024",
+        "type": "паспортные данные"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_passport_updated_at_branch",
+      "source": "person_sazonov_konon",
+      "target": "channel_bank_branch",
+      "relation": "contains",
+      "attributes": {
+        "action": "обновление паспорта",
+        "date": "20.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_manager_confirmed_passport_update",
+      "source": "person_blokhin_sofon",
+      "target": "doc_passport",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_requested_2ndfl",
+      "source": "person_sazonov_konon",
+      "target": "doc_2ndfl_2023",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "08.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_request_2ndfl_via_internet_bank",
+      "source": "person_sazonov_konon",
+      "target": "channel_internet_bank",
+      "relation": "contains",
+      "attributes": {
+        "action": "запрос 2-НДФЛ",
+        "date": "08.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_2ndfl_for_visa_center",
+      "source": "doc_2ndfl_2023",
+      "target": "org_visa_center",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_travels_with_elizaveta",
+      "source": "person_sazonov_konon",
+      "target": "person_elizaveta",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_bank_sent_deposit_statement_error",
+      "source": "org_bank",
+      "target": "doc_deposit_statement_error_ep3",
+      "relation": "contains",
+      "attributes": {
+        "date": "10.05.2024",
+        "channel": "электронная почта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_doc_deposit_statement_error_contains_name_issue",
+      "source": "doc_deposit_statement_error_ep3",
+      "target": "issue_incorrect_name_patronymic",
+      "relation": "contains",
+      "attributes": {
+        "field": "имя/отчество"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_konon_felt_extreme_urgency_frustration_ep3",
+      "source": "person_sazonov_konon",
+      "target": "org_bank",
+      "relation": "contains",
+      "attributes": {
+        "state": "крайняя срочность и глубокая фрустрация",
+        "reason": "критическая ошибка в имени"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_konon_reported_name_issue_ep3",
+      "source": "person_sazonov_konon",
+      "target": "issue_incorrect_name_patronymic",
+      "relation": "contains",
+      "attributes": {
+        "date": "10.05.2024",
+        "urgency": "немедленно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_name_issue_threatens_capital",
+      "source": "issue_incorrect_name_patronymic",
+      "target": "person_sazonov_konon",
+      "relation": "contains",
+      "attributes": {
+        "aspect": "неприкосновенность капитала"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_bank_initiated_internal_check",
+      "source": "org_bank",
+      "target": "req_internal_check_ep3",
+      "relation": "caused",
+      "attributes": {
+        "date": "10.05.2024",
+        "type": "ускоренная проверка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

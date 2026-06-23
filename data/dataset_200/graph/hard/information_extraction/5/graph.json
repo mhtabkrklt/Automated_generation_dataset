@@ -1,0 +1,3924 @@
+{
+  "nodes": [
+    {
+      "id": "person_sila_zykov",
+      "type": "person",
+      "label": "Сила Андреевич Зыков",
+      "attributes": {
+        "name": "Сила Андреевич Зыков",
+        "gender": "male",
+        "age": 34,
+        "location": "с. Арзамас",
+        "job_title": "Военный судья",
+        "monthly_income": "182000 руб.",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_valeria_safonova",
+      "type": "person",
+      "label": "Валерия Ждановна Сафонова",
+      "attributes": {
+        "name": "Валерия Ждановна Сафонова",
+        "role": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "account_sberbank_parent",
+      "type": "account",
+      "label": "Карта Сбербанка Валерии Сафоновой",
+      "attributes": {
+        "account_number": "4276XXXXXXXX2222",
+        "bank_name": "ПАО «Сбербанк»"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_auto",
+      "type": "product",
+      "label": "Автокредит",
+      "attributes": {
+        "loan_type": "auto",
+        "bank_name": "ПАО «ВТБ»",
+        "contract_number": "789012345",
+        "total_cost": "3492000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "insurance_osago",
+      "type": "product",
+      "label": "Полис ОСАГО",
+      "attributes": {
+        "policy_number": "XXX0000000001",
+        "company_name": "Ингосстрах",
+        "cost": "12000 руб.",
+        "valid_until": "25.07.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "person_rozhkova_zhanna",
+      "type": "person",
+      "label": "Рожкова Жанна Святославовна",
+      "attributes": {
+        "name": "Рожкова Жанна Святославовна",
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "event_tax_deduction_application",
+      "type": "event",
+      "label": "Подача заявки на налоговый вычет",
+      "attributes": {
+        "date": "20.08.2024",
+        "deduction_type": "НДФЛ за проценты по автокредиту",
+        "platform": "портал Госуслуг"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "event_emotional_state_tension",
+      "type": "event",
+      "label": "Эмоциональное состояние: напряжение",
+      "attributes": {
+        "state": "напряжение и разочарование",
+        "reason": "отказ в реструктуризации"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "product",
+      "label": "Дебетовая карта Силы Зыкова",
+      "attributes": {
+        "card_type": "Visa Gold",
+        "bank_name": "ПАО «ВТБ»",
+        "account_number": "40817810500000001234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Автомобиль LADA Vesta",
+      "attributes": {
+        "brand": "LADA",
+        "model": "Vesta",
+        "year": 2024,
+        "color": "серый металлик"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "organization",
+      "label": "Автосалон «Автомир»",
+      "attributes": {
+        "type": "автодилер",
+        "address": "ул. Профсоюзная, 104",
+        "city": "с. Арзамас"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "event",
+      "label": "Внесение первоначального взноса",
+      "attributes": {
+        "amount": "300000 руб.",
+        "date": "15.04.2024",
+        "method": "дебетовый счет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "event",
+      "label": "Зачисление кредитных средств",
+      "attributes": {
+        "amount": "2500000 руб.",
+        "date": "16.04.2024",
+        "source": "ПАО «ВТБ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "organization",
+      "label": "Страховая компания «РЕСО-Гарантия»",
+      "attributes": {
+        "type": "страховая компания",
+        "region": "федеральная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "product",
+      "label": "Полис КАСКО",
+      "attributes": {
+        "policy_number": "ААА-123456789",
+        "company_name": "РЕСО-Гарантия",
+        "cost": "85000 руб.",
+        "valid_until": "17.04.2025"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Оплата госпошлины ГИБДД",
+      "attributes": {
+        "amount": "2850 руб.",
+        "date": "20.04.2024",
+        "purpose": "регистрация автомобиля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "person",
+      "label": "Анна Петрова",
+      "attributes": {
+        "name": "Анна Петрова",
+        "role": "менеджер банка",
+        "bank": "ПАО «ВТБ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "document",
+      "label": "Кредитный договор",
+      "attributes": {
+        "contract_number": "789012345",
+        "bank_name": "ПАО «ВТБ»",
+        "total_cost": "3492000 руб.",
+        "date": "12.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Консультация по условиям кредита",
+      "attributes": {
+        "date": "12.04.2024",
+        "topic": "график платежей, полная стоимость кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "Обсуждение автоплатежа",
+      "attributes": {
+        "date": "12.04.2024",
+        "decision": "отложено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Уточнение условий досрочного погашения",
+      "attributes": {
+        "date": "12.04.2024",
+        "conditions": "без штрафов, заявление за 3 дня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "document",
+      "label": "Паспорт Силы Зыкова",
+      "attributes": {
+        "series": "4500",
+        "number": "123456",
+        "issue_date": "10.01.2010"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Подтверждение личности",
+      "attributes": {
+        "date": "12.04.2024",
+        "method": "паспорт и кодовое слово"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Подача заявки на автокредит",
+      "attributes": {
+        "date": "10.04.2024",
+        "amount": "2500000 руб.",
+        "bank": "ПАО «ВТБ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Одобрение автокредита",
+      "attributes": {
+        "date": "12.04.2024",
+        "interest_rate": "14.5%",
+        "term": "5 лет",
+        "monthly_payment": "58200 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Оформление договора купли-продажи",
+      "attributes": {
+        "date": "15.04.2024",
+        "cost": "2800000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Оформление полиса КАСКО",
+      "attributes": {
+        "date": "17.04.2024",
+        "cost": "85000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Эмоциональное состояние: уверенность и тревога",
+      "attributes": {
+        "state": "уверенность, тревога",
+        "reason": "предстоящие платежи",
+        "date": "20.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Проверка кредитного договора",
+      "attributes": {
+        "date": "12.04.2024",
+        "focus": "полная стоимость кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "organization",
+      "label": "ПАО «ВТБ»",
+      "attributes": {
+        "type": "банк",
+        "region": "федеральный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Первый ежемесячный платеж",
+      "attributes": {
+        "amount": "58200 руб.",
+        "date": "10.05.2024",
+        "method": "касса банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "person",
+      "label": "Прохоров Ростислав Ануфриевич",
+      "attributes": {
+        "name": "Прохоров Ростислав Ануфриевич",
+        "role": "супруг",
+        "gender": "male"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Карта Прохорова Ростислава",
+      "attributes": {
+        "card_number": "4276XXXXXXXX1111",
+        "bank_name": "неизвестно",
+        "payment_system": "МИР"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Перевод супругу",
+      "attributes": {
+        "amount": "15000 руб.",
+        "date": "25.05.2024",
+        "method": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Получение премии",
+      "attributes": {
+        "amount": "70000 руб.",
+        "date": "01.06.2024",
+        "source": "работа"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Подача заявления на частичное досрочное погашение",
+      "attributes": {
+        "amount": "50000 руб.",
+        "date": "05.06.2024",
+        "goal": "уменьшение срока кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Подтверждение частичного досрочного погашения",
+      "attributes": {
+        "date": "06.06.2024",
+        "new_term": "4 года 10 месяцев",
+        "interest_reduction": "15000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "document",
+      "label": "Новый график платежей",
+      "attributes": {
+        "document_type": "график платежей",
+        "date": "06.06.2024",
+        "bank": "ПАО «ВТБ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Ежемесячный платеж по новому графику",
+      "attributes": {
+        "amount": "58200 руб.",
+        "date": "10.06.2024",
+        "method": "интернет-банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД",
+      "attributes": {
+        "amount": "500 руб.",
+        "date": "15.06.2024",
+        "reason": "превышение скорости",
+        "penalty_number": "77АА1234567"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "person",
+      "label": "Казаков Мечислав Харлампович",
+      "attributes": {
+        "name": "Казаков Мечислав Харлампович",
+        "role": "знакомый",
+        "gender": "male"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Консультация с другом о графике платежей",
+      "attributes": {
+        "date": "15.06.2024",
+        "advice": "проверять график после досрочного погашения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Проверка баланса текущего счета",
+      "attributes": {
+        "balance": "105000 руб.",
+        "date": "15.06.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Вопрос о налоговом вычете",
+      "attributes": {
+        "date": "15.06.2024",
+        "topic": "НДФЛ за проценты по автокредиту",
+        "condition": "после года выплат"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Обсуждение кредита партнером",
+      "attributes": {
+        "date": "12.06.2024",
+        "person": "Прохоров Ростислав Ануфриевич",
+        "amount": "480000 руб.",
+        "purpose": "ремонт квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Эмоциональное состояние: удовлетворение",
+      "attributes": {
+        "state": "удовлетворение",
+        "reason": "сокращение срока кредита",
+        "date": "10.06.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Получение нового графика платежей",
+      "attributes": {
+        "date": "06.06.2024",
+        "format": "бумажный, с печатью"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Оценка цифрового взаимодействия",
+      "attributes": {
+        "date": "15.06.2024",
+        "aspect": "удобство оплаты штрафа через мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Начало тщательного учета расходов",
+      "attributes": {
+        "date": "01.06.2024",
+        "goal": "возможность дальнейших досрочных погашений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Настройка автоплатежа",
+      "attributes": {
+        "date": "01.07.2024",
+        "purpose": "ежемесячные взносы по автокредиту"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Ежемесячный платеж (июль)",
+      "attributes": {
+        "amount": "58200 руб.",
+        "date": "10.07.2024",
+        "method": "автоплатеж"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Получение уведомления об ОСАГО",
+      "attributes": {
+        "date": "20.07.2024",
+        "type": "продление",
+        "cost_estimate": "12000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "organization",
+      "label": "Ингосстрах",
+      "attributes": {
+        "type": "страховая компания",
+        "region": "федеральная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Оплата полиса ОСАГО",
+      "attributes": {
+        "amount": "12000 руб.",
+        "date": "25.07.2024",
+        "method": "интернет-банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Рассмотрение реструктуризации",
+      "attributes": {
+        "date": "01.08.2024",
+        "reason": "непредвиденные расходы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Консультация по реструктуризации",
+      "attributes": {
+        "date": "05.08.2024",
+        "options": "платежные каникулы, увеличение срока"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Ежемесячный платеж (август)",
+      "attributes": {
+        "amount": "58200 руб.",
+        "date": "10.08.2024",
+        "method": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Получение возврата долга",
+      "attributes": {
+        "amount": "7000 руб.",
+        "date": "15.08.2024",
+        "source": "Рожкова Жанна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Подача заявки на налоговый вычет",
+      "attributes": {
+        "date": "20.08.2024",
+        "type": "НДФЛ за проценты по автокредиту",
+        "platform": "Госуслуги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Отказ в реструктуризации",
+      "attributes": {
+        "date": "25.08.2024",
+        "reason": "стабильный доход",
+        "income": "182000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Эмоциональное состояние: напряжение и разочарование",
+      "attributes": {
+        "state": "напряжение, разочарование",
+        "reason": "отказ в реструктуризации",
+        "date": "25.08.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "organization",
+      "label": "ГИБДД",
+      "attributes": {
+        "type": "государственный орган",
+        "function": "регистрация ТС, контроль ПДД"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Регистрация автомобиля в ГИБДД",
+      "attributes": {
+        "date": "20.04.2024",
+        "status": "завершена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "product",
+      "label": "Зарплатный счет Силы Зыкова",
+      "attributes": {
+        "account_type": "зарплатный",
+        "bank_name": "ПАО «ВТБ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Непредвиденные расходы родителя",
+      "attributes": {
+        "date": "01.07.2024",
+        "reason": "лечение",
+        "amount_range": "30000-50000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Перевод средств родителю",
+      "attributes": {
+        "amount": "30000 руб.",
+        "date": "05.07.2024",
+        "method": "онлайн-банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Ухудшение финансового положения",
+      "attributes": {
+        "date": "01.08.2024",
+        "reason": "непредвиденные расходы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО ВТБ",
+      "attributes": {
+        "type": "банк",
+        "region": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Подача заявки на налоговый вычет",
+      "attributes": {
+        "date": "20.08.2024",
+        "deduction_type": "НДФЛ за проценты по автокредиту",
+        "platform": "портал Госуслуг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_1",
+      "type": "document",
+      "label": "Заявление на реструктуризацию",
+      "attributes": {
+        "document_type": "заявление",
+        "status": "подано",
+        "date_filed": "01.08.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_2",
+      "type": "person",
+      "label": "Менеджер ВТБ",
+      "attributes": {
+        "name": "Анна Петрова",
+        "role": "кредитный менеджер",
+        "bank": "ПАО «ВТБ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_3",
+      "type": "event",
+      "label": "Оценка кредитоспособности",
+      "attributes": {
+        "date": "02.08.2024",
+        "status": "в процессе",
+        "criteria": "доход, кредитная история"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_4",
+      "type": "document",
+      "label": "Внутренний регламент банка",
+      "attributes": {
+        "document_type": "регламент",
+        "section": "реструктуризация кредитов",
+        "version": "3.1"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_5",
+      "type": "event",
+      "label": "Заседание кредитного комитета",
+      "attributes": {
+        "date": "20.08.2024",
+        "outcome": "отказ",
+        "reason": "недостаточные основания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_6",
+      "type": "document",
+      "label": "Письмо об отказе в реструктуризации",
+      "attributes": {
+        "document_type": "уведомление",
+        "date_sent": "25.08.2024",
+        "method": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_7",
+      "type": "event",
+      "label": "Поиск альтернативных решений",
+      "attributes": {
+        "date": "26.08.2024",
+        "status": "активно",
+        "options": "дополнительный заработок, сокращение расходов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_8",
+      "type": "organization",
+      "label": "Федеральная налоговая служба",
+      "attributes": {
+        "type": "государственный орган",
+        "function": "сбор налогов, вычеты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_9",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {
+        "document_type": "справка о доходах",
+        "period": "2023-2024",
+        "issuer": "работодатель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_10",
+      "type": "document",
+      "label": "Договор автокредита",
+      "attributes": {
+        "document_type": "договор",
+        "contract_number": "789012345",
+        "date_signed": "15.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_11",
+      "type": "event",
+      "label": "Проверка документов для вычета",
+      "attributes": {
+        "date": "21.08.2024",
+        "status": "в процессе",
+        "department": "ФНС"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_12",
+      "type": "event",
+      "label": "Ожидание решения по вычету",
+      "attributes": {
+        "date": "22.08.2024",
+        "expected_duration": "3 месяца",
+        "status": "ожидание"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_13",
+      "type": "event",
+      "label": "Мониторинг расходов",
+      "attributes": {
+        "date": "с 01.07.2024",
+        "status": "активно",
+        "tool": "мобильное приложение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_14",
+      "type": "event",
+      "label": "Анализ бюджета",
+      "attributes": {
+        "date": "01.07.2024",
+        "outcome": "недостаточно средств для непредвиденных расходов",
+        "reason": "высокая кредитная нагрузка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_15",
+      "type": "event",
+      "label": "Поиск информации о реструктуризации",
+      "attributes": {
+        "date": "30.07.2024",
+        "source": "интернет, форумы",
+        "keywords": "автокредит, реструктуризация, ВТБ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_16",
+      "type": "event",
+      "label": "Сбор документов для реструктуризации",
+      "attributes": {
+        "date": "01.08.2024",
+        "documents_collected": "справка о доходах, выписка по счету"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_17",
+      "type": "event",
+      "label": "Подготовка к следующему платежу",
+      "attributes": {
+        "date": "28.08.2024",
+        "status": "в процессе",
+        "plan": "сокращение необязательных расходов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_18",
+      "type": "event",
+      "label": "Обсуждение с супругом",
+      "attributes": {
+        "date": "26.08.2024",
+        "topic": "финансовые трудности, отказ в реструктуризации",
+        "outcome": "совместный поиск решений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_19",
+      "type": "person",
+      "label": "Прохоров Ростислав Ануфриевич",
+      "attributes": {
+        "name": "Прохоров Ростислав Ануфриевич",
+        "role": "супруг",
+        "gender": "male"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_20",
+      "type": "event",
+      "label": "Оценка финансового положения",
+      "attributes": {
+        "date": "27.08.2024",
+        "outcome": "неудовлетворительное",
+        "reason": "высокая долговая нагрузка, отсутствие резервов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_21",
+      "type": "event",
+      "label": "Поиск дополнительного заработка",
+      "attributes": {
+        "date": "29.08.2024",
+        "status": "планирование",
+        "options": "фриланс, подработка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_22",
+      "type": "event",
+      "label": "Пересмотр семейного бюджета",
+      "attributes": {
+        "date": "30.08.2024",
+        "status": "в процессе",
+        "goal": "создание финансовой подушки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_needs_financial_help",
+      "source": "person_valeria_safonova",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount_range": "30000-50000 руб.",
+        "reason": "лечение",
+        "date": "01.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transferred_to_parent",
+      "source": "person_sila_zykov",
+      "target": "person_valeria_safonova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "30000 руб.",
+        "date": "05.07.2024",
+        "via": "онлайн-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transferred_to_account_parent",
+      "source": "person_sila_zykov",
+      "target": "account_sberbank_parent",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "30000 руб.",
+        "date": "05.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_paid_monthly_payment_july",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "paid",
+      "attributes": {
+        "amount": "58200 руб.",
+        "date": "10.07.2024",
+        "method": "автоплатеж"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_received_osago_notification",
+      "source": "person_sila_zykov",
+      "target": "insurance_osago",
+      "relation": "received",
+      "attributes": {
+        "date": "20.07.2024",
+        "notification_type": "продление"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_paid_osago",
+      "source": "person_sila_zykov",
+      "target": "insurance_osago",
+      "relation": "paid",
+      "attributes": {
+        "amount": "12000 руб.",
+        "date": "25.07.2024",
+        "method": "интернет-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_considered_restructuring",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.08.2024",
+        "reason": "непредвиденные расходы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_consulted_on_restructuring",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.08.2024",
+        "options_offered": "платежные каникулы, увеличение срока"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_paid_monthly_payment_august",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "paid",
+      "attributes": {
+        "amount": "58200 руб.",
+        "date": "10.08.2024",
+        "method": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_received_debt_return",
+      "source": "person_sila_zykov",
+      "target": "person_rozhkova_zhanna",
+      "relation": "received",
+      "attributes": {
+        "amount": "7000 руб.",
+        "date": "15.08.2024",
+        "method": "перевод на дебетовую карту"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_applied_for_tax_deduction",
+      "source": "person_sila_zykov",
+      "target": "event_tax_deduction_application",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "20.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_received_restructuring_rejection",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "received",
+      "attributes": {
+        "date": "25.08.2024",
+        "reason": "стабильный доход в 182000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_experienced_emotional_state",
+      "source": "person_sila_zykov",
+      "target": "event_emotional_state_tension",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transferred_to_parent_false_1",
+      "source": "person_sila_zykov",
+      "target": "person_valeria_safonova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "28000 руб.",
+        "date": "05.07.2024",
+        "via": "онлайн-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_paid_osago_false_1",
+      "source": "person_sila_zykov",
+      "target": "insurance_osago",
+      "relation": "paid",
+      "attributes": {
+        "amount": "12500 руб.",
+        "date": "25.07.2024",
+        "method": "интернет-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_18",
+      "relation": "caused",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "ctx_node_18",
+      "target": "ctx_node_24",
+      "relation": "submitted",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_24",
+      "target": "ctx_node_19",
+      "relation": "approved",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_19",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_20",
+      "relation": "signed",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_20",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_20",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_6",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_7",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_21",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_21",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_10",
+      "relation": "paid",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_10",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_13",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_13",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_23",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_14",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_15",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_17",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_25",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_28",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "25.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_28",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_28",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_29",
+      "relation": "received",
+      "attributes": {
+        "date": "01.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_29",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_30",
+      "relation": "submitted",
+      "attributes": {
+        "date": "05.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_30",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_24",
+      "target": "ctx_node_31",
+      "relation": "approved",
+      "attributes": {
+        "date": "06.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_31",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_31",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_33",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_34",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_34",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_36",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_37",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_38",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_26",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_41",
+      "relation": "received",
+      "attributes": {
+        "date": "06.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_41",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_44",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.07.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_45",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_46",
+      "relation": "received",
+      "attributes": {
+        "date": "20.07.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_46",
+      "target": "insurance_osago",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_48",
+      "relation": "paid",
+      "attributes": {
+        "date": "25.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_48",
+      "target": "insurance_osago",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_48",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_49",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.08.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_50",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_51",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_52",
+      "relation": "received",
+      "attributes": {
+        "date": "15.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_52",
+      "target": "person_rozhkova_zhanna",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_53",
+      "relation": "submitted",
+      "attributes": {
+        "date": "20.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_53",
+      "target": "event_tax_deduction_application",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_24",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.08.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_54",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_10",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_57",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_29",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "person_valeria_safonova",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_60",
+      "target": "person_valeria_safonova",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_60",
+      "target": "account_sberbank_parent",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.07.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_59",
+      "target": "ctx_node_61",
+      "relation": "caused",
+      "attributes": {
+        "date": "01.08.2"
+      },
+      "ground_truth": false,
+      "valid": true,
+      "stale": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_62",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_62",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_1",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_54",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_55",
+      "target": "ctx_node_54",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_sila_zykov",
+      "target": "insurance_osago",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "person_sila_zykov",
+      "target": "account_sberbank_parent",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "family"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "person_sila_zykov",
+      "target": "person_valeria_safonova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_1",
+      "source": "person_sila_zykov",
+      "target": "x5_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "01.08.2024",
+        "channel": "отделение банка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_4",
+      "source": "x5_node_2",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "кредитный менеджер"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_5",
+      "source": "x5_node_1",
+      "target": "x5_node_3",
+      "relation": "caused",
+      "attributes": {
+        "date": "02.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_6",
+      "source": "x5_node_3",
+      "target": "x5_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_8",
+      "source": "x5_node_3",
+      "target": "x5_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_11",
+      "source": "person_sila_zykov",
+      "target": "x5_node_6",
+      "relation": "received",
+      "attributes": {
+        "date": "25.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_13",
+      "source": "person_sila_zykov",
+      "target": "x5_node_7",
+      "relation": "caused",
+      "attributes": {
+        "date": "26.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_14",
+      "source": "event_tax_deduction_application",
+      "target": "x5_node_8",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_15",
+      "source": "person_sila_zykov",
+      "target": "x5_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.08.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_16",
+      "source": "x5_node_9",
+      "target": "event_tax_deduction_application",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_17",
+      "source": "loan_auto",
+      "target": "x5_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_18",
+      "source": "x5_node_10",
+      "target": "event_tax_deduction_application",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_19",
+      "source": "event_tax_deduction_application",
+      "target": "x5_node_11",
+      "relation": "caused",
+      "attributes": {
+        "date": "21.08.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_20",
+      "source": "x5_node_11",
+      "target": "x5_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_21",
+      "source": "person_sila_zykov",
+      "target": "x5_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_22",
+      "source": "person_sila_zykov",
+      "target": "x5_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "регулярно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_23",
+      "source": "x5_node_13",
+      "target": "x5_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.07.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_24",
+      "source": "x5_node_14",
+      "target": "person_valeria_safonova",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "необходимость помощи"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_25",
+      "source": "person_sila_zykov",
+      "target": "x5_node_15",
+      "relation": "caused",
+      "attributes": {
+        "date": "30.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_27",
+      "source": "person_sila_zykov",
+      "target": "x5_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_28",
+      "source": "x5_node_16",
+      "target": "x5_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_30",
+      "source": "person_sila_zykov",
+      "target": "x5_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_31",
+      "source": "event_emotional_state_tension",
+      "target": "x5_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26.08.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_32",
+      "source": "person_sila_zykov",
+      "target": "x5_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_33",
+      "source": "x5_node_18",
+      "target": "x5_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_34",
+      "source": "person_sila_zykov",
+      "target": "x5_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_35",
+      "source": "x5_node_18",
+      "target": "x5_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_36",
+      "source": "event_emotional_state_tension",
+      "target": "x5_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.08.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_37",
+      "source": "person_sila_zykov",
+      "target": "x5_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_38",
+      "source": "x5_node_20",
+      "target": "x5_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_39",
+      "source": "person_sila_zykov",
+      "target": "x5_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_40",
+      "source": "x5_node_20",
+      "target": "x5_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.08.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_41",
+      "source": "person_sila_zykov",
+      "target": "x5_node_22",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_42",
+      "source": "x5_node_19",
+      "target": "x5_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_43",
+      "source": "x5_node_21",
+      "target": "x5_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_44",
+      "source": "loan_auto",
+      "target": "x5_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "impact_type": "долговая нагрузка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_45",
+      "source": "person_valeria_safonova",
+      "target": "x5_node_14",
+      "relation": "caused",
+      "attributes": {
+        "reason": "непредвиденные расходы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_46",
+      "source": "person_sila_zykov",
+      "target": "x5_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_47",
+      "source": "x5_node_13",
+      "target": "x5_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_48",
+      "source": "x5_node_17",
+      "target": "x5_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_49",
+      "source": "x5_node_8",
+      "target": "x5_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_50",
+      "source": "x5_node_11",
+      "target": "x5_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_51",
+      "source": "x5_node_2",
+      "target": "x5_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "представитель банка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_52",
+      "source": "x5_node_5",
+      "target": "x5_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "outcome": "отказ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_53",
+      "source": "x5_node_2",
+      "target": "x5_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_54",
+      "source": "x5_node_6",
+      "target": "x5_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_55",
+      "source": "x5_node_10",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_56",
+      "source": "loan_auto",
+      "target": "x5_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_57",
+      "source": "x5_node_9",
+      "target": "person_sila_zykov",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_58",
+      "source": "person_sila_zykov",
+      "target": "x5_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_59",
+      "source": "x5_node_1",
+      "target": "person_sila_zykov",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_60",
+      "source": "person_sila_zykov",
+      "target": "x5_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_61",
+      "source": "x5_node_19",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_62",
+      "source": "person_sila_zykov",
+      "target": "x5_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_63",
+      "source": "person_sila_zykov",
+      "target": "x5_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "tool": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_64",
+      "source": "x5_node_13",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_65",
+      "source": "x5_node_14",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_66",
+      "source": "person_sila_zykov",
+      "target": "x5_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_67",
+      "source": "x5_node_15",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_68",
+      "source": "person_sila_zykov",
+      "target": "x5_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_69",
+      "source": "x5_node_16",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_70",
+      "source": "person_sila_zykov",
+      "target": "x5_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_71",
+      "source": "x5_node_17",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_72",
+      "source": "person_sila_zykov",
+      "target": "x5_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_73",
+      "source": "x5_node_18",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_74",
+      "source": "person_sila_zykov",
+      "target": "x5_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_75",
+      "source": "x5_node_20",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_76",
+      "source": "person_sila_zykov",
+      "target": "x5_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_77",
+      "source": "x5_node_21",
+      "target": "person_sila_zykov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_78",
+      "source": "person_sila_zykov",
+      "target": "x5_node_21",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_79",
+      "source": "x5_node_22",
+      "target": "person_sila_zykov",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_80",
+      "source": "person_sila_zykov",
+      "target": "x5_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_sila_zykov",
+      "target": "person_rozhkova_zhanna",
+      "relation": "received",
+      "attributes": {
+        "amount": "7700 руб.",
+        "date": "15.07.2024",
+        "method": "перевод на дебетовую карту"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "paid",
+      "attributes": {
+        "amount": "64020 руб.",
+        "date": "10.06.2024",
+        "method": "автоплатеж"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_sila_zykov",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,95.2024",
+        "reason": "непредвиденные расходы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_15",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_15",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_27",
+      "target": "account_sberbank_parent",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "27000 руб.",
+        "date": "05.07.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_51",
+      "target": "insurance_osago",
+      "relation": "paid",
+      "attributes": {
+        "amount": "10800 руб.",
+        "date": "25.07.2024",
+        "method": "интернет-банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_35",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,59.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_9",
+      "target": "account_sberbank_parent",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,58.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_54",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27,59.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_41",
+      "relation": "paid",
+      "attributes": {
+        "amount": "11250 руб.",
+        "date": "25.07.2024",
+        "method": "интернет-банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_41",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,45.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "x5_node_5",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,07.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_48",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "кредитный менеджер"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_13",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_21",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "person_sila_zykov",
+      "target": "x5_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "регулярно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_sila_zykov",
+      "target": "x5_node_16",
+      "relation": "paid",
+      "attributes": {
+        "date": "13,55.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "person_sila_zykov",
+      "target": "x5_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,17.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_7",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "33000 руб.",
+        "date": "05.07.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_42",
+      "target": "x5_node_7",
+      "relation": "caused",
+      "attributes": {
+        "date": "28,69.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "x5_node_22",
+      "target": "event_tax_deduction_application",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "22,09.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "date": "18,07.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "ctx_node_15",
+      "target": "x5_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "ctx_node_10",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_38",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,57.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "x5_node_6",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "x5_node_8",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,05.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_37",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,08.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "x5_node_6",
+      "target": "x5_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,09.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_20",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_19",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,57.2024",
+        "options_offered": "платежные каникулы, увеличение срока"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "x5_node_4",
+      "target": "x5_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "31,99.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_39",
+      "target": "event_tax_deduction_application",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,09.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_53",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_10",
+      "target": "loan_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,59.2024",
+        "options_offered": "платежные каникулы, увеличение срока"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "ctx_node_48",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,56.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "ctx_node_30",
+      "target": "person_rozhkova_zhanna",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,57.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "ctx_node_41",
+      "target": "person_rozhkova_zhanna",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,59.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "person_sila_zykov",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "ctx_node_21",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,74.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "person_sila_zykov",
+      "target": "person_rozhkova_zhanna",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,55.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "ctx_node_48",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,56.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "ctx_node_21",
+      "target": "ctx_node_10",
+      "relation": "paid",
+      "attributes": {
+        "date": "18,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "ctx_node_6",
+      "target": "person_rozhkova_zhanna",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,57.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "ctx_node_51",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,06.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "insurance_osago",
+      "target": "ctx_node_61",
+      "relation": "caused",
+      "attributes": {
+        "date": "1,19.2"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "ctx_node_15",
+      "target": "ctx_node_29",
+      "relation": "received",
+      "attributes": {
+        "date": "0,95.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_sila_zykov",
+      "source": "person_sila_zykov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_valeria_safonova",
+      "source": "person_valeria_safonova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_sberbank_parent",
+      "source": "account_sberbank_parent",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto",
+      "source": "loan_auto",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_insurance_osago",
+      "source": "insurance_osago",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_rozhkova_zhanna",
+      "source": "person_rozhkova_zhanna",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_tax_deduction_application",
+      "source": "event_tax_deduction_application",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_emotional_state_tension",
+      "source": "event_emotional_state_tension",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

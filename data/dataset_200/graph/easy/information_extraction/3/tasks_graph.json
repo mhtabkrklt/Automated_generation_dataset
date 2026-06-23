@@ -1,0 +1,34 @@
+{
+  "information_extraction": [
+    {
+      "question": "Какая сумма находилась на накопительном счете Жанны Ивановны 19 марта 2024 года?",
+      "answer": "350000 руб.",
+      "answer_format": "строка с конкретным фактом",
+      "reasoning_path": [
+        {
+          "step": 1,
+          "description": "Найти узел 'Тихонова Жанна Ивановна' (person_1)."
+        },
+        {
+          "step": 2,
+          "description": "По ребру 'owns' найти связанный с ней 'Накопительный счет 'Накопительный+'' (account_1)."
+        },
+        {
+          "step": 3,
+          "description": "Прочитать значение атрибута 'balance_19_03_2024' у этого счета."
+        }
+      ],
+      "capability": "information_extraction",
+      "difficulty": "easy",
+      "source_node_ids": [
+        "person_1",
+        "account_1"
+      ],
+      "decoy_answers": [
+        "150000 руб.",
+        "300000 руб.",
+        "177000 руб."
+      ]
+    }
+  ]
+}

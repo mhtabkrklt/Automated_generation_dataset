@@ -1,0 +1,3936 @@
+{
+  "nodes": [
+    {
+      "id": "person_galina_yudina",
+      "type": "person",
+      "label": "Галина Никифоровна Юдина",
+      "attributes": {
+        "age": "46 лет",
+        "occupation": "телеграфист",
+        "income": "248000 руб.",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_mortgage_1",
+      "type": "product",
+      "label": "Ипотечный кредит",
+      "attributes": {
+        "amount": "8000000 руб.",
+        "term": "25 лет",
+        "monthly_payment": "78500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "loan_auto_1",
+      "type": "product",
+      "label": "Автокредит",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "term": "5 лет",
+        "monthly_payment": "34500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "document_income_auto",
+      "type": "document",
+      "label": "Справка о доходах для автокредита",
+      "attributes": {
+        "type": "справка о доходах по форме банка",
+        "income_amount": "180000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "car_hyundai_creta",
+      "type": "event",
+      "label": "Hyundai Creta",
+      "attributes": {
+        "type": "автомобиль",
+        "cost": "1800000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "payment_auto_downpayment",
+      "type": "event",
+      "label": "Первоначальный взнос за автомобиль",
+      "attributes": {
+        "amount": "300000 руб.",
+        "type": "первоначальный взнос"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "insurance_mortgage",
+      "type": "product",
+      "label": "Страхование жизни и имущества",
+      "attributes": {
+        "cost_per_year": "15000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "loan_mortgage_approved_final",
+      "type": "product",
+      "label": "Ипотечный кредит (окончательно одобрен)",
+      "attributes": {
+        "rate": "11.0%"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "loan_auto_approved_final",
+      "type": "product",
+      "label": "Автокредит (окончательно одобрен)",
+      "attributes": {
+        "rate": "13.5%"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "payment_to_mother",
+      "type": "event",
+      "label": "Перевод матери",
+      "attributes": {
+        "amount": "50000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "payment_daughter_education",
+      "type": "event",
+      "label": "Оплата обучения дочери",
+      "attributes": {
+        "amount": "15000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "insurance_kasko",
+      "type": "product",
+      "label": "КАСКО",
+      "attributes": {
+        "cost_per_year": "80000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "payment_mortgage_first",
+      "type": "event",
+      "label": "Первый платеж по ипотеке",
+      "attributes": {
+        "amount": "85000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "payment_auto_first",
+      "type": "event",
+      "label": "Первый платеж по автокредиту",
+      "attributes": {
+        "amount": "34500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "payment_to_husband",
+      "type": "event",
+      "label": "Перевод супругу",
+      "attributes": {
+        "amount": "20000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "debt_burden_total",
+      "type": "event",
+      "label": "Общая долговая нагрузка",
+      "attributes": {
+        "monthly_payments_total": "119500 руб.",
+        "percentage_of_income": "48.18%"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "debit_card_balance_after_payments",
+      "type": "account",
+      "label": "Остаток на дебетовой карте",
+      "attributes": {
+        "balance": "80000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "person_naina_veselova",
+      "type": "person",
+      "label": "Наина Веселова",
+      "attributes": {
+        "role": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_lavrentiev_tv",
+      "type": "person",
+      "label": "г-н Лаврентьев Творимир Харлампьевич",
+      "attributes": {
+        "role": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_consumer_lavrentiev",
+      "type": "product",
+      "label": "Потребительский кредит г-на Лаврентьева",
+      "attributes": {
+        "amount": "450000 руб.",
+        "rate": "15.2%"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "person_mikhailova_marfa",
+      "type": "person",
+      "label": "Михайлова Марфа Ниловна",
+      "attributes": {
+        "role": "friend"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "payment_marfa_downpayment",
+      "type": "event",
+      "label": "Первоначальный взнос Марфы Михайловой",
+      "attributes": {
+        "amount": "315000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "person_artemiy_dmitriev",
+      "type": "person",
+      "label": "Артемий Жоресович Дмитриев",
+      "attributes": {
+        "role": "spouse"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "debit_card_limit",
+      "type": "account",
+      "label": "Лимит дебетовой карты",
+      "attributes": {
+        "limit_per_day": "250000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "person_sigismund_agafonov",
+      "type": "person",
+      "label": "Сигизмунд Терентьевич Агафонов",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "payment_sigismund_loan",
+      "type": "event",
+      "label": "Платеж по кредиту Сигизмунда Агафонова",
+      "attributes": {
+        "amount": "36000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "debit_card_limit_incorrect",
+      "type": "account",
+      "label": "Лимит дебетовой карты (неверный)",
+      "attributes": {
+        "limit_per_day": "150000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "payment_internet_naina",
+      "type": "event",
+      "label": "Оплата интернета Наины Веселовой",
+      "attributes": {
+        "amount": "800 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "transaction_suspicious",
+      "type": "event",
+      "label": "Подозрительная операция",
+      "attributes": {
+        "amount": "150000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "card_blocked",
+      "type": "account",
+      "label": "Заблокированная дебетовая карта",
+      "attributes": {
+        "last_digits": "****1234"
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "person_zinovieva_ekaterina",
+      "type": "person",
+      "label": "Зиновьева Екатерина Харитоновна",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "transaction_suspicious_ekaterina",
+      "type": "event",
+      "label": "Подозрительная операция Екатерины Зиновьевой",
+      "attributes": {
+        "amount": "145000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "person_radislav_evdokimov",
+      "type": "person",
+      "label": "Радислав Ааронович Евдокимов",
+      "attributes": {
+        "role": "friend"
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "request_loan_radislav",
+      "type": "event",
+      "label": "Запрос денег в долг от Радислава",
+      "attributes": {
+        "amount": "10000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "case_investigation",
+      "type": "event",
+      "label": "Расследование несанкционированной операции",
+      "attributes": {
+        "case_number": "777-2024-001"
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "request_loan_naina_friend",
+      "type": "event",
+      "label": "Запрос денег в долг от Наины у подруги",
+      "attributes": {
+        "amount": "9500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "request_loan_alla",
+      "type": "event",
+      "label": "Запрос денег в долг у Аллы Гавриловой",
+      "attributes": {
+        "amount": "5000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО «Надежный Банк»",
+      "attributes": {
+        "type": "банк",
+        "rating": "АА-"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "product",
+      "label": "Онлайн-заявка на ипотеку",
+      "attributes": {
+        "status": "подана",
+        "channel": "мобильное приложение",
+        "application_id": "789012"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {
+        "period": "12 месяцев",
+        "year": "2023",
+        "income_amount": "2976000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "document",
+      "label": "Выписка из трудовой книжки",
+      "attributes": {
+        "status": "предоставлена",
+        "last_update": "01.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "organization",
+      "label": "Бюро кредитных историй (БКИ)",
+      "attributes": {
+        "type": "регулятор",
+        "function": "хранение кредитных историй"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "event",
+      "label": "Запрос кредитной истории",
+      "attributes": {
+        "request_id": "54321",
+        "status": "инициирован"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Контакт-центр банка",
+      "attributes": {
+        "channel": "чат в мобильном приложении",
+        "service_type": "консультация"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "event",
+      "label": "Биометрическая верификация",
+      "attributes": {
+        "method": "лицо",
+        "status": "пройдена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "account",
+      "label": "Сберегательный счет",
+      "attributes": {
+        "balance": "1500000 руб.",
+        "currency": "руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "document",
+      "label": "Требования к страхованию",
+      "attributes": {
+        "type": "обязательное",
+        "coverage": "жизнь и имущество"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "organization",
+      "label": "Колхоз Рославль",
+      "attributes": {
+        "type": "работодатель",
+        "industry": "сельское хозяйство"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "event",
+      "label": "Покупка квартиры",
+      "attributes": {
+        "location": "Москва",
+        "type": "жилая недвижимость"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Ремонт дачи",
+      "attributes": {
+        "location": "загород",
+        "type": "недвижимость"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "amount": "480000 руб.",
+        "rate": "14.9%",
+        "term": "3 года"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Уверенность",
+      "attributes": {
+        "level": "высокий",
+        "reason": "ответственное отношение к финансам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Ожидаемая процентная ставка",
+      "attributes": {
+        "product": "ипотека",
+        "rate": "11.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Рассмотрение заявки",
+      "attributes": {
+        "duration_expected": "до 5 рабочих дней",
+        "product": "ипотека"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "План переезда матери",
+      "attributes": {
+        "status": "предполагается",
+        "reason": "близость к дочери"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Квартира",
+      "attributes": {
+        "address": "г. Москва, ул. Мира, д. 25, кв. 10",
+        "cost": "9500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "organization",
+      "label": "ООО «СтройИнвест»",
+      "attributes": {
+        "type": "продавец недвижимости",
+        "legal_form": "ООО"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Задаток за квартиру",
+      "attributes": {
+        "amount": "100000 руб.",
+        "method": "СБП",
+        "date": "12.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "person",
+      "label": "Гаврилова Алла Валентиновна",
+      "attributes": {
+        "role": "подруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "product",
+      "label": "Автокредит Аллы Гавриловой",
+      "attributes": {
+        "amount": "1450000 руб.",
+        "rate": "13.9%",
+        "term": "5 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Воодушевление",
+      "attributes": {
+        "level": "высокий",
+        "reason": "скорое решение жилищного вопроса"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Первоначальный взнос по ипотеке",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "percentage": "15.79%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Ожидаемая процентная ставка по автокредиту",
+      "attributes": {
+        "product": "автокредит",
+        "rate": "14.0%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Расчет ПДН",
+      "attributes": {
+        "status": "инициирован",
+        "consideration": "два кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "product",
+      "label": "Контакт-центр (автокредит)",
+      "attributes": {
+        "channel": "чат в приложении",
+        "query": "документы для автокредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "product",
+      "label": "Оценка недвижимости",
+      "attributes": {
+        "cost": "5000 руб.",
+        "status": "запрошена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Помощь родителям с переездом",
+      "attributes": {
+        "status": "предполагается",
+        "reason": "после покупки квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "person",
+      "label": "Ангелина Юдина",
+      "attributes": {
+        "role": "дочь",
+        "age": "12 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Обсуждение выбора автомобиля",
+      "attributes": {
+        "topic": "цвет автомобиля",
+        "participants": "Галина, Ангелина"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "document",
+      "label": "Требования к страхованию автомобиля",
+      "attributes": {
+        "type": "обязательное",
+        "coverage": "КАСКО и ОСАГО"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "document",
+      "label": "Справка о доходах по форме банка",
+      "attributes": {
+        "purpose": "автокредит",
+        "monthly_income": "180000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "organization",
+      "label": "Автосалон «АвтоМир»",
+      "attributes": {
+        "type": "продавец автомобилей",
+        "location": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Облегчение",
+      "attributes": {
+        "level": "средний",
+        "reason": "одобрение кредитов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Перевод задатка",
+      "attributes": {
+        "amount": "100000 руб.",
+        "date": "12.03.2024",
+        "method": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "product",
+      "label": "Ипотечный кредит (предварительно одобрен)",
+      "attributes": {
+        "amount": "8000000 руб.",
+        "term": "25 лет",
+        "rate": "11.0%",
+        "monthly_payment": "78500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "product",
+      "label": "Автокредит (предварительно одобрен)",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "term": "5 лет",
+        "rate": "13.5%",
+        "monthly_payment": "34500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Начало подбора квартиры",
+      "attributes": {
+        "date": "10.03.2024",
+        "channel": "онлайн-агрегаторы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Подача заявки на автокредит",
+      "attributes": {
+        "date": "15.03.2024",
+        "bank": "ПАО «Надежный Банк»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Обсуждение автокредита Аллы Гавриловой",
+      "attributes": {
+        "date": "09.03.2024",
+        "bank_manager": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Запрос документов для автокредита",
+      "attributes": {
+        "date": "17.03.2024",
+        "document_type": "справка о доходах по форме банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Предоставление справки о доходах для автокредита",
+      "attributes": {
+        "date": "19.03.2024",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Выбор автомобиля Hyundai Creta",
+      "attributes": {
+        "date": "25.03.2024",
+        "location": "Автосалон «АвтоМир»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Подача заявки на потребительский кредит от Лаврентьева",
+      "attributes": {
+        "date": "18.03.2024",
+        "bank": "другой банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "document",
+      "label": "Кредитный отчет",
+      "attributes": {
+        "source": "БКИ",
+        "status": "получен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "document",
+      "label": "Отчет об оценке квартиры",
+      "attributes": {
+        "status": "ожидается",
+        "property_address": "ул. Мира, д. 25, кв. 10"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "person",
+      "label": "Менеджер банка",
+      "attributes": {
+        "role": "сотрудник банка",
+        "department": "кредитный отдел"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_provides_document_1",
+      "source": "person_galina_yudina",
+      "target": "document_income_auto",
+      "relation": "submitted",
+      "attributes": {
+        "date": "19.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_loan_approved_auto_1",
+      "source": "loan_auto_1",
+      "target": "person_galina_yudina",
+      "relation": "approved",
+      "attributes": {
+        "date": "22.03.2024",
+        "rate": "13.5%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_chooses_car_1",
+      "source": "person_galina_yudina",
+      "target": "car_hyundai_creta",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_parent_applies_loan_1",
+      "source": "person_lavrentiev_tv",
+      "target": "loan_consumer_lavrentiev",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "18.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_payment_auto_downpayment_1",
+      "source": "person_galina_yudina",
+      "target": "payment_auto_downpayment",
+      "relation": "paid",
+      "attributes": {
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_loan_approved_mortgage_final_1",
+      "source": "loan_mortgage_approved_final",
+      "target": "person_galina_yudina",
+      "relation": "approved",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_loan_approved_auto_final_1",
+      "source": "loan_auto_approved_final",
+      "target": "person_galina_yudina",
+      "relation": "approved",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_signs_mortgage_contract_1",
+      "source": "person_galina_yudina",
+      "target": "loan_mortgage_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_friend_pays_downpayment_1",
+      "source": "person_mikhailova_marfa",
+      "target": "payment_marfa_downpayment",
+      "relation": "paid",
+      "attributes": {
+        "date": "28.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_pays_mortgage_insurance_1",
+      "source": "person_galina_yudina",
+      "target": "insurance_mortgage",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_signs_auto_contract_1",
+      "source": "person_galina_yudina",
+      "target": "loan_auto_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "07.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfers_to_mother_1",
+      "source": "person_galina_yudina",
+      "target": "payment_to_mother",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_pays_daughter_education_1",
+      "source": "person_galina_yudina",
+      "target": "payment_daughter_education",
+      "relation": "paid",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_husband_checks_limit_1",
+      "source": "person_artemiy_dmitriev",
+      "target": "debit_card_limit",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_pays_kasko_1",
+      "source": "person_galina_yudina",
+      "target": "insurance_kasko",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_mortgage_first_payment_1",
+      "source": "person_galina_yudina",
+      "target": "payment_mortgage_first",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_auto_first_payment_1",
+      "source": "person_galina_yudina",
+      "target": "payment_auto_first",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_husband_requests_money_1",
+      "source": "person_artemiy_dmitriev",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "20000 руб.",
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_transfers_to_husband_1",
+      "source": "person_galina_yudina",
+      "target": "payment_to_husband",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_friend_pays_loan_1",
+      "source": "person_sigismund_agafonov",
+      "target": "payment_sigismund_loan",
+      "relation": "paid",
+      "attributes": {
+        "date": "16.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_debt_burden_calculates_1",
+      "source": "person_galina_yudina",
+      "target": "debt_burden_total",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_card_balance_after_payments_1",
+      "source": "person_galina_yudina",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_pays_internet_naina_1",
+      "source": "person_galina_yudina",
+      "target": "payment_internet_naina",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_receives_suspicious_sms_1",
+      "source": "person_galina_yudina",
+      "target": "transaction_suspicious",
+      "relation": "received",
+      "attributes": {
+        "date": "25.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_calls_contact_center_1",
+      "source": "person_galina_yudina",
+      "target": "transaction_suspicious",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_card_blocked_1",
+      "source": "card_blocked",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_writes_dispute_statement_1",
+      "source": "person_galina_yudina",
+      "target": "transaction_suspicious",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_acquaintance_suspicious_transaction_1",
+      "source": "person_zinovieva_ekaterina",
+      "target": "transaction_suspicious_ekaterina",
+      "relation": "received",
+      "attributes": {
+        "date": "24.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_friend_requests_loan_1",
+      "source": "person_radislav_evdokimov",
+      "target": "request_loan_radislav",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_refuses_friend_1",
+      "source": "person_galina_yudina",
+      "target": "person_radislav_evdokimov",
+      "relation": "rejected",
+      "attributes": {
+        "date": "29.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_bank_starts_investigation_1",
+      "source": "transaction_suspicious",
+      "target": "case_investigation",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_receives_statement_notification_1",
+      "source": "person_galina_yudina",
+      "target": "transaction_suspicious",
+      "relation": "received",
+      "attributes": {
+        "date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_mother_requests_loan_1",
+      "source": "person_naina_veselova",
+      "target": "request_loan_naina_friend",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_requests_loan_from_friend_1",
+      "source": "person_galina_yudina",
+      "target": "request_loan_alla",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_loan_mortgage_rate_stale",
+      "source": "loan_mortgage_1",
+      "target": "person_galina_yudina",
+      "relation": "approved",
+      "attributes": {
+        "rate": "11.5%"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_loan_auto_rate_stale",
+      "source": "loan_auto_1",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "rate": "14.0%"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_debit_card_limit_stale",
+      "source": "debit_card_limit_incorrect",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "limit_per_day": "250000 руб."
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_2",
+      "relation": "submitted",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_2",
+      "target": "loan_mortgage_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_1",
+      "target": "ctx_node_3",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "03.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_1",
+      "target": "ctx_node_4",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "03.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_2",
+      "target": "ctx_node_3",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_2",
+      "target": "ctx_node_4",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_6",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_9",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_1",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_naina_veselova",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_naina_veselova",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_1",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "person_naina_veselova",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_39",
+      "relation": "approved",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_41",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_21",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_21",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_42",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_42",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_23",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_43",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_26",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_1",
+      "target": "ctx_node_28",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_1",
+      "target": "ctx_node_30",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_naina_veselova",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "person_lavrentiev_tv",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_32",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_1",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_1",
+      "target": "ctx_node_44",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_45",
+      "target": "document_income_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "loan_auto_1",
+      "target": "ctx_node_40",
+      "relation": "approved",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_46",
+      "target": "car_hyundai_creta",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "car_hyundai_creta",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "person_lavrentiev_tv",
+      "target": "ctx_node_47",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_47",
+      "target": "loan_consumer_lavrentiev",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_3",
+      "target": "person_galina_yudina",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_4",
+      "target": "person_galina_yudina",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_6",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_5",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_48",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_1",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_39",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_19",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_38",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "loan_auto_1",
+      "target": "person_galina_yudina",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_23",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_50",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_26",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_26",
+      "target": "loan_mortgage_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_1",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_28",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_29",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_1",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_30",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_33",
+      "target": "car_hyundai_creta",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_1",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_34",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_1",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_35",
+      "target": "document_income_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_1",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_40",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_46",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_lavrentiev_tv",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_47",
+      "target": "loan_consumer_lavrentiev",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_39",
+      "target": "loan_mortgage_approved_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_40",
+      "target": "loan_auto_approved_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_19",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_30",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_1",
+      "relation": "received",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "person_galina_yudina",
+      "target": "loan_mortgage_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_3",
+      "target": "ctx_node_1",
+      "relation": "submitted",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_4",
+      "target": "ctx_node_1",
+      "relation": "submitted",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_1",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "person_naina_veselova",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_20",
+      "relation": "paid",
+      "attributes": {
+        "date": "12.03.2024",
+        "amount": "100000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "person_galina_yudina",
+      "target": "loan_auto_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_23",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_1",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "16.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "person_galina_yudina",
+      "target": "document_income_auto",
+      "relation": "submitted",
+      "attributes": {
+        "date": "19.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_1",
+      "target": "loan_auto_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "person_galina_yudina",
+      "target": "car_hyundai_creta",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "person_lavrentiev_tv",
+      "target": "loan_consumer_lavrentiev",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "18.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "loan_mortgage_1",
+      "target": "loan_mortgage_approved_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "loan_auto_1",
+      "target": "loan_auto_approved_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "person_galina_yudina",
+      "target": "loan_mortgage_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "person_galina_yudina",
+      "target": "loan_auto_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "07.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "loan_mortgage_approved_final",
+      "target": "payment_mortgage_first",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "loan_auto_approved_final",
+      "target": "payment_auto_first",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "person_galina_yudina",
+      "target": "debt_burden_total",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "payment_mortgage_first",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "payment_auto_first",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_123",
+      "source": "payment_to_mother",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_124",
+      "source": "payment_daughter_education",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_125",
+      "source": "payment_to_husband",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_126",
+      "source": "payment_internet_naina",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_127",
+      "source": "transaction_suspicious",
+      "target": "card_blocked",
+      "relation": "caused",
+      "attributes": {
+        "date": "25.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_128",
+      "source": "person_galina_yudina",
+      "target": "card_blocked",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_129",
+      "source": "transaction_suspicious",
+      "target": "case_investigation",
+      "relation": "caused",
+      "attributes": {
+        "date": "30.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_130",
+      "source": "person_radislav_evdokimov",
+      "target": "person_galina_yudina",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "28.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_131",
+      "source": "person_naina_veselova",
+      "target": "request_loan_naina_friend",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_132",
+      "source": "person_galina_yudina",
+      "target": "request_loan_alla",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_133",
+      "source": "person_galina_yudina",
+      "target": "loan_mortgage_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_134",
+      "source": "person_galina_yudina",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_135",
+      "source": "document_income_auto",
+      "target": "person_galina_yudina",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_136",
+      "source": "car_hyundai_creta",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_137",
+      "source": "payment_auto_downpayment",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_138",
+      "source": "insurance_mortgage",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_139",
+      "source": "loan_mortgage_approved_final",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_galina_yudina",
+      "target": "car_hyundai_creta",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,51.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_galina_yudina",
+      "target": "loan_auto_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "6,32.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_artemiy_dmitriev",
+      "target": "person_galina_yudina",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "18000 руб.",
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "request_loan_alla",
+      "target": "person_galina_yudina",
+      "relation": "approved",
+      "attributes": {
+        "date": "2,74.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_zinovieva_ekaterina",
+      "target": "payment_auto_first",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_32",
+      "target": "loan_auto_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "6,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "person_mikhailova_marfa",
+      "target": "ctx_node_3",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "3,33.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "5,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "payment_internet_naina",
+      "target": "person_radislav_evdokimov",
+      "relation": "rejected",
+      "attributes": {
+        "date": "31,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_1",
+      "target": "loan_consumer_lavrentiev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_galina_yudina",
+      "target": "loan_auto_1",
+      "relation": "signed",
+      "attributes": {
+        "date": "6,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_galina_yudina",
+      "target": "payment_internet_naina",
+      "relation": "paid",
+      "attributes": {
+        "date": "10,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "payment_to_mother",
+      "target": "loan_auto_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "7,74.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_radislav_evdokimov",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_17",
+      "target": "card_blocked",
+      "relation": "caused",
+      "attributes": {
+        "date": "22,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_40",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_galina_yudina",
+      "target": "debit_card_limit",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "payment_marfa_downpayment",
+      "target": "payment_to_husband",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_33",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "payment_auto_downpayment",
+      "target": "ctx_node_20",
+      "relation": "paid",
+      "attributes": {
+        "date": "10,83.2024",
+        "amount": "100000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "person_radislav_evdokimov",
+      "target": "payment_daughter_education",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_35",
+      "target": "loan_mortgage_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "5,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "ctx_node_5",
+      "target": "document_income_auto",
+      "relation": "submitted",
+      "attributes": {
+        "date": "17,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "transaction_suspicious_ekaterina",
+      "target": "loan_auto_approved_final",
+      "relation": "signed",
+      "attributes": {
+        "date": "5,69.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "person_artemiy_dmitriev",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "payment_internet_naina",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20,74.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "card_blocked",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_1",
+      "target": "person_mikhailova_marfa",
+      "relation": "received",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_24",
+      "target": "ctx_node_39",
+      "relation": "approved",
+      "attributes": {
+        "date": "8,83.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_4",
+      "relation": "paid",
+      "attributes": {
+        "date": "29,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "person_naina_veselova",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_20",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "person_galina_yudina",
+      "target": "insurance_kasko",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_12",
+      "target": "ctx_node_20",
+      "relation": "paid",
+      "attributes": {
+        "date": "13,23.2024",
+        "amount": "100000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_32",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "ctx_node_5",
+      "target": "case_investigation",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "ctx_node_8",
+      "target": "debit_card_balance_after_payments",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "person_galina_yudina",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "payment_to_husband",
+      "target": "loan_auto_approved_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "loan_consumer_lavrentiev",
+      "target": "car_hyundai_creta",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,76.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "person_galina_yudina",
+      "target": "payment_mortgage_first",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,74.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "ctx_node_1",
+      "target": "person_lavrentiev_tv",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "person_galina_yudina",
+      "target": "payment_auto_first",
+      "relation": "rejected",
+      "attributes": {
+        "date": "26,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "ctx_node_46",
+      "target": "loan_mortgage_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "ctx_node_18",
+      "target": "loan_mortgage_approved_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_galina_yudina",
+      "source": "person_galina_yudina",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_1",
+      "source": "loan_mortgage_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto_1",
+      "source": "loan_auto_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_document_income_auto",
+      "source": "document_income_auto",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_car_hyundai_creta",
+      "source": "car_hyundai_creta",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_auto_downpayment",
+      "source": "payment_auto_downpayment",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_insurance_mortgage",
+      "source": "insurance_mortgage",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_approved_final",
+      "source": "loan_mortgage_approved_final",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto_approved_final",
+      "source": "loan_auto_approved_final",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_to_mother",
+      "source": "payment_to_mother",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_daughter_education",
+      "source": "payment_daughter_education",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_insurance_kasko",
+      "source": "insurance_kasko",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_mortgage_first",
+      "source": "payment_mortgage_first",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_auto_first",
+      "source": "payment_auto_first",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_to_husband",
+      "source": "payment_to_husband",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_debt_burden_total",
+      "source": "debt_burden_total",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_debit_card_balance_after_payments",
+      "source": "debit_card_balance_after_payments",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_naina_veselova",
+      "source": "person_naina_veselova",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_lavrentiev_tv",
+      "source": "person_lavrentiev_tv",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_lavrentiev",
+      "source": "loan_consumer_lavrentiev",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_mikhailova_marfa",
+      "source": "person_mikhailova_marfa",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_marfa_downpayment",
+      "source": "payment_marfa_downpayment",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_artemiy_dmitriev",
+      "source": "person_artemiy_dmitriev",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_debit_card_limit",
+      "source": "debit_card_limit",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_sigismund_agafonov",
+      "source": "person_sigismund_agafonov",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_sigismund_loan",
+      "source": "payment_sigismund_loan",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_debit_card_limit_incorrect",
+      "source": "debit_card_limit_incorrect",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_payment_internet_naina",
+      "source": "payment_internet_naina",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_transaction_suspicious",
+      "source": "transaction_suspicious",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_card_blocked",
+      "source": "card_blocked",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_zinovieva_ekaterina",
+      "source": "person_zinovieva_ekaterina",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_transaction_suspicious_ekaterina",
+      "source": "transaction_suspicious_ekaterina",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_radislav_evdokimov",
+      "source": "person_radislav_evdokimov",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_request_loan_radislav",
+      "source": "request_loan_radislav",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_case_investigation",
+      "source": "case_investigation",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_request_loan_naina_friend",
+      "source": "request_loan_naina_friend",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_request_loan_alla",
+      "source": "request_loan_alla",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

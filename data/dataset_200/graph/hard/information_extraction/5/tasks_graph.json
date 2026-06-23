@@ -1,0 +1,26 @@
+{
+  "information_extraction": [
+    {
+      "question": "Какова разность между двумя крупнейшими исходящими платежами клиента из с. Арзамас за один и тот же месяц?",
+      "answer": "28200 руб.",
+      "answer_format": "N руб.",
+      "reasoning_path": [
+        "person_sila_zykov --[paid]--> loan_auto | amount: 58200 руб. | date: 10.07.2024",
+        "person_sila_zykov --[transferred_to]--> person_valeria_safonova | amount: 30000 руб. | date: 05.07.2024",
+        "вычисление: 58200 − 30000 = 28200 руб."
+      ],
+      "capability": "information_extraction",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "person_sila_zykov",
+        "loan_auto",
+        "person_valeria_safonova"
+      ],
+      "decoy_answers": [
+        "27700 руб.",
+        "28700 руб.",
+        "29200 руб."
+      ]
+    }
+  ]
+}

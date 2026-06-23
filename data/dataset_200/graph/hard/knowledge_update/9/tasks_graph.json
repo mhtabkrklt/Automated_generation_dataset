@@ -1,0 +1,26 @@
+{
+  "knowledge_update": [
+    {
+      "question": "Под какой процентный показатель оформлен банковский договор по программе снижения долговой нагрузки для реставратора?",
+      "answer": "12.5%",
+      "answer_format": "ставка/процент",
+      "reasoning_path": [
+        "Договор --[changed_to]--> Продукт | value: 15.0% (stale: true — A исходное)",
+        "Договор --[changed_to]--> Продукт | value: 13.0% (stale: true — B изменение)",
+        "Договор --[changed_to]--> Продукт | value: 15.0% (stale: true — A откат)",
+        "Договор --[changed_to]--> Продукт | value: 12.5% (ground_truth: true — C финальное)"
+      ],
+      "capability": "knowledge_update",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "Договор рефинансирования ипотеки",
+        "Ипотечный продукт"
+      ],
+      "decoy_answers": [
+        "13.0%",
+        "15.0%",
+        "14.5%"
+      ]
+    }
+  ]
+}

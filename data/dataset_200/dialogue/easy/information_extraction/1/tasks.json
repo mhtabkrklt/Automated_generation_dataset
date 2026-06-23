@@ -1,0 +1,18 @@
+{
+  "information_extraction": [
+    {
+      "thought": "Рассуждение на русском: я выбрал факт [Строка — Customer ID] из Personal Introduction, потому что это атомарный идентификатор клиента, он явно указан в вводных данных ровно один раз и требует точного воспроизведения без домыслов.",
+      "question": "Какой идентификатор клиента указан во вводной информации?",
+      "answer": "CID-458921",
+      "source_chat_ids": [
+        1
+      ],
+      "source_bullet": {
+        "capability": "information_extraction",
+        "category": "Name",
+        "bullet_points": "Personal Introduction: Я, Иванов Пётр Сергеевич, работаю в ООО «СтройИнвест», доход по профилю 89 000 руб/мес; паспорт серия 4500 номер 12 3456; Customer ID: CID-458921; кодовое слово «Роса». Запущена биометрическая проверка (Identity Verification). [CATEGORY: Client Identification Labels; FOCUS: Passport Data, Code Word, Biometric Check, Customer ID]"
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

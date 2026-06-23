@@ -1,0 +1,1574 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Фёкла Зиновьева открывает срочный вклад и накопительный счет, активно управляя сбережениями."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Фёкла Зиновьева переводит средства матери, сталкивается с вопросами налогообложения и пролонгацией вклада."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Фёкла Зиновьева обсуждает совместный вклад, открывает новый депозит и интересуется инвестициями."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva",
+      "type": "person",
+      "label": "Зиновьева Фёкла Владимировна",
+      "attributes": {
+        "role": "клиент",
+        "occupation": "иллюстратор",
+        "income": "125000 рублей",
+        "emotional_state_e1": "довольна",
+        "emotional_state_e2_irritated": "раздражение",
+        "emotional_state_e2_confused": "Client Confused",
+        "emotional_state_e3_grateful": "Client Grateful",
+        "emotional_state_e3_satisfied": "Client Satisfied"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "location_apsheronsk",
+      "type": "organization",
+      "label": "п. Апшеронск",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "goal_savings_management",
+      "type": "event",
+      "label": "Активное управление сбережениями",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "amount_125k_rub",
+      "type": "amount",
+      "label": "125 000 рублей",
+      "attributes": {
+        "value": 125000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_5m_rub",
+      "type": "amount",
+      "label": "5 000 000 рублей",
+      "attributes": {
+        "value": 5000000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "bank_financial_partner",
+      "type": "organization",
+      "label": "Финансовый Партнер",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_np",
+      "type": "product",
+      "label": "Вклад 'Накопительный Плюс'",
+      "attributes": {
+        "rate": "12.9% годовых",
+        "duration": "180 дней",
+        "capitalization": "ежемесячная"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "contract_789012",
+      "type": "document",
+      "label": "Договор 789012",
+      "attributes": {
+        "type": "договор вклада"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "service_mobile_app",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "event_deposit_opening_np",
+      "type": "event",
+      "label": "Открытие вклада 'Накопительный Плюс'",
+      "attributes": {
+        "date": "15 марта 2024 года",
+        "time": "14:30",
+        "status": "Вклад открыт",
+        "verification_method": "кодовое слово 'Апшеронск' и последние 4 цифры паспорта 4500",
+        "signing_method": "электронная подпись"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_53_75k_rub",
+      "type": "amount",
+      "label": "53 750 рублей",
+      "attributes": {
+        "value": 53750,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_interest_accrual_np",
+      "type": "event",
+      "label": "Начисление процентов по вкладу 'Накопительный Плюс'",
+      "attributes": {
+        "date": "15 апреля 2024 года",
+        "time": "09:15"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "savings_gk",
+      "type": "product",
+      "label": "Накопительный счет 'Гибкая Копилка'",
+      "attributes": {
+        "rate": "10.5% годовых",
+        "max_balance_for_rate": "3 000 000 рублей"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_savings_opening_gk",
+      "type": "event",
+      "label": "Открытие накопительного счета 'Гибкая Копилка'",
+      "attributes": {
+        "date": "20 апреля 2024 года"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "account_f_zinovieva_current",
+      "type": "account",
+      "label": "Текущий счет Фёклы Зиновьевой",
+      "attributes": {
+        "type": "дебетовый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "amount_800k_rub",
+      "type": "amount",
+      "label": "800 000 рублей",
+      "attributes": {
+        "value": 800000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_m_zueva",
+      "type": "person",
+      "label": "Маргарита Зуева",
+      "attributes": {
+        "age": 88,
+        "role": "мать клиента"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_150k_rub",
+      "type": "amount",
+      "label": "150 000 рублей",
+      "attributes": {
+        "value": 150000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_funds_transfer_gk_mother",
+      "type": "event",
+      "label": "Перевод средств матери",
+      "attributes": {
+        "date": "05 мая 2024 года",
+        "time": "11:00",
+        "purpose": "оплата санаторного лечения",
+        "commission": "0 рублей"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "service_chat_support",
+      "type": "product",
+      "label": "Чат поддержки",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "event_tax_inquiry",
+      "type": "event",
+      "label": "Запрос о налогообложении",
+      "attributes": {
+        "topic_initial": "расчет налога на доходы по вкладам",
+        "topic_clarification": "уплата налога и подача декларации",
+        "support_resolution": "временные технические работы, прямая ссылка, помощь в формировании справки НДФЛ",
+        "tax_advice": "банк удержит НДФЛ с суммы превышения до 28 января 2025 года, декларация не нужна"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_deposit_rollover_np",
+      "type": "event",
+      "label": "Пролонгация вклада 'Накопительный Плюс'",
+      "attributes": {
+        "date": "11 сентября 2024 года",
+        "time": "00:01",
+        "new_rate": "11.5% годовых",
+        "new_duration": "180 дней"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "notification_ndfl_2023_10",
+      "type": "document",
+      "label": "Уведомление №НДФЛ-2023/10",
+      "attributes": {
+        "type": "уведомление о процентном доходе",
+        "date": "20 октября 2024 года",
+        "year": "2023",
+        "income_amount": "165 000 рублей"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_165k_rub",
+      "type": "amount",
+      "label": "165 000 рублей",
+      "attributes": {
+        "value": 165000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "tax_threshold_cb",
+      "type": "event",
+      "label": "Необлагаемый порог ЦБ",
+      "attributes": {
+        "value": "150 000 рублей"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_15k_rub",
+      "type": "amount",
+      "label": "15 000 рублей",
+      "attributes": {
+        "value": 15000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_y_panov",
+      "type": "person",
+      "label": "Яков Панов",
+      "attributes": {
+        "age": 52,
+        "role": "супруг клиента"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "bank_blagosostoyanie",
+      "type": "organization",
+      "label": "Благосостояние",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "amount_2_5m_rub",
+      "type": "amount",
+      "label": "2 500 000 рублей",
+      "attributes": {
+        "value": 2500000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "goal_new_apartment",
+      "type": "event",
+      "label": "Накопление на новую квартиру",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "event_joint_account_discussion",
+      "type": "event",
+      "label": "Обсуждение совместного вклада",
+      "attributes": {
+        "date": "01 ноября 2024 года",
+        "product_type": "совместный вклад 'Семейный Капитал'"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_a_petukhova",
+      "type": "person",
+      "label": "Петухова Алевтина Алексеевна",
+      "attributes": {
+        "age": 61,
+        "role": "знакомая клиента"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_75k_rub",
+      "type": "amount",
+      "label": "75 000 рублей",
+      "attributes": {
+        "value": 75000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "service_sbp",
+      "type": "product",
+      "label": "СБП",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "event_funds_transfer_sbp_alevtina",
+      "type": "event",
+      "label": "Перевод средств знакомой через СБП",
+      "attributes": {
+        "date": "15 ноября 2024 года",
+        "time": "16:45",
+        "purpose": "помощь в оплате срочного ремонта автомобиля",
+        "verification_method": "СМС-код"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "deposit_d",
+      "type": "product",
+      "label": "Вклад 'Доходный'",
+      "attributes": {
+        "rate": "13.2% годовых",
+        "duration": "365 дней",
+        "replenishment_option": "без возможности пополнения"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "bank_perspektiva",
+      "type": "organization",
+      "label": "Перспектива",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "amount_1m_rub",
+      "type": "amount",
+      "label": "1 000 000 рублей",
+      "attributes": {
+        "value": 1000000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "contract_987654",
+      "type": "document",
+      "label": "Договор 987654",
+      "attributes": {
+        "type": "договор вклада"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_deposit_opening_d",
+      "type": "event",
+      "label": "Открытие вклада 'Доходный'",
+      "attributes": {
+        "date": "01 декабря 2024 года"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "service_asv",
+      "type": "product",
+      "label": "Агентство по страхованию вкладов (АСВ)",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "amount_1_4m_rub",
+      "type": "amount",
+      "label": "1 400 000 рублей",
+      "attributes": {
+        "value": 1400000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_asv_clarification",
+      "type": "event",
+      "label": "Уточнение информации об АСВ",
+      "attributes": {
+        "date": "10 декабря 2024 года",
+        "time": "10:30"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_investment_inquiry",
+      "type": "event",
+      "label": "Запрос об инвестициях",
+      "attributes": {
+        "products_of_interest": "облигации или паи ПИФов",
+        "advice_provided": "ссылки на обучающие материалы, онлайн-консультация с финансовым советником"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_f_zinovieva_ep1",
+      "source": "person_f_zinovieva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_location_apsheronsk_ep1",
+      "source": "location_apsheronsk",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_savings_management_ep1",
+      "source": "goal_savings_management",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_125k_rub_ep1",
+      "source": "amount_125k_rub",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_5m_rub_ep1",
+      "source": "amount_5m_rub",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_bank_financial_partner_ep1",
+      "source": "bank_financial_partner",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_deposit_np_ep1",
+      "source": "deposit_np",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_contract_789012_ep1",
+      "source": "contract_789012",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_service_mobile_app_ep1",
+      "source": "service_mobile_app",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_deposit_opening_np_ep1",
+      "source": "event_deposit_opening_np",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_53_75k_rub_ep1",
+      "source": "amount_53_75k_rub",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_interest_accrual_np_ep1",
+      "source": "event_interest_accrual_np",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_savings_gk_ep1",
+      "source": "savings_gk",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_savings_opening_gk_ep1",
+      "source": "event_savings_opening_gk",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_account_f_zinovieva_current_ep1",
+      "source": "account_f_zinovieva_current",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_800k_rub_ep1",
+      "source": "amount_800k_rub",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_f_zinovieva_ep2",
+      "source": "person_f_zinovieva",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_m_zueva_ep2",
+      "source": "person_m_zueva",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_150k_rub_ep2",
+      "source": "amount_150k_rub",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_funds_transfer_gk_mother_ep2",
+      "source": "event_funds_transfer_gk_mother",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_service_chat_support_ep2",
+      "source": "service_chat_support",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_tax_inquiry_ep2",
+      "source": "event_tax_inquiry",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_deposit_rollover_np_ep2",
+      "source": "event_deposit_rollover_np",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_notification_ndfl_2023_10_ep2",
+      "source": "notification_ndfl_2023_10",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_165k_rub_ep2",
+      "source": "amount_165k_rub",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_tax_threshold_cb_ep2",
+      "source": "tax_threshold_cb",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_15k_rub_ep2",
+      "source": "amount_15k_rub",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_f_zinovieva_ep3",
+      "source": "person_f_zinovieva",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_y_panov_ep3",
+      "source": "person_y_panov",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_bank_blagosostoyanie_ep3",
+      "source": "bank_blagosostoyanie",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_2_5m_rub_ep3",
+      "source": "amount_2_5m_rub",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_new_apartment_ep3",
+      "source": "goal_new_apartment",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_joint_account_discussion_ep3",
+      "source": "event_joint_account_discussion",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_a_petukhova_ep3",
+      "source": "person_a_petukhova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_75k_rub_ep3",
+      "source": "amount_75k_rub",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_service_sbp_ep3",
+      "source": "service_sbp",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_funds_transfer_sbp_alevtina_ep3",
+      "source": "event_funds_transfer_sbp_alevtina",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_deposit_d_ep3",
+      "source": "deposit_d",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_bank_perspektiva_ep3",
+      "source": "bank_perspektiva",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_1m_rub_ep3",
+      "source": "amount_1m_rub",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_contract_987654_ep3",
+      "source": "contract_987654",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_deposit_opening_d_ep3",
+      "source": "event_deposit_opening_d",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_service_asv_ep3",
+      "source": "service_asv",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_1_4m_rub_ep3",
+      "source": "amount_1_4m_rub",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_asv_clarification_ep3",
+      "source": "event_asv_clarification",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_investment_inquiry_ep3",
+      "source": "event_investment_inquiry",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_works_as_illustrator",
+      "source": "person_f_zinovieva",
+      "target": "person_f_zinovieva",
+      "relation": "contains",
+      "attributes": {
+        "role": "иллюстратор"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_lives_in_apsheronsk",
+      "source": "person_f_zinovieva",
+      "target": "location_apsheronsk",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_has_income_of_125k",
+      "source": "person_f_zinovieva",
+      "target": "amount_125k_rub",
+      "relation": "contains",
+      "attributes": {
+        "frequency": "ежемесячно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_has_goal_savings_management",
+      "source": "person_f_zinovieva",
+      "target": "goal_savings_management",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_decides_to_place_5m",
+      "source": "person_f_zinovieva",
+      "target": "amount_5m_rub",
+      "relation": "contains",
+      "attributes": {
+        "context": "текущие средства на дебетовом счете приносят минимальный доход"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_deposit_opening_np_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_deposit_opening_np",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_deposit_opening_np_opens_deposit",
+      "source": "event_deposit_opening_np",
+      "target": "deposit_np",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_np_in_bank_financial_partner",
+      "source": "deposit_np",
+      "target": "bank_financial_partner",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_np_for_amount_5m",
+      "source": "deposit_np",
+      "target": "amount_5m_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "deposit_np_has_contract_789012",
+      "source": "deposit_np",
+      "target": "contract_789012",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_uses_mobile_app_for_opening",
+      "source": "person_f_zinovieva",
+      "target": "service_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "action": "изучение предложений, подтверждение, подписание"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_interest_accrual_np_for_deposit_np",
+      "source": "event_interest_accrual_np",
+      "target": "deposit_np",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_interest_accrual_np_adds_amount",
+      "source": "event_interest_accrual_np",
+      "target": "amount_53_75k_rub",
+      "relation": "contains",
+      "attributes": {
+        "new_total_amount": "5 053 750 рублей"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_savings_opening_gk_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_savings_opening_gk",
+      "relation": "caused",
+      "attributes": {
+        "reason": "сохранить часть средств в более ликвидной форме"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_savings_opening_gk_opens_savings",
+      "source": "event_savings_opening_gk",
+      "target": "savings_gk",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "savings_gk_in_bank_financial_partner",
+      "source": "savings_gk",
+      "target": "bank_financial_partner",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_transfers_from_current_to_savings",
+      "source": "person_f_zinovieva",
+      "target": "account_f_zinovieva_current",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "20 апреля 2024 года",
+        "method": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_transfers_to_savings_gk",
+      "source": "person_f_zinovieva",
+      "target": "savings_gk",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "800 000 рублей"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_satisfied_with_mobile_app",
+      "source": "person_f_zinovieva",
+      "target": "service_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "reason": "скорость и удобство открытия новых продуктов, интуитивность интерфейса, мгновенная обработка запросов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_funds_transfer_gk_mother_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_funds_transfer_gk_mother",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_funds_transfer_gk_mother_from_savings_gk",
+      "source": "event_funds_transfer_gk_mother",
+      "target": "savings_gk",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_funds_transfer_gk_mother_to_person_m_zueva",
+      "source": "event_funds_transfer_gk_mother",
+      "target": "person_m_zueva",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_funds_transfer_gk_mother_for_amount_150k",
+      "source": "event_funds_transfer_gk_mother",
+      "target": "amount_150k_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_inquires_tax_via_chat",
+      "source": "person_f_zinovieva",
+      "target": "event_tax_inquiry",
+      "relation": "contains",
+      "attributes": {
+        "channel": "чат поддержки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_experiences_issue_with_mobile_app",
+      "source": "person_f_zinovieva",
+      "target": "service_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "issue_type": "медленная загрузка интерфейса",
+        "context": "раздел 'Справки и выписки'",
+        "client_reaction": "написала в чат: 'Почему так долго грузится раздел?'"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "service_chat_support_resolves_issue",
+      "source": "service_chat_support",
+      "target": "event_tax_inquiry",
+      "relation": "contains",
+      "attributes": {
+        "resolution": "временные технические работы, прямая ссылка на раздел с информацией о налогообложении, помощь в формировании справки НДФЛ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_np_undergoes_rollover",
+      "source": "deposit_np",
+      "target": "event_deposit_rollover_np",
+      "relation": "contains",
+      "attributes": {
+        "context": "срок действия истек",
+        "mechanism": "автоматически"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_deposit_rollover_np_according_to_contract",
+      "source": "event_deposit_rollover_np",
+      "target": "contract_789012",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_receives_rollover_notification",
+      "source": "person_f_zinovieva",
+      "target": "service_mobile_app",
+      "relation": "received",
+      "attributes": {
+        "notification_type": "push-уведомление",
+        "content": "пролонгация вклада с новой ставкой 11.5% и сроком 180 дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_receives_ndfl_notification",
+      "source": "person_f_zinovieva",
+      "target": "notification_ndfl_2023_10",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "notification_ndfl_2023_10_from_bank_financial_partner",
+      "source": "notification_ndfl_2023_10",
+      "target": "bank_financial_partner",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "notification_ndfl_2023_10_states_income_165k",
+      "source": "notification_ndfl_2023_10",
+      "target": "amount_165k_rub",
+      "relation": "contains",
+      "attributes": {
+        "for_year": "2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "amount_165k_exceeds_tax_threshold",
+      "source": "amount_165k_rub",
+      "target": "tax_threshold_cb",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "tax_threshold_cb_has_value_150k",
+      "source": "tax_threshold_cb",
+      "target": "amount_150k_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_tax_inquiry_receives_advice_on_tax_payment",
+      "source": "event_tax_inquiry",
+      "target": "service_chat_support",
+      "relation": "received",
+      "attributes": {
+        "advice": "банк как налоговый агент самостоятельно удержит НДФЛ с суммы превышения (15 000 рублей) и перечислит его в бюджет до 28 января 2025 года, Фёкле Владимировне не нужно будет подавать декларацию"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_discusses_with_y_panov",
+      "source": "person_f_zinovieva",
+      "target": "person_y_panov",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_joint_account_discussion_initiates",
+      "source": "person_f_zinovieva",
+      "target": "event_joint_account_discussion",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_joint_account_discussion_in_bank_blagosostoyanie",
+      "source": "event_joint_account_discussion",
+      "target": "bank_blagosostoyanie",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_joint_account_discussion_for_amount_2_5m",
+      "source": "event_joint_account_discussion",
+      "target": "amount_2_5m_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_joint_account_discussion_for_goal_new_apartment",
+      "source": "event_joint_account_discussion",
+      "target": "goal_new_apartment",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_funds_transfer_sbp_alevtina_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_funds_transfer_sbp_alevtina",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_funds_transfer_sbp_alevtina_to_person_a_petukhova",
+      "source": "event_funds_transfer_sbp_alevtina",
+      "target": "person_a_petukhova",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_funds_transfer_sbp_alevtina_for_amount_75k",
+      "source": "event_funds_transfer_sbp_alevtina",
+      "target": "amount_75k_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_funds_transfer_sbp_alevtina_uses_sbp",
+      "source": "event_funds_transfer_sbp_alevtina",
+      "target": "service_sbp",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_deposit_opening_d_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_deposit_opening_d",
+      "relation": "caused",
+      "attributes": {
+        "reason": "получение крупного гонорара"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_deposit_opening_d_opens_deposit_d",
+      "source": "event_deposit_opening_d",
+      "target": "deposit_d",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_d_in_bank_perspektiva",
+      "source": "deposit_d",
+      "target": "bank_perspektiva",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_d_for_amount_1m",
+      "source": "deposit_d",
+      "target": "amount_1m_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "deposit_d_has_contract_987654",
+      "source": "deposit_d",
+      "target": "contract_987654",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_compares_offers",
+      "source": "person_f_zinovieva",
+      "target": "bank_perspektiva",
+      "relation": "contains",
+      "attributes": {
+        "strategy": "диверсифицировать сбережения и максимизировать доходность",
+        "selection_criteria": "Лучшее предложение по ставке"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_asv_clarification_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_asv_clarification",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_asv_clarification_via_chat",
+      "source": "event_asv_clarification",
+      "target": "service_chat_support",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "service_asv_insures_deposits_up_to_1_4m",
+      "source": "service_asv",
+      "target": "amount_1_4m_rub",
+      "relation": "contains",
+      "attributes": {
+        "per_bank": "в каждом банке"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_f_zinovieva_security_check_on_transfer",
+      "source": "person_f_zinovieva",
+      "target": "bank_perspektiva",
+      "relation": "transferred_to",
+      "attributes": {
+        "context": "перевод крупной суммы на новый вклад в другом банке",
+        "verification_method": "push-уведомление и биометрический скан",
+        "client_perception": "важная мера безопасности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_investment_inquiry_by_f_zinovieva",
+      "source": "person_f_zinovieva",
+      "target": "event_investment_inquiry",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_investment_inquiry_via_chat",
+      "source": "event_investment_inquiry",
+      "target": "service_chat_support",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "service_chat_support_provides_investment_advice",
+      "source": "service_chat_support",
+      "target": "event_investment_inquiry",
+      "relation": "contains",
+      "attributes": {
+        "advice_details": "ссылки на обучающие материалы по инвестициям, предложение записаться на онлайн-консультацию с финансовым советником для разработки индивидуальной стратегии управления капиталом"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_f_zinovieva_grateful_for_comprehensive_approach",
+      "source": "person_f_zinovieva",
+      "target": "service_chat_support",
+      "relation": "contains",
+      "attributes": {
+        "reason": "комплексный подход и возможность решать все финансовые вопросы дистанционно",
+        "impact": "финансовые цели стали более ясными и достижимыми"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

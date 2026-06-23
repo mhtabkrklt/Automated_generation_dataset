@@ -1,0 +1,1287 @@
+[
+  [
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте, это Боян Ярославович Лукин. Я сантехник из Красноселькупа, мой доход 259 000 рублей.",
+        "id": 0,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"full_name\": \"Боян Ярославович Лукин\",\n  \"profession\": \"сантехник\",\n  \"location\": \"Красноселькуп\",\n  \"income\": {\n    \"amount\": 259000,\n    \"currency\": \"RUB\"\n  }\n}\n```",
+        "id": 1,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Моя цель на год — увеличить доходность по ИИС на 2% и накопить 1.5 млн на новое оборудование.",
+        "id": 2,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"goals\": [\n    {\n      \"type\": \"increase_profitability\",\n      \"target_asset\": \"ИИС\",\n      \"amount\": 2,\n      \"unit\": \"%\"\n    },\n    {\n      \"type\": \"savings\",\n      \"purpose\": \"новое оборудование\",\n      \"amount\": 1500000,\n      \"currency\": \"RUB\"\n    }\n  ]\n}\n```",
+        "id": 3,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "У меня вопрос по одной покупке, которую я совершил 01.03.2024 дебетовой картой МИР Platinum.",
+        "id": 4,
+        "target_bullet_id": "14",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"question_context\": {\n    \"transaction_date\": \"2024-03-01\",\n    \"payment_method\": \"дебетовая карта МИР Platinum\"\n  }\n}\n```",
+        "id": 5,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Это была покупка на 75 000 ₽ в магазине \"Техномирр\". Я жду кэшбэк 3% за электронику.",
+        "id": 6,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"purchase_details\": {\n    \"amount\": 75000,\n    \"currency\": \"RUB\",\n    \"store_name\": \"Техномирр\",\n    \"expected_cashback\": {\n      \"percentage\": 3,\n      \"category\": \"электроника\"\n    }\n  }\n}\n```",
+        "id": 7,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "И еще, я оплачивал коммуналку за февраль на 4 800 ₽ через мобильное приложение. Там же 0.5% кэшбэк?",
+        "id": 8,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"utility_payment\": {\n    \"amount\": 4800,\n    \"currency\": \"RUB\",\n    \"period\": \"февраль\",\n    \"payment_method\": \"мобильное приложение\",\n    \"expected_cashback\": {\n      \"percentage\": 0.5\n    }\n  }\n}\n```",
+        "id": 9,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте, 5 марта на мой счет 40817810000000001234 пришол кэшбэк за февраль 1200 ₽, но кэшбэк за покупку 01.03.2024 на 75 000 ₽ не учли.",
+        "id": 10,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_received\": {\n    \"date\": \"2024-03-05\",\n    \"account_number\": \"40817810000000001234\",\n    \"amount\": 1200,\n    \"currency\": \"RUB\",\n    \"period\": \"февраль\"\n  },\n  \"cashback_missing\": {\n    \"transaction_date\": \"2024-03-01\",\n    \"purchase_amount\": 75000,\n    \"currency\": \"RUB\"\n  }\n}\n```",
+        "id": 11,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я уже обращался 06.03.2024 по этому вопросу в чат, сессия № 123456789, указывал транзакцию 987654321. Что-то изменилось?",
+        "id": 12,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"previous_appeal\": {\n    \"date\": \"2024-03-06\",\n    \"channel\": \"чат\",\n    \"session_id\": \"123456789\",\n    \"transaction_id\": \"987654321\"\n  },\n  \"inquiry\": \"статус_изменений\"\n}\n```",
+        "id": 13,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Ваш чат-бот 07.03.2024 сообщил, что с 01.03.2024 ставку по \"Электронике\" изменили с 3% на 1% по пункту 4.2.1 правил. Это правда?",
+        "id": 14,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"chatbot_information\": {\n    \"date_of_communication\": \"2024-03-07\",\n    \"cashback_rule_change\": {\n      \"effective_date\": \"2024-03-01\",\n      \"category\": \"Электроника\",\n      \"old_rate\": {\n        \"amount\": 3,\n        \"unit\": \"%\"\n      },\n      \"new_rate\": {\n        \"amount\": 1,\n        \"unit\": \"%\"\n      },\n      \"rule_reference\": \"пункт 4.2.1 правил\"\n    }\n  },\n  \"inquiry\": \"подтверждение_информации\"\n}\n```",
+        "id": 15,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "И вообще, я очень недоволен работой чат-бота! Пришлось ждать ответа 15 минут, а обычно это занимает не больше 5. Это раздражает.",
+        "id": 16,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"customer_feedback\": {\n    \"service_type\": \"чат-бот\",\n    \"sentiment\": \"недоволен\",\n    \"reason\": \"долгое ожидание ответа\",\n    \"waiting_time_details\": {\n      \"actual_wait_minutes\": 15,\n      \"usual_wait_minutes_max\": 5\n    }\n  }\n}\n```",
+        "id": 17,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Еще у меня проблема: 10.03.2024 я потерял дебетовую карту МИР Platinum 2202 **** 1234 в поездке и сразу ее заблокировал через приложение по СМС-коду 7890.",
+        "id": 18,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_issue\": {\n    \"event_date\": \"2024-03-10\",\n    \"event_type\": \"потеря карты\",\n    \"card_details\": {\n      \"type\": \"дебетовая\",\n      \"payment_system\": \"МИР\",\n      \"product\": \"Platinum\",\n      \"partial_number\": \"2202 **** 1234\"\n    },\n    \"blocking_details\": {\n      \"status\": \"заблокирована\",\n      \"method\": \"приложение по СМС-коду\",\n      \"sms_code\": \"7890\"\n    }\n  }\n}\n```",
+        "id": 19,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. Я 10 марта заказывал перевыпуск утерянной карты. Подтвердите, что она будет доставлена курьером на Северную, д. 5, кв. 12 в Красноселькупе?",
+        "id": 20,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_reissue_delivery_confirmation\": {\n    \"order_date\": \"2024-03-10\",\n    \"delivery_method\": \"курьер\",\n    \"delivery_address\": {\n      \"street\": \"Северная\",\n      \"house\": \"5\",\n      \"apartment\": \"12\",\n      \"city\": \"Красноселькуп\"\n    }\n  }\n}\n```",
+        "id": 21,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Мне пришло уведомление, что новая карта (2202 **** 5678) выпущена. Доставка назначена на 15 марта с 14 до 18 часов, верно?",
+        "id": 22,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_delivery_details\": {\n    \"new_card_partial_number\": \"2202 **** 5678\",\n    \"delivery_date\": \"2024-03-15\",\n    \"delivery_time_window\": \"14:00-18:00\",\n    \"inquiry\": \"подтверждение_доставки\"\n  }\n}\n```",
+        "id": 23,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Еще хотел уточнить, лимит на снятие наличных в 300 000 рублей в месяц сохранится на новой карте?",
+        "id": 24,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_limit_inquiry\": {\n    \"limit_type\": \"снятие наличных\",\n    \"amount\": {\n      \"value\": 300000,\n      \"currency\": \"рублей\",\n      \"period\": \"месяц\"\n    },\n    \"card_context\": \"новая карта\",\n    \"inquiry\": \"сохранение_лимита\"\n  }\n}\n```",
+        "id": 25,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Моя супруга, Майя Львовна, тоже 10.03 подавала заявку на перевыпуск своей кредитной карты Visa Gold, у нее срок истекакт. Как у нее дела?",
+        "id": 26,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"spouse_card_reissue_status_inquiry\": {\n    \"spouse_name\": \"Майя Львовна\",\n    \"application_date\": \"2024-03-10\",\n    \"card_details\": {\n      \"type\": \"кредитная карта\",\n      \"payment_system\": \"Visa\",\n      \"product\": \"Gold\"\n    },\n    \"reason_for_reissue\": \"срок истекает\",\n    \"inquiry\": \"статус_заявки\"\n  }\n}\n```",
+        "id": 27,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "И последний вопрос: утеря карты никак не повлияет на доступ к моему брокерскому счету (№ 50010000000000000001) и ИИС?",
+        "id": 28,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-03-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"account_access_inquiry\": {\n    \"event\": \"утеря карты\",\n    \"affected_accounts\": [\n      {\n        \"type\": \"брокерский счет\",\n        \"account_number\": \"50010000000000000001\"\n      },\n      {\n        \"type\": \"ИИС\"\n      }\n    ],\n    \"inquiry\": \"влияние_на_доступ\"\n  }\n}\n```",
+        "id": 29,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. Хотел подтвердить, что 15 марта в 15:30 мне доставили новую карту МИР Platinum.",
+        "id": 30,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_delivery_confirmation\": {\n    \"delivery_date\": \"2024-03-15\",\n    \"delivery_time\": \"15:30\",\n    \"card_details\": {\n      \"type\": \"новая карта\",\n      \"payment_system\": \"МИР\",\n      \"product\": \"Platinum\"\n    },\n    \"status\": \"доставлена\"\n  }\n}\n```",
+        "id": 31,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я ее сразу активировал через приложение, пин-код установил 1965. Все хорошо прошло.",
+        "id": 32,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_activation\": {\n    \"status\": \"успешно\",\n    \"method\": \"через приложение\",\n    \"pin_code_set\": \"1965\"\n  }\n}\n```",
+        "id": 33,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Баланс по ней сейчас 187 500 рублей. Это все мои деньги со старого счета, верно?",
+        "id": 34,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_balance_inquiry\": {\n    \"current_balance\": {\n      \"value\": 187500,\n      \"currency\": \"рублей\"\n    },\n    \"source_of_funds\": \"старый счет\",\n    \"inquiry\": \"подтверждение_перевода\"\n  }\n}\n```",
+        "id": 35,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, курьер был очень вежливый, не то что на почте, когда посылки для Эрнста получаю.",
+        "id": 36,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"courier_feedback\": {\n    \"overall_impression\": \"положительный\",\n    \"description\": \"очень вежливый\",\n    \"comparison\": {\n      \"negative_example\": \"почта\",\n      \"context\": \"получение посылок для Эрнста\"\n    }\n  }\n}\n```",
+        "id": 37,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Еще 18 марта я перевел 50 000 рублей Майе Львовне на ее карту для отпуска. Проверьте, пожалуста.",
+        "id": 38,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction_inquiry\": {\n    \"date\": \"2024-03-18\",\n    \"amount\": {\n      \"value\": 50000,\n      \"currency\": \"рублей\"\n    },\n    \"recipient\": {\n      \"name\": \"Майя Львовна\",\n      \"destination\": \"ее карта\"\n    },\n    \"purpose\": \"для отпуска\",\n    \"inquiry_type\": \"проверка_перевода\"\n  }\n}\n```",
+        "id": 39,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. Хотел уточнить по кэшбэку. Оплатил сыну Эрнсту курс по программированию новой картой.",
+        "id": 40,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_inquiry\": {\n    \"transaction_details\": {\n      \"purpose\": \"оплата курса по программированию\",\n      \"recipient\": \"сыну Эрнсту\",\n      \"card_used\": \"новая карта\"\n    },\n    \"inquiry_type\": \"уточнение_по_кэшбэку\"\n  }\n}\n```",
+        "id": 41,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Там было 12 500 рублей. Мне сказали, что по категории \"Образование\" 2% кэшбэк будет.",
+        "id": 42,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_details\": {\n    \"transaction_amount\": {\n      \"value\": 12500,\n      \"currency\": \"рублей\"\n    },\n    \"category\": \"Образование\",\n    \"expected_cashback_rate\": {\n      \"value\": 2,\n      \"unit\": \"%\"\n    }\n  }\n}\n```",
+        "id": 43,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Скажите, 20 марта пришло уведомление в приложении про изменение лимита. Это про 500 тысяч в день?",
+        "id": 44,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"limit_change_inquiry\": {\n    \"notification_date\": \"2024-03-20\",\n    \"notification_source\": \"приложение\",\n    \"inquiry_details\": {\n      \"type\": \"изменение лимита\",\n      \"specific_limit_inquiry\": {\n        \"value\": 500000,\n        \"currency\": \"рублей\",\n        \"period\": \"в день\"\n      }\n    }\n  }\n}\n```",
+        "id": 45,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Меня волнует, как это повлияет на пополнение ИИС наличными. Я же каждый месяц пополняю.",
+        "id": 46,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"concern_about_limit_change\": {\n    \"impact_on_transaction_type\": \"пополнение ИИС наличными\",\n    \"frequency_of_transaction\": \"каждый месяц\",\n    \"user_sentiment\": \"волнует\"\n  }\n}\n```",
+        "id": 47,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я посмотрел, за последние три месяца снимал в среднем 280 тысяч рубелй. Это же больше 200 тысяч.",
+        "id": 48,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"withdrawal_analysis\": {\n    \"period\": \"последние три месяца\",\n    \"average_amount\": {\n      \"value\": 280000,\n      \"currency\": \"рублей\"\n    },\n    \"comparison_to_threshold\": {\n      \"threshold\": {\n        \"value\": 200000,\n        \"currency\": \"рублей\"\n      },\n      \"is_greater\": true\n    }\n  }\n}\n```",
+        "id": 49,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. 25 марта я снял 250 000 рублей наличными в банкомате 789012 на Центральной, 15.",
+        "id": 50,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction\": {\n    \"type\": \"снятие наличных\",\n    \"date\": \"2024-03-25\",\n    \"amount\": {\n      \"value\": 250000,\n      \"currency\": \"рублей\"\n    },\n    \"location\": {\n      \"type\": \"банкомат\",\n      \"id\": \"789012\",\n      \"address\": \"Центральная, 15\"\n    }\n  }\n}\n```",
+        "id": 51,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Это было в рамках моего текущего лимита в 300 000 ₽. Я ведь правильно понял, что комисии за снятие до 500 000 ₽ в месяц нет?",
+        "id": 52,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction_details\": {\n    \"transaction_type\": \"снятие наличных\",\n    \"amount\": {\n      \"value\": 250000,\n      \"currency\": \"рублей\"\n    },\n    \"current_limit\": {\n      \"value\": 300000,\n      \"currency\": \"рублей\"\n    },\n    \"commission_inquiry\": {\n      \"threshold\": {\n        \"value\": 500000,\n        \"currency\": \"рублей\",\n        \"period\": \"в месяц\"\n      },\n      \"commission_absence_confirmed\": true\n    }\n  }\n}\n```",
+        "id": 53,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "А еще я перевел 15 000 ₽ своей маме, Раисе Леоновне Вороновой, на Сбербанк на лекарства через приложение.",
+        "id": 54,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction\": {\n    \"type\": \"перевод\",\n    \"amount\": {\n      \"value\": 15000,\n      \"currency\": \"₽\"\n    },\n    \"recipient\": {\n      \"name\": \"Раиса Леоновна Воронова\",\n      \"relationship\": \"мама\"\n    },\n    \"destination_bank\": \"Сбербанк\",\n    \"purpose\": \"на лекарства\",\n    \"channel\": \"приложение\"\n  }\n}\n```",
+        "id": 55,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я был уверен, что лимит в 300 000 ₽ будет действовать до 15.04.2024, как в прошлом году.",
+        "id": 56,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"limit_expectation\": {\n    \"limit_value\": {\n      \"value\": 300000,\n      \"currency\": \"₽\"\n    },\n    \"expected_validity_end_date\": \"2024-04-15\",\n    \"basis_for_expectation\": \"как в прошлом году\"\n  }\n}\n```",
+        "id": 57,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, на сберегательном счете 40817810000000005678 у меня сейчас 1 200 000 ₽. Хочу пополнить его на 100 000 ₽ в начале апреля.",
+        "id": 58,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-03-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"savings_account\": {\n    \"account_number\": \"40817810000000005678\",\n    \"current_balance\": {\n      \"value\": 1200000,\n      \"currency\": \"₽\"\n    },\n    \"replenishment_plan\": {\n      \"amount\": {\n        \"value\": 100000,\n        \"currency\": \"₽\"\n      },\n      \"period\": \"начало апреля\"\n    }\n  }\n}\n```",
+        "id": 59,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. Мне пришло уведомление про новые лимиты на снятие наличных с дебетовой карты. Это с 1 апреля, да?",
+        "id": 60,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"notification_details\": {\n    \"topic\": \"новые лимиты на снятие наличных\",\n    \"card_type\": \"дебетовая карта\",\n    \"effective_date_inquiry\": \"2024-04-01\"\n  }\n}\n```",
+        "id": 61,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Там написано 200 тысяч в месяц. А я обычно пополняю ИИС наличными, и суммы бывают побольше. Как теперь скаэите быть?",
+        "id": 62,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"new_limit_impact\": {\n    \"limit_type\": \"снятие наличных\",\n    \"limit_value\": {\n      \"value\": 200000,\n      \"currency\": \"рублей\",\n      \"period\": \"в месяц\"\n    },\n    \"user_activity\": {\n      \"purpose\": \"пополнение ИИС наличными\",\n      \"frequency\": \"обычно\",\n      \"amount_comparison\": \"суммы бывают побольше\"\n    },\n    \"user_concern\": \"Как теперь быть?\"\n  }\n}\n```",
+        "id": 63,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, в Красноселькупе потеплело, прямо весна. Вспомнил, что надо оплатить летнюю резину, которую заказывал.",
+        "id": 64,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"payment_due\": {\n    \"item\": \"летняя резина\",\n    \"status\": \"заказана\",\n    \"action_required\": \"оплатить\"\n  }\n}\n```",
+        "id": 65,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Еще хотел уточнить по поводу заявки на доп. карту. Я 3 апреля подавал на сына Эрнста, ему 13 лет.",
+        "id": 66,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"additional_card_application\": {\n    \"application_date\": \"2024-04-03\",\n    \"recipient_details\": {\n      \"name\": \"Эрнст\",\n      \"relationship\": \"сын\",\n      \"age\": 13\n    }\n  }\n}\n```",
+        "id": 67,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Там лимит я поставил 10 тысяч в месяц. Все в порядке с заявкой? Когда ждать карту?",
+        "id": 68,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"additional_card_details\": {\n    \"monthly_limit\": {\n      \"value\": 10000,\n      \"currency\": \"рублей\",\n      \"period\": \"в месяц\"\n    },\n    \"inquiry_status\": \"Все в порядке с заявкой?\",\n    \"delivery_expectation_inquiry\": \"Когда ждать карту?\"\n  }\n}\n```",
+        "id": 69,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте, я подавал заявку на карту для Эрнста. Хотел бы, чтобы на ней был футбольный мяч.",
+        "id": 70,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_design_request\": {\n    \"card_recipient\": \"Эрнст\",\n    \"design_element\": \"футбольный мяч\"\n  }\n}\n```",
+        "id": 71,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Она нужна ему для школьных обедов и всяких небольших покупок, чтобы учился тратить.",
+        "id": 72,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_purpose\": {\n    \"recipient\": \"Эрнст\",\n    \"uses\": [\n      \"школьные обеды\",\n      \"небольшие покупки\"\n    ],\n    \"educational_aspect\": \"чтобы учился тратить\"\n  }\n}\n```",
+        "id": 73,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Мне пришло уведомление, что карта для Эрнста одобрена 05.04.2024. Но нужно согласие.",
+        "id": 74,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_approval_notification\": {\n    \"recipient\": \"Эрнст\",\n    \"approval_date\": \"2024-04-05\",\n    \"action_required\": \"согласие\"\n  }\n}\n```",
+        "id": 75,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Скаэите, где я могу взять это письменное согласие? В личном кабинете или в отделении?",
+        "id": 76,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"consent_location_inquiry\": {\n    \"type\": \"письменное согласие\",\n    \"options_inquired\": [\n      \"личном кабинете\",\n      \"отделении\"\n    ]\n  }\n}\n```",
+        "id": 77,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я сегодня, 06.04.2024, уже отнес подписанное согласие в отделение на Ленина, 7.",
+        "id": 78,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"consent_submission\": {\n    \"date\": \"2024-04-06\",\n    \"action\": \"отнес подписанное согласие\",\n    \"location\": \"отделение на Ленина, 7\"\n  }\n}\n```",
+        "id": 79,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Мне менеджер говорил, что за доп. карту для Эрнста 299 рублей спишут. Это точно 8 апреля будет?",
+        "id": 80,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"additional_card_fee_inquiry\": {\n    \"recipient\": \"Эрнст\",\n    \"fee_amount\": {\n      \"value\": 299,\n      \"currency\": \"рублей\"\n    },\n    \"charge_date_confirmation_inquiry\": \"2024-04-08\"\n  }\n}\n```",
+        "id": 81,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Моя жена, Майя Львовна, звонила 6 апреля насчет лимита на снятие наличных. Ей сказали, что 250 000 рублей нельзя.",
+        "id": 82,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cash_withdrawal_limit_inquiry\": {\n    \"caller\": {\n      \"name\": \"Майя Львовна\",\n      \"relationship\": \"жена\"\n    },\n    \"call_date\": \"2024-04-06\",\n    \"requested_limit\": {\n      \"value\": 250000,\n      \"currency\": \"рублей\"\n    },\n    \"status\": \"отказано\"\n  }\n}\n```",
+        "id": 83,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Почему лимит на моей основной карте нельзя увеличить до 250 000? Сказали, что он автоматически установлен. Это как?",
+        "id": 84,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cash_withdrawal_limit_inquiry\": {\n    \"card_type\": \"основная карта\",\n    \"requested_limit\": {\n      \"value\": 250000,\n      \"currency\": \"рублей\"\n    },\n    \"reason_for_denial\": \"автоматически установлен\",\n    \"clarification_request\": \"Это как?\"\n  }\n}\n```",
+        "id": 85,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Карту для Эрнста получил 8 апреля, номер 2202 **** 9999. Сразу активировал и поставил лимит 10 000 в месяц и 2 000 в день на снятие.",
+        "id": 86,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_receipt_and_setup\": {\n    \"recipient\": \"Эрнст\",\n    \"receipt_date\": \"2024-04-08\",\n    \"card_number_mask\": \"2202 **** 9999\",\n    \"activation_status\": \"активировал\",\n    \"spending_limits_set\": {\n      \"monthly\": {\n        \"value\": 10000,\n        \"currency\": \"рублей\"\n      },\n      \"daily_withdrawal\": {\n        \"value\": 2000,\n        \"currency\": \"рублей\"\n      }\n    }\n  }\n}\n```",
+        "id": 87,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, мне пришло уведомление, что Евгений Андреевич Самсонов тоже сыну карту оформил на 12 000. Это 8 апреля было.",
+        "id": 88,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-01"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_issuance_notification\": {\n    \"person\": \"Евгений Андреевич Самсонов\",\n    \"action\": \"оформил карту\",\n    \"recipient\": \"сыну\",\n    \"amount\": {\n      \"value\": 12000,\n      \"currency\": \"рублей\"\n    },\n    \"date\": \"2024-04-08\",\n    \"notification_received\": true\n  }\n}\n```",
+        "id": 89,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. 15 апреля я обнаружил, что кэшбэк за покупку в \"Техномире\" 1 марта начислен неверно.",
+        "id": 90,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_discrepancy\": {\n    \"discovery_date\": \"2024-04-15\",\n    \"transaction_details\": {\n      \"merchant\": \"Техномир\",\n      \"purchase_date\": \"2024-03-01\"\n    },\n    \"issue\": \"кэшбэк начислен неверно\"\n  }\n}\n```",
+        "id": 91,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Вместо 2 250 ₽ (3%) мне пришло только 750 рубелй (1%) от 75 000 ₽.",
+        "id": 92,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_calculation_discrepancy\": {\n    \"expected_cashback\": {\n      \"amount\": {\n        \"value\": 2250,\n        \"currency\": \"₽\"\n      },\n      \"percentage\": \"3%\"\n    },\n    \"received_cashback\": {\n      \"amount\": {\n        \"value\": 750,\n        \"currency\": \"рублей\"\n      },\n      \"percentage\": \"1%\"\n    },\n    \"transaction_amount\": {\n      \"value\": 75000,\n      \"currency\": \"₽\"\n    }\n  }\n}\n```",
+        "id": 93,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я проверил выписку по счету 40817810000000001234 за март и апрель, все транзакции.",
+        "id": 94,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"account_statement_review\": {\n    \"account_number\": \"40817810000000001234\",\n    \"period\": {\n      \"start_month\": \"март\",\n      \"end_month\": \"апрель\"\n    },\n    \"details_checked\": \"все транзакции\"\n  }\n}\n```",
+        "id": 95,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Мой друг Евгений Андреевич Самсонов всегда говорит, что банк должен был уведомить об изменении условий.",
+        "id": 96,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"friend_comment_on_bank_notification\": {\n    \"friend_name\": \"Евгений Андреевич Самсонов\",\n    \"comment\": \"банк должен был уведомить об изменении условий\"\n  }\n}\n```",
+        "id": 97,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Вчера, 16 апреля, я уже подал претензию № 001/2024-КБ через интернет-банк.",
+        "id": 98,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"claim_submission\": {\n    \"date\": \"2024-04-16\",\n    \"claim_number\": \"001/2024-КБ\",\n    \"channel\": \"интернет-банк\"\n  }\n}\n```",
+        "id": 99,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я тут приложил скриншоты, которые подтверждают старые условия по кэшбэку.",
+        "id": 100,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"evidence_provided\": {\n    \"type\": \"скриншоты\",\n    \"description\": \"подтверждают старые условия по кэшбэку\"\n  }\n}\n```",
+        "id": 101,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Там четко видно 3% на \"Электронику\", я их сохранил еще 28 февраля 2024 года.",
+        "id": 102,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_conditions_evidence\": {\n    \"category\": \"Электроника\",\n    \"percentage\": \"3%\",\n    \"screenshot_save_date\": \"2024-02-28\"\n  }\n}\n```",
+        "id": 103,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "И еще, 16.04.2024 я запрашивал выписку по своему ИИС № 50010000000000000001 за первый квартал.",
+        "id": 104,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"iis_statement_request\": {\n    \"request_date\": \"2024-04-16\",\n    \"iis_account_number\": \"50010000000000000001\",\n    \"period\": \"первый квартал\"\n  }\n}\n```",
+        "id": 105,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Моя претензия, которую я подал, сейчас \"На рассмотрении\", верно? Жду ответа в течении 7 дней.",
+        "id": 106,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"claim_status_and_response_time\": {\n    \"claim_status\": \"На рассмотрении\",\n    \"expected_response_time\": \"7 дней\"\n  }\n}\n```",
+        "id": 107,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, моя жена, Гусева Майя Львовна, 18 апреля перевела 47 000 рублей брату на ремонт авто.",
+        "id": 108,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction_details\": {\n    \"sender\": \"Гусева Майя Львовна\",\n    \"receiver\": \"брат\",\n    \"amount\": \"47 000 рублей\",\n    \"date\": \"2024-04-18\",\n    \"purpose\": \"ремонт авто\"\n  }\n}\n```",
+        "id": 109,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Добрый день. Мне 23 апреля пришло письмо на lukin.b.ya@example.com про доначисление кэшбэка.",
+        "id": 110,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_accrual_email\": {\n    \"date\": \"2024-04-23\",\n    \"recipient_email\": \"lukin.b.ya@example.com\",\n    \"subject\": \"доначисление кэшбэка\"\n  }\n}\n```",
+        "id": 111,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Там еще было про извинения и 500 баллов лояльности. Это уже начислили или как?",
+        "id": 112,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"loyalty_points_accrual_status\": {\n    \"points_amount\": \"500 баллов\",\n    \"status_question\": \"начислили или как?\"\n  }\n}\n```",
+        "id": 113,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Вижу, что 26.04.2024 на счет пришло 1 500 рублей. Это та корректировка по претензии № 001/2024-КБ?",
+        "id": 114,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction_confirmation_request\": {\n    \"date\": \"2024-04-26\",\n    \"amount\": \"1 500 рублей\",\n    \"assumed_purpose\": \"корректировка по претензии № 001/2024-КБ\"\n  }\n}\n```",
+        "id": 115,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Баланс увеличился ровно на 1500 руб. Теперь кэшбэк за март соответствует моим ожиданиям.",
+        "id": 116,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_satisfaction\": {\n    \"balance_increase_amount\": \"1500 руб.\",\n    \"cashback_month\": \"март\",\n    \"satisfaction_status\": \"соответствует ожиданиям\"\n  }\n}\n```",
+        "id": 117,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Да, и общий кэшбэк за апрель, с учетом всего, вышел 2 100 рубелй. Отличный результат.",
+        "id": 118,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-15"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_summary\": {\n    \"month\": \"апрель\",\n    \"total_cashback_amount\": \"2 100 руб.\",\n    \"evaluation\": \"отличный результат\"\n  }\n}\n```",
+        "id": 119,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. Получил на почту обновленные условия обслуживания от 27.04.2024. Хотел уточниь кое-что.",
+        "id": 120,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"service_terms_update\": {\n    \"date_received\": \"2024-04-27\",\n    \"document_type\": \"обновленные условия обслуживания\",\n    \"action\": \"хочет уточнить\"\n  }\n}\n```",
+        "id": 121,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Там про новые ставки кэшбэка написано. По \"Авто\" теперь 2%, а по \"Путешествиям\" 4%? Это верно?",
+        "id": 122,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cashback_rates_inquiry\": {\n    \"category_auto\": {\n      \"rate\": \"2%\",\n      \"confirmation_needed\": true\n    },\n    \"category_travel\": {\n      \"rate\": \"4%\",\n      \"confirmation_needed\": true\n    }\n  }\n}\n```",
+        "id": 123,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я внимательно изучил этот документ на 12 страницах. Особенно пункт 5.3 про порядок уведомления клиентов.",
+        "id": 124,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"document_review\": {\n    \"document_type\": \"обновленные условия обслуживания\",\n    \"document_date\": \"2024-04-27\",\n    \"pages_count\": \"12\",\n    \"section_reviewed\": \"пункт 5.3\",\n    \"section_topic\": \"порядок уведомления клиентов\"\n  }\n}\n```",
+        "id": 125,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, мой друг Никанор Сорокин говорил, что его банк присылает уведомления о налогах. Вы так не делаете?",
+        "id": 126,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"tax_notification_inquiry\": {\n    \"friend_name\": \"Никанор Сорокин\",\n    \"friend_bank_practice\": \"присылает уведомления о налогах\",\n    \"user_bank_practice_inquiry\": \"Вы так не делаете?\"\n  }\n}\n```",
+        "id": 127,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "В целом, я доволен, что вопрос решился. Буду и дальше пользоваться, но теперь внимательнее к уведомлениям.",
+        "id": 128,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"customer_satisfaction_and_future_intent\": {\n    \"overall_satisfaction\": \"доволен\",\n    \"issue_resolved\": true,\n    \"future_intent\": \"будет и дальше пользоваться\",\n    \"attention_to_notifications\": \"внимательнее\"\n  }\n}\n```",
+        "id": 129,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Здравствуйте. Я 1 мая переводил 10 тысяч рублей дочке Синклитикии на подарок подруге, с временным лимитом на эту операцию.",
+        "id": 130,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"transaction_details\": {\n    \"date\": \"2024-05-01\",\n    \"amount\": \"10000 рублей\",\n    \"recipient\": \"дочке Синклитикии\",\n    \"purpose\": \"на подарок подруге\",\n    \"notes\": \"с временным лимитом на эту операцию\"\n  }\n}\n```",
+        "id": 131,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я обновил настройки уведомлений, чтобы все приходило по СМС и на почту. Мой номер +79001234567 актуален и не требует изменний.",
+        "id": 132,
+        "target_bullet_id": "3",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"notification_settings_update\": {\n    \"channels\": [\n      \"SMS\",\n      \"email\"\n    ],\n    \"phone_number\": \"+79001234567\",\n    \"phone_number_status\": \"актуален\",\n    \"phone_number_change_required\": false\n  }\n}\n```",
+        "id": 133,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Моя супруга Майя Львовна звонила в банк по поводу увеличения лимита на снятие наличных.",
+        "id": 134,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"spouse_inquiry\": {\n    \"name\": \"Майя Львовна\",\n    \"action\": \"звонила в банк\",\n    \"purpose\": \"увеличение лимита на снятие наличных\"\n  }\n}\n```",
+        "id": 135,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Она просила больше 200 тысяч рублей, но я не помню точную сумму. Можете подсказать?",
+        "id": 136,
+        "target_bullet_id": "5",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"limit_increase_request_details\": {\n    \"requested_amount_minimum\": \"200 тысяч рублей\",\n    \"exact_amount_unknown\": true,\n    \"request_for_information\": \"Можете подсказать?\"\n  }\n}\n```",
+        "id": 137,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, тут крупный заказ на сантехнику намечается, тысяч на 150. Хорошо бы.",
+        "id": 138,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"potential_large_purchase\": {\n    \"item\": \"сантехника\",\n    \"estimated_amount\": \"150 тысяч\",\n    \"sentiment\": \"Хорошо бы\"\n  }\n}\n```",
+        "id": 139,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Я тут подумал, что лимит на снятие наличных мне пока не нужен. 200 тысяч в месяц хватает.",
+        "id": 140,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"cash_withdrawal_limit_status\": {\n    \"current_limit_sufficiency\": \"хватает\",\n    \"current_limit_amount\": \"200 тысяч в месяц\",\n    \"need_for_increase\": false\n  }\n}\n```",
+        "id": 141,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "А вот про СБП, я правильно понял, что с 01.06.2024 лимит без комиссии будет 150 000 ₽?",
+        "id": 142,
+        "target_bullet_id": "1",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"sbp_commission_free_limit_inquiry\": {\n    \"date\": \"01.06.2024\",\n    \"limit_amount\": \"150 000 ₽\",\n    \"condition\": \"без комиссии\",\n    \"system\": \"СБП\",\n    \"confirmation_request\": true\n  }\n}\n```",
+        "id": 143,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Скажите, а когда мне придет компенсация за моральный ущерб? Обещали 1000 рублей.",
+        "id": 144,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"moral_damage_compensation_inquiry\": {\n    \"amount\": \"1000 рублей\",\n    \"status\": \"обещали\",\n    \"question\": \"когда мне придет компенсация?\"\n  }\n}\n```",
+        "id": 145,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "В уведомлении от 23.04.2024 было про 500 баллов, но я точно помнюу, что говорили про деньги.",
+        "id": 146,
+        "target_bullet_id": "2",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"notification_discrepancy\": {\n    \"date\": \"23.04.2024\",\n    \"notified_item\": \"500 баллов\",\n    \"recalled_item\": \"деньги\",\n    \"discrepancy_type\": \"item_type\"\n  }\n}\n```",
+        "id": 147,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ],
+    [
+      {
+        "role": "user",
+        "content": "Кстати, моя карта МИР Platinum 2202 **** 5678 действует до 03/2029, все в порядке?",
+        "id": 148,
+        "target_bullet_id": "4",
+        "time_anchor": "2024-04-27"
+      },
+      {
+        "role": "assistant",
+        "content": "```json\n{\n  \"card_validity_inquiry\": {\n    \"card_type\": \"МИР Platinum\",\n    \"card_number_partial\": \"2202 **** 5678\",\n    \"expiration_date\": \"03/2029\",\n    \"question\": \"все в порядке?\"\n  }\n}\n```",
+        "id": 149,
+        "metadata": {
+          "quality_ok": true
+        }
+      }
+    ]
+  ]
+]

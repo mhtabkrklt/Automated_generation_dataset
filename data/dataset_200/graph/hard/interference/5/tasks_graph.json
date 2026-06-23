@@ -1,0 +1,26 @@
+{
+  "interference": [
+    {
+      "question": "Какова сумма перевода клиента-рентгенолога, поступившего получателю прежде второго платежа через идентичный канал в том же месяце?",
+      "answer": "5000 руб.",
+      "answer_format": "N руб.",
+      "reasoning_path": [
+        "person_solomon_lavrentyev --[transferred_to]--> card_stanimir_knyazev_4567 | amount: 5000 руб. | date: 10.01.2024 | method: СБП | confirmation: push-уведомление (начало месяца)",
+        "person_solomon_lavrentyev --[transferred_to]--> person_galaktion_kozlov | amount: 5200 руб. | date: 18.01.2024 | method: СБП | confirmation: код из СМС (третья неделя)",
+        "Целевое ребро: перевод 10.01.2024 — начало месяца, сумма 5000 руб."
+      ],
+      "capability": "interference",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "person_solomon_lavrentyev",
+        "card_stanimir_knyazev_4567",
+        "person_galaktion_kozlov"
+      ],
+      "decoy_answers": [
+        "4700 руб.",
+        "5200 руб.",
+        "5300 руб."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2024 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Лука Ефимов получает дебетовую карту и начинает активно ею пользоваться."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Лука перевыпускает кредитную карту и настраивает автоплатежи."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Дебетовая карта Луки заблокирована по 115-ФЗ после крупного перевода."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4,
+        "summary": "Карта разблокирована, но с временными лимитами, вызывающими новые трудности."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5,
+        "summary": "Лимиты сняты, Лука диверсифицирует свои банковские активы."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Luk_Efimov",
+      "type": "Person",
+      "label": "Лука Бориславович Ефимов",
+      "attributes": {
+        "age": 27,
+        "job": "Таксист",
+        "monthly_income": 276000,
+        "location": "п. Павловская",
+        "financial_goals": "Накопление на жилье, финансовая подушка безопасности",
+        "phone_number": "+79ХХХХХХХХХ",
+        "passport_series": "4500",
+        "passport_number": "123456",
+        "codeword": "Павловская"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Bank_Main",
+      "type": "Bank",
+      "label": "Основной Банк",
+      "attributes": {
+        "name": "Основной Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Debit_Card_Premium",
+      "type": "Card",
+      "label": "Дебетовая карта «Премиум»",
+      "attributes": {
+        "type": "Дебетовая",
+        "cashback_max": "5%",
+        "cashback_category_tech": "3%",
+        "service_fee_condition": "Бесплатное при обороте от 50 000 руб/мес"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "BankBranch_Main",
+      "type": "Location",
+      "label": "Отделение Банка",
+      "attributes": {
+        "address_1": "ул. Центральная, 15",
+        "address_2": "ул. Ленина, 7"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_Techomir_45k",
+      "type": "Transaction",
+      "label": "Покупка бытовой техники",
+      "attributes": {
+        "amount": 45000,
+        "currency": "RUB",
+        "category": "Бытовая техника",
+        "merchant": "ТехноМир"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Lydia_Fomin",
+      "type": "Person",
+      "label": "Лидия Фомин",
+      "attributes": {
+        "age": 58,
+        "relationship": "Мать Луки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Bank_Lydia",
+      "type": "Bank",
+      "label": "Банк Лидии Фомин",
+      "attributes": {
+        "name": "Другой банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_Lydia_AutoMaster_320k",
+      "type": "Transaction",
+      "label": "Перевод на ремонт авто",
+      "attributes": {
+        "amount": 320000,
+        "currency": "RUB",
+        "recipient": "Автосервис 'АвтоМастер'",
+        "purpose": "Капитальный ремонт автомобиля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Account_Debit_Luk",
+      "type": "Account",
+      "label": "Дебетовый счет Луки",
+      "attributes": {
+        "type": "Дебетовый",
+        "currency": "RUB",
+        "push_notifications_enabled": true,
+        "push_notification_threshold": 1000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Prokofiy_Khokhlov",
+      "type": "Person",
+      "label": "Прокофий Вячеславович Хохлов",
+      "attributes": {
+        "age": 19,
+        "relationship": "Друг Луки",
+        "frustration_topic": "Проблемы с кэшбэком в другом банке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Account_Savings_MainBank_12pct",
+      "type": "Account",
+      "label": "Накопительный счет (Основной Банк)",
+      "attributes": {
+        "type": "Накопительный",
+        "interest_rate": "12%",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Sofia_Efremova",
+      "type": "Person",
+      "label": "София Игоревна Ефремова",
+      "attributes": {
+        "relationship": "Супруга Луки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Children_Luk",
+      "type": "FamilyGroup",
+      "label": "Дети Луки",
+      "attributes": {
+        "names": "Радислав (6 лет), Валерия (7 лет), Фаина (5 лет)"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_ChildrenSections_16_2k",
+      "type": "Transaction",
+      "label": "Оплата детских секций",
+      "attributes": {
+        "amount": 16200,
+        "currency": "RUB",
+        "purpose": "Оплата детских секций"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "FinancialEvent_Cashback_March",
+      "type": "FinancialEvent",
+      "label": "Начисление кэшбэка за март",
+      "attributes": {
+        "amount": 1350,
+        "currency": "RUB",
+        "period": "Март"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Credit_Card_Old",
+      "type": "Card",
+      "label": "Старая кредитная карта",
+      "attributes": {
+        "type": "Кредитная",
+        "issue_year": 2021,
+        "credit_limit": 150000,
+        "grace_period": "55 дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Application_CreditCard_Reissue",
+      "type": "Application",
+      "label": "Заявка на перевыпуск кредитной карты",
+      "attributes": {
+        "type": "Перевыпуск кредитной карты",
+        "delivery_option": "Получение в отделении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "AutoPayment_ChildrenSections",
+      "type": "Setting",
+      "label": "Автоматический платеж за кружки детей",
+      "attributes": {
+        "frequency": "Ежемесячно",
+        "initial_estimate": 15000,
+        "actual_amount": 16200
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Vitaliy_Grishin",
+      "type": "Person",
+      "label": "Виталий Филимонович Гришин",
+      "attributes": {
+        "age": 72,
+        "relationship": "Отец Луки",
+        "frustration_topic": "Долгое ожидание перевыпуска карты в другом банке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Fee_CreditCard_Reissue_299",
+      "type": "Fee",
+      "label": "Комиссия за перевыпуск кредитной карты",
+      "attributes": {
+        "amount": 299,
+        "currency": "RUB",
+        "condition": "Списание после активации новой карты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "CustomerService_MainBank",
+      "type": "Service",
+      "label": "Служба поддержки Основного Банка",
+      "attributes": {
+        "channels": "Чат, Телефон (8-800-ХХХ-ХХ-ХХ)"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Credit_Card_New",
+      "type": "Card",
+      "label": "Новая кредитная карта",
+      "attributes": {
+        "type": "Кредитная",
+        "credit_limit": 100000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_CarPurchase_350k",
+      "type": "Transaction",
+      "label": "Покупка автомобиля",
+      "attributes": {
+        "amount": 350000,
+        "currency": "RUB",
+        "purpose": "Покупка подержанного автомобиля 'Лада Веста' 2020 года"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Ulyan_Silin",
+      "type": "Person",
+      "label": "Ульян Ермолаевич Силин",
+      "attributes": {
+        "relationship": "Продавец автомобиля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Event_CardBlocked_11_04",
+      "type": "Event",
+      "label": "Блокировка дебетовой карты",
+      "attributes": {
+        "reason": "Подозрительная транзакция (115-ФЗ)",
+        "status_message": "Ваша карта временно заблокирована. Пожалуйста, свяжитесь с банком по номеру 8-800-ХХХ-ХХ-ХХ. Запрошены подтверждающие документы по операции от 10.04.2024 в рамках 115-ФЗ."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Regulatory_115FZ",
+      "type": "Regulation",
+      "label": "Федеральный закон №115-ФЗ",
+      "attributes": {
+        "name": "О противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма",
+        "purpose": "Проверка подозрительных транзакций"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Documents_115FZ",
+      "type": "DocumentGroup",
+      "label": "Документы для 115-ФЗ",
+      "attributes": {
+        "required_documents": "Договор купли-продажи автомобиля, выписка из ПФР, справка 2-НДФЛ за 2023 год",
+        "submission_deadline": "3 рабочих дня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Client_Complaint_115FZ",
+      "type": "Complaint",
+      "label": "Жалоба на блокировку карты",
+      "attributes": {
+        "reason": "Внезапная блокировка без предварительного уведомления",
+        "status": "На рассмотрении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Event_CardUnblocked_15_04",
+      "type": "Event",
+      "label": "Разблокировка дебетовой карты",
+      "attributes": {
+        "status_message": "Карта разблокирована, но установлены временные лимиты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Limit_Temporary_OutgoingTransfer_100k",
+      "type": "Limit",
+      "label": "Временный лимит на исходящие переводы",
+      "attributes": {
+        "type": "Исходящие переводы",
+        "amount": 100000,
+        "frequency": "В сутки",
+        "duration_condition": "Пересмотр через 10 рабочих дней после предоставления документов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Limit_Temporary_CashWithdrawal_50k",
+      "type": "Limit",
+      "label": "Временный лимит на снятие наличных",
+      "attributes": {
+        "type": "Снятие наличных в банкоматах",
+        "amount": 50000,
+        "frequency": "В сутки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Event_LimitsRemoved_29_04",
+      "type": "Event",
+      "label": "Снятие временных лимитов",
+      "attributes": {
+        "status_message": "Ограничения на переводы сняты. Карта работает в обычном режиме."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Regina_Makarova",
+      "type": "Person",
+      "label": "Регина Егоровна Макарова",
+      "attributes": {
+        "relationship": "Получатель оплаты за ремонт квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Decision_DiversifyBanks",
+      "type": "Decision",
+      "label": "Решение о диверсификации банков",
+      "attributes": {
+        "reason": "Подорванное доверие к основному банку, пережитый стресс"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Alfa_Bank",
+      "type": "Bank",
+      "label": "Альфа-Банк",
+      "attributes": {
+        "name": "Альфа-Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Account_Savings_AlfaBank_13pct",
+      "type": "Account",
+      "label": "Накопительный счет (Альфа-Банк)",
+      "attributes": {
+        "type": "Накопительный",
+        "interest_rate": "13%",
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "Account_Savings_Decoy_12_5pct",
+      "type": "Account",
+      "label": "Накопительный счет (приманка)",
+      "attributes": {
+        "type": "Накопительный",
+        "interest_rate": "12.5%",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Tinkoff_Bank",
+      "type": "Bank",
+      "label": "Тинькофф Банк",
+      "attributes": {
+        "name": "Тинькофф Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Regulatory_DepositInsurance",
+      "type": "Regulation",
+      "label": "Система страхования вкладов (АСВ)",
+      "attributes": {
+        "coverage_limit": "1.4 млн рублей на банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Complaint_Resolution_MainBank",
+      "type": "Resolution",
+      "label": "Разрешение жалобы от Основного Банка",
+      "attributes": {
+        "outcome": "Извинения за неудобства, бонус 500 рублей",
+        "reasoning": "Действия в рамках 115-ФЗ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Bazhen_Gorbunov",
+      "type": "Person",
+      "label": "Бажен Геннадиевич Горбунов",
+      "attributes": {
+        "age": 38,
+        "relationship": "Знакомый Луки",
+        "discussion_topic": "Преимущества и недостатки мультивалютных счетов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_MotherTreatment_Part1_50k",
+      "type": "Transaction",
+      "label": "Перевод матери на лечение (часть 1)",
+      "attributes": {
+        "amount": 50000,
+        "currency": "RUB",
+        "purpose": "Оплата лечения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_MotherTreatment_Part2_40k",
+      "type": "Transaction",
+      "label": "Перевод матери на лечение (часть 2)",
+      "attributes": {
+        "amount": 40000,
+        "currency": "RUB",
+        "purpose": "Оплата лечения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_FainaKindergarten_8500",
+      "type": "Transaction",
+      "label": "Оплата детского сада Фаины",
+      "attributes": {
+        "amount": 8500,
+        "currency": "RUB",
+        "purpose": "Обучение в детском саду"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_ApartmentRepair_150k",
+      "type": "Transaction",
+      "label": "Оплата ремонта квартиры",
+      "attributes": {
+        "amount": 150000,
+        "currency": "RUB",
+        "purpose": "Услуги по ремонту квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Transaction_Savings_Alfa_500k",
+      "type": "Transaction",
+      "label": "Перевод на накопительный счет в Альфа-Банке",
+      "attributes": {
+        "amount": 500000,
+        "currency": "RUB",
+        "purpose": "Увеличение финансовой подушки безопасности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "dup_Fee_CreditCard_Reissue_299",
+      "type": "Fee",
+      "label": "Комиссия за перевыпуск кредитной карты",
+      "attributes": {
+        "amount": 259,
+        "currency": "RUB",
+        "condition": "Списание после активации новой карты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "dup_Transaction_MotherTreatment_Part2_40k",
+      "type": "Transaction",
+      "label": "Перевод матери на лечение (часть 2)",
+      "attributes": {
+        "amount": 37615,
+        "currency": "RUB",
+        "purpose": "Оплата лечения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "Автосервис АвтоМастер",
+      "type": "organization",
+      "label": "Автосервис 'АвтоМастер'",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "АЗС Газпромнефть",
+      "type": "organization",
+      "label": "АЗС 'Газпромнефть'",
+      "attributes": {},
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Luk_Efimov_1",
+      "source": "Luk_Efimov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Debit_Card_Premium_1",
+      "source": "Debit_Card_Premium",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Transaction_Techomir_45k_1",
+      "source": "Transaction_Techomir_45k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Account_Savings_MainBank_12pct_1",
+      "source": "Account_Savings_MainBank_12pct",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Credit_Card_Old_2",
+      "source": "Credit_Card_Old",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Credit_Card_New_3",
+      "source": "Credit_Card_New",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Event_CardBlocked_11_04_3",
+      "source": "Event_CardBlocked_11_04",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Event_CardUnblocked_15_04_4",
+      "source": "Event_CardUnblocked_15_04",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Limit_Temporary_OutgoingTransfer_100k_4",
+      "source": "Limit_Temporary_OutgoingTransfer_100k",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Event_LimitsRemoved_29_04_5",
+      "source": "Event_LimitsRemoved_29_04",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_Account_Savings_AlfaBank_13pct_5",
+      "source": "Account_Savings_AlfaBank_13pct",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_works_as_taxi",
+      "source": "Luk_Efimov",
+      "target": "Luk_Efimov",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "job",
+        "value": "Таксист"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_income",
+      "source": "Luk_Efimov",
+      "target": "Luk_Efimov",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "monthly_income",
+        "value": 276000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_has_goals",
+      "source": "Luk_Efimov",
+      "target": "Luk_Efimov",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "financial_goals",
+        "value": "Накопление на жилье, финансовая подушка безопасности"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_applies_debit_card",
+      "source": "Luk_Efimov",
+      "target": "Debit_Card_Premium",
+      "relation": "APPLIED_FOR",
+      "attributes": {
+        "channel": "Мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_approved_on",
+      "source": "Debit_Card_Premium",
+      "target": "Bank_Main",
+      "relation": "APPROVED_BY",
+      "attributes": {
+        "date": "04.03.2024",
+        "notification_method": "СМС"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "debit_card_received_on",
+      "source": "Luk_Efimov",
+      "target": "Debit_Card_Premium",
+      "relation": "RECEIVED",
+      "attributes": {
+        "date": "08.03.2024",
+        "location": "Отделение банка",
+        "identification": "Паспорт, кодовое слово"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "luk_uses_debit_card_for_tech",
+      "source": "Luk_Efimov",
+      "target": "Transaction_Techomir_45k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "instrument": "Debit_Card_Premium"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transaction_techomir_date",
+      "source": "Transaction_Techomir_45k",
+      "target": "ep_1",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "lydia_is_mother",
+      "source": "Lydia_Fomin",
+      "target": "Luk_Efimov",
+      "relation": "IS_MOTHER_OF",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "lydia_transfers_money",
+      "source": "Lydia_Fomin",
+      "target": "Transaction_Lydia_AutoMaster_320k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "instrument": "Дебетовая карта другого банка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transaction_lydia_date",
+      "source": "Transaction_Lydia_AutoMaster_320k",
+      "target": "ep_1",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "12.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_owns_debit_account",
+      "source": "Luk_Efimov",
+      "target": "Account_Debit_Luk",
+      "relation": "OWNS",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_linked_to_account",
+      "source": "Debit_Card_Premium",
+      "target": "Account_Debit_Luk",
+      "relation": "LINKED_TO",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_balance_after_tech",
+      "source": "Account_Debit_Luk",
+      "target": "ep_1",
+      "relation": "HAS_BALANCE",
+      "attributes": {
+        "amount": 231000,
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_sets_push_notifications",
+      "source": "Luk_Efimov",
+      "target": "Account_Debit_Luk",
+      "relation": "CONFIGURES",
+      "attributes": {
+        "setting": "Push-уведомления для операций > 1000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_service_conditions",
+      "source": "Debit_Card_Premium",
+      "target": "Debit_Card_Premium",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "service_fee_condition",
+        "value": "Бесплатное при обороте от 50 000 руб/мес"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "prokofiy_is_friend",
+      "source": "Prokofiy_Khokhlov",
+      "target": "Luk_Efimov",
+      "relation": "IS_FRIEND_OF",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_has_savings_account",
+      "source": "Luk_Efimov",
+      "target": "Account_Savings_MainBank_12pct",
+      "relation": "OWNS",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "savings_account_opened_on",
+      "source": "Account_Savings_MainBank_12pct",
+      "target": "ep_1",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "15.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_plans_transfer_to_savings",
+      "source": "Luk_Efimov",
+      "target": "Account_Savings_MainBank_12pct",
+      "relation": "PLANS_TRANSFER_TO",
+      "attributes": {
+        "timeframe": "Следующая неделя"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "sofia_is_wife",
+      "source": "Sofia_Efremova",
+      "target": "Luk_Efimov",
+      "relation": "IS_WIFE_OF",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "children_belong_to_luk",
+      "source": "Children_Luk",
+      "target": "Luk_Efimov",
+      "relation": "BELONGS_TO",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_transfers_to_sofia",
+      "source": "Luk_Efimov",
+      "target": "Transaction_ChildrenSections_16_2k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "recipient": "Sofia_Efremova",
+        "amount": 15000,
+        "date": "15.03.2024",
+        "instrument": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "cashback_march_received_on",
+      "source": "FinancialEvent_Cashback_March",
+      "target": "Debit_Card_Premium",
+      "relation": "RECEIVED_ON",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "old_credit_card_expiry_check",
+      "source": "Luk_Efimov",
+      "target": "Credit_Card_Old",
+      "relation": "CHECKS_EXPIRY",
+      "attributes": {
+        "date": "25.03.2024",
+        "channel": "Интернет-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "old_credit_card_expiry_date",
+      "source": "Credit_Card_Old",
+      "target": "ep_2",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "30.04.2024",
+        "type": "expiry"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "luk_applies_reissue_credit_card",
+      "source": "Luk_Efimov",
+      "target": "Application_CreditCard_Reissue",
+      "relation": "APPLIED_FOR",
+      "attributes": {
+        "date": "26.03.2024",
+        "channel": "Мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "sofia_sets_autopayment",
+      "source": "Sofia_Efremova",
+      "target": "AutoPayment_ChildrenSections",
+      "relation": "CONFIGURES",
+      "attributes": {
+        "date": "27.03.2024",
+        "channel": "Мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "autopayment_amount_stale",
+      "source": "AutoPayment_ChildrenSections",
+      "target": "AutoPayment_ChildrenSections",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "actual_amount",
+        "value": 15000,
+        "date": "27.03.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "autopayment_amount_valid",
+      "source": "AutoPayment_ChildrenSections",
+      "target": "AutoPayment_ChildrenSections",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "actual_amount",
+        "value": 16200,
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vitaliy_is_father",
+      "source": "Vitaliy_Grishin",
+      "target": "Luk_Efimov",
+      "relation": "IS_FATHER_OF",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_inquires_reissue_fee",
+      "source": "Luk_Efimov",
+      "target": "Fee_CreditCard_Reissue_299",
+      "relation": "INQUIRES_ABOUT",
+      "attributes": {
+        "channel": "Чат поддержки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "application_reissue_status",
+      "source": "Application_CreditCard_Reissue",
+      "target": "ep_2",
+      "relation": "HAS_STATUS",
+      "attributes": {
+        "status": "В обработке",
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_old_limit_stale",
+      "source": "Credit_Card_Old",
+      "target": "Credit_Card_Old",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "credit_limit",
+        "value": 150000,
+        "date": "25.03.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_new_ready",
+      "source": "Credit_Card_New",
+      "target": "Bank_Main",
+      "relation": "READY_FOR_PICKUP_BY",
+      "attributes": {
+        "date": "01.04.2024",
+        "notification_method": "СМС, Push-уведомление",
+        "location": "Отделение на ул. Ленина, 7"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "luk_receives_new_credit_card",
+      "source": "Luk_Efimov",
+      "target": "Credit_Card_New",
+      "relation": "RECEIVED",
+      "attributes": {
+        "date": "05.04.2024",
+        "location": "Отделение банка",
+        "identification": "Паспорт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "credit_card_new_limit_valid",
+      "source": "Credit_Card_New",
+      "target": "Credit_Card_New",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "credit_limit",
+        "value": 100000,
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_transfers_for_car",
+      "source": "Luk_Efimov",
+      "target": "Transaction_CarPurchase_350k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "recipient": "Ulyan_Silin",
+        "instrument": "Дебетовая карта",
+        "channel": "Интернет-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transaction_car_purchase_date",
+      "source": "Transaction_CarPurchase_350k",
+      "target": "ep_3",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "debit_card_blocked_event",
+      "source": "Debit_Card_Premium",
+      "target": "Event_CardBlocked_11_04",
+      "relation": "WAS_AFFECTED_BY",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_card_blocked_date",
+      "source": "Event_CardBlocked_11_04",
+      "target": "ep_3",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "11.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_initiates_115fz_check",
+      "source": "Bank_Main",
+      "target": "Regulatory_115FZ",
+      "relation": "INITIATES_CHECK_UNDER",
+      "attributes": {
+        "transaction_id": "Transaction_CarPurchase_350k"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_calls_customerservice",
+      "source": "Luk_Efimov",
+      "target": "CustomerService_MainBank",
+      "relation": "CONTACTS",
+      "attributes": {
+        "reason": "Выяснить причину блокировки",
+        "channel": "Телефон"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "customerservice_informs_documents",
+      "source": "CustomerService_MainBank",
+      "target": "Documents_115FZ",
+      "relation": "REQUESTS",
+      "attributes": {
+        "reason": "Проверка по 115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_files_complaint",
+      "source": "Luk_Efimov",
+      "target": "Client_Complaint_115FZ",
+      "relation": "FILES",
+      "attributes": {
+        "date": "11.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_provides_documents",
+      "source": "Luk_Efimov",
+      "target": "Documents_115FZ",
+      "relation": "PROVIDES",
+      "attributes": {
+        "date": "12.04.2024",
+        "location": "Отделение банка"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_unblocked_event",
+      "source": "Debit_Card_Premium",
+      "target": "Event_CardUnblocked_15_04",
+      "relation": "WAS_AFFECTED_BY",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_card_unblocked_date",
+      "source": "Event_CardUnblocked_15_04",
+      "target": "ep_4",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "limits_set_on_debit_card",
+      "source": "Debit_Card_Premium",
+      "target": "Limit_Temporary_OutgoingTransfer_100k",
+      "relation": "HAS_TEMPORARY_LIMIT",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "limits_set_on_debit_card_2",
+      "source": "Debit_Card_Premium",
+      "target": "Limit_Temporary_CashWithdrawal_50k",
+      "relation": "HAS_TEMPORARY_LIMIT",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_inquires_limit_removal",
+      "source": "Luk_Efimov",
+      "target": "CustomerService_MainBank",
+      "relation": "INQUIRES_ABOUT",
+      "attributes": {
+        "topic": "Снятие временных лимитов",
+        "date": "21.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "customerservice_informs_limit_duration",
+      "source": "CustomerService_MainBank",
+      "target": "Limit_Temporary_OutgoingTransfer_100k",
+      "relation": "INFORMS_ABOUT_DURATION",
+      "attributes": {
+        "duration": "Не ранее 26.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "autopayment_passed_successfully",
+      "source": "AutoPayment_ChildrenSections",
+      "target": "ep_4",
+      "relation": "PASSED_SUCCESSFULLY",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "prokofiy_advises_other_bank",
+      "source": "Prokofiy_Khokhlov",
+      "target": "Decision_DiversifyBanks",
+      "relation": "ADVISES",
+      "attributes": {
+        "advice": "Рассмотреть открытие счета в другом банке для крупных операций"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_trust_eroded_stale",
+      "source": "Luk_Efimov",
+      "target": "Luk_Efimov",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "trust_in_main_bank",
+        "value": "Высокое",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_trust_eroded_valid",
+      "source": "Luk_Efimov",
+      "target": "Luk_Efimov",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "trust_in_main_bank",
+        "value": "Значительно подорвано",
+        "date": "21.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_decides_partial_transfer",
+      "source": "Luk_Efimov",
+      "target": "Decision_DiversifyBanks",
+      "relation": "MAKES_DECISION",
+      "attributes": {
+        "decision": "Переводить деньги матери частями"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_transfers_mother_part1",
+      "source": "Luk_Efimov",
+      "target": "Transaction_MotherTreatment_Part1_50k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "recipient": "Lydia_Fomin",
+        "date": "22.04.2024",
+        "time": "10:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_transfers_mother_part2",
+      "source": "Luk_Efimov",
+      "target": "Transaction_MotherTreatment_Part2_40k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "recipient": "Lydia_Fomin",
+        "date": "22.04.2024",
+        "time": "18:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "limits_removed_from_debit_card",
+      "source": "Debit_Card_Premium",
+      "target": "Event_LimitsRemoved_29_04",
+      "relation": "WAS_AFFECTED_BY",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_limits_removed_date",
+      "source": "Event_LimitsRemoved_29_04",
+      "target": "ep_5",
+      "relation": "TEMPORAL_REASONING",
+      "attributes": {
+        "date": "29.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "luk_feels_relief",
+      "source": "Luk_Efimov",
+      "target": "ep_5",
+      "relation": "HAS_SENTIMENT",
+      "attributes": {
+        "sentiment": "Облегчение",
+        "reason": "Снятие лимитов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_opens_alfa_account",
+      "source": "Luk_Efimov",
+      "target": "Account_Savings_AlfaBank_13pct",
+      "relation": "OPENS",
+      "attributes": {
+        "bank": "Alfa_Bank"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "luk_transfers_to_alfa_savings",
+      "source": "Luk_Efimov",
+      "target": "Transaction_Savings_Alfa_500k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "recipient_account": "Account_Savings_AlfaBank_13pct",
+        "amount": 500000,
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_applies_tinkoff_card",
+      "source": "Luk_Efimov",
+      "target": "Tinkoff_Bank",
+      "relation": "APPLIED_FOR_DEBIT_CARD",
+      "attributes": {
+        "features": "Бесплатное обслуживание, повышенный кэшбэк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_checks_deposit_insurance",
+      "source": "Luk_Efimov",
+      "target": "Regulatory_DepositInsurance",
+      "relation": "CHECKS_COMPLIANCE_WITH",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "complaint_resolved",
+      "source": "Client_Complaint_115FZ",
+      "target": "Complaint_Resolution_MainBank",
+      "relation": "RESOLVED_BY",
+      "attributes": {
+        "date_of_resolution": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_pays_faina_kindergarten",
+      "source": "Luk_Efimov",
+      "target": "Transaction_FainaKindergarten_8500",
+      "relation": "PERFORMS",
+      "attributes": {
+        "instrument": "Новая дебетовая карта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_discusses_multicurrency",
+      "source": "Luk_Efimov",
+      "target": "Bazhen_Gorbunov",
+      "relation": "DISCUSSES_WITH",
+      "attributes": {
+        "topic": "Преимущества и недостатки мультивалютных счетов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_decides_credit_card_limited_use",
+      "source": "Luk_Efimov",
+      "target": "Credit_Card_New",
+      "relation": "DECIDES_LIMITED_USE_FOR",
+      "attributes": {
+        "reason": "Избежать повторения проблем с лимитами"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_updates_contact_data",
+      "source": "Luk_Efimov",
+      "target": "Bank_Main",
+      "relation": "UPDATES_CONTACT_DATA_IN",
+      "attributes": {
+        "update": "Добавление второго номера телефона для экстренных уведомлений"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_learns_lesson",
+      "source": "Luk_Efimov",
+      "target": "ep_5",
+      "relation": "LEARNS_LESSON_FROM",
+      "attributes": {
+        "lesson": "Укрепление прагматичного подхода к финансам, повышенная бдительность и независимость"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "decoy_account_relation",
+      "source": "Luk_Efimov",
+      "target": "Account_Savings_Decoy_12_5pct",
+      "relation": "CONSIDERS_OPENING",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_transfers_repair_apartment",
+      "source": "Luk_Efimov",
+      "target": "Transaction_ApartmentRepair_150k",
+      "relation": "PERFORMS",
+      "attributes": {
+        "recipient": "Regina_Makarova",
+        "date": "05.05.2024",
+        "instrument": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_savings_mainbank_interest_stale",
+      "source": "Account_Savings_MainBank_12pct",
+      "target": "Account_Savings_MainBank_12pct",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "interest_rate",
+        "value": "12%",
+        "date": "15.02.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "account_savings_alfabank_interest_valid",
+      "source": "Account_Savings_AlfaBank_13pct",
+      "target": "Account_Savings_AlfaBank_13pct",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "interest_rate",
+        "value": "13%",
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "client_complaint_status_stale",
+      "source": "Client_Complaint_115FZ",
+      "target": "Client_Complaint_115FZ",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "status",
+        "value": "На рассмотрении",
+        "date": "21.04.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "client_complaint_status_valid",
+      "source": "Client_Complaint_115FZ",
+      "target": "Client_Complaint_115FZ",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "status",
+        "value": "Разрешена",
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "limit_outgoing_transfer_status_stale",
+      "source": "Limit_Temporary_OutgoingTransfer_100k",
+      "target": "Limit_Temporary_OutgoingTransfer_100k",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "status",
+        "value": "Активен",
+        "date": "15.04.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "limit_outgoing_transfer_status_valid",
+      "source": "Limit_Temporary_OutgoingTransfer_100k",
+      "target": "Limit_Temporary_OutgoingTransfer_100k",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "status",
+        "value": "Снят",
+        "date": "29.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "limit_cash_withdrawal_status_stale",
+      "source": "Limit_Temporary_CashWithdrawal_50k",
+      "target": "Limit_Temporary_CashWithdrawal_50k",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "status",
+        "value": "Активен",
+        "date": "15.04.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "limit_cash_withdrawal_status_valid",
+      "source": "Limit_Temporary_CashWithdrawal_50k",
+      "target": "Limit_Temporary_CashWithdrawal_50k",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "status",
+        "value": "Снят",
+        "date": "29.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_old_expiry_stale",
+      "source": "Credit_Card_Old",
+      "target": "Credit_Card_Old",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "expiry_date",
+        "value": "30.04.2024",
+        "date": "25.03.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_new_expiry_valid",
+      "source": "Credit_Card_New",
+      "target": "Credit_Card_New",
+      "relation": "HAS_PROPERTY",
+      "attributes": {
+        "property": "expiry_date",
+        "value": "30.04.2027",
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_initial_balance",
+      "source": "Account_Debit_Luk",
+      "target": "ep_1",
+      "relation": "HAS_BALANCE",
+      "attributes": {
+        "amount": 276000,
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_balance_after_utilities",
+      "source": "Account_Debit_Luk",
+      "target": "ep_1",
+      "relation": "HAS_BALANCE",
+      "attributes": {
+        "amount": 226150,
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_pays_utilities_feb",
+      "source": "Luk_Efimov",
+      "target": "Account_Debit_Luk",
+      "relation": "PAYS_UTILITIES",
+      "attributes": {
+        "amount": 4850,
+        "date": "10.03.2024",
+        "period": "Февраль"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_pays_fuel",
+      "source": "Luk_Efimov",
+      "target": "Debit_Card_Premium",
+      "relation": "PAYS_FOR",
+      "attributes": {
+        "item": "Топливо на АЗС 'Газпромнефть'",
+        "amount": 3200,
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_transfers_to_savings_50k",
+      "source": "Luk_Efimov",
+      "target": "Account_Savings_MainBank_12pct",
+      "relation": "TRANSFERS_TO",
+      "attributes": {
+        "amount": 50000,
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "luk_pays_utilities_apr",
+      "source": "Luk_Efimov",
+      "target": "Account_Debit_Luk",
+      "relation": "PAYS_UTILITIES",
+      "attributes": {
+        "amount": 5100,
+        "date": "21.04.2024",
+        "period": "Апрель"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n1",
+      "source": "Transaction_FainaKindergarten_8500",
+      "target": "Regulatory_115FZ",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n2",
+      "source": "Documents_115FZ",
+      "target": "Tinkoff_Bank",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n3",
+      "source": "Regulatory_115FZ",
+      "target": "Account_Savings_MainBank_12pct",
+      "relation": "related_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n4",
+      "source": "Regina_Makarova",
+      "target": "Luk_Efimov",
+      "relation": "had_rate",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n5",
+      "source": "Transaction_MotherTreatment_Part2_40k",
+      "target": "Client_Complaint_115FZ",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n6",
+      "source": "Fee_CreditCard_Reissue_299",
+      "target": "Transaction_ChildrenSections_16_2k",
+      "relation": "paid",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n7",
+      "source": "Bank_Main",
+      "target": "Limit_Temporary_CashWithdrawal_50k",
+      "relation": "received",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n8",
+      "source": "Transaction_Lydia_AutoMaster_320k",
+      "target": "Account_Savings_MainBank_12pct",
+      "relation": "contains",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n9",
+      "source": "Luk_Efimov",
+      "target": "Client_Complaint_115FZ",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n10",
+      "source": "Credit_Card_Old",
+      "target": "ep_3",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n11",
+      "source": "ep_3",
+      "target": "Credit_Card_Old",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n12",
+      "source": "Complaint_Resolution_MainBank",
+      "target": "ep_2",
+      "relation": "related_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n13",
+      "source": "ep_4",
+      "target": "Event_CardUnblocked_15_04",
+      "relation": "had_rate",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n14",
+      "source": "Transaction_Lydia_AutoMaster_320k",
+      "target": "Debit_Card_Premium",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n15",
+      "source": "Vitaliy_Grishin",
+      "target": "Account_Debit_Luk",
+      "relation": "paid",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_Автосервис АвтоМастер",
+      "source": "Автосервис АвтоМастер",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_АЗС Газпромнефть",
+      "source": "АЗС Газпромнефть",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

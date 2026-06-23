@@ -1,0 +1,2472 @@
+{
+  "nodes": [
+    {
+      "id": "person_kharalampiy_gordeev",
+      "type": "person",
+      "label": "Харлампий Ермилович Гордеев",
+      "attributes": {
+        "age": "21",
+        "occupation": "Астрофизик",
+        "employer": "клх Надым",
+        "income": "90000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_mortgage_ip_20230301",
+      "type": "product",
+      "label": "Ипотечный кредит №ИП-20230301",
+      "attributes": {
+        "type": "mortgage",
+        "amount": "7000000 руб.",
+        "interest_rate": "11.5%",
+        "term_months": "240",
+        "monthly_payment": "78500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_consumer_pk_20230515",
+      "type": "product",
+      "label": "Потребительский кредит №ПК-20230515",
+      "attributes": {
+        "type": "consumer",
+        "amount": "500000 руб.",
+        "interest_rate": "18.9%",
+        "term_months": "36",
+        "monthly_payment": "18200 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_auto_ak_20230901",
+      "type": "product",
+      "label": "Автокредит №АК-20230901",
+      "attributes": {
+        "type": "auto",
+        "amount": "1500000 руб.",
+        "interest_rate": "14.0%",
+        "term_months": "60",
+        "monthly_payment": "34900 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "loan_mortgage_ref_20240205",
+      "type": "product",
+      "label": "Ипотечный кредит №ИП-РЕФ-20240205",
+      "attributes": {
+        "type": "mortgage",
+        "amount": "6800000 руб.",
+        "interest_rate": "9.9%",
+        "term_months": "228",
+        "monthly_payment": "65000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_consumer_ref_20240212",
+      "type": "product",
+      "label": "Потребительский кредит №ПК-РЕФ-20240212",
+      "attributes": {
+        "type": "consumer",
+        "amount": "450000 руб.",
+        "interest_rate": "14.9%",
+        "term_months": "24",
+        "monthly_payment": "22500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "document",
+      "label": "Договор купли-продажи квартиры",
+      "attributes": {
+        "date": "01.03.2023",
+        "property_address": "г. Москва, ул. Садовая, д. 25, кв. 10"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "event",
+      "label": "Квартира",
+      "attributes": {
+        "address": "г. Москва, ул. Садовая, д. 25, кв. 10",
+        "area_sqm": "60",
+        "rooms": "2"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "account",
+      "label": "Текущий счет Харлампия Гордеева",
+      "attributes": {
+        "currency": "руб.",
+        "bank": "ПАО Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "event",
+      "label": "Платеж за коммунальные услуги",
+      "attributes": {
+        "amount": "6200 руб.",
+        "date": "10.06.2023",
+        "type": "коммунальные услуги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "person",
+      "label": "Владимирова Елизавета Мироновна",
+      "attributes": {
+        "relationship": "мать",
+        "age": "50"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "event",
+      "label": "Перевод маме",
+      "attributes": {
+        "amount": "15000 руб.",
+        "date": "25.06.2023",
+        "type": "перевод СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "document",
+      "label": "Уведомление о продлении страховки",
+      "attributes": {
+        "date": "01.07.2023",
+        "cost": "12000 руб.",
+        "period": "год"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "person",
+      "label": "Фокина Пелагея Дмитриевна",
+      "attributes": {
+        "age": "68",
+        "occupation": "пенсионер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Налоговый вычет",
+      "attributes": {
+        "type": "имущественный",
+        "status": "обсуждение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "product",
+      "label": "Автомобиль Lada Vesta",
+      "attributes": {
+        "year": "2023",
+        "color": "серебристый",
+        "price": "1500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {
+        "year": "2023",
+        "income": "1800000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "document",
+      "label": "Копия трудовой книжки",
+      "attributes": {
+        "status": "предоставлена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Просрочка платежа",
+      "attributes": {
+        "date": "15.01.2024",
+        "amount": "18200 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Оплата штрафа",
+      "attributes": {
+        "amount": "500 руб.",
+        "date": "16.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "person",
+      "label": "Мина Комиссаров",
+      "attributes": {
+        "relationship": "родитель",
+        "age": "59"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Кредитный рейтинг",
+      "attributes": {
+        "status": "хороший",
+        "note": "недавняя просрочка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "person",
+      "label": "Федорова Фёкла Богдановна",
+      "attributes": {
+        "age": "34",
+        "occupation": "финансовый консультант"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "document",
+      "label": "Свидетельство о браке",
+      "attributes": {
+        "date": "10.08.2022"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "organization",
+      "label": "Банк 'Надежный'",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "document",
+      "label": "Выписка из ЕГРН",
+      "attributes": {
+        "property_address": "г. Москва, ул. Садовая, д. 25, кв. 10",
+        "date": "15.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Предложение по рефинансированию ипотеки",
+      "attributes": {
+        "amount": "6800000 руб.",
+        "interest_rate": "9.9%",
+        "term_months": "228",
+        "status": "одобрено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Предложение по рефинансированию потребительского кредита",
+      "attributes": {
+        "amount": "450000 руб.",
+        "interest_rate": "15.5%",
+        "term_months": "24",
+        "status": "предложено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Уведомление о подписании договора",
+      "attributes": {
+        "date": "01.02.2024",
+        "deadline": "5 рабочих дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "document",
+      "label": "Проект нового ипотечного договора",
+      "attributes": {
+        "date": "02.02.2024",
+        "status": "изучен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Условия страхования",
+      "attributes": {
+        "status": "уточнение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "person",
+      "label": "Менеджер банка",
+      "attributes": {
+        "bank": "Банк 'Надежный'",
+        "role": "кредитный специалист"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "document",
+      "label": "Договор рефинансирования ипотеки",
+      "attributes": {
+        "id": "ИП-РЕФ-20240205",
+        "date": "05.02.2024",
+        "status": "подписан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Закрытие старого ипотечного кредита",
+      "attributes": {
+        "date": "07.02.2024",
+        "loan_id": "ИП-20230301"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Открытие нового ипотечного кредита",
+      "attributes": {
+        "date": "07.02.2024",
+        "loan_id": "ИП-РЕФ-20240205"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "product",
+      "label": "Заявка на рефинансирование ипотеки",
+      "attributes": {
+        "date": "10.01.2024",
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "product",
+      "label": "Заявка на рефинансирование потребительского кредита",
+      "attributes": {
+        "date": "25.01.2024",
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "account",
+      "label": "Сберегательный счет Харлампия Гордеева",
+      "attributes": {
+        "currency": "руб.",
+        "bank": "ПАО Сбербанк",
+        "balance": "50000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "product",
+      "label": "Кредитная карта",
+      "attributes": {
+        "limit": "150000 руб.",
+        "grace_period_days": "60",
+        "status": "планируется"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "СМС-уведомление о кредитной карте",
+      "attributes": {
+        "date": "21.05.2023",
+        "sender": "Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "type": "онлайн"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "document",
+      "label": "Выписка по ипотечному счету",
+      "attributes": {
+        "date": "01.06.2023",
+        "outstanding_balance": "6980000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Досрочное погашение",
+      "attributes": {
+        "target": "потребительский кредит",
+        "status": "размышления"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "organization",
+      "label": "Онлайн-сервис кредитных историй",
+      "attributes": {
+        "type": "сервис",
+        "provider": "НБКИ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Напоминание о платеже по ипотеке",
+      "attributes": {
+        "date": "01.02.2024",
+        "amount": "78500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "document",
+      "label": "Запрос документов по созаемщику",
+      "attributes": {
+        "date": "15.02.2024",
+        "requested_person": "Евпраксия Михеев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Разъяснение по созаемщику",
+      "attributes": {
+        "date": "17.02.2024",
+        "status": "предоставлено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Подтверждение отсутствия созаемщика",
+      "attributes": {
+        "date": "20.02.2024",
+        "status": "получено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "organization",
+      "label": "Страховая компания 'Надежная Защита'",
+      "attributes": {
+        "type": "страховая",
+        "specialization": "ипотечное страхование"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "document",
+      "label": "Страховой полис по ипотеке",
+      "attributes": {
+        "provider": "Страховая компания 'Надежная Защита'",
+        "cost": "12000 руб.",
+        "period": "1 год"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Платеж по ипотеке (старый)",
+      "attributes": {
+        "amount": "78500 руб.",
+        "date": "25.05.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Платеж по потребительскому кредиту (старый)",
+      "attributes": {
+        "amount": "18200 руб.",
+        "date": "15.06.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Платеж по автокредиту",
+      "attributes": {
+        "amount": "34900 руб.",
+        "date": "10.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "account",
+      "label": "Кредитный счет ипотеки (старый)",
+      "attributes": {
+        "loan_id": "ИП-20230301",
+        "bank": "ПАО Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "account",
+      "label": "Кредитный счет потребительского кредита (старый)",
+      "attributes": {
+        "loan_id": "ПК-20230515",
+        "bank": "ПАО Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "account",
+      "label": "Кредитный счет автокредита",
+      "attributes": {
+        "loan_id": "АК-20230901",
+        "bank": "ПАО Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "account",
+      "label": "Кредитный счет ипотеки (новый)",
+      "attributes": {
+        "loan_id": "ИП-РЕФ-20240205",
+        "bank": "Банк 'Надежный'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "account",
+      "label": "Кредитный счет потребительского кредита (новый)",
+      "attributes": {
+        "loan_id": "ПК-РЕФ-20240212",
+        "bank": "ПАО Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "document",
+      "label": "Заявление на досрочное погашение",
+      "attributes": {
+        "date": "08.03.2024",
+        "amount": "250000 руб.",
+        "loan_id": "АК-20230901"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Досрочное погашение автокредита",
+      "attributes": {
+        "date": "08.03.2024",
+        "amount": "250000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Финансовая цель",
+      "attributes": {
+        "goal": "снижение долговой нагрузки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Финансовая цель",
+      "attributes": {
+        "goal": "оптимизация ежемесячных платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Финансовая цель",
+      "attributes": {
+        "goal": "снижение процентной ставки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Финансовая цель",
+      "attributes": {
+        "goal": "уменьшение срока кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "person",
+      "label": "Евпраксия Михеев",
+      "attributes": {
+        "age": "17",
+        "relationship": "партнерша"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Консультация по кредитной карте",
+      "attributes": {
+        "date": "20.05.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Консультация по потребительскому кредиту",
+      "attributes": {
+        "date": "20.01.2024",
+        "amount": "480000 руб.",
+        "purpose": "ремонт дачи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Проверка кредитного рейтинга",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Обсуждение условий автокредита",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Подписание договора рефинансирования ипотеки",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_refinanced_mortgage_old_payment",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_mortgage_ip_20230301",
+      "relation": "paid",
+      "attributes": {
+        "amount": "78500 руб.",
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_refinanced_mortgage_new_payment",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_mortgage_ref_20240205",
+      "relation": "paid",
+      "attributes": {
+        "amount": "65000 руб.",
+        "date": "18.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_refinanced_consumer_old_payment",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_consumer_pk_20230515",
+      "relation": "paid",
+      "attributes": {
+        "amount": "18200 руб.",
+        "date": "15.05.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_refinanced_consumer_new_payment",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_consumer_ref_20240212",
+      "relation": "paid",
+      "attributes": {
+        "amount": "22500 руб.",
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_auto_loan_old_payment",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_auto_ak_20230901",
+      "relation": "paid",
+      "attributes": {
+        "amount": "34900 руб.",
+        "date": "01.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_auto_loan_new_payment",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_auto_ak_20230901",
+      "relation": "paid",
+      "attributes": {
+        "amount": "31500 руб.",
+        "date": "10.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_auto_loan_old_balance",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_auto_ak_20230901",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "date": "01.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_auto_loan_new_balance",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_auto_ak_20230901",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1250000 руб.",
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "loan_consumer_pk_20230515",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "loan_auto_ak_20230901",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_3",
+      "relation": "signed",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_3",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_5",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_5",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_5",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_8",
+      "target": "ctx_node_7",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "налоговый вычет",
+        "date": "05.07.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_11",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "loan_auto_ak_20230901",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_1",
+      "target": "ctx_node_13",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "12.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_1",
+      "target": "ctx_node_14",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "12.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "loan_consumer_pk_20230515",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_15",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_17",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2024",
+        "topic": "потребительский кредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_15",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "impact": "негативный"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "условия автокредита",
+        "date": "05.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_20",
+      "target": "ctx_node_1",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_21",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "10.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_21",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_23",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_1",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_24",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_21",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_25",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_26",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_28",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_29",
+      "relation": "signed",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_29",
+      "target": "loan_mortgage_ref_20240205",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_21",
+      "target": "ctx_node_30",
+      "relation": "approved",
+      "attributes": {
+        "date": "07.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_21",
+      "target": "ctx_node_31",
+      "relation": "approved",
+      "attributes": {
+        "date": "07.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_32",
+      "relation": "submitted",
+      "attributes": {
+        "date": "10.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_32",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_33",
+      "relation": "submitted",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_33",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_34",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_1",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_36",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.05.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_1",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_38",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_39",
+      "target": "loan_consumer_pk_20230515",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_40",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_1",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_41",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_21",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_42",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_43",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_21",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_44",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_9",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_45",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_47",
+      "target": "loan_mortgage_ip_20230301",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_48",
+      "target": "loan_consumer_pk_20230515",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_49",
+      "target": "loan_auto_ak_20230901",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "loan_consumer_pk_20230515",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "loan_auto_ak_20230901",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "loan_mortgage_ref_20240205",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "loan_consumer_ref_20240212",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_55",
+      "relation": "submitted",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_55",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_55",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_56",
+      "target": "loan_auto_ak_20230901",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "loan_consumer_pk_20230515",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "loan_auto_ak_20230901",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_61",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_62",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_62",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_17",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_63",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_64",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "ctx_node_64",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_65",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_65",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_66",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "loan_consumer_pk_20230515",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "loan_auto_ak_20230901",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "ctx_node_57",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "ctx_node_57",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_57",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_auto_ak_20230901",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1125000 руб.",
+        "date": "08.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_consumer_pk_20230515",
+      "relation": "paid",
+      "attributes": {
+        "amount": "20020 руб.",
+        "date": "15.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_mortgage_ip_20230301",
+      "relation": "paid",
+      "attributes": {
+        "amount": "86350 руб.",
+        "date": "01.02.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_17",
+      "target": "loan_consumer_pk_20230515",
+      "relation": "paid",
+      "attributes": {
+        "amount": "18018 руб.",
+        "date": "15.03.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_24",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_43",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,05.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_33",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,32.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_59",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "налоговый вычет",
+        "date": "4,56.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_30",
+      "target": "loan_consumer_ref_20240212",
+      "relation": "paid",
+      "attributes": {
+        "amount": "20250 руб.",
+        "date": "01.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,21.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "amount": "28350 руб.",
+        "date": "10.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_29",
+      "target": "loan_mortgage_ip_20230301",
+      "relation": "paid",
+      "attributes": {
+        "amount": "86350 руб.",
+        "date": "01.03.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "условия автокредита",
+        "date": "5,52.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "person_kharalampiy_gordeev",
+      "target": "loan_consumer_pk_20230515",
+      "relation": "paid",
+      "attributes": {
+        "amount": "28350 руб.",
+        "date": "10.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_63",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,32.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,72.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_1",
+      "target": "ctx_node_10",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "13,21.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_56",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,55.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_17",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,01.2024",
+        "topic": "потребительский кредит"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_35",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,92.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_35",
+      "target": "loan_auto_ak_20230901",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1125000 руб.",
+        "date": "08.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_kharalampiy_gordeev",
+      "source": "person_kharalampiy_gordeev",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_ip_20230301",
+      "source": "loan_mortgage_ip_20230301",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_pk_20230515",
+      "source": "loan_consumer_pk_20230515",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto_ak_20230901",
+      "source": "loan_auto_ak_20230901",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_ref_20240205",
+      "source": "loan_mortgage_ref_20240205",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_ref_20240212",
+      "source": "loan_consumer_ref_20240212",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

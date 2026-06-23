@@ -1,0 +1,1676 @@
+{
+  "nodes": [
+    {
+      "id": "early_repayment_request",
+      "type": "event",
+      "label": "Заявка на досрочное погашение",
+      "attributes": {
+        "amount": "500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "115fz_block",
+      "type": "event",
+      "label": "Блокировка по 115-ФЗ",
+      "attributes": {
+        "status": "115-FZ Hold"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "document_verification",
+      "type": "event",
+      "label": "Верификация источника средств",
+      "attributes": {
+        "date": "25.06.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "repayment_approved",
+      "type": "event",
+      "label": "Одобрение досрочного погашения",
+      "attributes": {
+        "amount": "500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "limit_reduction",
+      "type": "event",
+      "label": "Снижение лимита переводов",
+      "attributes": {
+        "amount": "50000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "person",
+      "label": "Наркис Жанович Калашников",
+      "attributes": {
+        "role": "клиент",
+        "income": "45000 руб.",
+        "occupation": "брокер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "person",
+      "label": "Панфилова Ираида Оскаровна",
+      "attributes": {
+        "role": "мать",
+        "age": 72,
+        "relation": "поручитель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "person",
+      "label": "Анжела Матвеева",
+      "attributes": {
+        "role": "партнёр",
+        "status": "созаёмщик",
+        "agreement": "joint_liability"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "person",
+      "label": "Бирюков Максимильян Игнатьевич",
+      "attributes": {
+        "role": "продавец авто",
+        "contract": "20.02.2024",
+        "amount": "480000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва",
+        "function": "кредитор"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "МФО Кредит-Сервис",
+      "attributes": {
+        "type": "микрофинансовая",
+        "contract": "77812",
+        "debt": "120000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "organization",
+      "label": "Налоговая инспекция",
+      "attributes": {
+        "type": "госорган",
+        "function": "верификация",
+        "seal": "present"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "organization",
+      "label": "Бюро кредитных историй",
+      "attributes": {
+        "type": "БКИ",
+        "function": "скоринг",
+        "rating": "Высокая надёжность"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "organization",
+      "label": "Застройщик ЖК Солнечный берег",
+      "attributes": {
+        "type": "девелопер",
+        "object": "2-комн. квартира",
+        "status": "в стройке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "organization",
+      "label": "Отделение на ул. Ленина 45",
+      "attributes": {
+        "type": "филиал",
+        "address": "ул. Ленина, 45",
+        "service": "очный визит"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "product",
+      "label": "Ипотечный договор 8890-МК",
+      "attributes": {
+        "type": "кредит",
+        "term": "20 лет",
+        "issue_date": "01.06.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "product",
+      "label": "Накопительный счёт 4500-8892",
+      "attributes": {
+        "type": "вклад",
+        "rate": "14.5%",
+        "start_date": "10.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Эскроу-счёт",
+      "attributes": {
+        "type": "счёт",
+        "status": "заблокирован",
+        "release": "ввод объекта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "product",
+      "label": "Потребительский долг 120000",
+      "attributes": {
+        "type": "займ",
+        "overdue": "14 дней",
+        "status": "погашен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "product",
+      "label": "Кредитная карта",
+      "attributes": {
+        "type": "пластиковая карта",
+        "limit": "500000 руб.",
+        "status": "активна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "document",
+      "label": "Договор совместной ответственности",
+      "attributes": {
+        "type": "соглашение",
+        "parties": "Наркис, Анжела",
+        "debt_share": "7200000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "document",
+      "label": "Форма поручительства",
+      "attributes": {
+        "type": "гарантия",
+        "guarantor": "Панфилова И.О.",
+        "fee": "1500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "document",
+      "label": "Доверенность от Анжелы Матвеевой",
+      "attributes": {
+        "type": "доверенность",
+        "scope": "представительство",
+        "contract_ref": "8890-МК"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "document",
+      "label": "Паспорт 4500 123456",
+      "attributes": {
+        "type": "удостоверение личности",
+        "issue_date": "12.05.2015",
+        "series": "4500"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "document",
+      "label": "Справка 2-НДФЛ 2023",
+      "attributes": {
+        "type": "отчётность",
+        "year": 2023,
+        "submitted": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "document",
+      "label": "Расширенная кредитная история",
+      "attributes": {
+        "type": "отчёт",
+        "score": 745,
+        "bureau": "БКИ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "document",
+      "label": "Декларация 115-ФЗ",
+      "attributes": {
+        "type": "заявление",
+        "source": "брокерские операции",
+        "form": "115-FZ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Договор купли-продажи Lada Vesta",
+      "attributes": {
+        "type": "сделка",
+        "amount": "480000 руб.",
+        "date": "20.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "document",
+      "label": "Выписка по счёту 3 месяца",
+      "attributes": {
+        "type": "отчётность",
+        "period": "90 дней",
+        "tracking": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Печать налоговой инспекции",
+      "attributes": {
+        "type": "штамп",
+        "status": "подтверждено",
+        "document_ref": "115-FZ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "document",
+      "label": "Запись биометрических данных",
+      "attributes": {
+        "type": "биометрия",
+        "method": "face_id",
+        "status": "verified"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "System Maintenance Alert",
+      "attributes": {
+        "type": "ошибка",
+        "channel": "СБП",
+        "resolution": "20 мин"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Статус Processing",
+      "attributes": {
+        "type": "ожидание",
+        "duration": "20 мин",
+        "status": "transient"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Модуль AML Check",
+      "attributes": {
+        "type": "мониторинг",
+        "trigger": "крупный перевод",
+        "action": "manual_review"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Suspicious Transaction Flag",
+      "attributes": {
+        "type": "флаг",
+        "level": "high",
+        "resolution": "снят"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Режим Account Freezing",
+      "attributes": {
+        "type": "ограничение",
+        "cash_withdrawal": "false",
+        "purchases": "10000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Процедура биометрии",
+      "attributes": {
+        "type": "верификация",
+        "location": "отделение",
+        "duration": "12 мин"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "product",
+      "label": "Система быстрых платежей",
+      "attributes": {
+        "type": "платёжная система",
+        "fee": "0.6%",
+        "status": "active"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "type": "интерфейс",
+        "version": "v5.2",
+        "channel": "mobile"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "product",
+      "label": "Личный кабинет",
+      "attributes": {
+        "type": "веб-интерфейс",
+        "access": "online",
+        "upload": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Показатель Debt-to-Income",
+      "attributes": {
+        "type": "коэффициент",
+        "value": "68% -> 52%",
+        "status": "improved"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Скоринговая модель",
+      "attributes": {
+        "type": "алгоритм",
+        "rating": "Высокая надёжность",
+        "score": 745
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Ключевая ставка 16%",
+      "attributes": {
+        "type": "ставка",
+        "source": "ЦБ РФ",
+        "fixed": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Отмена пени за досрочное",
+      "attributes": {
+        "type": "условие",
+        "status": "применено",
+        "amount": "0 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Ежемесячный платёж 115000",
+      "attributes": {
+        "type": "платёж",
+        "period": "месяц",
+        "status": "initial"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Ежемесячный платёж 98000",
+      "attributes": {
+        "type": "платёж",
+        "period": "месяц",
+        "status": "updated"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Первоначальный взнос 1500000",
+      "attributes": {
+        "type": "взнос",
+        "source": "накопления",
+        "amount": "1500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Ставка по вкладу 14.5%",
+      "attributes": {
+        "type": "процент",
+        "compounding": "ежемесячная",
+        "rate": "14.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Комиссия 59 рублей",
+      "attributes": {
+        "type": "списание",
+        "reason": "двойное списание",
+        "refunded": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_triggers_block",
+      "source": "early_repayment_request",
+      "target": "115fz_block",
+      "relation": "caused",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_requires_verification",
+      "source": "115fz_block",
+      "target": "document_verification",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_leads_to_approval",
+      "source": "document_verification",
+      "target": "repayment_approved",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_false_limit",
+      "source": "115fz_block",
+      "target": "limit_reduction",
+      "relation": "caused",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "ctx_node_1",
+      "target": "ctx_node_5",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "channel": "онлайн"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "ctx_node_1",
+      "target": "ctx_node_11",
+      "relation": "owns",
+      "attributes": {
+        "contract": "8890-МК",
+        "status": "active"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_1",
+      "target": "ctx_node_12",
+      "relation": "owns",
+      "attributes": {
+        "account": "4500-8892",
+        "purpose": "накопление"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_1",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "120000 руб.",
+        "status": "closed"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_1",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "мать",
+        "transfer": "5000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "созаёмщик",
+        "agreement": "joint"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "покупка авто",
+        "amount": "480000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "owns",
+      "attributes": {
+        "series": "4500",
+        "verified": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_1",
+      "target": "ctx_node_20",
+      "relation": "submitted",
+      "attributes": {
+        "year": 2023,
+        "purpose": "скоринг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "applied_for",
+      "attributes": {
+        "type": "расширенная",
+        "score": 745
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_11",
+      "target": "ctx_node_38",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "16%",
+        "source": "ЦБ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_11",
+      "target": "ctx_node_40",
+      "relation": "paid",
+      "attributes": {
+        "amount": "115000 руб.",
+        "period": "месяц"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_11",
+      "target": "ctx_node_41",
+      "relation": "changed_to",
+      "attributes": {
+        "amount": "98000 руб.",
+        "period": "месяц"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_11",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "source": "вклад"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_11",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "blocked",
+        "release": "ввод объекта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_12",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "rate": "14.5%",
+        "compounding": "monthly"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_12",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "date": "10.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_14",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "contract": "77812",
+        "type": "МФО"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_14",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "metric": "DTI",
+        "value": "68%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_37",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "скоринг",
+        "output": "rating"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_22",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "agency": "налоговая",
+        "seal": "present"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc_type": "договор купли-продажи",
+        "amount": "480000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_23",
+      "target": "ctx_node_4",
+      "relation": "signed",
+      "attributes": {
+        "party": "Бирюков М.И.",
+        "date": "20.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_23",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc_type": "выписка",
+        "period": "3 мес"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_24",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "4500-8892",
+        "purpose": "origin"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_18",
+      "target": "ctx_node_3",
+      "relation": "owns",
+      "attributes": {
+        "holder": "Анжела Матвеева",
+        "scope": "представительство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_18",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "contract": "8890-МК",
+        "type": "доверенность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_16",
+      "target": "ctx_node_3",
+      "relation": "signed",
+      "attributes": {
+        "party": "Анжела Матвеева",
+        "role": "созаёмщик"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_16",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc_type": "форма поручительства",
+        "guarantor": "Панфилова И.О."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_17",
+      "target": "ctx_node_2",
+      "relation": "signed",
+      "attributes": {
+        "guarantor": "Панфилова И.О.",
+        "age": 72
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_34",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "СБП",
+        "version": "v5.2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_33",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "error": "System Maintenance Alert",
+        "resolution": "20 мин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_33",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "Processing",
+        "duration": "20 мин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_28",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "fee": "59 руб.",
+        "reason": "двойное списание"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_29",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "flag": "Suspicious Transaction Flag",
+        "level": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_30",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {
+        "mode": "Account Freezing",
+        "cash": "false"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_31",
+      "target": "limit_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "limit": "50000 руб.",
+        "type": "переводы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_32",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc": "паспорт",
+        "series": "4500"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_32",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "address": "ул. Ленина, 45",
+        "duration": "12 мин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_35",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc": "2-НДФЛ",
+        "upload": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "early_repayment_request",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "contract": "8890-МК",
+        "amount": "500000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "115fz_block",
+      "target": "ctx_node_29",
+      "relation": "caused",
+      "attributes": {
+        "module": "AML Check",
+        "action": "manual_review"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "115fz_block",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {
+        "mode": "Account Freezing",
+        "status": "active"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "document_verification",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc": "Декларация 115-ФЗ",
+        "status": "verified"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "document_verification",
+      "target": "ctx_node_32",
+      "relation": "contains",
+      "attributes": {
+        "process": "биометрия",
+        "location": "отделение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "repayment_approved",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "payment": "98000 руб.",
+        "period": "месяц"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "repayment_approved",
+      "target": "ctx_node_37",
+      "relation": "changed_to",
+      "attributes": {
+        "model": "скоринг",
+        "rating": "Высокая надёжность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "limit_reduction",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "СБП",
+        "limit": "50000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "early_repayment_request",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "penalty": "0 руб.",
+        "status": "применено"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "115fz_block",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "flag": "Suspicious Transaction Flag",
+        "level": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_9",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "object": "2-комн. квартира",
+        "status": "в стройке"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_13",
+      "target": "ctx_node_9",
+      "relation": "owns",
+      "attributes": {
+        "amount": "8500000 руб.",
+        "release": "ввод объекта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_8",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "report": "кредитная история",
+        "score": 745
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_8",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "скоринг",
+        "data": "БКИ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_7",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "seal": "налоговая",
+        "status": "подтверждено"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_25",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc": "Декларация 115-ФЗ",
+        "status": "verified"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_2",
+      "target": "ctx_node_16",
+      "relation": "signed",
+      "attributes": {
+        "party": "Панфилова И.О.",
+        "role": "поручитель"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_3",
+      "target": "ctx_node_16",
+      "relation": "signed",
+      "attributes": {
+        "party": "Анжела Матвеева",
+        "role": "созаёмщик"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_10",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "process": "биометрия",
+        "duration": "12 мин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_34",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "data": "выписки",
+        "status": "active"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_14",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "penalty": "0 руб.",
+        "status": "применено"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_39",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "contract": "8890-МК",
+        "type": "досрочное"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_12",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "fee": "59 руб.",
+        "reason": "досрочное снятие"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_28",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "СБП",
+        "status": "approved"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_27",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "app": "mobile",
+        "resolution": "20 мин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_29",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "location": "ул. Ленина, 45",
+        "action": "ручная проверка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_30",
+      "target": "document_verification",
+      "relation": "resulted_in",
+      "attributes": {
+        "process": "верификация",
+        "status": "pending"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_31",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "card": "кредитная",
+        "purchases": "10000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_15",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "payment": "98000 руб.",
+        "status": "active"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_36",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "metric": "DTI",
+        "output": "rating"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_12",
+      "target": "ctx_node_14",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "120000 руб.",
+        "purpose": "погашение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_23",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "480000 руб.",
+        "account": "4500-8892"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_18",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc": "доверенность",
+        "agreement": "joint"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_26",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc": "паспорт",
+        "status": "verified"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_21",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "bureau": "БКИ",
+        "score": 745
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_40",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "from": "115000 руб.",
+        "to": "98000 руб.",
+        "reason": "досрочное"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_early_repayment_request",
+      "source": "early_repayment_request",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_115fz_block",
+      "source": "115fz_block",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_document_verification",
+      "source": "document_verification",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_repayment_approved",
+      "source": "repayment_approved",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_limit_reduction",
+      "source": "limit_reduction",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

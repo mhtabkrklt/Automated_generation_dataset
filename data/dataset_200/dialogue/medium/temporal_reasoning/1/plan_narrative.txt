@@ -1,0 +1,49 @@
+Краткая сюжетная линия для диалога (5 этапов, 3‑месячный таймлайн)
+
+1) Завязка — первое обращение (день 0–3)
+- Событие: Владилен замечает крупную списанную сумму в грейс‑период и одновременно получает уведомление о блокировке карты по подозрению в нарушении 115‑ФЗ. Платежи по подпискам и коммуналке рискуют не пройти.
+- Эмоциональный фон: ClientAnxiety, UrgentRequest, DissatisfiedCustomer (нервничает из‑за штрафов и срочности).
+- Действия клиента: обращается в чат/тикет банка, просит срочно разблокировать карту и перевыпустить (RequestCardReissue, CardBlocked, ReissueRequested).
+- Ожидаемые банковские шаги: первичная проверка транзакции и сообщение о необходимости верификации личности и документов (PassportData, CodeWordConfirmation, BiometricAuth, 115FZ_Blocking).
+- Технические риски: при попытке загрузить документы клиент сталкивается с MobileAppError / OTPFailure.
+
+2) Развитие — верификация и сбор доказательств (1–2 недели)
+- Событие: банк инициирует AML/115‑FZ проверку и мониторинг транзакций (LargeTransactionFlag, GeoMismatch, FraudAlert). Клиент получает список требуемых документов и форм для оспаривания.
+- Эмоциональный фон: всё ещё тревога, частичная раздражённость, но готовность сотрудничать (ClientAnxiety → CalmCooperative при ясных инструкциях).
+- Действия клиента: загружает паспорт, кодовое слово подтверждает по голосу/биометрии, готовит и отправляет подписанное заявление, чеки/чек оплаты крупной покупки (IDDocumentUpload, SignedStatement, ProofOfPurchase, EvidenceUpload).
+- Проблемные моменты: баг в интернет‑банке или задержка OTP мешает оперативной загрузке — эскалация в техподдержку (InternetBankBug, OTPFailure).
+- Банк: открывает дело, присваивает кейс и даёт SLA‑ориентир; временно предлагает Virtual/TemporaryCard для экстренных платежей (CaseOpened, SecureChat, TemporaryCardIssued).
+
+3) Кульминация — спор и конфликт по штрафам и срокам (3–4 недели)
+- Событие: проверка выявляет подозрение, спорная транзакция крупная и совпала с окончанием грейс‑периода; начисляются штрафы/проценты и клиенту угрожает просрочка. Клиент требует отмены списания и снятия штрафов.
+- Эмоциональный фон: DissatisfiedCustomer → повышенная требовательность; угроза эскалации в соцсети/рекламу банка (UrgentRequest, EscalationToSupervisor).
+- Действия клиента: инициирует TransactionDispute / ChargebackInitiated, настаивает на FeeWaiverRequest и экстренном перевыпуске карты (TransactionDispute, FeeWaiverRequest, RequestCardReissue).
+- Банк: запускает формальный chargeback, проводит merchant verification, параллельно ComplianceEscalation по 115‑FZ; временно удерживает решение о перевыпуске до завершения проверки (MerchantVerification, ComplianceEscalation, LegalHold).
+- Конфликт: клиент требует разблокировки немедленно и отмены штрафов; банк объясняет регуляторные ограничения и сроки, что усиливает напряжение.
+
+4) Развязка — компромиссные решения и оперативные меры (5–8 недель)
+- Событие: по результатам проверки часть доказательств клиента подтверждает необоснованность списания; банк проводит частичный chargeback и временно возвращает средства, одновременно соглашаясь на смягчение штрафов при условии подписания заявления.
+- Эмоциональный фон: клиент становится более CalmCooperative после ясного плана и обещания скорой реабилитации счёта.
+- Действия клиента: даёт ConsentToReleaseBlock на условиях дополнительной верификации, соглашается на частичное AgreeToPenaltyWaiver или на отсрочку минимального платежа; формально DeclineCharge на спорную операцию (ConsentToReleaseBlock, AgreeToPenaltyWaiver, DeclineCharge).
+- Банк: выставляет варианты — express reissue с курьером или временная виртуальная карта; устраняет технические баги, обновляет статус кейса и даёт гарантию SLA (ExpressReissueRequest, CourierDelivery, ReissueDelay уточнён и сокращён).
+
+5) Исход и последующие действия — закрытие кейса и уроки (2–3 месяца)
+- Событие: карта перевыпущена (или временная виртуальная выдана), спорная транзакция либо полностью возвращена, либо решён компромисс; штрафы частично/полностью списаны; кейс закрыт с уведомлением.
+- Эмоциональный фон: Relief → умеренная недовольность, но доверие восстановлено при соблюдении обещаний (CalmCooperative, ResidualDissatisfaction).
+- Последующие шаги: банк отправляет итоговый аккаунт‑statement, рекомендации по настройке уведомлений и лимитов, предлагает мониторинг транзакций и опцию дополнительной биометрии для ускорения в будущем (TransactionHistoryRequest, CreditCardStatus, CustomerIDMatch).
+- Административно: CaseOpened → CaseClosed с отметками EscalationToSupervisor (если была) и SLA_Breach зафиксирован/объяснён; клиент получает follow‑up по e‑mail/SMS и инструкцию для подачи жалобы при несогласии (EmailThread, SMSNotification, CallbackRequested при необходимости).
+
+Ключевые точки для маркировки (labels), которые должны фигурировать на каждом этапе:
+- Идентификация: PassportData, CodeWordConfirmation, BiometricAuth, CustomerIDMatch.
+- Эмоции: ClientAnxiety, UrgentRequest, DissatisfiedCustomer → CalmCooperative.
+- Решения клиента: ConsentToReleaseBlock, DeclineCharge, AgreeToPenaltyWaiver, RequestCardReissue.
+- Карта/счёт: CreditCardStatus, CardBlocked, ReissueRequested, TemporaryCardIssued.
+- Безопасность/комплайнс: SuspiciousActivity, AML_Check (115‑FZ), FraudAlert, 115FZ_Blocking.
+- Документы: IDDocumentUpload, SignedStatement, ProofOfPurchase, EvidenceUpload.
+- Техподдержка: MobileAppError, OTPFailure, InternetBankBug.
+- Обычные операции и кредиты: TransactionHistoryRequest, GracePeriodQuery, MinimumPayment, InterestCharge.
+- Процесс спора: TransactionDispute, ChargebackInitiated, DisputeStatusUpdate.
+- Штрафы и доставка: PenaltyChargeApplied, FeeWaiverRequest, ReissueDelay, CourierDelivery.
+- Организация взаимодействия: CaseOpened, EscalationToSupervisor, SLA_Breach, SecureChat, EmailThread, SMSNotification.
+
+Итог: сюжет показывает эскалацию конфликта из‑за блокировки по 115‑ФЗ и крупной спорной транзакции в грейс‑период, необходимость тщательной идентификации и документальной проверки, технические помехи и эмоциональное напряжение клиента, последующую эскалацию и достижение компромисса — возврат/частичный возврат средств, смягчение штрафов и перевыпуск карты с улучшенной поддержкой на будущее.

@@ -1,0 +1,1418 @@
+{
+  "nodes": [
+    {
+      "id": "client_varvara",
+      "type": "person",
+      "label": "Субботина Варвара Ждановна",
+      "attributes": {
+        "age": 26,
+        "income": 74000,
+        "city": "с. Соликамск",
+        "passport_series": "4500",
+        "passport_number": "123456",
+        "codeword": "Соликамск",
+        "gender": "female",
+        "client_portrait": "Варвара Субботина, 26-летняя экспедитор из с. Соликамск, с ежемесячным доходом в 74 000 рублей, демонстрирует ярко выраженную склонность к эмоциональным и импульсивным тратам, часто не задумываясь о долгосрочных последствиях. Ее финансовые цели включают доступ к дополнительным средствам для покрытия непредвиденных расходов и крупных покупок, а также наличие запаса до зарплаты. Она активно пользуется банковскими продуктами, особенно кредитными картами, для повседневных трат. В ходе событий она сталкивается с трудностями из-за своей невнимательности к условиям и датам платежей, что приводит к штрафам и ухудшению кредитного рейтинга. В конечном итоге, осознав неэффективность своей прежней стратегии, она обращается за помощью в банк для реструктуризации долга и изменения подхода к управлению финансами."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "bank_main",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {
+        "name": "Банк",
+        "phone": "8-800-555-35-35"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Варвара подает заявку на кредитную карту, сталкивается с изменениями условий дебетовой карты и первым отказом в переводе."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Варваре одобряют увеличенный лимит по кредитной карте, но она пропускает платеж, сталкивается со штрафами и новыми ограничениями."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Варвара сталкивается с исчерпанием лимита, подозрительными операциями, осознает необходимость изменений и соглашается на реструктуризацию долга."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "cc_universalnaya",
+      "type": "product",
+      "label": "Кредитная карта 'Универсальная'",
+      "attributes": {
+        "product_name": "Универсальная",
+        "card_number": "12345678"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "dc_main",
+      "type": "product",
+      "label": "Дебетовая карта",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "financial_goal_additional_funds",
+      "type": "event",
+      "label": "Получить доступ к дополнительным средствам",
+      "attributes": {
+        "description": "Покрытие непредвиденных расходов, крупные покупки, запас до зарплаты."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_app_cc_universal",
+      "type": "document",
+      "label": "Заявка на кредитную карту Универсальная",
+      "attributes": {
+        "application_id": "789012",
+        "date": "2024-03-15",
+        "status": "на рассмотрении"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_desired_limit_150k",
+      "type": "amount",
+      "label": "Желаемый кредитный лимит 150000",
+      "attributes": {
+        "value": 150000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_mobile_app",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {
+        "type": "channel"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_sms_app_notification",
+      "type": "event",
+      "label": "SMS-уведомление о заявке 789012",
+      "attributes": {
+        "type": "notification",
+        "date": "2024-03-15"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_push_approval_notification",
+      "type": "event",
+      "label": "Push-уведомление об одобрении КК",
+      "attributes": {
+        "type": "notification",
+        "date": "2024-03-18"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_approved_limit_120k",
+      "type": "amount",
+      "label": "Одобренный кредитный лимит 120000",
+      "attributes": {
+        "value": 120000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_interest_rate_24_9",
+      "type": "rate",
+      "label": "Процентная ставка 24.9% годовых",
+      "attributes": {
+        "value": 24.9,
+        "unit": "percent_per_year"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_grace_period_55_days",
+      "type": "rate",
+      "label": "Грейс-период 55 дней",
+      "attributes": {
+        "value": 55,
+        "unit": "days"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_request_limit_increase",
+      "type": "event",
+      "label": "Запрос на увеличение лимита КК",
+      "attributes": {
+        "type": "request",
+        "date": "2024-03-20"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_desired_limit_200k",
+      "type": "amount",
+      "label": "Желаемый лимит 200000",
+      "attributes": {
+        "value": 200000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_customer_support_dept",
+      "type": "organization",
+      "label": "Служба поддержки банка",
+      "attributes": {
+        "type": "department"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_support_operator",
+      "type": "person",
+      "label": "Оператор службы поддержки",
+      "attributes": {
+        "type": "bank_employee"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_sms_dc_conditions_change",
+      "type": "event",
+      "label": "SMS-уведомление об изменении условий ДК",
+      "attributes": {
+        "type": "notification",
+        "date": "2024-03-20"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_daily_limit_150k",
+      "type": "amount",
+      "label": "Ежедневный лимит переводов 150000",
+      "attributes": {
+        "value": 150000,
+        "currency": "RUB",
+        "unit": "daily"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_daily_limit_50k",
+      "type": "amount",
+      "label": "Ежедневный лимит переводов 50000",
+      "attributes": {
+        "value": 50000,
+        "currency": "RUB",
+        "unit": "daily"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_cashback_pharmacy_3pc",
+      "type": "rate",
+      "label": "Кэшбэк Аптеки 3%",
+      "attributes": {
+        "value": 3,
+        "unit": "percent",
+        "category": "Аптеки"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_cashback_pharmacy_1pc",
+      "type": "rate",
+      "label": "Кэшбэк Аптеки 1%",
+      "attributes": {
+        "value": 1,
+        "unit": "percent",
+        "category": "Аптеки"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_varvara_confusion",
+      "type": "event",
+      "label": "Замешательство Варвары",
+      "attributes": {
+        "type": "emotion"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_attempt_75k",
+      "type": "event",
+      "label": "Попытка перевода 75000",
+      "attributes": {
+        "type": "transaction_attempt",
+        "date": "2024-03-21"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_amount_75k",
+      "type": "amount",
+      "label": "Сумма перевода 75000",
+      "attributes": {
+        "value": 75000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_tamara_mikheeva",
+      "type": "person",
+      "label": "Тамара Михеева",
+      "attributes": {
+        "type": "recipient",
+        "relation": "mother"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_medical_payment_purpose",
+      "type": "event",
+      "label": "Оплата лечения",
+      "attributes": {
+        "type": "purpose"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_rejection",
+      "type": "event",
+      "label": "Отказ в переводе",
+      "attributes": {
+        "type": "transaction_rejection",
+        "date": "2024-03-21"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_varvara_irritation",
+      "type": "event",
+      "label": "Раздражение Варвары",
+      "attributes": {
+        "type": "emotion"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_call_to_bank",
+      "type": "event",
+      "label": "Звонок в банк",
+      "attributes": {
+        "type": "customer_service_call",
+        "date": "2024-03-21"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_codeword_solikamsk",
+      "type": "document",
+      "label": "Кодовое слово Соликамск",
+      "attributes": {
+        "type": "verification_method",
+        "value": "Соликамск"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_varvara_dissatisfaction",
+      "type": "event",
+      "label": "Недовольство Варвары",
+      "attributes": {
+        "type": "emotion"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_request_clarification",
+      "type": "event",
+      "label": "Запрос на разъяснение условий",
+      "attributes": {
+        "type": "request"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_bank_manager",
+      "type": "person",
+      "label": "Менеджер банка",
+      "attributes": {
+        "type": "bank_employee"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_phased_changes_explanation",
+      "type": "event",
+      "label": "Поэтапное вступление изменений",
+      "attributes": {
+        "type": "explanation"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_two_part_transfer_proposal",
+      "type": "event",
+      "label": "Предложение перевода двумя частями",
+      "attributes": {
+        "type": "solution_proposal"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_50k_part1",
+      "type": "event",
+      "label": "Перевод 50000",
+      "attributes": {
+        "type": "transaction",
+        "date": "2024-03-21",
+        "value": 50000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_25k_part2",
+      "type": "event",
+      "label": "Перевод 25000",
+      "attributes": {
+        "type": "transaction",
+        "date": "2024-03-22",
+        "value": 25000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_varvara_dislike_proposal",
+      "type": "event",
+      "label": "Недовольство предложением",
+      "attributes": {
+        "type": "emotion"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_acceptance_of_proposal",
+      "type": "event",
+      "label": "Согласие на предложение",
+      "attributes": {
+        "type": "decision"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_reluctant_acceptance_conditions",
+      "type": "event",
+      "label": "Принятие новых условий",
+      "attributes": {
+        "type": "decision"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_request_workaround",
+      "type": "event",
+      "label": "Запрос обходного решения",
+      "attributes": {
+        "type": "request"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_bank_website",
+      "type": "product",
+      "label": "Сайт банка",
+      "attributes": {
+        "type": "channel"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_full_terms_conditions",
+      "type": "document",
+      "label": "Полные условия обслуживания",
+      "attributes": {
+        "type": "terms_and_conditions"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_approved_limit_180k",
+      "type": "amount",
+      "label": "Одобренный лимит 180000",
+      "attributes": {
+        "value": 180000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_notification_limit_increase_approval",
+      "type": "event",
+      "label": "Уведомление об одобрении увеличения лимита",
+      "attributes": {
+        "type": "notification",
+        "date": "2024-03-22"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_monthly_pharmacy_spend_5k",
+      "type": "amount",
+      "label": "Ежемесячные траты на аптеки 5000",
+      "attributes": {
+        "value": 5000,
+        "currency": "RUB",
+        "category": "Аптеки",
+        "unit": "monthly"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_expected_cashback_150",
+      "type": "amount",
+      "label": "Ожидаемый кэшбэк 150",
+      "attributes": {
+        "value": 150,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_expected_cashback_50",
+      "type": "amount",
+      "label": "Ожидаемый кэшбэк 50",
+      "attributes": {
+        "value": 50,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_cashback_fuel_5pc",
+      "type": "rate",
+      "label": "Кэшбэк Топливо 5%",
+      "attributes": {
+        "value": 5,
+        "unit": "percent",
+        "category": "Топливо"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_utility_bill_payment",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "type": "bill_payment"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_utility_bill_amount_6800",
+      "type": "amount",
+      "label": "Сумма коммунальных услуг 6800",
+      "attributes": {
+        "value": 6800,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_payment_delay",
+      "type": "event",
+      "label": "Задержка оплаты",
+      "attributes": {
+        "type": "consequence"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_varvara_worry",
+      "type": "event",
+      "label": "Беспокойство Варвары",
+      "attributes": {
+        "type": "emotion"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_attempt_60k",
+      "type": "event",
+      "label": "Попытка перевода 60000",
+      "attributes": {
+        "type": "transaction_attempt"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_amount_60k",
+      "type": "amount",
+      "label": "Сумма перевода 60000",
+      "attributes": {
+        "value": 60000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_faina_sorokina",
+      "type": "person",
+      "label": "Фаина Мироновна Сорокина",
+      "attributes": {
+        "type": "recipient",
+        "relation": "friend"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_rejection_60k",
+      "type": "event",
+      "label": "Отказ в переводе 60000",
+      "attributes": {
+        "type": "transaction_rejection"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_30k_part1",
+      "type": "event",
+      "label": "Перевод 30000 (часть 1)",
+      "attributes": {
+        "type": "transaction",
+        "value": 30000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_transfer_30k_part2",
+      "type": "event",
+      "label": "Перевод 30000 (часть 2)",
+      "attributes": {
+        "type": "transaction",
+        "value": 30000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_varvara_inconvenience",
+      "type": "event",
+      "label": "Неудобство Варвары",
+      "attributes": {
+        "type": "emotion"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_min_payment_9k",
+      "type": "amount",
+      "label": "Минимальный платеж 9000",
+      "attributes": {
+        "value": 9000,
+        "currency": "RUB",
+        "due_date": "2024-04-25"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_payment_missed",
+      "type": "event",
+      "label": "Пропуск платежа",
+      "attributes": {
+        "type": "payment_missed",
+        "date": "2024-04-25"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_late_payment_penalty_700",
+      "type": "amount",
+      "label": "Штраф за просрочку 700",
+      "attributes": {
+        "value": 700,
+        "currency": "RUB",
+        "type": "penalty"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_late_payment_rate_36pc",
+      "type": "rate",
+      "label": "Процентная ставка по просроченной задолженности 36%",
+      "attributes": {
+        "value": 36,
+        "unit": "percent_per_year",
+        "type": "penalty_rate"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_client_varvara",
+      "source": "client_varvara",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_bank_main",
+      "source": "bank_main",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_cc_universalnaya",
+      "source": "cc_universalnaya",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_dc_main",
+      "source": "dc_main",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_financial_goal_additional_funds",
+      "source": "financial_goal_additional_funds",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_4",
+      "source": "node_app_cc_universal",
+      "target": "node_mobile_app",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_5",
+      "source": "node_app_cc_universal",
+      "target": "node_desired_limit_150k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_7",
+      "source": "node_sms_app_notification",
+      "target": "node_app_cc_universal",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_9",
+      "source": "node_push_approval_notification",
+      "target": "node_app_cc_universal",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_10",
+      "source": "node_app_cc_universal",
+      "target": "node_approved_limit_120k",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_11",
+      "source": "node_app_cc_universal",
+      "target": "node_interest_rate_24_9",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_12",
+      "source": "node_app_cc_universal",
+      "target": "node_grace_period_55_days",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "ep_occurs_node_app_cc_universal",
+      "source": "node_app_cc_universal",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_desired_limit_150k",
+      "source": "node_desired_limit_150k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_mobile_app",
+      "source": "node_mobile_app",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_sms_app_notification",
+      "source": "node_sms_app_notification",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_push_approval_notification",
+      "source": "node_push_approval_notification",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_approved_limit_120k",
+      "source": "node_approved_limit_120k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_interest_rate_24_9",
+      "source": "node_interest_rate_24_9",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_grace_period_55_days",
+      "source": "node_grace_period_55_days",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_request_limit_increase",
+      "source": "node_request_limit_increase",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_desired_limit_200k",
+      "source": "node_desired_limit_200k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_customer_support_dept",
+      "source": "node_customer_support_dept",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_support_operator",
+      "source": "node_support_operator",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_sms_dc_conditions_change",
+      "source": "node_sms_dc_conditions_change",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_daily_limit_150k",
+      "source": "node_daily_limit_150k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_daily_limit_50k",
+      "source": "node_daily_limit_50k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_cashback_pharmacy_3pc",
+      "source": "node_cashback_pharmacy_3pc",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_cashback_pharmacy_1pc",
+      "source": "node_cashback_pharmacy_1pc",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_varvara_confusion",
+      "source": "node_varvara_confusion",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_attempt_75k",
+      "source": "node_transfer_attempt_75k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_amount_75k",
+      "source": "node_transfer_amount_75k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_tamara_mikheeva",
+      "source": "node_tamara_mikheeva",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_medical_payment_purpose",
+      "source": "node_medical_payment_purpose",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_rejection",
+      "source": "node_transfer_rejection",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_varvara_irritation",
+      "source": "node_varvara_irritation",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_call_to_bank",
+      "source": "node_call_to_bank",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_codeword_solikamsk",
+      "source": "node_codeword_solikamsk",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_varvara_dissatisfaction",
+      "source": "node_varvara_dissatisfaction",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_request_clarification",
+      "source": "node_request_clarification",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_bank_manager",
+      "source": "node_bank_manager",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_phased_changes_explanation",
+      "source": "node_phased_changes_explanation",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_two_part_transfer_proposal",
+      "source": "node_two_part_transfer_proposal",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_50k_part1",
+      "source": "node_transfer_50k_part1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_25k_part2",
+      "source": "node_transfer_25k_part2",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_varvara_dislike_proposal",
+      "source": "node_varvara_dislike_proposal",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_acceptance_of_proposal",
+      "source": "node_acceptance_of_proposal",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_reluctant_acceptance_conditions",
+      "source": "node_reluctant_acceptance_conditions",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_request_workaround",
+      "source": "node_request_workaround",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_bank_website",
+      "source": "node_bank_website",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_full_terms_conditions",
+      "source": "node_full_terms_conditions",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_approved_limit_180k",
+      "source": "node_approved_limit_180k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_notification_limit_increase_approval",
+      "source": "node_notification_limit_increase_approval",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_monthly_pharmacy_spend_5k",
+      "source": "node_monthly_pharmacy_spend_5k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_expected_cashback_150",
+      "source": "node_expected_cashback_150",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_expected_cashback_50",
+      "source": "node_expected_cashback_50",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_cashback_fuel_5pc",
+      "source": "node_cashback_fuel_5pc",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_utility_bill_payment",
+      "source": "node_utility_bill_payment",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_utility_bill_amount_6800",
+      "source": "node_utility_bill_amount_6800",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_payment_delay",
+      "source": "node_payment_delay",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_varvara_worry",
+      "source": "node_varvara_worry",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_attempt_60k",
+      "source": "node_transfer_attempt_60k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_amount_60k",
+      "source": "node_transfer_amount_60k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_faina_sorokina",
+      "source": "node_faina_sorokina",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_rejection_60k",
+      "source": "node_transfer_rejection_60k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_30k_part1",
+      "source": "node_transfer_30k_part1",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_transfer_30k_part2",
+      "source": "node_transfer_30k_part2",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_varvara_inconvenience",
+      "source": "node_varvara_inconvenience",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_min_payment_9k",
+      "source": "node_min_payment_9k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_payment_missed",
+      "source": "node_payment_missed",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_late_payment_penalty_700",
+      "source": "node_late_payment_penalty_700",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_late_payment_rate_36pc",
+      "source": "node_late_payment_rate_36pc",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

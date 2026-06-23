@@ -1,0 +1,1505 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Филимон начинает активное взаимодействие с банком по вопросам документов, платежей и кредитных предложений, испытывая начальную тревогу."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Филимон продолжает запросы и платежи, получает новые предложения, но начинает путаться в деталях и датах."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Филимон сталкивается с просрочками, отказами и ошибками, что приводит к назначению персонального менеджера и решению проблем."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "client_filimon",
+      "type": "person",
+      "label": "Уваров Филимон Гертрудович",
+      "attributes": {
+        "age": 52,
+        "occupation": "Корректировщик",
+        "city": "Нязепетровск",
+        "income": "221000 руб/мес"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "goal_refinance",
+      "type": "event",
+      "label": "Рефинансирование кредитов",
+      "attributes": {
+        "target": "Снижение ежемесячных платежей",
+        "mortgage_payment_target": "35000 руб",
+        "consumer_loan_payment_target": "60000 руб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "mortgage_ipt7890123",
+      "type": "product",
+      "label": "Ипотека №ИПТ-7890123",
+      "attributes": {
+        "type": "Ипотека",
+        "amount": "1.5 млн руб",
+        "monthly_payment": "35000 руб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "consumer_loan_pk345678",
+      "type": "product",
+      "label": "Потребительский кредит №ПК-345678",
+      "attributes": {
+        "type": "Потребительский",
+        "amount": "450000 руб",
+        "monthly_payment": "12500 руб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "consumer_loan_pk901234",
+      "type": "product",
+      "label": "Потребительский кредит №ПК-901234",
+      "attributes": {
+        "type": "Потребительский"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "request_doc_2ndfl_2023",
+      "type": "product",
+      "label": "Запрос справки 2-НДФЛ за 2023 год",
+      "attributes": {
+        "date": "08.01.2024",
+        "purpose": "Рефинансирование ипотеки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "passport_update_event",
+      "type": "person",
+      "label": "Обновление паспортных данных",
+      "attributes": {
+        "date": "08.01.2024",
+        "new_passport_series": "4500",
+        "new_passport_number": "123456",
+        "new_passport_issue_date": "05.01.2024",
+        "reason": "Замена по возрасту"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_consumer_800k",
+      "type": "product",
+      "label": "Предложение ПК на 800 000 руб",
+      "attributes": {
+        "amount": "800000 руб",
+        "rate": "14.5% годовых",
+        "term": "15 лет",
+        "monthly_payment": "10500 руб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "request_statement_pk345678_event",
+      "type": "product",
+      "label": "Запрос выписки по ПК-345678",
+      "attributes": {
+        "purpose": "Сравнение условий, остаток долга, график погашения",
+        "deadline": "25.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "request_refi_docs_info",
+      "type": "product",
+      "label": "Уточнение документов для рефинансирования ипотеки",
+      "attributes": {
+        "channel": "Телефон",
+        "required_docs": "Справка о доходах, копия трудовой книжки",
+        "submission_deadline": "31.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "mother_agafya",
+      "type": "person",
+      "label": "Лаврентьева Агафья Геннадиевна",
+      "attributes": {
+        "relationship": "Мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_15k_agafya",
+      "type": "event",
+      "label": "Перевод 15 000 руб матери",
+      "attributes": {
+        "amount": "15000 руб",
+        "recipient": "Лаврентьева Агафья Геннадиевна",
+        "purpose": "Оплата медицинских услуг",
+        "channel": "СБП",
+        "commission": "0 руб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_anxiety_ep1",
+      "type": "event",
+      "label": "Легкая тревога и путаница",
+      "attributes": {
+        "state": "Тревога",
+        "reason": "Множество запросов и предложений, сложность разобраться"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "request_doc_bank_form_income",
+      "type": "product",
+      "label": "Заявление на справку по форме банка",
+      "attributes": {
+        "date": "20.01.2024",
+        "purpose": "Подтверждение дохода для новой заявки на ПК"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "application_consumer_700k",
+      "type": "product",
+      "label": "Заявка на ПК на 700 000 руб",
+      "attributes": {
+        "amount": "700000 руб",
+        "purpose": "Частичное погашение старых долгов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_1234",
+      "type": "product",
+      "label": "Дебетовая карта **** 1234",
+      "attributes": {
+        "type": "Дебетовая",
+        "last_digits": "1234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_utilities_dec",
+      "type": "event",
+      "label": "Оплата коммунальных услуг за декабрь 2023",
+      "attributes": {
+        "date": "25.01.2024",
+        "amount": "4500 руб",
+        "period": "Декабрь 2023",
+        "channel": "Мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "acquaintance_ivanov_as",
+      "type": "person",
+      "label": "Иванов А.С.",
+      "attributes": {
+        "relationship": "Знакомый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_5k_ivanov_as",
+      "type": "event",
+      "label": "Перевод 5 000 руб Иванову А.С.",
+      "attributes": {
+        "date": "10.02.2024",
+        "amount": "5000 руб",
+        "recipient": "Иванов А.С.",
+        "purpose": "Возврат долга",
+        "channel": "СБП",
+        "commission": "0 руб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "request_loan_agreements_event",
+      "type": "product",
+      "label": "Запрос копий кредитных договоров",
+      "attributes": {
+        "loans": "ИПТ-7890123, ПК-345678, ПК-901234",
+        "purpose": "Перепроверка условий и дат платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "status_check_refi_mortgage",
+      "type": "product",
+      "label": "Уточнение статуса заявки на рефинансирование ипотеки",
+      "attributes": {
+        "application_date": "29.01.2024",
+        "status": "На проверке",
+        "expected_resolution_date": "15.02.2024",
+        "channel": "Телефон"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_credit_card_150k",
+      "type": "product",
+      "label": "Предложение кредитной карты",
+      "attributes": {
+        "type": "Кредитная карта",
+        "grace_period": "120 дней",
+        "limit": "150000 руб",
+        "rate_after_grace": "24.9% годовых",
+        "channel": "SMS-уведомление"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_confusion_dates_ep2",
+      "type": "event",
+      "label": "Путаница в датах платежей",
+      "attributes": {
+        "state": "Путаница",
+        "reason": "Множество похожих запросов и предложений, неверные даты платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "partner_naina",
+      "type": "person",
+      "label": "Кононова Наина Сергеевна",
+      "attributes": {
+        "relationship": "Партнер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_pre_approved_900k",
+      "type": "product",
+      "label": "Предварительное одобрение ПК на 900 000 руб",
+      "attributes": {
+        "amount": "900000 руб",
+        "rate": "15.2% годовых",
+        "term": "10 лет",
+        "status": "Предварительно одобрено",
+        "client_state": "Не мог вспомнить, к какой заявке относится"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "acquaintance_ivanov_ap",
+      "type": "person",
+      "label": "Иванов А.П.",
+      "attributes": {
+        "relationship": "Знакомый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_5_2k_ivanov_ap",
+      "type": "event",
+      "label": "Перевод 5 200 руб Иванову А.П.",
+      "attributes": {
+        "date": "12.02.2024",
+        "amount": "5200 руб",
+        "recipient": "Иванов А.П.",
+        "purpose": "Оплата совместной покупки",
+        "channel": "СБП",
+        "commission": "0 руб",
+        "consequence": "Вызовет дополнительную путаницу"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "offer_cash_850k",
+      "type": "product",
+      "label": "Новое предложение кредита наличными на 850 000 руб",
+      "attributes": {
+        "date": "17.02.2024",
+        "amount": "850000 руб",
+        "rate": "14.8% годовых",
+        "term": "15 лет",
+        "client_state": "Еще больше запутало"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_utilities_jan",
+      "type": "event",
+      "label": "Оплата коммунальных услуг за январь",
+      "attributes": {
+        "date": "25.02.2024",
+        "amount": "4500 руб",
+        "period": "Январь",
+        "channel": "Мобильное приложение",
+        "client_perception": "Был уверен, что это платеж за февраль"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "problem_overdue_pk345678",
+      "type": "event",
+      "label": "Просрочка платежа по ПК-345678",
+      "attributes": {
+        "loan_id": "ПК-345678",
+        "amount": "12500 руб",
+        "due_date": "25.02.2024",
+        "client_state": "Паника и гнев, был уверен, что оплатил"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "problem_refi_rejection",
+      "type": "event",
+      "label": "Отказ в рефинансировании кредита на 900 000 руб",
+      "attributes": {
+        "reason": "Неполный пакет документов",
+        "client_state": "Был убежден, что отправил все документы 15 февраля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "problem_misdirected_payment",
+      "type": "event",
+      "label": "Ошибочный перевод платежа по ипотеке",
+      "attributes": {
+        "amount": "25000 руб",
+        "intended_recipient": "Ипотека №ИПТ-7890123",
+        "actual_recipient": "Потребительский кредит №ПК-901234",
+        "consequence": "Один платеж невыполнен, другой излишен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "compliance_115fz_request",
+      "type": "event",
+      "label": "Запрос документов по 115-ФЗ",
+      "attributes": {
+        "reason": "Подтверждение источника средств",
+        "related_transaction": "Перевод 5200 руб Иванову А.П.",
+        "deadline": "05.03.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "solution_manager_actions",
+      "type": "event",
+      "label": "Действия персонального менеджера",
+      "attributes": {
+        "action_1": "Предоставление единого отчета",
+        "action_2": "Уточнение статусов документов и заявок",
+        "action_3": "Коррекция ошибочного платежа 25 000 руб",
+        "action_4": "Повторная подача недостающих документов для рефинансирования"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_personalized_refi",
+      "type": "product",
+      "label": "Персонализированное решение по рефинансированию",
+      "attributes": {
+        "type": "Рефинансирование",
+        "loans_combined": "Три кредита",
+        "rate": "13.9% годовых",
+        "term": "10 лет"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "emotional_relief_ep3",
+      "type": "event",
+      "label": "Облегчение и ясность",
+      "attributes": {
+        "state": "Облегчение, ясность",
+        "reason": "Получение персонализированного решения и помощи менеджера",
+        "satisfaction": "Не полностью удовлетворен пережитым стрессом"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "loan_application_refinance_mortgage_01",
+      "type": "product",
+      "label": "Заявка на рефинансирование ипотеки",
+      "attributes": {
+        "application_date": "29.01.2024",
+        "status": "На проверке",
+        "expected_resolution_date": "15.02.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_credit_card_grace_120_days",
+      "type": "product",
+      "label": "Кредитная карта с грейс-периодом 120 дней",
+      "attributes": {
+        "grace_period_days": 120,
+        "credit_limit": "150000 руб",
+        "interest_rate_after_grace": "24.9% годовых"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "document_bank_form_income_statement",
+      "type": "document",
+      "label": "Справка по форме банка",
+      "attributes": {
+        "purpose": "Подтверждение дохода для новой заявки на потребительский кредит"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1_2",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2_3",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_client_ep1",
+      "source": "client_filimon",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_client_ep2",
+      "source": "client_filimon",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_client_ep3",
+      "source": "client_filimon",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_interacts_bank",
+      "source": "client_filimon",
+      "target": "bank",
+      "relation": "contains",
+      "attributes": {
+        "intensity": "Активно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_goal",
+      "source": "client_filimon",
+      "target": "goal_refinance",
+      "relation": "contains",
+      "attributes": {
+        "priority": "Основная"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_includes_mortgage",
+      "source": "goal_refinance",
+      "target": "mortgage_ipt7890123",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "goal_includes_pk345678",
+      "source": "goal_refinance",
+      "target": "consumer_loan_pk345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_pk901234",
+      "source": "client_filimon",
+      "target": "consumer_loan_pk901234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requested_2ndfl",
+      "source": "client_filimon",
+      "target": "request_doc_2ndfl_2023",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_2ndfl_for_mortgage",
+      "source": "request_doc_2ndfl_2023",
+      "target": "mortgage_ipt7890123",
+      "relation": "contains",
+      "attributes": {
+        "context": "Рефинансирование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_request_2ndfl_ep1",
+      "source": "request_doc_2ndfl_2023",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_updated_passport",
+      "source": "client_filimon",
+      "target": "passport_update_event",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_passport_update_ep1",
+      "source": "passport_update_event",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offered_800k",
+      "source": "bank",
+      "target": "offer_consumer_800k",
+      "relation": "contains",
+      "attributes": {
+        "type": "Персональное"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "offer_800k_based_on_data",
+      "source": "offer_consumer_800k",
+      "target": "passport_update_event",
+      "relation": "contains",
+      "attributes": {
+        "data_type": "Обновленные данные"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_800k_ep1",
+      "source": "offer_consumer_800k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requested_statement_pk345678",
+      "source": "client_filimon",
+      "target": "request_statement_pk345678_event",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_statement_for_pk345678",
+      "source": "request_statement_pk345678_event",
+      "target": "consumer_loan_pk345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_request_statement_ep1",
+      "source": "request_statement_pk345678_event",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requested_refi_docs_info",
+      "source": "client_filimon",
+      "target": "request_refi_docs_info",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_refi_docs_info_for_mortgage",
+      "source": "request_refi_docs_info",
+      "target": "mortgage_ipt7890123",
+      "relation": "contains",
+      "attributes": {
+        "context": "Рефинансирование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_request_refi_docs_info_ep1",
+      "source": "request_refi_docs_info",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_transferred_to_mother",
+      "source": "client_filimon",
+      "target": "transfer_15k_agafya",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_15k_to_agafya",
+      "source": "transfer_15k_agafya",
+      "target": "mother_agafya",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_transfer_15k_ep1",
+      "source": "transfer_15k_agafya",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experienced_anxiety_ep1",
+      "source": "client_filimon",
+      "target": "emotional_anxiety_ep1",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_anxiety_ep1",
+      "source": "emotional_anxiety_ep1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requested_bank_form_income",
+      "source": "client_filimon",
+      "target": "request_doc_bank_form_income",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_bank_form_for_app_700k",
+      "source": "request_doc_bank_form_income",
+      "target": "application_consumer_700k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_request_bank_form_ep2",
+      "source": "request_doc_bank_form_income",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_applied_for_700k",
+      "source": "client_filimon",
+      "target": "application_consumer_700k",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_700k_for_debt_repayment",
+      "source": "application_consumer_700k",
+      "target": "goal_refinance",
+      "relation": "contains",
+      "attributes": {
+        "method": "Частичное погашение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_app_700k_ep2",
+      "source": "application_consumer_700k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_paid_utilities_dec",
+      "source": "client_filimon",
+      "target": "payment_utilities_dec",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "payment_utilities_dec_used_card",
+      "source": "payment_utilities_dec",
+      "target": "debit_card_1234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_utilities_dec_ep2",
+      "source": "payment_utilities_dec",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_transferred_to_ivanov_as",
+      "source": "client_filimon",
+      "target": "transfer_5k_ivanov_as",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_5k_to_ivanov_as",
+      "source": "transfer_5k_ivanov_as",
+      "target": "acquaintance_ivanov_as",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_transfer_5k_ep2",
+      "source": "transfer_5k_ivanov_as",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requested_loan_agreements",
+      "source": "client_filimon",
+      "target": "request_loan_agreements_event",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_agreements_for_mortgage",
+      "source": "request_loan_agreements_event",
+      "target": "mortgage_ipt7890123",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_agreements_for_pk345678",
+      "source": "request_loan_agreements_event",
+      "target": "consumer_loan_pk345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "request_agreements_for_pk901234",
+      "source": "request_loan_agreements_event",
+      "target": "consumer_loan_pk901234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_request_agreements_ep2",
+      "source": "request_loan_agreements_event",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_checked_refi_status",
+      "source": "client_filimon",
+      "target": "status_check_refi_mortgage",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "status_check_refi_for_mortgage",
+      "source": "status_check_refi_mortgage",
+      "target": "mortgage_ipt7890123",
+      "relation": "contains",
+      "attributes": {
+        "context": "Рефинансирование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_status_check_ep2",
+      "source": "status_check_refi_mortgage",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offered_credit_card",
+      "source": "bank",
+      "target": "offer_credit_card_150k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_interested_credit_card",
+      "source": "client_filimon",
+      "target": "offer_credit_card_150k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_credit_card_ep2",
+      "source": "offer_credit_card_150k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experienced_confusion_ep2",
+      "source": "client_filimon",
+      "target": "emotional_confusion_dates_ep2",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "confusion_related_to_pk345678",
+      "source": "emotional_confusion_dates_ep2",
+      "target": "consumer_loan_pk345678",
+      "relation": "contains",
+      "attributes": {
+        "detail": "Даты платежей"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_confusion_ep2",
+      "source": "emotional_confusion_dates_ep2",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "partner_advised_client",
+      "source": "partner_naina",
+      "target": "client_filimon",
+      "relation": "contains",
+      "attributes": {
+        "advice": "Вести записи всех взаимодействий"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "advice_due_to_irritation",
+      "source": "partner_naina",
+      "target": "emotional_confusion_dates_ep2",
+      "relation": "contains",
+      "attributes": {
+        "observation": "Растущее раздражение и нетерпение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_partner_ep2",
+      "source": "partner_naina",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offered_pre_approved_900k",
+      "source": "bank",
+      "target": "offer_pre_approved_900k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_pre_approved_ep2",
+      "source": "offer_pre_approved_900k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_transferred_to_ivanov_ap",
+      "source": "client_filimon",
+      "target": "transfer_5_2k_ivanov_ap",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "transfer_5_2k_to_ivanov_ap",
+      "source": "transfer_5_2k_ivanov_ap",
+      "target": "acquaintance_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "occ_transfer_5_2k_ep3",
+      "source": "transfer_5_2k_ivanov_ap",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "interference_transfer_5k_5_2k",
+      "source": "transfer_5k_ivanov_as",
+      "target": "transfer_5_2k_ivanov_ap",
+      "relation": "contains",
+      "attributes": {
+        "type": "INTERFERENCE",
+        "reason": "Похожие переводы знакомым, вызывают путаницу"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offered_cash_850k",
+      "source": "bank",
+      "target": "offer_cash_850k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "offer_cash_850k_caused_confusion",
+      "source": "offer_cash_850k",
+      "target": "client_filimon",
+      "relation": "caused",
+      "attributes": {
+        "state": "Запутало"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_cash_ep3",
+      "source": "offer_cash_850k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_paid_utilities_jan",
+      "source": "client_filimon",
+      "target": "payment_utilities_jan",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "payment_utilities_jan_used_card",
+      "source": "payment_utilities_jan",
+      "target": "debit_card_1234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_utilities_jan_ep3",
+      "source": "payment_utilities_jan",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_faced_overdue_pk345678",
+      "source": "client_filimon",
+      "target": "problem_overdue_pk345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "overdue_related_to_pk345678",
+      "source": "problem_overdue_pk345678",
+      "target": "consumer_loan_pk345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_overdue_ep3",
+      "source": "problem_overdue_pk345678",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_faced_refi_rejection",
+      "source": "client_filimon",
+      "target": "problem_refi_rejection",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rejection_related_to_offer_900k",
+      "source": "problem_refi_rejection",
+      "target": "offer_pre_approved_900k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_rejection_ep3",
+      "source": "problem_refi_rejection",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_faced_misdirected_payment",
+      "source": "client_filimon",
+      "target": "problem_misdirected_payment",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "misdirected_payment_from_mortgage",
+      "source": "problem_misdirected_payment",
+      "target": "mortgage_ipt7890123",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "misdirected_payment_to_pk901234",
+      "source": "problem_misdirected_payment",
+      "target": "consumer_loan_pk901234",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_misdirected_payment_ep3",
+      "source": "problem_misdirected_payment",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_issued_115fz_request",
+      "source": "bank",
+      "target": "compliance_115fz_request",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "115fz_request_related_to_transfer_5_2k",
+      "source": "compliance_115fz_request",
+      "target": "transfer_5_2k_ivanov_ap",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "occ_115fz_request_ep3",
+      "source": "compliance_115fz_request",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_provided_solution",
+      "source": "bank",
+      "target": "solution_manager_actions",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "solution_manager_resolved_problems",
+      "source": "solution_manager_actions",
+      "target": "problem_misdirected_payment",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "solution_manager_addressed_rejection",
+      "source": "solution_manager_actions",
+      "target": "problem_refi_rejection",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_solution_manager_ep3",
+      "source": "solution_manager_actions",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "manager_offered_personalized_refi",
+      "source": "solution_manager_actions",
+      "target": "offer_personalized_refi",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "personalized_refi_combines_mortgage",
+      "source": "offer_personalized_refi",
+      "target": "mortgage_ipt7890123",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "personalized_refi_combines_pk345678",
+      "source": "offer_personalized_refi",
+      "target": "consumer_loan_pk345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "personalized_refi_combines_pk901234",
+      "source": "offer_personalized_refi",
+      "target": "consumer_loan_pk901234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "occ_personalized_refi_ep3",
+      "source": "offer_personalized_refi",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experienced_relief_ep3",
+      "source": "client_filimon",
+      "target": "emotional_relief_ep3",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "relief_from_solution",
+      "source": "emotional_relief_ep3",
+      "target": "offer_personalized_refi",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_relief_ep3",
+      "source": "emotional_relief_ep3",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_application_refinance_mortgage_01",
+      "source": "loan_application_refinance_mortgage_01",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_product_credit_card_grace_120_days",
+      "source": "product_credit_card_grace_120_days",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_document_bank_form_income_statement",
+      "source": "document_bank_form_income_statement",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

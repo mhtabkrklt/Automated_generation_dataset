@@ -1,0 +1,1767 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Плановый перевыпуск дебетовой карты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Попытка мошенничества и блокировка карты по 115-ФЗ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Разблокировка карты и адаптация к цифровым сервисам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_agata_kolesnikova",
+      "type": "person",
+      "label": "Колесникова Агата Ильинична",
+      "attributes": {
+        "age": 45,
+        "occupation": "релайтер",
+        "income": 301000,
+        "city": "Черусти",
+        "gender": "female"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_radim_andreev",
+      "type": "person",
+      "label": "Андреев Радим Августович",
+      "attributes": {
+        "age": 53,
+        "role": "супруг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_yaroslav",
+      "type": "person",
+      "label": "Ярослав",
+      "attributes": {
+        "age": 13,
+        "role": "сын"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_leonid",
+      "type": "person",
+      "label": "Леонид",
+      "attributes": {
+        "age": 12,
+        "role": "сын"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_elizar",
+      "type": "person",
+      "label": "Елизар",
+      "attributes": {
+        "age": 4,
+        "role": "сын"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "bank_branch_lenina_15",
+      "type": "organization",
+      "label": "Отделение банка на Ленина, 15",
+      "attributes": {
+        "address": "ул. Ленина, 15",
+        "city": "Черусти"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank_staff",
+      "type": "event",
+      "label": "Сотрудник банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "bank_support_service",
+      "type": "product",
+      "label": "Служба поддержки банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "card_debit_mir",
+      "type": "product",
+      "label": "Дебетовая карта 'Мир'",
+      "attributes": {
+        "type": "дебетовая",
+        "payment_system": "Мир"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "card_credit",
+      "type": "product",
+      "label": "Кредитная карта",
+      "attributes": {
+        "type": "кредитная",
+        "account_number": "54321"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "account_agata",
+      "type": "account",
+      "label": "Счет Агаты Колесниковой",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "application_card_reissue_78901",
+      "type": "document",
+      "label": "Заявление на перевыпуск карты",
+      "attributes": {
+        "number": "78901",
+        "type": "бумажное"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "document_passport_agata",
+      "type": "document",
+      "label": "Паспорт Агаты Колесниковой",
+      "attributes": {
+        "series": "4500",
+        "number": "123456"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "document_statement_feb",
+      "type": "document",
+      "label": "Выписка по счету за февраль",
+      "attributes": {
+        "period": "февраль"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "document_115fz_proofs",
+      "type": "document",
+      "label": "Документы для 115-ФЗ",
+      "attributes": {
+        "types": [
+          "2-НДФЛ",
+          "выписка о движении средств"
+        ]
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_card_reissue_request",
+      "type": "event",
+      "label": "Заявка на перевыпуск карты",
+      "attributes": {
+        "reason": "истечение срока действия"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_card_delivery_to_branch",
+      "type": "event",
+      "label": "Доставка новой карты в отделение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "event_card_pickup_activation",
+      "type": "event",
+      "label": "Получение и активация новой карты",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "event_cashback_accrual",
+      "type": "event",
+      "label": "Зачисление кэшбэка",
+      "attributes": {
+        "amount": 1200
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_sbp_transfer",
+      "type": "event",
+      "label": "Перевод СБП",
+      "attributes": {
+        "amount": 5000,
+        "method": "мобильное приложение"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_fraud_attempt",
+      "type": "event",
+      "label": "Попытка мошеннического списания",
+      "attributes": {
+        "amount": 35000,
+        "merchant": "Global Gadgets"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_card_blocking",
+      "type": "event",
+      "label": "Автоматическая блокировка карты",
+      "attributes": {
+        "reason": "подозрительная активность"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_customer_call_support",
+      "type": "event",
+      "label": "Звонок в службу поддержки",
+      "attributes": {
+        "duration_minutes": 18
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_document_submission_115fz",
+      "type": "event",
+      "label": "Предоставление документов по 115-ФЗ",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "event_card_unblocking",
+      "type": "event",
+      "label": "Разблокировка карты",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "event_credit_repayment",
+      "type": "event",
+      "label": "Погашение задолженности по кредитной карте",
+      "attributes": {
+        "amount": 25000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_fraud_dispute_resolution",
+      "type": "event",
+      "label": "Оспаривание мошеннической транзакции",
+      "attributes": {
+        "status": "успешно оспорена"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "payment_robotics",
+      "type": "event",
+      "label": "Оплата кружка робототехники",
+      "attributes": {
+        "amount": 4500
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_kindergarten",
+      "type": "event",
+      "label": "Оплата детского сада",
+      "attributes": {
+        "amount": 8000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_utilities",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "amount": 7800
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "goal_family_budget_management",
+      "type": "event",
+      "label": "Управление семейным бюджетом",
+      "attributes": {
+        "priority": "бесперебойное"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "concept_115fz_compliance",
+      "type": "event",
+      "label": "Требования 115-ФЗ",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "concept_suspicious_activity",
+      "type": "event",
+      "label": "Подозрительная активность",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "concept_daily_online_limit",
+      "type": "event",
+      "label": "Суточный лимит на онлайн-операции",
+      "attributes": {
+        "amount": 15000,
+        "duration_days": 30
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "concept_secure_card_use",
+      "type": "event",
+      "label": "Безопасное использование карты",
+      "attributes": {
+        "methods": [
+          "OTP-коды",
+          "push-уведомления"
+        ]
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "concept_digital_services_adoption",
+      "type": "event",
+      "label": "Освоение цифровых сервисов",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "concept_grace_period",
+      "type": "event",
+      "label": "Грейс-период",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_state_agata",
+      "type": "event",
+      "label": "Эмоциональное состояние Агаты",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "state_conservative_views",
+      "type": "event",
+      "label": "Консервативные взгляды",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "state_decision_learn_app",
+      "type": "event",
+      "label": "Решение освоить мобильное приложение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "location_cherusti",
+      "type": "organization",
+      "label": "г. Черусти",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "communication_channel_mobile_app",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "communication_channel_sms",
+      "type": "product",
+      "label": "SMS-уведомление",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "communication_channel_email",
+      "type": "product",
+      "label": "Электронная почта",
+      "attributes": {
+        "address": "agata.kolesnikova@example.com"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "communication_channel_phone",
+      "type": "product",
+      "label": "Телефон службы поддержки",
+      "attributes": {
+        "number": "8-800-XXX-XX-XX"
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_agata_ep1",
+      "source": "person_agata_kolesnikova",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_agata_ep2",
+      "source": "person_agata_kolesnikova",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_agata_ep3",
+      "source": "person_agata_kolesnikova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_card_debit_ep1",
+      "source": "card_debit_mir",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_reissue_ep1",
+      "source": "event_card_reissue_request",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_pickup_ep1",
+      "source": "event_card_pickup_activation",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_cashback_ep1",
+      "source": "event_cashback_accrual",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_sbp_ep2",
+      "source": "event_sbp_transfer",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_fraud_ep2",
+      "source": "event_fraud_attempt",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_blocking_ep2",
+      "source": "event_card_blocking",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_unblocking_ep3",
+      "source": "event_card_unblocking",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_credit_ep3",
+      "source": "event_credit_repayment",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_dispute_ep3",
+      "source": "event_fraud_dispute_resolution",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_passport_ep1",
+      "source": "document_passport_agata",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_account_ep1",
+      "source": "account_agata",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_application_ep1",
+      "source": "application_card_reissue_78901",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_documents_115fz_ep3",
+      "source": "document_115fz_proofs",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_lives_in_cherusti",
+      "source": "person_agata_kolesnikova",
+      "target": "location_cherusti",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_is_client_of_bank",
+      "source": "person_agata_kolesnikova",
+      "target": "bank",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_has_goal_budget",
+      "source": "person_agata_kolesnikova",
+      "target": "goal_family_budget_management",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_has_conservative_views",
+      "source": "person_agata_kolesnikova",
+      "target": "state_conservative_views",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_married_to_radim",
+      "source": "person_agata_kolesnikova",
+      "target": "person_radim_andreev",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_parent_of_yaroslav",
+      "source": "person_agata_kolesnikova",
+      "target": "person_yaroslav",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_parent_of_leonid",
+      "source": "person_agata_kolesnikova",
+      "target": "person_leonid",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_parent_of_elizar",
+      "source": "person_agata_kolesnikova",
+      "target": "person_elizar",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_owns_debit_card",
+      "source": "person_agata_kolesnikova",
+      "target": "card_debit_mir",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_owns_credit_card",
+      "source": "person_agata_kolesnikova",
+      "target": "card_credit",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_owns_account",
+      "source": "person_agata_kolesnikova",
+      "target": "account_agata",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_owns_passport",
+      "source": "person_agata_kolesnikova",
+      "target": "document_passport_agata",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_agata_uses_email",
+      "source": "person_agata_kolesnikova",
+      "target": "communication_channel_email",
+      "relation": "contains",
+      "attributes": {
+        "purpose": "personal_correspondence"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_bank_operates_branch",
+      "source": "bank",
+      "target": "bank_branch_lenina_15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_bank_employs_staff",
+      "source": "bank",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_bank_operates_support",
+      "source": "bank",
+      "target": "bank_support_service",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_branch_located_in_cherusti",
+      "source": "bank_branch_lenina_15",
+      "target": "location_cherusti",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_debit_card_linked_to_account",
+      "source": "card_debit_mir",
+      "target": "account_agata",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "rel_credit_card_linked_to_account",
+      "source": "card_credit",
+      "target": "account_agata",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_1",
+      "source": "event_card_reissue_request",
+      "target": "person_agata_kolesnikova",
+      "relation": "caused",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_2",
+      "source": "event_card_reissue_request",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "status": "old",
+        "expiry_date": "29.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_3",
+      "source": "event_card_reissue_request",
+      "target": "bank_branch_lenina_15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_4",
+      "source": "event_card_reissue_request",
+      "target": "application_card_reissue_78901",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_5",
+      "source": "event_card_reissue_request",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_6",
+      "source": "bank_staff",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "topic": "готовность карты",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_7",
+      "source": "bank_staff",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "date": "08.03.2024",
+        "status": "new"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_8",
+      "source": "event_card_delivery_to_branch",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "date": "08.03.2024",
+        "status": "new"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_9",
+      "source": "event_card_delivery_to_branch",
+      "target": "bank_branch_lenina_15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_10",
+      "source": "card_debit_mir",
+      "target": "event_card_delivery_to_branch",
+      "relation": "changed_to",
+      "attributes": {
+        "status": "Готова к выдаче",
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_11",
+      "source": "event_card_pickup_activation",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_12",
+      "source": "event_card_pickup_activation",
+      "target": "bank_branch_lenina_15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_13",
+      "source": "event_card_pickup_activation",
+      "target": "document_passport_agata",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_14",
+      "source": "event_card_pickup_activation",
+      "target": "card_debit_mir",
+      "relation": "received",
+      "attributes": {
+        "status": "new",
+        "pin_set": true
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_15",
+      "source": "event_card_pickup_activation",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_16",
+      "source": "event_cashback_accrual",
+      "target": "account_agata",
+      "relation": "contains",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_1_17",
+      "source": "event_cashback_accrual",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "period": "февраль",
+        "status": "old"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_18",
+      "source": "person_agata_kolesnikova",
+      "target": "event_cashback_accrual",
+      "relation": "contains",
+      "attributes": {
+        "channel": "банкомат"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_19",
+      "source": "payment_robotics",
+      "target": "person_yaroslav",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_20",
+      "source": "person_agata_kolesnikova",
+      "target": "payment_robotics",
+      "relation": "contains",
+      "attributes": {
+        "due_date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_21",
+      "source": "payment_robotics",
+      "target": "card_debit_mir",
+      "relation": "cancelled",
+      "attributes": {
+        "status": "new"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_22",
+      "source": "person_agata_kolesnikova",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {
+        "topic": "система кэшбэка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_23",
+      "source": "person_agata_kolesnikova",
+      "target": "document_statement_feb",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_24",
+      "source": "document_statement_feb",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_25",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "уверенность",
+        "reason": "получение документов",
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_1_26",
+      "source": "emotional_state_agata",
+      "target": "state_conservative_views",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_1",
+      "source": "event_sbp_transfer",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_2_2",
+      "source": "event_sbp_transfer",
+      "target": "person_leonid",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_3",
+      "source": "event_sbp_transfer",
+      "target": "communication_channel_mobile_app",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_4",
+      "source": "event_sbp_transfer",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "status": "new"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_5",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "недоверие",
+        "reason": "непривычность СБП",
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_6",
+      "source": "communication_channel_sms",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "date": "20.03.2024",
+        "timestamp": "23:15",
+        "event": "попытка списания"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_2_7",
+      "source": "event_fraud_attempt",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "amount": 35000,
+        "merchant": "Global Gadgets"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_8",
+      "source": "event_fraud_attempt",
+      "target": "concept_suspicious_activity",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_9",
+      "source": "event_card_blocking",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_2_10",
+      "source": "event_card_blocking",
+      "target": "event_fraud_attempt",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_11",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "беспокойство",
+        "date": "21.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_12",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "фрустрация",
+        "date": "21.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_13",
+      "source": "event_customer_call_support",
+      "target": "person_agata_kolesnikova",
+      "relation": "caused",
+      "attributes": {
+        "date": "21.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_2_14",
+      "source": "event_customer_call_support",
+      "target": "communication_channel_phone",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_15",
+      "source": "event_customer_call_support",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {
+        "role": "оператор",
+        "duration_minutes": 18
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_16",
+      "source": "event_customer_call_support",
+      "target": "document_passport_agata",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_17",
+      "source": "event_customer_call_support",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "codeword": "Черусти-2000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_18",
+      "source": "bank_staff",
+      "target": "event_card_blocking",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_19",
+      "source": "bank_staff",
+      "target": "concept_115fz_compliance",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_20",
+      "source": "bank_staff",
+      "target": "document_115fz_proofs",
+      "relation": "applied_for",
+      "attributes": {
+        "deadline": "28.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_21",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "недовольство",
+        "reason": "блокировка карты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_22",
+      "source": "event_card_blocking",
+      "target": "payment_kindergarten",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_23",
+      "source": "payment_kindergarten",
+      "target": "person_elizar",
+      "relation": "contains",
+      "attributes": {
+        "amount": 8000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_24",
+      "source": "person_agata_kolesnikova",
+      "target": "document_115fz_proofs",
+      "relation": "applied_for",
+      "attributes": {
+        "channel": "email"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_25",
+      "source": "person_agata_kolesnikova",
+      "target": "bank_branch_lenina_15",
+      "relation": "applied_for",
+      "attributes": {
+        "channel": "email"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_26",
+      "source": "person_agata_kolesnikova",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "status": "blocked"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_27",
+      "source": "card_debit_mir",
+      "target": "concept_115fz_compliance",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_2_28",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "сложность_понимания",
+        "reason": "юридические тонкости 115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_1",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "финансовое_неудобство",
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_2",
+      "source": "person_radim_andreev",
+      "target": "payment_utilities",
+      "relation": "contains",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_3_3",
+      "source": "payment_utilities",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "amount": 7800
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_4",
+      "source": "event_document_submission_115fz",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_3_5",
+      "source": "event_document_submission_115fz",
+      "target": "bank_branch_lenina_15",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_6",
+      "source": "event_document_submission_115fz",
+      "target": "document_115fz_proofs",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_7",
+      "source": "event_document_submission_115fz",
+      "target": "bank_staff",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_8",
+      "source": "bank_staff",
+      "target": "event_document_submission_115fz",
+      "relation": "contains",
+      "attributes": {
+        "status": "На проверке",
+        "review_duration_days": 2
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_9",
+      "source": "communication_channel_sms",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "date": "29.03.2024",
+        "event": "разблокировка карты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_3_10",
+      "source": "event_card_unblocking",
+      "target": "card_debit_mir",
+      "relation": "contains",
+      "attributes": {
+        "date": "29.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_3_11",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "облегчение",
+        "date": "29.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_12",
+      "source": "person_agata_kolesnikova",
+      "target": "account_agata",
+      "relation": "contains",
+      "attributes": {
+        "channel": "банкомат",
+        "balance": 142200,
+        "date": "29.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_13",
+      "source": "bank",
+      "target": "concept_daily_online_limit",
+      "relation": "contains",
+      "attributes": {
+        "date": "29.03.2024",
+        "amount": 15000,
+        "duration_days": 30
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_14",
+      "source": "communication_channel_sms",
+      "target": "concept_daily_online_limit",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_15",
+      "source": "event_credit_repayment",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_3_16",
+      "source": "event_credit_repayment",
+      "target": "card_credit",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_17",
+      "source": "event_credit_repayment",
+      "target": "bank_branch_lenina_15",
+      "relation": "contains",
+      "attributes": {
+        "channel": "касса"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_18",
+      "source": "event_credit_repayment",
+      "target": "concept_grace_period",
+      "relation": "contains",
+      "attributes": {
+        "deadline": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_19",
+      "source": "bank_staff",
+      "target": "concept_secure_card_use",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_20",
+      "source": "concept_secure_card_use",
+      "target": "person_agata_kolesnikova",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_21",
+      "source": "person_agata_kolesnikova",
+      "target": "state_decision_learn_app",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_22",
+      "source": "state_decision_learn_app",
+      "target": "concept_digital_services_adoption",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_23",
+      "source": "state_decision_learn_app",
+      "target": "communication_channel_mobile_app",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_24",
+      "source": "event_fraud_dispute_resolution",
+      "target": "bank",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_25",
+      "source": "event_fraud_dispute_resolution",
+      "target": "event_fraud_attempt",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_26",
+      "source": "event_fraud_dispute_resolution",
+      "target": "account_agata",
+      "relation": "contains",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "event_3_27",
+      "source": "person_agata_kolesnikova",
+      "target": "emotional_state_agata",
+      "relation": "contains",
+      "attributes": {
+        "type": "уверенность",
+        "reason": "оперативность банка",
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_3_28",
+      "source": "person_agata_kolesnikova",
+      "target": "state_conservative_views",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

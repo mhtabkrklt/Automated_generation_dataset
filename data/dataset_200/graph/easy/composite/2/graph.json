@@ -1,0 +1,1148 @@
+{
+  "nodes": [
+    {
+      "id": "client_valeria_seliverstova",
+      "type": "person",
+      "label": "Валерия Селиверстова",
+      "attributes": {
+        "age": 26,
+        "job": "сборщик",
+        "location": "клх Ставрополь",
+        "income": "65000 рублей",
+        "debt_status": "почти весь доход на кредиты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "credit_consumer_789012",
+      "type": "account",
+      "label": "Потребительский кредит №789012",
+      "attributes": {
+        "type": "потребительский",
+        "amount": "12500 рублей (платеж)",
+        "deadline": "16.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "system_mobile_app",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "system_internet_bank",
+      "type": "product",
+      "label": "Интернет-банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "bank_service_center",
+      "type": "organization",
+      "label": "Банк (Техподдержка/Горячая линия)",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "system_sbp",
+      "type": "product",
+      "label": "Система СБП",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Начальные технические проблемы и первая блокировка доступа"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Подозрительная активность, повторная блокировка и меры безопасности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Проблемы с документами, полная блокировка из-за фишинга и верификация"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_suspicious_activity_alert_1503",
+      "type": "event",
+      "label": "SMS: Подозрительная активность",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "16:15",
+        "message": "Доступ к интернет-банку временно заблокирован.",
+        "category": "Notification & Alert, Security & Fraud"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_internet_bank_blocked_1503",
+      "type": "event",
+      "label": "Доступ к интернет-банку временно заблокирован",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "16:15",
+        "emotional_state": "сильное беспокойство",
+        "category": "Security & Fraud, Cards & Accounts"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "action_call_hotline_blocked_access",
+      "type": "event",
+      "label": "Звонок на горячую линию по блокировке",
+      "attributes": {
+        "emotional_state": "тревога",
+        "waiting_time": "15 минут",
+        "category": "Communication Channel, Cards & Accounts"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_suspicious_login_novosibirsk_2003",
+      "type": "event",
+      "label": "Push: Подозрительный вход из Новосибирска",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "09:10",
+        "location": "Новосибирск",
+        "category": "Notification & Alert, Security & Fraud"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_account_blocked_biometric_fail_2003",
+      "type": "event",
+      "label": "Аккаунт заблокирован после неудачного биометрического входа",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "09:12",
+        "details": "3 неудачные попытки, сообщение 'Доступ заблокирован'",
+        "category": "Access Management, Security & Fraud, Cards & Accounts"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "recommendation_security_measures",
+      "type": "event",
+      "label": "Рекомендации по безопасности от оператора",
+      "attributes": {
+        "details": "смена пароля, активация двухфакторной аутентификации",
+        "category": "Security & Fraud, Access Management, Problem Resolution"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "action_valeria_security_update_2103",
+      "type": "event",
+      "label": "Валерия сменила пароль и активировала MFA",
+      "attributes": {
+        "date": "21.03.2024",
+        "category": "Access Management, Decision & Action, Problem Resolution"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_account_unblocked_2103",
+      "type": "event",
+      "label": "Аккаунт разблокирован",
+      "attributes": {
+        "date": "21.03.2024",
+        "details": "SMS-подтверждение, доступ к счетам восстановлен",
+        "category": "Notification & Alert, Problem Resolution"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_full_account_blockage_0505",
+      "type": "event",
+      "label": "Полная блокировка аккаунта (05.05)",
+      "attributes": {
+        "date": "05.05.2024",
+        "details": "ни приложение, ни интернет-банк не работают, постоянные Login Error",
+        "emotional_state": "паника",
+        "category": "Cards & Accounts, Access Management, Technical Support"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_targeted_phishing_fraud_alert",
+      "type": "event",
+      "label": "Целенаправленные фишинговые атаки и взлом",
+      "attributes": {
+        "details": "с разных IP-адресов (Москва, Санкт-Петербург), статус Fraud Alert",
+        "category": "Security & Fraud, System Status"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "action_identity_verification_required_0505",
+      "type": "event",
+      "label": "Требуется многоступенчатая верификация личности",
+      "attributes": {
+        "details": "подтверждение личных данных, кодового слова, видеоверификация (30 мин)",
+        "category": "Client Identification, Access Management, Decision & Action, Personal Data Management"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "action_valeria_consent_refinancing_request",
+      "type": "event",
+      "label": "Валерия соглашается на верификацию и запрашивает рефинансирование",
+      "attributes": {
+        "emotional_state": "под огромным давлением",
+        "total_debt_estimate": "1.5 млн рублей",
+        "category": "Decision & Action, Emotional State, Daily Banking, Problem Resolution"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_lukina_st",
+      "type": "person",
+      "label": "Лукина Синклитикия Тимуровна",
+      "attributes": {
+        "relationship": "мать",
+        "full_name": "Лукина Синклитикия Тимуровна"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_amount_50k_transfer",
+      "type": "amount",
+      "label": "50 000 рублей",
+      "attributes": {
+        "currency": "RUB",
+        "value": 50000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_sfp_attempt",
+      "type": "event",
+      "label": "Попытка перевода через СБП",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "14:30",
+        "status": "отклонена"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_error_server",
+      "type": "event",
+      "label": "Неизвестная ошибка сервера",
+      "attributes": {
+        "type": "error",
+        "description": "Неизвестная ошибка сервера"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_amount_4_8k_communal",
+      "type": "amount",
+      "label": "4 800 рублей",
+      "attributes": {
+        "currency": "RUB",
+        "value": 4800
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_purpose_communal",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "type": "purpose",
+        "period": "февраль"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_call_sfp_issue",
+      "type": "event",
+      "label": "Звонок в техподдержку по сбою СБП",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "14:35",
+        "emotional_state": "Anxious"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_person_operator",
+      "type": "person",
+      "label": "Оператор техподдержки",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "node_system_sfp_failure",
+      "type": "event",
+      "label": "Временный сбой СБП",
+      "attributes": {
+        "type": "system_status",
+        "scope": "переводы от 30000 рублей",
+        "status": "active"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_amount_30k_threshold",
+      "type": "amount",
+      "label": "30 000 рублей",
+      "attributes": {
+        "currency": "RUB",
+        "value": 30000,
+        "type": "threshold"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_recommend_wire_transfer",
+      "type": "event",
+      "label": "Использовать перевод по реквизитам",
+      "attributes": {
+        "type": "recommendation"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_successful_wire",
+      "type": "event",
+      "label": "Успешный перевод по реквизитам",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "15:45",
+        "status": "успешно"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_card_lukina",
+      "type": "account",
+      "label": "Карта Лукиной С.Т.",
+      "attributes": {
+        "type": "card",
+        "last_digits": "1234",
+        "owner": "Лукина Синклитикия Тимуровна"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_amount_59_commission",
+      "type": "amount",
+      "label": "59 рублей",
+      "attributes": {
+        "currency": "RUB",
+        "value": 59,
+        "type": "комиссия"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_check_credit_app",
+      "type": "event",
+      "label": "Попытка входа в МП для проверки кредита",
+      "attributes": {
+        "date": "15.03.2024",
+        "purpose": "проверка статуса кредита"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_ui_glitch",
+      "type": "event",
+      "label": "UI Glitch",
+      "attributes": {
+        "type": "ui_issue",
+        "description": "некорректный баланс"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_amount_0_balance",
+      "type": "amount",
+      "label": "0 рублей",
+      "attributes": {
+        "currency": "RUB",
+        "value": 0,
+        "type": "отображаемый баланс"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_amount_52_4k_expected",
+      "type": "amount",
+      "label": "52 441 рублей",
+      "attributes": {
+        "currency": "RUB",
+        "value": 52441,
+        "type": "ожидаемый баланс"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_account_debit_valeria",
+      "type": "account",
+      "label": "Дебетовая карта Валерии",
+      "attributes": {
+        "owner": "Валерия Селиверстова",
+        "type": "дебетовая"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_app_crash",
+      "type": "event",
+      "label": "App Crash",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "16:10"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_error_login_manual",
+      "type": "event",
+      "label": "Login Error",
+      "attributes": {
+        "type": "error",
+        "description": "требует логин/пароль"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_sms_confirmation_debit",
+      "type": "event",
+      "label": "SMS-подтверждение списания",
+      "attributes": {
+        "date": "15.03.2024",
+        "type": "подтверждение"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_app_login_20_03",
+      "type": "event",
+      "label": "Попытка входа в МП (20.03)",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "09:12",
+        "method": "биометрический"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "node_event_call_susp_activity_20_03",
+      "type": "event",
+      "label": "Звонок на горячую линию по подозрительной активности (20.03)",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "09:15",
+        "emotional_state": "Frustrated"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_valeria_ep1",
+      "source": "client_valeria_seliverstova",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_valeria_ep2",
+      "source": "client_valeria_seliverstova",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_valeria_ep3",
+      "source": "client_valeria_seliverstova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_credit789012_ep1",
+      "source": "credit_consumer_789012",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_mobileapp_ep1",
+      "source": "system_mobile_app",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_internetbank_ep1",
+      "source": "system_internet_bank",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_banksrv_ep1",
+      "source": "bank_service_center",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_sbp_ep1",
+      "source": "system_sbp",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_susp_alert_ep1",
+      "source": "event_suspicious_activity_alert_1503",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_internet_bank_blocked_ep1",
+      "source": "event_internet_bank_blocked_1503",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_call_hotline_blocked_ep1",
+      "source": "action_call_hotline_blocked_access",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_susp_login_ep2",
+      "source": "event_suspicious_login_novosibirsk_2003",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_acc_blocked_bio_ep2",
+      "source": "event_account_blocked_biometric_fail_2003",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_recom_sec_ep2",
+      "source": "recommendation_security_measures",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_valeria_sec_upd_ep2",
+      "source": "action_valeria_security_update_2103",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_acc_unblocked_ep2",
+      "source": "event_account_unblocked_2103",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_full_acc_block_ep3",
+      "source": "event_full_account_blockage_0505",
+      "target": "ep_3",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_full_account_blockage_0505",
+      "source": "event_full_account_blockage_0505",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_targeted_phishing_fraud_alert",
+      "source": "event_targeted_phishing_fraud_alert",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_action_identity_verification_required_0505",
+      "source": "action_identity_verification_required_0505",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_action_valeria_consent_refinancing_request",
+      "source": "action_valeria_consent_refinancing_request",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_sfp_attempt_involves_50k",
+      "source": "node_event_sfp_attempt",
+      "target": "node_amount_50k_transfer",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_sfp_attempt_intended_for_lukina",
+      "source": "node_event_sfp_attempt",
+      "target": "node_lukina_st",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_lukina_needs_to_pay_communal",
+      "source": "node_lukina_st",
+      "target": "node_amount_4_8k_communal",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_communal_is_for_purpose",
+      "source": "node_amount_4_8k_communal",
+      "target": "node_purpose_communal",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_sfp_attempt_resulted_in_error",
+      "source": "node_event_sfp_attempt",
+      "target": "node_error_server",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_call_sfp_issue_handled_by_operator",
+      "source": "node_event_call_sfp_issue",
+      "target": "node_person_operator",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_operator_communicated_sfp_failure",
+      "source": "node_person_operator",
+      "target": "node_system_sfp_failure",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_sfp_failure_affects_30k_threshold",
+      "source": "node_system_sfp_failure",
+      "target": "node_amount_30k_threshold",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_operator_recommended_wire_transfer",
+      "source": "node_person_operator",
+      "target": "node_recommend_wire_transfer",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_successful_wire_involves_50k",
+      "source": "node_event_successful_wire",
+      "target": "node_amount_50k_transfer",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_successful_wire_to_lukina",
+      "source": "node_event_successful_wire",
+      "target": "node_lukina_st",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_successful_wire_uses_lukina_card",
+      "source": "node_event_successful_wire",
+      "target": "node_card_lukina",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_successful_wire_incurred_commission",
+      "source": "node_event_successful_wire",
+      "target": "node_amount_59_commission",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_check_credit_app_resulted_in_ui_glitch",
+      "source": "node_event_check_credit_app",
+      "target": "node_ui_glitch",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_ui_glitch_displayed_0_balance",
+      "source": "node_ui_glitch",
+      "target": "node_amount_0_balance",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_ui_glitch_expected_52_4k_balance",
+      "source": "node_ui_glitch",
+      "target": "node_amount_52_4k_expected",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_0_balance_on_debit_card",
+      "source": "node_amount_0_balance",
+      "target": "node_account_debit_valeria",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_52_4k_expected_on_debit_card",
+      "source": "node_amount_52_4k_expected",
+      "target": "node_account_debit_valeria",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_check_credit_app_followed_by_app_crash",
+      "source": "node_event_check_credit_app",
+      "target": "node_event_app_crash",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_app_crash_followed_by_login_error",
+      "source": "node_event_app_crash",
+      "target": "node_error_login_manual",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_call_susp_activity_20_03_handled_by_operator",
+      "source": "node_event_call_susp_activity_20_03",
+      "target": "node_person_operator",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "ep_occurs_node_lukina_st",
+      "source": "node_lukina_st",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_amount_50k_transfer",
+      "source": "node_amount_50k_transfer",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_sfp_attempt",
+      "source": "node_event_sfp_attempt",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_error_server",
+      "source": "node_error_server",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_amount_4_8k_communal",
+      "source": "node_amount_4_8k_communal",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_purpose_communal",
+      "source": "node_purpose_communal",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_call_sfp_issue",
+      "source": "node_event_call_sfp_issue",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_person_operator",
+      "source": "node_person_operator",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_system_sfp_failure",
+      "source": "node_system_sfp_failure",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_amount_30k_threshold",
+      "source": "node_amount_30k_threshold",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_recommend_wire_transfer",
+      "source": "node_recommend_wire_transfer",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_successful_wire",
+      "source": "node_event_successful_wire",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_card_lukina",
+      "source": "node_card_lukina",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_amount_59_commission",
+      "source": "node_amount_59_commission",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_check_credit_app",
+      "source": "node_event_check_credit_app",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_ui_glitch",
+      "source": "node_ui_glitch",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_amount_0_balance",
+      "source": "node_amount_0_balance",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_amount_52_4k_expected",
+      "source": "node_amount_52_4k_expected",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_account_debit_valeria",
+      "source": "node_account_debit_valeria",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_app_crash",
+      "source": "node_event_app_crash",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_error_login_manual",
+      "source": "node_error_login_manual",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_sms_confirmation_debit",
+      "source": "node_event_sms_confirmation_debit",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_app_login_20_03",
+      "source": "node_event_app_login_20_03",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_event_call_susp_activity_20_03",
+      "source": "node_event_call_susp_activity_20_03",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

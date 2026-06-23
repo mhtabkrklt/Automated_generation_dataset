@@ -1,0 +1,37 @@
+**Краткий сюжет (Narrative Arc) для диалога: Анжелика Александровна Максимова**
+
+**Профиль клиента:** Анжелика Александровна Максимова, 24-летний терапевт из Южно-Курильска, с доходом 61 000 рублей. Крайне осторожна и тревожна в финансовых вопросах, тщательно планирует бюджет, любое уведомление от банка вызывает беспокойство. Вежлива, но напряжена при общении с банком, ищет стабильности.
+
+---
+
+**Завязка (Inciting Incident):**
+Анжелика Александровна, готовясь оплатить ежемесячный коммунальный счет, обнаруживает, что мобильное приложение банка выдает критическую ошибку при попытке перевода средств. Это вызывает у нее сильное беспокойство и фрустрацию, так как просрочка платежа для нее неприемлема. Она немедленно обращается в службу поддержки, чтобы выяснить причину технической неисправности и совершить срочный перевод. В процессе идентификации ей приходится подтверждать кодовое слово и актуализировать некоторые контактные данные.
+
+*   *Ключевые аспекты:* Technical Support (Mobile App Error, System Glitch), Emotional State (Client Frustration, Anxiety), Daily Banking (Bill Payment, Fund Transfer), Digital Channel Interaction (Mobile App Usage), Client Identification (Identity Verification, Code Word Confirmation), Personal Data Management (Contact Information Update).
+
+**Развитие (Rising Action) - 3 месяца:**
+
+**Месяц 1: Технические сложности и поиск решения.**
+После частичного устранения первоначальной проблемы с мобильным приложением, Анжелика сталкивается с новыми трудностями: некорректно отображается история транзакций, а push-уведомления о списаниях приходят с задержкой или не приходят вовсе. Это усиливает ее тревогу, поскольку она привыкла тщательно контролировать свои расходы. Она снова связывается с банком, запрашивая выписку по счету и пытаясь настроить уведомления, выражая свое недовольство качеством цифровых сервисов. Ей предлагают обновить приложение и проверить настройки безопасности, а также рассмотреть возможность подключения дополнительного пакета уведомлений (с комиссией), что вызывает у нее колебания и отказ от платной услуги.
+
+*   *Ключевые аспекты:* Technical Support (Push Notification Problem, System Glitch), Emotional State (Anxiety, Client Frustration), Transaction History (Transaction Details Request, Statement Review), Notification & Alert Management (Push Notification Preferences, SMS Alert Settings), Digital Channel Interaction (Mobile App Usage), Complaint & Issue Resolution (Service Disruption Report), Fee & Commission (Commission Inquiry), Decision & Action (Refusal of Offer).
+
+**Месяц 2: Угроза безопасности и срочные меры.**
+Анжелика получает подозрительное SMS-сообщение, якобы от банка, с просьбой перейти по ссылке для подтверждения данных. Несмотря на свою осторожность, ее тревога возрастает, когда она обнаруживает несколько небольших, но несанкционированных списаний со своей дебетовой карты, которые не отображались в истории транзакций из-за предыдущих технических сбоев. В панике она немедленно звонит в банк, сообщая о подозрительной активности и требуя заблокировать карту. Ее эмоциональное состояние характеризуется крайней срочностью и страхом потери средств. Банк регистрирует ее обращение как отчет о подозрительной активности и инициирует процедуру оспаривания мошеннических транзакций, запрашивая подтверждение личности.
+
+*   *Ключевые аспекты:* Security & Fraud (Phishing Alert, Suspicious Activity Report, Fraudulent Transaction Dispute), Cards & Accounts (Card Blocking), Emotional State (Urgency, Anxiety), Notification & Alert Management (Security Alert), Transaction History (Suspicious Transaction Identification), Complaint & Issue Resolution (Complaint Registration, Issue Escalation), Client Identification (Identity Verification).
+
+**Месяц 3: Разрешение конфликта и укрепление доверия.**
+В течение месяца Анжелика активно взаимодействует с банком по поводу оспаривания мошеннических транзакций. Ей приходится предоставить дополнительные документы, включая обновленные паспортные данные, и подтвердить свое согласие на проведение внутреннего расследования. Она постоянно проверяет статус разрешения проблемы, испытывая при этом значительное напряжение. Банк предлагает ей перевыпуск карты и настройку более надежных методов многофакторной аутентификации, а также консультацию по управлению вкладами для создания "подушки безопасности".
+
+*   *Ключевые аспекты:* Security & Fraud (Fraudulent Transaction Dispute, Account Compromise), Document Management (Passport Data Update), Personal Data Management (Consent for Data Processing), Complaint & Issue Resolution (Resolution Status Check, Dispute Resolution), Cards & Accounts (Card Reissue), Access Management (Multi-Factor Authentication, Biometric Setup), Decision & Action (Service Consent, Action Confirmation), Product & Service Inquiry (Consultation Request, Deposit Opening), Emotional State (Anxiety, Calmness - по мере разрешения).
+
+**Кульминация (Climax):**
+Банк подтверждает факт мошенничества и сообщает о полном возмещении несанкционированно списанных средств. Однако, чтобы предотвратить подобные инциденты в будущем, Анжелике необходимо лично посетить отделение для подписания заявления о перевыпуске карты с новым дизайном и активации усиленной двухфакторной аутентификации, а также для обновления всех персональных данных в системе. Это становится для нее моментом истины: она должна принять окончательное решение о доверии банку и активно участвовать в процессе повышения своей финансовой безопасности, несмотря на неудобства. Она также соглашается на консультацию по открытию накопительного счета, чтобы начать формировать резервный фонд.
+
+*   *Ключевые аспекты:* Security & Fraud (Fraudulent Transaction Dispute, Account Compromise), Decision & Action (Document Signing, Service Consent, Action Confirmation), Cards & Accounts (Card Reissue), Access Management (Multi-Factor Authentication), Personal Data Management (Passport Data Update), Document Management (Contract Review), Emotional State (Satisfaction, Calmness, but still cautious), Product & Service Inquiry (Deposit Opening).
+
+**Развязка (Resolution):**
+Анжелика успешно завершает все необходимые процедуры: подписывает документы, получает новую карту, активирует усиленную аутентификацию и открывает накопительный счет. Она чувствует значительное облегчение и, хотя ее тревожность по отношению к финансам полностью не исчезает, она обретает новую уверенность в своей способности управлять банковскими услугами и защищать свои средства. Она оставляет положительный отзыв о работе службы поддержки, отмечая их оперативность и помощь в разрешении сложной ситуации, но также указывает на необходимость улучшения стабильности цифровых сервисов.
+
+*   *Ключевые аспекты:* Emotional State (Satisfaction, Calmness), Customer Feedback (Service Quality Feedback, Complaint Resolution Feedback), Cards & Accounts (Card Reissue), Access Management (Biometric Setup, Multi-Factor Authentication), Deposits & Savings (Savings Account Management, Deposit Opening), Complaint & Issue Resolution (Resolution Status Check), Digital Channel Interaction (Online Service Inquiry - for future stability).

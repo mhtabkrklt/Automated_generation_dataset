@@ -1,0 +1,25 @@
+{
+  "information_extraction": [
+    {
+      "question": "На сколько рублей личные вложения клиента-кока в приобретение нового актива отличались от суммы привлечённого займа?",
+      "answer": "2000000 руб.",
+      "answer_format": "N руб.",
+      "reasoning_path": [
+        "property_moscow_zarechnaya --[attributes]--> cost: 10000000 руб.",
+        "loan_mortgage_felix_initial --[attributes]--> amount: 8000000 руб.",
+        "вычисление: 10000000 − 8000000 = 2000000 руб."
+      ],
+      "capability": "information_extraction",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "property_moscow_zarechnaya",
+        "loan_mortgage_felix_initial"
+      ],
+      "decoy_answers": [
+        "1500000 руб.",
+        "8000000 руб.",
+        "2200000 руб."
+      ]
+    }
+  ]
+}

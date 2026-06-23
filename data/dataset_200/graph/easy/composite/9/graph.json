@@ -1,0 +1,1638 @@
+{
+  "nodes": [
+    {
+      "id": "node_phishing",
+      "type": "event",
+      "label": "Фишинговая атака",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "node_block_115",
+      "type": "event",
+      "label": "Блокировка счёта по 115-ФЗ",
+      "attributes": {
+        "reason": "аномальная активность",
+        "date": "12.04.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "node_compliance",
+      "type": "event",
+      "label": "Комплаенс-проверка завершена",
+      "attributes": {
+        "status": "Завершено",
+        "date": "18.05.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "node_limit",
+      "type": "event",
+      "label": "Повышение лимита СБП",
+      "attributes": {
+        "amount": "100000 руб.",
+        "date": "20.06.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "node_permanent_freeze",
+      "type": "event",
+      "label": "Полная заморозка средств",
+      "attributes": {
+        "reason": "предположительная мошенническая схема"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "person",
+      "label": "Баранова Фёкла Кузьминична",
+      "attributes": {
+        "role": "клиент",
+        "occupation": "пограничник",
+        "income": "106000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "person",
+      "label": "Лукия Кирилловна Брагина",
+      "attributes": {
+        "role": "доверенное лицо",
+        "status": "отзыв доверенности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "person",
+      "label": "Милицы",
+      "attributes": {
+        "role": "дочь",
+        "age_group": "ребёнок"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "person",
+      "label": "Панова Ирина Ефимовна",
+      "attributes": {
+        "role": "мать",
+        "relation": "бенефициар перевода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "Отделение банка №4512",
+      "attributes": {
+        "type": "филиал",
+        "address": "ул. Ленина, 14, п. Назрань"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "organization",
+      "label": "ФНС №2 по Ингушетии",
+      "attributes": {
+        "type": "налоговый орган",
+        "issue_date": "15.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "organization",
+      "label": "Детский сад «Солнышко»",
+      "attributes": {
+        "type": "учреждение",
+        "contract": "№ДК-8891"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "organization",
+      "label": "«Назрань-ЖКХ»",
+      "attributes": {
+        "type": "поставщик услуг",
+        "account": "№445566778899"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "organization",
+      "label": "Интернет-магазин «TechGadget»",
+      "attributes": {
+        "type": "merchant",
+        "order_id": "#88921"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "organization",
+      "label": "Интернет-магазин «StyleMarket»",
+      "attributes": {
+        "type": "merchant",
+        "transaction_id": "#CH-9921"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "organization",
+      "label": "Служба безопасности банка",
+      "attributes": {
+        "type": "подразделение",
+        "contact": "900"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "organization",
+      "label": "Отдел комплаенса",
+      "attributes": {
+        "type": "подразделение",
+        "sla": "3 рабочих дня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "organization",
+      "label": "Отдел урегулирования споров",
+      "attributes": {
+        "type": "подразделение",
+        "fee": "0 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "organization",
+      "label": "ЦБ РФ",
+      "attributes": {
+        "type": "регулятор",
+        "reporting": "обязательная отчётность"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "account",
+      "label": "Накопительный счёт №40902811550000012345",
+      "attributes": {
+        "type": "накопительный",
+        "rate": "14,5%",
+        "open_date": "15.09.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "product",
+      "label": "Карта Visa 4276 5500 0000 1234",
+      "attributes": {
+        "type": "Visa",
+        "expiry": "09/26",
+        "status": "скомпрометирована"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "product",
+      "label": "Карта 5213 8800 1122 3344",
+      "attributes": {
+        "type": "unknown",
+        "status": "получатель перевода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "product",
+      "label": "Новая карта Visa 4276 5500 0000 9876",
+      "attributes": {
+        "type": "Visa",
+        "expiry": "06/27",
+        "status": "активна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "product",
+      "label": "Кредитная карта «Гибкий»",
+      "attributes": {
+        "type": "кредитный продукт",
+        "next_payment": "15200 руб.",
+        "due_date": "25.07.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "document",
+      "label": "Справка 2-НДФЛ за 2023 год",
+      "attributes": {
+        "type": "налоговая справка",
+        "series": "0001234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "document",
+      "label": "Чек на оплату детского сада",
+      "attributes": {
+        "type": "платёжный документ",
+        "amount": "12500 руб.",
+        "period": "май-июнь 2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Договор №ДК-8891",
+      "attributes": {
+        "type": "договор",
+        "party": "детский сад"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "document",
+      "label": "Договор на обслуживание карты №К-778899",
+      "attributes": {
+        "type": "договор",
+        "fee": "0 руб./мес."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Доверенность ДВ-8842/К",
+      "attributes": {
+        "type": "доверенность",
+        "issue_date": "10.01.2023",
+        "status": "отозвана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Запись звонка SEC-7741-2024",
+      "attributes": {
+        "type": "аудиозапись",
+        "channel": "горячая линия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Скриншоты из истории браузера",
+      "attributes": {
+        "type": "цифровые доказательства",
+        "source": "браузер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Фишинговая ссылка sberbank-verify.ru",
+      "attributes": {
+        "type": "url",
+        "status": "подозрительная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "SMS-уведомление о блокировке",
+      "attributes": {
+        "type": "sms",
+        "sender": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "SMS-уведомление о запросе в комплаенс",
+      "attributes": {
+        "type": "sms",
+        "tracking": "SLA: 3 дня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "SMS-уведомление о заявлении в споры",
+      "attributes": {
+        "type": "sms",
+        "channel": "push"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "SMS-уведомление о восстановлении доступа",
+      "attributes": {
+        "type": "sms",
+        "status": "полное восстановление"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Временное удержание 18 400 руб",
+      "attributes": {
+        "type": "hold",
+        "amount": "18400 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Чарджбэк на 12 750 руб",
+      "attributes": {
+        "type": "dispute",
+        "amount": "12750 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Перевод маме 8 500 руб",
+      "attributes": {
+        "type": "transfer",
+        "amount": "8500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Оплата ЖКХ 52 000 руб",
+      "attributes": {
+        "type": "payment",
+        "status": "отклонено по лимиту"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Повышение лимита СБП",
+      "attributes": {
+        "type": "limit_change",
+        "new_limit": "100000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Смена пароля",
+      "attributes": {
+        "type": "security_update",
+        "length": "12 символов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Активация биометрии",
+      "attributes": {
+        "type": "security_update",
+        "method": "face_id/fingerprint"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Обновление условий обслуживания",
+      "attributes": {
+        "type": "contract_update",
+        "duration": "6 месяцев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "type": "software",
+        "auth": "push-уведомления"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "3D Secure",
+      "attributes": {
+        "type": "protocol",
+        "enabled": true
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Пароль к интернет-банку",
+      "attributes": {
+        "type": "credential",
+        "complexity": "высокая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "product",
+      "label": "Телефонный звонок",
+      "attributes": {
+        "type": "contact",
+        "preferred": true
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "organization",
+      "label": "п. Назрань",
+      "attributes": {
+        "type": "city",
+        "region": "Ингушетия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "organization",
+      "label": "ул. Ленина, 14",
+      "attributes": {
+        "type": "address",
+        "building": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "115-ФЗ",
+      "attributes": {
+        "type": "regulation",
+        "focus": "AML/комплаенс"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Комиссия за обслуживание 0 руб",
+      "attributes": {
+        "type": "fee",
+        "period": "6 мес."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Грейс-период 120 дней",
+      "attributes": {
+        "type": "credit_term",
+        "end_date": "25.11.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Зона доверия",
+      "attributes": {
+        "type": "status",
+        "compliance": "завершено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1_phishing_block",
+      "source": "node_phishing",
+      "target": "node_block_115",
+      "relation": "caused",
+      "attributes": {
+        "chain_step": 1
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e2_block_compliance",
+      "source": "node_block_115",
+      "target": "node_compliance",
+      "relation": "caused",
+      "attributes": {
+        "chain_step": 2
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e3_compliance_limit",
+      "source": "node_compliance",
+      "target": "node_limit",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_false_block_freeze",
+      "source": "node_block_115",
+      "target": "node_permanent_freeze",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "ctx_node_1",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.01.2023",
+        "channel": "лично"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "ctx_node_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship": "мать-дочь"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship": "дочь-мать"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_1",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "since": "2023",
+        "channel": "онлайн"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.05.2024",
+        "purpose": "комплаенс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_1",
+      "target": "ctx_node_16",
+      "relation": "owns",
+      "attributes": {
+        "type": "основной"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_1",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "issue_date": "09.2023",
+        "status": "скомпрометирована"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "issue_date": "06.2024",
+        "status": "активна"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_1",
+      "target": "ctx_node_20",
+      "relation": "owns",
+      "attributes": {
+        "product": "Гибкий"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "submitted",
+      "attributes": {
+        "date": "18.05.2024",
+        "purpose": "подтверждение дохода"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_1",
+      "target": "ctx_node_22",
+      "relation": "submitted",
+      "attributes": {
+        "date": "18.05.2024",
+        "purpose": "подтверждение расходов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_1",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.01.2023",
+        "status": "отозвана"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_1",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024",
+        "channel": "900"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_1",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.05.2024",
+        "format": "скриншоты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_1",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "удобство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_1",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "постоянное место жительства"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_1",
+      "target": "node_phishing",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024",
+        "channel": "sms"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_1",
+      "target": "node_block_115",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024",
+        "impact": "временное удержание"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_2",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "представитель"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_3",
+      "target": "ctx_node_8",
+      "relation": "cancelled",
+      "attributes": {
+        "type": "дошкольное учреждение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_3",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "expense_type": "образование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_4",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "медицинские услуги"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_5",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "branch_id": "4512"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_5",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "department": "безопасность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_5",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "department": "комплаенс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_5",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "department": "споровый отдел"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_5",
+      "target": "ctx_node_15",
+      "relation": "submitted",
+      "attributes": {
+        "frequency": "ежеквартально"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_6",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "city": "п. Назрань"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_7",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_8",
+      "target": "ctx_node_23",
+      "relation": "signed",
+      "attributes": {
+        "party": "родители"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_8",
+      "target": "ctx_node_22",
+      "relation": "paid",
+      "attributes": {
+        "period": "май-июнь 2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_9",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "service": "коммунальные услуги"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_10",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "order_id": "#88921"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_10",
+      "target": "ctx_node_33",
+      "relation": "owns",
+      "attributes": {
+        "amount": "18400 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_11",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "transaction_id": "#CH-9921"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_11",
+      "target": "ctx_node_34",
+      "relation": "caused",
+      "attributes": {
+        "amount": "12750 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_12",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "id": "SEC-7741-2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_12",
+      "target": "ctx_node_33",
+      "relation": "owns",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_13",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "легальность подтверждена"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_13",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "целевое использование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_13",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_14",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_14",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_15",
+      "target": "ctx_node_37",
+      "relation": "approved",
+      "attributes": {
+        "condition": "отчётность сдана"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_16",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_16",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "period": "6 мес."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_17",
+      "target": "node_phishing",
+      "relation": "resulted_in",
+      "attributes": {
+        "method": "ввод данных"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_17",
+      "target": "ctx_node_29",
+      "relation": "received",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "12.04.2024",
+        "amount": "18400 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_18",
+      "target": "node_permanent_freeze",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "подозрительный получатель"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_19",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_19",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_20",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "duration": "120 дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_20",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "8500 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_23",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "clause": "оплата услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_24",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "0 руб./мес."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_28",
+      "target": "ctx_node_29",
+      "relation": "submitted",
+      "attributes": {
+        "channel": "sms"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_28",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "method": "фишинг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_30",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "department": "комплаенс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_31",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "department": "споровый отдел"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_32",
+      "target": "ctx_node_16",
+      "relation": "approved",
+      "attributes": {
+        "date": "20.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_33",
+      "target": "node_block_115",
+      "relation": "caused",
+      "attributes": {
+        "amount": "18400 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_34",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "merchant": "StyleMarket"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_35",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "медицина"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_36",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "service": "ЖКХ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_37",
+      "target": "node_limit",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "100000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_38",
+      "target": "ctx_node_43",
+      "relation": "changed_to",
+      "attributes": {
+        "date": "20.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_39",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "method": "биометрия"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_40",
+      "target": "ctx_node_24",
+      "relation": "cancelled",
+      "attributes": {
+        "date": "20.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_41",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "feature": "3D Secure"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_42",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "активна"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_43",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "system": "internet banking"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_44",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "обратная связь"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_45",
+      "target": "ctx_node_6",
+      "relation": "contains",
+      "attributes": {
+        "building": "ул. Ленина, 14"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_47",
+      "target": "node_block_115",
+      "relation": "resulted_in",
+      "attributes": {
+        "article": "55.5"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_51",
+      "target": "node_compliance",
+      "relation": "resulted_in",
+      "attributes": {
+        "result": "клиент в зоне доверия"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_phishing",
+      "source": "node_phishing",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_block_115",
+      "source": "node_block_115",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_compliance",
+      "source": "node_compliance",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_limit",
+      "source": "node_limit",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_node_permanent_freeze",
+      "source": "node_permanent_freeze",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

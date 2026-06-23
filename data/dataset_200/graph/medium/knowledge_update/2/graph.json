@@ -1,0 +1,2780 @@
+{
+  "nodes": [
+    {
+      "id": "person_zoya_gorbacheva",
+      "type": "person",
+      "label": "Зоя Викторовна Горбачева",
+      "attributes": {
+        "age": "33",
+        "gender": "female",
+        "occupation": "грейдерист",
+        "income": "86000 руб.",
+        "city": "Кондопога"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_pribylny",
+      "type": "product",
+      "label": "Вклад Прибыльный",
+      "attributes": {
+        "amount": "500000 руб.",
+        "term": "6 месяцев",
+        "status": "одобрено",
+        "contract_number": "789012"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_maksimum",
+      "type": "product",
+      "label": "Вклад Максимум",
+      "attributes": {
+        "term": "12 месяцев",
+        "min_amount": "100000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_evlampiy_simonov",
+      "type": "person",
+      "label": "Евлампий Ануфриевич Симонов",
+      "ground_truth": true,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "person_lidiya_fadeeva",
+      "type": "person",
+      "label": "Лидия Борисовна Фадеева",
+      "attributes": {
+        "relation": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_guriy_orlov",
+      "type": "person",
+      "label": "Орлов Гурий Артурович",
+      "attributes": {
+        "relation": "partner"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_consumer_guriy",
+      "type": "product",
+      "label": "Потребительский кредит Гурия Орлова",
+      "attributes": {
+        "amount": "480000 руб.",
+        "term": "2 года"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "account_current_zoya",
+      "type": "account",
+      "label": "Текущий счет Зои Горбачевой",
+      "attributes": {
+        "type": "current"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "mortgage_zoya",
+      "type": "product",
+      "label": "Ипотека Зои Горбачевой",
+      "attributes": {
+        "amount": "2500000 руб.",
+        "payment": "32000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_universal",
+      "type": "product",
+      "label": "Вклад Универсальный",
+      "attributes": {
+        "term": "6 месяцев",
+        "opened_date": "10.11.2023",
+        "status": "подписано"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "account_savings_zoya",
+      "type": "account",
+      "label": "Накопительный счет Зои Горбачевой",
+      "attributes": {
+        "type": "savings"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_kira_drozdova",
+      "type": "person",
+      "label": "Кира Наумовна Дроздова",
+      "attributes": {
+        "relation": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "card_debit_kira",
+      "type": "product",
+      "label": "Дебетовая карта Киры Дроздовой",
+      "attributes": {
+        "type": "debit"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "deposit_invest_new",
+      "type": "product",
+      "label": "Инвестиционный вклад",
+      "attributes": {
+        "min_amount": "200000 руб.",
+        "type": "investment"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "card_debit_zoya",
+      "type": "product",
+      "label": "Дебетовая карта Зои Горбачевой",
+      "attributes": {
+        "type": "debit"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "person_sofron_titov",
+      "type": "person",
+      "label": "Софрон Гавриилович Титов",
+      "ground_truth": true,
+      "episode_hint": 5,
+      "attributes": {}
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Заявление на вклад Прибыльный",
+      "attributes": {
+        "date": "01.03.2024",
+        "status": "подано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "event",
+      "label": "Push-уведомление об одобрении вклада",
+      "attributes": {
+        "date": "05.03.2024",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "document",
+      "label": "Договор вклада Прибыльный",
+      "attributes": {
+        "contract_number": "789012",
+        "date": "05.03.2024",
+        "status": "отправлен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "product",
+      "label": "Вклад Сберегательный",
+      "attributes": {
+        "term": "6 месяцев",
+        "interest_rate": "13.5% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "event",
+      "label": "Изменение условий вклада Максимум",
+      "attributes": {
+        "date": "15.03.2024",
+        "old_rate": "15% годовых",
+        "new_rate": "14.5% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "event",
+      "label": "Планируемый перевод Евлампию Симонову",
+      "attributes": {
+        "amount": "25000 руб.",
+        "reason": "оплата коммунальных услуг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "product",
+      "label": "Лекарства для Лидии Фадеевой",
+      "attributes": {
+        "cost": "1500 руб.",
+        "urgency": "срочно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Фактический перевод Евлампию Симонову",
+      "attributes": {
+        "amount": "23500 руб.",
+        "date": "18.03.2024",
+        "reason": "оплата коммунальных услуг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "document",
+      "label": "Заявка на рефинансирование кредита",
+      "attributes": {
+        "date": "10.03.2024",
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Push-уведомление о платеже по ипотеке",
+      "attributes": {
+        "date": "20.03.2024",
+        "due_date": "25.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "document",
+      "label": "Условия досрочного снятия средств",
+      "attributes": {
+        "product": "Вклад Прибыльный",
+        "status": "запрошены"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "document",
+      "label": "Обновление персональных данных",
+      "attributes": {
+        "date": "22.03.2024",
+        "field": "адрес регистрации",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "СМС о попытке входа",
+      "attributes": {
+        "date": "23.03.2024",
+        "device": "незнакомое устройство"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "product",
+      "label": "Служба поддержки банка",
+      "attributes": {
+        "phone": "8-800-ХХХ-ХХ-ХХ",
+        "type": "горячая линия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Блокировка подозрительной активности",
+      "attributes": {
+        "date": "23.03.2024",
+        "status": "выполнено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Ежемесячный лимит пополнения накопительного счета",
+      "attributes": {
+        "old_limit": "50000 руб.",
+        "type": "пополнение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Увеличение лимита пополнения",
+      "attributes": {
+        "date": "05.04.2024",
+        "new_limit": "100000 руб.",
+        "channel": "онлайн-банкинг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Предварительный расчет процентов по вкладу Прибыльный",
+      "attributes": {
+        "period": "квартал",
+        "amount": "12000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Капитализация процентов по вкладу Прибыльный",
+      "attributes": {
+        "date": "05.06.2024",
+        "amount": "12300 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Уведомление об изменении лимита снятия наличных Киры Дроздовой",
+      "attributes": {
+        "date": "01.04.2024",
+        "new_limit": "80000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Перевод Лидии Фадеевой",
+      "attributes": {
+        "amount": "15000 руб.",
+        "reason": "оплата медицинских услуг",
+        "date": "01.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Выписка по текущему счету",
+      "attributes": {
+        "period": "март 2024",
+        "status": "запрошена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Сравнение условий накопительных счетов",
+      "attributes": {
+        "focus": "ставки, капитализация",
+        "date": "03.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "product",
+      "label": "Накопительный счет 'Накопительный+'",
+      "attributes": {
+        "interest_rate": "14.2% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "organization",
+      "label": "Конкурирующий банк",
+      "attributes": {
+        "interest_rate_offer": "14.5% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Чат поддержки банка",
+      "attributes": {
+        "type": "онлайн-поддержка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "document",
+      "label": "Условия получения повышенной ставки",
+      "attributes": {
+        "min_balance": "100000 руб.",
+        "status": "получены"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Пополнение накопительного счета",
+      "attributes": {
+        "amount": "75000 руб.",
+        "date": "08.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Проверка истории операций",
+      "attributes": {
+        "period": "последний месяц",
+        "purpose": "отсутствие несанкционированных списаний"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "СМС о списании за обслуживание карты",
+      "attributes": {
+        "amount": "59 руб.",
+        "reason": "ежемесячное обслуживание"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Успешное рефинансирование кредита Гурия Орлова",
+      "attributes": {
+        "new_rate": "15.5% годовых",
+        "date": "25.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "document",
+      "label": "Запрос на автопролонгацию вклада Универсальный",
+      "attributes": {
+        "date": "01.05.2024",
+        "status": "на рассмотрении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Подтверждение автопролонгации вклада Универсальный",
+      "attributes": {
+        "date": "07.05.2024",
+        "new_rate": "12.8% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Уведомление о лимите снятия наличных Киры Дроздовой",
+      "attributes": {
+        "date": "01.05.2024",
+        "limit": "80000 руб.",
+        "type": "ежедневный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Перевод Гурию Орлову",
+      "attributes": {
+        "amount": "5000 руб.",
+        "reason": "совместная покупка подарка",
+        "date": "01.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Уведомление об изменении тарифов на обслуживание дебетовых карт",
+      "attributes": {
+        "effective_date": "01.06.2024",
+        "date": "01.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "document",
+      "label": "Новые тарифы на обслуживание дебетовых карт",
+      "attributes": {
+        "effective_date": "01.06.2024",
+        "status": "изучаются"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "product",
+      "label": "Подарок Лидии Фадеевой",
+      "attributes": {
+        "cost": "10000 руб.",
+        "type": "совместная покупка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "account",
+      "label": "Счет Евлампия Симонова",
+      "attributes": {
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "account",
+      "label": "Счет Лидии Фадеевой",
+      "attributes": {
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "account",
+      "label": "Счет Гурия Орлова",
+      "attributes": {
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "account",
+      "label": "Счет Киры Дроздовой",
+      "attributes": {
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "account",
+      "label": "Счет Софрона Титова",
+      "attributes": {
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "document",
+      "label": "Договор купли-продажи автомобиля",
+      "attributes": {
+        "date": "12.07.2024",
+        "status": "подписан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "product",
+      "label": "Автомобиль",
+      "attributes": {
+        "price": "300000 руб.",
+        "seller": "Софрон Титов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "date": "18.03.2024",
+        "amount": "23500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Покупка лекарств",
+      "attributes": {
+        "date": "18.03.2024",
+        "amount": "1500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Оплата медицинских услуг Лидии Фадеевой",
+      "attributes": {
+        "date": "01.04.2024",
+        "amount": "15000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Совместная покупка подарка",
+      "attributes": {
+        "date": "01.05.2024",
+        "amount": "5000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Оплата ремонта автомобиля Гурия Орлова",
+      "attributes": {
+        "date": "20.04.2024",
+        "amount": "45000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Покупка автомобиля Зоей Горбачевой",
+      "attributes": {
+        "date": "12.07.2024",
+        "amount": "300000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Перевод средств на текущий счет",
+      "attributes": {
+        "date": "15.07.2024",
+        "amount": "50000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "document",
+      "label": "Заявление на открытие накопительного счета",
+      "attributes": {
+        "date": "20.03.2024",
+        "status": "подано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "document",
+      "label": "Договор накопительного счета",
+      "attributes": {
+        "date": "25.03.2024",
+        "status": "подписан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "document",
+      "label": "Заявление на изменение лимита пополнения",
+      "attributes": {
+        "date": "03.04.2024",
+        "status": "подано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "document",
+      "label": "Ответ чата поддержки",
+      "attributes": {
+        "date": "06.04.2024",
+        "content": "условия для повышенной ставки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "document",
+      "label": "Договор рефинансирования кредита Гурия Орлова",
+      "attributes": {
+        "date": "25.04.2024",
+        "status": "подписан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_zoya_owns_deposit_pribylny",
+      "source": "person_zoya_gorbacheva",
+      "target": "deposit_pribylny",
+      "relation": "owns",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_considers_deposit_maksimum",
+      "source": "person_zoya_gorbacheva",
+      "target": "deposit_maksimum",
+      "relation": "resulted_in",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_transfers_to_evlampiy",
+      "source": "person_zoya_gorbacheva",
+      "target": "person_evlampiy_simonov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "23500 руб.",
+        "date": "18.03.2024",
+        "reason": "оплата коммунальных услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_evlampiy_for_lidiya",
+      "source": "person_evlampiy_simonov",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "оплата коммунальных услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_guriy_refinances_loan",
+      "source": "person_guriy_orlov",
+      "target": "loan_consumer_guriy",
+      "relation": "resulted_in",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_owns_current_account",
+      "source": "person_zoya_gorbacheva",
+      "target": "account_current_zoya",
+      "relation": "owns",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_has_mortgage",
+      "source": "person_zoya_gorbacheva",
+      "target": "mortgage_zoya",
+      "relation": "resulted_in",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_owns_savings_account",
+      "source": "person_zoya_gorbacheva",
+      "target": "account_savings_zoya",
+      "relation": "owns",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2,
+      "attributes": {}
+    },
+    {
+      "id": "e_kira_owns_debit_card",
+      "source": "person_kira_drozdova",
+      "target": "card_debit_kira",
+      "relation": "owns",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_transfers_to_lidiya",
+      "source": "person_zoya_gorbacheva",
+      "target": "person_lidiya_fadeeva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "15000 руб.",
+        "reason": "оплата медицинских услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_zoya_owns_deposit_universal",
+      "source": "person_zoya_gorbacheva",
+      "target": "deposit_universal",
+      "relation": "owns",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3,
+      "attributes": {}
+    },
+    {
+      "id": "e_kira_savings_withdrawal_limit",
+      "source": "person_kira_drozdova",
+      "target": "account_savings_zoya",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "80000 руб.",
+        "date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_zoya_transfers_to_guriy",
+      "source": "person_zoya_gorbacheva",
+      "target": "person_guriy_orlov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "reason": "совместная покупка подарка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_zoya_considers_invest_deposit",
+      "source": "person_zoya_gorbacheva",
+      "target": "deposit_invest_new",
+      "relation": "resulted_in",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3,
+      "attributes": {}
+    },
+    {
+      "id": "e_zoya_owns_debit_card",
+      "source": "person_zoya_gorbacheva",
+      "target": "card_debit_zoya",
+      "relation": "owns",
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4,
+      "attributes": {}
+    },
+    {
+      "id": "e_guriy_transfers_to_evlampiy",
+      "source": "person_guriy_orlov",
+      "target": "person_evlampiy_simonov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "45000 руб.",
+        "reason": "оплата ремонта автомобиля"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_sofron_transfers_to_zoya",
+      "source": "person_sofron_titov",
+      "target": "person_zoya_gorbacheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "300000 руб.",
+        "date": "12.07.2024",
+        "status": "одобрено",
+        "reason": "договор купли-продажи автомобиля"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_zoya_transfers_savings_to_current",
+      "source": "person_zoya_gorbacheva",
+      "target": "account_current_zoya",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "50000 руб.",
+        "from_account": "account_savings_zoya"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_2",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_2",
+      "target": "deposit_pribylny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_3",
+      "target": "deposit_pribylny",
+      "relation": "changed_to",
+      "attributes": {
+        "new_status": "одобрено"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_3",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_4",
+      "target": "deposit_pribylny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_4",
+      "target": "person_zoya_gorbacheva",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "электронная почта"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_zoya_gorbacheva",
+      "target": "deposit_maksimum",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_6",
+      "target": "deposit_maksimum",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_6",
+      "target": "person_zoya_gorbacheva",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "легкое беспокойство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_7",
+      "target": "person_evlampiy_simonov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_7",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_8",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_9",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_9",
+      "target": "person_evlampiy_simonov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_7",
+      "target": "ctx_node_9",
+      "relation": "changed_to",
+      "attributes": {
+        "reason": "покупка лекарств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "рефинансирование"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_10",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_10",
+      "target": "loan_consumer_guriy",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_zoya_gorbacheva",
+      "target": "account_current_zoya",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2024",
+        "balance": "125450 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_1",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_11",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_11",
+      "target": "mortgage_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_12",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_12",
+      "target": "deposit_pribylny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_14",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_14",
+      "target": "person_zoya_gorbacheva",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "тревога"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_15",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_14",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "account_savings_zoya",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_18",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_18",
+      "target": "ctx_node_17",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "deposit_pribylny",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_20",
+      "target": "person_zoya_gorbacheva",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "удовлетворение"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_21",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_21",
+      "target": "card_debit_kira",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_22",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_22",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_23",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_23",
+      "target": "account_current_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_24",
+      "target": "account_savings_zoya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "account_savings_zoya",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_24",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_27",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_27",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_57",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_57",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_29",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_29",
+      "target": "account_savings_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_29",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_30",
+      "target": "account_current_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_1",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_31",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_31",
+      "target": "card_debit_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_32",
+      "target": "loan_consumer_guriy",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_33",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_33",
+      "target": "deposit_universal",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_1",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_34",
+      "target": "deposit_universal",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_33",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_1",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_35",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_35",
+      "target": "person_kira_drozdova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_36",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_36",
+      "target": "person_guriy_orlov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_36",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_1",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_37",
+      "target": "person_zoya_gorbacheva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_38",
+      "target": "card_debit_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_39",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "person_evlampiy_simonov",
+      "target": "ctx_node_40",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_lidiya_fadeeva",
+      "target": "ctx_node_41",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_42",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_kira_drozdova",
+      "target": "ctx_node_43",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "person_sofron_titov",
+      "target": "ctx_node_44",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_sofron_titov",
+      "target": "ctx_node_45",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_45",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_45",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_47",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_47",
+      "target": "person_evlampiy_simonov",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_48",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_48",
+      "target": "person_lidiya_fadeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_49",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_49",
+      "target": "person_lidiya_fadeeva",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_50",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_50",
+      "target": "person_guriy_orlov",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_51",
+      "target": "person_evlampiy_simonov",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_52",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_52",
+      "target": "person_sofron_titov",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_53",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_53",
+      "target": "account_current_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_54",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_54",
+      "target": "account_savings_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_1",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_55",
+      "target": "account_savings_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_56",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "ctx_node_56",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_1",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_58",
+      "target": "loan_consumer_guriy",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_10",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "оптимизация доходности сбережений"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "минимизация рисков"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "контроль кредитной нагрузки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "mortgage_zoya",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "deposit_pribylny",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_zoya_gorbacheva",
+      "target": "person_evlampiy_simonov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "25850 руб.",
+        "date": "18.02.2024",
+        "reason": "оплата коммунальных услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_kira_drozdova",
+      "target": "account_savings_zoya",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "88000 руб.",
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_sofron_titov",
+      "target": "person_zoya_gorbacheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "270000 руб.",
+        "date": "12.05.2024",
+        "status": "одобрено",
+        "reason": "договор купли-продажи автомобиля"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "person_sofron_titov",
+      "target": "ctx_node_10",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "270000 руб.",
+        "date": "12.07.2024",
+        "status": "одобрено",
+        "reason": "договор купли-продажи автомобиля"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_23",
+      "target": "ctx_node_9",
+      "relation": "changed_to",
+      "attributes": {
+        "reason": "покупка лекарств"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_4",
+      "target": "mortgage_zoya",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "электронная почта"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_kira_drozdova",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "88000 руб.",
+        "date": "01.05.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_36",
+      "target": "person_zoya_gorbacheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "330000 руб.",
+        "date": "12.07.2024",
+        "status": "одобрено",
+        "reason": "договор купли-продажи автомобиля"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_36",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5500 руб.",
+        "reason": "совместная покупка подарка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_20",
+      "target": "ctx_node_55",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "удовлетворение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_7",
+      "target": "person_zoya_gorbacheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "330000 руб.",
+        "date": "12.07.2024",
+        "status": "одобрено",
+        "reason": "договор купли-продажи автомобиля"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_zoya_gorbacheva",
+      "target": "deposit_universal",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_54",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "reason": "совместная покупка подарка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_sofron_titov",
+      "target": "ctx_node_56",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "297000 руб.",
+        "date": "12.05.2024",
+        "status": "одобрено",
+        "reason": "договор купли-продажи автомобиля"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_15",
+      "target": "person_zoya_gorbacheva",
+      "relation": "caused",
+      "attributes": {
+        "reaction": "легкое беспокойство"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "person_kira_drozdova",
+      "target": "deposit_universal",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "88000 руб.",
+        "date": "01.05.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_26",
+      "target": "account_current_zoya",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "45000 руб.",
+        "from_account": "account_savings_zoya"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_zoya_gorbacheva",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "контроль кредитной нагрузки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_6",
+      "target": "person_zoya_gorbacheva",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "электронная почта"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_7",
+      "target": "ctx_node_14",
+      "relation": "changed_to",
+      "attributes": {
+        "reason": "покупка лекарств"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "person_guriy_orlov",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "рефинансирование"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_22",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "контроль кредитной нагрузки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_4",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "электронная почта"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_zoya_gorbacheva",
+      "source": "person_zoya_gorbacheva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_deposit_pribylny",
+      "source": "deposit_pribylny",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_deposit_maksimum",
+      "source": "deposit_maksimum",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_evlampiy_simonov",
+      "source": "person_evlampiy_simonov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_lidiya_fadeeva",
+      "source": "person_lidiya_fadeeva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_guriy_orlov",
+      "source": "person_guriy_orlov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_guriy",
+      "source": "loan_consumer_guriy",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_current_zoya",
+      "source": "account_current_zoya",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_mortgage_zoya",
+      "source": "mortgage_zoya",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_deposit_universal",
+      "source": "deposit_universal",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_savings_zoya",
+      "source": "account_savings_zoya",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_kira_drozdova",
+      "source": "person_kira_drozdova",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_card_debit_kira",
+      "source": "card_debit_kira",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_deposit_invest_new",
+      "source": "deposit_invest_new",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_card_debit_zoya",
+      "source": "card_debit_zoya",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_sofron_titov",
+      "source": "person_sofron_titov",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

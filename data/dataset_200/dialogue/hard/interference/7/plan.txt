@@ -1,0 +1,152 @@
+## План финансовых сценариев для Колесниковой Варвары Михайловны
+
+### BATCH 1 PLAN
+
+*   **Time Anchor:** 08.01.2024
+*   **Personal Introduction:** "Здравствуйте, меня зовут Колесникова Варвара Михайловна. Я работаю каптенармусом в д. Яшкуль, мой ежемесячный доход составляет 241 000 рублей. Мне нужна ваша помощь." (CATEGORY: Client Identification Labels)
+*   **Financial Goal:** "Я активно управляю семейными финансами, но сейчас возникла срочная ситуация. Моя мама, Пелагея Степановна Веселова, 72 лет, не получила перевод, который я ей отправляла. Она очень переживает, и я тоже." (CATEGORY: Emotional State Labels, Beneficiary & Recipient Labels)
+*   "Я точно помню, что 05.01.2024 мне пришла зарплата от ООО «Стабильность» на дебетовую карту ****1234 в размере 100 050 руб. после удержания НДФЛ 14 950 руб. из начисленных 115 000 руб." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "И 07.01.2024 я оплатила мобильную связь МТС для себя на 450 руб. через мобильное приложение. Это точно было." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "А вот перевод маме... Я уверена, что отправляла ей 2 500 рублей на прошлой неделе, но не могу найти его в истории. Она говорит, что денег нет." [SEMANTIC NOISE] (CATEGORY: Emotional State Labels, Dispute & Clarification Labels, Transaction History & Details Labels)
+*   "Кстати, 08.01.2024 я перевела 3 000 руб. по СБП своей дочери Жанне на карту Сбербанка для личных расходов. Это точно прошло." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels, Transaction History & Details Labels)
+*   "Мне нужно срочно разобраться с этим переводом для Пелагеи Степановны. Она уже звонила дважды, очень расстроена." (CATEGORY: Emotional State Labels, Urgency, Beneficiary & Recipient Labels)
+*   "Я пыталась найти его сама, даже запросила выписку по дебетовой карте ****1234 за декабрь 2023 года через онлайн-банк 10.01.2024, но там, конечно, этого перевода нет." (CATEGORY: Transaction History & Details Labels, Document Management Labels)
+*   "И еще, 12.01.2024 я оплатила штраф ГИБДД №77012345678901234567 за превышение скорости на 500 руб. со скидкой 50%. Это тоже прошло без проблем." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "Я помню, что 15.01.2024 пополнила баланс мобильного телефона Билайн для Пелагеи Степановны Веселовой на 300 руб. Это было, но это не тот перевод, о котором я говорю." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels, Transaction History & Details Labels)
+*   "А вот 18.01.2024 я совершила покупку продуктов в супермаркете «Пятёрочка» на 1 875 руб. с дебетовой карты ****1234. Это к делу не относится, но просто чтобы вы понимали, сколько у меня операций." [DISTRACTOR] (CATEGORY: Daily Banking Labels)
+*   "И 20.01.2024 я перевела 5 000 руб. по СБП Шашкову Селиверсту Анисимовичу на карту Тинькофф Банка. Он просил на ремонт машины." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Мне тут еще 22.01.2024 пришло уведомление от банка о персональном предложении на потребительский кредит под 14.5% годовых на 15 лет. Но мне это неинтересно, я кредиты не беру." (CATEGORY: Offer & Product Inquiry Labels, Lending & Credit Labels)
+*   "В общем, мне нужно найти перевод для мамы. Я думаю, это было около 2 500 рублей, где-то 06.01.2024 или 07.01.2024." (CATEGORY: Dispute & Clarification Labels, Transaction Date Inquiry, Amount Discrepancy)
+
+### BATCH 2 PLAN
+
+*   **Time Anchor:** 26.01.2024
+*   "Оператор, вы нашли что-нибудь по моему переводу для Пелагеи Степановны? Я уже начинаю нервничать. Мне кажется, я отправляла его 06.01.2024, но может быть, это было 09.01.2024?" (CATEGORY: Emotional State Labels, Urgency, Transaction Date Inquiry)
+*   "Я вот 25.01.2024 оплатила ЖКХ за январь 2024 года на сумму 4 800 руб. через мобильное приложение. Это точно прошло, квитанция есть." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "А вот 27.01.2024 я перевела 1 500 руб. по СБП Иванову А.С. за услуги репетитора для Жанны. Тоже все в порядке. Почему же с мамой так?" (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels, Transaction History & Details Labels)
+*   "Я тут просматриваю свою историю и вижу, что 28.01.2024 я переводила 2 800 руб. по СБП своей знакомой, Алле Федоровне Степановой, на карту ВТБ. Это было на подарок." [DECOY] (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "И 29.01.2024 я пополнила транспортную карту «Тройка» для Жанны на 1 000 руб. У нее сейчас сессия, нужно ездить много." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Оператор, вы можете посмотреть все переводы на имя Веселовой Пелагеи Степановны за январь? Может, там что-то похожее есть?" (CATEGORY: Transaction History & Details Labels, Specific Transaction Search)
+*   "У меня столько этих переводов, что я сама уже путаюсь. Вот, например, 01.02.2024 я проверила баланс дебетовой карты ****1234 через мобильное приложение, и он составил 78 500 руб. Это нормально?" [DISTRACTOR] (CATEGORY: Account Balance Check, Emotional State Labels)
+*   "А 03.02.2024 я перевела 5 200 руб. по СБП Алле Федоровне Степановой на карту ВТБ. Это уже другой перевод, не тот, что на 2 800 руб. Она просила на лекарства." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels, Transaction History & Details Labels)
+*   "Мне кажется, что я могла ошибиться с датой. Может, это было не 06.01.2024, а 07.01.2024? Или даже 08.01.2024? Я уже не помню." (CATEGORY: Emotional State Labels, Confusion, Transaction Date Inquiry)
+*   "Мой муж, Шашков Селиверст Анисимович, говорит, что у него тоже иногда путаница с платежами, но он просто не обращает внимания. А я так не могу." [DISTRACTOR] (CATEGORY: Emotional State Labels)
+*   "Я вот еще 05.02.2024 получила зарплату от ООО «Стабильность» на дебетовую карту ****1234: начислено 115 000 руб., удержан НДФЛ 14 950 руб., зачислено 100 050 руб. Все как обычно." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "И 07.02.2024 оплатила мобильную связь Мегафон для Автонома Викентьевича Гуляева на 350 руб. Он мой отец, ему тоже помогаю." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Я же вам говорю, у меня этих платежей... Вот 09.02.2024 запросила выписку по дебетовой карте ****1234 за январь 2024 года через онлайн-банк. Там все эти переводы должны быть." (CATEGORY: Document Management Labels, Transaction History & Details Labels)
+*   "Мне кажется, что я могла случайно отправить деньги не на тот номер телефона или не на ту карту, если использовала старый шаблон. У меня их много." (CATEGORY: Emotional State Labels, Confusion, Payment Management Labels)
+*   "Я просто хочу, чтобы мои близкие всегда получали свою помощь вовремя. Это очень важно для меня." (CATEGORY: Emotional State Labels, Satisfaction)
+
+### BATCH 3 PLAN
+
+*   **Time Anchor:** 12.02.2024
+*   "Оператор, ну что там с моим переводом для мамы? Я уже всю голову сломала. Может, я отправила 2 500 руб. не Пелагее Степановне, а Шашковой Нинель Рудольфовне? Она тоже просила на днях." [SEMANTIC NOISE] (CATEGORY: Emotional State Labels, Confusion, Beneficiary & Recipient Labels)
+*   "Я вот 11.02.2024 оплатила штраф ГИБДД №77023456789012345678 за неправильную парковку на 1 500 руб. Это точно мой штраф, я его проверила." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "Вы говорите, что нашли похожий перевод? Какой именно? На какую сумму? И когда?" (CATEGORY: Transaction History & Details Labels, Specific Transaction Search, Transaction Date Inquiry, Amount Discrepancy)
+*   "Моя дочь Жанна, кстати, 10.02.2024 перевела 3 150 руб. по СБП своей подруге на карту Сбербанка. Она тоже часто путается в своих переводах." [DECOY] (CATEGORY: Beneficiary & Recipient Labels, Daily Banking Labels)
+*   "Я 14.02.2024 совершила покупку в аптеке «Ригла» на 780 руб. с дебетовой карты ****1234. Это для себя, лекарства." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "Вы говорите, что я могла использовать устаревший шаблон? Но я всегда проверяю! Хотя... может быть, я перепутала шаблоны для Пелагеи Степановны и Автонома Викентьевича? Они оба пожилые, им часто помогаю." (CATEGORY: Emotional State Labels, Confusion, Payment Management Labels, Payment Template)
+*   "Вот 16.02.2024 я перевела 2 000 руб. по СБП Осипову Клименту Филипповичу в качестве помощи. Он наш сосед, ему тоже иногда помогаю." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "А 19.02.2024 мне пришло второе уведомление от банка о персональном предложении на потребительский кредит, но уже под 14.8% годовых на 15 лет. Они что, ставки меняют каждый день?" [DECOY] (CATEGORY: Offer & Product Inquiry Labels, Lending & Credit Labels)
+*   "Мне кажется, что я могла отправить 2 500 руб. на номер телефона, который уже не принадлежит маме. Она недавно меняла оператора." (CATEGORY: Dispute & Clarification Labels, Error Correction, Beneficiary & Recipient Labels)
+*   "Я вот 21.02.2024 перевела 1 600 руб. по СБП Иванову А.П. за доставку продуктов. Это другой Иванов, не репетитор Жанны." [DECOY] (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Так что же с моим переводом? Вы нашли дубликат? Или он ушел не туда?" (CATEGORY: Dispute & Clarification Labels, Duplicate Transaction, Payment Not Received)
+*   "Я хочу, чтобы вы мне объяснили, как такое могло произойти. Я всегда очень внимательна к своим финансам." (CATEGORY: Emotional State Labels, Frustration)
+*   "Может, мне стоит вообще отказаться от всех этих переводов через приложение? Вернуться к старым добрым почтовым переводам?" [DISTRACTOR] (CATEGORY: Emotional State Labels)
+*   "Мне нужно какое-то решение, чтобы больше не сталкиваться с такой путаницей. Это отнимает у меня столько времени и нервов." (CATEGORY: Emotional State Labels, Urgency, Confusion)
+*   "Я готова рассмотреть любые предложения, которые помогут мне систематизировать платежи, но только если это будет надежно и без скрытых комиссий." (CATEGORY: Offer & Product Inquiry Labels, Service Comparison, Limits & Commissions Labels)
+
+### BATCH 4 PLAN
+
+*   **Time Anchor:** 22.02.2024
+*   "Итак, вы говорите, что 06.01.2024 был перевод на 2 500 руб. на номер телефона, который ранее принадлежал Пелагее Степановне, но сейчас неактивен, и он вернулся на мой счет 09.01.2024? Но почему я не видела возврата?" [SEMANTIC NOISE] (CATEGORY: Dispute & Clarification Labels, Error Correction, Transaction History & Details Labels)
+*   "Вы предлагаете мне настроить шаблоны платежей и управлять списком бенефициаров? А это точно безопасно? Мои данные не утекут?" (CATEGORY: Security & Fraud Labels, Fraud Prevention Advice, Payment Management Labels)
+*   "Какие комиссии взимаются за использование этих шаблонов? И есть ли лимиты на количество или сумму переводов? Мне нужно знать все до копейки." (CATEGORY: Limits & Commissions Labels, Commission Fee, Transfer Limit, Daily Transaction Limit)
+*   "Мой муж, Шашков Селиверст Анисимович, недавно обсуждал в своем банке кредит на 480 000 руб. под 14.9% годовых на 10 лет. Он говорит, что там тоже много скрытых условий." [DECOY] (CATEGORY: Lending & Credit Labels, Offer & Product Inquiry Labels)
+*   "Я вот 25.02.2024 оплатила ЖКХ за февраль 2024 года на сумму 4 950 руб. через мобильное приложение. Это уже другой платеж, не январский." (CATEGORY: Daily Banking Labels, Transaction History & Details Labels)
+*   "А что насчет SWIFT-переводов? Вот 26.02.2024 я совершила SWIFT-перевод 150 USD, что эквивалентно 13 800 руб. по курсу ЦБ, на счет Жанны в иностранном банке для оплаты обучения. Комиссия банка составила 25 USD. Это очень много!" (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels, Limits & Commissions Labels, Commission Fee)
+*   "Как эти шаблоны помогут мне избежать таких ситуаций, когда деньги возвращаются, а я об этом не знаю? Будут ли уведомления?" (CATEGORY: Notification & Alert Labels, Transaction Alert, Payment Not Received)
+*   "Я 27.02.2024 пополнила баланс мобильного телефона МТС для Шашковой Нинель Рудольфовны на 250 руб. Она моя знакомая, просила помочь." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "И еще, 28.02.2024 я сняла наличные в банкомате на сумму 10 000 руб. с дебетовой карты ****1234. Мне нужны были деньги на мелкие расходы." (CATEGORY: Daily Banking Labels, Cash Withdrawal)
+*   "Вы говорите, что можно настроить автоплатежи? А если сумма меняется? Например, за ЖКУ? Или за мобильную связь, если тарифы меняются?" (CATEGORY: Payment Management Labels, Autopayment Setup)
+*   "Я не люблю, когда что-то делается автоматически без моего контроля. Это же мои деньги, моя ответственность." (CATEGORY: Emotional State Labels, Anxiety)
+*   "Мне нужно, чтобы я могла видеть все детали платежа перед отправкой. И чтобы можно было легко изменить получателя или сумму." (CATEGORY: Payment Management Labels, Payment Template, Beneficiary Management)
+*   "А что, если я захочу добавить нового бенефициара? Это сложно? Нужно будет снова проходить верификацию?" (CATEGORY: Beneficiary & Recipient Labels, New Beneficiary Addition, Recipient Verification)
+*   "Мой отец, Автоном Викентьевич Гуляев, 01.03.2024 звонил в банк, чтобы узнать условия по накопительному счету. Ему предложили 12% годовых на 6 месяцев. А мне что-то подобное есть?" [DECOY] (CATEGORY: Deposits & Savings Labels, Savings Account Inquiry, Deposit Rate Offer)
+*   "Я просто хочу, чтобы все было понятно и прозрачно. Без всяких сюрпризов." (CATEGORY: Emotional State Labels, Satisfaction)
+
+### BATCH 5 PLAN
+
+*   **Time Anchor:** 02.03.2024
+*   "Оператор, вы мне так и не объяснили, почему я не увидела возврат тех 2 500 руб. на мой счет 09.01.2024. Это же важная сумма!" [SEMANTIC NOISE] (CATEGORY: Dispute & Clarification Labels, Transaction Discrepancy, Payment Not Received)
+*   "Вы говорите, что шаблоны и управление бенефициарами — это не новый продукт, а инструмент для удобства. Хорошо, я готова попробовать, но мне нужно, чтобы вы все подробно объяснили." (CATEGORY: Offer & Product Inquiry Labels, Offer Clarification, Payment Management Labels)
+*   "Вот 01.03.2024 я проверила баланс дебетовой карты ****1234 через мобильное приложение, баланс составил 145 000 руб. Это после всех моих трат и зарплаты." (CATEGORY: Account Balance Check, Transaction History & Details Labels)
+*   "Мой муж, Шашков Селиверст Анисимович, просил меня быть поручителем по его кредиту на 480 000 руб. под 14.9% годовых на 10 лет. Я не очень хочу, но он настаивает. Это как-то связано с моими финансами?" (CATEGORY: Lending & Credit Labels, Service Consent, Beneficiary & Recipient Labels)
+*   "А что насчет уведомлений? Вы говорили, что можно настроить напоминания о платежах. Это будет СМС или пуш-уведомления? И можно ли выбрать, о каких платежах уведомлять?" (CATEGORY: Notification & Alert Labels, Payment Due Reminder, SMS/Push Settings)
+*   "Я вот 03.03.2024 получила СМС от банка с напоминанием о возможности оформления кредита по одному из ранее присланных предложений. Но я же вам говорила, что мне это неинтересно." [DISTRACTOR] (CATEGORY: Notification & Alert Labels, Lending & Credit Labels)
+*   "Вы упоминали про накопительные счета. Какие там сейчас ставки? Моя соседка, Алла Федоровна Степанова, говорит, что у нее вклад под 13.5% годовых на 9 месяцев в другом банке." [DECOY] (CATEGORY: Deposits & Savings Labels, Deposit Rate Offer, Savings Account Inquiry)
+*   "Я 04.03.2024 запросила справку о состоянии счета для Автонома Викентьевича Гуляева для оформления субсидии. Это срочно, ему нужно было." (CATEGORY: Document Management Labels, Beneficiary & Recipient Labels)
+*   "Мой муж, Селиверст, вчера звонил в банк и просил изменить лимит моей дебетовой карты ****1234 до 150 000 руб. в день. Он сказал, что это для удобства." (CATEGORY: Cards & Accounts Labels, Daily Transaction Limit)
+*   "Я 05.03.2024 оплатила подписку на онлайн-кинотеатр на 399 руб. с дебетовой карты ****1234. Это для Жанны, она любит фильмы смотреть." (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Как эти инструменты помогут мне сэкономить время? Я трачу очень много времени на проверку всех этих платежей." (CATEGORY: Emotional State Labels, Urgency)
+*   "И как я могу быть уверена, что все данные получателей будут актуальными? Если кто-то поменяет реквизиты, я получу об этом уведомление?" (CATEGORY: Beneficiary & Recipient Labels, Existing Recipient Update, Notification & Alert Labels)
+*   "Я не хочу, чтобы мои деньги ушли не туда. Это моя "подушка безопасности", я ее очень ценю." (CATEGORY: Emotional State Labels, Anxiety, Financial Planning & Budgeting Labels)
+*   "Вы можете мне показать, как это будет выглядеть в мобильном приложении? Я не очень хорошо разбираюсь в этих новых технологиях." (CATEGORY: Technical Support Labels, Mobile App Issue)
+*   "Я готова попробовать, если это действительно поможет мне избежать путаницы и сделает управление финансами более спокойным." (CATEGORY: Decision & Action Labels, Service Consent)
+
+### BATCH 6 PLAN
+
+*   **Time Anchor:** 06.03.2024
+*   "Хорошо, оператор, я согласна на настройку шаблонов и управление бенефициарами. Давайте начнем. Только мне нужно, чтобы вы все делали под моим контролем." (CATEGORY: Decision & Action Labels, Service Consent, Payment Management Labels)
+*   "Я хочу настроить шаблон для Пелагеи Степановны Веселовой на ежемесячный перевод 5 000 руб. на ее карту Сбербанка. И чтобы это было 5-го числа каждого месяца." (CATEGORY: Payment Management Labels, Payment Template, Scheduled Payments, Beneficiary & Recipient Labels)
+*   "И еще один шаблон для Жанны на 3 000 руб. по СБП на ее карту Сбербанка, тоже 8-го числа каждого месяца. Это на ее личные расходы." (CATEGORY: Payment Management Labels, Payment Template, Scheduled Payments, Beneficiary & Recipient Labels)
+*   "Мой муж, Селиверст, говорил, что изменил лимит моей дебетовой карты до 150 000 руб. в день. Это так? Я просто хотела убедиться." (CATEGORY: Cards & Accounts Labels, Daily Transaction Limit)
+*   "Я хочу, чтобы вы удалили из списка бенефициаров старый номер телефона Пелагеи Степановны, на который ушел тот возвратный перевод. Он был 89001234567." (CATEGORY: Beneficiary & Recipient Labels, Existing Recipient Update, Error Correction)
+*   "И добавьте, пожалуйста, нового бенефициара — Осипова Климента Филипповича, его номер телефона 89178765432, для ежемесячной помощи в размере 2 000 руб. 16-го числа." (CATEGORY: Beneficiary & Recipient Labels, New Beneficiary Addition, Payment Management Labels)
+*   "Я хочу подтвердить каждую операцию по настройке. Вот сейчас, когда вы добавляете шаблон для мамы, я вижу сумму 5 000 руб. и дату 5-е число. Все верно." (CATEGORY: Decision & Action Labels, Transaction Confirmation)
+*   "Моя мама, Пелагея Степановна, 07.03.2024 оплатила свои коммунальные услуги на 4 600 руб. через почту. Она не доверяет онлайн-платежам." [DECOY] (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "А что, если я захочу изменить сумму в шаблоне? Это легко сделать? Или нужно будет звонить вам каждый раз?" (CATEGORY: Payment Management Labels, Payment Template)
+*   "И можно ли настроить уведомления так, чтобы они приходили мне за день до платежа? Чтобы я могла проверить, все ли в порядке." (CATEGORY: Notification & Alert Labels, Payment Due Reminder, SMS/Push Settings)
+*   "Я не хочу, чтобы банк сам принимал решения о моих деньгах. Я должна все контролировать." (CATEGORY: Emotional State Labels, Anxiety)
+*   "Вы можете мне показать, как выглядит история платежей после настройки шаблонов? Будет ли там четко видно, что это регулярный платеж?" (CATEGORY: Transaction History & Details Labels, Payment History)
+*   "Я надеюсь, что это действительно поможет мне избежать путаницы с похожими транзакциями. У меня их очень много." (CATEGORY: Emotional State Labels, Confusion)
+*   "И еще, я хочу, чтобы вы мне прислали подробную инструкцию на электронную почту, как пользоваться этими функциями. Мой адрес: varvara.kolesnikova@mail.ru." (CATEGORY: Document Management Labels, Technical Support Labels)
+*   "Спасибо, что так подробно все объясняете. Я ценю вашу дотошность." (CATEGORY: Emotional State Labels, Satisfaction)
+
+### BATCH 7 PLAN
+
+*   **Time Anchor:** 08.03.2024
+*   "Оператор, я получила подтверждение о настройке шаблонов. Пришло СМС с текстом: 'Шаблон для Пелагеи С. Веселовой на 5 000 руб. ежемесячно создан. Дата первого платежа 05.04.2024.' Это очень удобно!" (CATEGORY: Notification & Alert Labels, Transaction Alert, Payment Management Labels)
+*   "И пришло уведомление о создании шаблона для Жанны на 3 000 руб. с датой первого платежа 08.04.2024. Все как мы договаривались." (CATEGORY: Notification & Alert Labels, Transaction Alert, Payment Management Labels)
+*   "Я также получила на почту подробную инструкцию по использованию новых функций. Спасибо, это очень полезно." (CATEGORY: Document Management Labels, Technical Support Labels)
+*   "Я вот сейчас смотрю в мобильном приложении, и там действительно появился раздел 'Мои шаблоны'. Это очень наглядно." (CATEGORY: Technical Support Labels, Mobile App Issue)
+*   "Мой муж, Селиверст, сказал, что его банк одобрил кредит на 480 000 руб. под 14.9% годовых, и ему нужна моя подпись как поручителя до 15.03.2024. Я все еще сомневаюсь." (CATEGORY: Lending & Credit Labels, Decision & Action Labels, Beneficiary & Recipient Labels)
+*   "Я чувствую облегчение, что теперь не придется каждый раз искать реквизиты и переживать, что деньги уйдут не туда." (CATEGORY: Emotional State Labels, Satisfaction)
+*   "А вот 09.03.2024 я перевела 1 200 руб. по СБП своей знакомой, Шашковой Нинель Рудольфовне, на ее карту МТС Банка. Она просила на подарок." [DECOY] (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Вы говорили про лимит моей карты. Можете подтвердить, что он теперь 150 000 руб. в день? А то Селиверст мог что-то напутать." (CATEGORY: Cards & Accounts Labels, Daily Transaction Limit, Emotional State Labels)
+*   "Я надеюсь, что теперь не будет никаких проблем с платежами для моих родителей. Им очень важна регулярная помощь." (CATEGORY: Emotional State Labels, Anxiety, Beneficiary & Recipient Labels)
+*   "Я вот смотрю на историю своих трат и думаю, что мне бы не помешал инструмент для анализа расходов. У меня столько всего!" (CATEGORY: Financial Planning & Budgeting Labels, Spending Analysis)
+*   "Моя дочь Жанна 10.03.2024 оплатила онлайн-курс по дизайну на 7 500 руб. со своей карты. Она очень самостоятельная." [DISTRACTOR] (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Я теперь могу быть уверена, что платежи будут уходить в срок, и не придется звонить вам каждый раз, чтобы уточнить детали." (CATEGORY: Emotional State Labels, Satisfaction, Payment Management Labels)
+*   "А что, если я захочу отменить какой-то регулярный платеж? Это тоже можно сделать через приложение?" (CATEGORY: Payment Management Labels, Scheduled Payments)
+*   "Мне кажется, что это действительно хороший шаг к тому, чтобы мои финансы были в полном порядке. Я люблю порядок." (CATEGORY: Emotional State Labels, Satisfaction)
+*   "Спасибо вам большое за помощь. Вы очень терпеливый оператор." (CATEGORY: Emotional State Labels, Satisfaction)
+
+### BATCH 8 PLAN
+
+*   **Time Anchor:** 08.04.2024
+*   "Здравствуйте, оператор. Хочу сказать, что я очень довольна новыми настройками. Вот 05.04.2024 перевод 5 000 руб. Пелагее Степановне прошел автоматически, и я получила уведомление. Это просто замечательно!" (CATEGORY: Emotional State Labels, Satisfaction, Notification & Alert Labels, Scheduled Payments)
+*   "И сегодня, 08.04.2024, перевод 3 000 руб. Жанне тоже прошел без проблем. Я даже не вспоминала об этом, а деньги уже ушли." (CATEGORY: Emotional State Labels, Satisfaction, Notification & Alert Labels, Scheduled Payments)
+*   "Я теперь всегда точно знаю, когда и кому был отправлен перевод. Путаница в платежах исчезла полностью." (CATEGORY: Transaction History & Details Labels, Payment History, Emotional State Labels)
+*   "Я даже начала пользоваться функцией анализа расходов в мобильном приложении. Это очень помогает мне планировать семейный бюджет на месяц вперед." (CATEGORY: Financial Planning & Budgeting Labels, Budgeting Tools, Spending Analysis)
+*   "Мой муж, Селиверст, все-таки взял тот кредит на 480 000 руб. под 14.9% годовых, и я подписала поручительство 14.03.2024. Надеюсь, он будет вовремя платить." (CATEGORY: Lending & Credit Labels, Decision & Action Labels, Beneficiary & Recipient Labels)
+*   "Я теперь получаю уведомления о всех важных событиях по счету, и это очень успокаивает. Нет больше тревоги." (CATEGORY: Emotional State Labels, Satisfaction, Notification & Alert Labels, Account Activity Notification)
+*   "Я вот 15.03.2024 перевела 2 100 руб. по СБП Осипову Клименту Филипповичу. Это была дополнительная помощь, помимо регулярной." [DECOY] (CATEGORY: Daily Banking Labels, Beneficiary & Recipient Labels)
+*   "Мой отец, Автоном Викентьевич Гуляев, 18.03.2024 открыл накопительный счет под 12.5% годовых на 6 месяцев. Он сказал, что это очень выгодное предложение." [DECOY] (CATEGORY: Deposits & Savings Labels, Savings Account Inquiry, Deposit Rate Offer)
+*   "Я даже порекомендовала эти шаблоны своей знакомой, Алле Федоровне Степановой. Она тоже жаловалась на путаницу." [DISTRACTOR] (CATEGORY: Emotional State Labels)
+*   "Мой лимит по дебетовой карте ****1234 теперь точно 150 000 руб. в день, я проверила в приложении. Селиверст не ошибся." (CATEGORY: Cards & Accounts Labels, Daily Transaction Limit)
+*   "Я теперь могу спокойно заниматься своими делами, не отвлекаясь на постоянные проверки платежей." (CATEGORY: Emotional State Labels, Satisfaction)
+*   "Доверие к вашему банку у меня значительно возросло. Вы предложили действительно полезные решения." (CATEGORY: Emotional State Labels, Satisfaction)
+*   "Я вот думаю, может, мне тоже открыть накопительный счет? Но только с государственными гарантиями, как я люблю." (CATEGORY: Deposits & Savings Labels, Savings Account Inquiry, Financial Planning & Budgeting Labels)
+*   "Мне нравится, что я могу контролировать свои финансы, но при этом не тратить на это слишком много времени." (CATEGORY: Emotional State Labels, Satisfaction)
+*   "Спасибо вам за всю помощь и за то, что сделали мою финансовую жизнь намного проще и понятнее." (CATEGORY: Emotional State Labels, Satisfaction)

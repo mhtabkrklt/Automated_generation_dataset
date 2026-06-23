@@ -1,0 +1,25 @@
+{
+  "interference": [
+    {
+      "question": "На сколько рублей больший из двух переводов клиентки-искусствовед дочери на учебные материалы превысил меньший?",
+      "answer": "1000 руб.",
+      "answer_format": "N руб.",
+      "reasoning_path": [
+        "person_lukia_shilova --[transferred_to]--> person_natalya_daughter | amount: 13000 руб. | date: 27.11.2023 | purpose: покупка учебников",
+        "person_lukia_shilova --[transferred_to]--> person_natalya_daughter | amount: 12000 руб. | date: 09.10.2023 | purpose: оплата обучения (первый октябрьский перевод)",
+        "вычисление: 13000 − 12000 = 1000 руб."
+      ],
+      "capability": "interference",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "person_lukia_shilova",
+        "person_natalya_daughter"
+      ],
+      "decoy_answers": [
+        "500 руб.",
+        "1500 руб.",
+        "2000 руб."
+      ]
+    }
+  ]
+}

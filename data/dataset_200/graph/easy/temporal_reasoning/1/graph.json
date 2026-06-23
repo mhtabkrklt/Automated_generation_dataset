@@ -1,0 +1,1146 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Герасим стал жертвой фишинга и совершил мошеннические переводы."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Счет Герасима заблокирован по 115-ФЗ, возникли финансовые трудности."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Отказ в чарджбэке, обращение в полицию и частичная разблокировка счета."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_gerasim_gromov",
+      "type": "person",
+      "label": "Герасим Феофанович Громов",
+      "attributes": {
+        "age": 70,
+        "occupation": "Автоэлектрик",
+        "income": 177000,
+        "location": "д. Галич"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank_nadezhny_kapital",
+      "type": "organization",
+      "label": "Банк 'Надежный Капитал'",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "bank_account_gerasim_debit",
+      "type": "account",
+      "label": "Дебетовый счет Герасима",
+      "attributes": {
+        "number": "40817810100000005678"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "phishing_attack",
+      "type": "event",
+      "label": "Фишинговая СМС-атака",
+      "attributes": {
+        "message": "Ваша карта... заблокирована. Срочно обновите данные по ссылке: [фишинговая ссылка]"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "fraudulent_interaction",
+      "type": "event",
+      "label": "Мошеннический звонок",
+      "attributes": {
+        "fraudster_name": "Иванов Петр Сергеевич",
+        "fraudster_role": "сотрудник СБ банка Надежный Капитал"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "fraudulent_transfers",
+      "type": "event",
+      "label": "Мошеннические переводы",
+      "attributes": {
+        "total_amount": 350000,
+        "method": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_account_blocking",
+      "type": "event",
+      "label": "Блокировка счета",
+      "attributes": {
+        "reason": "подозрительные операции"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "complaint_fraud",
+      "type": "document",
+      "label": "Заявление о мошенничестве",
+      "attributes": {
+        "number": "20240308-001"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank_letter_chargeback_refusal",
+      "type": "document",
+      "label": "Письмо об отказе в чарджбэке",
+      "attributes": {
+        "number": "20240322-005",
+        "reason": "Перевод подтвержден лично"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "police_report_fraud",
+      "type": "document",
+      "label": "Заявление в полицию о мошенничестве",
+      "attributes": {
+        "number": "КУСП 12345/24"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_account_partial_unblocking",
+      "type": "event",
+      "label": "Частичная разблокировка счета",
+      "attributes": {
+        "daily_limit": 50000,
+        "restrictions": "без крупных переводов и снятия наличных"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "transaction_salary",
+      "type": "event",
+      "label": "Поступление зарплаты",
+      "attributes": {
+        "amount": 177000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "product_scanner",
+      "type": "product",
+      "label": "Диагностический сканер",
+      "attributes": {
+        "cost": 120000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_autoparts",
+      "type": "product",
+      "label": "Партия запчастей",
+      "attributes": {
+        "cost": 85000
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_120k_rub",
+      "type": "amount",
+      "label": "120000 рублей",
+      "attributes": {
+        "value": 120000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_85k_rub",
+      "type": "amount",
+      "label": "85000 рублей",
+      "attributes": {
+        "value": 85000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "phone_sms_fraud",
+      "type": "event",
+      "label": "+7 (903) 123-45-67 (SMS)",
+      "attributes": {
+        "number": "+7 (903) 123-45-67"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "card_gerasim_debet",
+      "type": "product",
+      "label": "Дебетовая карта Герасима",
+      "attributes": {
+        "number": "4567 **** **** 8901"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "link_phishing",
+      "type": "event",
+      "label": "Фишинговая ссылка",
+      "attributes": {
+        "url": "[фишинговая ссылка]"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "phone_call_fraud",
+      "type": "event",
+      "label": "+7 (495) 987-65-43 (звонок)",
+      "attributes": {
+        "number": "+7 (495) 987-65-43"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_ivanov_fraudster",
+      "type": "person",
+      "label": "Иванов Петр Сергеевич (мошенник)",
+      "attributes": {
+        "role": "мошенник",
+        "alias": "сотрудник СБ банка Надежный Капитал"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_transfer_fraud1",
+      "type": "event",
+      "label": "Первый мошеннический перевод",
+      "attributes": {
+        "amount": 150000,
+        "date": "06.03.2024",
+        "time": "11:05",
+        "method": "СБП"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "org_ooo_progress",
+      "type": "organization",
+      "label": "ООО Прогресс",
+      "attributes": {
+        "INN": "7700123456"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "account_ooo_progress",
+      "type": "account",
+      "label": "Счет ООО Прогресс",
+      "attributes": {
+        "number": "40817810000000001234"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_150k_rub_transfer1",
+      "type": "amount",
+      "label": "150000 рублей (перевод 1)",
+      "attributes": {
+        "value": 150000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_transfer_fraud2",
+      "type": "event",
+      "label": "Второй мошеннический перевод",
+      "attributes": {
+        "amount": 200000,
+        "date": "06.03.2024",
+        "time": "11:20",
+        "method": "СБП"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_200k_rub_transfer2",
+      "type": "amount",
+      "label": "200000 рублей (перевод 2)",
+      "attributes": {
+        "value": 200000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_autoparts_payment_attempt",
+      "type": "event",
+      "label": "Попытка оплаты запчастей",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "18:40",
+        "method": "мобильное приложение"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_autoparts_payment_declined",
+      "type": "event",
+      "label": "Отклонение оплаты запчастей",
+      "attributes": {
+        "reason": "Недостаточно средств"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_expected_balance_420k",
+      "type": "amount",
+      "label": "Ожидаемый баланс 420000 рублей",
+      "attributes": {
+        "value": 420000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_actual_balance_70k",
+      "type": "amount",
+      "label": "Фактический баланс 70000 рублей",
+      "attributes": {
+        "value": 70000,
+        "currency": "RUB"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_balance_check",
+      "type": "event",
+      "label": "Проверка баланса",
+      "attributes": {
+        "date": "06.03.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_call_center_attempt",
+      "type": "event",
+      "label": "Попытка звонка в колл-центр",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "19:15"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "org_call_center_bank",
+      "type": "organization",
+      "label": "Колл-центр Банка Надежный Капитал",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "event_call_disconnected",
+      "type": "event",
+      "label": "Звонок прерван",
+      "attributes": {
+        "reason": "не смог четко объяснить ситуацию"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "state_anxiety",
+      "type": "event",
+      "label": "Беспокойство",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "state_anger",
+      "type": "event",
+      "label": "Гнев",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "event_online_bank_login_attempt",
+      "type": "event",
+      "label": "Попытка входа в онлайн-банк",
+      "attributes": {
+        "date": "07.03.2024",
+        "time": "09:30"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "service_online_bank",
+      "type": "product",
+      "label": "Онлайн-банк",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "org_bank_branch_galich",
+      "type": "organization",
+      "label": "Отделение Банка Надежный Капитал (Галич)",
+      "attributes": {
+        "address": "ул. Центральная, д. 15, г. Галич"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "state_irritation",
+      "type": "event",
+      "label": "Раздражение",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "doc_sms_screenshots",
+      "type": "document",
+      "label": "Скриншоты фишинговой СМС",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "doc_call_details",
+      "type": "document",
+      "label": "Детали мошеннического звонка",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "law_115_fz",
+      "type": "event",
+      "label": "115-ФЗ",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "person_alla",
+      "type": "person",
+      "label": "Белова Алла Мироновна",
+      "attributes": {
+        "age": 55,
+        "role": "супруга"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_lyubim",
+      "type": "person",
+      "label": "Любим Громов",
+      "attributes": {
+        "age": 10,
+        "role": "сын"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_credit_card_platinum",
+      "type": "product",
+      "label": "Кредитная карта Платинум",
+      "attributes": {
+        "limit": 300000,
+        "interest_rate": 25
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_gerasim_ep1",
+      "source": "person_gerasim_gromov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_blocking_ep2",
+      "source": "event_account_blocking",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_unblocking_ep3",
+      "source": "event_account_partial_unblocking",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_sms_received",
+      "source": "person_gerasim_gromov",
+      "target": "phishing_attack",
+      "relation": "received",
+      "attributes": {
+        "date": "05.03.2024",
+        "timestamp": "14:17"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_phishing_link_clicked",
+      "source": "person_gerasim_gromov",
+      "target": "phishing_attack",
+      "relation": "contains",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_fraud_call",
+      "source": "fraudulent_interaction",
+      "target": "person_gerasim_gromov",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.03.2024",
+        "timestamp": "10:35"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_first_transfer",
+      "source": "person_gerasim_gromov",
+      "target": "fraudulent_transfers",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 150000,
+        "date": "06.03.2024",
+        "timestamp": "11:05"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_second_transfer",
+      "source": "person_gerasim_gromov",
+      "target": "fraudulent_transfers",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 200000,
+        "date": "06.03.2024",
+        "timestamp": "11:20"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_account_blocked",
+      "source": "bank_account_gerasim_debit",
+      "target": "event_account_blocking",
+      "relation": "contains",
+      "attributes": {
+        "date": "07.03.2024",
+        "timestamp": "09:30",
+        "reason": "115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_complaint_filed",
+      "source": "person_gerasim_gromov",
+      "target": "complaint_fraud",
+      "relation": "submitted",
+      "attributes": {
+        "date": "08.03.2024",
+        "timestamp": "11:00",
+        "number": "20240308-001"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_chargeback_refused",
+      "source": "bank_nadezhny_kapital",
+      "target": "bank_letter_chargeback_refusal",
+      "relation": "contains",
+      "attributes": {
+        "date": "22.03.2024",
+        "number": "20240322-005"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_police_report",
+      "source": "person_gerasim_gromov",
+      "target": "police_report_fraud",
+      "relation": "submitted",
+      "attributes": {
+        "date": "25.03.2024",
+        "timestamp": "10:30",
+        "number": "КУСП 12345/24"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "edge_salary_received",
+      "source": "bank_account_gerasim_debit",
+      "target": "transaction_salary",
+      "relation": "received",
+      "attributes": {
+        "amount": 177000,
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_scanner_has_cost",
+      "source": "product_scanner",
+      "target": "amount_120k_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_autoparts_has_cost",
+      "source": "product_autoparts",
+      "target": "amount_85k_rub",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_transfer1_to_ooo_progress_account",
+      "source": "event_transfer_fraud1",
+      "target": "account_ooo_progress",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "11:05"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_transfer1_amount",
+      "source": "event_transfer_fraud1",
+      "target": "amount_150k_rub_transfer1",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "11:05"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_ooo_progress_account_belongs_to_org",
+      "source": "account_ooo_progress",
+      "target": "org_ooo_progress",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_transfer2_to_ooo_progress_account",
+      "source": "event_transfer_fraud2",
+      "target": "account_ooo_progress",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "11:20"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_transfer2_amount",
+      "source": "event_transfer_fraud2",
+      "target": "amount_200k_rub_transfer2",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "11:20"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_autoparts_payment_resulted_declined",
+      "source": "event_autoparts_payment_attempt",
+      "target": "event_autoparts_payment_declined",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "18:40"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_balance_check_revealed_actual",
+      "source": "event_balance_check",
+      "target": "amount_actual_balance_70k",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_balance_check_expected_balance",
+      "source": "event_balance_check",
+      "target": "amount_expected_balance_420k",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_call_center_attempt_resulted_disconnected",
+      "source": "event_call_center_attempt",
+      "target": "event_call_disconnected",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.03.2024",
+        "time": "19:15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_lyubim_is_son_of_alla",
+      "source": "person_lyubim",
+      "target": "person_alla",
+      "relation": "contains",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "ep_occurs_product_scanner",
+      "source": "product_scanner",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_product_autoparts",
+      "source": "product_autoparts",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_amount_120k_rub",
+      "source": "amount_120k_rub",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_amount_85k_rub",
+      "source": "amount_85k_rub",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_phone_sms_fraud",
+      "source": "phone_sms_fraud",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_card_gerasim_debet",
+      "source": "card_gerasim_debet",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_link_phishing",
+      "source": "link_phishing",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_phone_call_fraud",
+      "source": "phone_call_fraud",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_ivanov_fraudster",
+      "source": "person_ivanov_fraudster",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_transfer_fraud1",
+      "source": "event_transfer_fraud1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_org_ooo_progress",
+      "source": "org_ooo_progress",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_ooo_progress",
+      "source": "account_ooo_progress",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_amount_150k_rub_transfer1",
+      "source": "amount_150k_rub_transfer1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_transfer_fraud2",
+      "source": "event_transfer_fraud2",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_amount_200k_rub_transfer2",
+      "source": "amount_200k_rub_transfer2",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_autoparts_payment_attempt",
+      "source": "event_autoparts_payment_attempt",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_autoparts_payment_declined",
+      "source": "event_autoparts_payment_declined",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_amount_expected_balance_420k",
+      "source": "amount_expected_balance_420k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_amount_actual_balance_70k",
+      "source": "amount_actual_balance_70k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_balance_check",
+      "source": "event_balance_check",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_call_center_attempt",
+      "source": "event_call_center_attempt",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_org_call_center_bank",
+      "source": "org_call_center_bank",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_call_disconnected",
+      "source": "event_call_disconnected",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_state_anxiety",
+      "source": "state_anxiety",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_state_anger",
+      "source": "state_anger",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_online_bank_login_attempt",
+      "source": "event_online_bank_login_attempt",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_service_online_bank",
+      "source": "service_online_bank",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_org_bank_branch_galich",
+      "source": "org_bank_branch_galich",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_state_irritation",
+      "source": "state_irritation",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_doc_sms_screenshots",
+      "source": "doc_sms_screenshots",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_doc_call_details",
+      "source": "doc_call_details",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_law_115_fz",
+      "source": "law_115_fz",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_alla",
+      "source": "person_alla",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_lyubim",
+      "source": "person_lyubim",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_product_credit_card_platinum",
+      "source": "product_credit_card_platinum",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

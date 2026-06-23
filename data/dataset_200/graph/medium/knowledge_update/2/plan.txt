@@ -1,0 +1,94 @@
+## BATCH 1 PLAN
+
+• **Time Anchor:** 01.03.2024
+• **Personal Introduction:** Я, Зоя Викторовна Горбачева, работаю грейдеристом в Кондопоге, мой ежемесячный доход составляет 86 000 рублей. (CATEGORY: Personal Introduction)
+• **Финансовая цель:** Моя главная финансовая цель на ближайшие три месяца — оптимизировать доходность сбережений и минимизировать риски, связанные с изменениями банковских условий, а также контролировать кредитную нагрузку, включая ипотеку на 2.5 млн рублей под 12% годовых. (CATEGORY: Financial Goal, Consultation & Advice Labels)
+• Зоя Викторовна подала заявку на открытие нового вклада "Прибыльный" с первоначальной суммой 500 000 рублей на 6 месяцев под 14% годовых. Статус заявки на 01.03.2024 был 'на рассмотрении'. (CATEGORY: Deposits & Savings Labels, Application Submission)
+• Банк одобрил заявку Зои Викторовны Горбачевой на вклад "Прибыльный" 05.03.2024, изменив статус на 'одобрено'. Договор № 789012 был отправлен на электронную почту. (CATEGORY: Deposits & Savings Labels, Service Consent, Document Management Labels)
+• Зоя Викторовна рассматривала открытие вклада "Максимум" со ставкой 15% годовых на 12 месяцев, минимальная сумма вклада 100 000 рублей. (CATEGORY: Product Information Labels, Interest Rate Labels, Consultation & Advice Labels)
+• Банк обновил условия 15.03.2024, предложив Зое Викторовне Горбачевой вклад "Максимум" со ставкой 14.5% годовых, что вызвало у неё легкое беспокойство. (CATEGORY: Condition Change Labels, Interest Rate Labels, Client Anxious)
+• Зоя Викторовна планировала перевести Евлампию Ануфриевичу Симонову 25 000 рублей через СБП для оплаты коммунальных услуг за квартиру Лидии Борисовны Фадеевой. (CATEGORY: Daily Banking Labels, Transfers (SBP, Card Number), Family & Contacts)
+• Фактический перевод Зои Викторовны Горбачевой Евлампию Ануфриевичу Симонову 18.03.2024 составил 23 500 рублей, так как 1 500 рублей понадобились на срочную покупку лекарств для Лидии Борисовны Фадеевой. (CATEGORY: Daily Banking Labels, Transfers (SBP, Card Number), Decision & Action Labels, Family & Contacts)
+• Орлов Гурий Артурович, партнер Зои Викторовны, обсудил с банком возможность рефинансирования своего потребительского кредита на 480 000 рублей под 16% годовых на 2 года. (CATEGORY: Family & Contacts, Consultation & Advice Labels)
+• Зоя Викторовна проверила баланс своего текущего счета, который на 20.03.2024 составлял 125 450 рублей. (CATEGORY: Daily Banking Labels, Account Balance Check)
+• Она получила push-уведомление о предстоящем платеже по ипотеке в размере 32 000 рублей до 25.03.2024. (CATEGORY: Daily Banking Labels, Push Notification Settings)
+• Зоя Викторовна уточнила условия досрочного снятия средств с вклада "Прибыльный" в случае непредвиденных обстоятельств. (CATEGORY: Deposits & Savings Labels, Withdrawal Conditions, Consultation & Advice Labels)
+• Она обновила свои персональные данные в мобильном приложении банка, подтвердив актуальный адрес регистрации. (CATEGORY: Document Management Labels, Personal Data Update)
+• Зоя Викторовна получила СМС-уведомление о попытке входа в её интернет-банкинг с незнакомого устройства, что вызвало у неё тревогу. (CATEGORY: Security & Fraud Labels, Suspicious Activity, Client Anxious)
+• Она немедленно связалась со службой поддержки по телефону 8-800-ХХХ-ХХ-ХХ для блокировки подозрительной активности. (CATEGORY: Communication Channel Labels, Technical Support Labels, Security & Fraud Labels)
+
+## BATCH 2 PLAN
+
+• **Time Anchor:** 01.04.2024
+• Ежемесячный лимит на пополнение накопительного счета Зои Викторовны Горбачевой составлял 50 000 рублей, что было недостаточно для её текущих планов по накоплению. (CATEGORY: Limit & Restriction Labels, Replenishment Rules)
+• Зоя Викторовна успешно увеличила ежемесячный лимит на пополнение своего накопительного счета до 100 000 рублей через онлайн-банкинг 05.04.2024. (CATEGORY: Limit & Restriction Labels, Replenishment Rules, Decision & Action Labels)
+• Предварительный расчет начисленных процентов по вкладу "Прибыльный" Зои Викторовны за квартал (с 05.03.2024 по 05.06.2024) составил 12 000 рублей. (CATEGORY: Interest Rate Labels, Deposits & Savings Labels)
+• После капитализации 05.06.2024, фактическая сумма начисленных процентов по вкладу "Прибыльный" Зои Викторовны составила 12 300 рублей, что принесло ей удовлетворение. (CATEGORY: Interest Capitalization, Client Satisfied)
+• Зоя Викторовна получила уведомление о том, что Кира Наумовна Дроздова, её знакомая, изменила лимит на снятие наличных со своей дебетовой карты до 80 000 рублей. (CATEGORY: Family & Contacts, Limit & Restriction Labels, Cards & Accounts Labels)
+• Зоя Викторовна перевела 15 000 рублей на карту Лидии Борисовны Фадеевой для оплаты её медицинских услуг. (CATEGORY: Daily Banking Labels, Transfers (SBP, Card Number), Family & Contacts)
+• Она запросила выписку по своему текущему счету за март 2024 года для контроля расходов. (CATEGORY: Daily Banking Labels, Statement Request)
+• Зоя Викторовна сравнила условия по накопительным счетам в нескольких банках, обращая внимание на текущие ставки и условия капитализации. (CATEGORY: Product Information Labels, Interest Rate Labels, Consultation & Advice Labels)
+• Она заметила, что ставка по её накопительному счету "Накопительный+" составляет 14.2% годовых, но в другом банке предлагается 14.5%. (CATEGORY: Interest Rate Labels, Product Information Labels)
+• Зоя Викторовна отправила запрос в чат поддержки банка с вопросом о возможности получения более выгодной ставки по её накопительному счету. (CATEGORY: Communication Channel Labels, Consultation & Advice Labels)
+• Она получила ответ, что для получения более высокой ставки необходимо выполнить определенные условия, например, поддерживать минимальный остаток 100 000 рублей. (CATEGORY: Product Information Labels, Condition Change Labels)
+• Зоя Викторовна пополнила свой накопительный счет на 75 000 рублей, чтобы соответствовать условиям для повышенной ставки. (CATEGORY: Deposits & Savings Labels, Replenishment Rules, Decision & Action Labels)
+• Она проверила историю операций за последний месяц, чтобы убедиться в отсутствии несанкционированных списаний. (CATEGORY: Daily Banking Labels, Transaction History)
+• Зоя Викторовна получила СМС-уведомление о списании 59 рублей за ежемесячное обслуживание дебетовой карты. (CATEGORY: Cards & Accounts Labels, Product Information Labels)
+• Она отметила, что её партнер, Орлов Гурий Артурович, успешно рефинансировал свой кредит на 480 000 рублей под 15.5% годовых, что на 0.5% ниже первоначальной ставки. (CATEGORY: Family & Contacts, Consultation & Advice Labels, Decision & Action Labels)
+
+## BATCH 3 PLAN
+
+• **Time Anchor:** 01.05.2024
+• Запрос Зои Викторовны Горбачевой на автоматическую пролонгацию вклада "Универсальный" (открыт 10.11.2023 на 6 месяцев под 13% годовых) находился в статусе 'на рассмотрении' с 01.05.2024. (CATEGORY: Deposits & Savings Labels, Deposit Rollover, Application Submission)
+• Автоматическая пролонгация вклада "Универсальный" Зои Викторовны Горбачевой была подтверждена 07.05.2024, статус 'подписано', с новой ставкой 12.8% годовых. (CATEGORY: Deposits & Savings Labels, Deposit Rollover, Document Signing, Interest Rate Labels)
+• Зоя Викторовна получила уведомление о том, что ежедневный лимит на снятие наличных с накопительного счета Киры Наумовны Дроздовой составляет 80 000 рублей. (CATEGORY: Family & Contacts, Limit & Restriction Labels, Withdrawal Limits)
+• Зоя Викторовна перевела 5 000 рублей на карту Орлова Гурия Артуровича для совместной покупки подарка Лидии Борисовне Фадеевой. (CATEGORY: Daily Banking Labels, Transfers (SBP, Card Number), Family & Contacts)
+• Она получила уведомление о том, что банк планирует изменить тарифы на обслуживание дебетовых карт с 01.06.2024. (CATEGORY: Product Information Labels, Tariff Changes, Condition Change Labels)
+• Зоя Викторовна внимательно изучила новые тарифы, чтобы понять, как они повлияют на её ежемесячные расходы. (CATEGORY: Document Management Labels, Contract Review, Client Anxious)
+• Она обнаружила, что комиссия за СМС-информирование увеличится с 59 рублей до 79 рублей в месяц. (CATEGORY: Product Information Labels, Tariff Changes)
+• Зоя Викторовна решила отключить СМС-информирование и использовать push-уведомления, чтобы избежать дополнительных расходов. (CATEGORY: Decision & Action Labels, Push Notification Settings)
+• Она получила уведомление о том, что банк предлагает новый продукт – "Инвестиционный вклад" с потенциальной доходностью до 18% годовых, но с повышенными рисками. (CATEGORY: Product Information Labels, Investment Options)
+• Зоя Викторовна запросила консультацию по "Инвестиционному вкладу", чтобы оценить риски и потенциальную доходность. (CATEGORY: Consultation & Advice Labels, Risk Assessment)
+• Она уточнила, что для открытия "Инвестиционного вклада" требуется минимальная сумма 200 000 рублей. (CATEGORY: Product Information Labels)
+• Зоя Викторовна проверила свой кредитный рейтинг через мобильное приложение банка. (CATEGORY: Daily Banking Labels, Account Status)
+• Она получила уведомление о том, что её кредитный рейтинг составляет 750 баллов, что является хорошим показателем. (CATEGORY: Daily Banking Labels, Account Status)
+• Зоя Викторовна оплатила ЖКУ на 4 800 рублей через мобильное приложение банка. (CATEGORY: Daily Banking Labels, Transaction History)
+• Она получила подтверждение оплаты ЖКУ на электронную почту. (CATEGORY: Communication Channel Labels, Document Management Labels)
+
+## BATCH 4 PLAN
+
+• **Time Anchor:** 01.06.2024
+• Ежедневный лимит на снятие наличных с накопительного счета Зои Викторовны Горбачевой составлял 75 000 рублей. (CATEGORY: Limit & Restriction Labels, Withdrawal Limits)
+• Зоя Викторовна временно увеличила свой ежедневный лимит на снятие наличных до 120 000 рублей 05.06.2024 для крупной покупки – нового холодильника. (CATEGORY: Limit & Restriction Labels, Withdrawal Limits, Decision & Action Labels)
+• Расчетный НДФЛ с процентов по вкладам Зои Викторовны Горбачевой за прошлый год (2023) составлял 4 500 рублей. (CATEGORY: Interest Rate Labels, Taxation)
+• После применения налоговых вычетов, сумма НДФЛ с процентов для Зои Викторовны Горбачевой была скорректирована до 3 800 рублей 15.06.2024. (CATEGORY: Taxation, Decision & Action Labels)
+• Зоя Викторовна получила уведомление о том, что Орлов Гурий Артурович перевел 45 000 рублей на счет Евлампия Ануфриевича Симонова для оплаты ремонта автомобиля. (CATEGORY: Family & Contacts, Transfers (SBP, Card Number))
+• Она получила уведомление о том, что банк обновил условия по программе лояльности, добавив новые категории кэшбэка. (CATEGORY: Loyalty Program Labels, Condition Change Labels)
+• Зоя Викторовна изучила новые категории кэшбэка, чтобы максимально использовать преимущества программы. (CATEGORY: Product Information Labels, Consultation & Advice Labels)
+• Она обнаружила, что теперь можно получать 3% кэшбэка за покупки в супермаркетах и 5% за покупки в аптеках. (CATEGORY: Loyalty Program Labels, Product Information Labels)
+• Зоя Викторовна решила активно использовать свою дебетовую карту для покупок в этих категориях. (CATEGORY: Decision & Action Labels, Cards & Accounts Labels)
+• Она получила СМС-уведомление о списании 79 рублей за ежемесячное обслуживание дебетовой карты (после изменения тарифов). (CATEGORY: Cards & Accounts Labels, Product Information Labels)
+• Зоя Викторовна проверила, что её накопительный счет по-прежнему имеет ставку 14.2% годовых. (CATEGORY: Interest Rate Labels, Deposits & Savings Labels)
+• Она получила уведомление о том, что банк предлагает оформить кредитную карту с грейс-периодом 120 дней. (CATEGORY: Product Information Labels, Service Description)
+• Зоя Викторовна решила не оформлять кредитную карту, так как стремится уменьшить свою кредитную нагрузку. (CATEGORY: Decision & Action Labels, Refusal)
+• Она получила уведомление о том, что банк проводит акцию по вкладам с повышенной ставкой для новых клиентов. (CATEGORY: Product Information Labels, New Product Offer)
+• Зоя Викторовна уточнила, что она не подпадает под условия акции, так как уже является клиентом банка. (CATEGORY: Consultation & Advice Labels, Product Information Labels)
+
+## BATCH 5 PLAN
+
+• **Time Anchor:** 01.07.2024
+• Накопительный счет Зои Викторовны Горбачевой имел ставку 14.2% годовых. (CATEGORY: Interest Rate Labels, Deposits & Savings Labels)
+• Банк уведомил Зою Викторовну Горбачеву 05.07.2024 о снижении ставки по накопительным счетам до 13.8% годовых с нового месяца, что вызвало у неё беспокойство и необходимость пересмотреть свои финансовые планы. (CATEGORY: Condition Change Labels, Interest Rate Change, Client Anxious)
+• Операция по переводу средств от Софрона Гаврииловича Титова на счет Зои Викторовны Горбачевой на сумму 300 000 рублей была временно приостановлена банком 10.07.2024 для проверки по 115-ФЗ ('на рассмотрении'). (CATEGORY: Security & Fraud Labels, 115-FZ Check, Suspicious Activity, Client Anxious)
+• После предоставления Зоей Викторовной Горбачевой подтверждающих документов (договор купли-продажи автомобиля) 12.07.2024, операция по переводу от Софрона Гаврииловича Титова была успешно проведена ('одобрено'). (CATEGORY: Document Management Labels, Application Submission, Decision & Action Labels, Client Satisfied)
+• Зоя Викторовна получила уведомление о том, что автоматическая пролонгация вклада "Универсальный" была успешно завершена 07.05.2024, статус 'подписано'. (CATEGORY: Deposits & Savings Labels, Deposit Rollover, Document Signing)
+• Она проверила баланс своего накопительного счета, который на 15.07.2024 составлял 450 000 рублей. (CATEGORY: Daily Banking Labels, Account Balance Check)
+• Зоя Викторовна решила перевести 50 000 рублей с накопительного счета на текущий для оплаты предстоящих расходов. (CATEGORY: Daily Banking Labels, Transfers (SBP, Card Number), Decision & Action Labels)
+• Она получила уведомление о том, что банк предлагает индивидуальную консультацию по инвестициям для клиентов с крупными сбережениями. (CATEGORY: Consultation & Advice Labels, Investment Options)
+• Зоя Викторовна записалась на консультацию, чтобы обсудить возможности диверсификации своих сбережений. (CATEGORY: Decision & Action Labels, Consultation & Advice Labels)
+• Она получила СМС-уведомление о начислении процентов по вкладу "Прибыльный" в размере 12 300 рублей. (CATEGORY: Interest Capitalization, Deposits & Savings Labels)
+• Зоя Викторовна проверила, что её ежемесячный платеж по ипотеке в размере 32 000 рублей был успешно списан 25.07.2024. (CATEGORY: Daily Banking Labels, Transaction History)
+• Она получила уведомление о том, что банк обновил мобильное приложение, добавив новые функции для управления вкладами. (CATEGORY: Technical Support Labels, Mobile App Issue, Product Information Labels)
+• Зоя Викторовна обновила мобильное приложение и изучила новые функции. (CATEGORY: Decision & Action Labels, Mobile App Issue)
+• Она оставила положительный отзыв о работе службы поддержки, которая оперативно помогла ей с вопросом по 115-ФЗ. (CATEGORY: Feedback & Complaint Labels, Client Feedback, Issue Resolution)
+• Зоя Викторовна, хоть и уставшая от постоянных изменений и необходимости контроля, чувствует себя удовлетворенной тем, что смогла успешно справиться со всеми вызовами и сохранить свои сбережения под контролем. (CATEGORY: Emotional State Labels, Client Satisfied)

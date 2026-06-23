@@ -1,0 +1,2358 @@
+{
+  "nodes": [
+    {
+      "id": "person_petr_rybakov",
+      "type": "person",
+      "label": "Рыбаков Петр Филиппович",
+      "attributes": {
+        "age": 60,
+        "role": "client",
+        "job_title": "шкипер",
+        "monthly_income": "125000 руб.",
+        "location": "клх Шелагонцы"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "card_credit_1",
+      "type": "product",
+      "label": "Кредитная карта Рыбакова П.Ф.",
+      "attributes": {
+        "type": "credit",
+        "limit": "150000 руб.",
+        "grace_period": "120 дней",
+        "number": "5432-ХХХХ-ХХХХ-4321"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "card_credit_new",
+      "type": "product",
+      "label": "Новая кредитная карта Рыбакова П.Ф.",
+      "attributes": {
+        "type": "credit",
+        "number": "6789-ХХХХ-ХХХХ-9876"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "person_oktyabrina_orekhova",
+      "type": "person",
+      "label": "Орехова Октябрина Аркадьевна",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": false,
+      "episode_hint": 3
+    },
+    {
+      "id": "transaction_echolot",
+      "type": "event",
+      "label": "Покупка эхолота",
+      "attributes": {
+        "amount": "45000 руб.",
+        "description": "эхолот в магазине Морской Волк"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "transaction_air_tickets",
+      "type": "event",
+      "label": "Покупка авиабилетов",
+      "attributes": {
+        "amount": "28000 руб.",
+        "description": "авиабилеты Москва-Сочи"
+      },
+      "ground_truth": false,
+      "episode_hint": 3
+    },
+    {
+      "id": "transaction_communal_services",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "amount": "6500 руб."
+      },
+      "ground_truth": false,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО 'Морской Волк'",
+      "attributes": {
+        "type": "магазин",
+        "category": "рыболовные товары"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "product",
+      "label": "Эхолот 'Глубинарь X-500'",
+      "attributes": {
+        "brand": "Глубинарь",
+        "model": "X-500",
+        "price": "45000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "event",
+      "label": "Начисление кэшбэка за февраль",
+      "attributes": {
+        "amount": "1350 руб.",
+        "period": "февраль 2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "organization",
+      "label": "Ресторан 'У Причала'",
+      "attributes": {
+        "type": "ресторан",
+        "cuisine": "морская"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Оплата ужина",
+      "attributes": {
+        "amount": "7200 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "document",
+      "label": "СМС-уведомление о кэшбэке",
+      "attributes": {
+        "sender": "Банк",
+        "content": "Кэшбэк 1350 руб. за февраль будет зачислен до 15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "document",
+      "label": "СМС-уведомление о снижении лимита",
+      "attributes": {
+        "sender": "Банк",
+        "content": "Плановое снижение кредитного лимита до 100000 руб. с 01.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "person",
+      "label": "Сорокин Ладимир Власович",
+      "attributes": {
+        "role": "партнер",
+        "job_title": "рыбак"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "product",
+      "label": "Потребительский кредит Сорокина",
+      "attributes": {
+        "amount": "480000 руб.",
+        "interest_rate": "16% годовых",
+        "term": "2 года"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Обсуждение кредита Сорокина",
+      "attributes": {
+        "topic": "покупка мотора"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Проверка баланса через банкомат",
+      "attributes": {
+        "available_limit": "105000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "Решение отложить крупные покупки",
+      "attributes": {
+        "reason": "избежать превышения нового лимита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Уточнение условий кэшбэка в приложении",
+      "attributes": {
+        "category": "Рестораны",
+        "rate": "5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Решение позвонить в банк",
+      "attributes": {
+        "purpose": "получить разъяснения о снижении лимита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "document",
+      "label": "Выписка по карте за февраль",
+      "attributes": {
+        "period": "февраль 2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "person",
+      "label": "Кабанова Екатерина Харитоновна",
+      "attributes": {
+        "role": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Совет матери о наличных",
+      "attributes": {
+        "advice": "не доверять электронным штукам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Звонок в банк (снижение лимита)",
+      "attributes": {
+        "date": "12.03.2024",
+        "channel": "телефон",
+        "result": "оператор сообщил о внутренней политике банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Незачисление кэшбэка",
+      "attributes": {
+        "date": "15.03.2024",
+        "amount": "1350 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "document",
+      "label": "Обращение №123456789",
+      "attributes": {
+        "type": "жалоба",
+        "topic": "незачисленный кэшбэк",
+        "date": "16.03.2024",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "product",
+      "label": "Дебетовая карта Рыбакова П.Ф.",
+      "attributes": {
+        "type": "debit",
+        "number": "4567-ХХХХ-ХХХХ-1234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Перевод средств на кредитную карту",
+      "attributes": {
+        "date": "18.03.2024",
+        "amount": "15000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "person",
+      "label": "Гордеева Таисия Георгиевна",
+      "attributes": {
+        "role": "знакомая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Проблема Гордеевой с бонусами",
+      "attributes": {
+        "card_type": "пенсионная карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Проверка статуса обращения в интернет-банке",
+      "attributes": {
+        "result": "информация не найдена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Решение посетить отделение банка",
+      "attributes": {
+        "condition": "если кэшбэк не зачислят"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Уточнение условий лояльности",
+      "attributes": {
+        "result": "отрицательный ответ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Проверка истории операций",
+      "attributes": {
+        "purpose": "убедиться в корректности покупок для кэшбэка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Помощь матери с переводом",
+      "attributes": {
+        "amount": "5000 руб.",
+        "channel": "банкомат"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Размышления о переходе на дебетовую карту",
+      "attributes": {
+        "reason": "проблемы с кредитной картой"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "document",
+      "label": "Запрос выписки по счету за март",
+      "attributes": {
+        "period": "март 2024",
+        "purpose": "документальное подтверждение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Решение внимательнее читать уведомления",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "document",
+      "label": "СМС-уведомление о статусе обращения",
+      "attributes": {
+        "date": "20.03.2024",
+        "content": "Обращение №123456789 на рассмотрении, срок ответа до 5 раб. дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "product",
+      "label": "Авиабилеты Москва-Сочи",
+      "attributes": {
+        "destination": "Сочи",
+        "origin": "Москва",
+        "amount": "28000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Уведомление о перевыпуске карты",
+      "attributes": {
+        "date": "25.03.2024",
+        "reason": "истечение срока действия (апрель 2024)"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Попытка оплаты продуктов",
+      "attributes": {
+        "date": "27.03.2024",
+        "amount": "1500 руб.",
+        "location": "местный магазин",
+        "result": "карта заблокирована"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Жалоба матери на блокировку дебетовой карты",
+      "attributes": {
+        "reason": "подозрительная операция",
+        "amount": "3000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Попытка проверки статуса карты в приложении",
+      "attributes": {
+        "result": "ошибка 'Не удалось загрузить данные'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Решение немедленно позвонить в банк (блокировка)",
+      "attributes": {
+        "purpose": "выяснить причину блокировки",
+        "urgency_reason": "срочная оплата коммунальных услуг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Предположение о причине блокировки",
+      "attributes": {
+        "reason": "крупная покупка авиабилетов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {
+        "type": "финансовая организация"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "organization",
+      "label": "клх Шелагонцы",
+      "attributes": {
+        "type": "колхоз",
+        "region": "Ленинградская область"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Зачисление кэшбэка",
+      "attributes": {
+        "amount": "1350 руб.",
+        "date": "14.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Окончание грейс-периода",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Запрос выписки по карте за февраль",
+      "attributes": {
+        "date": "11.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "document",
+      "label": "Выписка по карте за февраль (получена)",
+      "attributes": {
+        "date": "12.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Покупка мотора",
+      "attributes": {
+        "amount": "480000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "product",
+      "label": "Мотор для лодки",
+      "attributes": {
+        "type": "лодочный мотор"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Подача заявки на кредит Сорокиным",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Одобрение кредита Сорокину",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Получение кредита Сорокиным",
+      "attributes": {
+        "date": "17.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Покупка мотора Сорокиным",
+      "attributes": {
+        "date": "18.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Оплата мобильной связи",
+      "attributes": {
+        "amount": "500 руб.",
+        "date": "02.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Покупка продуктов в 'Пятерочке'",
+      "attributes": {
+        "amount": "3500 руб.",
+        "date": "04.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Оплата бензина",
+      "attributes": {
+        "amount": "2000 руб.",
+        "date": "06.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Покупка рыболовных снастей",
+      "attributes": {
+        "amount": "12000 руб.",
+        "date": "09.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Пополнение мобильного телефона",
+      "attributes": {
+        "amount": "300 руб.",
+        "date": "13.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Оплата интернета",
+      "attributes": {
+        "amount": "800 руб.",
+        "date": "19.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Покупка лекарств",
+      "attributes": {
+        "amount": "1800 руб.",
+        "date": "21.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Оплата такси",
+      "attributes": {
+        "amount": "700 руб.",
+        "date": "23.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Покупка продуктов в 'Магните'",
+      "attributes": {
+        "amount": "2500 руб.",
+        "date": "24.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Звонок в банк (блокировка)",
+      "attributes": {
+        "date": "27.03.2024",
+        "channel": "телефон",
+        "result": "ожидание ответа оператора"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Уведомление о зачислении кэшбэка",
+      "attributes": {
+        "date": "14.03.2024",
+        "amount": "1350 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Истечение срока действия карты",
+      "attributes": {
+        "date": "31.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Запрос на перевыпуск карты",
+      "attributes": {
+        "date": "25.03.2024",
+        "reason": "истечение срока действия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Получение новой карты",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "event",
+      "label": "Активация новой карты",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Оплата коммунальных услуг (попытка)",
+      "attributes": {
+        "date": "27.03.2024",
+        "amount": "6500 руб.",
+        "result": "неудача из-за блокировки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "event",
+      "label": "Оплата коммунальных услуг (успешно)",
+      "attributes": {
+        "date": "10.04.2024",
+        "amount": "6500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Уведомление о зачислении кэшбэка (повторно)",
+      "attributes": {
+        "date": "20.03.2024",
+        "amount": "1350 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_uses_card_echolot",
+      "source": "person_petr_rybakov",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024",
+        "transaction_id": "transaction_echolot"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_notif_limit_reduction",
+      "source": "card_credit_1",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024",
+        "event": "плановое снижение кредитного лимита до 100000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_card_blocked_stale_1",
+      "source": "card_credit_1",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26.03.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_card_blocked",
+      "source": "card_credit_1",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_card_reissued_stale_2",
+      "source": "card_credit_1",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "02.04.2024"
+      },
+      "valid": false,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_card_reissued",
+      "source": "card_credit_1",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_activates_new_card",
+      "source": "person_petr_rybakov",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_pays_communal_services",
+      "source": "person_petr_rybakov",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024",
+        "transaction_id": "transaction_communal_services"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "transaction_echolot",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "transaction_echolot",
+      "target": "ctx_node_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_6",
+      "relation": "received",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_6",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_5",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_5",
+      "target": "ctx_node_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_7",
+      "relation": "received",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_8",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_10",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_13",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_17",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_19",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_21",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_22",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_22",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_24",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_24",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_26",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_27",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_30",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_31",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_33",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_33",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_35",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_35",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "person_petr_rybakov",
+      "target": "transaction_air_tickets",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "transaction_air_tickets",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "transaction_air_tickets",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "transaction_air_tickets",
+      "target": "person_oktyabrina_orekhova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_37",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_37",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_38",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_39",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_40",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_42",
+      "target": "transaction_air_tickets",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "card_credit_1",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_20",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_22",
+      "target": "ctx_node_43",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_37",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_3",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_45",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_24",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_17",
+      "target": "ctx_node_47",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_47",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_9",
+      "target": "ctx_node_49",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_49",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_8",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_51",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_51",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_52",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_53",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_54",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_55",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_56",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_57",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_58",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_59",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_60",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_61",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_62",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_63",
+      "target": "card_credit_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_3",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_65",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_37",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "ctx_node_67",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_37",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_69",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_69",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_41",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "ctx_node_71",
+      "target": "transaction_communal_services",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_72",
+      "target": "card_credit_new",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_22",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_73",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_73",
+      "target": "card_credit_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "card_credit_1",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29,72.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_petr_rybakov",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,52.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "card_credit_1",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,33.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_37",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "card_credit_1",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,03.2024",
+        "event": "плановое снижение кредитного лимита до 100000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "card_credit_1",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,75.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_25",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_57",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,97.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_14",
+      "target": "ctx_node_6",
+      "relation": "received",
+      "attributes": {
+        "date": "4,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_47",
+      "relation": "received",
+      "attributes": {
+        "date": "11,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "card_credit_1",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,75.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "transaction_air_tickets",
+      "target": "ctx_node_6",
+      "relation": "received",
+      "attributes": {
+        "date": "4,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_6",
+      "target": "person_petr_rybakov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,75.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_5",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,97.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_petr_rybakov",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_23",
+      "target": "card_credit_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,34.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "card_credit_1",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "2,74.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_petr_rybakov",
+      "source": "person_petr_rybakov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_card_credit_1",
+      "source": "card_credit_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_card_credit_new",
+      "source": "card_credit_new",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

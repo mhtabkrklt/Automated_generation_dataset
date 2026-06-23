@@ -1,0 +1,3068 @@
+{
+  "nodes": [
+    {
+      "id": "person_nikifor_emelyanov",
+      "type": "person",
+      "label": "Емельянов Никифор Ермолаевич",
+      "attributes": {
+        "role": "client",
+        "income": "62000 руб.",
+        "occupation": "садовник"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_mortgage_1",
+      "type": "product",
+      "label": "Ипотечный кредит",
+      "attributes": {
+        "type": "ипотечный",
+        "amount": "6000000 руб.",
+        "rate": "10.5%",
+        "term": "20 лет",
+        "monthly_payment": "59800 руб.",
+        "contract_number": "ИП-2023/03-001"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "event_income_reduction",
+      "type": "event",
+      "label": "Сокращение заработной платы",
+      "attributes": {
+        "date": "01.10.2023",
+        "reduction_percentage": "20%",
+        "new_income": "49600 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "loan_restructuring_mortgage",
+      "type": "product",
+      "label": "Реструктуризация ипотечного кредита",
+      "attributes": {
+        "date": "20.10.2023",
+        "new_term": "25 лет",
+        "new_monthly_payment": "48500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_consumer_1",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "type": "потребительский",
+        "amount": "500000 руб.",
+        "rate": "15.0%",
+        "term": "3 года",
+        "monthly_payment": "17660 руб.",
+        "contract_number": "ПК-2023/12-001"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "loan_auto_1",
+      "type": "product",
+      "label": "Автокредит",
+      "attributes": {
+        "type": "автокредит",
+        "amount": "1500000 руб.",
+        "rate": "12.0%",
+        "term": "5 лет",
+        "monthly_payment": "33360 руб.",
+        "contract_number": "АВ-2023/06-002"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "event_partial_early_repayment_auto",
+      "type": "event",
+      "label": "Частичное досрочное погашение автокредита",
+      "attributes": {
+        "date": "13.12.2023",
+        "amount": "500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "event_auto_loan_payment_reduction",
+      "type": "event",
+      "label": "Снижение ежемесячного платежа по автокредиту",
+      "attributes": {
+        "date": "15.12.2023",
+        "new_monthly_payment": "22500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО «Надежный Банк»",
+      "attributes": {
+        "type": "банк",
+        "address": "г. Москва, ул. Ленина, д. 1"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Договор купли-продажи квартиры",
+      "attributes": {
+        "date": "01.03.2023",
+        "property_address": "г. Москва, ул. Лесная, д. 15, кв. 22"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "person",
+      "label": "Юрий Ефимов",
+      "attributes": {
+        "role": "супруга",
+        "occupation": "менеджер",
+        "income": "55000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "organization",
+      "label": "АО «АвтоФинанс»",
+      "attributes": {
+        "type": "банк",
+        "specialization": "автокредитование"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "product",
+      "label": "Автомобиль Hyundai Solaris",
+      "attributes": {
+        "make": "Hyundai",
+        "model": "Solaris",
+        "year": "2023",
+        "price": "1500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "АО «Быстрый Займ»",
+      "attributes": {
+        "type": "банк",
+        "specialization": "потребительские кредиты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Автомобиль Kia Rio",
+      "attributes": {
+        "make": "Kia",
+        "model": "Rio",
+        "year": "2023",
+        "price": "1450000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "document",
+      "label": "СМС-уведомление об ипотеке",
+      "attributes": {
+        "date": "01.03.2023",
+        "sender": "ПАО «Надежный Банк»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "person",
+      "label": "Элеонора Павловна Гришина",
+      "attributes": {
+        "role": "мать",
+        "relationship": "родственник"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Перевод денежных средств",
+      "attributes": {
+        "date": "05.06.2023",
+        "amount": "10000 руб.",
+        "purpose": "помощь с первоначальным взносом"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "product",
+      "label": "Онлайн-сервис кредитного рейтинга",
+      "attributes": {
+        "type": "информационный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "event",
+      "label": "Кредитный рейтинг",
+      "attributes": {
+        "score": "780 баллов",
+        "date": "06.06.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "organization",
+      "label": "Страховая компания «АвтоЗащита»",
+      "attributes": {
+        "type": "страховая компания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "product",
+      "label": "Полис КАСКО",
+      "attributes": {
+        "cost": "85000 руб.",
+        "insured_object": "Hyundai Solaris"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "person",
+      "label": "Евфросиния Филипповна Комиссарова",
+      "attributes": {
+        "role": "друг",
+        "occupation": "финансовый консультант"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "document",
+      "label": "График платежей по автокредиту",
+      "attributes": {
+        "date": "07.06.2023",
+        "delivery_method": "почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "person",
+      "label": "Васильев Автоном Бориславович",
+      "attributes": {
+        "role": "знакомый",
+        "experience": "рефинансирование автокредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Установка напоминания",
+      "attributes": {
+        "date": "08.06.2023",
+        "frequency": "ежемесячно",
+        "purpose": "проверка списаний"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Списание ежемесячного платежа по автокредиту",
+      "attributes": {
+        "date": "15.06.2023",
+        "amount": "33360 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Общая сумма ежемесячных платежей",
+      "attributes": {
+        "amount": "93160 руб.",
+        "date": "15.06.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "organization",
+      "label": "Работодатель Никифора Емельянова",
+      "attributes": {
+        "type": "компания",
+        "location": "п. Токма"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "document",
+      "label": "Уведомление о сокращении зарплаты",
+      "attributes": {
+        "date": "01.10.2023",
+        "reduction_percentage": "20%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "product",
+      "label": "Горячая линия ПАО «Надежный Банк»",
+      "attributes": {
+        "phone_number": "8-800-200-00-00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {
+        "period": "последние 12 месяцев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Копия приказа о сокращении зарплаты",
+      "attributes": {
+        "date": "01.10.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "product",
+      "label": "Кредитная карта Юрия Ефимова",
+      "attributes": {
+        "limit": "150000 руб.",
+        "type": "кредитная карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Обсуждение кредитных каникул",
+      "attributes": {
+        "date": "07.10.2023",
+        "participant": "Юрий Ефимов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "product",
+      "label": "Электронное письмо от ПАО «Надежный Банк»",
+      "attributes": {
+        "date": "08.10.2023",
+        "content": "список документов для реструктуризации"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "person",
+      "label": "Андрей Харламович Бирюков",
+      "attributes": {
+        "role": "знакомый",
+        "occupation": "юрист"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Показатель долговой нагрузки (ПДН)",
+      "attributes": {
+        "value": ">80%",
+        "status": "критический"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Поиск информации о программах поддержки",
+      "attributes": {
+        "date": "10.10.2023",
+        "purpose": "помощь заемщикам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "product",
+      "label": "Телефонный звонок от Элеоноры Гришиной",
+      "attributes": {
+        "date": "11.10.2023",
+        "purpose": "узнать о делах"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Сбор документов для реструктуризации",
+      "attributes": {
+        "date": "11.10.2023",
+        "documents": "справка 2-НДФЛ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "product",
+      "label": "Напоминание от АО «АвтоФинанс»",
+      "attributes": {
+        "date": "12.10.2023",
+        "content": "предстоящий платеж по автокредиту"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "organization",
+      "label": "Отделение ПАО «Надежный Банк»",
+      "attributes": {
+        "address": "ул. Центральная, д. 10"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "document",
+      "label": "Дополнительное соглашение о реструктуризации",
+      "attributes": {
+        "date": "01.11.2023",
+        "contract_number": "ИП-2023/03-001"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Консультация с Евфросинией Комиссаровой",
+      "attributes": {
+        "date": "25.10.2023",
+        "topic": "условия реструктуризации"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Предложение по реструктуризации кредитной карты",
+      "attributes": {
+        "date": "22.10.2023",
+        "new_monthly_payment": "6500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "product",
+      "label": "Подтверждение от ПАО «Надежный Банк»",
+      "attributes": {
+        "date": "02.11.2023",
+        "content": "новое расписание платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "product",
+      "label": "Телефонный звонок от Элеоноры Гришиной",
+      "attributes": {
+        "date": "28.10.2023",
+        "purpose": "узнать о реструктуризации"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Покупка квартиры",
+      "attributes": {
+        "date": "01.03.2023",
+        "address": "г. Москва, ул. Лесная, д. 15, кв. 22"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Настройка автоплатежа",
+      "attributes": {
+        "date": "15.03.2023",
+        "purpose": "оплата ипотеки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Покупка автомобиля Hyundai Solaris",
+      "attributes": {
+        "date": "01.06.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Запрос на автокредит (Юрий Ефимов)",
+      "attributes": {
+        "date": "01.06.2023",
+        "amount": "1450000 руб.",
+        "bank": "АО «Быстрый Займ»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Проверка кредитного рейтинга",
+      "attributes": {
+        "date": "06.06.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Оформление полиса КАСКО",
+      "attributes": {
+        "date": "06.06.2023",
+        "cost": "85000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Совет по страхованию жизни",
+      "attributes": {
+        "date": "07.06.2023",
+        "advisor": "Евфросиния Комиссарова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Разговор о рефинансировании автокредита",
+      "attributes": {
+        "date": "08.06.2023",
+        "participant": "Васильев Бориславович"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Уведомление о сокращении заработной платы",
+      "attributes": {
+        "date": "01.10.2023",
+        "source": "работодатель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Обращение в банк по реструктуризации",
+      "attributes": {
+        "date": "05.10.2023",
+        "channel": "горячая линия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Запрос документов банком",
+      "attributes": {
+        "date": "10.10.2023",
+        "documents": "2-НДФЛ, приказ о сокращении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Совет Андрея Бирюкова",
+      "attributes": {
+        "date": "09.10.2023",
+        "topic": "условия реструктуризации"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Предоставление документов в банк",
+      "attributes": {
+        "date": "12.10.2023",
+        "location": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Согласие на реструктуризацию",
+      "attributes": {
+        "date": "25.10.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Подписание доп. соглашения",
+      "attributes": {
+        "date": "01.11.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Тревога",
+      "attributes": {
+        "intensity": "средняя",
+        "reason": "крупные обязательства"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Напряжение",
+      "attributes": {
+        "intensity": "средняя",
+        "reason": "общая сумма платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Стресс",
+      "attributes": {
+        "intensity": "сильный",
+        "reason": "сокращение дохода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Подавленность",
+      "attributes": {
+        "intensity": "сильная",
+        "reason": "финансовые планы рушатся"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Облегчение",
+      "attributes": {
+        "intensity": "некоторое",
+        "reason": "реструктуризация ипотеки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Беспокойство",
+      "attributes": {
+        "intensity": "средняя",
+        "reason": "платежи по автокредиту"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Обеспечить стабильное будущее",
+      "attributes": {
+        "scope": "себя и семью"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Получить надежный транспорт",
+      "attributes": {
+        "purpose": "для работы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Избежать просрочек",
+      "attributes": {
+        "urgency": "срочно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Обсуждение рефинансирования",
+      "attributes": {
+        "date": "08.06.2023",
+        "topic": "автокредит"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Осознание риска просрочек",
+      "attributes": {
+        "date": "12.10.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "product",
+      "label": "Страхование жизни",
+      "attributes": {
+        "type": "страховой продукт"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "event",
+      "label": "Оформление ипотеки",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Оформление автокредита",
+      "attributes": {
+        "date": "01.06.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_74",
+      "type": "event",
+      "label": "Снижение дохода",
+      "attributes": {
+        "date": "01.11.2023",
+        "amount": "49600 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_75",
+      "type": "event",
+      "label": "Увеличение срока ипотеки",
+      "attributes": {
+        "date": "20.10.2023",
+        "new_term": "25 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "event",
+      "label": "Снижение платежа по ипотеке",
+      "attributes": {
+        "date": "20.10.2023",
+        "new_monthly_payment": "48500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "event",
+      "label": "Получение потребительского кредита",
+      "attributes": {
+        "date": "05.12.2023",
+        "amount": "500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "event",
+      "label": "Частичное досрочное погашение автокредита",
+      "attributes": {
+        "date": "13.12.2023",
+        "amount": "500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_79",
+      "type": "event",
+      "label": "Снижение ежемесячного платежа по автокредиту",
+      "attributes": {
+        "date": "15.12.2023",
+        "new_monthly_payment": "22500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_80",
+      "type": "event",
+      "label": "Оплата ипотеки",
+      "attributes": {
+        "date": "15.03.2023",
+        "amount": "59800 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_81",
+      "type": "event",
+      "label": "Оплата автокредита",
+      "attributes": {
+        "date": "15.06.2023",
+        "amount": "33360 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_83",
+      "type": "event",
+      "label": "Одобрение реструктуризации",
+      "attributes": {
+        "date": "20.10.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_86",
+      "type": "event",
+      "label": "Оплата ипотеки после реструктуризации",
+      "attributes": {
+        "date": "15.11.2023",
+        "amount": "48500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_87",
+      "type": "event",
+      "label": "Оплата автокредита после ЧДП",
+      "attributes": {
+        "date": "15.01.2024",
+        "amount": "22500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_88",
+      "type": "event",
+      "label": "Финансовые трудности Юрия Ефимова",
+      "attributes": {
+        "date": "07.10.2023",
+        "reason": "сокращение дохода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_1",
+      "type": "event",
+      "label": "Садовник",
+      "attributes": {
+        "industry": "сельское хозяйство/ландшафтный дизайн",
+        "skill_level": "средний"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_2",
+      "type": "organization",
+      "label": "п. Токма",
+      "attributes": {
+        "type": "поселок",
+        "region": "не указан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_3",
+      "type": "event",
+      "label": "Обеспечение стабильного будущего",
+      "attributes": {
+        "scope": "семейное",
+        "priority": "высокий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_4",
+      "type": "event",
+      "label": "Покупка квартиры",
+      "attributes": {
+        "date": "01.03.2023",
+        "location": "г. Москва, ул. Лесная, д. 15, кв. 22"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_5",
+      "type": "event",
+      "label": "Покупка автомобиля",
+      "attributes": {
+        "date": "01.06.2023",
+        "brand": "Hyundai Solaris"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_6",
+      "type": "event",
+      "label": "Высокие ежемесячные платежи",
+      "attributes": {
+        "impact": "психологический",
+        "status": "осознанный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_7",
+      "type": "event",
+      "label": "Надежда на справление с трудностями",
+      "attributes": {
+        "type": "оптимизм",
+        "basis": "личные ресурсы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_8",
+      "type": "document",
+      "label": "Приказ о сокращении зарплаты",
+      "attributes": {
+        "type": "внутренний документ компании",
+        "date_issued": "не указан"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_9",
+      "type": "event",
+      "label": "Финансовые планы Никифора",
+      "attributes": {
+        "status": "разрушены",
+        "reason": "сокращение дохода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_10",
+      "type": "event",
+      "label": "Подписание доп. соглашения",
+      "attributes": {
+        "date": "01.11.2023",
+        "location": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_chain_1",
+      "source": "person_nikifor_emelyanov",
+      "target": "loan_mortgage_1",
+      "relation": "received",
+      "attributes": {
+        "chain_step": 1,
+        "date": "01.03.2023",
+        "amount": "6000000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "edge_chain_2",
+      "source": "loan_mortgage_1",
+      "target": "event_income_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "01.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "edge_chain_3",
+      "source": "event_income_reduction",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "05.12.2023",
+        "reason": "для частичного досрочного погашения автокредита"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "edge_chain_4",
+      "source": "loan_consumer_1",
+      "target": "event_partial_early_repayment_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "13.12.2023",
+        "amount": "500000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "edge_chain_5",
+      "source": "event_partial_early_repayment_auto",
+      "target": "event_auto_loan_payment_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "15.12.2023",
+        "new_monthly_payment": "22500 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_obtains_auto_loan",
+      "source": "person_nikifor_emelyanov",
+      "target": "loan_auto_1",
+      "relation": "received",
+      "attributes": {
+        "date": "01.06.2023",
+        "amount": "1500000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_for_restructuring",
+      "source": "person_nikifor_emelyanov",
+      "target": "loan_restructuring_mortgage",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.10.2023",
+        "reason": "сокращение дохода"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_restructuring_approved",
+      "source": "loan_restructuring_mortgage",
+      "target": "loan_mortgage_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "20.10.2023",
+        "new_monthly_payment": "48500 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_2",
+      "relation": "signed",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "loan_auto_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "loan_auto_1",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_3",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_3",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_8",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_1",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_9",
+      "target": "ctx_node_10",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_10",
+      "target": "person_nikifor_emelyanov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.06.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_11",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_14",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_15",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_15",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_16",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_4",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_17",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_21",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_22",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_1",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_23",
+      "target": "ctx_node_24",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "10.10.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_23",
+      "target": "ctx_node_25",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "10.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_3",
+      "target": "ctx_node_26",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_3",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_28",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_1",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_29",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.10.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_9",
+      "target": "ctx_node_32",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_33",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_34",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_4",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_35",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_36",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_3",
+      "target": "ctx_node_38",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_39",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_1",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_9",
+      "target": "ctx_node_40",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_42",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_3",
+      "target": "ctx_node_44",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_46",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_15",
+      "target": "ctx_node_47",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_17",
+      "target": "ctx_node_48",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_21",
+      "target": "ctx_node_49",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_50",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_1",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_53",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_54",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_55",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.10.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.11.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.11.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_80",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "loan_auto_1",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "loan_auto_1",
+      "target": "ctx_node_81",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "event_income_reduction",
+      "target": "ctx_node_58",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "event_income_reduction",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "event_income_reduction",
+      "target": "ctx_node_66",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "loan_restructuring_mortgage",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "loan_restructuring_mortgage",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "loan_restructuring_mortgage",
+      "target": "ctx_node_60",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "loan_consumer_1",
+      "target": "ctx_node_77",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "event_partial_early_repayment_auto",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "event_auto_loan_payment_reduction",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_72",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_73",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "event_income_reduction",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "loan_restructuring_mortgage",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_86",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "loan_auto_1",
+      "target": "ctx_node_87",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_3",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "ground_truth": false,
+      "attributes": {},
+      "valid": true,
+      "stale": true
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "event_income_reduction",
+      "target": "loan_restructuring_mortgage",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "loan_restructuring_mortgage",
+      "target": "loan_mortgage_1",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "loan_consumer_1",
+      "target": "event_partial_early_repayment_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "event_partial_early_repayment_auto",
+      "target": "event_auto_loan_payment_reduction",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "loan_auto_1",
+      "target": "event_partial_early_repayment_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "loan_auto_1",
+      "target": "event_auto_loan_payment_reduction",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "person_nikifor_emelyanov",
+      "target": "event_income_reduction",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "person_nikifor_emelyanov",
+      "target": "loan_restructuring_mortgage",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_1",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_2",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_3",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_4",
+      "source": "loan_mortgage_1",
+      "target": "x4_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_5",
+      "source": "loan_auto_1",
+      "target": "x4_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_6",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_7",
+      "source": "x4_node_6",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_8",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_9",
+      "source": "event_income_reduction",
+      "target": "x4_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_10",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_11",
+      "source": "loan_restructuring_mortgage",
+      "target": "x4_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_12",
+      "source": "x4_node_10",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_13",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_14",
+      "source": "person_nikifor_emelyanov",
+      "target": "x4_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_15",
+      "source": "x4_node_4",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_16",
+      "source": "x4_node_5",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_nikifor_emelyanov",
+      "target": "loan_auto_1",
+      "relation": "received",
+      "attributes": {
+        "date": "0,94.2023",
+        "amount": "1500000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "event_partial_early_repayment_auto",
+      "target": "event_auto_loan_payment_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "15.11.2023",
+        "new_monthly_payment": "22500 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "loan_mortgage_1",
+      "target": "event_income_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1,
+        "date": "01.08.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_37",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,95.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_58",
+      "target": "ctx_node_25",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "9,09.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,22.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_2",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "05.12.2023",
+        "reason": "для частичного досрочного погашения автокредита"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_45",
+      "relation": "signed",
+      "attributes": {
+        "date": "1,13.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,61.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_79",
+      "target": "event_partial_early_repayment_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "13.12.2023",
+        "amount": "500000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "loan_consumer_1",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "13.12.2023",
+        "amount": "500000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_24",
+      "target": "loan_auto_1",
+      "relation": "received",
+      "attributes": {
+        "date": "0,85.2023",
+        "amount": "1500000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_18",
+      "target": "loan_restructuring_mortgage",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,61.2023",
+        "reason": "сокращение дохода"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_73",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_8",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "05.12.2023",
+        "reason": "для частичного досрочного погашения автокредита"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_39",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,59.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 1,
+        "date": "01.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_73",
+      "relation": "received",
+      "attributes": {
+        "chain_step": 1,
+        "date": "01.03.2023",
+        "amount": "6000000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_53",
+      "target": "ctx_node_25",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "11,11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "person_nikifor_emelyanov",
+      "target": "loan_mortgage_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "8,87.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "loan_mortgage_1",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 0,
+        "date": "01.08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_23",
+      "target": "x4_node_10",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "11,11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_40",
+      "target": "event_auto_loan_payment_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "15.12.2023",
+        "new_monthly_payment": "22500 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "event_income_reduction",
+      "target": "event_auto_loan_payment_reduction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "15.12.2023",
+        "new_monthly_payment": "22500 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "loan_restructuring_mortgage",
+      "target": "ctx_node_64",
+      "relation": "approved",
+      "attributes": {
+        "date": "18,09.2023",
+        "new_monthly_payment": "48500 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,95.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_6",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,17.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,59.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,61.2023",
+        "reason": "сокращение дохода"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_68",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,61.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "x4_node_9",
+      "target": "loan_mortgage_1",
+      "relation": "received",
+      "attributes": {
+        "chain_step": 0,
+        "date": "01.03.2023",
+        "amount": "6000000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "loan_restructuring_mortgage",
+      "target": "ctx_node_2",
+      "relation": "signed",
+      "attributes": {
+        "date": "1,13.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "person_nikifor_emelyanov",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "x4_node_7",
+      "target": "loan_mortgage_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "18,09.2023",
+        "new_monthly_payment": "48500 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "x4_node_6",
+      "target": "ctx_node_2",
+      "relation": "signed",
+      "attributes": {
+        "date": "0,93.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_nikifor_emelyanov",
+      "source": "person_nikifor_emelyanov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_1",
+      "source": "loan_mortgage_1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_income_reduction",
+      "source": "event_income_reduction",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_restructuring_mortgage",
+      "source": "loan_restructuring_mortgage",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_1",
+      "source": "loan_consumer_1",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto_1",
+      "source": "loan_auto_1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_partial_early_repayment_auto",
+      "source": "event_partial_early_repayment_auto",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_auto_loan_payment_reduction",
+      "source": "event_auto_loan_payment_reduction",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

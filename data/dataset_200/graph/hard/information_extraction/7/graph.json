@@ -1,0 +1,4529 @@
+{
+  "nodes": [
+    {
+      "id": "person_anna",
+      "type": "person",
+      "label": "Анна Вениаминовна Семенова",
+      "attributes": {
+        "income": "61000 руб.",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "mortgage_sber",
+      "type": "document",
+      "label": "Ипотечный договор ПАО Сбербанк",
+      "attributes": {
+        "amount": "8500000 руб.",
+        "rate": "10.9%",
+        "date": "12.06.2021"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "refinancing_vtb",
+      "type": "product",
+      "label": "Заявка на рефинансирование АО ВТБ",
+      "attributes": {
+        "balance": "7120000 руб.",
+        "date": "10.02.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "car_loan",
+      "type": "document",
+      "label": "Автокредит Kia K5",
+      "attributes": {
+        "amount": "2800000 руб.",
+        "rate": "14.9%",
+        "status": "Активирован"
+      },
+      "ground_truth": false,
+      "episode_hint": 3
+    },
+    {
+      "id": "early_repayment",
+      "type": "event",
+      "label": "Досрочное погашение ипотеки",
+      "attributes": {
+        "amount": "500000 руб.",
+        "date": "01.05.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "new_schedule",
+      "type": "event",
+      "label": "Обновлённый график платежей",
+      "attributes": {
+        "monthly_payment": "64100 руб.",
+        "type": "убывающий"
+      },
+      "ground_truth": false,
+      "episode_hint": 6
+    },
+    {
+      "id": "block_tx",
+      "type": "event",
+      "label": "Транзакция под 115-ФЗ",
+      "attributes": {
+        "amount": "450000 руб.",
+        "date": "14.03.2024",
+        "status": "Приостановлено"
+      },
+      "ground_truth": false,
+      "episode_hint": 5
+    },
+    {
+      "id": "parent_kulakova",
+      "type": "person",
+      "label": "Кулакова Фёкла Альбертовна",
+      "attributes": {
+        "address": "г. Санкт-Петербург, Невский пр., д. 12, кв. 5"
+      },
+      "ground_truth": false,
+      "episode_hint": 4
+    },
+    {
+      "id": "tax_deduction",
+      "type": "event",
+      "label": "Налоговый вычет ФНС",
+      "attributes": {
+        "amount": "260000 руб.",
+        "date": "20.08.2023"
+      },
+      "ground_truth": false,
+      "episode_hint": 8
+    },
+    {
+      "id": "overdraft",
+      "type": "product",
+      "label": "Лимит овердрафта",
+      "attributes": {
+        "amount": "150000 руб.",
+        "rate": "24.9%"
+      },
+      "ground_truth": false,
+      "episode_hint": 7
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "АО ВТБ",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "organization",
+      "label": "Национальное Бюро Кредитных Историй",
+      "attributes": {
+        "type": "кредитное_бюро",
+        "status": "активно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "organization",
+      "label": "Нотариальная контора №12",
+      "attributes": {
+        "type": "нотариат",
+        "license": "77-00-12345"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "organization",
+      "label": "Автомир-Юг",
+      "attributes": {
+        "type": "дилер",
+        "location": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "АльфаСтрахование",
+      "attributes": {
+        "type": "страховая",
+        "product": "имущество"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "organization",
+      "label": "ФНС России",
+      "attributes": {
+        "type": "налоговая",
+        "code": "7701"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "organization",
+      "label": "Отдел техподдержки",
+      "attributes": {
+        "type": "it_департамент",
+        "service": "app_maintenance"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "organization",
+      "label": "SmartFinance Ltd",
+      "attributes": {
+        "type": "вендор",
+        "name": "FamilyDashboard"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "organization",
+      "label": "Кредитный отдел ВТБ",
+      "attributes": {
+        "type": "подразделение",
+        "function": "loan_approval"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "organization",
+      "label": "ГИБДД",
+      "attributes": {
+        "type": "госструктура",
+        "jurisdiction": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "organization",
+      "label": "Система быстрых платежей",
+      "attributes": {
+        "type": "платежная_система",
+        "operator": "ЦБ РФ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "person",
+      "label": "Прокофий Феофанович Кононов",
+      "attributes": {
+        "role": "супруг_поручитель",
+        "marital_status": "женат"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "person",
+      "label": "Артём Прокофьевич Кононов",
+      "attributes": {
+        "age": "16",
+        "role": "студент"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "person",
+      "label": "Петрова Елена Сергеевна",
+      "attributes": {
+        "role": "нотариус",
+        "cert": "valid"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "person",
+      "label": "Сидоров Алексей Иванович",
+      "attributes": {
+        "role": "кредитный_менеджер",
+        "level": "senior"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "person",
+      "label": "Иванова Мария Дмитриевна",
+      "attributes": {
+        "role": "аналитик_рисков",
+        "dept": "scoring"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "person",
+      "label": "Козлова Наталья Викторовна",
+      "attributes": {
+        "role": "кадровик",
+        "company": "TechCorp"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "person",
+      "label": "Волков Дмитрий Олегович",
+      "attributes": {
+        "role": "сисадмин",
+        "shift": "night"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "person",
+      "label": "Белова Ирина Петровна",
+      "attributes": {
+        "role": "соседка",
+        "contact": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "person",
+      "label": "Громов Сергей Павлович",
+      "attributes": {
+        "role": "страховой_агент",
+        "agency": "Alfa"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "person",
+      "label": "Морозов Виктор Андреевич",
+      "attributes": {
+        "role": "инспектор",
+        "unit": "tax_control"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "person",
+      "label": "Лебедев Павел Игоревич",
+      "attributes": {
+        "role": "разработчик",
+        "stack": "Java"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "person",
+      "label": "Соколова Анна Михайловна",
+      "attributes": {
+        "role": "финансовый_консультант",
+        "exp": "5y"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "person",
+      "label": "Кузнецов Олег Васильевич",
+      "attributes": {
+        "role": "менеджер_продаж",
+        "dept": "autos"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "document",
+      "label": "Копия ипотечного договора",
+      "attributes": {
+        "format": "pdf",
+        "pages": "42"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "document",
+      "label": "Заявка на рефинансирование",
+      "attributes": {
+        "version": "v2.1",
+        "status": "submitted"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "document",
+      "label": "Кредитная история",
+      "attributes": {
+        "score": "845",
+        "bureau": "NCB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "document",
+      "label": "Справка о доходах",
+      "attributes": {
+        "period": "Q4_2023",
+        "form": "2-НДФЛ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "document",
+      "label": "Свидетельство о браке",
+      "attributes": {
+        "issue_date": "15.08.2015",
+        "registry": "ZAGS"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "document",
+      "label": "Договор купли-продажи авто",
+      "attributes": {
+        "vin": "XTA21...",
+        "price": "2800000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "document",
+      "label": "Страховой полис",
+      "attributes": {
+        "type": "property",
+        "coverage": "full"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "document",
+      "label": "Декларация 3-НДФЛ",
+      "attributes": {
+        "year": "2022",
+        "file_size": "2.1MB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "document",
+      "label": "Соглашение об овердрафте",
+      "attributes": {
+        "limit": "150000",
+        "rate": "24.9%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "document",
+      "label": "Уведомление о блокировке",
+      "attributes": {
+        "regulation": "115-ФЗ",
+        "status": "hold"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "document",
+      "label": "Лог push-уведомлений",
+      "attributes": {
+        "channel": "mobile",
+        "count": "15"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "document",
+      "label": "Запрос ЭЦП",
+      "attributes": {
+        "status": "pending",
+        "issuer": "CryptoPro"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "document",
+      "label": "Заявление на лимит",
+      "attributes": {
+        "requested": "2000000",
+        "approval": "auto"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "document",
+      "label": "Таблица пересчёта графика",
+      "attributes": {
+        "method": "decreasing",
+        "rows": "120"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "document",
+      "label": "Согласие поручителя",
+      "attributes": {
+        "scope": "financial",
+        "notarized": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "document",
+      "label": "Чек СБП",
+      "attributes": {
+        "id": "SBP-8842",
+        "amount": "1500000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "document",
+      "label": "Выписка по вкладу",
+      "attributes": {
+        "balance": "8200000",
+        "rate": "10.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "document",
+      "label": "Заявка на потребкредит",
+      "attributes": {
+        "purpose": "equipment",
+        "amount": "500000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "document",
+      "label": "Счёт за кружки",
+      "attributes": {
+        "amount": "8500",
+        "provider": "RoboticsLab"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "document",
+      "label": "Журнал сброса пароля",
+      "attributes": {
+        "method": "sms",
+        "attempts": "2"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "document",
+      "label": "Карточка клиента CRM",
+      "attributes": {
+        "segment": "premium",
+        "last_update": "2024-01-30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "document",
+      "label": "Результат АML-проверки",
+      "attributes": {
+        "outcome": "clear",
+        "date": "2024-02-05"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "document",
+      "label": "Версия скоринговой модели",
+      "attributes": {
+        "v": "4.2",
+        "accuracy": "0.89"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "document",
+      "label": "Дашборд семейного бюджета",
+      "attributes": {
+        "sync": "enabled",
+        "widgets": "5"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "document",
+      "label": "Тикет поддержки",
+      "attributes": {
+        "priority": "high",
+        "status": "open"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Проверка кредитной истории",
+      "attributes": {
+        "duration": "3d",
+        "initiator": "VTB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Консультация по кредиту",
+      "attributes": {
+        "mode": "online",
+        "participants": "3"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Подписание поручительства",
+      "attributes": {
+        "location": "office",
+        "witness": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Регистрация ТС в ГИБДД",
+      "attributes": {
+        "authority": "GIBDD",
+        "plate": "A123BC"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Авторизация досрочного погашения",
+      "attributes": {
+        "channel": "app",
+        "auth": "biometric"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Пересчёт графика платежей",
+      "attributes": {
+        "engine": "core",
+        "iterations": "4"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "SMS-верификация",
+      "attributes": {
+        "provider": "MTS",
+        "code_len": "6"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Восстановление доступа",
+      "attributes": {
+        "steps": "3",
+        "time": "14:20"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Обработка запроса лимита",
+      "attributes": {
+        "approval": "auto",
+        "risk": "low"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Перевод налогового вычета",
+      "attributes": {
+        "source": "FNS",
+        "dest": "acc"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Активация овердрафта",
+      "attributes": {
+        "trigger": "overdraft",
+        "limit": "150k"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Заморозка транзакции",
+      "attributes": {
+        "reason": "suspicious",
+        "amt": "450000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Семинар по оптимизации",
+      "attributes": {
+        "topic": "budget",
+        "attendees": "2"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Передача автомобиля",
+      "attributes": {
+        "condition": "new",
+        "mileage": "0"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Размещение первоначального взноса",
+      "attributes": {
+        "term": "1y",
+        "guarantee": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Изменение условий договора",
+      "attributes": {
+        "clause": "prepay",
+        "penalty": "none"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Ошибка авторизации",
+      "attributes": {
+        "code": "403",
+        "module": "portal"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Технические работы",
+      "attributes": {
+        "window": "02:00-04:00",
+        "impact": "payments"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "event",
+      "label": "Повышение лимита СБП",
+      "attributes": {
+        "effective": "immediate",
+        "max": "3000000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Налоговая проверка",
+      "attributes": {
+        "status": "completed",
+        "days": "14"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "event",
+      "label": "Использование овердрафта",
+      "attributes": {
+        "amount": "50000",
+        "repay": "30d"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Синхронизация бюджета",
+      "attributes": {
+        "result": "fail",
+        "retry": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_75",
+      "type": "event",
+      "label": "Проверка поручителя",
+      "attributes": {
+        "verdict": "approved",
+        "checks": "3"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "product",
+      "label": "Текущий счёт Сбербанк",
+      "attributes": {
+        "currency": "RUB",
+        "type": "checking"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "product",
+      "label": "Эскроу-счёт ВТБ",
+      "attributes": {
+        "currency": "RUB",
+        "type": "escrow"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "product",
+      "label": "Шлюз СБП",
+      "attributes": {
+        "fee": "0%",
+        "speed": "instant"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_79",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {
+        "version": "5.4.1",
+        "os": "Android"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_81",
+      "type": "product",
+      "label": "Накопительный вклад",
+      "attributes": {
+        "rate": "10.5%",
+        "min_sum": "10000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_82",
+      "type": "product",
+      "label": "Полис страхования",
+      "attributes": {
+        "provider": "Alfa",
+        "term": "1y"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_83",
+      "type": "product",
+      "label": "Сервис налоговых вычетов",
+      "attributes": {
+        "feature": "auto_fill",
+        "gov_api": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_84",
+      "type": "product",
+      "label": "Лимит овердрафта",
+      "attributes": {
+        "interest": "24.9%",
+        "avail": "150000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_85",
+      "type": "product",
+      "label": "Калькулятор графика",
+      "attributes": {
+        "input": "income",
+        "output": "schedule"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_86",
+      "type": "product",
+      "label": "CRM-система",
+      "attributes": {
+        "vendor": "Salesforce",
+        "db": "cloud"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_87",
+      "type": "product",
+      "label": "Скоринговый движок",
+      "attributes": {
+        "model": "XGBoost",
+        "latency": "<50ms"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_88",
+      "type": "product",
+      "label": "Модуль АML",
+      "attributes": {
+        "threshold": "high",
+        "scan": "real-time"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_89",
+      "type": "product",
+      "label": "Дашборд семьи",
+      "attributes": {
+        "sync_freq": "daily",
+        "api": "REST"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_90",
+      "type": "product",
+      "label": "Система тикетов",
+      "attributes": {
+        "sla": "24h",
+        "queue": "tech"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_91",
+      "type": "organization",
+      "label": "Отделение Тверская",
+      "attributes": {
+        "floor": "2",
+        "parking": "no"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_92",
+      "type": "organization",
+      "label": "Отделение Невский пр.",
+      "attributes": {
+        "floor": "1",
+        "access": "24/7"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_93",
+      "type": "organization",
+      "label": "Квартира Королёва",
+      "attributes": {
+        "status": "mortgaged",
+        "area": "65m2"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_94",
+      "type": "organization",
+      "label": "Салон Автомир",
+      "attributes": {
+        "zone": "south",
+        "showroom": "yes"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_95",
+      "type": "organization",
+      "label": "Кабинет нотариуса",
+      "attributes": {
+        "secure": "yes",
+        "video": "recorded"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_96",
+      "type": "organization",
+      "label": "Дата-центр",
+      "attributes": {
+        "tier": "III",
+        "cooling": "liquid"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_97",
+      "type": "organization",
+      "label": "Дом",
+      "attributes": {
+        "city": "Москва",
+        "zip": "123456"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_99",
+      "type": "organization",
+      "label": "Школа робототехники",
+      "attributes": {
+        "program": "STEM",
+        "hours": "16:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_100",
+      "type": "organization",
+      "label": "Пункт ГИБДД",
+      "attributes": {
+        "queue": "short",
+        "docs": "required"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_101",
+      "type": "organization",
+      "label": "Налоговая инспекция",
+      "attributes": {
+        "appointment": "booked",
+        "wait": "15m"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_has_mortgage",
+      "source": "person_anna",
+      "target": "mortgage_sber",
+      "relation": "resulted_in",
+      "attributes": {
+        "since": "12.06.2021"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_refinancing",
+      "source": "person_anna",
+      "target": "refinancing_vtb",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_prepays_mortgage",
+      "source": "person_anna",
+      "target": "early_repayment",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "500000 руб.",
+        "date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_old_rate",
+      "source": "mortgage_sber",
+      "target": "person_anna",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "10.9%"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_old_payment",
+      "source": "mortgage_sber",
+      "target": "person_anna",
+      "relation": "paid",
+      "attributes": {
+        "monthly_payment": "68450 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_anna",
+      "target": "ctx_node_26",
+      "relation": "owns",
+      "attributes": {
+        "date": "12.06.2021",
+        "copy": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_anna",
+      "target": "ctx_node_27",
+      "relation": "submitted",
+      "attributes": {
+        "date": "10.02.2024",
+        "channel": "app"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_anna",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.02.2024",
+        "bureau": "NCB"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_anna",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "period": "Q4_2023",
+        "issuer": "HR"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_anna",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "guarantor_verification"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "person_anna",
+      "target": "ctx_node_31",
+      "relation": "signed",
+      "attributes": {
+        "role": "buyer_representative"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_anna",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy_id": "AF-9921",
+        "beneficiary": "bank"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_anna",
+      "target": "ctx_node_33",
+      "relation": "applied_for",
+      "attributes": {
+        "year": "2022",
+        "refund": "260000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_anna",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024",
+        "limit": "150000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_anna",
+      "target": "ctx_node_35",
+      "relation": "received",
+      "attributes": {
+        "date": "14.03.2024",
+        "alert_type": "compliance"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_anna",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "real_time",
+        "channels": [
+          "push",
+          "sms"
+        ]
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_anna",
+      "target": "ctx_node_37",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.06.2021",
+        "status": "pending"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_anna",
+      "target": "ctx_node_38",
+      "relation": "approved",
+      "attributes": {
+        "date": "05.02.2024",
+        "new_limit": "2000000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_anna",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "method": "decreasing",
+        "savings": "4350"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_anna",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "signatory": "husband",
+        "notarized": "yes"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_anna",
+      "target": "ctx_node_41",
+      "relation": "caused",
+      "attributes": {
+        "date": "18.04.2024",
+        "amount": "1500000",
+        "receiver": "son"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_anna",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "balance": "8200000",
+        "owner": "husband"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_anna",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "applicant": "husband",
+        "purpose": "work_equipment"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_anna",
+      "target": "ctx_node_44",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.02.2024",
+        "amount": "8500",
+        "recipient": "son"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_anna",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {
+        "date": "10.02.2024",
+        "reason": "auth_fail"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_anna",
+      "target": "ctx_node_46",
+      "relation": "changed_to",
+      "attributes": {
+        "segment": "premium",
+        "last_visit": "2024-01-30"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_anna",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.02.2024",
+        "risk_level": "low"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_anna",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "4.2",
+        "score_impact": "+12"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_anna",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "sync_status": "failed",
+        "widgets": "5"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "person_anna",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "priority": "high",
+        "category": "app_access"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "mortgage_sber",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "version": "original",
+        "pages": "42"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "mortgage_sber",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "factor": "history_length",
+        "weight": "0.3"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "mortgage_sber",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "joint_liability"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "mortgage_sber",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "property_insurance",
+        "mandatory": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "mortgage_sber",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "deduction": "260000",
+        "net_cost": "lower"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "mortgage_sber",
+      "target": "ctx_node_39",
+      "relation": "changed_to",
+      "attributes": {
+        "action": "recalculate",
+        "result": "decreasing"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "mortgage_sber",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "SBP",
+        "trace": "SBP-8842"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "mortgage_sber",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "CUST-8842",
+        "tier": "gold"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "mortgage_sber",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {
+        "check_type": "initial",
+        "duration": "3d"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "mortgage_sber",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "early_prepay",
+        "impact": "term_reduction"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "mortgage_sber",
+      "target": "ctx_node_66",
+      "relation": "cancelled",
+      "attributes": {
+        "clause": "prepay_penalty_waiver"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "mortgage_sber",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "40817810XXXXXXX",
+        "debit_day": "25"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "mortgage_sber",
+      "target": "ctx_node_93",
+      "relation": "resulted_in",
+      "attributes": {
+        "address": "Королёва 15-42",
+        "valuation": "9200000"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "mortgage_sber",
+      "target": "ctx_node_91",
+      "relation": "resulted_in",
+      "attributes": {
+        "branch": "Tverskaya",
+        "manager": "Sidrov_AI"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "form": "vtb_refin_v2",
+        "status": "processing"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "freshness": "30d",
+        "score_min": "800"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "income_stability"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "rate_diff": "+14%",
+        "strategy": "consolidation"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "bridge_funding",
+        "limit": "2M"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "input": "old_balance",
+        "output": "new_schedule"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "guarantor_required": "yes",
+        "role": "spouse"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "rate": "14.9%",
+        "purpose": "equipment"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "REF-2024-02",
+        "stage": "underwriting"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {
+        "check_type": "enhanced",
+        "duration": "5d"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {
+        "mode": "video",
+        "participants": "4"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "asset": "mortgaged_property",
+        "authority": "GIBDD"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "decision": "auto_approve",
+        "risk": "medium"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_66",
+      "relation": "changed_to",
+      "attributes": {
+        "clause": "interest_rate_adjustment",
+        "new_val": "16.5%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_77",
+      "relation": "paid",
+      "attributes": {
+        "type": "escrow",
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_91",
+      "relation": "resulted_in",
+      "attributes": {
+        "branch": "VTB_HQ",
+        "desk": "corporate"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "car_loan",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "agreement": "DKP-K5-2024",
+        "vin": "XTA21"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "car_loan",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy": "AUTO-INS-99",
+        "coverage": "CASCO"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "car_loan",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "guarantor": "husband",
+        "liability": "joint"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "car_loan",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "down_payment": "1500000",
+        "channel": "SBP"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "car_loan",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "AUTO-2024-03",
+        "status": "active"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "car_loan",
+      "target": "ctx_node_53",
+      "relation": "signed",
+      "attributes": {
+        "location": "notary_office",
+        "witness": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "car_loan",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "plate": "A123BC",
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "car_loan",
+      "target": "ctx_node_64",
+      "relation": "submitted",
+      "attributes": {
+        "condition": "new",
+        "mileage": "0"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "car_loan",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {
+        "deposit": "1500000",
+        "guarantee": "bank"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "car_loan",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {
+        "limit_increase": "3M",
+        "date": "18.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "car_loan",
+      "target": "ctx_node_78",
+      "relation": "paid",
+      "attributes": {
+        "gateway": "SBP",
+        "fee": "0%"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "car_loan",
+      "target": "ctx_node_94",
+      "relation": "resulted_in",
+      "attributes": {
+        "dealer": "Automir-Yug",
+        "lot": "K5-Black"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "car_loan",
+      "target": "ctx_node_100",
+      "relation": "resulted_in",
+      "attributes": {
+        "inspection": "VIN_check",
+        "result": "pass"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "early_repayment",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "500000",
+        "remaining": "7120000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "early_repayment",
+      "target": "ctx_node_39",
+      "relation": "caused",
+      "attributes": {
+        "action": "recalc",
+        "method": "decreasing"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "early_repayment",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "source": "tax_refund",
+        "trace": "SBP-8842"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "early_repayment",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "PREPAY-01-05",
+        "type": "partial"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "early_repayment",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "app",
+        "auth": "biometric"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "early_repayment",
+      "target": "ctx_node_56",
+      "relation": "caused",
+      "attributes": {
+        "impact": "term_shortening",
+        "months_saved": "8"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "early_repayment",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {
+        "clause": "penalty_free_after_1y",
+        "date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "early_repayment",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "40817810XXXXXXX",
+        "timestamp": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "early_repayment",
+      "target": "ctx_node_93",
+      "relation": "resulted_in",
+      "attributes": {
+        "percent_remaining": "83.7%",
+        "status": "active"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "new_schedule",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "table": "recalc_v2",
+        "rows": "120"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "new_schedule",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "widget": "payment_forecast",
+        "sync": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "new_schedule",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "engine": "core",
+        "iterations": "4"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "new_schedule",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {
+        "session": "budget_workshop",
+        "attendees": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "new_schedule",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {
+        "result": "fail",
+        "retry": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "new_schedule",
+      "target": "ctx_node_85",
+      "relation": "resulted_in",
+      "attributes": {
+        "tool": "sched_calc",
+        "input": "income"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "new_schedule",
+      "target": "ctx_node_90",
+      "relation": "resulted_in",
+      "attributes": {
+        "ticket": "SUP-8842",
+        "status": "resolved"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "block_tx",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "notice_type": "compliance_alert",
+        "status": "hold"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "block_tx",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "aml_scan": "high_risk",
+        "outcome": "manual_review"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "block_tx",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "priority": "critical",
+        "assignee": "compliance_team"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "block_tx",
+      "target": "ctx_node_62",
+      "relation": "signed",
+      "attributes": {
+        "reason": "suspicious_pattern",
+        "amt": "450000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "block_tx",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {
+        "overlap": "od_drawdown",
+        "conflict": "liquidity"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "block_tx",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "module": "AML_monitor",
+        "threshold": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "block_tx",
+      "target": "ctx_node_90",
+      "relation": "resulted_in",
+      "attributes": {
+        "ticket": "AML-2024-03",
+        "sla": "24h"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "block_tx",
+      "target": "ctx_node_96",
+      "relation": "resulted_in",
+      "attributes": {
+        "dc": "central",
+        "audit": "enabled"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "parent_kulakova",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship": "mother_in_law",
+        "address_match": "SPb"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "parent_kulakova",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "account_type": "deposit",
+        "alert": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "parent_kulakova",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "family_viewer",
+        "sync": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "parent_kulakova",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "support_ticket",
+        "topic": "budget_sync"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "parent_kulakova",
+      "target": "ctx_node_92",
+      "relation": "resulted_in",
+      "attributes": {
+        "distance": "2km",
+        "branch": "Nevarsky"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "parent_kulakova",
+      "target": "ctx_node_97",
+      "relation": "resulted_in",
+      "attributes": {
+        "freq": "weekly",
+        "purpose": "childcare"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "tax_deduction",
+      "target": "ctx_node_33",
+      "relation": "applied_for",
+      "attributes": {
+        "decl_type": "3-NDFL",
+        "year": "2022"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "tax_deduction",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "TAX-2023-08",
+        "status": "approved"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "tax_deduction",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "source": "FNS",
+        "dest": "acc"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "tax_deduction",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "audit_days": "14",
+        "verdict": "clean"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "tax_deduction",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "tool": "gov_api",
+        "auto_fill": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "tax_deduction",
+      "target": "ctx_node_101",
+      "relation": "submitted",
+      "attributes": {
+        "office": "FNS_7701",
+        "wait": "15m"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "overdraft",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "limit": "150000",
+        "rate": "24.9%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "overdraft",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "trigger": "manual",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "overdraft",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "50000",
+        "repay_term": "30d"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "overdraft",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "40817810XXXXXXX",
+        "type": "checking"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "overdraft",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "facility_type": "line_of_credit",
+        "avail": "100000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "overdraft",
+      "target": "ctx_node_90",
+      "relation": "resulted_in",
+      "attributes": {
+        "system": "transaction_filter",
+        "alert": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_1",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "dept": "credit",
+        "head": "Sidrov_AI"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_1",
+      "target": "ctx_node_77",
+      "relation": "resulted_in",
+      "attributes": {
+        "product": "escrow",
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "ctx_node_2",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "account_type": "checking",
+        "brand": "Sber"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "ctx_node_2",
+      "target": "ctx_node_91",
+      "relation": "resulted_in",
+      "attributes": {
+        "branch": "Tverskaya",
+        "floor": "2"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_3",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "report_type": "full_history",
+        "freq": "monthly"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_3",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "list": "sanctions",
+        "match": "none"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_4",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "notary": "Petrova_Elena",
+        "license": "valid"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_4",
+      "target": "ctx_node_95",
+      "relation": "resulted_in",
+      "attributes": {
+        "office": "secured",
+        "video": "recorded"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "ctx_node_5",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "manager": "Kuznetsov_Oleg",
+        "dept": "autos"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "ctx_node_5",
+      "target": "ctx_node_94",
+      "relation": "resulted_in",
+      "attributes": {
+        "space": "showroom",
+        "parking": "yes"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "ctx_node_6",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "agent": "Gromov_Sergey",
+        "region": "Moscow"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "ctx_node_6",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy_type": "property",
+        "term": "1y"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_123",
+      "source": "ctx_node_7",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "inspector": "Morozov_Viktor",
+        "unit": "control"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_124",
+      "source": "ctx_node_7",
+      "target": "ctx_node_101",
+      "relation": "resulted_in",
+      "attributes": {
+        "office_code": "7701",
+        "queue": "short"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_125",
+      "source": "ctx_node_8",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "admin": "Volkov_Dmitry",
+        "shift": "night"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_126",
+      "source": "ctx_node_8",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "window": "02:00-04:00",
+        "impact": "payments"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_127",
+      "source": "ctx_node_9",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "dev": "Lebedev_Pavel",
+        "stack": "Java"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_128",
+      "source": "ctx_node_9",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "dash_type": "family",
+        "sync": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_129",
+      "source": "ctx_node_10",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "manager": "Sidrov_AI",
+        "level": "senior"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_130",
+      "source": "ctx_node_10",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {
+        "meeting_type": "consultation",
+        "mode": "online"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_131",
+      "source": "ctx_node_11",
+      "target": "ctx_node_100",
+      "relation": "resulted_in",
+      "attributes": {
+        "station": "GIBDD_Msk",
+        "queue": "short"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_132",
+      "source": "ctx_node_11",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "vehicle": "K5",
+        "plate": "A123BC"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_133",
+      "source": "ctx_node_12",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {
+        "gateway": "SBP",
+        "fee": "0%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_134",
+      "source": "ctx_node_12",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "receipt": "SBP-8842",
+        "trace": "instant"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_135",
+      "source": "ctx_node_13",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "notary": "Petrova_Elena",
+        "doc": "guarantor_consent"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_136",
+      "source": "ctx_node_13",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "hr_contact": "Kozlova_Natalia",
+        "payroll": "monthly"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_137",
+      "source": "ctx_node_13",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "advisor": "Sokolova_Anna",
+        "topic": "budget"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_138",
+      "source": "ctx_node_13",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "loan_amount": "500000",
+        "purpose": "equipment"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_139",
+      "source": "ctx_node_13",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {
+        "reset_type": "password",
+        "method": "sms"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_140",
+      "source": "ctx_node_13",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {
+        "check_type": "background",
+        "verdict": "approved"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_141",
+      "source": "ctx_node_14",
+      "target": "ctx_node_44",
+      "relation": "cancelled",
+      "attributes": {
+        "club": "robotics",
+        "fee": "8500"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_142",
+      "source": "ctx_node_14",
+      "target": "ctx_node_99",
+      "relation": "resulted_in",
+      "attributes": {
+        "school": "RoboticsLab",
+        "program": "STEM"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_143",
+      "source": "ctx_node_15",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "guarantor_sign",
+        "location": "office"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_144",
+      "source": "ctx_node_16",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {
+        "meeting_type": "loan_discussion",
+        "participants": "3"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_145",
+      "source": "ctx_node_17",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "check_type": "scoring",
+        "duration": "3d"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_146",
+      "source": "ctx_node_17",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "XGBoost_v4.2",
+        "accuracy": "0.89"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_147",
+      "source": "ctx_node_18",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc_type": "2-NDFL",
+        "period": "Q4_2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_148",
+      "source": "ctx_node_19",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "error_code": "403",
+        "module": "portal"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_149",
+      "source": "ctx_node_19",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "maintenance_window": "02:00-04:00",
+        "impact": "low"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_150",
+      "source": "ctx_node_20",
+      "target": "ctx_node_97",
+      "relation": "resulted_in",
+      "attributes": {
+        "distance": "50m",
+        "building": "same"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_151",
+      "source": "ctx_node_21",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy_type": "property",
+        "coverage": "full"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_152",
+      "source": "ctx_node_22",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "case_id": "TAX-2023",
+        "status": "completed"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_153",
+      "source": "ctx_node_23",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "app_version": "5.4.1",
+        "os": "Android"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_154",
+      "source": "ctx_node_24",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {
+        "workshop_topic": "budget_optimization",
+        "attendees": "2"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_155",
+      "source": "ctx_node_25",
+      "target": "ctx_node_64",
+      "relation": "submitted",
+      "attributes": {
+        "vehicle": "K5",
+        "condition": "new"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_156",
+      "source": "ctx_node_26",
+      "target": "ctx_node_93",
+      "relation": "resulted_in",
+      "attributes": {
+        "property": "Corolova_15-42",
+        "pages": "42"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_157",
+      "source": "ctx_node_27",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {
+        "check_type": "enhanced",
+        "duration": "5d"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_158",
+      "source": "ctx_node_28",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "scoring_v4.2",
+        "score": "845"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_159",
+      "source": "ctx_node_29",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_field": "income_verified",
+        "date": "2024-01-30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_160",
+      "source": "ctx_node_30",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc_type": "marriage_cert",
+        "purpose": "guarantor"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_161",
+      "source": "ctx_node_31",
+      "target": "ctx_node_94",
+      "relation": "resulted_in",
+      "attributes": {
+        "dealer": "Automir-Yug",
+        "vin": "XTA21"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_162",
+      "source": "ctx_node_32",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy_id": "AF-9921",
+        "provider": "Alfa"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_163",
+      "source": "ctx_node_33",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "tool": "gov_api",
+        "auto_fill": "yes"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_164",
+      "source": "ctx_node_34",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "limit": "150000",
+        "rate": "24.9%"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_165",
+      "source": "ctx_node_35",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "module": "AML_monitor",
+        "threshold": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_166",
+      "source": "ctx_node_36",
+      "target": "ctx_node_79",
+      "relation": "submitted",
+      "attributes": {
+        "app_version": "5.4.1",
+        "channel": "push"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_167",
+      "source": "ctx_node_37",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "cert_store": "CryptoPro",
+        "status": "pending"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_168",
+      "source": "ctx_node_38",
+      "target": "ctx_node_70",
+      "relation": "approved",
+      "attributes": {
+        "new_limit": "2000000",
+        "effective": "immediate"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_169",
+      "source": "ctx_node_39",
+      "target": "ctx_node_85",
+      "relation": "resulted_in",
+      "attributes": {
+        "tool": "sched_calc",
+        "input": "income"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_170",
+      "source": "ctx_node_40",
+      "target": "ctx_node_95",
+      "relation": "signed",
+      "attributes": {
+        "notary_office": "secured",
+        "witness": "yes"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_171",
+      "source": "ctx_node_41",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {
+        "gateway": "SBP",
+        "fee": "0%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_172",
+      "source": "ctx_node_42",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "product": "deposit",
+        "rate": "10.5%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_173",
+      "source": "ctx_node_43",
+      "target": "ctx_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "dept": "credit",
+        "amount": "500000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_174",
+      "source": "ctx_node_44",
+      "target": "ctx_node_99",
+      "relation": "paid",
+      "attributes": {
+        "school": "RoboticsLab",
+        "amount": "8500"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_175",
+      "source": "ctx_node_45",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "app_version": "5.4.1",
+        "method": "sms"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_176",
+      "source": "ctx_node_46",
+      "target": "ctx_node_86",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "CUST-8842",
+        "last_update": "2024-01-30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_177",
+      "source": "ctx_node_47",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "module": "AML_monitor",
+        "outcome": "clear"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_178",
+      "source": "ctx_node_48",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "XGBoost",
+        "latency": "<50ms"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_179",
+      "source": "ctx_node_49",
+      "target": "ctx_node_89",
+      "relation": "cancelled",
+      "attributes": {
+        "dash_type": "family",
+        "sync_freq": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_180",
+      "source": "ctx_node_50",
+      "target": "ctx_node_90",
+      "relation": "resulted_in",
+      "attributes": {
+        "ticket_id": "SUP-8842",
+        "sla": "24h"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_181",
+      "source": "ctx_node_51",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "engine": "scoring_core",
+        "duration": "3d"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_182",
+      "source": "ctx_node_52",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "platform": "mobile_app",
+        "mode": "video"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_183",
+      "source": "ctx_node_53",
+      "target": "ctx_node_95",
+      "relation": "resulted_in",
+      "attributes": {
+        "location": "notary_office",
+        "secure": "yes"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_184",
+      "source": "ctx_node_54",
+      "target": "ctx_node_100",
+      "relation": "resulted_in",
+      "attributes": {
+        "station": "GIBDD_Msk",
+        "queue": "short"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_185",
+      "source": "ctx_node_55",
+      "target": "ctx_node_79",
+      "relation": "followed_by",
+      "attributes": {
+        "app_version": "5.4.1",
+        "method": "biometric"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_186",
+      "source": "ctx_node_56",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "engine": "core",
+        "iterations": "4"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_187",
+      "source": "ctx_node_57",
+      "target": "ctx_node_79",
+      "relation": "caused",
+      "attributes": {
+        "app_version": "5.4.1",
+        "provider": "MTS"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_188",
+      "source": "ctx_node_58",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "app_version": "5.4.1",
+        "steps": "3"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_189",
+      "source": "ctx_node_59",
+      "target": "ctx_node_86",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "LIMIT-REQ",
+        "decision": "auto_approve"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_190",
+      "source": "ctx_node_60",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "tool": "gov_api",
+        "source": "FNS"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_191",
+      "source": "ctx_node_61",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "facility": "overdraft",
+        "limit": "150000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_192",
+      "source": "ctx_node_62",
+      "target": "ctx_node_88",
+      "relation": "signed",
+      "attributes": {
+        "module": "AML_monitor",
+        "reason": "suspicious"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_193",
+      "source": "ctx_node_63",
+      "target": "ctx_node_89",
+      "relation": "resulted_in",
+      "attributes": {
+        "dash_type": "family",
+        "topic": "budget"
+      },
+      "ground_truth": false,
+      "valid": true,
+      "stale": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_anna",
+      "target": "early_repayment",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "450000 руб.",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_anna",
+      "target": "mortgage_sber",
+      "relation": "resulted_in",
+      "attributes": {
+        "since": "10,84.2021"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_anna",
+      "target": "refinancing_vtb",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_37",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy_id": "AF-10913,1",
+        "beneficiary": "bank"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "income_stability"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_34",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "limit": "135000",
+        "rate": "24.9%"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "new_schedule",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "engine": "core",
+        "iterations": "3,6"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_21",
+      "target": "ctx_node_101",
+      "relation": "submitted",
+      "attributes": {
+        "office": "FNS_8471,1",
+        "wait": "15m"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "form": "vtb_refin_v1,8",
+        "status": "processing"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_6",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {
+        "check_type": "background",
+        "verdict": "approved"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_36",
+      "target": "ctx_node_66",
+      "relation": "submitted",
+      "attributes": {
+        "app_version": "4,86.1",
+        "channel": "push"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_anna",
+      "target": "ctx_node_96",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "16,57.2021",
+        "status": "pending"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "refinancing_vtb",
+      "target": "car_loan",
+      "relation": "resulted_in",
+      "attributes": {
+        "guarantor_required": "yes",
+        "role": "spouse"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "block_tx",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {
+        "overlap": "od_drawdown",
+        "conflict": "liquidity"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "mortgage_sber",
+      "target": "new_schedule",
+      "relation": "resulted_in",
+      "attributes": {
+        "version": "original",
+        "pages": "37,8"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "mortgage_sber",
+      "target": "overdraft",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "property_insurance",
+        "mandatory": "yes"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_62",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "facility_type": "line_of_credit",
+        "avail": "110000"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "app_version": "4,86.1",
+        "steps": "3"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_100",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "form": "vtb_refin_v2,2",
+        "status": "processing"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_17",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "check_type": "scoring",
+        "duration": "2,7d"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_16",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "meeting_type": "loan_discussion",
+        "participants": "3,3"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "person_anna",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "signatory": "husband",
+        "notarized": "yes"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_35",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "module": "AML_monitor",
+        "threshold": "high"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_91",
+      "relation": "resulted_in",
+      "attributes": {
+        "rate": "13,41%",
+        "purpose": "equipment"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "ctx_node_28",
+      "target": "person_anna",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "11,99%"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "refinancing_vtb",
+      "target": "ctx_node_54",
+      "relation": "caused",
+      "attributes": {
+        "check_type": "enhanced",
+        "duration": "4,5d"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "early_repayment",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "crm_id": "TAX-1820,7-08",
+        "status": "approved"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "ctx_node_53",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "account_type": "checking",
+        "brand": "Sber"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "ctx_node_11",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "station": "GIBDD_Msk",
+        "queue": "short"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_68",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "aml_scan": "high_risk",
+        "outcome": "manual_review"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_42",
+      "target": "ctx_node_90",
+      "relation": "resulted_in",
+      "attributes": {
+        "system": "transaction_filter",
+        "alert": "yes"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_8",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "window": "1,8:00-04:00",
+        "impact": "payments"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_72",
+      "target": "ctx_node_94",
+      "relation": "resulted_in",
+      "attributes": {
+        "dealer": "Automir-Yug",
+        "lot": "K4,5-Black"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_66",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "SBP",
+        "trace": "SBP-9726,2"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_43",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "doc_type": "marriage_cert",
+        "purpose": "guarantor"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "block_tx",
+      "target": "ctx_node_95",
+      "relation": "resulted_in",
+      "attributes": {
+        "overlap": "od_drawdown",
+        "conflict": "liquidity"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_28",
+      "target": "ctx_node_93",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "scoring_v4,62",
+        "score": "845"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "new_schedule",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "ticket": "SUP-7957,8",
+        "status": "resolved"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "person_anna",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "405000 руб.",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "early_repayment",
+      "target": "ctx_node_100",
+      "relation": "resulted_in",
+      "attributes": {
+        "percent_remaining": "75,33%",
+        "status": "active"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "ctx_node_3",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "policy_type": "property",
+        "term": "0,9y"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "ctx_node_87",
+      "target": "person_anna",
+      "relation": "paid",
+      "attributes": {
+        "monthly_payment": "75295 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "ctx_node_17",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "guarantor": "husband",
+        "liability": "joint"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "ctx_node_2",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "sync_status": "failed",
+        "widgets": "5,5"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "new_schedule",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "widget": "payment_forecast",
+        "sync": "daily"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "block_tx",
+      "target": "parent_kulakova",
+      "relation": "resulted_in",
+      "attributes": {
+        "dc": "central",
+        "audit": "enabled"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "ctx_node_55",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "dev": "Lebedev_Pavel",
+        "stack": "Java"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "early_repayment",
+      "target": "ctx_node_68",
+      "relation": "caused",
+      "attributes": {
+        "impact": "term_shortening",
+        "months_saved": "7,2"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "ctx_node_95",
+      "target": "ctx_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "dept": "credit",
+        "amount": "550000"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv47",
+      "source": "ctx_node_7",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "notice_type": "compliance_alert",
+        "status": "hold"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv48",
+      "source": "ctx_node_10",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "36736029XXXXXXX",
+        "type": "checking"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv49",
+      "source": "car_loan",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "deposit": "1650000",
+        "guarantee": "bank"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv50",
+      "source": "ctx_node_64",
+      "target": "early_repayment",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "550000 руб.",
+        "date": "01.05.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_anna",
+      "source": "person_anna",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_mortgage_sber",
+      "source": "mortgage_sber",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_refinancing_vtb",
+      "source": "refinancing_vtb",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_early_repayment",
+      "source": "early_repayment",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

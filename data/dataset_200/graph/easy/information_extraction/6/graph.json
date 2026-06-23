@@ -1,0 +1,1220 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Виктор Филимонович Евсеев начинает процесс рефинансирования ипотеки и сталкивается с первыми препятствиями."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Виктор Филимонович Евсеев активно ищет решения для подтверждения дохода и сталкивается с проблемами кредитной истории."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Виктор Филимонович Евсеев получает одобрение на рефинансирование, но сталкивается с отказом по потребительскому кредиту и делает импульсивные покупки."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE",
+      "type": "person",
+      "label": "Виктор Филимонович Евсеев",
+      "attributes": {
+        "age": 24,
+        "profession": "брейдер",
+        "city": "Токсово",
+        "monthly_income": "230000 руб.",
+        "personality": "импульсивные решения"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_anna_manager",
+      "type": "person",
+      "label": "Анна",
+      "attributes": {
+        "role": "менеджер банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_nazarova_ekaterina",
+      "type": "person",
+      "label": "Назарова Екатерина Макаровна",
+      "attributes": {
+        "relation": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_kharitonova_glafira",
+      "type": "person",
+      "label": "Харитонова Глафира Васильевна",
+      "attributes": {
+        "role": "созаемщик",
+        "monthly_income": "85000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_medvedev_zosima",
+      "type": "person",
+      "label": "Медведев Зосима Демидович",
+      "attributes": {
+        "relation": "партнер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_nesterova_yulia",
+      "type": "person",
+      "label": "Нестерова Юлия Андреевна",
+      "attributes": {
+        "relation": "знакомая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "org_bank_nadezhny",
+      "type": "organization",
+      "label": "Банк Надежный",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "org_insurance_nadezhnaya_zashchita",
+      "type": "organization",
+      "label": "Надежная Защита",
+      "attributes": {
+        "type": "страховая компания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "product_original_mortgage",
+      "type": "product",
+      "label": "Ипотека (оригинальная)",
+      "attributes": {
+        "type": "ипотечный кредит",
+        "address": "г. Казань, ул. Мира, д. 15, кв. 72"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_refinancing",
+      "type": "product",
+      "label": "Рефинансирование ипотеки",
+      "attributes": {
+        "type": "рефинансирование"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_credit_card_bystrye_traty",
+      "type": "product",
+      "label": "Кредитная карта 'Быстрые Траты'",
+      "attributes": {
+        "type": "кредитная карта"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_consumer_loan",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "type": "потребительский кредит",
+        "purpose": "ремонт, кухонная техника"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "product_designer_furniture",
+      "type": "product",
+      "label": "Дизайнерская мебель",
+      "attributes": {
+        "type": "мебель"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "contract_original_mortgage_IP2020",
+      "type": "document",
+      "label": "Договор ипотеки №ИП-2020/08/15-001",
+      "attributes": {
+        "number": "ИП-2020/08/15-001",
+        "date": "15.08.2020",
+        "initial_amount": "7500000 руб.",
+        "interest_rate": "8.9% годовых",
+        "down_payment": "1500000 руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "application_refi_RF2024",
+      "type": "document",
+      "label": "Заявка на рефинансирование №RF-2024/05/05-003",
+      "attributes": {
+        "number": "RF-2024/05/05-003",
+        "date": "05.05.2024",
+        "preliminary_rate": "11.5% годовых",
+        "term": "15 лет"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "account_credit_card_1234",
+      "type": "account",
+      "label": "Кредитная карта 4567 **** **** 1234",
+      "attributes": {
+        "number_mask": "4567 **** **** 1234"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "contract_refi_RF2024",
+      "type": "document",
+      "label": "Договор рефинансирования №RF-2024/05/28-001",
+      "attributes": {
+        "number": "RF-2024/05/28-001",
+        "date": "28.05.2024",
+        "approved_amount": "5230000 руб.",
+        "approved_rate": "11.5% годовых",
+        "approved_term": "15 лет (180 месяцев)",
+        "monthly_payment": "59000 руб.",
+        "commission": "15000 руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "goal_debt_optimization",
+      "type": "event",
+      "label": "Оптимизация кредитных обязательств",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "goal_housing_improvement",
+      "type": "event",
+      "label": "Улучшение жилищных условий",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "amount_VFE_income_230k",
+      "type": "amount",
+      "label": "230 000 руб.",
+      "attributes": {
+        "value": 230000,
+        "currency": "руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "amount_mortgage_debt_0105_5_23M",
+      "type": "amount",
+      "label": "5 230 000 руб. (остаток долга на 01.05.2024)",
+      "attributes": {
+        "value": 5230000,
+        "currency": "руб.",
+        "as_of_date": "01.05.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_monthly_payment_original_65k",
+      "type": "amount",
+      "label": "65 000 руб. (ежемесячный платеж)",
+      "attributes": {
+        "value": 65000,
+        "currency": "руб.",
+        "due_day": 10
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_cc_debt_185k",
+      "type": "amount",
+      "label": "185 000 руб. (задолженность по КК)",
+      "attributes": {
+        "value": 185000,
+        "currency": "руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_consumer_loan_request_1_2M",
+      "type": "amount",
+      "label": "1 200 000 руб. (запрос на потреб. кредит)",
+      "attributes": {
+        "value": 1200000,
+        "currency": "руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_early_repayment_300k",
+      "type": "amount",
+      "label": "300 000 руб. (досрочное погашение)",
+      "attributes": {
+        "value": 300000,
+        "currency": "руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_mortgage_debt_2505_4_93M",
+      "type": "amount",
+      "label": "4 930 000 руб. (остаток долга после ДП)",
+      "attributes": {
+        "value": 4930000,
+        "currency": "руб.",
+        "as_of_date": "25.05.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_monthly_payment_new_59k",
+      "type": "amount",
+      "label": "59 000 руб. (новый ежемесячный платеж)",
+      "attributes": {
+        "value": 59000,
+        "currency": "руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "amount_furniture_cost_250k",
+      "type": "amount",
+      "label": "250 000 руб. (стоимость мебели)",
+      "attributes": {
+        "value": 250000,
+        "currency": "руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "document_income_proof",
+      "type": "document",
+      "label": "Подтверждение дохода (2-НДФЛ/справка банка)",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "document_service_contract_imperia_stilya",
+      "type": "document",
+      "label": "Договор оказания услуг с 'Империя Стиля'",
+      "attributes": {
+        "amount_per_month": "100000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "document_bank_statements_6m",
+      "type": "document",
+      "label": "Выписки с личного счета за 6 месяцев",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "issue_informal_income",
+      "type": "event",
+      "label": "Неформальная часть дохода",
+      "attributes": {
+        "description": "Часть дохода в 230 000 руб. поступает неформально"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "status_cc_overdue",
+      "type": "event",
+      "label": "Просрочка по кредитной карте",
+      "attributes": {
+        "days_overdue": 15,
+        "penalty": "1500 руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "status_refi_approved",
+      "type": "event",
+      "label": "Рефинансирование одобрено",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "status_consumer_loan_refused",
+      "type": "event",
+      "label": "Потребительский кредит отказан",
+      "attributes": {
+        "reason": "высокая долговая нагрузка (>50%)"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_credit_history_check",
+      "type": "event",
+      "label": "Проверка кредитной истории",
+      "attributes": {
+        "date": "16.05.2024",
+        "findings": "3 просрочки по кредитным картам за 6 мес. на 12 000 руб.",
+        "credit_score_impact": "снижение на 50 баллов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_early_repayment",
+      "type": "event",
+      "label": "Частичное досрочное погашение ипотеки",
+      "attributes": {
+        "date": "25.05.2024",
+        "amount_paid": "300000 руб.",
+        "term_reduction": "6 месяцев"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_refi_contract_signing",
+      "type": "event",
+      "label": "Подписание договора рефинансирования",
+      "attributes": {
+        "date": "28.05.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "organization_salon_imperiya_stilya",
+      "type": "organization",
+      "label": "Салон красоты Империя Стиля",
+      "attributes": {
+        "type": "салон красоты"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "organization_bank_bystry_kredit",
+      "type": "organization",
+      "label": "Банк Быстрый Кредит",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_VFE_1",
+      "source": "person_VFE",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_debt_optimization_1",
+      "source": "goal_debt_optimization",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_goal_housing_improvement_1",
+      "source": "goal_housing_improvement",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_product_original_mortgage_1",
+      "source": "product_original_mortgage",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_contract_original_mortgage_IP2020_1",
+      "source": "contract_original_mortgage_IP2020",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_mortgage_debt_0105_5_23M_1",
+      "source": "amount_mortgage_debt_0105_5_23M",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_monthly_payment_original_65k_1",
+      "source": "amount_monthly_payment_original_65k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_org_bank_nadezhny_1",
+      "source": "org_bank_nadezhny",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_application_refi_RF2024_1",
+      "source": "application_refi_RF2024",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_product_refinancing_1",
+      "source": "product_refinancing",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_issue_informal_income_1",
+      "source": "issue_informal_income",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_product_credit_card_bystrye_traty_1",
+      "source": "product_credit_card_bystrye_traty",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_account_credit_card_1234_1",
+      "source": "account_credit_card_1234",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_cc_debt_185k_1",
+      "source": "amount_cc_debt_185k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_status_cc_overdue_1",
+      "source": "status_cc_overdue",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_product_consumer_loan_2",
+      "source": "product_consumer_loan",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_consumer_loan_request_1_2M_2",
+      "source": "amount_consumer_loan_request_1_2M",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_credit_history_check_2",
+      "source": "event_credit_history_check",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_early_repayment_300k_3",
+      "source": "amount_early_repayment_300k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_early_repayment_3",
+      "source": "event_early_repayment",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_status_refi_approved_3",
+      "source": "status_refi_approved",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_mortgage_debt_2505_4_93M_3",
+      "source": "amount_mortgage_debt_2505_4_93M",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_monthly_payment_new_59k_3",
+      "source": "amount_monthly_payment_new_59k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_status_consumer_loan_refused_3",
+      "source": "status_consumer_loan_refused",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_product_designer_furniture_3",
+      "source": "product_designer_furniture",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_amount_furniture_cost_250k_3",
+      "source": "amount_furniture_cost_250k",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_event_refi_contract_signing_3",
+      "source": "event_refi_contract_signing",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_contract_refi_RF2024_3",
+      "source": "contract_refi_RF2024",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_has_income",
+      "source": "person_VFE",
+      "target": "amount_VFE_income_230k",
+      "relation": "contains",
+      "attributes": {
+        "date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_has_goal_debt_optimization",
+      "source": "person_VFE",
+      "target": "goal_debt_optimization",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_has_goal_housing_improvement",
+      "source": "person_VFE",
+      "target": "goal_housing_improvement",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_took_out_mortgage",
+      "source": "person_VFE",
+      "target": "product_original_mortgage",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_original_mortgage_has_contract",
+      "source": "product_original_mortgage",
+      "target": "contract_original_mortgage_IP2020",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "contract_original_mortgage_has_debt",
+      "source": "contract_original_mortgage_IP2020",
+      "target": "amount_mortgage_debt_0105_5_23M",
+      "relation": "contains",
+      "attributes": {
+        "as_of_date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "contract_original_mortgage_has_payment",
+      "source": "contract_original_mortgage_IP2020",
+      "target": "amount_monthly_payment_original_65k",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_applied_for_refi",
+      "source": "person_VFE",
+      "target": "application_refi_RF2024",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "application_refi_to_bank_nadezhny",
+      "source": "application_refi_RF2024",
+      "target": "org_bank_nadezhny",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_consulted_anna",
+      "source": "person_VFE",
+      "target": "person_anna_manager",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.05.2024",
+        "location": "ул. Ленина, д. 10"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_refinancing_requires_income_proof",
+      "source": "product_refinancing",
+      "target": "document_income_proof",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_has_issue_informal_income",
+      "source": "person_VFE",
+      "target": "issue_informal_income",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_has_cc_account",
+      "source": "person_VFE",
+      "target": "account_credit_card_1234",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_cc_is_product",
+      "source": "account_credit_card_1234",
+      "target": "product_credit_card_bystrye_traty",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_cc_has_debt",
+      "source": "account_credit_card_1234",
+      "target": "amount_cc_debt_185k",
+      "relation": "contains",
+      "attributes": {
+        "as_of_date": "07.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "account_cc_has_overdue_status",
+      "source": "account_credit_card_1234",
+      "target": "status_cc_overdue",
+      "relation": "contains",
+      "attributes": {
+        "as_of_date": "07.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_transferred_to_mother",
+      "source": "person_VFE",
+      "target": "person_nazarova_ekaterina",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "08.05.2024",
+        "amount": "25000 руб.",
+        "method": "СБП",
+        "source": "кредитная карта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_discussed_consumer_loan",
+      "source": "person_VFE",
+      "target": "product_consumer_loan",
+      "relation": "contains",
+      "attributes": {
+        "date": "10.05.2024",
+        "with_person": "Анна",
+        "rate": "16.9% годовых",
+        "term": "5 лет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_consumer_loan_requested_amount",
+      "source": "product_consumer_loan",
+      "target": "amount_consumer_loan_request_1_2M",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_kharitonova_is_co_borrower",
+      "source": "person_kharitonova_glafira",
+      "target": "person_VFE",
+      "relation": "contains",
+      "attributes": {
+        "products": [
+          "рефинансирование",
+          "потребительский кредит"
+        ]
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_notified_early_repayment",
+      "source": "person_VFE",
+      "target": "event_early_repayment",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.05.2024",
+        "planned_date": "25.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "org_bank_nadezhny_checked_credit_history",
+      "source": "org_bank_nadezhny",
+      "target": "event_credit_history_check",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_credit_history_check_for_VFE",
+      "source": "event_credit_history_check",
+      "target": "person_VFE",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "application_refi_status_update",
+      "source": "application_refi_RF2024",
+      "target": "document_income_proof",
+      "relation": "contains",
+      "attributes": {
+        "date": "17.05.2024",
+        "status": "требуется повторная подача документов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_provided_contract",
+      "source": "person_VFE",
+      "target": "document_service_contract_imperia_stilya",
+      "relation": "contains",
+      "attributes": {
+        "date": "19.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_provided_bank_statements",
+      "source": "person_VFE",
+      "target": "document_bank_statements_6m",
+      "relation": "contains",
+      "attributes": {
+        "date": "19.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_medvedev_advised_VFE",
+      "source": "person_medvedev_zosima",
+      "target": "person_VFE",
+      "relation": "contains",
+      "attributes": {
+        "date": "20.05.2024",
+        "advice": "рассмотреть меньшую сумму потреб. кредита (500 000 руб.)"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_requested_insurance_quote",
+      "source": "person_VFE",
+      "target": "org_insurance_nadezhnaya_zashchita",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "21.05.2024",
+        "for_product": "product_mortgage_insurance",
+        "preliminary_cost": "25000 руб. в год"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_nesterova_transferred_to_VFE",
+      "source": "person_nesterova_yulia",
+      "target": "person_VFE",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "20.05.2024",
+        "amount": "150000 руб.",
+        "comment": "на ремонт",
+        "method": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "org_bank_nadezhny_approved_refi",
+      "source": "org_bank_nadezhny",
+      "target": "status_refi_approved",
+      "relation": "approved",
+      "attributes": {
+        "date": "22.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "status_refi_approved_details",
+      "source": "status_refi_approved",
+      "target": "contract_refi_RF2024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "org_bank_nadezhny_refused_consumer_loan",
+      "source": "org_bank_nadezhny",
+      "target": "status_consumer_loan_refused",
+      "relation": "rejected",
+      "attributes": {
+        "date": "23.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_early_repayment_reduces_debt",
+      "source": "event_early_repayment",
+      "target": "amount_mortgage_debt_2505_4_93M",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_early_repayment_on_contract",
+      "source": "event_early_repayment",
+      "target": "contract_original_mortgage_IP2020",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_considered_furniture",
+      "source": "person_VFE",
+      "target": "product_designer_furniture",
+      "relation": "contains",
+      "attributes": {
+        "date": "26.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "product_designer_furniture_cost",
+      "source": "product_designer_furniture",
+      "target": "amount_furniture_cost_250k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_signed_refi_contract",
+      "source": "person_VFE",
+      "target": "event_refi_contract_signing",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "event_refi_contract_signing_for_contract",
+      "source": "event_refi_contract_signing",
+      "target": "contract_refi_RF2024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_ordered_furniture",
+      "source": "person_VFE",
+      "target": "product_designer_furniture",
+      "relation": "contains",
+      "attributes": {
+        "date": "29.05.2024",
+        "advance_payment": "100000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_anna_offered_budgeting",
+      "source": "person_anna_manager",
+      "target": "person_VFE",
+      "relation": "contains",
+      "attributes": {
+        "date": "30.05.2024",
+        "advice": "настроить автоплатежи, использовать моб. приложение для бюджетирования"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_VFE_refused_advice",
+      "source": "person_VFE",
+      "target": "person_anna_manager",
+      "relation": "rejected",
+      "attributes": {
+        "date": "30.05.2024",
+        "reason": "занятость, увлеченность новой мебелью"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_organization_salon_imperiya_stilya",
+      "source": "organization_salon_imperiya_stilya",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_organization_bank_bystry_kredit",
+      "source": "organization_bank_bystry_kredit",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

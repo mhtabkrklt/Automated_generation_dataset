@@ -1,0 +1,3250 @@
+{
+  "nodes": [
+    {
+      "id": "person_valentina_andreeva",
+      "type": "person",
+      "label": "Валентина Семеновна Андреева",
+      "attributes": {
+        "age": "23",
+        "gender": "female",
+        "occupation": "Корректор",
+        "income": "278000 руб.",
+        "city": "Красновишерск"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_semeyny_kapital",
+      "type": "product",
+      "label": "Вклад \"Семейный Капитал\"",
+      "attributes": {
+        "amount": "1000000 руб.",
+        "term": "12 месяцев",
+        "capitalization": "ежемесячная"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "bank_product_semeyny_kapital",
+      "type": "product",
+      "label": "Продукт \"Семейный Капитал\"",
+      "attributes": {
+        "type": "срочный вклад",
+        "name": "Семейный Капитал"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "rate_semeyny_kapital_15_0",
+      "type": "rate",
+      "label": "Ставка 15.0%",
+      "attributes": {
+        "value": "15.0%",
+        "date": "01.03.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "rate_semeyny_kapital_14_5",
+      "type": "rate",
+      "label": "Ставка 14.5%",
+      "attributes": {
+        "value": "14.5%",
+        "date": "02.03.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "rate_semeyny_kapital_14_0",
+      "type": "rate",
+      "label": "Ставка 14.0%",
+      "attributes": {
+        "value": "14.0%",
+        "date": "01.04.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "rate_semeyny_kapital_12_5",
+      "type": "rate",
+      "label": "Ставка 12.5%",
+      "attributes": {
+        "value": "12.5%",
+        "date": "10.04.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО 'Надежный Банк'",
+      "attributes": {
+        "type": "коммерческий банк",
+        "лицензия": "№1234 от 10.01.1990"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "person",
+      "label": "Филиппов Ладислав Харламович",
+      "attributes": {
+        "age": "25",
+        "gender": "male",
+        "occupation": "Инженер-программист",
+        "income": "350000 руб.",
+        "city": "Красновишерск"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Вклад 'Надежный'",
+      "attributes": {
+        "amount": "950000 руб.",
+        "term": "12 месяцев",
+        "capitalization": "отсутствует"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "rate",
+      "label": "Ставка 14.3%",
+      "attributes": {
+        "value": "14.3%",
+        "date": "03.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "document",
+      "label": "Онлайн-заявка на вклад 'Семейный Капитал'",
+      "attributes": {
+        "status": "на рассмотрении",
+        "number": "789012",
+        "date": "03.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "document",
+      "label": "Онлайн-заявка на вклад 'Надежный'",
+      "attributes": {
+        "status": "на рассмотрении",
+        "number": "789013",
+        "date": "03.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "organization",
+      "label": "Агентство по страхованию вкладов (АСВ)",
+      "attributes": {
+        "type": "государственная корпорация",
+        "функция": "страхование вкладов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "event",
+      "label": "Информация о страховании вкладов",
+      "attributes": {
+        "максимальная_сумма": "1400000 руб.",
+        "источник": "сотрудник банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "document",
+      "label": "Образец договора вклада 'Семейный Капитал'",
+      "attributes": {
+        "тип": "договор",
+        "статус": "запрошен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "person",
+      "label": "Семенова Наталья Робертовна",
+      "attributes": {
+        "age": "41",
+        "gender": "female",
+        "occupation": "Бухгалтер",
+        "city": "Красновишерск"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "account",
+      "label": "Накопительный счет Валентины Андреевой",
+      "attributes": {
+        "balance": "1580000 руб.",
+        "currency": "руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "event",
+      "label": "Push-уведомление о статусе заявки",
+      "attributes": {
+        "content": "Заявка на вклад 'Семейный Капитал' в процессе обработки",
+        "date": "03.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Кодовое слово для идентификации",
+      "attributes": {
+        "назначение": "безопасность",
+        "статус": "важно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "Изменение ставки по вкладу 'Семейный Капитал'",
+      "attributes": {
+        "old_rate": "15.0%",
+        "new_rate": "14.5%",
+        "date": "02.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "тип": "цифровой",
+        "функция": "банковские операции"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Досрочное расторжение вклада",
+      "attributes": {
+        "аспект": "условия",
+        "результат": "потеря процентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Возможность пополнения вклада",
+      "attributes": {
+        "аспект": "условия",
+        "планы": "дополнительные средства"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Привязка дополнительной карты к вкладу",
+      "attributes": {
+        "аспект": "удобство",
+        "статус": "уточняется"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Одобрение заявки на вклад 'Семейный Капитал'",
+      "attributes": {
+        "date": "04.03.2024",
+        "номер_заявки": "789012"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "SMS-уведомление об одобрении заявки",
+      "attributes": {
+        "content": "Заявка на вклад 'Семейный Капитал' одобрена",
+        "date": "04.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "document",
+      "label": "Договор вклада 'Семейный Капитал'",
+      "attributes": {
+        "номер": "123456-ВК",
+        "дата_подписания": "05.03.2024",
+        "сумма": "1000000 руб.",
+        "ставка": "14.5%",
+        "срок": "12 месяцев",
+        "капитализация": "ежемесячная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Цифровая подпись",
+      "attributes": {
+        "тип": "электронная",
+        "назначение": "подписание документов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "person",
+      "label": "Евфросиния Андреева",
+      "attributes": {
+        "age": "17",
+        "gender": "female",
+        "status": "несовершеннолетняя"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "product",
+      "label": "Накопительный счет 'Детский'",
+      "attributes": {
+        "лимит_пополнения": "50000 руб./мес. (изначально)",
+        "ставка": "12% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Изменение условий по накопительным счетам",
+      "attributes": {
+        "дата": "07.03.2024",
+        "изменение": "лимит пополнения увеличен до 100000 руб./мес."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "product",
+      "label": "Новостная рассылка банка",
+      "attributes": {
+        "тип": "электронная",
+        "функция": "информирование клиентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Одобрение заявки на вклад 'Надежный'",
+      "attributes": {
+        "date": "07.03.2024",
+        "номер_заявки": "789013"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Доверенность на управление счетами",
+      "attributes": {
+        "назначение": "управление средствами",
+        "бенефициар": "Семенова Наталья Робертовна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "document",
+      "label": "Свидетельство о рождении Евфросинии",
+      "attributes": {
+        "тип": "документ",
+        "назначение": "открытие счета"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "document",
+      "label": "Паспорт Валентины Андреевой",
+      "attributes": {
+        "тип": "документ",
+        "назначение": "открытие счета"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Условия снятия средств с накопительного счета",
+      "attributes": {
+        "аспект": "согласие законного представителя",
+        "статус": "уточняется"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Специальные предложения для семейных клиентов",
+      "attributes": {
+        "аспект": "повышенные ставки",
+        "статус": "интерес"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Зачисление средств на вклад 'Семейный Капитал'",
+      "attributes": {
+        "сумма": "1000000 руб.",
+        "дата": "05.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Финансовая грамотность",
+      "attributes": {
+        "аспект": "обучение",
+        "цель": "планирование"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "product",
+      "label": "Личный кабинет интернет-банка",
+      "attributes": {
+        "тип": "цифровой",
+        "функция": "управление счетами"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Дистанционное подписание договора",
+      "attributes": {
+        "оценка": "удобно",
+        "эффективность": "быстро"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Начисление процентов с ежемесячной капитализацией",
+      "attributes": {
+        "аспект": "механизм",
+        "статус": "уточняется"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "document",
+      "label": "Выписка по счету Валентины Андреевой",
+      "attributes": {
+        "тип": "документ",
+        "статус": "запрошена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "product",
+      "label": "Банковский продукт 'Надежный'",
+      "attributes": {
+        "type": "срочный вклад",
+        "name": "Надежный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "person",
+      "label": "Сотрудник банка (общий)",
+      "attributes": {
+        "роль": "консультант",
+        "организация": "ПАО 'Надежный Банк'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Финансовая цель Валентины Андреевой",
+      "attributes": {
+        "цель": "стабильное будущее",
+        "метод": "надежные сбережения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Беспокойство Валентины Андреевой",
+      "attributes": {
+        "причина": "изменение ставки",
+        "степень": "легкое"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Финансовое планирование",
+      "attributes": {
+        "аспект": "семейный бюджет",
+        "цель": "накопления"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Условия вклада",
+      "attributes": {
+        "аспект": "проценты",
+        "аспект2": "срок"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Дистанционное обслуживание",
+      "attributes": {
+        "аспект": "удобство",
+        "аспект2": "экономия времени"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Безопасность банковских операций",
+      "attributes": {
+        "аспект": "идентификация",
+        "аспект2": "защита данных"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Изучение предложений банка",
+      "attributes": {
+        "дата": "01.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Решение продолжить оформление вклада",
+      "attributes": {
+        "дата": "02.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Подача онлайн-заявки Валентиной Андреевой",
+      "attributes": {
+        "дата": "03.03.2024",
+        "продукт": "Семейный Капитал"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Подача онлайн-заявки Филипповым",
+      "attributes": {
+        "дата": "03.03.2024",
+        "продукт": "Надежный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Запрос информации о страховании вкладов",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Предоставление информации о страховании",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Сотрудник банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Проверка условий досрочного расторжения",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Уточнение возможности пополнения вклада",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Запрос образца договора",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Обсуждение планов с матерью",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Проверка баланса накопительного счета",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Уточнение возможности привязки карты",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Получение push-уведомления",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Отметка о кодовом слове",
+      "attributes": {
+        "дата": "03.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Подписание договора вклада",
+      "attributes": {
+        "дата": "05.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Рассмотрение открытия счета 'Детский'",
+      "attributes": {
+        "дата": "06.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Узнала об изменении условий",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Запрос информации о доверенности",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Уточнение документов для счета 'Детский'",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Проверка условий снятия средств",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Интерес к спецпредложениям",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Получение подтверждения зачисления",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Обсуждение с дочерью финансовой грамотности",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "event",
+      "label": "Проверка личного кабинета",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Отметка об удобстве дистанционного подписания",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "event",
+      "label": "Уточнение начисления процентов",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Запрос выписки по счету",
+      "attributes": {
+        "дата": "07.03.2024",
+        "инициатор": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_74",
+      "type": "event",
+      "label": "Семейные сбережения",
+      "attributes": {
+        "цель": "финансовая стабильность",
+        "управляющий": "Валентина Андреева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_75",
+      "type": "event",
+      "label": "Управление вкладами",
+      "attributes": {
+        "аспект": "открытие",
+        "аспект2": "корректировка условий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "event",
+      "label": "Накопительные счета",
+      "attributes": {
+        "тип": "сберегательный",
+        "цель": "накопление"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "event",
+      "label": "Финансовые инструменты",
+      "attributes": {
+        "тип": "вклады",
+        "тип2": "счета"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "event",
+      "label": "Активное управление",
+      "attributes": {
+        "характеристика": "инициативность",
+        "характеристика2": "контроль"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_80",
+      "type": "event",
+      "label": "Доверие к банку",
+      "attributes": {
+        "аспект": "надежность",
+        "аспект2": "прозрачность"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_81",
+      "type": "event",
+      "label": "Клиентский опыт",
+      "attributes": {
+        "аспект": "удобство",
+        "аспект2": "скорость"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_1",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "platform": "iOS/Android",
+        "functionality": "онлайн-банкинг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_2",
+      "type": "event",
+      "label": "Цифровая подпись",
+      "attributes": {
+        "legality": "эквивалентна собственноручной",
+        "security": "высокая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_3",
+      "type": "event",
+      "label": "Новостная рассылка банка",
+      "attributes": {
+        "channel": "email",
+        "content_type": "изменения условий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_4",
+      "type": "event",
+      "label": "Законный представитель",
+      "attributes": {
+        "role": "родитель/опекун",
+        "responsibility": "управление счетами несовершеннолетних"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_5",
+      "type": "event",
+      "label": "Специальные предложения для семейных клиентов",
+      "attributes": {
+        "benefit": "повышенные ставки",
+        "target_group": "семьи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_6",
+      "type": "event",
+      "label": "Обсуждение финансового планирования с дочерью",
+      "attributes": {
+        "date": "06.03.2024",
+        "topic": "накопительный счет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_7",
+      "type": "event",
+      "label": "Удобство онлайн-сервисов",
+      "attributes": {
+        "metric": "экономия времени",
+        "satisfaction": "высокая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_8",
+      "type": "event",
+      "label": "Начисление процентов по вкладу",
+      "attributes": {
+        "method": "ежемесячная капитализация",
+        "frequency": "ежемесячно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_9",
+      "type": "document",
+      "label": "SMS-уведомление об одобрении заявки",
+      "attributes": {
+        "type": "уведомление",
+        "channel": "SMS",
+        "date": "04.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x4_node_10",
+      "type": "event",
+      "label": "Финансовая цель",
+      "attributes": {
+        "description": "стабильное будущее для семьи",
+        "priority": "высокая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_person_valentina_andreeva_interested_in_deposit_semeyny_kapital",
+      "source": "person_valentina_andreeva",
+      "target": "deposit_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_semeyny_kapital_has_product_bank_product_semeyny_kapital",
+      "source": "deposit_semeyny_kapital",
+      "target": "bank_product_semeyny_kapital",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_bank_product_semeyny_kapital_had_rate_1",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_15_0",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15.0%",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_bank_product_semeyny_kapital_had_rate_2",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_14_5",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.5%",
+        "date": "02.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_bank_product_semeyny_kapital_had_rate_3",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_14_0",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.0%",
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_bank_product_semeyny_kapital_current_rate",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_12_5",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "12.5%",
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_41",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_74",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_75",
+      "target": "ctx_node_76",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_75",
+      "target": "ctx_node_77",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_78",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_47",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_47",
+      "target": "bank_product_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_15_0",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_14",
+      "relation": "received",
+      "attributes": {
+        "date": "02.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_14",
+      "target": "rate_semeyny_kapital_14_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_14",
+      "target": "ctx_node_42",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_42",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_49",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_5",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_2",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_50",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_6",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_3",
+      "target": "ctx_node_4",
+      "relation": "had_rate",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_51",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_40",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_52",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_53",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_53",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_54",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_54",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_55",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_55",
+      "target": "ctx_node_9",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_56",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_56",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_57",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_57",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_58",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_58",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_59",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_59",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_60",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_19",
+      "target": "ctx_node_5",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_20",
+      "relation": "received",
+      "attributes": {
+        "date": "04.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_20",
+      "target": "ctx_node_19",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_61",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_61",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_21",
+      "target": "deposit_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_62",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_62",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_24",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_1",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_63",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_63",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_1",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_2",
+      "target": "ctx_node_27",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_27",
+      "target": "ctx_node_6",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_64",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_64",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_28",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_65",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_65",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_65",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_65",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_66",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_66",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_31",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_67",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_68",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_68",
+      "target": "ctx_node_33",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_33",
+      "target": "deposit_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_69",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_69",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_69",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_70",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_70",
+      "target": "deposit_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_71",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_72",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_72",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_73",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_73",
+      "target": "ctx_node_38",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_38",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_2",
+      "target": "person_valentina_andreeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_3",
+      "target": "ctx_node_39",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_10",
+      "target": "person_valentina_andreeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_23",
+      "target": "person_valentina_andreeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_43",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_44",
+      "target": "ctx_node_16",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_44",
+      "target": "ctx_node_17",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_15",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_22",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_13",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_7",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_1",
+      "target": "ctx_node_80",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_80",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_36",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "x4_node_1",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_15",
+      "target": "x4_node_2",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "x4_node_2",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_3",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "x4_node_3",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_16",
+      "target": "x4_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_1",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_2",
+      "source": "x4_node_10",
+      "target": "deposit_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_3",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_4",
+      "source": "x4_node_1",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_5",
+      "source": "ctx_node_15",
+      "target": "x4_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_6",
+      "source": "x4_node_2",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_7",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_8",
+      "source": "x4_node_3",
+      "target": "ctx_node_18",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_9",
+      "source": "ctx_node_16",
+      "target": "x4_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_10",
+      "source": "x4_node_4",
+      "target": "person_valentina_andreeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_11",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_12",
+      "source": "x4_node_5",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_13",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_6",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_14",
+      "source": "x4_node_6",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_15",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_16",
+      "source": "x4_node_7",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_17",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_18",
+      "source": "x4_node_8",
+      "target": "deposit_semeyny_kapital",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_19",
+      "source": "person_valentina_andreeva",
+      "target": "x4_node_9",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_20",
+      "source": "x4_node_9",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_21",
+      "source": "ctx_node_1",
+      "target": "x4_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_22",
+      "source": "ctx_node_1",
+      "target": "x4_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_23",
+      "source": "ctx_node_1",
+      "target": "x4_node_3",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_24",
+      "source": "ctx_node_1",
+      "target": "x4_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_25",
+      "source": "ctx_node_1",
+      "target": "x4_node_9",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_26",
+      "source": "deposit_semeyny_kapital",
+      "target": "x4_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_27",
+      "source": "ctx_node_16",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_28",
+      "source": "ctx_node_16",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_29",
+      "source": "ctx_node_17",
+      "target": "x4_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_30",
+      "source": "ctx_node_17",
+      "target": "x4_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_31",
+      "source": "ctx_node_17",
+      "target": "x4_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_32",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x4_edge_33",
+      "source": "ctx_node_18",
+      "target": "x4_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_14_0",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "12,6%",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_14_5",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,05%",
+        "date": "02.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "bank_product_semeyny_kapital",
+      "target": "rate_semeyny_kapital_15_0",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "16,5%",
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_1",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "x4_node_6",
+      "target": "rate_semeyny_kapital_15_0",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "2,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_64",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_35",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "18,15%",
+        "date": "01.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_51",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14,85%",
+        "date": "01.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_52",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,63.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_69",
+      "target": "rate_semeyny_kapital_15_0",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_1",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_71",
+      "target": "x4_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "2,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_41",
+      "relation": "received",
+      "attributes": {
+        "date": "4,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_32",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "12,6%",
+        "date": "01.04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_45",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15,95%",
+        "date": "02.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_42",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,05%",
+        "date": "02.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_60",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "bank_product_semeyny_kapital",
+      "target": "x4_node_3",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,86%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_25",
+      "relation": "received",
+      "attributes": {
+        "date": "4,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_53",
+      "relation": "received",
+      "attributes": {
+        "date": "4,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_71",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "11,34%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "bank_product_semeyny_kapital",
+      "target": "x4_node_10",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "18,15%",
+        "date": "01.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_25",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "11,25%",
+        "date": "10.04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "ctx_node_26",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,63.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "ctx_node_24",
+      "target": "rate_semeyny_kapital_14_0",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "11,34%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_61",
+      "target": "ctx_node_20",
+      "relation": "received",
+      "attributes": {
+        "date": "4,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_49",
+      "target": "rate_semeyny_kapital_14_0",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,86%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_44",
+      "target": "ctx_node_14",
+      "relation": "received",
+      "attributes": {
+        "date": "2,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,33.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_8",
+      "target": "ctx_node_20",
+      "relation": "received",
+      "attributes": {
+        "date": "4,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ctx_node_37",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,86%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_37",
+      "target": "rate_semeyny_kapital_14_5",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15,95%",
+        "date": "02.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,33.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "person_valentina_andreeva",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "ctx_node_18",
+      "target": "rate_semeyny_kapital_14_5",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14,36%",
+        "date": "02.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "bank_product_semeyny_kapital",
+      "target": "x4_node_5",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "12,6%",
+        "date": "01.04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_valentina_andreeva",
+      "source": "person_valentina_andreeva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_deposit_semeyny_kapital",
+      "source": "deposit_semeyny_kapital",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_bank_product_semeyny_kapital",
+      "source": "bank_product_semeyny_kapital",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_rate_semeyny_kapital_15_0",
+      "source": "rate_semeyny_kapital_15_0",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_rate_semeyny_kapital_14_5",
+      "source": "rate_semeyny_kapital_14_5",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_rate_semeyny_kapital_14_0",
+      "source": "rate_semeyny_kapital_14_0",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_rate_semeyny_kapital_12_5",
+      "source": "rate_semeyny_kapital_12_5",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

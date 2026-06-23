@@ -1,0 +1,4176 @@
+{
+  "nodes": [
+    {
+      "id": "person_lukia_shilova",
+      "type": "person",
+      "label": "Лукия Натановна Шилова",
+      "attributes": {
+        "income": "121000 руб.",
+        "role": "client",
+        "occupation": "искусствовед",
+        "city": "с. Чегем"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_valetina_noskova",
+      "type": "person",
+      "label": "Валентина Львовна Носкова",
+      "attributes": {
+        "role": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_lyubov_markova",
+      "type": "person",
+      "label": "Любовь Вениаминовна Маркова",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_fyokla_bolshakova",
+      "type": "person",
+      "label": "Фёкла Кузьминична Большакова",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_natalya_daughter",
+      "type": "person",
+      "label": "Наталья",
+      "attributes": {
+        "role": "daughter"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "person_marfa_abramova",
+      "type": "person",
+      "label": "Абрамова Марфа Игоревна",
+      "attributes": {
+        "role": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "person_kornilov_mecheslav",
+      "type": "person",
+      "label": "Корнилов Мечислав Матвеевич",
+      "attributes": {
+        "role": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "debit_card_lukia_1234",
+      "type": "product",
+      "label": "Дебетовая карта Лукии Шиловой",
+      "attributes": {
+        "number": "4276 XXXX XXXX 1234"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "current_account_lukia_0001",
+      "type": "account",
+      "label": "Текущий счет Лукии Шиловой",
+      "attributes": {
+        "number": "40817810000000000001"
+      },
+      "ground_truth": false,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО «Надежный Банк»",
+      "attributes": {
+        "type": "банк",
+        "license": "№1234",
+        "address": "г. Москва, ул. Банковская, д. 1"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "organization",
+      "label": "ПАО «Выгодный Банк»",
+      "attributes": {
+        "type": "банк",
+        "license": "№5678",
+        "address": "г. Москва, ул. Финансовая, д. 5"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Ипотечный кредит",
+      "attributes": {
+        "type": "ипотека",
+        "initial_amount": "7000000 руб.",
+        "interest_rate": "10.5%",
+        "term": "20 лет",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "event",
+      "label": "Квартира",
+      "attributes": {
+        "address": "г. Москва, ул. Цветочная, д. 10, кв. 5",
+        "type": "жилая недвижимость",
+        "area": "75 кв.м"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Оптимизация долговой нагрузки",
+      "attributes": {
+        "description": "Снижение ежемесячного платежа по ипотеке",
+        "priority": "высокий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "product",
+      "label": "ИИС",
+      "attributes": {
+        "type": "индивидуальный инвестиционный счет",
+        "strategy": "долгосрочная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Брокерский счет",
+      "attributes": {
+        "type": "брокерский счет",
+        "strategy": "активная торговля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "document",
+      "label": "Договор ипотеки",
+      "attributes": {
+        "number": "НБ-ИПО-7000-03/23",
+        "date": "01.03.2023",
+        "party_1": "ПАО «Надежный Банк»",
+        "party_2": "Лукия Натановна Шилова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Ежемесячный платеж по ипотеке",
+      "attributes": {
+        "amount": "68500 руб.",
+        "due_date": "15 число каждого месяца",
+        "status": "регулярный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "product",
+      "label": "Заявка на рефинансирование",
+      "attributes": {
+        "number": "РЕФ-ВБ-09/23",
+        "date": "01.09.2023",
+        "status": "на рассмотрении",
+        "desired_rate": "14.5%",
+        "desired_term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "person",
+      "label": "Копылов Ерофей Харламович",
+      "attributes": {
+        "role": "супруг",
+        "occupation": "инженер",
+        "city": "с. Чегем"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "amount": "480000 руб.",
+        "interest_rate": "14.9%",
+        "term": "3 года",
+        "purpose": "ремонт дачи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "document",
+      "label": "Запрос справки о задолженности",
+      "attributes": {
+        "number": "СЗ-050923",
+        "date": "05.09.2023",
+        "purpose": "для рефинансирования"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "document",
+      "label": "Справка о текущей задолженности",
+      "attributes": {
+        "amount": "6950000 руб.",
+        "date": "07.09.2023",
+        "issuer": "ПАО «Надежный Банк»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "product",
+      "label": "Мобильное приложение ПАО «Выгодный Банк»",
+      "attributes": {
+        "version": "3.2.1",
+        "platform": "iOS/Android",
+        "functionality": "проверка статуса заявки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Push-уведомление",
+      "attributes": {
+        "date": "11.09.2023",
+        "sender": "ПАО «Надежный Банк»",
+        "content": "персональное предложение по рефинансированию"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Звонок на горячую линию",
+      "attributes": {
+        "date": "12.09.2023",
+        "duration": "15 минут",
+        "purpose": "уточнение условий предложения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Предложение по рефинансированию от ПАО «Надежный Банк»",
+      "attributes": {
+        "date": "13.09.2023",
+        "interest_rate": "14.5%",
+        "term": "15 лет",
+        "channel": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Предложение по рефинансированию от ПАО «Выгодный Банк»",
+      "attributes": {
+        "date": "10.09.2023",
+        "interest_rate": "14.8%",
+        "term": "15 лет",
+        "monthly_payment": "75300 руб.",
+        "number": "ВБ-ОДОБР-09/23"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Сравнение условий рефинансирования",
+      "attributes": {
+        "date": "14.09.2023",
+        "criteria": "процентная ставка, срок, ежемесячный платеж"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Обсуждение предложений с супругом",
+      "attributes": {
+        "date": "16.09.2023",
+        "participants": "Лукия Шилова, Ерофей Копылов",
+        "outcome": "взвешивание плюсов и минусов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "person",
+      "label": "Копылов (сын)",
+      "attributes": {
+        "role": "сын",
+        "age": "подросток"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "person",
+      "label": "Друг Копылова",
+      "attributes": {
+        "role": "друг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Перевод сыном другу",
+      "attributes": {
+        "amount": "5100 руб.",
+        "date": "17.09.2023",
+        "channel": "СБП",
+        "comment": "почти как мама переводит"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Запрос детального расчета платежей",
+      "attributes": {
+        "date": "21.09.2023",
+        "recipient": "ПАО «Выгодный Банк»",
+        "purpose": "сравнение предложений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "document",
+      "label": "График платежей от ПАО «Выгодный Банк»",
+      "attributes": {
+        "date": "23.09.2023",
+        "content": "разбивка по основному долгу и процентам",
+        "channel": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Сравнительный анализ двух предложений",
+      "attributes": {
+        "date": "24.09.2023",
+        "tool": "онлайн-калькулятор",
+        "metric": "общая переплата"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "amount": "7200 руб.",
+        "date": "25.09.2023",
+        "period": "сентябрь",
+        "channel": "мобильное приложение",
+        "number": "123456789"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Звонок в службу поддержки ПАО «Выгодный Банк»",
+      "attributes": {
+        "date": "26.09.2023",
+        "number": "8-800-ХХХ-ХХ-ХХ",
+        "purpose": "уточнение возможности снижения ставки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Ответ от ПАО «Выгодный Банк»",
+      "attributes": {
+        "date": "27.09.2023",
+        "content": "снижение ставки невозможно без доп. документов",
+        "channel": "телефонный разговор"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Обсуждение окончательного решения",
+      "attributes": {
+        "date": "28.09.2023",
+        "participants": "Лукия Шилова, Ерофей Копылов",
+        "outcome": "выбор банка для рефинансирования"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Предварительное решение по рефинансированию",
+      "attributes": {
+        "date": "29.09.2023",
+        "bank": "ПАО «Выгодный Банк»",
+        "reason": "удобное расположение отделения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "СМС-напоминание",
+      "attributes": {
+        "date": "30.09.2023",
+        "sender": "ПАО «Выгодный Банк»",
+        "content": "срок действия одобрения до 10.10.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Окончательное решение по рефинансированию",
+      "attributes": {
+        "date": "01.10.2023",
+        "bank": "ПАО «Выгодный Банк»",
+        "interest_rate": "14.8%",
+        "term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "product",
+      "label": "СБП",
+      "attributes": {
+        "type": "Система быстрых платежей",
+        "provider": "Банк России"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Шаблон платежа ЖКХ",
+      "attributes": {
+        "service": "ЖКХ",
+        "bank": "ПАО «Надежный Банк»",
+        "frequency": "ежемесячно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {
+        "type": "цифровой",
+        "provider": "ПАО «Надежный Банк»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_88",
+      "type": "person",
+      "label": "Оператор ПАО «Выгодный Банк»",
+      "attributes": {
+        "role": "сотрудник банка",
+        "department": "служба поддержки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_89",
+      "type": "document",
+      "label": "Кредитная история",
+      "attributes": {
+        "status": "хорошая",
+        "source": "БКИ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_93",
+      "type": "product",
+      "label": "Онлайн-калькулятор",
+      "attributes": {
+        "type": "финансовый инструмент",
+        "functionality": "расчет переплаты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_94",
+      "type": "event",
+      "label": "Общая переплата",
+      "attributes": {
+        "type": "показатель",
+        "unit": "руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_95",
+      "type": "product",
+      "label": "Дача",
+      "attributes": {
+        "type": "недвижимость",
+        "location": "Московская область"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_96",
+      "type": "event",
+      "label": "Ремонт дачи",
+      "attributes": {
+        "status": "планируется",
+        "budget": "480000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_1",
+      "type": "organization",
+      "label": "ПАО «Надежный Банк»",
+      "attributes": {
+        "type": "банк",
+        "address": "г. Москва, ул. Банковская, д. 1"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_2",
+      "type": "product",
+      "label": "Ипотечный кредит",
+      "attributes": {
+        "type": "ипотека",
+        "interest_rate": "10.5%",
+        "term": "20 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_3",
+      "type": "event",
+      "label": "Квартира",
+      "attributes": {
+        "address": "г. Москва, ул. Цветочная, д. 10, кв. 5",
+        "type": "жилая недвижимость"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_4",
+      "type": "event",
+      "label": "Оптимизация долговой нагрузки",
+      "attributes": {
+        "description": "Снижение ежемесячного платежа по ипотеке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_5",
+      "type": "product",
+      "label": "ИИС",
+      "attributes": {
+        "type": "индивидуальный инвестиционный счет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_6",
+      "type": "product",
+      "label": "Брокерский счет",
+      "attributes": {
+        "type": "брокерский счет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_7",
+      "type": "event",
+      "label": "Ежемесячный платеж по ипотеке",
+      "attributes": {
+        "amount": "68500 руб.",
+        "date": "15 число каждого месяца"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_8",
+      "type": "document",
+      "label": "Договор ипотеки",
+      "attributes": {
+        "number": "НБ-ИПО-7000-03/23",
+        "date": "01.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_9",
+      "type": "organization",
+      "label": "ПАО «Выгодный Банк»",
+      "attributes": {
+        "type": "банк",
+        "address": "г. Москва, ул. Успешная, д. 7"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_10",
+      "type": "product",
+      "label": "Заявка на рефинансирование",
+      "attributes": {
+        "number": "РЕФ-ВБ-09/23",
+        "status": "на рассмотрении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_11",
+      "type": "product",
+      "label": "Рефинансирование ипотеки (желаемое)",
+      "attributes": {
+        "interest_rate": "14.5%",
+        "term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_12",
+      "type": "person",
+      "label": "Копылов Ерофей Харламович",
+      "attributes": {
+        "role": "супруг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_13",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "amount": "480000 руб.",
+        "interest_rate": "14.9%",
+        "term": "3 года",
+        "purpose": "ремонт дачи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_14",
+      "type": "document",
+      "label": "Запрос справки о задолженности",
+      "attributes": {
+        "number": "СЗ-050923",
+        "date": "05.09.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_15",
+      "type": "document",
+      "label": "Справка о текущей задолженности",
+      "attributes": {
+        "amount": "6950000 руб.",
+        "date": "07.09.2023",
+        "channel": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_16",
+      "type": "product",
+      "label": "Мобильное приложение ПАО «Выгодный Банк»",
+      "attributes": {
+        "functionality": "проверка статуса заявки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_17",
+      "type": "event",
+      "label": "Push-уведомление",
+      "attributes": {
+        "source": "ПАО «Надежный Банк»",
+        "content": "персональное предложение по рефинансированию"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_18",
+      "type": "event",
+      "label": "Звонок на горячую линию",
+      "attributes": {
+        "duration": "15 минут",
+        "date": "12.09.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_19",
+      "type": "event",
+      "label": "Предложение по рефинансированию (Надежный Банк)",
+      "attributes": {
+        "interest_rate": "14.5%",
+        "term": "15 лет",
+        "channel": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_20",
+      "type": "event",
+      "label": "Сравнение условий рефинансирования",
+      "attributes": {
+        "banks": "ПАО «Выгодный Банк», ПАО «Надежный Банк»",
+        "difference": "0.3% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_21",
+      "type": "event",
+      "label": "Обсуждение предложений по рефинансированию",
+      "attributes": {
+        "participants": "Лукия Шилова, Ерофей Копылов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_22",
+      "type": "product",
+      "label": "Одобренное рефинансирование (Выгодный Банк)",
+      "attributes": {
+        "interest_rate": "14.8%",
+        "term": "15 лет",
+        "monthly_payment": "75300 руб.",
+        "number": "ВБ-ОДОБР-09/23"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_23",
+      "type": "event",
+      "label": "Предложение по рефинансированию (Надежный Банк, 14.5%)",
+      "attributes": {
+        "interest_rate": "14.5%",
+        "term": "15 лет",
+        "monthly_payment": "73800 руб.",
+        "number": "НБ-РЕФ-09/23"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_24",
+      "type": "person",
+      "label": "Сын Лукии Шиловой",
+      "attributes": {
+        "role": "сын"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_25",
+      "type": "person",
+      "label": "Друг сына",
+      "attributes": {
+        "role": "друг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_26",
+      "type": "event",
+      "label": "Перевод сыном другу",
+      "attributes": {
+        "amount": "5100 руб.",
+        "channel": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_27",
+      "type": "event",
+      "label": "Запрос детального расчета платежей",
+      "attributes": {
+        "date": "21.09.2023",
+        "bank": "ПАО «Выгодный Банк»"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_28",
+      "type": "document",
+      "label": "График платежей (Выгодный Банк)",
+      "attributes": {
+        "channel": "электронная почта",
+        "content": "разбивка по основному долгу и процентам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_29",
+      "type": "event",
+      "label": "Сравнительный анализ предложений",
+      "attributes": {
+        "tool": "онлайн-калькулятор",
+        "metric": "общая переплата"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_30",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "amount": "7200 руб.",
+        "date": "25.09.2023",
+        "channel": "мобильное приложение",
+        "number": "123456789"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_31",
+      "type": "event",
+      "label": "Звонок в службу поддержки",
+      "attributes": {
+        "bank": "ПАО «Выгодный Банк»",
+        "purpose": "уточнение возможности снижения ставки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_32",
+      "type": "event",
+      "label": "Условие снижения ставки",
+      "attributes": {
+        "requirement": "предоставление дополнительных документов",
+        "reason": "улучшение кредитной истории"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_33",
+      "type": "event",
+      "label": "Окончательное решение по выбору банка",
+      "attributes": {
+        "factors": "разница в ставках, ежемесячных платежах"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_34",
+      "type": "event",
+      "label": "Предварительное решение в пользу Выгодного Банка",
+      "attributes": {
+        "reason": "удобное расположение отделения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_35",
+      "type": "event",
+      "label": "СМС-напоминание",
+      "attributes": {
+        "source": "ПАО «Выгодный Банк»",
+        "content": "срок действия одобрения по рефинансированию до 10.10.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_36",
+      "type": "event",
+      "label": "Окончательное решение о рефинансировании",
+      "attributes": {
+        "bank": "ПАО «Выгодный Банк»",
+        "interest_rate": "14.8%",
+        "term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_37",
+      "type": "event",
+      "label": "Шаблон платежа",
+      "attributes": {
+        "type": "коммунальные услуги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_38",
+      "type": "organization",
+      "label": "Отделение ПАО «Выгодный Банк»",
+      "attributes": {
+        "convenience": "удобное расположение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_39",
+      "type": "event",
+      "label": "Дебетовая карта Валентины Носковой",
+      "attributes": {
+        "type": "дебетовая карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_40",
+      "type": "product",
+      "label": "Мобильное приложение",
+      "attributes": {
+        "type": "банковское приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_41",
+      "type": "product",
+      "label": "СБП",
+      "attributes": {
+        "type": "Система быстрых платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_54",
+      "type": "document",
+      "label": "Кредитная история",
+      "attributes": {
+        "status": "может быть улучшена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_55",
+      "type": "event",
+      "label": "Дебетовая карта сына",
+      "attributes": {
+        "type": "дебетовая карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_56",
+      "type": "event",
+      "label": "Дебетовая карта друга сына",
+      "attributes": {
+        "type": "дебетовая карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_transfer_lukia_valetina_1",
+      "source": "person_lukia_shilova",
+      "target": "person_valetina_noskova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "08.09.2023",
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfer_lukia_lyubov_1",
+      "source": "person_lukia_shilova",
+      "target": "person_lyubov_markova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "20.09.2023",
+        "channel": "СБП",
+        "purpose": "за книги"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_transfer_lukia_fyokla_1",
+      "source": "person_lukia_shilova",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за мастер-класс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_transfer_lukia_fyokla_2",
+      "source": "person_lukia_shilova",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за материалы для рукоделия"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transfer_lukia_natalya_1",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "12000 руб.",
+        "date": "09.10.2023",
+        "purpose": "оплата обучения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transfer_lukia_natalya_2",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "11500 руб.",
+        "date": "30.10.2023",
+        "purpose": "оплата курсов английского языка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_transfer_lukia_marfa_1",
+      "source": "person_lukia_shilova",
+      "target": "person_marfa_abramova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "3000 руб.",
+        "date": "05.11.2023",
+        "channel": "СБП",
+        "purpose": "на лекарства"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfer_lukia_kornilov_1",
+      "source": "person_lukia_shilova",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2500 руб.",
+        "date": "20.11.2023",
+        "channel": "СБП",
+        "purpose": "на продукты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfer_lukia_kornilov_2",
+      "source": "person_lukia_shilova",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2500 руб.",
+        "date": "20.11.2023",
+        "channel": "СБП",
+        "purpose": "на оплату коммуналки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_transfer_lukia_natalya_3",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "13000 руб.",
+        "date": "27.11.2023",
+        "purpose": "покупка учебников"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_transfer_lukia_natalya_4",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "14000 руб.",
+        "date": "13.12.2023",
+        "purpose": "оплата новогодних подарков"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_transfer_lukia_kornilov_3",
+      "source": "person_lukia_shilova",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2600 руб.",
+        "date": "22.12.2023",
+        "channel": "СБП",
+        "purpose": "на новогодний стол"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_transfer_lukia_natalya_5",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "15000 руб.",
+        "date": "27.12.2023",
+        "purpose": "новогодний подарок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_3",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_5",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_5",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_3",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.03.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_9",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "date": "01.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_10",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_11",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_11",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_12",
+      "target": "ctx_node_95",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_95",
+      "target": "ctx_node_96",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_13",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "05.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_13",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_13",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_14",
+      "relation": "received",
+      "attributes": {
+        "date": "07.09.2023",
+        "channel": "электронная почта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_14",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_lukia_shilova",
+      "target": "person_valetina_noskova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "08.09.2023",
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.09.2023",
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_10",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_16",
+      "relation": "received",
+      "attributes": {
+        "date": "11.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_16",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_17",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_18",
+      "relation": "received",
+      "attributes": {
+        "date": "13.09.2023",
+        "channel": "электронная почта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_18",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_20",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_20",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_9",
+      "target": "debit_card_lukia_1234",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_21",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_21",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_21",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_2",
+      "target": "ctx_node_19",
+      "relation": "approved",
+      "attributes": {
+        "date": "10.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_1",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_9",
+      "target": "current_account_lukia_0001",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_22",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_24",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_24",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_lukia_shilova",
+      "target": "person_lyubov_markova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "20.09.2023",
+        "channel": "СБП",
+        "purpose": "за книги"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_25",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "21.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_25",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_25",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "person_lukia_shilova",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за мастер-класс"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_26",
+      "relation": "received",
+      "attributes": {
+        "date": "23.09.2023",
+        "channel": "электронная почта"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_26",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_27",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_27",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_27",
+      "target": "ctx_node_93",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_93",
+      "target": "ctx_node_94",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_28",
+      "relation": "paid",
+      "attributes": {
+        "date": "25.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_28",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_29",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_29",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_88",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_30",
+      "target": "person_lukia_shilova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_30",
+      "target": "ctx_node_89",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_31",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_32",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_33",
+      "relation": "received",
+      "attributes": {
+        "date": "30.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_33",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_33",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_lukia_shilova",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за материалы для рукоделия"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_28",
+      "relation": "paid",
+      "attributes": {
+        "date": "25.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_28",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_34",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_34",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_1",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_2",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "7000000 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_3",
+      "source": "x2_node_2",
+      "target": "x2_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_4",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_5",
+      "source": "x2_node_4",
+      "target": "x2_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_6",
+      "source": "x2_node_4",
+      "target": "x2_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_7",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_7",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_8",
+      "source": "x2_node_7",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_9",
+      "source": "x2_node_7",
+      "target": "x2_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_10",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "date": "01.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_11",
+      "source": "x2_node_10",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_12",
+      "source": "x2_node_10",
+      "target": "x2_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_13",
+      "source": "x2_node_12",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_14",
+      "source": "x2_node_12",
+      "target": "x2_node_13",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_15",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_14",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "05.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_16",
+      "source": "x2_node_14",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_17",
+      "source": "x2_node_14",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_18",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_15",
+      "relation": "received",
+      "attributes": {
+        "date": "07.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_19",
+      "source": "x2_node_1",
+      "target": "x2_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_20",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_21",
+      "source": "x2_node_16",
+      "target": "x2_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_22",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_17",
+      "relation": "received",
+      "attributes": {
+        "date": "11.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_23",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_24",
+      "source": "x2_node_18",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_25",
+      "source": "x2_node_18",
+      "target": "x2_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_26",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_19",
+      "relation": "received",
+      "attributes": {
+        "date": "13.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_27",
+      "source": "x2_node_1",
+      "target": "x2_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_28",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_29",
+      "source": "x2_node_20",
+      "target": "x2_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_30",
+      "source": "x2_node_20",
+      "target": "x2_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_31",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_32",
+      "source": "x2_node_21",
+      "target": "x2_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_33",
+      "source": "x2_node_9",
+      "target": "x2_node_22",
+      "relation": "approved",
+      "attributes": {
+        "date": "10.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_34",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_23",
+      "relation": "received",
+      "attributes": {
+        "date": "12.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_35",
+      "source": "x2_node_1",
+      "target": "x2_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_36",
+      "source": "x2_node_24",
+      "target": "x2_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_37",
+      "source": "x2_node_26",
+      "target": "x2_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_38",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_27",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "21.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_39",
+      "source": "x2_node_27",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_40",
+      "source": "x2_node_27",
+      "target": "x2_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_41",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_28",
+      "relation": "received",
+      "attributes": {
+        "date": "23.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_42",
+      "source": "x2_node_9",
+      "target": "x2_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_43",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_44",
+      "source": "x2_node_29",
+      "target": "x2_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_45",
+      "source": "x2_node_29",
+      "target": "x2_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_46",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_47",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_48",
+      "source": "x2_node_31",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_49",
+      "source": "x2_node_31",
+      "target": "x2_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_50",
+      "source": "x2_node_9",
+      "target": "x2_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_51",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_52",
+      "source": "x2_node_33",
+      "target": "x2_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_53",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_54",
+      "source": "x2_node_34",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_55",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_35",
+      "relation": "received",
+      "attributes": {
+        "date": "30.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_56",
+      "source": "x2_node_9",
+      "target": "x2_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_57",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_58",
+      "source": "x2_node_36",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_59",
+      "source": "x2_node_30",
+      "target": "x2_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_60",
+      "source": "x2_node_34",
+      "target": "x2_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_61",
+      "source": "person_lukia_shilova",
+      "target": "person_valetina_noskova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "08.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_62",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_63",
+      "source": "person_valetina_noskova",
+      "target": "x2_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_64",
+      "source": "person_lukia_shilova",
+      "target": "person_lyubov_markova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "20.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_65",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_67",
+      "source": "person_lukia_shilova",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "22.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_68",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_70",
+      "source": "person_lukia_shilova",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "22.09.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_71",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.09.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_73",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "12000 руб.",
+        "date": "09.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_75",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "11500 руб.",
+        "date": "30.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_77",
+      "source": "person_lukia_shilova",
+      "target": "person_marfa_abramova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "3000 руб.",
+        "date": "05.11.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_78",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.11.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_80",
+      "source": "person_lukia_shilova",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2500 руб.",
+        "date": "20.11.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_81",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.11.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_83",
+      "source": "person_lukia_shilova",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2500 руб.",
+        "date": "20.11.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_84",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.11.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_86",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "13000 руб.",
+        "date": "27.11.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_88",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "14000 руб.",
+        "date": "13.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_90",
+      "source": "person_lukia_shilova",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2600 руб.",
+        "date": "22.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_91",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_93",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "15000 руб.",
+        "date": "27.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_95",
+      "source": "x2_node_32",
+      "target": "x2_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_96",
+      "source": "x2_node_24",
+      "target": "x2_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_97",
+      "source": "x2_node_25",
+      "target": "x2_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_98",
+      "source": "x2_node_26",
+      "target": "x2_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_99",
+      "source": "x2_node_26",
+      "target": "x2_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_100",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_101",
+      "source": "x2_node_2",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_102",
+      "source": "x2_node_1",
+      "target": "x2_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_103",
+      "source": "x2_node_10",
+      "target": "x2_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_104",
+      "source": "x2_node_12",
+      "target": "x2_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_105",
+      "source": "x2_node_13",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_106",
+      "source": "x2_node_14",
+      "target": "x2_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_107",
+      "source": "x2_node_17",
+      "target": "x2_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_108",
+      "source": "x2_node_19",
+      "target": "x2_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_109",
+      "source": "x2_node_11",
+      "target": "x2_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_110",
+      "source": "x2_node_20",
+      "target": "x2_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_111",
+      "source": "x2_node_22",
+      "target": "x2_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_112",
+      "source": "x2_node_23",
+      "target": "x2_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_113",
+      "source": "x2_node_27",
+      "target": "x2_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_114",
+      "source": "x2_node_31",
+      "target": "x2_node_32",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_115",
+      "source": "x2_node_33",
+      "target": "x2_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_116",
+      "source": "x2_node_34",
+      "target": "x2_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_117",
+      "source": "x2_node_35",
+      "target": "x2_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_118",
+      "source": "x2_node_40",
+      "target": "x2_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_119",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_120",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_121",
+      "source": "x2_node_12",
+      "target": "person_lukia_shilova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_122",
+      "source": "person_natalya_daughter",
+      "target": "person_lukia_shilova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "13500 руб.",
+        "date": "27.11.2023",
+        "purpose": "новогодний подарок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_lukia_shilova",
+      "target": "person_valetina_noskova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "9000 руб.",
+        "date": "08.07.2023",
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "14300 руб.",
+        "date": "27.10.2023",
+        "purpose": "покупка учебников"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_1",
+      "target": "x2_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,88.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_4",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5720 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за мастер-класс"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_21",
+      "target": "ctx_node_19",
+      "relation": "approved",
+      "attributes": {
+        "date": "11,1.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_9",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5720 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за материалы для рукоделия"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,88.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_lukia_shilova",
+      "target": "person_natalya_daughter",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "32.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "x2_node_35",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "11700 руб.",
+        "date": "27.11.2023",
+        "purpose": "покупка учебников"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_lukia_shilova",
+      "target": "debit_card_lukia_1234",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,6.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_94",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15,5.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "x2_node_23",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,7.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,28.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_22",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2700 руб.",
+        "date": "05.11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "x2_node_4",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,38.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "x2_node_4",
+      "target": "x2_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,99.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_36",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10800 руб.",
+        "date": "09.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_25",
+      "relation": "submitted",
+      "attributes": {
+        "date": "0,98.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_16",
+      "target": "x2_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,21.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_88",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "11700 руб.",
+        "date": "27.11.2023",
+        "purpose": "покупка учебников"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28,7.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "x2_node_33",
+      "target": "person_lyubov_markova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "date": "20.09.2023",
+        "channel": "СБП",
+        "purpose": "за книги"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_94",
+      "target": "person_valetina_noskova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "11000 руб.",
+        "date": "08.09.2023",
+        "channel": "мобильное приложение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "x2_node_16",
+      "target": "x2_node_35",
+      "relation": "received",
+      "attributes": {
+        "date": "27,08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_37",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2250 руб.",
+        "date": "20.11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_11",
+      "target": "ctx_node_16",
+      "relation": "received",
+      "attributes": {
+        "date": "9,98.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "x2_node_34",
+      "target": "x2_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15,38.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "x2_node_35",
+      "target": "ctx_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "date": "0,98.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_12",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "date": "20.09.2023",
+        "channel": "СБП",
+        "purpose": "за книги"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_16",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4680 руб.",
+        "date": "22.09.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "x2_node_11",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21,68.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12,68.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,12.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_17",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "8,18.2023",
+        "channel": "мобильное приложение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_11",
+      "target": "person_kornilov_mecheslav",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2860 руб.",
+        "date": "22.12.2023",
+        "channel": "СБП",
+        "purpose": "на новогодний стол"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_21",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4680 руб.",
+        "date": "22.09.2023",
+        "channel": "СБП",
+        "purpose": "за материалы для рукоделия"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "x2_node_41",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "15400 руб.",
+        "date": "13.12.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "x2_node_24",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "ctx_node_25",
+      "target": "x2_node_7",
+      "relation": "paid",
+      "attributes": {
+        "date": "16,53.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_3",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "15400 руб.",
+        "date": "13.12.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "ctx_node_14",
+      "target": "person_natalya_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10800 руб.",
+        "date": "09.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "x2_node_25",
+      "target": "x2_node_10",
+      "relation": "submitted",
+      "attributes": {
+        "date": "1,2.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "person_kornilov_mecheslav",
+      "target": "x2_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29,8.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_32",
+      "relation": "received",
+      "attributes": {
+        "date": "7,8.2023",
+        "channel": "электронная почта"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "x2_node_35",
+      "target": "ctx_node_28",
+      "relation": "paid",
+      "attributes": {
+        "date": "27,6.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "person_lukia_shilova",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,28.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "ctx_node_3",
+      "target": "person_fyokla_bolshakova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5720 руб.",
+        "date": "22.09.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "person_lukia_shilova",
+      "target": "x2_node_56",
+      "relation": "received",
+      "attributes": {
+        "date": "27,08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv47",
+      "source": "ctx_node_29",
+      "target": "x2_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,12.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv48",
+      "source": "debit_card_lukia_1234",
+      "target": "x2_node_17",
+      "relation": "received",
+      "attributes": {
+        "date": "12,2.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv49",
+      "source": "person_lukia_shilova",
+      "target": "person_valetina_noskova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "10800 руб.",
+        "date": "09.10.2023",
+        "purpose": "оплата обучения"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv50",
+      "source": "x2_node_4",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15,38.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv51",
+      "source": "x2_node_15",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "1,13.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_lukia_shilova",
+      "source": "person_lukia_shilova",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_valetina_noskova",
+      "source": "person_valetina_noskova",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_lyubov_markova",
+      "source": "person_lyubov_markova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_fyokla_bolshakova",
+      "source": "person_fyokla_bolshakova",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_natalya_daughter",
+      "source": "person_natalya_daughter",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_marfa_abramova",
+      "source": "person_marfa_abramova",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_kornilov_mecheslav",
+      "source": "person_kornilov_mecheslav",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

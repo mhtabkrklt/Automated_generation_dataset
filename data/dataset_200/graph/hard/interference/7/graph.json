@@ -1,0 +1,4729 @@
+{
+  "nodes": [
+    {
+      "id": "p_koshelev",
+      "type": "person",
+      "label": "Кошелев Амвросий Брониславович",
+      "attributes": {
+        "income": "132000 руб.",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "p_mother",
+      "type": "person",
+      "label": "Кудряшова Акулина Даниловна",
+      "attributes": {
+        "relationship": "parent"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "acc_card",
+      "type": "account",
+      "label": "Дебетовая карта ****4521",
+      "attributes": {
+        "type": "debit"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "doc_ndfl23",
+      "type": "document",
+      "label": "Справка 2-НДФЛ 2023",
+      "attributes": {
+        "annual_income": "1584000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "prod_loan1",
+      "type": "product",
+      "label": "Кредит наличными оффер 1",
+      "attributes": {
+        "rate": "14.5%",
+        "term": "15 мес."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "trans_swift1",
+      "type": "event",
+      "label": "SWIFT перевод Сбербанк",
+      "attributes": {
+        "amount": "223750 руб.",
+        "currency": "USD"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "trans_orst_mid",
+      "type": "event",
+      "label": "Перевод Оресту Кудрявцеву (целевой)",
+      "attributes": {
+        "amount": "7000 руб.",
+        "purpose": "ремонт техники"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "person",
+      "label": "Абрамов Савва Федотович",
+      "attributes": {
+        "relationship": "parent_friend",
+        "verification_status": "pending"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "person",
+      "label": "Рыбаков Якуб Феодосьевич",
+      "attributes": {
+        "contact_type": "friend",
+        "debt_status": "short_term"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "person",
+      "label": "Рыбаков [Брат]",
+      "attributes": {
+        "relationship": "brother",
+        "bank": "competitor"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "person",
+      "label": "Евгения Лазарева",
+      "attributes": {
+        "relationship": "spouse",
+        "role": "limit_manager"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "credit_institution",
+        "headquarters": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "ГИБДД",
+      "attributes": {
+        "type": "law_enforcement",
+        "jurisdiction": "regional"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "organization",
+      "label": "Служба поддержки клиентов",
+      "attributes": {
+        "channel": "phone_app",
+        "shift": "24/7"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "organization",
+      "label": "Служба безопасности банка",
+      "attributes": {
+        "function": "fraud_monitoring",
+        "authority": "115-FZ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "organization",
+      "label": "Отделение на ул. Комсомольской",
+      "attributes": {
+        "type": "branch",
+        "services": [
+          "terminal",
+          "cash"
+        ]
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "product",
+      "label": "Антифрод-система",
+      "attributes": {
+        "version": "v4.2",
+        "load_level": "high"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "product",
+      "label": "Система быстрых платежей",
+      "attributes": {
+        "protocol": "SBP",
+        "routing": "central_bank"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "platform": "iOS_Android",
+        "cache_size": "128MB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Терминал самообслуживания",
+      "attributes": {
+        "model": "ATM-500",
+        "location": "branch_lobby"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "document",
+      "label": "Паспорт 4500 123456",
+      "attributes": {
+        "series": "4500",
+        "number": "123456",
+        "issue_year": "2015"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "document",
+      "label": "Справка о доходах",
+      "attributes": {
+        "format": "PDF",
+        "source": "employer"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "document",
+      "label": "Договор дарения",
+      "attributes": {
+        "type": "gift_agreement",
+        "notarized": "false"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "document",
+      "label": "Акт передачи средств",
+      "attributes": {
+        "type": "transfer_receipt",
+        "signed": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "document",
+      "label": "Квитанция ЖКХ январь",
+      "attributes": {
+        "period": "2024-01",
+        "amount": "8400",
+        "address": "Ленина 15"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "document",
+      "label": "Квитанция ЖКХ февраль",
+      "attributes": {
+        "period": "2024-02",
+        "amount": "8650",
+        "address": "Ленина 15"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "document",
+      "label": "Чек ТМ-К 445120",
+      "attributes": {
+        "type": "terminal_receipt",
+        "print_time": "14:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "document",
+      "label": "Постановление ГИБДД 7789/24",
+      "attributes": {
+        "date": "05.03.2024",
+        "violation": "speeding"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "document",
+      "label": "Расширенная выписка",
+      "attributes": {
+        "format": "CSV",
+        "export_date": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Письмо-справка о закрытии штрафа",
+      "attributes": {
+        "issuer": "GIBDD",
+        "status": "closed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "product",
+      "label": "Кредитная карта (грейс 50 дн)",
+      "attributes": {
+        "type": "credit",
+        "grace_days": 50,
+        "interest_free": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "account",
+      "label": "Текущий счет ****7789",
+      "attributes": {
+        "currency": "RUB",
+        "status": "active"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "account",
+      "label": "Накопительный счет (16%)",
+      "attributes": {
+        "rate": "16%",
+        "liquidity": "medium"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Заявка на рефинансирование",
+      "attributes": {
+        "rate": "14.5%",
+        "term_months": 24
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Проверка перевода Абрамову (115-ФЗ)",
+      "attributes": {
+        "date": "12.01.2024",
+        "amount": "150000",
+        "status": "manual_review"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Блокировка/Разблокировка счета",
+      "attributes": {
+        "action": "unblock",
+        "duration": "2h",
+        "trigger": "security_scan"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Оплата ЖКХ январь",
+      "attributes": {
+        "date": "25.01.2024",
+        "amount": "8400",
+        "channel": "app"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Статус обработки платежа",
+      "attributes": {
+        "state": "processing",
+        "delay_minutes": "45"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Фильтр истории ЖКХ",
+      "attributes": {
+        "category": "utilities",
+        "date_range": "20-31.01"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Очистка временных данных",
+      "attributes": {
+        "method": "cache_flush",
+        "result": "full_detail"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Изменение суточного лимита",
+      "attributes": {
+        "new_limit": "120000",
+        "initiator": "spouse",
+        "channel": "support"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Перевод жене 5000 (12.03)",
+      "attributes": {
+        "date": "12.03.2024",
+        "amount": "5000",
+        "purpose": "household"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Перевод жене 5200 (19.03)",
+      "attributes": {
+        "date": "19.03.2024",
+        "amount": "5200",
+        "purpose": "utilities_rounding"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Сортировка транзакций",
+      "attributes": {
+        "order": "descending",
+        "field": "amount",
+        "effect": "chronology_distortion"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Экспорт выписки",
+      "attributes": {
+        "format": "electronic",
+        "destination": "archive"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Перенос даты платежа",
+      "attributes": {
+        "new_date": "25th_next_month",
+        "product": "credit_card"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Запрос статуса однотипных переводов",
+      "attributes": {
+        "request_date": "03.02.2024",
+        "focus": "duplicate_prevention"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Перевод Рыбакову 10000 (3.02)",
+      "attributes": {
+        "date": "03.02.2024",
+        "amount": "10000",
+        "note": "无偿_help"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Перевод Рыбакову 10200 (10.02)",
+      "attributes": {
+        "date": "10.02.2024",
+        "amount": "10200",
+        "note": "urgency_fee"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Детализация комиссий",
+      "attributes": {
+        "filter": "show_fees_separately",
+        "output": "two_rows"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Отчет системы статусов",
+      "attributes": {
+        "row1_status": "completed",
+        "row2_status": "processing"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Сверка реквизитов",
+      "attributes": {
+        "method": "phone_vs_account",
+        "result": "match"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Оплата ЖКХ февраль",
+      "attributes": {
+        "date": "25.02.2024",
+        "amount": "8650",
+        "indexation": "water_supply"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Оплата через терминал",
+      "attributes": {
+        "device": "self_service",
+        "receipt_printed": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Оформление заявки на рефинансирование",
+      "attributes": {
+        "down_payment": "15%",
+        "insurance": "included"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД",
+      "attributes": {
+        "date": "10.03.2024",
+        "amount": "3000",
+        "auto_fill": "enabled"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Расчет процентного дохода",
+      "attributes": {
+        "period": "february",
+        "impact": "temporary_decrease"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Настройка уведомлений >5000",
+      "attributes": {
+        "threshold": "5000",
+        "type": "popup"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Федеральный закон 115-ФЗ",
+      "attributes": {
+        "domain": "anti_money_laundering",
+        "enforcement": "mandatory"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Тариф «Премиум»",
+      "attributes": {
+        "benefit": "zero_commission",
+        "tier": "gold"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Грейс-период 50 дней",
+      "attributes": {
+        "feature": "interest_free",
+        "condition": "full_payment"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Сезонная индексация тарифов",
+      "attributes": {
+        "factor": "seasonal",
+        "target": "utilities"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Автозаполнение реквизитов",
+      "attributes": {
+        "automation": "high",
+        "error_rate": "low"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Страховка в тело займа",
+      "attributes": {
+        "structure": "capitalized",
+        "risk_coverage": "full"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Первоначальный взнос 15%",
+      "attributes": {
+        "percentage": "15",
+        "payment_method": "lump_sum"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Суточный лимит 120 000 руб",
+      "attributes": {
+        "value": "120000",
+        "scope": "daily_transactions"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Когнитивная перегрузка",
+      "attributes": {
+        "cause": "similar_transactions",
+        "mitigation": "filtering"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "organization",
+      "label": "Квартира, ул. Ленина 15",
+      "attributes": {
+        "type": "residential",
+        "municipality": "Ahtubinsk"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "organization",
+      "label": "ст. Ахтубинск",
+      "attributes": {
+        "type": "settlement",
+        "region": "Astrakhan"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "organization",
+      "label": "ул. Комсомольская",
+      "attributes": {
+        "type": "street",
+        "branch_present": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Профессия агроном",
+      "attributes": {
+        "sector": "agriculture",
+        "income_basis": "salary"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Идентификация клиента",
+      "attributes": {
+        "step": "onboarding",
+        "doc_required": "passport"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Техническая поддержка",
+      "attributes": {
+        "function": "troubleshooting",
+        "escalation": "tier2"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Оператор службы безопасности",
+      "attributes": {
+        "task": "verification",
+        "tool": "dashboard"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Специалист по работе с клиентами",
+      "attributes": {
+        "task": "document_prep",
+        "sla": "next_business_day"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Ручная верификация",
+      "attributes": {
+        "level": "high",
+        "approval_needed": "manager"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "event",
+      "label": "Одобрено",
+      "attributes": {
+        "final_state": "true",
+        "notification": "sent"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Обработка",
+      "attributes": {
+        "queue_position": "3",
+        "eta_minutes": "45"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "event",
+      "label": "Выполнено",
+      "attributes": {
+        "confirmation": "sms",
+        "ledger_updated": "true"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Референс-код 88921045",
+      "attributes": {
+        "type": "transaction_ref",
+        "length": "8"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_74",
+      "type": "event",
+      "label": "Номер телефона 89001234567",
+      "attributes": {
+        "type": "mobile",
+        "carrier": "MTS"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_75",
+      "type": "event",
+      "label": "Тайм-якорь 12.01.2024 09:15",
+      "attributes": {
+        "epoch": "1705051500",
+        "timezone": "MSK"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "event",
+      "label": "Тайм-якорь 03.02.2024 11:40",
+      "attributes": {
+        "epoch": "1706958000",
+        "timezone": "MSK"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "event",
+      "label": "Тайм-якорь 12.03.2024",
+      "attributes": {
+        "epoch": "1710201600",
+        "timezone": "MSK"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "event",
+      "label": "Тайм-якорь 19.03.2024",
+      "attributes": {
+        "epoch": "1710806400",
+        "timezone": "MSK"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_79",
+      "type": "event",
+      "label": "Тайм-якорь 25.02.2024",
+      "attributes": {
+        "epoch": "1708828800",
+        "timezone": "MSK"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_80",
+      "type": "event",
+      "label": "Тайм-якорь 10.03.2024",
+      "attributes": {
+        "epoch": "1710028800",
+        "timezone": "MSK"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_81",
+      "type": "event",
+      "label": "Сумма 150 000 руб",
+      "attributes": {
+        "currency": "RUB",
+        "context": "gift"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_82",
+      "type": "event",
+      "label": "Сумма 8 400 руб",
+      "attributes": {
+        "currency": "RUB",
+        "context": "utilities_jan"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_83",
+      "type": "event",
+      "label": "Сумма 8 650 руб",
+      "attributes": {
+        "currency": "RUB",
+        "context": "utilities_feb"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_84",
+      "type": "event",
+      "label": "Сумма 10 000 руб",
+      "attributes": {
+        "currency": "RUB",
+        "context": "friend_help"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_85",
+      "type": "event",
+      "label": "Сумма 10 200 руб",
+      "attributes": {
+        "currency": "RUB",
+        "context": "friend_help_plus_fee"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_86",
+      "type": "event",
+      "label": "Сумма 3 000 руб",
+      "attributes": {
+        "currency": "RUB",
+        "context": "traffic_fine"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_87",
+      "type": "event",
+      "label": "Разница 200 руб",
+      "attributes": {
+        "value": "200",
+        "reason": "commission"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_88",
+      "type": "event",
+      "label": "Разница 250 руб",
+      "attributes": {
+        "value": "250",
+        "reason": "indexation"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_89",
+      "type": "event",
+      "label": "Ставка 14,5% годовых",
+      "attributes": {
+        "type": "annual_rate",
+        "product": "loan"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_owns_1",
+      "source": "p_koshelev",
+      "target": "acc_card",
+      "relation": "owns",
+      "attributes": {
+        "since": "01.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_has_doc_1",
+      "source": "p_koshelev",
+      "target": "doc_ndfl23",
+      "relation": "resulted_in",
+      "attributes": {
+        "issue_date": "02.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_selects_1",
+      "source": "p_koshelev",
+      "target": "prod_loan1",
+      "relation": "resulted_in",
+      "attributes": {
+        "monthly_payment": "42300 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_sends_swift_1",
+      "source": "p_koshelev",
+      "target": "trans_swift1",
+      "relation": "transferred_to",
+      "attributes": {
+        "execution_date": "08.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_receives_swift_1",
+      "source": "p_mother",
+      "target": "trans_swift1",
+      "relation": "received",
+      "attributes": {
+        "beneficiary_bank": "Сбербанк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_trans_orst_true",
+      "source": "p_koshelev",
+      "target": "trans_orst_mid",
+      "relation": "paid",
+      "attributes": {
+        "amount": "7000 руб.",
+        "date": "03.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_trans_orst_low",
+      "source": "p_koshelev",
+      "target": "trans_orst_mid",
+      "relation": "paid",
+      "attributes": {
+        "amount": "6900 руб.",
+        "date": "01.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_trans_orst_high",
+      "source": "p_koshelev",
+      "target": "trans_orst_mid",
+      "relation": "paid",
+      "attributes": {
+        "amount": "7100 руб.",
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "p_koshelev",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "verified": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "p_koshelev",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "location": "station"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "p_koshelev",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "login"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "p_koshelev",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {
+        "stage": "initial"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "p_mother",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "monthly"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "acc_card",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "benefit": "no_fee"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "prod_loan1",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "feature": "grace"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "trans_swift1",
+      "target": "ctx_node_1",
+      "relation": "cancelled",
+      "attributes": {
+        "status": "blocked"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "trans_orst_mid",
+      "target": "ctx_node_2",
+      "relation": "cancelled",
+      "attributes": {
+        "contact": "friend"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_1",
+      "target": "ctx_node_8",
+      "relation": "caused",
+      "attributes": {
+        "law": "115-FZ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_8",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "level": "manual"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_14",
+      "target": "ctx_node_15",
+      "relation": "submitted",
+      "attributes": {
+        "batch": "security_request"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_15",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "outcome": "approve"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_8",
+      "target": "ctx_node_29",
+      "relation": "signed",
+      "attributes": {
+        "action": "unblock"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_29",
+      "target": "ctx_node_70",
+      "relation": "changed_to",
+      "attributes": {
+        "new_state": "approved"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_29",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "restored"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_10",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "vendor": "internal"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_10",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "alert": "high_value"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_28",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "150000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_81",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {
+        "law": "115-FZ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_52",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "scope": "cross_border"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_12",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "mobile"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_30",
+      "target": "ctx_node_18",
+      "relation": "paid",
+      "attributes": {
+        "period": "jan"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_18",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "address": "lenina15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_30",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "8400"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_82",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {
+        "state": "processing"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_31",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "ui": "history"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_12",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "filter"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_32",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "clear_cache"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_33",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {
+        "ref": "88921045"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_73",
+      "target": "ctx_node_30",
+      "relation": "approved",
+      "attributes": {
+        "exactness": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_30",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "completed"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_72",
+      "target": "ctx_node_75",
+      "relation": "occurred_in",
+      "attributes": {
+        "time": "09:15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_4",
+      "target": "ctx_node_34",
+      "relation": "changed_to",
+      "attributes": {
+        "via": "support"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_34",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "120000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_59",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "scope": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_11",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "network": "sbp"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_35",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {
+        "phone": "89001234567"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_74",
+      "target": "ctx_node_4",
+      "relation": "owns",
+      "attributes": {
+        "owner": "wife"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_35",
+      "target": "ctx_node_77",
+      "relation": "signed",
+      "attributes": {
+        "date": "12.03"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_11",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "network": "sbp"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_36",
+      "target": "ctx_node_78",
+      "relation": "signed",
+      "attributes": {
+        "date": "19.03"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_36",
+      "target": "ctx_node_87",
+      "relation": "contains",
+      "attributes": {
+        "reason": "rounding"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_87",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "base": "5000"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_37",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "position": "lower"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_37",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "position": "upper"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_37",
+      "target": "ctx_node_60",
+      "relation": "caused",
+      "attributes": {
+        "effect": "distortion"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_60",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "goal": "archive"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_38",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "format": "csv"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_22",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "payment_date"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_39",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "product": "credit"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_40",
+      "target": "ctx_node_76",
+      "relation": "applied_for",
+      "attributes": {
+        "time": "11:40"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_40",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "problem": "cognitive_load"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_60",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "yakub"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_41",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "name": "SBP"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_41",
+      "target": "ctx_node_84",
+      "relation": "transferred_to",
+      "attributes": {
+        "value": "10000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_84",
+      "target": "ctx_node_2",
+      "relation": "received",
+      "attributes": {
+        "recipient": "yakub"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_3",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "bank": "competitor"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_3",
+      "target": "ctx_node_85",
+      "relation": "transferred_to",
+      "attributes": {
+        "value": "9800"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_85",
+      "target": "ctx_node_2",
+      "relation": "cancelled",
+      "attributes": {
+        "recipient": "yakub"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_60",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "yakub"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_42",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "name": "SBP"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_42",
+      "target": "ctx_node_85",
+      "relation": "transferred_to",
+      "attributes": {
+        "value": "10200"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_85",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {
+        "base": "10000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_87",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "fee": "urgency"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "rows": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_44",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "completed"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_44",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "processing"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_44",
+      "target": "ctx_node_71",
+      "relation": "signed",
+      "attributes": {
+        "to": "second_row"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_71",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "issue": "uncertainty"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_60",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {
+        "action": "verify"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_45",
+      "target": "ctx_node_2",
+      "relation": "approved",
+      "attributes": {
+        "method": "phone_match"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_45",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "same"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_45",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "account": "same"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_46",
+      "target": "ctx_node_19",
+      "relation": "paid",
+      "attributes": {
+        "period": "feb"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_19",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "address": "lenina15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_46",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "8650"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_83",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "base": "8400"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_88",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "factor": "seasonal"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_55",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "target": "water"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_46",
+      "target": "ctx_node_47",
+      "relation": "signed",
+      "attributes": {
+        "device": "terminal"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_47",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "model": "atm"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_13",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "id": "TM-K445120"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_20",
+      "target": "ctx_node_46",
+      "relation": "approved",
+      "attributes": {
+        "method": "physical"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_47",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {
+        "street": "komsomolskaya"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_63",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "branch": "yes"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_48",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "application"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_27",
+      "target": "ctx_node_89",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "14.5"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_27",
+      "target": "ctx_node_58",
+      "relation": "paid",
+      "attributes": {
+        "percent": "15"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_58",
+      "target": "ctx_node_48",
+      "relation": "caused",
+      "attributes": {
+        "method": "lump"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_27",
+      "target": "ctx_node_57",
+      "relation": "contains",
+      "attributes": {
+        "type": "insurance"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_57",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "capitalization": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_49",
+      "target": "ctx_node_21",
+      "relation": "paid",
+      "attributes": {
+        "order": "7789/24"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_21",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "agency": "gibdd"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_49",
+      "target": "ctx_node_86",
+      "relation": "resulted_in",
+      "attributes": {
+        "value": "3000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_86",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "fine"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_49",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "name": "auto_fill"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_56",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "efficiency": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_49",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "account_type": "savings"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_26",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "period": "feb"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_50",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "impact": "temp_drop"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_50",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "income_reduction"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_51",
+      "target": "ctx_node_49",
+      "relation": "followed_by",
+      "attributes": {
+        "trigger": "payment"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_51",
+      "target": "ctx_node_86",
+      "relation": "owns",
+      "attributes": {
+        "value": "5000"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "ctx_node_86",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "popup"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_51",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "team": "support"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_7",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "app"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_68",
+      "target": "ctx_node_51",
+      "relation": "approved",
+      "attributes": {
+        "role": "specialist"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_68",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "closure_letter"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_23",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "agency": "gibdd"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_6",
+      "target": "ctx_node_23",
+      "relation": "received",
+      "attributes": {
+        "status": "archived"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_68",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "format": "digital"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "ctx_node_22",
+      "target": "ctx_node_68",
+      "relation": "submitted",
+      "attributes": {
+        "client": "koshelev"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "ctx_node_67",
+      "target": "ctx_node_28",
+      "relation": "submitted",
+      "attributes": {
+        "priority": "medium"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_67",
+      "target": "ctx_node_16",
+      "relation": "applied_for",
+      "attributes": {
+        "type": "gift_contract"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_16",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "recipient"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_67",
+      "target": "ctx_node_17",
+      "relation": "applied_for",
+      "attributes": {
+        "type": "transfer_act"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_17",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "receiver"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "ctx_node_16",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "bundle": "compliance"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "ctx_node_17",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "legal_basis": "civil_code"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "ctx_node_10",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "risk": "synthetic"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "ctx_node_3",
+      "target": "ctx_node_10",
+      "relation": "caused",
+      "attributes": {
+        "signal": "volume_spike"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_123",
+      "source": "ctx_node_10",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "entity": "sber"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_124",
+      "source": "ctx_node_5",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "infrastructure": "cloud"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_125",
+      "source": "ctx_node_12",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "ui_element": "badge"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_126",
+      "source": "ctx_node_31",
+      "target": "ctx_node_12",
+      "relation": "changed_to",
+      "attributes": {
+        "refresh": "manual"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_127",
+      "source": "ctx_node_12",
+      "target": "ctx_node_32",
+      "relation": "cancelled",
+      "attributes": {
+        "section": "history"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_128",
+      "source": "ctx_node_32",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "logic": "AND"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_129",
+      "source": "ctx_node_12",
+      "target": "ctx_node_33",
+      "relation": "signed",
+      "attributes": {
+        "action": "purge"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_130",
+      "source": "ctx_node_33",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "speed": "fast"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_131",
+      "source": "ctx_node_4",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "limit"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_132",
+      "source": "ctx_node_34",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "holder": "spouse"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_133",
+      "source": "ctx_node_59",
+      "target": "ctx_node_34",
+      "relation": "changed_to",
+      "attributes": {
+        "old": "default"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_134",
+      "source": "ctx_node_34",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "scope": "all_channels"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_135",
+      "source": "ctx_node_24",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "days": "50"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_136",
+      "source": "ctx_node_54",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "requirement": "timely"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_137",
+      "source": "ctx_node_24",
+      "target": "ctx_node_39",
+      "relation": "changed_to",
+      "attributes": {
+        "date": "25th"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_138",
+      "source": "ctx_node_39",
+      "target": "ctx_node_24",
+      "relation": "changed_to",
+      "attributes": {
+        "cycle": "monthly"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_139",
+      "source": "ctx_node_38",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "size": "2MB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_140",
+      "source": "ctx_node_22",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "detail": "full"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_141",
+      "source": "ctx_node_38",
+      "target": "ctx_node_68",
+      "relation": "applied_for",
+      "attributes": {
+        "role": "client"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_142",
+      "source": "ctx_node_68",
+      "target": "ctx_node_38",
+      "relation": "applied_for",
+      "attributes": {
+        "timeline": "1day"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_143",
+      "source": "ctx_node_40",
+      "target": "ctx_node_7",
+      "relation": "submitted",
+      "attributes": {
+        "dept": "support"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_144",
+      "source": "ctx_node_7",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "priority": "normal"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_145",
+      "source": "ctx_node_40",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "factor": "load"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_146",
+      "source": "ctx_node_60",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "psychology": "cognitive"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_147",
+      "source": "ctx_node_41",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "gap": "7days"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_148",
+      "source": "ctx_node_42",
+      "target": "ctx_node_41",
+      "relation": "followed_by",
+      "attributes": {
+        "similarity": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_149",
+      "source": "ctx_node_43",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "component": "fee"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_150",
+      "source": "ctx_node_43",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "component": "base"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_151",
+      "source": "ctx_node_44",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "format": "table"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_152",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "data": "dual_row"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_153",
+      "source": "ctx_node_45",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "field": "phone"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_154",
+      "source": "ctx_node_45",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "field": "account"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_155",
+      "source": "ctx_node_46",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "node": "terminal"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_156",
+      "source": "ctx_node_47",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "method": "cashless"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_157",
+      "source": "ctx_node_48",
+      "target": "ctx_node_27",
+      "relation": "submitted",
+      "attributes": {
+        "fields": "complete"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_158",
+      "source": "ctx_node_27",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "product": "refinance"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_159",
+      "source": "ctx_node_49",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "mode": "smart"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_160",
+      "source": "ctx_node_56",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "count": "5"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_161",
+      "source": "ctx_node_50",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {
+        "trend": "down"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_162",
+      "source": "ctx_node_26",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "calculation": "daily"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_163",
+      "source": "ctx_node_51",
+      "target": "ctx_node_86",
+      "relation": "owns",
+      "attributes": {
+        "rule": "greater_than"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_164",
+      "source": "ctx_node_86",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {
+        "channel": "push"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_165",
+      "source": "ctx_node_52",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "scope": "monitoring"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_166",
+      "source": "ctx_node_8",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {
+        "penalty": "freeze"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_167",
+      "source": "ctx_node_53",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "condition": "premium"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_168",
+      "source": "ctx_node_6",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "tier": "gold"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_169",
+      "source": "ctx_node_55",
+      "target": "ctx_node_19",
+      "relation": "changed_to",
+      "attributes": {
+        "direction": "up"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_170",
+      "source": "ctx_node_19",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "seasonal"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_171",
+      "source": "ctx_node_57",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "item": "insurance"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_172",
+      "source": "ctx_node_27",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {
+        "section": "terms"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_173",
+      "source": "ctx_node_58",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "percent": "15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_174",
+      "source": "ctx_node_27",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "timing": "pre_approval"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_175",
+      "source": "ctx_node_59",
+      "target": "ctx_node_24",
+      "relation": "cancelled",
+      "attributes": {
+        "window": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_176",
+      "source": "ctx_node_24",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "check": "real_time"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_177",
+      "source": "ctx_node_60",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "design": "sorting"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_178",
+      "source": "ctx_node_37",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "user": "client"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_179",
+      "source": "ctx_node_61",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "unit": "apt"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_180",
+      "source": "ctx_node_18",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "city": "akhtubinsk"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_181",
+      "source": "ctx_node_62",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "sector": "agri"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_182",
+      "source": "ctx_node_64",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "office": "local"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_183",
+      "source": "ctx_node_65",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "authenticity": "high"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_184",
+      "source": "ctx_node_14",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {
+        "phase": "onboard"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_185",
+      "source": "ctx_node_66",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "issue": "freeze"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_186",
+      "source": "ctx_node_12",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {
+        "ticket": "TS-992"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_187",
+      "source": "ctx_node_67",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "title": "operator"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_188",
+      "source": "ctx_node_8",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {
+        "shift": "day"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_189",
+      "source": "ctx_node_68",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "level": "specialist"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_190",
+      "source": "ctx_node_7",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "skill": "docs"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_191",
+      "source": "ctx_node_69",
+      "target": "ctx_node_8",
+      "relation": "signed",
+      "attributes": {
+        "team": "sec"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_192",
+      "source": "ctx_node_8",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "workflow": "review"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_193",
+      "source": "ctx_node_70",
+      "target": "ctx_node_29",
+      "relation": "followed_by",
+      "attributes": {
+        "action": "unblock"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_194",
+      "source": "ctx_node_29",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {
+        "success": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_195",
+      "source": "ctx_node_71",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "stage": "intermediate"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_196",
+      "source": "ctx_node_31",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "code": "PROC"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_197",
+      "source": "ctx_node_72",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "time": "14:32"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_198",
+      "source": "ctx_node_30",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {
+        "state": "done"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_199",
+      "source": "ctx_node_73",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "unique": "true"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_200",
+      "source": "ctx_node_30",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {
+        "algo": "hash"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_201",
+      "source": "ctx_node_74",
+      "target": "ctx_node_35",
+      "relation": "paid",
+      "attributes": {
+        "network": "sbp"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_202",
+      "source": "ctx_node_35",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {
+        "format": "intl"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_203",
+      "source": "ctx_node_75",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "minute"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_204",
+      "source": "ctx_node_28",
+      "target": "ctx_node_75",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_205",
+      "source": "ctx_node_76",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "minute"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_206",
+      "source": "ctx_node_40",
+      "target": "ctx_node_76",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_207",
+      "source": "ctx_node_77",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "day"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_208",
+      "source": "ctx_node_35",
+      "target": "ctx_node_77",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_209",
+      "source": "ctx_node_78",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "day"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_210",
+      "source": "ctx_node_36",
+      "target": "ctx_node_78",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_211",
+      "source": "ctx_node_79",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "day"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_212",
+      "source": "ctx_node_46",
+      "target": "ctx_node_79",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_213",
+      "source": "ctx_node_80",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "day"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_214",
+      "source": "ctx_node_49",
+      "target": "ctx_node_80",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_215",
+      "source": "ctx_node_81",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_216",
+      "source": "ctx_node_28",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "principal"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_217",
+      "source": "ctx_node_82",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_218",
+      "source": "ctx_node_30",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "total"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_219",
+      "source": "ctx_node_83",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_220",
+      "source": "ctx_node_46",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "adjusted"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_221",
+      "source": "ctx_node_84",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_222",
+      "source": "ctx_node_41",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "base"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_223",
+      "source": "ctx_node_85",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_224",
+      "source": "ctx_node_42",
+      "target": "ctx_node_85",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "gross"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "p_koshelev",
+      "target": "acc_card",
+      "relation": "owns",
+      "attributes": {
+        "since": "1,01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "p_koshelev",
+      "target": "trans_orst_mid",
+      "relation": "paid",
+      "attributes": {
+        "amount": "6210 руб.",
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "p_koshelev",
+      "target": "trans_orst_mid",
+      "relation": "paid",
+      "attributes": {
+        "amount": "7810 руб.",
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_7",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "code": "PROC"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_45",
+      "target": "ctx_node_21",
+      "relation": "paid",
+      "attributes": {
+        "order": "8567,9/24"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_63",
+      "target": "ctx_node_27",
+      "relation": "submitted",
+      "attributes": {
+        "fields": "complete"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_52",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "agency": "gibdd"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_6",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "name": "SBP"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_85",
+      "target": "ctx_node_24",
+      "relation": "cancelled",
+      "attributes": {
+        "window": "daily"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_6",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {
+        "phone": "97901358023,7"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_41",
+      "target": "acc_card",
+      "relation": "owns",
+      "attributes": {
+        "since": "1,11.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_60",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "address": "lenina16,5"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "p_koshelev",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "monthly_payment": "38070 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_12",
+      "target": "trans_swift1",
+      "relation": "signed",
+      "attributes": {
+        "action": "purge"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_46",
+      "target": "ctx_node_80",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_69",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "adjusted"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_27",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "timing": "pre_approval"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_85",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "product": "refinance"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_23",
+      "target": "ctx_node_77",
+      "relation": "signed",
+      "attributes": {
+        "date": "13,23"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_73",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "item": "insurance"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_72",
+      "target": "ctx_node_73",
+      "relation": "occurred_in",
+      "attributes": {
+        "time": "8,1:15"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_17",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "receiver"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_12",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "mobile"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_27",
+      "target": "ctx_node_8",
+      "relation": "contains",
+      "attributes": {
+        "type": "insurance"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "ctx_node_16",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "recipient"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "ctx_node_40",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "problem": "cognitive_load"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_8",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "level": "manual"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "ctx_node_63",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {
+        "branch": "yes"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "ctx_node_18",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "city": "akhtubinsk"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "p_koshelev",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "verified": "true"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_10",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "alert": "high_value"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_89",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "position": "lower"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_16",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "minute"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_51",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "ui": "history"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_22",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_76",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "precision": "minute"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_41",
+      "target": "prod_loan1",
+      "relation": "resulted_in",
+      "attributes": {
+        "monthly_payment": "38070 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "ctx_node_46",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "login"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "ctx_node_69",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "format": "digital"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "ctx_node_43",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "workflow": "review"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "p_koshelev",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "monthly_payment": "46530 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "p_koshelev",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "issue_date": "1,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "ctx_node_71",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {
+        "stage": "intermediate"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "ctx_node_88",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "team": "support"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "ctx_node_16",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "recipient"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "ctx_node_19",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "ctx_node_46",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "workflow": "review"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "ctx_node_44",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "completed"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "ctx_node_9",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "field": "account"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv47",
+      "source": "ctx_node_3",
+      "target": "ctx_node_34",
+      "relation": "changed_to",
+      "attributes": {
+        "via": "support"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv48",
+      "source": "p_koshelev",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "login"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv49",
+      "source": "ctx_node_59",
+      "target": "ctx_node_86",
+      "relation": "cancelled",
+      "attributes": {
+        "window": "daily"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv50",
+      "source": "ctx_node_49",
+      "target": "ctx_node_72",
+      "relation": "occurred_in",
+      "attributes": {
+        "zone": "msk"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv51",
+      "source": "acc_card",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "gap": "6,3days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv52",
+      "source": "ctx_node_56",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "count": "4,5"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv53",
+      "source": "ctx_node_25",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {
+        "format": "table"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv54",
+      "source": "ctx_node_81",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "currency": "RUB"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv55",
+      "source": "ctx_node_51",
+      "target": "ctx_node_20",
+      "relation": "owns",
+      "attributes": {
+        "rule": "greater_than"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv56",
+      "source": "ctx_node_51",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "base": "9240"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv57",
+      "source": "ctx_node_58",
+      "target": "ctx_node_33",
+      "relation": "caused",
+      "attributes": {
+        "method": "lump"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv58",
+      "source": "ctx_node_83",
+      "target": "ctx_node_46",
+      "relation": "approved",
+      "attributes": {
+        "method": "physical"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_p_koshelev",
+      "source": "p_koshelev",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_p_mother",
+      "source": "p_mother",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_acc_card",
+      "source": "acc_card",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_doc_ndfl23",
+      "source": "doc_ndfl23",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_prod_loan1",
+      "source": "prod_loan1",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_trans_swift1",
+      "source": "trans_swift1",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_trans_orst_mid",
+      "source": "trans_orst_mid",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

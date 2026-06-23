@@ -1,0 +1,3022 @@
+{
+  "nodes": [
+    {
+      "id": "person_natalya_fomicheva",
+      "type": "person",
+      "label": "Наталья Леоновна Фомичева",
+      "attributes": {
+        "age": "60 лет",
+        "gender": "female",
+        "occupation": "Мясник",
+        "income": "76000 руб.",
+        "city": "клх Лысьва",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_vygodny",
+      "type": "product",
+      "label": "Вклад \"Выгодный\"",
+      "attributes": {
+        "type": "срочный",
+        "term": "1 год",
+        "capitalization": "ежемесячная",
+        "contract_number": "В-2023-01-15-500",
+        "amount": "500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_vygodny_rate_1",
+      "type": "event",
+      "label": "Ставка по вкладу \"Выгодный\" 15.0%",
+      "attributes": {
+        "value": "15.0%",
+        "date": "15.01.2023"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_vygodny_rate_2",
+      "type": "event",
+      "label": "Ставка по вкладу \"Выгодный\" 14.5%",
+      "attributes": {
+        "value": "14.5%",
+        "date": "10.04.2023"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "deposit_vygodny_rate_3",
+      "type": "event",
+      "label": "Ставка по вкладу \"Выгодный\" 14.2%",
+      "attributes": {
+        "value": "14.2%",
+        "date": "10.08.2023"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "deposit_vygodny_rate_4",
+      "type": "event",
+      "label": "Ставка по вкладу \"Выгодный\" 12.0%",
+      "attributes": {
+        "value": "12.0%",
+        "date": "20.10.2023"
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО 'Надежный Банк'",
+      "attributes": {
+        "type": "коммерческий банк",
+        "license_number": "1234",
+        "head_office": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Договор срочного вклада",
+      "attributes": {
+        "type": "договор",
+        "contract_date": "15.01.2023",
+        "status": "действующий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "event",
+      "label": "Пополнение вклада",
+      "attributes": {
+        "date": "20.01.2023",
+        "amount": "50000 руб.",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "account",
+      "label": "Текущий счет Натальи Фомичевой",
+      "attributes": {
+        "type": "текущий",
+        "currency": "руб.",
+        "balance": "неизвестно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Оплата ЖКУ",
+      "attributes": {
+        "date": "неизвестно",
+        "amount": "4500 руб.",
+        "status": "планируется"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "organization",
+      "label": "Агентство по страхованию вкладов (АСВ)",
+      "attributes": {
+        "type": "государственная корпорация",
+        "function": "страхование вкладов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Дебетовая карта с кэшбэком",
+      "attributes": {
+        "type": "дебетовая карта",
+        "features": "кэшбэк",
+        "status": "предложено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "person",
+      "label": "Милица Фомичева",
+      "attributes": {
+        "gender": "female",
+        "role": "дочь",
+        "relationship": "дочь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "person",
+      "label": "Ольга Фомичева",
+      "attributes": {
+        "gender": "female",
+        "role": "дочь",
+        "relationship": "дочь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Начисление процентов по вкладу",
+      "attributes": {
+        "date": "01.03.2023",
+        "amount": "6875 руб.",
+        "period": "февраль"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "product",
+      "label": "Брокерский счет",
+      "attributes": {
+        "type": "инвестиционный",
+        "status": "рассматривается"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "person",
+      "label": "Наина Михайловна Потапова",
+      "attributes": {
+        "gender": "female",
+        "role": "мать",
+        "relationship": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Вклад 'Оптимальный'",
+      "attributes": {
+        "type": "срочный",
+        "term": "1 год",
+        "rate": "14.8%",
+        "amount": "475000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "person",
+      "label": "Елизар Устинович Кононов",
+      "attributes": {
+        "gender": "male",
+        "role": "знакомый",
+        "relationship": "подруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Проверка баланса",
+      "attributes": {
+        "date": "неизвестно",
+        "channel": "интернет-банк",
+        "status": "выполнено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Консультация по АСВ",
+      "attributes": {
+        "date": "неизвестно",
+        "topic": "страхование вкладов",
+        "channel": "оператор"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Получение push-уведомления",
+      "attributes": {
+        "date": "неизвестно",
+        "content": "новые дебетовые карты",
+        "status": "получено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Изучение условий договора",
+      "attributes": {
+        "date": "неизвестно",
+        "document": "договор вклада",
+        "focus": "досрочное расторжение, пролонгация"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Обсуждение выгодной ставки",
+      "attributes": {
+        "date": "неизвестно",
+        "recipient": "Елизар Кононов",
+        "topic": "вклад 'Выгодный'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Проверка истории операций",
+      "attributes": {
+        "date": "неизвестно",
+        "purpose": "отсутствие подозрительной активности",
+        "status": "выполнено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Планируемый перевод дочери Милице",
+      "attributes": {
+        "date": "следующий месяц",
+        "amount": "15000 руб.",
+        "purpose": "оплата обучения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "product",
+      "label": "Накопительный счет 'Копилка'",
+      "attributes": {
+        "type": "накопительный",
+        "rate": "8%",
+        "features": "пополнение/снятие без потери %",
+        "contract_number": "НС-2023-04-15-АФ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "person",
+      "label": "Агата Леонидовна Филиппова",
+      "attributes": {
+        "gender": "female",
+        "role": "племянница",
+        "relationship": "племянница"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Накопительный счет 'Накопительный+'",
+      "attributes": {
+        "type": "накопительный",
+        "limit": "48000 руб./мес."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "person",
+      "label": "Чеслав Димитриевич Костин",
+      "attributes": {
+        "gender": "male",
+        "role": "знакомый",
+        "relationship": "знакомый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Запрос выписки по вкладу",
+      "attributes": {
+        "date": "неизвестно",
+        "product": "Вклад 'Выгодный'",
+        "period": "последний квартал",
+        "purpose": "отслеживание процентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Сравнение продуктов",
+      "attributes": {
+        "date": "неизвестно",
+        "product_type": "накопительные счета",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Уточнение частоты обновления ставок",
+      "attributes": {
+        "date": "неизвестно",
+        "topic": "процентные ставки",
+        "channel": "сотрудник банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Проверка подтверждения транзакций",
+      "attributes": {
+        "date": "неизвестно",
+        "transactions": "пополнение вклада, перевод на НС",
+        "status": "подтверждено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Планируемый перевод дочери Ольге",
+      "attributes": {
+        "date": "следующий месяц",
+        "amount": "12500 руб.",
+        "purpose": "оплата коммунальных услуг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Интерес к налоговому вычету",
+      "attributes": {
+        "date": "неизвестно",
+        "topic": "налоговый вычет",
+        "product_type": "инвестиционные продукты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "document",
+      "label": "Заявление на доверенность",
+      "attributes": {
+        "date": "10.06.2023",
+        "contract_number": "ДОВ-2023-06-10",
+        "status": "на рассмотрении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "person",
+      "label": "Любовь Даниловна Исаева",
+      "attributes": {
+        "gender": "female",
+        "role": "доверенное лицо",
+        "relationship": "близкая подруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "document",
+      "label": "Заявление на доверенность (Потапова)",
+      "attributes": {
+        "date": "12.06.2023",
+        "status": "на рассмотрении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Комфортная старость",
+      "attributes": {
+        "type": "долгосрочная",
+        "priority": "высокий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Помощь дочерям",
+      "attributes": {
+        "type": "среднесрочная",
+        "priority": "высокий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Обсуждение брокерского счета",
+      "attributes": {
+        "date": "неизвестно",
+        "recipient": "консультант",
+        "topic": "диверсификация вложений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Открытие накопительного счета 'Копилка'",
+      "attributes": {
+        "date": "15.04.2023",
+        "rate": "8%",
+        "for_person": "Агата Филиппова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Обсуждение экономической ситуации",
+      "attributes": {
+        "date": "неизвестно",
+        "recipient": "Чеслав Костин",
+        "topic": "ключевая ставка ЦБ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Изменение номера телефона",
+      "attributes": {
+        "date": "неизвестно",
+        "person": "Ольга Фомичева",
+        "status": "произошло"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Принятие взвешенных решений",
+      "attributes": {
+        "date": "неизвестно",
+        "context": "изменения ставок",
+        "outcome": "старается"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Ключевая ставка ЦБ",
+      "attributes": {
+        "type": "экономический показатель",
+        "influence": "на ставки по вкладам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Фишинговые атаки",
+      "attributes": {
+        "type": "киберугроза",
+        "risk": "кража данных"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Налоговый вычет",
+      "attributes": {
+        "type": "налоговая льгота",
+        "context": "инвестиции"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "document",
+      "label": "Выписка по вкладу",
+      "attributes": {
+        "type": "отчет",
+        "period": "квартал",
+        "content": "начисление процентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Оплата обучения",
+      "attributes": {
+        "type": "расход",
+        "recipient": "Милица Фомичева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "type": "расход",
+        "recipient": "Ольга Фомичева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "event",
+      "label": "Программа лояльности",
+      "attributes": {
+        "type": "маркетинговая программа",
+        "purpose": "удержание клиентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Решение сосредоточиться на вкладах",
+      "attributes": {
+        "date": "неизвестно",
+        "reason": "пока"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Получение уведомления о снижении ставки",
+      "attributes": {
+        "date": "10.04.2023",
+        "source": "новостная рассылка",
+        "product": "Вклад 'Выгодный'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_74",
+      "type": "event",
+      "label": "Легкое беспокойство",
+      "attributes": {
+        "date": "10.04.2023",
+        "reason": "снижение ставки",
+        "emotion": "беспокойство"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "event",
+      "label": "Перевод на накопительный счет 'Копилка'",
+      "attributes": {
+        "date": "25.04.2023",
+        "amount": "100000 руб.",
+        "recipient": "Агата Филиппова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "event",
+      "label": "Получение уведомления о лимите",
+      "attributes": {
+        "date": "05.05.2023",
+        "product": "Накопительный счет 'Копилка'",
+        "limit": "50000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "event",
+      "label": "Получение уведомления о лимите (Потапова)",
+      "attributes": {
+        "date": "05.05.2023",
+        "product": "Накопительный счет 'Накопительный+'",
+        "limit": "48000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_79",
+      "type": "event",
+      "label": "Внесение средств на НС 'Копилка'",
+      "attributes": {
+        "date": "15.05.2023",
+        "amount": "40000 руб.",
+        "recipient": "Агата Филиппова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_80",
+      "type": "event",
+      "label": "Рекламный буклет о ставке НС",
+      "attributes": {
+        "date": "01.06.2023",
+        "product": "Накопительный счет 'Копилка'",
+        "new_rate": "7.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_81",
+      "type": "event",
+      "label": "Оформление доверенности",
+      "attributes": {
+        "date": "10.06.2023",
+        "product": "Вклад 'Выгодный'",
+        "recipient": "Любовь Исаева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_82",
+      "type": "event",
+      "label": "Получение СМС о начислении процентов (май)",
+      "attributes": {
+        "date": "15.06.2023",
+        "product": "Вклад 'Выгодный'",
+        "amount": "7062.5 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_83",
+      "type": "event",
+      "label": "Подача заявления на доверенность (Потапова)",
+      "attributes": {
+        "date": "12.06.2023",
+        "product": "Вклад 'Оптимальный'",
+        "recipient": "Елизар Кононов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_84",
+      "type": "event",
+      "label": "Уточнение срока рассмотрения доверенности",
+      "attributes": {
+        "date": "неизвестно",
+        "channel": "контакт-центр"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_85",
+      "type": "event",
+      "label": "Проверка достаточности дохода",
+      "attributes": {
+        "date": "неизвестно",
+        "income": "76000 руб.",
+        "purpose": "управление сбережениями"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_86",
+      "type": "event",
+      "label": "Получение уведомления о программе лояльности",
+      "attributes": {
+        "date": "неизвестно",
+        "status": "не активировано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_87",
+      "type": "event",
+      "label": "Обсуждение фин. подушки с Милицей",
+      "attributes": {
+        "date": "неизвестно",
+        "topic": "финансовая подушка безопасности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_88",
+      "type": "event",
+      "label": "Финансовая цель: Максимальная доходность",
+      "attributes": {
+        "date": "15.01.2023",
+        "goal": "максимально увеличить доходность сбережений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_91",
+      "type": "event",
+      "label": "Получение СМС о фишинге",
+      "attributes": {
+        "date": "неизвестно",
+        "content": "предупреждение о фишинговых атаках"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_92",
+      "type": "event",
+      "label": "Обновление персональных данных",
+      "attributes": {
+        "date": "в ближайшее время",
+        "reason": "изменение номера телефона дочери Ольги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_93",
+      "type": "event",
+      "label": "Чувство тревоги",
+      "attributes": {
+        "date": "неизвестно",
+        "reason": "постоянные изменения ставок"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Внесение средств на НС 'Копилка'",
+      "attributes": {
+        "amount": "40000 руб.",
+        "date": "15.05.2023",
+        "channel": "касса банка",
+        "commission": "0 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "person",
+      "label": "Любовь Даниловна Исаева",
+      "attributes": {
+        "gender": "female",
+        "role": "близкая подруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_1",
+      "type": "organization",
+      "label": "Колхоз Лысьва",
+      "attributes": {
+        "type": "сельскохозяйственное предприятие",
+        "location": "клх Лысьва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_2",
+      "type": "event",
+      "label": "Мясник",
+      "attributes": {
+        "type": "профессия",
+        "sector": "сельское хозяйство"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_3",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "type": "цифровой канал",
+        "function": "операции, уведомления"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_4",
+      "type": "product",
+      "label": "СМС-уведомление",
+      "attributes": {
+        "type": "канал связи",
+        "content_type": "начисление процентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_5",
+      "type": "product",
+      "label": "Интернет-банк",
+      "attributes": {
+        "type": "цифровой канал",
+        "function": "проверка баланса, уведомления"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_6",
+      "type": "product",
+      "label": "Push-уведомление",
+      "attributes": {
+        "type": "канал связи",
+        "content_type": "новые предложения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_7",
+      "type": "product",
+      "label": "Новостная рассылка банка",
+      "attributes": {
+        "type": "информационный канал",
+        "content_type": "изменения ставок"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_8",
+      "type": "product",
+      "label": "Касса банка",
+      "attributes": {
+        "type": "физический канал",
+        "function": "внесение средств"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_9",
+      "type": "document",
+      "label": "Рекламный буклет",
+      "attributes": {
+        "type": "маркетинговый материал",
+        "content_type": "актуальные предложения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_10",
+      "type": "event",
+      "label": "Финансовые обязательства",
+      "attributes": {
+        "type": "обязательства",
+        "status": "выполняются"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_11",
+      "type": "event",
+      "label": "Открытие накопительного счета 'Копилка'",
+      "attributes": {
+        "date": "15.04.2023",
+        "account_number": "НС-2023-04-15-АФ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_12",
+      "type": "event",
+      "label": "Обсуждение с консультантом",
+      "attributes": {
+        "date": "январь 2023",
+        "topic": "брокерский счет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_13",
+      "type": "event",
+      "label": "Уточнение работы АСВ",
+      "attributes": {
+        "date": "январь 2023",
+        "topic": "страхование вкладов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x2_node_14",
+      "type": "event",
+      "label": "Обсуждение экономической ситуации",
+      "attributes": {
+        "date": "апрель 2023",
+        "topic": "ключевая ставка ЦБ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_owns_deposit_1",
+      "source": "person_natalya_fomicheva",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_rate_1",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15.0%",
+        "date": "15.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_rate_2",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_2",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.5%",
+        "date": "10.04.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_deposit_rate_3",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_3",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.2%",
+        "date": "10.08.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_deposit_rate_4",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_4",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "12.0%",
+        "date": "20.10.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_knowledge_update_1",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "15.0%",
+        "date": "01.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_knowledge_update_2",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_2",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "13.0%",
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_knowledge_update_3",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "15.0%",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_knowledge_update_4",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_3",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "12.5%",
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_88",
+      "target": "ctx_node_48",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_88",
+      "target": "ctx_node_49",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_natalya_fomicheva",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_3",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_10",
+      "relation": "received",
+      "attributes": {
+        "date": "01.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_10",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_51",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_51",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_12",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_15",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_4",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_16",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_16",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_17",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_17",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_18",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_19",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_19",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_20",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_21",
+      "target": "ctx_node_8",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_21",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_73",
+      "target": "deposit_vygodny_rate_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_73",
+      "target": "ctx_node_74",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_74",
+      "target": "person_natalya_fomicheva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_54",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_23",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_76",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_77",
+      "relation": "received",
+      "attributes": {
+        "date": "05.05.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_77",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_12",
+      "target": "ctx_node_78",
+      "relation": "received",
+      "attributes": {
+        "date": "05.05.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_78",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_56",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_56",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_29",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_29",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_29",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_30",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_31",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_91",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_91",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_92",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_92",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_57",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_93",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_93",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_35",
+      "target": "deposit_vygodny",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_35",
+      "target": "ctx_node_23",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_36",
+      "target": "ctx_node_9",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_36",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_37",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.05.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_79",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_80",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_80",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_81",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_81",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_81",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_82",
+      "relation": "received",
+      "attributes": {
+        "date": "15.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_82",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_12",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.06.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_83",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_83",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_83",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_84",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_85",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_86",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_86",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_87",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_53",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_23",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_11",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_12",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_9",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_16",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_1",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_2",
+      "source": "x2_node_2",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_3",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_4",
+      "source": "ctx_node_3",
+      "target": "x2_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_5",
+      "source": "ctx_node_4",
+      "target": "x2_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_6",
+      "source": "ctx_node_12",
+      "target": "x2_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_7",
+      "source": "ctx_node_16",
+      "target": "x2_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_8",
+      "source": "ctx_node_21",
+      "target": "x2_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_9",
+      "source": "ctx_node_27",
+      "target": "x2_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_10",
+      "source": "ctx_node_28",
+      "target": "x2_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_11",
+      "source": "ctx_node_36",
+      "target": "x2_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_12",
+      "source": "ctx_node_40",
+      "target": "x2_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_13",
+      "source": "ctx_node_50",
+      "target": "x2_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_14",
+      "source": "ctx_node_51",
+      "target": "x2_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_15",
+      "source": "ctx_node_54",
+      "target": "x2_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_16",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_17",
+      "source": "x2_node_10",
+      "target": "ctx_node_13",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_18",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_19",
+      "source": "x2_node_11",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_20",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_21",
+      "source": "x2_node_12",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_22",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_23",
+      "source": "x2_node_13",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_24",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_25",
+      "source": "x2_node_14",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_26",
+      "source": "person_natalya_fomicheva",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x2_edge_27",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_4",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "10,8%",
+        "date": "20.08.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "16,5%",
+        "date": "01.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "deposit_vygodny",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "13,5%",
+        "date": "01.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_11",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "14,85%",
+        "date": "01.01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_12",
+      "target": "ctx_node_82",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,81.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "deposit_vygodny_rate_2",
+      "target": "deposit_vygodny_rate_4",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "10,8%",
+        "date": "20.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_12",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,85.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_41",
+      "target": "deposit_vygodny_rate_3",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "11,25%",
+        "date": "10.04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,51.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_56",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "10,8%",
+        "date": "20.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_8",
+      "relation": "received",
+      "attributes": {
+        "date": "13,55.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "deposit_vygodny_rate_3",
+      "target": "ctx_node_77",
+      "relation": "received",
+      "attributes": {
+        "date": "5,56.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_30",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "12,15%",
+        "date": "01.01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_48",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27,54.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_8",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "16,5%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_84",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "14,3%",
+        "date": "01.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_57",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "11,88%",
+        "date": "20.08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_43",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,05.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_41",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,05%",
+        "date": "10.04.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "x2_node_10",
+      "target": "ctx_node_88",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,51.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,51.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_49",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,55.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_68",
+      "target": "deposit_vygodny_rate_4",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "13,2%",
+        "date": "20.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_48",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "13,5%",
+        "date": "01.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "ctx_node_29",
+      "target": "ctx_node_83",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,85.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_88",
+      "relation": "received",
+      "attributes": {
+        "date": "5,56.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_27",
+      "target": "ctx_node_81",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,07.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "ctx_node_86",
+      "target": "deposit_vygodny_rate_1",
+      "relation": "changed_to",
+      "attributes": {
+        "value": "18,15%",
+        "date": "01.12.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "ctx_node_79",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,51.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "person_natalya_fomicheva",
+      "target": "x2_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,55.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_17",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "12,78%",
+        "date": "10.08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "person_natalya_fomicheva",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,51.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_12",
+      "target": "ctx_node_93",
+      "relation": "received",
+      "attributes": {
+        "date": "5,56.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_49",
+      "target": "deposit_vygodny_rate_3",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "12,78%",
+        "date": "10.08.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_50",
+      "target": "deposit_vygodny",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,51.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "deposit_vygodny",
+      "target": "ctx_node_13",
+      "relation": "current_rate",
+      "attributes": {
+        "value": "10,8%",
+        "date": "20.10.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_35",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,54.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_natalya_fomicheva",
+      "source": "person_natalya_fomicheva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_deposit_vygodny",
+      "source": "deposit_vygodny",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_deposit_vygodny_rate_1",
+      "source": "deposit_vygodny_rate_1",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_deposit_vygodny_rate_2",
+      "source": "deposit_vygodny_rate_2",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_deposit_vygodny_rate_3",
+      "source": "deposit_vygodny_rate_3",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_deposit_vygodny_rate_4",
+      "source": "deposit_vygodny_rate_4",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

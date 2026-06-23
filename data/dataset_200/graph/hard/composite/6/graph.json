@@ -1,0 +1,4466 @@
+{
+  "nodes": [
+    {
+      "id": "person_ferapont_ivanov",
+      "type": "person",
+      "label": "Иванов Ферапонт Гаврилович",
+      "attributes": {
+        "age": "50",
+        "occupation": "веб-программист",
+        "income": "43000 руб.",
+        "location": "п. Учалы"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "sms_phishing_1",
+      "type": "event",
+      "label": "СМС с фишинговой ссылкой",
+      "attributes": {
+        "sender": "+7 (903) 123-45-67",
+        "text": "Уважаемый клиент, замечена подозрительная транзакция на сумму 15 000 рублей. Для подтверждения или отмены перейдите по ссылке: [фишинговая ссылка]",
+        "date": "15.03.2024",
+        "time": "10:35"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "phishing_website_access",
+      "type": "event",
+      "label": "Переход по фишинговой ссылке и ввод данных",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "10:42",
+        "login": "ferapont.ivanov@mail.ru"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "fraudulent_transaction_1",
+      "type": "event",
+      "label": "Несанкционированная транзакция",
+      "attributes": {
+        "amount": "35000 руб.",
+        "recipient": "ООО \"Цифровые Услуги\"",
+        "date": "15.03.2024",
+        "time": "20:15"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "account_blocking_115fz",
+      "type": "account",
+      "label": "Временная блокировка счета по 115-ФЗ",
+      "attributes": {
+        "account_number": "40817810012345678901",
+        "date": "20.03.2024",
+        "time": "10:00"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "account_unblocking",
+      "type": "account",
+      "label": "Разблокировка основного расчетного счета",
+      "attributes": {
+        "account_number": "40817810012345678901",
+        "date": "28.03.2024",
+        "time": "10:15"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "chargeback_partial_satisfaction",
+      "type": "event",
+      "label": "Частичное удовлетворение заявления по чарджбэку",
+      "attributes": {
+        "amount_returned": "20000 руб.",
+        "date": "10.04.2024",
+        "time": "15:00"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "chargeback_explanation",
+      "type": "event",
+      "label": "Объяснение банка о невозврате оставшихся средств",
+      "attributes": {
+        "amount_not_returned": "15000 руб.",
+        "reason": "средства быстро выведены мошенниками",
+        "date": "10.04.2024",
+        "time": "17:30"
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО \"Надежный Банк\"",
+      "attributes": {
+        "type": "коммерческий банк",
+        "лицензия": "№1234 от 01.01.2000"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "account",
+      "label": "Дебетовая карта Ферапонта Иванова",
+      "attributes": {
+        "card_number": "**** 1234",
+        "expiry_date": "12/26",
+        "type": "Visa Gold"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Мобильное приложение \"Надежный Банк\"",
+      "attributes": {
+        "version": "5.7.1",
+        "platform": "Android",
+        "last_update": "01.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "event",
+      "label": "Официальный сайт \"Надежный Банк\"",
+      "attributes": {
+        "url": "https://www.reliablebank.ru",
+        "security_certificate": "SSL"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "document",
+      "label": "Заявление на чарджбэк",
+      "attributes": {
+        "form_number": "001/2024",
+        "status": "принято"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "person",
+      "label": "Евдокия Гордеева",
+      "attributes": {
+        "relationship": "партнерша",
+        "age": "48",
+        "occupation": "бухгалтер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "account",
+      "label": "Брокерский счет Ферапонта Иванова",
+      "attributes": {
+        "account_number": "BRK-98765",
+        "balance": "1540000 руб.",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "account",
+      "label": "Индивидуальный инвестиционный счет (ИИС) Ферапонта Иванова",
+      "attributes": {
+        "account_number": "IIS-12345",
+        "balance": "1550000 руб.",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Проверка баланса брокерского счета",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "11:00",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Пополнение ИИС",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "14.03.2024",
+        "time": "18:00",
+        "source": "дебетовая карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Обсуждение открытия совместного накопительного счета",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "12:00",
+        "participants": "Ферапонт Иванов, Евдокия Гордеева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "account",
+      "label": "Накопительный счет (планируемый)",
+      "attributes": {
+        "interest_rate": "12% годовых",
+        "initial_amount": "200000 руб.",
+        "type": "совместный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "amount": "4750 руб.",
+        "service": "ЖКУ за февраль",
+        "date": "15.03.2024",
+        "time": "13:30",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "СМС-подтверждение оплаты ЖКУ",
+      "attributes": {
+        "sender": "Надежный Банк",
+        "text": "Оплата ЖКУ на 4750 руб. успешно проведена.",
+        "date": "15.03.2024",
+        "time": "14:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "person",
+      "label": "Устинов Ратибор Иосифович",
+      "attributes": {
+        "relationship": "знакомый",
+        "service": "настройка сервера"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Перевод средств Устинову",
+      "attributes": {
+        "amount": "5000 руб.",
+        "recipient": "Устинов Р.И.",
+        "date": "15.03.2024",
+        "time": "14:30 (примерно)"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Проверка истории транзакций",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "15:00",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Push-уведомление о кэшбэке",
+      "attributes": {
+        "category": "Электроника",
+        "cashback_rate": "5%",
+        "date": "15.03.2024",
+        "time": "16:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "person",
+      "label": "Вишнякова Валерия Григорьевна",
+      "attributes": {
+        "relationship": "мать",
+        "age": "75",
+        "occupation": "пенсионерка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Планируемый перевод матери",
+      "attributes": {
+        "amount": "12500 руб.",
+        "purpose": "оплата медицинских услуг",
+        "date": "15.03.2024",
+        "time": "17:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Обработка запроса на выписку по счету",
+      "attributes": {
+        "period": "6 месяцев",
+        "delivery_channel": "электронная почта",
+        "date": "15.03.2024",
+        "time": "17:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Задержки в работе мобильного приложения",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "18:00",
+        "severity": "легкое раздражение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Просмотр условий по вкладам",
+      "attributes": {
+        "interest_rate": "14.5% годовых",
+        "term": "1 год",
+        "min_amount": "500000 руб.",
+        "date": "15.03.2024",
+        "time": "19:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "organization",
+      "label": "ООО \"Цифровые Услуги\"",
+      "attributes": {
+        "location": "другой регион",
+        "activity": "предположительно мошенническая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Обнаружение списания средств",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:20",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Звонок в банк для блокировки карты",
+      "attributes": {
+        "phone_number": "8-800-123-45-67",
+        "date": "15.03.2024",
+        "time": "20:20",
+        "reason": "несанкционированная транзакция"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Блокировка дебетовой карты",
+      "attributes": {
+        "card_number": "**** 1234",
+        "date": "15.03.2024",
+        "time": "20:25",
+        "request_id": "7890123"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "СМС-уведомление о блокировке карты",
+      "attributes": {
+        "sender": "Надежный Банк",
+        "text": "Ваша карта **** 1234 заблокирована. Для перевыпуска обратитесь в отделение.",
+        "date": "15.03.2024",
+        "time": "20:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Состояние сильного беспокойства",
+      "attributes": {
+        "intensity": "сильное",
+        "date": "15.03.2024",
+        "time": "21:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Ошибка авторизации в интернет-банке",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "21:00",
+        "reason": "неизвестно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "organization",
+      "label": "Отделение \"Надежный Банк\"",
+      "attributes": {
+        "address": "п. Учалы, ул. Ленина, д. 5",
+        "type": "физическое отделение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Посещение отделения банка",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "09:30",
+        "purpose": "подача заявления на чарджбэк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Запрос выписки по брокерскому счету",
+      "attributes": {
+        "period": "3 месяца",
+        "date": "16.03.2024",
+        "time": "09:45",
+        "channel": "личное обращение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Обсуждение перевыпуска карты с индивидуальным дизайном",
+      "attributes": {
+        "cost": "500 руб.",
+        "date": "16.03.2024",
+        "time": "10:00",
+        "channel": "личное общение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Подтверждение принятия заявления на чарджбэк",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "10:30",
+        "review_period": "30 рабочих дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Звонок Евдокии Гордеевой",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "11:00",
+        "purpose": "предупреждение о фишинге"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Проверка ИИС",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "11:30",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "СМС-уведомление о номере обращения по чарджбэку",
+      "attributes": {
+        "request_id": "7890123",
+        "review_deadline": "16.04.2024",
+        "date": "16.03.2024",
+        "time": "12:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Состояние сильного разочарования",
+      "attributes": {
+        "intensity": "сильное",
+        "date": "16.03.2024",
+        "time": "12:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Изучение информации о страховании от мошенничества",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "12:30",
+        "channel": "интернет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Уведомление о принятии заявки на перевыпуск карты",
+      "attributes": {
+        "new_card_ready_in": "5 рабочих дней",
+        "date": "16.03.2024",
+        "time": "13:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Воспоминание о переводе матери",
+      "attributes": {
+        "amount": "37000 руб.",
+        "purpose": "благотворительность",
+        "date_of_transfer": "недавно",
+        "date": "16.03.2024",
+        "time": "13:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Начало внутреннего расследования банка",
+      "attributes": {
+        "status": "На проверке",
+        "date": "16.03.2024",
+        "time": "14:00",
+        "reason": "мошенничество"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "document",
+      "label": "Электронное письмо от банка",
+      "attributes": {
+        "subject": "Ваше обращение по мошенничеству",
+        "date": "16.03.2024",
+        "time": "14:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Подозрение на нарушение 115-ФЗ",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "09:00",
+        "reason": "необычная активность по счету"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "document",
+      "label": "Уведомление о блокировке счета по 115-ФЗ",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "10:05",
+        "delivery_method": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Попытка совершить платеж",
+      "attributes": {
+        "amount": "10000 руб.",
+        "purpose": "оплата услуг фрилансера",
+        "date": "20.03.2024",
+        "time": "10:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Состояние шока и недоумения",
+      "attributes": {
+        "intensity": "сильное",
+        "date": "20.03.2024",
+        "time": "10:35"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Звонок в банк по поводу блокировки счета",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "10:40",
+        "purpose": "выяснение причин"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "person",
+      "label": "Сотрудник банка (отдел финансового мониторинга)",
+      "attributes": {
+        "name": "Иванова А.П.",
+        "position": "специалист ФМ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Разъяснение сотрудника банка о 115-ФЗ",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "10:50",
+        "content": "запрос документов о происхождении средств"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "document",
+      "label": "Запрос документов о происхождении средств",
+      "attributes": {
+        "date": "20.03.2024",
+        "time": "11:00",
+        "required_documents": "договор оказания услуг, выписки с других счетов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Сбор необходимых документов",
+      "attributes": {
+        "date": "20.03.2024",
+        "time_start": "11:30",
+        "time_end": "18:00"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "document",
+      "label": "Договор оказания услуг (веб-программирование)",
+      "attributes": {
+        "date": "01.01.2024",
+        "party_1": "Иванов Ф.Г.",
+        "party_2": "ООО \"Веб-Мастер\""
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "document",
+      "label": "Выписка по счету из другого банка",
+      "attributes": {
+        "bank_name": "Альфа-Банк",
+        "period": "последние 3 месяца"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Отправка документов в банк",
+      "attributes": {
+        "date": "21.03.2024",
+        "time": "09:00",
+        "channel": "электронная почта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Подтверждение получения документов банком",
+      "attributes": {
+        "date": "21.03.2024",
+        "time": "09:30",
+        "status": "в работе"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Ожидание решения банка",
+      "attributes": {
+        "duration": "7 дней",
+        "date_start": "21.03.2024",
+        "date_end": "28.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Состояние финансовой неопределенности",
+      "attributes": {
+        "intensity": "высокая",
+        "date": "25.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_1",
+      "type": "document",
+      "label": "Заявление на перевыпуск карты",
+      "attributes": {
+        "form_number": "002/2024",
+        "status": "принято"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_2",
+      "type": "person",
+      "label": "Евдокия Гордеева",
+      "attributes": {
+        "relationship": "партнерша",
+        "age": "48",
+        "occupation": "финансовый аналитик"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_3",
+      "type": "account",
+      "label": "Накопительный счет",
+      "attributes": {
+        "type": "совместный",
+        "interest_rate": "12%",
+        "currency": "руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_4",
+      "type": "product",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "provider": "ЖКХ Учалы",
+        "period": "февраль 2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_5",
+      "type": "person",
+      "label": "Устинов Ратибор Иосифович",
+      "attributes": {
+        "relationship": "коллега",
+        "occupation": "системный администратор"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_6",
+      "type": "event",
+      "label": "Перевод средств Устинову",
+      "attributes": {
+        "amount": "5000 руб.",
+        "purpose": "настройка сервера",
+        "date": "15.03.2024",
+        "time": "14:30"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_7",
+      "type": "product",
+      "label": "Акция по кэшбэку",
+      "attributes": {
+        "category": "Электроника",
+        "cashback_rate": "5%",
+        "valid_until": "30.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_8",
+      "type": "person",
+      "label": "Валерия Григорьевна Вишнякова",
+      "attributes": {
+        "relationship": "мать",
+        "age": "75",
+        "location": "г. Уфа"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_9",
+      "type": "event",
+      "label": "Запрос выписки по счету",
+      "attributes": {
+        "period": "6 месяцев",
+        "date": "15.03.2024",
+        "time": "17:20"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_10",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "version": "3.5.1",
+        "status": "работает с задержками"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_11",
+      "type": "product",
+      "label": "Вклад \"Выгодный\"",
+      "attributes": {
+        "interest_rate": "14.5%",
+        "term": "1 год",
+        "min_amount": "500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_12",
+      "type": "event",
+      "label": "Обнаружение списания",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:20",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_13",
+      "type": "product",
+      "label": "Дебетовая карта Ферапонта",
+      "attributes": {
+        "card_number_mask": "**** 1234",
+        "expiry_date": "12/26",
+        "status": "заблокирована"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_14",
+      "type": "event",
+      "label": "Звонок в банк для блокировки",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:20",
+        "phone_number": "8-800-123-45-67"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_15",
+      "type": "event",
+      "label": "Обращение по блокировке карты",
+      "attributes": {
+        "case_number": "7890123",
+        "status": "зарегистрировано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_16",
+      "type": "event",
+      "label": "СМС о блокировке карты",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:30",
+        "content": "Карта заблокирована. Обратитесь в отделение."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_17",
+      "type": "event",
+      "label": "Состояние беспокойства",
+      "attributes": {
+        "intensity": "сильное",
+        "cause": "списание средств"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_18",
+      "type": "event",
+      "label": "Ошибка авторизации в интернет-банке",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "21:00",
+        "error_code": "AUTH_FAIL_001"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_19",
+      "type": "organization",
+      "label": "Отделение банка Учалы",
+      "attributes": {
+        "address": "п. Учалы, ул. Ленина, д. 5",
+        "type": "филиал"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_20",
+      "type": "document",
+      "label": "Заявление на чарджбэк",
+      "attributes": {
+        "form_number": "001/2024",
+        "amount": "35000 руб.",
+        "status": "подано"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_21",
+      "type": "event",
+      "label": "Запрос выписки по брокерскому счету",
+      "attributes": {
+        "period": "3 месяца",
+        "date": "16.03.2024",
+        "time": "09:45"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_22",
+      "type": "product",
+      "label": "Новая дебетовая карта",
+      "attributes": {
+        "design": "индивидуальный",
+        "cost": "500 руб.",
+        "status": "заказана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_23",
+      "type": "event",
+      "label": "Подтверждение принятия чарджбэка",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "10:30",
+        "review_period": "30 рабочих дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_24",
+      "type": "event",
+      "label": "Звонок Евдокии Гордеевой",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "11:00",
+        "purpose": "предупреждение о фишинге"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_25",
+      "type": "event",
+      "label": "Состояние разочарования",
+      "attributes": {
+        "intensity": "сильное",
+        "cause": "мошенничество и бюрократия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x3_node_26",
+      "type": "event",
+      "label": "Страхование от мошенничества",
+      "attributes": {
+        "type": "интернет-мошенничество",
+        "source": "интернет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_receives_phishing_sms",
+      "source": "person_ferapont_ivanov",
+      "target": "sms_phishing_1",
+      "relation": "received",
+      "attributes": {
+        "chain_step": 1,
+        "date": "15.03.2024",
+        "time": "10:35"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_leads_to_phishing_access",
+      "source": "sms_phishing_1",
+      "target": "phishing_website_access",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 2,
+        "date": "15.03.2024",
+        "time": "10:40"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_results_in_fraudulent_transaction",
+      "source": "phishing_website_access",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "15.03.2024",
+        "time": "20:15"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_fraud_leads_to_account_blocking_115fz",
+      "source": "fraudulent_transaction_1",
+      "target": "account_blocking_115fz",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 4,
+        "date": "20.03.2024",
+        "time": "10:00",
+        "reason": "подозрение на нарушение 115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_blocking_leads_to_unblocking",
+      "source": "account_blocking_115fz",
+      "target": "account_unblocking",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "28.03.2024",
+        "time": "10:15",
+        "reason": "проверка документов завершена"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_unblocking_leads_to_chargeback_partial",
+      "source": "account_unblocking",
+      "target": "chargeback_partial_satisfaction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 6,
+        "date": "10.04.2024",
+        "time": "15:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_chargeback_partial_leads_to_explanation",
+      "source": "chargeback_partial_satisfaction",
+      "target": "chargeback_explanation",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 7,
+        "date": "10.04.2024",
+        "time": "17:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "2010"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_2",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "ежедневно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "редко"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_1",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2022"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_1",
+      "target": "ctx_node_4",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "sms_phishing_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "phishing_website_access",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "difference": "одна буква в URL"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_7",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_8",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_9",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_3",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_10",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_10",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_2",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_6",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_11",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_3",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_13",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_1",
+      "target": "ctx_node_14",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_16",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_16",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_17",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_3",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_1",
+      "target": "ctx_node_18",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_3",
+      "target": "ctx_node_18",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_20",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_21",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_3",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_4",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "fraudulent_transaction_1",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_25",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_3",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_26",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_26",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_26",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_27",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "ctx_node_1",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_27",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_1",
+      "target": "ctx_node_28",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_29",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "phishing_website_access",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {
+        "reason": "компрометация учетных данных"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_32",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_32",
+      "target": "ctx_node_5",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_5",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_33",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_33",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_34",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "перевыпуск"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_1",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_35",
+      "target": "ctx_node_5",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_36",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_36",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_37",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_1",
+      "target": "ctx_node_38",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_38",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_39",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_1",
+      "target": "ctx_node_41",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_41",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "перевыпуск"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_42",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_1",
+      "target": "ctx_node_43",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_43",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_1",
+      "target": "ctx_node_44",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_44",
+      "target": "person_ferapont_ivanov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "fraudulent_transaction_1",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_45",
+      "target": "account_blocking_115fz",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "account_blocking_115fz",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_1",
+      "target": "ctx_node_46",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_47",
+      "target": "account_blocking_115fz",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_48",
+      "target": "account_blocking_115fz",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_49",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_49",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_49",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_50",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_51",
+      "target": "account_blocking_115fz",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_51",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_53",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_53",
+      "target": "ctx_node_54",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_53",
+      "target": "ctx_node_55",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_56",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_56",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_56",
+      "target": "ctx_node_54",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_56",
+      "target": "ctx_node_55",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_1",
+      "target": "ctx_node_57",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "ctx_node_57",
+      "target": "person_ferapont_ivanov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_57",
+      "target": "ctx_node_56",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_58",
+      "target": "account_blocking_115fz",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_59",
+      "target": "ctx_node_58",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "ground_truth": false,
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true
+    },
+    {
+      "id": "x3_edge_1",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "12:00",
+        "topic": "накопительный счет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_2",
+      "source": "x3_node_2",
+      "target": "x3_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "200000 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_3",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_4",
+      "relation": "paid",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "13:30",
+        "amount": "4750 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_4",
+      "source": "x3_node_4",
+      "target": "ctx_node_10",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_5",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_5",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "purpose": "настройка сервера"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_6",
+      "source": "x3_node_5",
+      "target": "x3_node_6",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_7",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_7",
+      "relation": "received",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "16:00",
+        "channel": "push-уведомление"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_8",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_8",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "12500 руб.",
+        "purpose": "медицинские услуги",
+        "date": "15.03.2024",
+        "time": "17:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_9",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_9",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_10",
+      "source": "x3_node_9",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "обработан"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_11",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "18:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_12",
+      "source": "x3_node_10",
+      "target": "ctx_node_12",
+      "relation": "caused",
+      "attributes": {
+        "issue": "задержки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_13",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "19:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_14",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_15",
+      "source": "x3_node_12",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_16",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_13",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_17",
+      "source": "x3_node_13",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_18",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_14",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_19",
+      "source": "x3_node_14",
+      "target": "x3_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_20",
+      "source": "x3_node_15",
+      "target": "x3_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:25"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_21",
+      "source": "x3_node_13",
+      "target": "x3_node_16",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_22",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "21:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_23",
+      "source": "x3_node_17",
+      "target": "x3_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_24",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_25",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "09:30"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_26",
+      "source": "x3_node_19",
+      "target": "x3_node_20",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_27",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_20",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_28",
+      "source": "x3_node_20",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_29",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_21",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_30",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "10:00"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_31",
+      "source": "x3_node_20",
+      "target": "x3_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_32",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_24",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_33",
+      "source": "x3_node_24",
+      "target": "x3_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_34",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "12:30"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_35",
+      "source": "x3_node_25",
+      "target": "x3_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_36",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_37",
+      "source": "x3_node_22",
+      "target": "x3_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_38",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_1",
+      "relation": "submitted",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "13:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_39",
+      "source": "x3_node_1",
+      "target": "x3_node_22",
+      "relation": "approved",
+      "attributes": {
+        "ready_in": "5 рабочих дней"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_40",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "осторожность с онлайн-операциями",
+        "date": "16.03.2024",
+        "time": "13:30"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_41",
+      "source": "x3_node_8",
+      "target": "ctx_node_32",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "37000 руб.",
+        "purpose": "благотворительность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_42",
+      "source": "x3_node_20",
+      "target": "ctx_node_33",
+      "relation": "caused",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "14:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_43",
+      "source": "ctx_node_33",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_44",
+      "source": "ctx_node_33",
+      "target": "ctx_node_34",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_45",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "2010"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_46",
+      "source": "ctx_node_1",
+      "target": "sms_phishing_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_47",
+      "source": "phishing_website_access",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "difference": "одна буква в адресе"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_48",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1540000 руб.",
+        "date": "15.03.2024",
+        "time": "11:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_49",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_5",
+      "relation": "received",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "11:15",
+        "amount": "10000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_50",
+      "source": "ctx_node_5",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_51",
+      "source": "ctx_node_10",
+      "target": "ctx_node_11",
+      "relation": "approved",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "14:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_52",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "15:00"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_53",
+      "source": "fraudulent_transaction_1",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_54",
+      "source": "ctx_node_16",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_55",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:20"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_56",
+      "source": "ctx_node_18",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_57",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:25"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_58",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_59",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "20:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_60",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "time": "21:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_61",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_62",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "09:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_63",
+      "source": "ctx_node_24",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_64",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_25",
+      "relation": "submitted",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "09:30"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_65",
+      "source": "ctx_node_25",
+      "target": "fraudulent_transaction_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_66",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_26",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "09:45"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_67",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "10:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_68",
+      "source": "ctx_node_27",
+      "target": "ctx_node_28",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_69",
+      "source": "ctx_node_1",
+      "target": "ctx_node_29",
+      "relation": "approved",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "10:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_70",
+      "source": "ctx_node_29",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_71",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "11:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_72",
+      "source": "ctx_node_30",
+      "target": "x3_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "фишинговые атаки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_73",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "11:30",
+        "amount": "1550000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_74",
+      "source": "ctx_node_1",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "12:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_75",
+      "source": "ctx_node_35",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "case_number": "7890123"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_76",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "12:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_77",
+      "source": "ctx_node_36",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_78",
+      "source": "ctx_node_1",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "13:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_79",
+      "source": "ctx_node_38",
+      "target": "ctx_node_27",
+      "relation": "approved",
+      "attributes": {
+        "ready_in": "5 рабочих дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_80",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "13:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_81",
+      "source": "ctx_node_39",
+      "target": "x3_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_82",
+      "source": "ctx_node_39",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_83",
+      "source": "ctx_node_1",
+      "target": "ctx_node_33",
+      "relation": "caused",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "14:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_84",
+      "source": "ctx_node_33",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_85",
+      "source": "ctx_node_33",
+      "target": "ctx_node_34",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_86",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_40",
+      "relation": "received",
+      "attributes": {
+        "date": "16.03.2024",
+        "time": "14:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_87",
+      "source": "ctx_node_40",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_88",
+      "source": "ctx_node_40",
+      "target": "ctx_node_41",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_89",
+      "source": "ctx_node_41",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_90",
+      "source": "ctx_node_42",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_91",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_92",
+      "source": "ctx_node_44",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_93",
+      "source": "ctx_node_45",
+      "target": "ctx_node_46",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_94",
+      "source": "ctx_node_46",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_95",
+      "source": "ctx_node_47",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_96",
+      "source": "ctx_node_48",
+      "target": "ctx_node_49",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_97",
+      "source": "ctx_node_49",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_98",
+      "source": "ctx_node_50",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_99",
+      "source": "ctx_node_51",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_100",
+      "source": "ctx_node_52",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_101",
+      "source": "ctx_node_53",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_102",
+      "source": "ctx_node_54",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_103",
+      "source": "ctx_node_55",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_104",
+      "source": "ctx_node_56",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_105",
+      "source": "ctx_node_57",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x3_edge_106",
+      "source": "ctx_node_58",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "fraudulent_transaction_1",
+      "target": "account_blocking_115fz",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "20.01.2024",
+        "time": "10:00",
+        "reason": "подозрение на нарушение 115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "chargeback_partial_satisfaction",
+      "target": "chargeback_explanation",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 6,
+        "date": "10.02.2024",
+        "time": "17:30"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_ferapont_ivanov",
+      "target": "sms_phishing_1",
+      "relation": "received",
+      "attributes": {
+        "chain_step": 1,
+        "date": "15.01.2024",
+        "time": "10:35"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "x3_node_26",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "перевыпуск"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_33",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "difference": "одна буква в URL"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_13",
+      "relation": "submitted",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "09:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "09:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_53",
+      "target": "x3_node_1",
+      "relation": "submitted",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "13:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_1",
+      "target": "x3_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024",
+        "time": "20:25"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_9",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "09:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024",
+        "time": "20:20"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "x3_node_20",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "11:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_51",
+      "target": "x3_node_7",
+      "relation": "received",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "16:00",
+        "channel": "push-уведомление"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_41",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "case_number": "7101110,7"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "phishing_website_access",
+      "target": "x3_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "10:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_14",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "12:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_25",
+      "target": "ctx_node_29",
+      "relation": "approved",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "10:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_12",
+      "target": "x3_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "12:00",
+        "topic": "накопительный счет"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_3",
+      "relation": "received",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "11:15",
+        "amount": "10000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "phishing_website_access",
+      "target": "chargeback_partial_satisfaction",
+      "relation": "caused",
+      "attributes": {
+        "reason": "компрометация учетных данных"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_22",
+      "target": "chargeback_explanation",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 7,
+        "date": "10.04.2024",
+        "time": "17:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "person_ferapont_ivanov",
+      "target": "x3_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "12:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_51",
+      "relation": "received",
+      "attributes": {
+        "chain_step": 1,
+        "date": "15.03.2024",
+        "time": "10:35"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_17",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "обработан"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_52",
+      "relation": "received",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "11:15",
+        "amount": "10000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "ctx_node_41",
+      "target": "person_ferapont_ivanov",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "перевыпуск"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "1386000 руб.",
+        "date": "15.03.2024",
+        "time": "11:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "09:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "x3_node_21",
+      "target": "x3_node_1",
+      "relation": "submitted",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "13:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_10",
+      "target": "account_unblocking",
+      "relation": "approved",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "14:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_31",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "13:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_23",
+      "target": "chargeback_explanation",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "10.02.2024",
+        "time": "17:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_34",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "перевыпуск"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "chargeback_explanation",
+      "target": "x3_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024",
+        "time": "19:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_17",
+      "target": "x3_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024",
+        "time": "21:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "person_ferapont_ivanov",
+      "target": "chargeback_partial_satisfaction",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "10.04.2024",
+        "time": "15:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_5",
+      "target": "ctx_node_40",
+      "relation": "received",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "14:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "x3_node_19",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "1809"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "x3_node_15",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024",
+        "time": "21:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "ctx_node_56",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "1809"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "phishing_website_access",
+      "target": "chargeback_explanation",
+      "relation": "resulted_in",
+      "attributes": {
+        "difference": "одна буква в URL"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "12:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "x3_node_1",
+      "target": "x3_node_15",
+      "relation": "approved",
+      "attributes": {
+        "ready_in": "5,5 рабочих дней"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "ctx_node_53",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024",
+        "time": "20:20"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "18:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "ctx_node_35",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "case_number": "7101110,7"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "x3_node_14",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "1809"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "ctx_node_38",
+      "target": "x3_node_9",
+      "relation": "approved",
+      "attributes": {
+        "ready_in": "4,5 рабочих дней"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "ctx_node_1",
+      "target": "fraudulent_transaction_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "10:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv47",
+      "source": "fraudulent_transaction_1",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 3,
+        "date": "20.03.2024",
+        "time": "10:00",
+        "reason": "подозрение на нарушение 115-ФЗ"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv48",
+      "source": "ctx_node_1",
+      "target": "x3_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024",
+        "time": "20:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv49",
+      "source": "account_blocking_115fz",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "chain_step": 5,
+        "date": "28.03.2024",
+        "time": "10:15",
+        "reason": "проверка документов завершена"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv50",
+      "source": "x3_node_10",
+      "target": "ctx_node_29",
+      "relation": "caused",
+      "attributes": {
+        "issue": "задержки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv51",
+      "source": "x3_node_5",
+      "target": "x3_node_22",
+      "relation": "approved",
+      "attributes": {
+        "ready_in": "5,5 рабочих дней"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv52",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17,63.2024",
+        "time": "09:30"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv53",
+      "source": "ctx_node_28",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "11:00"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv54",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "ежедневно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv55",
+      "source": "ctx_node_30",
+      "target": "ctx_node_26",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "09:45"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv56",
+      "source": "person_ferapont_ivanov",
+      "target": "ctx_node_44",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "14,43.2024",
+        "time": "09:45"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_ferapont_ivanov",
+      "source": "person_ferapont_ivanov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_sms_phishing_1",
+      "source": "sms_phishing_1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_phishing_website_access",
+      "source": "phishing_website_access",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_fraudulent_transaction_1",
+      "source": "fraudulent_transaction_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_blocking_115fz",
+      "source": "account_blocking_115fz",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_unblocking",
+      "source": "account_unblocking",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_chargeback_partial_satisfaction",
+      "source": "chargeback_partial_satisfaction",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_chargeback_explanation",
+      "source": "chargeback_explanation",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

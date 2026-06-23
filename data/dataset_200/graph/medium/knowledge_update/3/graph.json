@@ -1,0 +1,2233 @@
+{
+  "nodes": [
+    {
+      "id": "person_silantiy_potapov",
+      "type": "person",
+      "label": "Силантий Валентинович Потапов",
+      "attributes": {
+        "age": "24",
+        "gender": "male",
+        "occupation": "Официант",
+        "income": "271000 руб.",
+        "city": "п. Осташков",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "bank_avtofin",
+      "type": "organization",
+      "label": "АвтоФин",
+      "ground_truth": false,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "loan_auto_1",
+      "type": "product",
+      "label": "Автокредит Силантия Потапова",
+      "attributes": {
+        "type": "auto",
+        "amount": "2500000 руб.",
+        "term": "60 месяцев"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "bank_bystry_credit",
+      "type": "organization",
+      "label": "Быстрый Кредит",
+      "ground_truth": false,
+      "episode_hint": 1,
+      "attributes": {}
+    },
+    {
+      "id": "insurance_kasko_1",
+      "type": "product",
+      "label": "КАСКО",
+      "attributes": {
+        "type": "КАСКО",
+        "amount": "85000 руб."
+      },
+      "ground_truth": false,
+      "episode_hint": 2
+    },
+    {
+      "id": "insurance_company_nadezhny_schit",
+      "type": "product",
+      "label": "Надежный Щит",
+      "ground_truth": false,
+      "episode_hint": 2,
+      "attributes": {}
+    },
+    {
+      "id": "loan_consumer_1",
+      "type": "product",
+      "label": "Потребительский кредит Силантия Потапова",
+      "attributes": {
+        "type": "consumer",
+        "amount": "100000 руб.",
+        "term": "12 месяцев"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "sto_master_auto",
+      "type": "product",
+      "label": "СТО Мастер-Авто",
+      "attributes": {
+        "type": "Автосервис"
+      },
+      "ground_truth": false,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_fekla_potapova",
+      "type": "person",
+      "label": "Фёкла Потапова",
+      "attributes": {
+        "role": "child"
+      },
+      "ground_truth": false,
+      "episode_hint": 4
+    },
+    {
+      "id": "person_serafim_chernov",
+      "type": "person",
+      "label": "Серафим Витальевич Чернов",
+      "attributes": {
+        "role": "friend"
+      },
+      "ground_truth": false,
+      "episode_hint": 5
+    },
+    {
+      "id": "credit_card_1",
+      "type": "product",
+      "label": "Кредитная карта Силантия Потапова",
+      "attributes": {
+        "number": "КК-987654321"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "document",
+      "label": "Паспорт Силантия Потапова",
+      "attributes": {
+        "series": "4500",
+        "number": "123456",
+        "issue_date": "10.01.2015",
+        "issue_authority": "ГУ МВД России по г. Москве"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Справка 2-НДФЛ Силантия Потапова",
+      "attributes": {
+        "period": "09.2022-02.2023",
+        "income_amount": "1626000 руб.",
+        "employer": "ООО 'Вкусная Еда'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "document",
+      "label": "Копия трудовой книжки Силантия Потапова",
+      "attributes": {
+        "employer": "ООО 'Вкусная Еда'",
+        "position": "Официант",
+        "start_date": "01.03.2020"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "event",
+      "label": "SMS-сообщение о статусе заявки",
+      "attributes": {
+        "sender": "АвтоФин",
+        "recipient": "+79123456789",
+        "content": "Ваша заявка на автокредит №АВТ-250323-123 на рассмотрении.",
+        "date": "17.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Звонок в контакт-центр АвтоФин",
+      "attributes": {
+        "caller": "Силантий Потапов",
+        "recipient": "8-800-123-45-67",
+        "duration": "7 минут 32 секунды",
+        "purpose": "Уточнение статуса заявки",
+        "date": "18.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "document",
+      "label": "График платежей по автокредиту",
+      "attributes": {
+        "loan_id": "АВТ-250323-123",
+        "monthly_payment": "55000 руб.",
+        "term": "60 месяцев",
+        "date": "20.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Страхование жизни и здоровья заемщика",
+      "attributes": {
+        "type": "добровольное",
+        "cost_percent": "0.5%",
+        "cost_amount_first_year": "12500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "event",
+      "label": "Предложение автокредита Быстрый Кредит",
+      "attributes": {
+        "bank": "Быстрый Кредит",
+        "interest_rate": "15.2%",
+        "kasko_required": "false",
+        "date": "21.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "document",
+      "label": "Договор автокредита",
+      "attributes": {
+        "contract_number": "АВТ-250323-123",
+        "amount": "2500000 руб.",
+        "interest_rate": "14.2%",
+        "term": "60 месяцев",
+        "date": "22.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "organization",
+      "label": "Отделение АвтоФин",
+      "attributes": {
+        "address": "ул. Центральная, д. 15",
+        "city": "п. Осташков"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "document",
+      "label": "Полис КАСКО",
+      "attributes": {
+        "policy_number": "К-123456789",
+        "amount": "85000 руб.",
+        "insurance_company": "Надежный Щит",
+        "date": "22.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "person",
+      "label": "Наина Николаевна Носова",
+      "attributes": {
+        "role": "супруга",
+        "gender": "female"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Первый платеж по автокредиту",
+      "attributes": {
+        "amount": "55000 руб.",
+        "date": "25.03.2023",
+        "method": "мобильное приложение",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "SMS-уведомление о платеже",
+      "attributes": {
+        "sender": "АвтоФин",
+        "recipient": "+79123456789",
+        "content": "Ваш платеж по кредиту АВТ-250323-123 на сумму 55000 руб. зачислен.",
+        "date": "28.03.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Поломка автомобиля",
+      "attributes": {
+        "type": "неожиданная",
+        "description": "выход из строя коробки передач",
+        "date": "конец марта 2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "document",
+      "label": "Онлайн-заявка на потребительский кредит",
+      "attributes": {
+        "bank": "Быстрый Кредит",
+        "amount": "100000 руб.",
+        "term": "12 месяцев",
+        "application_number": "ПК-010423-789",
+        "date": "01.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Звонок от сотрудника Быстрый Кредит",
+      "attributes": {
+        "caller": "Сотрудник Быстрый Кредит",
+        "recipient": "Силантий Потапов",
+        "purpose": "Уточнение цели кредита и данных",
+        "date": "03.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Расходы на диагностику автомобиля",
+      "attributes": {
+        "amount": "15000 руб.",
+        "date": "03.04.2023",
+        "purpose": "диагностика поломки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "document",
+      "label": "Кредитная история Силантия Потапова",
+      "attributes": {
+        "source": "портал Госуслуг",
+        "date": "04.04.2023",
+        "status": "без негативных записей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "organization",
+      "label": "Надежный Партнер",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Предложение потребительского кредита Надежный Партнер",
+      "attributes": {
+        "bank": "Надежный Партнер",
+        "amount": "90000 руб.",
+        "interest_rate": "17%",
+        "date": "04.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Электронное письмо от Быстрый Кредит",
+      "attributes": {
+        "sender": "Быстрый Кредит",
+        "recipient": "silantiy.potapov@email.com",
+        "content": "Предварительное предложение по потребительскому кредиту.",
+        "date": "04.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "person",
+      "label": "Самсон Тихонович Зимин",
+      "attributes": {
+        "role": "знакомый",
+        "gender": "male"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "document",
+      "label": "Счет на ремонт автомобиля",
+      "attributes": {
+        "service_provider": "СТО Мастер-Авто",
+        "amount": "98000 руб.",
+        "items": "запчасти, работы",
+        "date": "04.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "document",
+      "label": "Договор потребительского кредита",
+      "attributes": {
+        "contract_number": "ПК-050423-789",
+        "amount": "75000 руб.",
+        "interest_rate": "18%",
+        "term": "12 месяцев",
+        "date": "06.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "organization",
+      "label": "Офис Быстрый Кредит",
+      "attributes": {
+        "address": "ул. Ленина, д. 20",
+        "city": "п. Осташков"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Зачисление средств потребительского кредита",
+      "attributes": {
+        "amount": "75000 руб.",
+        "date": "06.04.2023",
+        "recipient_account": "Счет Силантия Потапова",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "SMS-уведомление о зачислении кредита",
+      "attributes": {
+        "sender": "Быстрый Кредит",
+        "recipient": "+79123456789",
+        "content": "Средства по кредиту ПК-050423-789 зачислены на Ваш счет.",
+        "date": "06.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Оплата ремонта автомобиля",
+      "attributes": {
+        "amount": "75000 руб.",
+        "date": "07.04.2023",
+        "recipient": "СТО Мастер-Авто",
+        "method": "банковский перевод"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Ремонт автомобиля завершен",
+      "attributes": {
+        "service_provider": "СТО Мастер-Авто",
+        "date": "10.04.2023",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Доплата за ремонт автомобиля",
+      "attributes": {
+        "amount": "23000 руб.",
+        "date": "10.04.2023",
+        "recipient": "СТО Мастер-Авто",
+        "method": "наличные"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Получение автомобиля после ремонта",
+      "attributes": {
+        "date": "10.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Частичное погашение потребительского кредита",
+      "attributes": {
+        "amount": "30000 руб.",
+        "date": "12.04.2023",
+        "source": "личные сбережения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "SMS-уведомление о частичном погашении",
+      "attributes": {
+        "sender": "Быстрый Кредит",
+        "recipient": "+79123456789",
+        "content": "Ваш кредит ПК-050423-789 частично погашен на 30000 руб. Новый платеж 2500 руб.",
+        "date": "12.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Первый платеж по реструктурированному потребительскому кредиту",
+      "attributes": {
+        "amount": "2500 руб.",
+        "date": "13.04.2023",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "SMS-уведомление о платеже по потребительскому кредиту",
+      "attributes": {
+        "sender": "Быстрый Кредит",
+        "recipient": "+79123456789",
+        "content": "Ваш платеж по кредиту ПК-050423-789 на сумму 2500 руб. зачислен.",
+        "date": "13.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Финансовые трудности Силантия Потапова",
+      "attributes": {
+        "description": "недостаточно средств для ежемесячного платежа по автокредиту",
+        "date": "середина апреля 2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Звонок в АвтоФин по поводу реструктуризации",
+      "attributes": {
+        "caller": "Силантий Потапов",
+        "recipient": "АвтоФин",
+        "purpose": "Запрос реструктуризации автокредита",
+        "date": "20.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "document",
+      "label": "Заявление на реструктуризацию автокредита",
+      "attributes": {
+        "loan_id": "АВТ-250323-123",
+        "requested_term": "84 месяца",
+        "reason": "снижение финансовой нагрузки",
+        "date": "20.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Электронное письмо от АвтоФин о реструктуризации",
+      "attributes": {
+        "sender": "АвтоФин",
+        "recipient": "silantiy.potapov@email.com",
+        "content": "Ваше заявление на реструктуризацию автокредита принято в работу.",
+        "date": "21.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Рассмотрение заявления на реструктуризацию",
+      "attributes": {
+        "bank": "АвтоФин",
+        "date": "21.04.2023-26.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "document",
+      "label": "Дополнительное соглашение к договору автокредита",
+      "attributes": {
+        "contract_number": "АВТ-250323-123",
+        "new_term": "84 месяца",
+        "new_monthly_payment": "45000 руб.",
+        "date": "27.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "SMS-уведомление о реструктуризации автокредита",
+      "attributes": {
+        "sender": "АвтоФин",
+        "recipient": "+79123456789",
+        "content": "Ваш автокредит реструктурирован. Новый платеж 45000 руб.",
+        "date": "27.04.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Платеж по реструктурированному автокредиту",
+      "attributes": {
+        "amount": "45000 руб.",
+        "date": "27.04.2023",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "День рождения Фёклы Потаповой",
+      "attributes": {
+        "date": "15.05.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Покупка подарка для Фёклы",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "14.05.2023",
+        "item": "велосипед"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Непредвиденные расходы",
+      "attributes": {
+        "description": "поломка бытовой техники",
+        "date": "18.05.2023",
+        "amount": "15000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Разговор с Серафимом Черновым о финансовой ситуации",
+      "attributes": {
+        "initiator": "Силантий Потапов",
+        "date": "19.05.2023",
+        "topic": "нехватка средств, кредитная карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "document",
+      "label": "Заявление на увеличение лимита кредитной карты",
+      "attributes": {
+        "card_number": "КК-987654321",
+        "requested_limit": "120000 руб.",
+        "reason": "непредвиденные расходы",
+        "date": "20.05.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "product",
+      "label": "Дебетовая карта Наины Носовой",
+      "attributes": {
+        "bank": "АвтоФин",
+        "card_type": "Visa Classic"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "product",
+      "label": "Мобильное приложение АвтоФин",
+      "attributes": {
+        "platform": "iOS/Android",
+        "functionality": "управление счетами, оплата кредитов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "product",
+      "label": "Портал Госуслуг",
+      "attributes": {
+        "platform": "web",
+        "functionality": "доступ к государственным услугам, проверка кредитной истории"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "account",
+      "label": "Счет Силантия Потапова",
+      "attributes": {
+        "bank": "Быстрый Кредит",
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "account",
+      "label": "Сбережения Силантия Потапова",
+      "attributes": {
+        "type": "наличные/сберегательный счет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_applies_for_auto_loan_1",
+      "source": "person_silantiy_potapov",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2023",
+        "status": "подана"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_for_auto_loan_2",
+      "source": "person_silantiy_potapov",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.03.2023",
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_for_auto_loan_3",
+      "source": "person_silantiy_potapov",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2023",
+        "status": "одобрена",
+        "amount": "2500000 руб.",
+        "interest_rate": "14.5%",
+        "term": "72 месяца"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_for_auto_loan_4",
+      "source": "person_silantiy_potapov",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2023",
+        "status": "подписан",
+        "amount": "2500000 руб.",
+        "interest_rate": "14.2%",
+        "term": "60 месяцев",
+        "contract_number": "АВТ-250323-123"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_applies_for_auto_loan_5",
+      "source": "person_silantiy_potapov",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27.04.2023",
+        "status": "реструктурирован",
+        "amount": "2500000 руб.",
+        "interest_rate": "14.2%",
+        "term": "84 месяца",
+        "monthly_payment": "45000 руб.",
+        "contract_number": "АВТ-250323-123"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_has_monthly_payment_auto_1",
+      "source": "loan_auto_1",
+      "target": "person_silantiy_potapov",
+      "relation": "paid",
+      "attributes": {
+        "value": "55000 руб.",
+        "date": "20.03.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_has_monthly_payment_auto_2",
+      "source": "loan_auto_1",
+      "target": "person_silantiy_potapov",
+      "relation": "paid",
+      "attributes": {
+        "value": "45000 руб.",
+        "date": "27.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_applies_for_consumer_loan_1",
+      "source": "person_silantiy_potapov",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2023",
+        "status": "подана",
+        "amount": "100000 руб.",
+        "term": "12 месяцев"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_applies_for_consumer_loan_2",
+      "source": "person_silantiy_potapov",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2023",
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_applies_for_consumer_loan_3",
+      "source": "person_silantiy_potapov",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2023",
+        "status": "одобрена",
+        "amount": "75000 руб.",
+        "interest_rate": "18%",
+        "term": "12 месяцев"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_applies_for_consumer_loan_4",
+      "source": "person_silantiy_potapov",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2023",
+        "status": "подписан",
+        "amount": "75000 руб.",
+        "interest_rate": "18%",
+        "term": "12 месяцев",
+        "contract_number": "ПК-050423-789"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_applies_for_consumer_loan_5",
+      "source": "person_silantiy_potapov",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2023",
+        "status": "частично погашен",
+        "amount": "45000 руб.",
+        "interest_rate": "18%",
+        "term": "10 месяцев",
+        "monthly_payment": "2500 руб.",
+        "contract_number": "ПК-050423-789"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_has_monthly_payment_consumer_1",
+      "source": "loan_consumer_1",
+      "target": "person_silantiy_potapov",
+      "relation": "paid",
+      "attributes": {
+        "value": "7000 руб.",
+        "date": "05.04.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_has_monthly_payment_consumer_2",
+      "source": "loan_consumer_1",
+      "target": "person_silantiy_potapov",
+      "relation": "paid",
+      "attributes": {
+        "value": "2500 руб.",
+        "date": "13.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_applies_for_credit_card_limit_increase_1",
+      "source": "person_silantiy_potapov",
+      "target": "credit_card_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.05.2023",
+        "status": "подана",
+        "requested_limit": "120000 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_applies_for_credit_card_limit_increase_2",
+      "source": "person_silantiy_potapov",
+      "target": "credit_card_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2023",
+        "status": "одобрена",
+        "new_limit": "120000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2023",
+        "purpose": "заявка на автокредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2023",
+        "purpose": "заявка на автокредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2023",
+        "purpose": "заявка на автокредит"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_1",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "application_type": "автокредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_2",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "application_type": "автокредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_5",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_5",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "беспокойство"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_6",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "20.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_7",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_7",
+      "relation": "rejected",
+      "attributes": {
+        "date": "21.03.2023",
+        "reason": "снижение стоимости кредита"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_8",
+      "target": "loan_auto_1",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_silantiy_potapov",
+      "target": "loan_auto_1",
+      "relation": "approved",
+      "attributes": {
+        "date": "21.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_9",
+      "relation": "signed",
+      "attributes": {
+        "date": "22.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_9",
+      "target": "ctx_node_10",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_silantiy_potapov",
+      "target": "insurance_kasko_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "insurance_kasko_1",
+      "target": "insurance_company_nadezhny_schit",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "insurance_kasko_1",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "loan_auto_1",
+      "target": "insurance_kasko_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_12",
+      "target": "person_silantiy_potapov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_12",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_13",
+      "target": "loan_auto_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_13",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_13",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_14",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_14",
+      "target": "ctx_node_13",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_15",
+      "target": "person_silantiy_potapov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_15",
+      "target": "loan_consumer_1",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_16",
+      "target": "bank_bystry_credit",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_17",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_17",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_18",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_19",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_12",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_21",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_22",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_22",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_23",
+      "target": "sto_master_auto",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_24",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_24",
+      "target": "sto_master_auto",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_24",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_25",
+      "relation": "signed",
+      "attributes": {
+        "date": "06.04.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_25",
+      "target": "ctx_node_26",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "loan_consumer_1",
+      "target": "ctx_node_27",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_27",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_28",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_28",
+      "target": "ctx_node_27",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_29",
+      "target": "sto_master_auto",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_29",
+      "target": "ctx_node_24",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_29",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_30",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_31",
+      "target": "sto_master_auto",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_31",
+      "target": "ctx_node_24",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_31",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_32",
+      "target": "ctx_node_30",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_33",
+      "target": "loan_consumer_1",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_33",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_34",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_36",
+      "target": "loan_consumer_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_37",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_37",
+      "target": "ctx_node_36",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_38",
+      "target": "person_silantiy_potapov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_38",
+      "target": "loan_auto_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_39",
+      "target": "person_silantiy_potapov",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_39",
+      "target": "bank_avtofin",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_39",
+      "target": "ctx_node_38",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_40",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_40",
+      "target": "bank_avtofin",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_41",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_41",
+      "target": "ctx_node_40",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_42",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_43",
+      "target": "loan_auto_1",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_44",
+      "target": "person_silantiy_potapov",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_45",
+      "target": "loan_auto_1",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_46",
+      "target": "person_fekla_potapova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_47",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_48",
+      "target": "person_silantiy_potapov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_48",
+      "target": "credit_card_1",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_49",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_49",
+      "target": "person_serafim_chernov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_50",
+      "target": "credit_card_1",
+      "ground_truth": false,
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_silantiy_potapov",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2023",
+        "status": "подана",
+        "amount": "100000 руб.",
+        "term": "12 месяцев"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "loan_consumer_1",
+      "target": "person_silantiy_potapov",
+      "relation": "paid",
+      "attributes": {
+        "value": "2750 руб.",
+        "date": "13.02.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "loan_auto_1",
+      "target": "person_silantiy_potapov",
+      "relation": "paid",
+      "attributes": {
+        "value": "49500 руб.",
+        "date": "27.03.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "bank_avtofin",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,44.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_12",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "application_type": "автокредит"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_32",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,44.2023",
+        "status": "подписан",
+        "amount": "75000 руб.",
+        "interest_rate": "18%",
+        "term": "12 месяцев",
+        "contract_number": "ПК-050423-789"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,23.2023",
+        "status": "подписан",
+        "amount": "2500000 руб.",
+        "interest_rate": "14.2%",
+        "term": "60 месяцев",
+        "contract_number": "АВТ-250323-123"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "loan_consumer_1",
+      "target": "ctx_node_32",
+      "relation": "paid",
+      "attributes": {
+        "value": "2750 руб.",
+        "date": "13.04.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,23.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_43",
+      "relation": "signed",
+      "attributes": {
+        "date": "5,44.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,44.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_28",
+      "target": "loan_consumer_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,84.2023",
+        "status": "подана",
+        "amount": "100000 руб.",
+        "term": "12 месяцев"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,44.2023",
+        "status": "подписан",
+        "amount": "75000 руб.",
+        "interest_rate": "18%",
+        "term": "12 месяцев",
+        "contract_number": "ПК-050423-789"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "loan_auto_1",
+      "target": "ctx_node_64",
+      "relation": "paid",
+      "attributes": {
+        "value": "60500 руб.",
+        "date": "20.03.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,83.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_7",
+      "target": "sto_master_auto",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,03.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "person_silantiy_potapov",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,26.2023",
+        "status": "одобрена",
+        "new_limit": "120000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "insurance_kasko_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,44.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_silantiy_potapov",
+      "source": "person_silantiy_potapov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto_1",
+      "source": "loan_auto_1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_1",
+      "source": "loan_consumer_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_credit_card_1",
+      "source": "credit_card_1",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

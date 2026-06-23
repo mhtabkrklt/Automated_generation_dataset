@@ -1,0 +1,25 @@
+{
+  "information_extraction": [
+    {
+      "question": "Какова разность между наибольшим и наименьшим переводами клиентки-телеграфист членам семьи за рассматриваемый период?",
+      "answer": "30000 руб.",
+      "answer_format": "N руб.",
+      "reasoning_path": [
+        "payment_to_mother --[attributes]--> amount: 50000 руб. | date: 10.04.2024",
+        "payment_to_husband --[attributes]--> amount: 20000 руб. | date: 21.04.2024",
+        "вычисление: 50000 − 20000 = 30000 руб."
+      ],
+      "capability": "information_extraction",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "payment_to_mother",
+        "payment_to_husband"
+      ],
+      "decoy_answers": [
+        "29500 руб.",
+        "30500 руб.",
+        "31000 руб."
+      ]
+    }
+  ]
+}

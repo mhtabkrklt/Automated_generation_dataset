@@ -1,0 +1,2391 @@
+{
+  "nodes": [
+    {
+      "id": "person_artem_golubev",
+      "type": "person",
+      "label": "Голубева Артем Ефремович",
+      "attributes": {
+        "age": "37",
+        "gender": "female",
+        "occupation": "эндокринолог",
+        "income": "222000 руб.",
+        "city": "ст. Кежма",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "account_salary_artem",
+      "type": "account",
+      "label": "Зарплатный счет Голубевой Артем Ефремовны",
+      "attributes": {
+        "account_number": "40817810000000000001",
+        "type": "зарплатный"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "card_debit_artem_1234",
+      "type": "product",
+      "label": "Дебетовая карта Голубевой Артем Ефремовны",
+      "attributes": {
+        "card_number_mask": "4567 **** **** 1234",
+        "type": "дебетовая"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "account_savings_stabilniy_rost",
+      "type": "account",
+      "label": "Накопительный счет \"Стабильный рост\"",
+      "attributes": {
+        "type": "накопительный",
+        "interest_rate": "10%",
+        "opening_date": "15.12.2023"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "account_savings_vygodniy",
+      "type": "account",
+      "label": "Накопительный счет \"Выгодный\"",
+      "attributes": {
+        "type": "накопительный",
+        "interest_rate": "12%",
+        "replenishment_limit": "без ограничений"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "person_ignatova_lora",
+      "type": "person",
+      "label": "Игнатова Лора Кирилловна",
+      "attributes": {
+        "role": "mother"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_nikonov_ermil",
+      "type": "person",
+      "label": "Никонов Ермил Денисович",
+      "attributes": {
+        "role": "partner"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "card_debit_artem_3333",
+      "type": "product",
+      "label": "Совместная дебетовая карта Голубевой Артем Ефремовны",
+      "attributes": {
+        "card_number_mask": "4567 **** **** 3333",
+        "type": "дебетовая",
+        "joint_account": true
+      },
+      "ground_truth": false,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_ivanov_andrey",
+      "type": "person",
+      "label": "Иванов Андрей Сергеевич",
+      "attributes": {
+        "role": "brother"
+      },
+      "ground_truth": false,
+      "episode_hint": 2
+    },
+    {
+      "id": "card_debit_ivanov_9012",
+      "type": "product",
+      "label": "Дебетовая карта Иванова Андрея Сергеевича",
+      "attributes": {
+        "card_number_mask": "4567 **** **** 9012",
+        "type": "дебетовая"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_ivanna_daughter",
+      "type": "person",
+      "label": "Дочь Иванна",
+      "attributes": {
+        "role": "daughter"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "person_vlasova_zinaida",
+      "type": "person",
+      "label": "Власова Зинаида Аскольдовна",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "Банк 'Надежный'",
+      "attributes": {
+        "type": "банк",
+        "head_office": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "event",
+      "label": "Предложение по вкладу 'Максимум'",
+      "attributes": {
+        "product_name": "Вклад 'Максимум'",
+        "interest_rate": "13.5%",
+        "term": "12 месяцев",
+        "min_amount": "10000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "account",
+      "label": "Дебетовая карта Голубевой Артем Ефремовны с кэшбэком",
+      "attributes": {
+        "card_number_mask": "4567 **** **** 5678",
+        "type": "дебетовая",
+        "cashback_rate": "1.5%",
+        "cashback_category": "супермаркеты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "document",
+      "label": "Доверенность на Игнатову Лору Кирилловну",
+      "attributes": {
+        "document_type": "доверенность",
+        "number": "123",
+        "issue_date": "01.06.2023",
+        "scope": "управление вкладами"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "account",
+      "label": "Вклад Игнатовой Лоры Кирилловны",
+      "attributes": {
+        "type": "вклад",
+        "owner": "Игнатова Лора Кирилловна",
+        "interest_rate": "9%",
+        "opening_date": "01.07.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "event",
+      "label": "Предложение по кредитной карте",
+      "attributes": {
+        "product_name": "Кредитная карта",
+        "grace_period": "120 дней",
+        "credit_limit": "300000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "person",
+      "label": "Моисеев Лев Виленович",
+      "attributes": {
+        "role": "поставщик услуг",
+        "service": "ремонт бытовой техники"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "person",
+      "label": "Горбунова Анжелика Яковлевна",
+      "attributes": {
+        "role": "друг",
+        "event": "день рождения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Предложение по вкладу 'Выгодный плюс'",
+      "attributes": {
+        "product_name": "Вклад 'Выгодный плюс'",
+        "interest_rate": "13.3%",
+        "term": "6 месяцев",
+        "min_amount": "50000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Обсуждение совместного накопительного счета",
+      "attributes": {
+        "topic": "совместный накопительный счет",
+        "participants": "Артем Голубева, Ермил Никонов",
+        "status": "отложено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Предложение по кредиту наличными (1.5 млн)",
+      "attributes": {
+        "product_name": "Кредит наличными",
+        "amount": "1500000 руб.",
+        "interest_rate": "14.5%",
+        "term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "account",
+      "label": "Вклад 'Надежный'",
+      "attributes": {
+        "type": "вклад",
+        "account_number": "123456789",
+        "maturity_date": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Колл-центр банка",
+      "attributes": {
+        "type": "телефонная связь",
+        "service": "поддержка клиентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "Идентификация клиента",
+      "attributes": {
+        "method": "кодовое слово",
+        "code_word": "Кежма"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Кэшбэк-акция 'Весенний шопинг'",
+      "attributes": {
+        "name": "Весенний шопинг",
+        "cashback_rate": "3%",
+        "category": "одежда",
+        "max_cashback": "500 руб/мес"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Предыдущая кэшбэк-акция",
+      "attributes": {
+        "name": "Зимние скидки",
+        "cashback_rate": "3%",
+        "category": "электроника",
+        "max_cashback": "500 руб/мес"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "person",
+      "label": "Иванов Аркадий Павлович",
+      "attributes": {
+        "role": "друг",
+        "reason": "возврат долга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Оплата коммунальных услуг брата",
+      "attributes": {
+        "service": "коммунальные услуги",
+        "recipient": "брат",
+        "status": "ошибка",
+        "error_type": "неверная карта/реквизиты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Предложение по кредиту наличными (1.8 млн)",
+      "attributes": {
+        "product_name": "Кредит наличными",
+        "amount": "1800000 руб.",
+        "interest_rate": "14.8%",
+        "term": "15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Изменение лимита по совместной карте",
+      "attributes": {
+        "old_limit": "100000 руб.",
+        "new_limit": "120000 руб.",
+        "reason": "крупная покупка для дома"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "account",
+      "label": "Накопительный счет 'Резерв'",
+      "attributes": {
+        "type": "накопительный",
+        "interest_rate": "8%",
+        "owner": "Голубева Артем Ефремовна"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Проверка истории операций",
+      "attributes": {
+        "purpose": "проверка корректности платежей",
+        "focus": "платежи ЖКУ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Акция 'Приведи друга'",
+      "attributes": {
+        "name": "Приведи друга",
+        "bonus": "1000 руб.",
+        "condition": "новый клиент"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Беспокойство из-за обилия информации",
+      "attributes": {
+        "emotion": "беспокойство",
+        "reason": "обилие предложений, страх упустить детали"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "type": "цифровой",
+        "features": "платежи, переводы, баланс"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Пополнение мобильного телефона Иванны",
+      "attributes": {
+        "service": "мобильная связь",
+        "amount": "500 руб.",
+        "recipient_phone": "+79ХХХХХХХХХ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Зачисление пенсии Игнатовой Лоры Кирилловны",
+      "attributes": {
+        "type": "пенсия",
+        "amount": "25500 руб.",
+        "date": "04.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "Предложение по инвестиционному счету",
+      "attributes": {
+        "product_name": "Инвестиционный счет",
+        "channel": "электронная почта",
+        "status": "отклонено"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД",
+      "attributes": {
+        "service": "штраф ГИБДД",
+        "number": "1234567890",
+        "amount": "750 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "person",
+      "label": "Петрова Елена Денисовна",
+      "attributes": {
+        "role": "сестра партнера",
+        "relation_to_nikonov": "сестра"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Перевод Петровой Елене Денисовне",
+      "attributes": {
+        "amount": "18500 руб.",
+        "purpose": "оплата коммунальных услуг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Уведомление о комиссии за обслуживание карты",
+      "attributes": {
+        "fee_type": "обслуживание карты",
+        "amount": "99 руб.",
+        "card_number_mask": "4567 **** **** 5678"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Размышления о целесообразности карты",
+      "attributes": {
+        "topic": "целесообразность карты",
+        "card_id": "ctx_node_3"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "document",
+      "label": "Push-уведомление о зачислении зарплаты",
+      "attributes": {
+        "type": "push-уведомление",
+        "content": "Зачисление ежемесячного дохода",
+        "amount": "222000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "document",
+      "label": "SMS-уведомление о новом предложении по вкладу",
+      "attributes": {
+        "type": "SMS",
+        "content": "Новое предложение по вкладу 'Максимум'",
+        "interest_rate": "13.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "document",
+      "label": "Выписка по вкладу матери",
+      "attributes": {
+        "type": "выписка",
+        "period": "февраль",
+        "accrued_interest": "1250 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "document",
+      "label": "Звонок от сотрудника банка",
+      "attributes": {
+        "type": "телефонный звонок",
+        "purpose": "предложение кредитной карты",
+        "status": "отказ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "document",
+      "label": "Персонализированное предложение по кредиту (email)",
+      "attributes": {
+        "type": "email",
+        "content": "Предложение по кредиту наличными",
+        "amount": "1.5 млн руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "document",
+      "label": "SMS о продлении вклада 'Надежный'",
+      "attributes": {
+        "type": "SMS",
+        "content": "Скорое продление вклада 'Надежный'",
+        "maturity_date": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "document",
+      "label": "Уведомление о начислении процентов по накопительному счету 'Резерв'",
+      "attributes": {
+        "type": "уведомление",
+        "period": "февраль",
+        "amount": "2100 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "document",
+      "label": "Push-уведомление об акции 'Приведи друга'",
+      "attributes": {
+        "type": "push-уведомление",
+        "content": "Акция 'Приведи друга'",
+        "bonus": "1000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "document",
+      "label": "Уведомление о зачислении пенсии матери",
+      "attributes": {
+        "type": "уведомление",
+        "content": "Зачисление пенсии",
+        "amount": "25500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "document",
+      "label": "Электронное письмо с предложением инвест. счета",
+      "attributes": {
+        "type": "email",
+        "content": "Предложение инвестиционного счета"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "document",
+      "label": "Уведомление о предстоящем списании комиссии",
+      "attributes": {
+        "type": "уведомление",
+        "content": "Предстоящее списание комиссии",
+        "amount": "99 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Проверка кэшбэка по дебетовой карте",
+      "attributes": {
+        "purpose": "убедиться в начислении кэшбэка",
+        "period": "последний месяц"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Легкое замешательство при сравнении вкладов",
+      "attributes": {
+        "emotion": "замешательство",
+        "reason": "похожие условия, небольшая разница в ставках"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Фрустрация от похожих кэшбэк-акций",
+      "attributes": {
+        "emotion": "фрустрация",
+        "reason": "похожие условия, разные категории"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Раздражение от навязчивых предложений по кредиту",
+      "attributes": {
+        "emotion": "раздражение",
+        "reason": "ненужность, навязчивость"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Необходимость повторной операции",
+      "attributes": {
+        "reason": "ошибка в реквизитах, возврат платежа",
+        "operation_type": "оплата ЖКУ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Проверка баланса зарплатного счета",
+      "attributes": {
+        "purpose": "убедиться в списании переводов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_payment_jkh_jan_false_1",
+      "source": "person_artem_golubev",
+      "target": "card_debit_artem_1234",
+      "relation": "paid",
+      "attributes": {
+        "service": "ЖКХ",
+        "month": "январь 2024",
+        "amount": "4850 руб.",
+        "date": "25.01.2024",
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_payment_jkh_feb_true",
+      "source": "person_artem_golubev",
+      "target": "account_salary_artem",
+      "relation": "paid",
+      "attributes": {
+        "service": "ЖКХ",
+        "month": "февраль 2024",
+        "amount": "4920 руб.",
+        "date": "25.02.2024",
+        "channel": "интернет-банк",
+        "payment_type": "автоплатеж"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_payment_jkh_mar_false_2",
+      "source": "person_artem_golubev",
+      "target": "card_debit_artem_1234",
+      "relation": "paid",
+      "attributes": {
+        "service": "ЖКХ",
+        "month": "март 2024",
+        "amount": "5000 руб.",
+        "date": "25.03.2024",
+        "channel": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfer_to_savings_false_1",
+      "source": "person_artem_golubev",
+      "target": "account_savings_stabilniy_rost",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "50000 руб.",
+        "date": "01.02.2024",
+        "from_account": "account_salary_artem"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfer_to_savings_true",
+      "source": "person_artem_golubev",
+      "target": "account_savings_vygodniy",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "150000 руб.",
+        "date": "25.03.2024",
+        "from_account": "account_savings_stabilniy_rost"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfer_to_savings_false_2",
+      "source": "person_artem_golubev",
+      "target": "account_savings_vygodniy",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "250000 руб.",
+        "date": "01.04.2024",
+        "from_account": "account_salary_artem"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfer_to_ivanov_false_1",
+      "source": "person_artem_golubev",
+      "target": "card_debit_ivanov_9012",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1500 руб.",
+        "date": "05.03.2024",
+        "purpose": "пополнение мобильного телефона",
+        "recipient_name": "Иванов Андрей Сергеевич"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_transfer_to_vlasova_true",
+      "source": "person_artem_golubev",
+      "target": "person_vlasova_zinaida",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "20000 руб.",
+        "date": "09.03.2024",
+        "purpose": "покупка продуктов для пожилой соседки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_transfer_to_ivanna_false_2",
+      "source": "person_artem_golubev",
+      "target": "person_ivanna_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "30000 руб.",
+        "date": "17.03.2024",
+        "purpose": "оплата обучения",
+        "currency": "EUR"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_34",
+      "relation": "received",
+      "attributes": {
+        "date": "27.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_34",
+      "target": "account_salary_artem",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_35",
+      "relation": "received",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_35",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_45",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_36",
+      "relation": "received",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_36",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_4",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_37",
+      "relation": "received",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_37",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_7",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "10.03.2024",
+        "channel": "СБП",
+        "purpose": "ремонт бытовой техники"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_8",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "11.03.2024",
+        "channel": "СБП",
+        "purpose": "подарок на день рождения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_46",
+      "target": "ctx_node_2",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_46",
+      "target": "ctx_node_9",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_10",
+      "target": "person_nikonov_ermil",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_38",
+      "relation": "received",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_38",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_39",
+      "relation": "received",
+      "attributes": {
+        "date": "02.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_39",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.03.2024",
+        "purpose": "уточнение условий продления вклада"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_14",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "04.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_47",
+      "target": "ctx_node_15",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_47",
+      "target": "ctx_node_16",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_artem_golubev",
+      "target": "person_ivanov_andrey",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1500 руб.",
+        "date": "05.03.2024",
+        "purpose": "пополнение мобильного телефона",
+        "recipient_name": "Иванов Андрей Сергеевич"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_17",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1700 руб.",
+        "date": "06.03.2024",
+        "purpose": "возврат долга"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_18",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_48",
+      "target": "ctx_node_19",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_nikonov_ermil",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_20",
+      "target": "card_debit_artem_3333",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_40",
+      "relation": "received",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_40",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_41",
+      "relation": "received",
+      "attributes": {
+        "date": "12.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_41",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "14.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_50",
+      "target": "account_salary_artem",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_26",
+      "relation": "caused",
+      "attributes": {
+        "date": "03.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_26",
+      "target": "person_ivanna_daughter",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_26",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_42",
+      "relation": "received",
+      "attributes": {
+        "date": "04.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_42",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_43",
+      "relation": "received",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_43",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_29",
+      "relation": "caused",
+      "attributes": {
+        "date": "07.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_29",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_nikonov_ermil",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_31",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_44",
+      "relation": "received",
+      "attributes": {
+        "date": "09.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_44",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_32",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_32",
+      "target": "ctx_node_33",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "person_artem_golubev",
+      "target": "account_salary_artem",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "person_artem_golubev",
+      "target": "card_debit_artem_1234",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_artem_golubev",
+      "target": "account_savings_stabilniy_rost",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_artem_golubev",
+      "target": "account_savings_vygodniy",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_3",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_21",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_artem_golubev",
+      "target": "card_debit_artem_3333",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "person_ignatova_lora",
+      "target": "ctx_node_5",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_4",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_nikonov_ermil",
+      "target": "card_debit_artem_3333",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "person_nikonov_ermil",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "сестра"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_ivanov_andrey",
+      "target": "card_debit_ivanov_9012",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "основной банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "account_salary_artem",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "card_debit_artem_1234",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "account_savings_stabilniy_rost",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "account_savings_vygodniy",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_3",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_5",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_12",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_21",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "card_debit_artem_3333",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "card_debit_ivanov_9012",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "person_artem_golubev",
+      "target": "account_salary_artem",
+      "relation": "received",
+      "attributes": {
+        "income_type": "зарплата"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "person_artem_golubev",
+      "target": "account_savings_stabilniy_rost",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "person_artem_golubev",
+      "target": "account_savings_vygodniy",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "person_artem_golubev",
+      "target": "person_ignatova_lora",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "мать"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "person_artem_golubev",
+      "target": "person_nikonov_ermil",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "person_artem_golubev",
+      "target": "person_ivanov_andrey",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "брат"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "person_artem_golubev",
+      "target": "person_ivanna_daughter",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "дочь"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "person_artem_golubev",
+      "target": "person_vlasova_zinaida",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "пожилая соседка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "account_salary_artem",
+      "target": "card_debit_artem_1234",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "account_salary_artem",
+      "target": "card_debit_artem_3333",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "account_salary_artem",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "person_ignatova_lora",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_4",
+      "target": "person_artem_golubev",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_12",
+      "target": "person_ignatova_lora",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_12",
+      "target": "person_artem_golubev",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_18",
+      "target": "person_ivanov_andrey",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "ctx_node_20",
+      "target": "person_nikonov_ermil",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "ctx_node_22",
+      "target": "person_artem_golubev",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "ctx_node_26",
+      "target": "person_artem_golubev",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "ctx_node_27",
+      "target": "person_ignatova_lora",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_123",
+      "source": "ctx_node_29",
+      "target": "person_artem_golubev",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_artem_golubev",
+      "target": "person_ivanna_daughter",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "33000 руб.",
+        "date": "17.01.2024",
+        "purpose": "оплата обучения",
+        "currency": "EUR"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_artem_golubev",
+      "target": "account_savings_vygodniy",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "225000 руб.",
+        "date": "01.03.2024",
+        "from_account": "account_salary_artem"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_artem_golubev",
+      "target": "account_savings_vygodniy",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "135000 руб.",
+        "date": "25.02.2024",
+        "from_account": "account_savings_stabilniy_rost"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "person_nikonov_ermil",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "сестра"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "3,63.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_50",
+      "relation": "paid",
+      "attributes": {
+        "service": "ЖКХ",
+        "month": "январь 1821,6",
+        "amount": "4850 руб.",
+        "date": "25.01.2024",
+        "channel": "мобильное приложение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_3",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "date": "10.03.2024",
+        "channel": "СБП",
+        "purpose": "ремонт бытовой техники"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_15",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1350 руб.",
+        "date": "05.03.2024",
+        "purpose": "пополнение мобильного телефона",
+        "recipient_name": "Иванов Андрей Сергеевич"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_14",
+      "target": "ctx_node_36",
+      "relation": "received",
+      "attributes": {
+        "date": "0,93.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,52.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_21",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "45000 руб.",
+        "date": "01.02.2024",
+        "from_account": "account_salary_artem"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_1",
+      "relation": "received",
+      "attributes": {
+        "income_type": "зарплата"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "пожилая соседка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_artem_golubev",
+      "target": "person_ivanov_andrey",
+      "relation": "received",
+      "attributes": {
+        "date": "1,13.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_16",
+      "relation": "received",
+      "attributes": {
+        "date": "5,52.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_43",
+      "target": "ctx_node_34",
+      "relation": "received",
+      "attributes": {
+        "date": "24,31.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_14",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "165000 руб.",
+        "date": "25.03.2024",
+        "from_account": "account_savings_stabilniy_rost"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "person_artem_golubev",
+      "target": "ctx_node_43",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1350 руб.",
+        "date": "05.03.2024",
+        "purpose": "пополнение мобильного телефона",
+        "recipient_name": "Иванов Андрей Сергеевич"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_artem_golubev",
+      "source": "person_artem_golubev",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_account_salary_artem",
+      "source": "account_salary_artem",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_card_debit_artem_1234",
+      "source": "card_debit_artem_1234",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_account_savings_stabilniy_rost",
+      "source": "account_savings_stabilniy_rost",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_account_savings_vygodniy",
+      "source": "account_savings_vygodniy",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_card_debit_ivanov_9012",
+      "source": "card_debit_ivanov_9012",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_ivanna_daughter",
+      "source": "person_ivanna_daughter",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_vlasova_zinaida",
+      "source": "person_vlasova_zinaida",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

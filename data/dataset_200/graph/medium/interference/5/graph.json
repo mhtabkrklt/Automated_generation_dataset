@@ -1,0 +1,2289 @@
+{
+  "nodes": [
+    {
+      "id": "person_agap_blinov",
+      "type": "person",
+      "label": "Блинов Агап Витальевич",
+      "attributes": {
+        "age": "55",
+        "occupation": "профпатолог",
+        "income": "135000 руб.",
+        "city": "Челябинск",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_uliana_blinova",
+      "type": "person",
+      "label": "Ульяна Блинова",
+      "attributes": {
+        "role": "daughter"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_ivanov_as",
+      "type": "person",
+      "label": "Иванов А.С.",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_ivanov_ap",
+      "type": "person",
+      "label": "Иванов А.П.",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "account_debet_40817810000000001234",
+      "type": "account",
+      "label": "Дебетовый счет",
+      "attributes": {
+        "number": "40817810000000001234",
+        "type": "debit"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "bank_sberbank",
+      "type": "organization",
+      "label": "Сбербанк",
+      "attributes": {},
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "bank_tinkoff",
+      "type": "organization",
+      "label": "Тинькофф Банк",
+      "attributes": {},
+      "ground_truth": false,
+      "episode_hint": 2
+    },
+    {
+      "id": "bank_vtb",
+      "type": "organization",
+      "label": "ВТБ",
+      "attributes": {},
+      "ground_truth": false,
+      "episode_hint": 3
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "account",
+      "label": "Сберегательный вклад",
+      "attributes": {
+        "number": "42307810000000005678",
+        "type": "savings",
+        "currency": "RUB",
+        "interest_rate": "12%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "document",
+      "label": "Заявление на открытие вклада",
+      "attributes": {
+        "type": "application",
+        "date": "15.12.2023",
+        "status": "approved"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "event",
+      "label": "Финансовая цель",
+      "attributes": {
+        "description": "Поддержание уровня сбережений",
+        "target_amount": "не менее 1 000 000 руб.",
+        "status": "active"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "document",
+      "label": "Договор банковского вклада",
+      "attributes": {
+        "number": "SV-1234567",
+        "date": "15.12.2023",
+        "status": "active"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "organization",
+      "label": "МТС",
+      "attributes": {
+        "type": "оператор связи",
+        "service": "мобильная связь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "product",
+      "label": "Мобильная связь",
+      "attributes": {
+        "provider": "МТС",
+        "account_number": "+79123456789"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "name": "СберБанк Онлайн",
+        "version": "14.2.0"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "product",
+      "label": "Коммунальные услуги (ЖКХ)",
+      "attributes": {
+        "provider": "УК 'Наш Дом'",
+        "account_number": "1234567890"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "product",
+      "label": "Онлайн-банк",
+      "attributes": {
+        "type": "веб-интерфейс",
+        "url": "online.sberbank.ru"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "event",
+      "label": "SMS-сообщение",
+      "attributes": {
+        "sender": "Sberbank",
+        "type": "кредитное предложение",
+        "date": "28.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Кредит наличными",
+      "attributes": {
+        "interest_rate": "14.5% годовых",
+        "term": "15 лет",
+        "max_amount": "1 500 000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "document",
+      "label": "Запрос выписки по счету",
+      "attributes": {
+        "type": "request",
+        "date": "01.02.2024",
+        "period": "последний месяц"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "document",
+      "label": "Выписка по текущему счету",
+      "attributes": {
+        "type": "statement",
+        "date_generated": "01.02.2024",
+        "format": "PDF",
+        "period": "01.01.2024-31.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Ежемесячный бюджет",
+      "attributes": {
+        "category": "основные расходы",
+        "limit": "80000 руб.",
+        "period": "месяц"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "person",
+      "label": "Моисеева Светлана Алексеевна",
+      "attributes": {
+        "role": "супруга",
+        "occupation": "пенсионер",
+        "income": "28000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "account",
+      "label": "Совместный счет",
+      "attributes": {
+        "number": "40817810000000005678",
+        "type": "joint",
+        "currency": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Оплата мобильной связи",
+      "attributes": {
+        "date": "22.01.2024",
+        "amount": "550 руб.",
+        "service": "МТС"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Оплата ЖКХ за январь",
+      "attributes": {
+        "date": "25.01.2024",
+        "amount": "7200 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "Транзакция оплаты мобильной связи",
+      "attributes": {
+        "id": "TRX-MTS-001",
+        "amount": "550 руб.",
+        "date": "22.01.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Транзакция оплаты ЖКХ",
+      "attributes": {
+        "id": "TRX-JKH-001",
+        "amount": "7200 руб.",
+        "date": "25.01.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Постановление ГИБДД",
+      "attributes": {
+        "number": "777-888-999",
+        "type": "штраф",
+        "violation": "превышение скорости"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД",
+      "attributes": {
+        "date": "05.02.2024",
+        "amount": "500 руб.",
+        "commission": "0 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Транзакция оплаты штрафа",
+      "attributes": {
+        "id": "TRX-GIBDD-001",
+        "amount": "500 руб.",
+        "date": "05.02.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Зачисление пенсии",
+      "attributes": {
+        "date": "08.02.2024",
+        "amount": "28000 руб.",
+        "source": "ПФР"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Транзакция зачисления пенсии",
+      "attributes": {
+        "id": "TRX-PENS-001",
+        "amount": "28000 руб.",
+        "date": "08.02.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "event",
+      "label": "SWIFT-перевод",
+      "attributes": {
+        "date": "10.02.2024",
+        "amount_eur": "150",
+        "amount_rub": "14700",
+        "commission_eur": "25",
+        "purpose": "оплата бронирования отеля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "organization",
+      "label": "Grand Hotel Antalya",
+      "attributes": {
+        "type": "отель",
+        "city": "Анталия",
+        "country": "Турция",
+        "swift_code": "TRGHANTL"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Бронирование отеля",
+      "attributes": {
+        "number": "TR12345",
+        "destination": "Анталия, Турция",
+        "status": "confirmed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Транзакция SWIFT-перевода",
+      "attributes": {
+        "id": "TRX-SWIFT-001",
+        "amount": "14700 руб.",
+        "date": "10.02.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "person",
+      "label": "Ираида Назаров",
+      "attributes": {
+        "role": "мать",
+        "phone_number": "+79031234567"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Пополнение баланса мобильного",
+      "attributes": {
+        "date": "12.02.2024",
+        "amount": "300 руб.",
+        "recipient": "Ираида Назаров"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Транзакция пополнения баланса",
+      "attributes": {
+        "id": "TRX-PHONE-001",
+        "amount": "300 руб.",
+        "date": "12.02.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "SMS-сообщение",
+      "attributes": {
+        "sender": "BankX",
+        "type": "кредитное предложение",
+        "date": "15.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "product",
+      "label": "Кредит наличными",
+      "attributes": {
+        "interest_rate": "14.8% годовых",
+        "term": "15 лет",
+        "max_amount": "1 600 000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "organization",
+      "label": "Ростелеком",
+      "attributes": {
+        "type": "провайдер",
+        "service": "интернет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "product",
+      "label": "Интернет",
+      "attributes": {
+        "provider": "Ростелеком",
+        "account_number": "9876543210"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Оплата интернета",
+      "attributes": {
+        "date": "20.02.2024",
+        "amount": "650 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Транзакция оплаты интернета",
+      "attributes": {
+        "id": "TRX-INET-001",
+        "amount": "650 руб.",
+        "date": "20.02.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Оплата ЖКХ за февраль",
+      "attributes": {
+        "date": "25.02.2024",
+        "amount": "7350 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Транзакция оплаты ЖКХ",
+      "attributes": {
+        "id": "TRX-JKH-002",
+        "amount": "7350 руб.",
+        "date": "25.02.2024",
+        "status": "completed"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "document",
+      "label": "Запрос расширенной выписки",
+      "attributes": {
+        "type": "request",
+        "date": "27.02.2024",
+        "period": "последние три месяца"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "document",
+      "label": "Расширенная выписка по текущему счету",
+      "attributes": {
+        "type": "statement",
+        "date_generated": "01.03.2024",
+        "format": "PDF",
+        "period": "01.12.2023-29.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "product",
+      "label": "Дебетовая карта",
+      "attributes": {
+        "number": "**** 1234",
+        "type": "debit",
+        "holder": "Блинов А.В."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Лимит онлайн-покупок",
+      "attributes": {
+        "type": "transaction_limit",
+        "amount": "80000 руб.",
+        "period": "месяц"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Раздражение",
+      "attributes": {
+        "intensity": "легкое",
+        "reason": "навязчивые кредитные предложения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Опасения",
+      "attributes": {
+        "intensity": "умеренное",
+        "reason": "скрытые комиссии по кредитам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Контроль расходов",
+      "attributes": {
+        "frequency": "регулярно",
+        "method": "сверка с бюджетом"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Проверка отправителя SMS",
+      "attributes": {
+        "frequency": "всегда",
+        "purpose": "избежать фишинга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "rate",
+      "label": "Разделение бюджетов",
+      "attributes": {
+        "participants": "Агап Блинов, Светлана Моисеева",
+        "purpose": "избежать путаницы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "account",
+      "label": "Карта Ульяны Блиновой",
+      "attributes": {
+        "bank": "Сбербанк",
+        "type": "дебетовая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "account",
+      "label": "Карта Иванова А.С.",
+      "attributes": {
+        "bank": "Тинькофф Банк",
+        "type": "дебетовая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "account",
+      "label": "Карта Иванова А.П.",
+      "attributes": {
+        "bank": "ВТБ",
+        "type": "дебетовая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Евро",
+      "attributes": {
+        "code": "EUR",
+        "exchange_rate_rub": "98"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Рубль",
+      "attributes": {
+        "code": "RUB"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_transfer_daughter_1",
+      "source": "person_agap_blinov",
+      "target": "person_uliana_blinova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "20.01.2024",
+        "method": "СБП",
+        "purpose": "оплата учебников",
+        "commission": "0 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfer_acquaintance_2",
+      "source": "person_agap_blinov",
+      "target": "person_ivanov_as",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "03.02.2024",
+        "method": "СБП",
+        "purpose": "возврат долга за запчасти для автомобиля"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_transfer_acquaintance_3",
+      "source": "person_agap_blinov",
+      "target": "person_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1500 руб.",
+        "date": "18.02.2024",
+        "method": "СБП",
+        "purpose": "за совместный ужин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_2",
+      "relation": "owns",
+      "attributes": {
+        "date_opened": "15.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "priority": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_2",
+      "target": "bank_sberbank",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_3",
+      "relation": "submitted",
+      "attributes": {
+        "date": "15.12.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_3",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_5",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_55",
+      "target": "person_uliana_blinova",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_55",
+      "target": "bank_sberbank",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date_started": "01.01.2010"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_8",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "daily"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_19",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_19",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_19",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_19",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date_started": "01.01.2005"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_20",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_20",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_20",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_20",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_12",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_12",
+      "target": "ctx_node_13",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_13",
+      "relation": "rejected",
+      "attributes": {
+        "reason": "избегает долговых обязательств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_14",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_14",
+      "target": "account_debet_40817810000000001234",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_14",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "expected_delivery": "24 часа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_agap_blinov",
+      "target": "bank_sberbank",
+      "relation": "resulted_in",
+      "attributes": {
+        "level": "high"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_48",
+      "target": "ctx_node_13",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_18",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_17",
+      "target": "ctx_node_18",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_51",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_17",
+      "target": "ctx_node_51",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_14",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_14",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "delivery_method": "email",
+        "delivery_time": "1 час"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_56",
+      "target": "person_ivanov_as",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_56",
+      "target": "bank_tinkoff",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_24",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_24",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_24",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_24",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_17",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_26",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_26",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_28",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_28",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_28",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_28",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_33",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_33",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_33",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_33",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_35",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_35",
+      "target": "ctx_node_36",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_47",
+      "target": "ctx_node_35",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_57",
+      "target": "person_ivanov_ap",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_57",
+      "target": "bank_vtb",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date_started": "01.01.2015"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_38",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_39",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_39",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_39",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_39",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_41",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_41",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_41",
+      "target": "account_debet_40817810000000001234",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_41",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_43",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_43",
+      "target": "account_debet_40817810000000001234",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "expected_delivery": "2-3 рабочих дня",
+        "delivery_method": "email"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_45",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_45",
+      "target": "account_debet_40817810000000001234",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_17",
+      "target": "ctx_node_46",
+      "relation": "changed_to",
+      "attributes": {
+        "date": "26.02.2024",
+        "new_limit": "80000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_46",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_28",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_28",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_58",
+      "target": "ctx_node_59",
+      "relation": "changed_to",
+      "attributes": {
+        "rate": "98"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "bank_sberbank",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_16",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_15",
+      "target": "person_agap_blinov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_12",
+      "target": "bank_sberbank",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_35",
+      "target": "bank_tinkoff",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_13",
+      "target": "bank_sberbank",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "ctx_node_36",
+      "target": "bank_tinkoff",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_15",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "delivery_method": "email",
+        "expected_delivery": "2-3 рабочих дня"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_44",
+      "target": "person_agap_blinov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_46",
+      "target": "person_agap_blinov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_17",
+      "target": "person_agap_blinov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26.02.2024",
+        "topic": "изменение лимита"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_49",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "ctx_node_4",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "regularly"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "regularly"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_15",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_44",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "ctx_node_12",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "кредитное предложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_agap_blinov",
+      "target": "person_uliana_blinova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "date": "20.11.2023",
+        "method": "СБП",
+        "purpose": "оплата учебников",
+        "commission": "0 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_agap_blinov",
+      "target": "person_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1650 руб.",
+        "date": "18.12.2023",
+        "method": "СБП",
+        "purpose": "за совместный ужин"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_agap_blinov",
+      "target": "person_ivanov_as",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5720 руб.",
+        "date": "03.01.2024",
+        "method": "СБП",
+        "purpose": "возврат долга за запчасти для автомобиля"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_44",
+      "target": "ctx_node_59",
+      "relation": "changed_to",
+      "attributes": {
+        "rate": "88,2"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_agap_blinov",
+      "target": "bank_tinkoff",
+      "relation": "resulted_in",
+      "attributes": {
+        "date_started": "0,91.2015"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date_started": "1,11.2005"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_43",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "expected_delivery": "21,6 часа"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_12",
+      "target": "person_ivanov_as",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "6292 руб.",
+        "date": "03.01.2024",
+        "method": "СБП",
+        "purpose": "возврат долга за запчасти для автомобиля"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_57",
+      "relation": "owns",
+      "attributes": {
+        "date_opened": "16,63.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_17",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28,62.2024",
+        "topic": "изменение лимита"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_58",
+      "target": "ctx_node_10",
+      "relation": "changed_to",
+      "attributes": {
+        "rate": "88,2"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_46",
+      "relation": "rejected",
+      "attributes": {
+        "reason": "избегает долговых обязательств"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_36",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1350 руб.",
+        "date": "18.02.2024",
+        "method": "СБП",
+        "purpose": "за совместный ужин"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_43",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "delivery_method": "email",
+        "expected_delivery": "2,2-3 рабочих дня"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_39",
+      "target": "person_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1485 руб.",
+        "date": "18.12.2023",
+        "method": "СБП",
+        "purpose": "за совместный ужин"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date_started": "0,91.2015"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_11",
+      "target": "person_ivanov_as",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5148 руб.",
+        "date": "03.01.2024",
+        "method": "СБП",
+        "purpose": "возврат долга за запчасти для автомобиля"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "person_agap_blinov",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "frequency": "regularly"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_16",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {
+        "delivery_method": "email",
+        "expected_delivery": "2,2-3 рабочих дня"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_12",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "кредитное предложение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_agap_blinov",
+      "source": "person_agap_blinov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_uliana_blinova",
+      "source": "person_uliana_blinova",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_ivanov_as",
+      "source": "person_ivanov_as",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_ivanov_ap",
+      "source": "person_ivanov_ap",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

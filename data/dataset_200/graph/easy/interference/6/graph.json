@@ -1,0 +1,1183 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Элеонора Пономарева оплачивает ЖКУ, получает предложение по вкладу и совершает переводы, испытывая замешательство."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Элеонора Пономарева оплачивает ЖКУ, ошибочно активирует кэшбэк, получает дивиденды и выражает недовольство навязчивыми кредитными предложениями."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Элеонора Пономарева встречается с менеджером для разрешения проблем с предложениями и операциями, достигая удовлетворения."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "client_eleonora_ponomareva",
+      "type": "person",
+      "label": "Элеонора Пономарева",
+      "attributes": {
+        "age": 35,
+        "gender": "female",
+        "occupation": "стоматолог",
+        "city": "Шилка",
+        "monthly_income": "270000 рублей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_pelageya",
+      "type": "person",
+      "label": "Пелагея",
+      "attributes": {
+        "relation": "дочь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_bykova_lukia",
+      "type": "person",
+      "label": "Быкова Лукия Захаровна",
+      "attributes": {
+        "relation": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_sergeev_olimpiy",
+      "type": "person",
+      "label": "Сергеев Олимпия Владленовича",
+      "attributes": {
+        "relation": "отец"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_viktor_panov",
+      "type": "person",
+      "label": "Виктор Бориславович Панов",
+      "attributes": {
+        "relation": "знакомый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_ivanov_as",
+      "type": "person",
+      "label": "Иванов А.С.",
+      "attributes": {
+        "role": "брокер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank_main",
+      "type": "organization",
+      "label": "Основной Банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "ao_gazprom",
+      "type": "organization",
+      "label": "АО 'Газпром'",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "contact_center",
+      "type": "event",
+      "label": "Контакт-центр Банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_1234",
+      "type": "product",
+      "label": "Дебетовая карта **** 1234",
+      "attributes": {
+        "number_suffix": "1234",
+        "type": "дебетовая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "current_account_40817",
+      "type": "account",
+      "label": "Текущий счет №40817...",
+      "attributes": {
+        "number_prefix": "40817810000000000001",
+        "type": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "sberbank_card_pelageya",
+      "type": "product",
+      "label": "Карта Сбербанка Пелагеи",
+      "attributes": {
+        "bank": "Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "vtb_card_lukia",
+      "type": "product",
+      "label": "Карта ВТБ Лукии Захаровны",
+      "attributes": {
+        "bank": "ВТБ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_nakopitelny_plus",
+      "type": "product",
+      "label": "Вклад 'Накопительный Плюс'",
+      "attributes": {
+        "rate": "15% годовых",
+        "term": "6 месяцев",
+        "capitalization": "ежемесячная",
+        "contract_number": "ДП-01/24"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "deposit_vygodny_start",
+      "type": "product",
+      "label": "Вклад 'Выгодный Старт'",
+      "attributes": {
+        "rate": "14.8% годовых",
+        "open_date": "10.01.2024",
+        "contract_number": "ВС-01/24"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_cashback_master",
+      "type": "event",
+      "label": "Предложение 'Кэшбэк-Мастер'",
+      "attributes": {
+        "category_pharmacy": "3%",
+        "category_supermarket": "2%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_cashback_travel",
+      "type": "event",
+      "label": "Предложение 'Кэшбэк-Путешествия'",
+      "attributes": {
+        "category_flights": "5%"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "offer_credit_card_300k",
+      "type": "event",
+      "label": "Предложение по кредитной карте",
+      "attributes": {
+        "limit": "300000 рублей",
+        "grace_period": "120 дней",
+        "apr": "24.9% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_refinancing_loan",
+      "type": "event",
+      "label": "Предложение по рефинансированию",
+      "attributes": {
+        "rate": "14.8% годовых",
+        "term": "15 лет",
+        "target_bank": "ВТБ"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "goal_stability_independence",
+      "type": "event",
+      "label": "Стабильность и независимость",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "goal_avoid_credit",
+      "type": "event",
+      "label": "Избегать кредитов",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "goal_savings",
+      "type": "event",
+      "label": "Пополнение накопительных счетов",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "state_anxious_ep1",
+      "type": "event",
+      "label": "Беспокойство (Эп.1)",
+      "attributes": {
+        "reason": "обилие схожей информации, скрытые риски"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "state_confused_ep1",
+      "type": "event",
+      "label": "Путаница (Эп.1)",
+      "attributes": {
+        "reason": "схожесть вкладов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "state_frustrated_ep2",
+      "type": "event",
+      "label": "Раздражение (Эп.2)",
+      "attributes": {
+        "reason": "навязчивые кредитные предложения"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "state_anxious_ep2",
+      "type": "event",
+      "label": "Тревога (Эп.2)",
+      "attributes": {
+        "reason": "подозрение на навязывание продуктов, беспорядок в счетах"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_deposit_np_conditions",
+      "type": "document",
+      "label": "Условия вклада 'Накопительный Плюс'",
+      "attributes": {
+        "type": "электронный",
+        "contract_number": "ДП-01/24"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_deposit_vs_conditions",
+      "type": "document",
+      "label": "Условия вклада 'Выгодный Старт'",
+      "attributes": {
+        "type": "электронный",
+        "contract_number": "ВС-01/24"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_power_of_attorney",
+      "type": "document",
+      "label": "Доверенность №123456789",
+      "attributes": {
+        "number": "123456789"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_full_statement",
+      "type": "document",
+      "label": "Полная выписка по операциям",
+      "attributes": {
+        "period": "3 месяца"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "doc_credit_rejection_confirm",
+      "type": "document",
+      "label": "Подтверждение отказов от кредитов",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "event_jku_payment_dec2023",
+      "type": "event",
+      "label": "Оплата ЖКУ (дек. 2023)",
+      "attributes": {
+        "date": "25.01.2024",
+        "amount": "4850 рублей",
+        "period": "декабрь 2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_jku_payment_jan2024",
+      "type": "event",
+      "label": "Оплата ЖКУ (янв. 2024)",
+      "attributes": {
+        "date": "25.02.2024",
+        "amount": "4920 рублей",
+        "period": "январь 2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_transfer_pelageya",
+      "type": "event",
+      "label": "Перевод Пелагее",
+      "attributes": {
+        "date": "10.03.2024",
+        "amount": "5000 рублей",
+        "purpose": "школьные принадлежности",
+        "method": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_transfer_mother",
+      "type": "event",
+      "label": "Перевод матери",
+      "attributes": {
+        "date": "12.03.2024",
+        "amount": "5200 рублей",
+        "purpose": "лекарства",
+        "method": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_dividend_receipt",
+      "type": "event",
+      "label": "Зачисление дивидендов",
+      "attributes": {
+        "date": "15.03.2024",
+        "amount": "12500 рублей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_cashback_activation_error",
+      "type": "event",
+      "label": "Ошибка активации кэшбэка",
+      "attributes": {
+        "date": "03.03.2024",
+        "mistake": "активировала не тот кэшбэк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "event_complaint_registration",
+      "type": "event",
+      "label": "Регистрация жалобы",
+      "attributes": {
+        "date": "19.03.2024",
+        "complaint_number": "Ж-03/24-005",
+        "reason": "навязчивые предложения и некорректная активация кэшбэк-программы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "activation_cashback_travel_03032024",
+      "type": "event",
+      "label": "Активация кэшбэк-программы 'Кэшбэк-Путешествия'",
+      "attributes": {
+        "date": "03.03.2024",
+        "status": "ошибочная"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "rejection_credit_card_16032024",
+      "type": "event",
+      "label": "Отказ от предложения кредитной карты",
+      "attributes": {
+        "date": "16.03.2024",
+        "channel": "интернет-банк"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_client_ep1",
+      "source": "client_eleonora_ponomareva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_client_ep2",
+      "source": "client_eleonora_ponomareva",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_client_ep3",
+      "source": "client_eleonora_ponomareva",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_goal_stability",
+      "source": "client_eleonora_ponomareva",
+      "target": "goal_stability_independence",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_goal_avoid_credit",
+      "source": "client_eleonora_ponomareva",
+      "target": "goal_avoid_credit",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_goal_savings",
+      "source": "client_eleonora_ponomareva",
+      "target": "goal_savings",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_uses_debit_card",
+      "source": "client_eleonora_ponomareva",
+      "target": "debit_card_1234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_current_account",
+      "source": "client_eleonora_ponomareva",
+      "target": "current_account_40817",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_is_parent_of_pelageya",
+      "source": "client_eleonora_ponomareva",
+      "target": "person_pelageya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_is_child_of_lukia",
+      "source": "client_eleonora_ponomareva",
+      "target": "person_bykova_lukia",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_is_child_of_olimpiy",
+      "source": "client_eleonora_ponomareva",
+      "target": "person_sergeev_olimpiy",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_knows_panov",
+      "source": "client_eleonora_ponomareva",
+      "target": "person_viktor_panov",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_jku_payment_dec2023",
+      "source": "event_jku_payment_dec2023",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_pays_jku_dec2023",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_jku_payment_dec2023",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "jku_dec2023_uses_card",
+      "source": "event_jku_payment_dec2023",
+      "target": "debit_card_1234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offers_deposit_np",
+      "source": "bank_main",
+      "target": "deposit_nakopitelny_plus",
+      "relation": "contains",
+      "attributes": {
+        "date": "28.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "occ_deposit_nakopitelny_plus",
+      "source": "deposit_nakopitelny_plus",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_has_deposit_vs",
+      "source": "client_eleonora_ponomareva",
+      "target": "deposit_vygodny_start",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_deposit_vygodny_start",
+      "source": "deposit_vygodny_start",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "deposit_np_similar_to_vs",
+      "source": "deposit_nakopitelny_plus",
+      "target": "deposit_vygodny_start",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experiences_confusion_ep1",
+      "source": "client_eleonora_ponomareva",
+      "target": "state_confused_ep1",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "confusion_caused_by_similar_deposits",
+      "source": "state_confused_ep1",
+      "target": "deposit_nakopitelny_plus",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_transfer_pelageya",
+      "source": "event_transfer_pelageya",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_transfers_to_pelageya",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_transfer_pelageya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_pelageya_to_card",
+      "source": "event_transfer_pelageya",
+      "target": "sberbank_card_pelageya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "pelageya_has_sberbank_card",
+      "source": "person_pelageya",
+      "target": "sberbank_card_pelageya",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_transfer_mother",
+      "source": "event_transfer_mother",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_transfers_to_mother",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_transfer_mother",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_mother_to_card",
+      "source": "event_transfer_mother",
+      "target": "vtb_card_lukia",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "mother_has_vtb_card",
+      "source": "person_bykova_lukia",
+      "target": "vtb_card_lukia",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_calls_contact_center_ep1",
+      "source": "client_eleonora_ponomareva",
+      "target": "contact_center",
+      "relation": "contains",
+      "attributes": {
+        "date": "14.03.2024",
+        "purpose": "уточнить детали вкладов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "call_clarifies_deposit_np",
+      "source": "contact_center",
+      "target": "deposit_nakopitelny_plus",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "call_clarifies_deposit_vs",
+      "source": "contact_center",
+      "target": "deposit_vygodny_start",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experiences_anxious_ep1",
+      "source": "client_eleonora_ponomareva",
+      "target": "state_anxious_ep1",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requests_doc_np",
+      "source": "client_eleonora_ponomareva",
+      "target": "doc_deposit_np_conditions",
+      "relation": "applied_for",
+      "attributes": {
+        "type": "электронный"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requests_doc_vs",
+      "source": "client_eleonora_ponomareva",
+      "target": "doc_deposit_vs_conditions",
+      "relation": "applied_for",
+      "attributes": {
+        "type": "электронный"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_jku_payment_jan2024",
+      "source": "event_jku_payment_jan2024",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_pays_jku_jan2024",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_jku_payment_jan2024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "jku_jan2024_uses_card",
+      "source": "event_jku_payment_jan2024",
+      "target": "debit_card_1234",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "jku_payment_dec_similar_to_jan",
+      "source": "event_jku_payment_dec2023",
+      "target": "event_jku_payment_jan2024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offers_cashback_master",
+      "source": "bank_main",
+      "target": "offer_cashback_master",
+      "relation": "contains",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_cashback_master",
+      "source": "offer_cashback_master",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offers_cashback_travel",
+      "source": "bank_main",
+      "target": "offer_cashback_travel",
+      "relation": "contains",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "occ_offer_cashback_travel",
+      "source": "offer_cashback_travel",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "cashback_master_similar_to_travel",
+      "source": "offer_cashback_master",
+      "target": "offer_cashback_travel",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_makes_cashback_error",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_cashback_activation_error",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_cashback_activation_error",
+      "source": "event_cashback_activation_error",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "error_activates_cashback_travel",
+      "source": "event_cashback_activation_error",
+      "target": "offer_cashback_travel",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_receives_dividends",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_dividend_receipt",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_dividend_receipt",
+      "source": "event_dividend_receipt",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "dividends_to_current_account",
+      "source": "event_dividend_receipt",
+      "target": "current_account_40817",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "dividends_from_gazprom",
+      "source": "event_dividend_receipt",
+      "target": "ao_gazprom",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "dividends_via_broker",
+      "source": "event_dividend_receipt",
+      "target": "person_ivanov_as",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offers_credit_card",
+      "source": "bank_main",
+      "target": "offer_credit_card_300k",
+      "relation": "contains",
+      "attributes": {
+        "date": "16.03.2024",
+        "status": "предодобрено"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_credit_card_300k",
+      "source": "offer_credit_card_300k",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experiences_frustrated_ep2",
+      "source": "client_eleonora_ponomareva",
+      "target": "state_frustrated_ep2",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "frustration_caused_by_credit_offer",
+      "source": "state_frustrated_ep2",
+      "target": "offer_credit_card_300k",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_rejects_credit_card",
+      "source": "client_eleonora_ponomareva",
+      "target": "offer_credit_card_300k",
+      "relation": "rejected",
+      "attributes": {
+        "method": "интернет-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_issues_poa",
+      "source": "client_eleonora_ponomareva",
+      "target": "doc_power_of_attorney",
+      "relation": "contains",
+      "attributes": {
+        "date": "18.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_doc_power_of_attorney",
+      "source": "doc_power_of_attorney",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "poa_for_panov",
+      "source": "doc_power_of_attorney",
+      "target": "person_viktor_panov",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "poa_related_to_deposit_np",
+      "source": "doc_power_of_attorney",
+      "target": "deposit_nakopitelny_plus",
+      "relation": "contains",
+      "attributes": {
+        "purpose": "получение выписки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requests_full_statement",
+      "source": "client_eleonora_ponomareva",
+      "target": "doc_full_statement",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "19.03.2024",
+        "method": "звонок в банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_requests_rejection_confirm",
+      "source": "client_eleonora_ponomareva",
+      "target": "doc_credit_rejection_confirm",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_experiences_anxious_ep2",
+      "source": "client_eleonora_ponomareva",
+      "target": "state_anxious_ep2",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "anxiety_caused_by_disorder",
+      "source": "state_anxious_ep2",
+      "target": "doc_full_statement",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "client_registers_complaint",
+      "source": "client_eleonora_ponomareva",
+      "target": "event_complaint_registration",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_complaint_registration",
+      "source": "event_complaint_registration",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "complaint_about_offers",
+      "source": "event_complaint_registration",
+      "target": "offer_credit_card_300k",
+      "relation": "contains",
+      "attributes": {
+        "type": ""
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_offer_refinancing_loan",
+      "source": "offer_refinancing_loan",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_activation_cashback_travel_03032024",
+      "source": "activation_cashback_travel_03032024",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_rejection_credit_card_16032024",
+      "source": "rejection_credit_card_16032024",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

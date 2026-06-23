@@ -1,0 +1,1703 @@
+{
+  "nodes": [
+    {
+      "id": "person_kolobov",
+      "type": "person",
+      "label": "Колобов Христофор Венедиктович",
+      "attributes": {
+        "age": 35,
+        "gender": "male",
+        "income": 313000,
+        "job": "пулемётчик",
+        "passport_series": "4500",
+        "passport_number": "123456",
+        "phone_number": "+79ХХХХХХХХХ"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "bank_main",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "card_debit_premium_old",
+      "type": "product",
+      "label": "Дебетовая карта \"Премиум\" (первая)",
+      "attributes": {
+        "type": "debit",
+        "status": "активна"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "app_debit_premium",
+      "type": "product",
+      "label": "Заявка на дебетовую карту \"Премиум\"",
+      "attributes": {
+        "status": "подана"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "goal_optimize_expenses",
+      "type": "event",
+      "label": "Оптимизация ежедневных расходов",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "goal_increase_cashback",
+      "type": "event",
+      "label": "Увеличение кэшбэка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "service_mobile_app",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "doc_passport_kolobov",
+      "type": "document",
+      "label": "Паспорт Колобова",
+      "attributes": {
+        "series": "4500",
+        "number": "123456"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_muravyeva",
+      "type": "person",
+      "label": "Муравьева Алла Владимировна",
+      "attributes": {
+        "age": 72,
+        "relation": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "service_sbp",
+      "type": "product",
+      "label": "Система быстрых платежей (СБП)",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "card_debit_old",
+      "type": "product",
+      "label": "Старая дебетовая карта Колобова",
+      "attributes": {
+        "type": "debit",
+        "status": "активна"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "service_kinoplus",
+      "type": "product",
+      "label": "Онлайн-кинотеатр \"КиноПлюс\"",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "account_accumulative",
+      "type": "account",
+      "label": "Накопительный счет \"Выгодный\"",
+      "attributes": {
+        "interest_rate": "14% годовых"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "account_current",
+      "type": "account",
+      "label": "Текущий счет Колобова",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "device_atm",
+      "type": "event",
+      "label": "Банкомат",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "notif_sms",
+      "type": "event",
+      "label": "SMS-уведомление",
+      "attributes": {
+        "channel": "SMS"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "location_buzuluk",
+      "type": "organization",
+      "label": "д. Бузулук",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "merchant_technomir",
+      "type": "event",
+      "label": "Магазин электроники \"ТехноМир\"",
+      "attributes": {
+        "category": "Электроника"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_irina",
+      "type": "person",
+      "label": "Ирина Колобова",
+      "attributes": {
+        "age": 6,
+        "relation": "дочь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "service_kindergarten",
+      "type": "product",
+      "label": "Детский сад",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "card_credit_maximum",
+      "type": "product",
+      "label": "Кредитная карта \"Максимум\"",
+      "attributes": {
+        "type": "credit",
+        "status": "активна",
+        "number": "4276 XXXX XXXX 5678"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "app_credit_maximum",
+      "type": "product",
+      "label": "Заявка на кредитную карту \"Максимум\"",
+      "attributes": {
+        "status": "подана"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "doc_pfr_statement",
+      "type": "document",
+      "label": "Выписка из ПФР",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "service_bank_website",
+      "type": "product",
+      "label": "Сайт банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "person_rusakov",
+      "type": "person",
+      "label": "Всеслав Богданович Русаков",
+      "attributes": {
+        "age": 30,
+        "relation": "друг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "status_cashback_pending",
+      "type": "event",
+      "label": "Кэшбэк: Начисление ожидается",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "person_yudina",
+      "type": "person",
+      "label": "Юдина Галина Харитоновна",
+      "attributes": {
+        "age": 18,
+        "relation": "неизвестно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "service_music",
+      "type": "product",
+      "label": "Сервис \"Музыка\"",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "service_chat_support",
+      "type": "product",
+      "label": "Чат поддержки",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "card_debit_premium_new",
+      "type": "product",
+      "label": "Дебетовая карта \"Премиум\" (перевыпущенная)",
+      "attributes": {
+        "type": "debit",
+        "status": "активна",
+        "number": "4276 XXXX XXXX 1235"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "person_matveeva",
+      "type": "person",
+      "label": "Матвеева Александра Станиславовна",
+      "attributes": {
+        "age": 42,
+        "relation": "партнерша"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "service_internet_bank",
+      "type": "product",
+      "label": "Интернет-банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "role_personal_manager",
+      "type": "event",
+      "label": "Персональный менеджер",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "department_special",
+      "type": "event",
+      "label": "Специальный отдел",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotion_discontent",
+      "type": "event",
+      "label": "Недовольство",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "doc_2ndfl",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "doc_car_sale_contract",
+      "type": "document",
+      "label": "Договор купли-продажи автомобиля",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "object_car",
+      "type": "event",
+      "label": "Автомобиль",
+      "attributes": {
+        "sale_price": 1200000,
+        "sale_month": "февраль 2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Христофор подает заявку на новую дебетовую карту и совершает первые операции."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Христофор активно пользуется новой картой и подает заявку на кредитную карту."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Карта Христофора заблокирована по 115-ФЗ, банк запрашивает документы."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "project_home_repair",
+      "type": "event",
+      "label": "Крупный ремонт в доме",
+      "attributes": {
+        "estimated_cost": 450000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "push_notification_event",
+      "type": "event",
+      "label": "Пуш-уведомление",
+      "attributes": {
+        "channel": "push"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_kolobov_ep1",
+      "source": "person_kolobov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_card_debit_premium_old_ep1",
+      "source": "card_debit_premium_old",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_app_debit_premium_ep1",
+      "source": "app_debit_premium",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_card_debit_old_ep1",
+      "source": "card_debit_old",
+      "target": "ep_1",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_account_accumulative_ep1",
+      "source": "account_accumulative",
+      "target": "ep_1",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_account_current_ep1",
+      "source": "account_current",
+      "target": "ep_1",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_card_credit_maximum_ep2",
+      "source": "card_credit_maximum",
+      "target": "ep_2",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_app_credit_maximum_ep2",
+      "source": "app_credit_maximum",
+      "target": "ep_2",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_doc_pfr_statement_ep2",
+      "source": "doc_pfr_statement",
+      "target": "ep_2",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_card_debit_premium_old_ep3",
+      "source": "card_debit_premium_old",
+      "target": "ep_3",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_card_debit_premium_new_ep3",
+      "source": "card_debit_premium_new",
+      "target": "ep_3",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_doc_2ndfl_ep3",
+      "source": "doc_2ndfl",
+      "target": "ep_3",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_doc_car_sale_contract_ep3",
+      "source": "doc_car_sale_contract",
+      "target": "ep_3",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "e_kolobov_lives_in_buzuluk",
+      "source": "person_kolobov",
+      "target": "location_buzuluk",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_works_as_pul",
+      "source": "person_kolobov",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "role": "пулемётчик"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_uses_digital_services",
+      "source": "person_kolobov",
+      "target": "service_mobile_app",
+      "relation": "contains",
+      "attributes": {
+        "service_type": "цифровые банковские"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_goal_optimize",
+      "source": "person_kolobov",
+      "target": "goal_optimize_expenses",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_goal_cashback",
+      "source": "person_kolobov",
+      "target": "goal_increase_cashback",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_applied_debit_premium",
+      "source": "person_kolobov",
+      "target": "app_debit_premium",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "01.03.2024",
+        "card_type": "дебетовая",
+        "card_name": "Премиум",
+        "cashback_rate": "5%",
+        "cashback_categories": "Электроника, Развлечения",
+        "expected_monthly_cashback": 5000,
+        "expected_monthly_turnover": 100000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_app_debit_premium_via_app",
+      "source": "app_debit_premium",
+      "target": "service_mobile_app",
+      "relation": "submitted",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_app_debit_premium_confirmed_passport",
+      "source": "app_debit_premium",
+      "target": "doc_passport_kolobov",
+      "relation": "approved",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_transferred_to_muravyeva",
+      "source": "person_kolobov",
+      "target": "person_muravyeva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 15000,
+        "currency": "рублей",
+        "method": "СБП",
+        "purpose": "оплата коммунальных услуг",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_app_debit_premium_approved",
+      "source": "app_debit_premium",
+      "target": "bank_main",
+      "relation": "approved",
+      "attributes": {
+        "date": "06.03.2024",
+        "days_after_submission": 3
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_notified_kolobov_sms_push",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "date": "06.03.2024",
+        "channels": [
+          "SMS",
+          "Push-уведомление"
+        ],
+        "about": "одобрение заявки на дебетовую карту"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_paid_kinoplus_old_card",
+      "source": "person_kolobov",
+      "target": "service_kinoplus",
+      "relation": "paid",
+      "attributes": {
+        "amount": 1497,
+        "currency": "рублей",
+        "period": "3 месяца",
+        "card_used": "card_debit_old",
+        "date": "06.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_card_debit_old_expires",
+      "source": "card_debit_old",
+      "target": "card_debit_old",
+      "relation": "contains",
+      "attributes": {
+        "date": "31.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_card_debit_premium_old_delivered",
+      "source": "card_debit_premium_old",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "date": "13.03.2024",
+        "delivery_method": "курьерская служба",
+        "days_after_approval": 7,
+        "card_number": "4276 XXXX XXXX 1234"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_activated_debit_premium_old",
+      "source": "person_kolobov",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "date": "13.03.2024",
+        "method": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_set_pin_debit_premium_old",
+      "source": "person_kolobov",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "date": "13.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_opened_accumulative_account",
+      "source": "person_kolobov",
+      "target": "account_accumulative",
+      "relation": "contains",
+      "attributes": {
+        "date": "13.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_transferred_to_accumulative",
+      "source": "person_kolobov",
+      "target": "account_accumulative",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 250000,
+        "currency": "рублей",
+        "from_account": "account_current",
+        "date": "13.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_checked_card_limits",
+      "source": "person_kolobov",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "cash_withdrawal_limit_monthly": 300000,
+        "online_purchase_limit_daily": 1000000,
+        "date": "13.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_purchased_technomir",
+      "source": "person_kolobov",
+      "target": "merchant_technomir",
+      "relation": "contains",
+      "attributes": {
+        "amount": 75000,
+        "currency": "рублей",
+        "card_used": "card_debit_premium_old",
+        "date": "15.03.2024",
+        "expected_cashback": 3750,
+        "cashback_category": "Электроника"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_paid_kindergarten",
+      "source": "person_kolobov",
+      "target": "service_kindergarten",
+      "relation": "paid",
+      "attributes": {
+        "amount": 12500,
+        "currency": "рублей",
+        "for_person": "person_irina",
+        "method": "мобильное приложение (QR-код)",
+        "date": "17.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_applied_credit_maximum",
+      "source": "person_kolobov",
+      "target": "app_credit_maximum",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "20.03.2024",
+        "card_type": "кредитная",
+        "card_name": "Максимум",
+        "grace_period": "120 дней",
+        "credit_limit_requested": 500000,
+        "purpose": "резервные средства для крупных покупок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_notified_pre_approval_credit",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "date": "20.03.2024",
+        "channel": "SMS",
+        "about": "предварительное одобрение кредитной карты",
+        "request": "подтверждение дохода через выписку из ПФР",
+        "due_date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_provided_pfr_statement",
+      "source": "person_kolobov",
+      "target": "doc_pfr_statement",
+      "relation": "contains",
+      "attributes": {
+        "date": "21.03.2024",
+        "method": "личный кабинет на сайте банка",
+        "confirms_income": 313000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_card_credit_maximum_approved_delivered",
+      "source": "card_credit_maximum",
+      "target": "person_kolobov",
+      "relation": "approved",
+      "attributes": {
+        "date": "27.03.2024",
+        "days_after_application": 5,
+        "delivery_method": "курьер",
+        "credit_limit": 500000,
+        "interest_rate_outside_grace": "22% годовых"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_activated_credit_maximum",
+      "source": "person_kolobov",
+      "target": "card_credit_maximum",
+      "relation": "contains",
+      "attributes": {
+        "date": "27.03.2024",
+        "method": "мобильное приложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_set_pin_credit_maximum",
+      "source": "person_kolobov",
+      "target": "card_credit_maximum",
+      "relation": "contains",
+      "attributes": {
+        "date": "27.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_credit_maximum_planned_for_repair",
+      "source": "card_credit_maximum",
+      "target": "project_home_repair",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_transferred_to_rusakov",
+      "source": "person_kolobov",
+      "target": "person_rusakov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 50000,
+        "currency": "рублей",
+        "method": "СБП",
+        "purpose": "на стройматериалы",
+        "date": "29.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_checked_cashback_status",
+      "source": "person_kolobov",
+      "target": "status_cashback_pending",
+      "relation": "contains",
+      "attributes": {
+        "for_purchase_date": "15.03.2024",
+        "date": "29.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_paid_mortgage",
+      "source": "person_kolobov",
+      "target": "bank_main",
+      "relation": "paid",
+      "attributes": {
+        "amount": 85000,
+        "currency": "рублей",
+        "from_account": "account_current",
+        "date": "31.03.2024",
+        "due_date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_card_debit_premium_old_blocked",
+      "source": "card_debit_premium_old",
+      "target": "bank_main",
+      "relation": "contains",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "14:35",
+        "reason": "подозрительная операция",
+        "operation_type": "перевод СБП",
+        "operation_amount": 150000,
+        "recipient": "person_yudina"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_attempted_pay_music",
+      "source": "person_kolobov",
+      "target": "service_music",
+      "relation": "paid",
+      "attributes": {
+        "amount": 599,
+        "currency": "рублей",
+        "date": "05.04.2024",
+        "time": "14:40"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_payment_music_declined",
+      "source": "service_music",
+      "target": "bank_main",
+      "relation": "rejected",
+      "attributes": {
+        "date": "05.04.2024",
+        "time": "14:40"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_notified_blocking_sms",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "date": "05.04.2024",
+        "channel": "SMS",
+        "about": "блокировка карты",
+        "code": "001",
+        "action_required": "связаться со службой поддержки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_contacted_chat_support",
+      "source": "person_kolobov",
+      "target": "service_chat_support",
+      "relation": "contains",
+      "attributes": {
+        "date": "05.04.2024",
+        "wait_time_minutes": 15
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_chat_support_informed_115fz",
+      "source": "service_chat_support",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "reason": "запрос документов в рамках 115-ФЗ",
+        "details": "необходимость подтверждения личности и источника средств"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_bank_unblocked_temporarily",
+      "source": "bank_main",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "date": "07.04.2024",
+        "time": "10:00",
+        "purpose": "для перевыпуска",
+        "warning": "предстоящий запрос документов по подозрительной операции"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_ordered_reissue",
+      "source": "person_kolobov",
+      "target": "card_debit_premium_new",
+      "relation": "contains",
+      "attributes": {
+        "date": "08.04.2024",
+        "method": "мобильное приложение",
+        "reason": "утеряна/повреждена",
+        "old_card": "card_debit_premium_old"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_inquired_cashback",
+      "source": "person_kolobov",
+      "target": "bank_main",
+      "relation": "contains",
+      "attributes": {
+        "date": "10.04.2024",
+        "via": "чат поддержки",
+        "for_purchase_date": "15.03.2024",
+        "purchase_amount": 75000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_promised_cashback",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "amount": 3750,
+        "currency": "рублей",
+        "due_date": "31.05.2024",
+        "condition": "после завершения внутренних проверок"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_card_debit_premium_new_received",
+      "source": "card_debit_premium_new",
+      "target": "person_kolobov",
+      "relation": "received",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_attempted_transfer_matveeva",
+      "source": "person_kolobov",
+      "target": "person_matveeva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": 20000,
+        "currency": "рублей",
+        "purpose": "оплата совместного счета за интернет",
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_transfer_matveeva_declined",
+      "source": "person_kolobov",
+      "target": "bank_main",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "12.04.2024",
+        "reason": "Превышен лимит на исходящие операции"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_requested_docs_115fz",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.04.2024",
+        "via": [
+          "официальное письмо в интернет-банке",
+          "SMS-уведомление"
+        ],
+        "reason": "подтверждение источника средств по 115-ФЗ",
+        "triggering_events": [
+          {
+            "transfer_from": "person_rusakov",
+            "amount": 200000,
+            "date": "01.04.2024"
+          },
+          {
+            "transfer_from": "person_matveeva",
+            "amount": 150000,
+            "date": "03.04.2024"
+          }
+        ],
+        "total_triggering_amount": 350000,
+        "documents_due_date": "25.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_set_temporary_limit",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.04.2024",
+        "limit_type": "исходящие переводы",
+        "limit_value": 10000,
+        "limit_period": "в день",
+        "condition": "до предоставления документов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_contacted_personal_manager",
+      "source": "person_kolobov",
+      "target": "role_personal_manager",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.04.2024",
+        "emotion": "раздражение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_personal_manager_redirected",
+      "source": "role_personal_manager",
+      "target": "department_special",
+      "relation": "contains",
+      "attributes": {
+        "reason": "вопросы по 115-ФЗ",
+        "response_wait_time": "до 3 рабочих дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_felt_discontent",
+      "source": "person_kolobov",
+      "target": "emotion_discontent",
+      "relation": "contains",
+      "attributes": {
+        "date": "15.04.2024",
+        "cause": "долгое ожидание ответа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_bank_reminded_docs",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "contains",
+      "attributes": {
+        "date": "20.04.2024",
+        "due_date": "25.04.2024",
+        "documents_required": [
+          "doc_2ndfl",
+          "doc_car_sale_contract",
+          "пояснения по переводу Юдиной Галине Харитоновне"
+        ]
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_doc_car_sale_contract_about_car",
+      "source": "doc_car_sale_contract",
+      "target": "object_car",
+      "relation": "contains",
+      "attributes": {
+        "sale_month": "февраль 2024",
+        "sale_amount": 1200000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_mother_muravyeva",
+      "source": "person_kolobov",
+      "target": "person_muravyeva",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_daughter_irina",
+      "source": "person_kolobov",
+      "target": "person_irina",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_friend_rusakov",
+      "source": "person_kolobov",
+      "target": "person_rusakov",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_partner_matveeva",
+      "source": "person_kolobov",
+      "target": "person_matveeva",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_acquaintance_yudina",
+      "source": "person_kolobov",
+      "target": "person_yudina",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_debit_premium_old_has_number",
+      "source": "card_debit_premium_old",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "value": "4276 XXXX XXXX 1234"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_debit_premium_old_has_cashback",
+      "source": "card_debit_premium_old",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "value": "5%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_debit_premium_old_cashback_categories",
+      "source": "card_debit_premium_old",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "value": [
+          "Электроника",
+          "Развлечения"
+        ]
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_debit_premium_old_has_limit_cash",
+      "source": "card_debit_premium_old",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "value": 300000,
+        "period": "в месяц"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_debit_premium_old_has_limit_online",
+      "source": "card_debit_premium_old",
+      "target": "card_debit_premium_old",
+      "relation": "contains",
+      "attributes": {
+        "value": 1000000,
+        "period": "в день"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_account_accumulative_has_interest",
+      "source": "account_accumulative",
+      "target": "account_accumulative",
+      "relation": "contains",
+      "attributes": {
+        "value": "14% годовых"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_credit_maximum_has_grace_period",
+      "source": "card_credit_maximum",
+      "target": "card_credit_maximum",
+      "relation": "contains",
+      "attributes": {
+        "value": "120 дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_credit_maximum_has_credit_limit",
+      "source": "card_credit_maximum",
+      "target": "card_credit_maximum",
+      "relation": "contains",
+      "attributes": {
+        "value": 500000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_credit_maximum_has_interest_rate",
+      "source": "card_credit_maximum",
+      "target": "card_credit_maximum",
+      "relation": "contains",
+      "attributes": {
+        "value": "22% годовых",
+        "condition": "вне грейс-периода"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_card_debit_premium_new_has_number",
+      "source": "card_debit_premium_new",
+      "target": "card_debit_premium_new",
+      "relation": "contains",
+      "attributes": {
+        "value": "4276 XXXX XXXX 1235"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_income_confirmed_by_pfr",
+      "source": "person_kolobov",
+      "target": "doc_pfr_statement",
+      "relation": "approved",
+      "attributes": {
+        "amount": 313000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_income_confirmed_by_2ndfl",
+      "source": "person_kolobov",
+      "target": "doc_2ndfl",
+      "relation": "approved",
+      "attributes": {
+        "period": "последний год"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_sold_car",
+      "source": "person_kolobov",
+      "target": "object_car",
+      "relation": "contains",
+      "attributes": {
+        "date": "февраль 2024",
+        "amount": 1200000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_sold_car_contract",
+      "source": "person_kolobov",
+      "target": "doc_car_sale_contract",
+      "relation": "contains",
+      "attributes": {
+        "document_type": "договор купли-продажи",
+        "for_object": "object_car"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_uses_internet_bank",
+      "source": "person_kolobov",
+      "target": "service_internet_bank",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_uses_bank_website",
+      "source": "person_kolobov",
+      "target": "service_bank_website",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_uses_atm",
+      "source": "person_kolobov",
+      "target": "device_atm",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_uses_sbp",
+      "source": "person_kolobov",
+      "target": "service_sbp",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_passport",
+      "source": "person_kolobov",
+      "target": "doc_passport_kolobov",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_current_account",
+      "source": "person_kolobov",
+      "target": "account_current",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_old_debit_card",
+      "source": "person_kolobov",
+      "target": "card_debit_old",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_has_phone_number",
+      "source": "person_kolobov",
+      "target": "notif_sms",
+      "relation": "contains",
+      "attributes": {
+        "value": "+79ХХХХХХХХХ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_kolobov_received_incoming_rusakov",
+      "source": "person_kolobov",
+      "target": "person_rusakov",
+      "relation": "received",
+      "attributes": {
+        "amount": 200000,
+        "currency": "рублей",
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_kolobov_received_incoming_matveeva",
+      "source": "person_kolobov",
+      "target": "person_matveeva",
+      "relation": "received",
+      "attributes": {
+        "amount": 150000,
+        "currency": "рублей",
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "e_bank_requested_explanation_yudina",
+      "source": "bank_main",
+      "target": "person_kolobov",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "20.04.2024",
+        "transfer_to": "person_yudina"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "ep_occurs_card_debit_old",
+      "source": "card_debit_old",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_accumulative",
+      "source": "account_accumulative",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_current",
+      "source": "account_current",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_card_credit_maximum",
+      "source": "card_credit_maximum",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_app_credit_maximum",
+      "source": "app_credit_maximum",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_doc_pfr_statement",
+      "source": "doc_pfr_statement",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_card_debit_premium_new",
+      "source": "card_debit_premium_new",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_doc_2ndfl",
+      "source": "doc_2ndfl",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_doc_car_sale_contract",
+      "source": "doc_car_sale_contract",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_push_notification_event",
+      "source": "push_notification_event",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

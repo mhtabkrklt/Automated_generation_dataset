@@ -1,0 +1,2347 @@
+{
+  "nodes": [
+    {
+      "id": "person_nina_alekseeva",
+      "type": "person",
+      "label": "Алексеева Нина Вадимовна",
+      "attributes": {
+        "age": "66",
+        "job_title": "флеболог",
+        "monthly_income": "68000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_galina_yakusheva",
+      "type": "person",
+      "label": "Галина Якушева",
+      "attributes": {},
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_margarita_sysoeva",
+      "type": "person",
+      "label": "Сысоева Маргарита Даниловна",
+      "attributes": {},
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_evdokia_rogova",
+      "type": "person",
+      "label": "Евдокия Тимуровна Рогова",
+      "attributes": {},
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_apollon_lobanov",
+      "type": "person",
+      "label": "Аполлон Валерьевич Лобанов",
+      "attributes": {},
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "account",
+      "label": "Дебетовый счет Нины Алексеевой",
+      "attributes": {
+        "account_number": "40817810000000001234",
+        "currency": "RUB",
+        "type": "дебетовый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Дебетовая карта Нины Алексеевой",
+      "attributes": {
+        "card_number_mask": "**** 1234",
+        "type": "Visa",
+        "status": "активна",
+        "card_level": "Премиум"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "product",
+      "label": "Мобильная связь Билайн",
+      "attributes": {
+        "provider": "Билайн",
+        "service_type": "мобильная связь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Оплата мобильной связи",
+      "attributes": {
+        "amount": "450 руб.",
+        "date": "22.01.2024",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "platform": "iOS/Android",
+        "version": "актуальная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Коммунальные услуги (ЖКХ)",
+      "attributes": {
+        "provider": "УК Смирных",
+        "service_type": "ЖКХ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "event",
+      "label": "Оплата ЖКХ за январь",
+      "attributes": {
+        "amount": "6800 руб.",
+        "date": "25.01.2024",
+        "status": "исполнен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Шаблон платежа ЖКХ",
+      "attributes": {
+        "name": "Мои коммунальные",
+        "creation_date": "15.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Предложение кредита наличными 1",
+      "attributes": {
+        "amount_max": "1500000 руб.",
+        "interest_rate": "14.5%",
+        "term_max": "15 лет",
+        "valid_until": "15.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "СМС о кредите 1",
+      "attributes": {
+        "type": "SMS",
+        "date": "28.01.2024",
+        "channel": "мобильный телефон"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "document",
+      "label": "Запрос выписки по дебетовому счету",
+      "attributes": {
+        "period_start": "01.01.2024",
+        "period_end": "31.01.2024",
+        "request_date": "01.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "document",
+      "label": "Выписка по дебетовому счету (январь)",
+      "attributes": {
+        "period": "январь 2024",
+        "delivery_method": "электронная почта",
+        "status": "отправлена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "product",
+      "label": "ГИБДД",
+      "attributes": {
+        "service_type": "госуслуги",
+        "region": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД 1",
+      "attributes": {
+        "amount": "500 руб.",
+        "date": "05.02.2024",
+        "fine_number": "18810077240205000001",
+        "reason": "превышение скорости"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Push-уведомление о зарплате",
+      "attributes": {
+        "type": "push",
+        "date": "08.02.2024",
+        "amount": "75000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "person",
+      "label": "Тарас Сорокин",
+      "attributes": {
+        "relationship": "супруг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Перевод Тарасу Сорокину",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "12.02.2024",
+        "method": "СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Предложение кредита наличными 2",
+      "attributes": {
+        "amount_max": "1600000 руб.",
+        "interest_rate": "14.8%",
+        "term_max": "15 лет",
+        "valid_until": "29.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "СМС о кредите 2",
+      "attributes": {
+        "type": "SMS",
+        "date": "15.02.2024",
+        "channel": "мобильный телефон"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "product",
+      "label": "Интернет-провайдер Ростелеком",
+      "attributes": {
+        "provider": "Ростелеком",
+        "service_type": "интернет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Оплата интернета",
+      "attributes": {
+        "amount": "650 руб.",
+        "date": "18.02.2024",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Автоплатеж за интернет",
+      "attributes": {
+        "frequency": "ежемесячно",
+        "status": "активен",
+        "setup_date": "10.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "SWIFT-перевод",
+      "attributes": {
+        "amount_usd": "150",
+        "amount_rub": "13800",
+        "date": "20.02.2024",
+        "commission_usd": "20",
+        "method": "SWIFT"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "person",
+      "label": "Внук Нины Алексеевой",
+      "attributes": {
+        "relationship": "внук",
+        "purpose": "обучение за рубежом"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Уведомление о комиссии за карту",
+      "attributes": {
+        "type": "уведомление",
+        "date": "22.02.2024",
+        "amount": "99 руб.",
+        "reason": "обслуживание дебетовой карты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Оплата ЖКХ за февраль",
+      "attributes": {
+        "amount": "7100 руб.",
+        "date": "25.02.2024",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "account",
+      "label": "Кредитный счет Нины Алексеевой",
+      "attributes": {
+        "account_number": "40817810000000005678",
+        "currency": "RUB",
+        "type": "кредитный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "document",
+      "label": "Запрос выписки по кредитному счету",
+      "attributes": {
+        "period_start": "01.12.2023",
+        "period_end": "29.02.2024",
+        "request_date": "01.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "document",
+      "label": "Выписка по кредитному счету (квартал)",
+      "attributes": {
+        "period": "декабрь-февраль 2024",
+        "delivery_method": "онлайн-банк",
+        "status": "сформирована"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД 2",
+      "attributes": {
+        "amount": "1500 руб.",
+        "date": "03.03.2024",
+        "fine_number": "18810077240303000002",
+        "reason": "неправильная парковка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Push-уведомление о кэшбэке",
+      "attributes": {
+        "type": "push",
+        "date": "05.03.2024",
+        "amount": "250 руб.",
+        "status": "зачислен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Предложение кредита Тарасу Сорокину",
+      "attributes": {
+        "amount": "480000 руб.",
+        "interest_rate": "15%",
+        "term": "3 года",
+        "purpose": "ремонт дачи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "person",
+      "label": "Сын Нины Алексеевой",
+      "attributes": {
+        "relationship": "сын"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Изменение лимита карты",
+      "attributes": {
+        "new_limit": "80000 руб.",
+        "date": "10.03.2024",
+        "reason": "оплата крупной покупки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "document",
+      "label": "Ежемесячная выписка по дебетовому счету (февраль)",
+      "attributes": {
+        "period": "февраль 2024",
+        "delivery_method": "электронная почта",
+        "date": "14.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Непонимание предложений по кредитам",
+      "attributes": {
+        "description": "путаница в условиях и сроках действия разных кредитных предложений",
+        "date": "16.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Решение обратиться в службу поддержки",
+      "attributes": {
+        "date": "18.03.2024",
+        "reason": "самостоятельно разобраться не получается"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Сложность настройки уведомлений",
+      "attributes": {
+        "description": "не удалось быстро найти раздел для настройки уведомлений в мобильном приложении",
+        "date": "20.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Напоминание о подписке КиноПоиск HD",
+      "attributes": {
+        "type": "уведомление",
+        "date": "22.03.2024",
+        "amount": "399 руб.",
+        "service": "КиноПоиск HD"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Подписка КиноПоиск HD",
+      "attributes": {
+        "service": "КиноПоиск HD",
+        "amount": "399 руб.",
+        "frequency": "ежемесячно",
+        "start_date": "10.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "product",
+      "label": "Мобильный телефон Нины Алексеевой",
+      "attributes": {
+        "type": "мобильный",
+        "number_mask": "+7903*******"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "product",
+      "label": "Электронная почта Нины Алексеевой",
+      "attributes": {
+        "type": "email",
+        "address": "nina.alekseeva@example.com"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "organization",
+      "label": "Онлайн-банк",
+      "attributes": {
+        "platform": "web",
+        "status": "доступен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Непонимание списания комиссии",
+      "attributes": {
+        "description": "не смогла быстро идентифицировать списание комиссии в 99 рублей",
+        "date": "12.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "История операций",
+      "attributes": {
+        "period": "текущий",
+        "source": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Раздражение",
+      "attributes": {
+        "level": "нарастающее",
+        "reason": "непонятные списания и противоречивые предложения",
+        "date": "25.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Разобраться в списаниях и предложениях",
+      "attributes": {
+        "description": "понять причины списания комиссии и разных кредитных предложений",
+        "date": "25.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Информационная перегрузка",
+      "attributes": {
+        "level": "высокий",
+        "reason": "множество уведомлений и транзакций",
+        "date": "22.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "product",
+      "label": "СБП",
+      "attributes": {
+        "type": "система быстрых платежей"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "person",
+      "label": "Служба поддержки банка",
+      "attributes": {
+        "channel": "телефон/чат"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Упростить отслеживание операций",
+      "attributes": {
+        "description": "избежать путаницы и эффективно управлять средствами",
+        "date": "28.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "organization",
+      "label": "с. Смирных",
+      "attributes": {
+        "type": "населенный пункт",
+        "region": "Сахалинская область"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Флеболог",
+      "attributes": {
+        "title": "флеболог"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "amount",
+      "label": "Зарплата",
+      "attributes": {
+        "type": "основной доход"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Неудовлетворенность",
+      "attributes": {
+        "description": "не смогла определить за что кэшбэк",
+        "date": "05.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Беспокойство",
+      "attributes": {
+        "description": "не помнит, чтобы активно пользовалась кредитами",
+        "date": "01.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Недовольство",
+      "attributes": {
+        "description": "сын изменил лимит без ведома",
+        "date": "10.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_transfer_to_galina_1",
+      "source": "person_nina_alekseeva",
+      "target": "person_galina_yakusheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "20.01.2024",
+        "method": "СБП",
+        "commission": "0 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfer_to_margarita_1",
+      "source": "person_nina_alekseeva",
+      "target": "person_margarita_sysoeva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "03.02.2024",
+        "method": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfer_to_evdokia_1",
+      "source": "person_nina_alekseeva",
+      "target": "person_evdokia_rogova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "3000 руб.",
+        "date": "27.02.2024",
+        "method": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_transfer_to_apollon_1",
+      "source": "person_nina_alekseeva",
+      "target": "person_apollon_lobanov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2000 руб.",
+        "date": "07.03.2024",
+        "method": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_transfer_to_margarita_2",
+      "source": "person_nina_alekseeva",
+      "target": "person_margarita_sysoeva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4800 руб.",
+        "date": "18.04.2024",
+        "method": "СБП",
+        "purpose": "Возврат долга"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_transfer_to_galina_2",
+      "source": "person_nina_alekseeva",
+      "target": "person_galina_yakusheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "05.04.2024",
+        "method": "СБП",
+        "purpose": "Помощь родителям"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "2010"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_2",
+      "relation": "owns",
+      "attributes": {
+        "opened_date": "01.01.2015"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_3",
+      "relation": "owns",
+      "attributes": {
+        "issued_date": "01.01.2020"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "ctx_node_3",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "банковские операции"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode": "1"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_nina_alekseeva",
+      "target": "person_galina_yakusheva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "переводы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_4",
+      "relation": "paid",
+      "attributes": {
+        "service_type": "мобильная связь"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_5",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_5",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "function": "Оплата услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_7",
+      "relation": "paid",
+      "attributes": {
+        "service_type": "ЖКХ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_8",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "period": "январь"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_8",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_9",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_10",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_10",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_11",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_12",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_12",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_12",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_12",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_13",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_15",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_15",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "section": "Госуслуги"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_16",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_16",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_41",
+      "target": "ctx_node_3",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_18",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_19",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_19",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_20",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_21",
+      "relation": "paid",
+      "attributes": {
+        "service_type": "интернет"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_22",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_23",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_24",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_26",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_26",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_27",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "period": "февраль"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_27",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_28",
+      "relation": "owns",
+      "attributes": {
+        "opened_date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_29",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_29",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_29",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_29",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "ctx_node_31",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_31",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_32",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_32",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_17",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_33",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_34",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_35",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_45",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_46",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_36",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_36",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_36",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_37",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_37",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_38",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_39",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_40",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_40",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_47",
+      "target": "ctx_node_26",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_47",
+      "target": "ctx_node_10",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_47",
+      "target": "ctx_node_19",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_49",
+      "target": "ctx_node_40",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_58",
+      "relation": "received",
+      "attributes": {
+        "amount": "68000 руб.",
+        "frequency": "ежемесячно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_58",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_60",
+      "target": "ctx_node_32",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_61",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_62",
+      "target": "ctx_node_35",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_26",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {
+        "episode_start": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_10",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode_start": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_19",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode_start": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_45",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode_start": "2"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_37",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode_start": "2"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "ctx_node_1",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_1",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_1",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "ctx_node_1",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "ctx_node_1",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "ctx_node_2",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "ctx_node_2",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "ctx_node_28",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_nina_alekseeva",
+      "target": "person_apollon_lobanov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1800 руб.",
+        "date": "07.02.2024",
+        "method": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_nina_alekseeva",
+      "target": "person_evdokia_rogova",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "3300 руб.",
+        "date": "27.01.2024",
+        "method": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_nina_alekseeva",
+      "target": "person_galina_yakusheva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "date": "05.03.2024",
+        "method": "СБП",
+        "purpose": "Помощь родителям"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_17",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_21",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "банковские операции"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_margarita_sysoeva",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode_start": "1,8"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_nina_alekseeva",
+      "target": "person_galina_yakusheva",
+      "relation": "received",
+      "attributes": {
+        "amount": "74800 руб.",
+        "frequency": "ежемесячно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_57",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "7,23.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_3",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode_start": "1,8"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_33",
+      "relation": "paid",
+      "attributes": {
+        "service_type": "интернет"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_33",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5500 руб.",
+        "date": "20.01.2024",
+        "method": "СБП",
+        "commission": "0 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_7",
+      "relation": "received",
+      "attributes": {
+        "amount": "74800 руб.",
+        "frequency": "ежемесячно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_62",
+      "target": "ctx_node_4",
+      "relation": "paid",
+      "attributes": {
+        "service_type": "мобильная связь"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_5",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "function": "Оплата услуг"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_nina_alekseeva",
+      "target": "person_margarita_sysoeva",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode": "1,8"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_15",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "section": "Госуслуги"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_44",
+      "target": "ctx_node_3",
+      "relation": "owns",
+      "attributes": {
+        "issued_date": "0,91.2020"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_35",
+      "target": "person_apollon_lobanov",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1620 руб.",
+        "date": "07.02.2024",
+        "method": "СБП"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_47",
+      "target": "ctx_node_3",
+      "relation": "owns",
+      "attributes": {
+        "issued_date": "0,91.2020"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_15",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "client_since": "2211"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "person_nina_alekseeva",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "episode": "0,9"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_nina_alekseeva",
+      "source": "person_nina_alekseeva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_galina_yakusheva",
+      "source": "person_galina_yakusheva",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_margarita_sysoeva",
+      "source": "person_margarita_sysoeva",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_evdokia_rogova",
+      "source": "person_evdokia_rogova",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_remap_person_apollon_lobanov",
+      "source": "person_apollon_lobanov",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

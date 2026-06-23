@@ -1,0 +1,1222 @@
+{
+  "nodes": [
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Агафон Кулагин планирует рефинансирование ипотеки для снижения платежа."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Процесс рефинансирования сталкивается с задержками и препятствиями."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Агафон отклоняет невыгодное рефинансирование и соглашается на реструктуризацию."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin",
+      "type": "person",
+      "label": "Агафон Гордеевич Кулагин",
+      "attributes": {
+        "age": 33,
+        "role": "client",
+        "occupation": "разведчица",
+        "city": "ст. Богучар",
+        "gender": "female",
+        "state": "испытывает финансовое напряжение"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "s_income_167000",
+      "type": "amount",
+      "label": "167 000 руб.",
+      "attributes": {
+        "type": "ежемесячный доход"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "e_goal_refinance",
+      "type": "event",
+      "label": "Решение о рефинансировании",
+      "attributes": {
+        "goal": "снизить ежемесячный платеж, улучшить жилищные условия"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "l_mortgage_7500_2020",
+      "type": "product",
+      "label": "Ипотечный кредит № 7500-2020",
+      "attributes": {
+        "amount": "7 500 000 руб.",
+        "interest_rate": "9.8% годовых",
+        "term": "20 лет",
+        "monthly_payment": "70 800 руб.",
+        "start_date": "15.03.2020",
+        "current_debt": "6 150 000 руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "o_bank_razvitiya",
+      "type": "organization",
+      "label": "ПАО «Банк Развития»",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "app_refi_0424_001",
+      "type": "product",
+      "label": "Заявка № РЕФИ-0424-001",
+      "attributes": {
+        "type": "рефинансирование ипотеки",
+        "amount_requested": "6 200 000 руб.",
+        "preliminary_interest_rate": "12.5% годовых",
+        "date_submitted": "01.04.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "o_nadezhny_bank",
+      "type": "organization",
+      "label": "АО «Надёжный Банк»",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "e_refi_terms_discussion",
+      "type": "event",
+      "label": "Обсуждение условий рефинансирования",
+      "attributes": {
+        "potential_term_reduction": "до 15 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "e_credit_history_check",
+      "type": "event",
+      "label": "Проверка кредитной истории",
+      "attributes": {
+        "sources": "НБКИ, ОКБ",
+        "purpose": "анализ платежеспособности, кредитный скоринг"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "p_zoya_afanasyeva",
+      "type": "person",
+      "label": "Зоя Даниловна Афанасьева",
+      "attributes": {
+        "age": 34,
+        "role": "супруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "prop_mira_15_78",
+      "type": "event",
+      "label": "Квартира ул. Мира, д. 15, кв. 78",
+      "attributes": {
+        "cost": "4 800 000 руб."
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "em_anxiety_refi",
+      "type": "event",
+      "label": "Тревога",
+      "attributes": {
+        "cause": "предстоящий процесс рефинансирования",
+        "hope": "значительное облегчение финансового бремени"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "s_old_payment_70800",
+      "type": "amount",
+      "label": "70 800 руб.",
+      "attributes": {
+        "type": "ежемесячный платеж по ипотеке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "s_current_debt_6150000",
+      "type": "amount",
+      "label": "6 150 000 руб.",
+      "attributes": {
+        "type": "текущая задолженность по ипотеке"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "p_ksenya_pahomova",
+      "type": "person",
+      "label": "Пахомова Ксения Яковлевна",
+      "attributes": {
+        "age": 74,
+        "role": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "s_transfer_300000",
+      "type": "amount",
+      "label": "300 000 руб.",
+      "attributes": {
+        "type": "перевод через СБП"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "a_agafon_current",
+      "type": "account",
+      "label": "Счет № 40817810ХХХХХХХХХХХХ",
+      "attributes": {
+        "balance_after_expenses": "55 000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "e_roof_repair_expenses",
+      "type": "event",
+      "label": "Непредвиденные расходы",
+      "attributes": {
+        "description": "срочный ремонт крыши дома",
+        "amount": "180 000 руб.",
+        "location": "ст. Богучар",
+        "impact": "подорвало ликвидность"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "e_prelim_approval_refi",
+      "type": "event",
+      "label": "Предварительное одобрение рефинансирования",
+      "attributes": {
+        "date": "18.04.2024",
+        "condition": "обязательное страхование жизни и здоровья",
+        "insurance_cost": "15 000 руб. ежегодно"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "e_request_additional_docs",
+      "type": "event",
+      "label": "Запрос дополнительных документов",
+      "attributes": {
+        "documents": "обновленная справка 2-НДФЛ за 2023, выписка из ЕГРН, копия трудовой книжки"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "d_2ndfl_2023",
+      "type": "document",
+      "label": "Справка 2-НДФЛ за 2023 год",
+      "attributes": {
+        "error": "указано 150 000 руб. вместо 167 000 руб.",
+        "impact": "задерживает выдачу нового кредита"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "prop_agafon_mortgage",
+      "type": "event",
+      "label": "Залоговое имущество (квартира)",
+      "attributes": {
+        "appraised_value": "5 800 000 руб.",
+        "expected_value": "6 500 000 руб.",
+        "impact": "ставит под угрозу желаемый размер кредита"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "em_frustration_delays",
+      "type": "event",
+      "label": "Фрустрация и стресс",
+      "attributes": {
+        "cause": "задержки и бюрократические препятствия",
+        "action": "регулярные звонки в банк"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "e_online_request_status",
+      "type": "event",
+      "label": "Официальный запрос через онлайн-форму",
+      "attributes": {
+        "date": "27.04.2024",
+        "demand": "ускорить рассмотрение, предоставить четкий список документов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "fm_pdr_65_percent",
+      "type": "event",
+      "label": "Показатель долговой нагрузки (ПДН)",
+      "attributes": {
+        "value": "65%",
+        "status": "критический для одобрения новых кредитов",
+        "factors": "непредвиденные расходы, потенциальное страхование"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "e_overdue_payment_april",
+      "type": "event",
+      "label": "Просроченный ежемесячный платеж",
+      "attributes": {
+        "loan_id": "№ 7500-2020",
+        "period": "за апрель",
+        "penalty_incurred": "1 250 руб.",
+        "date": "05.05.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "s_penalty_1250",
+      "type": "amount",
+      "label": "1 250 руб.",
+      "attributes": {
+        "type": "пеня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "e_consultation_restructuring",
+      "type": "event",
+      "label": "Консультация по реструктуризации",
+      "attributes": {
+        "date": "12.05.2024",
+        "desired_payment": "45 000 руб. в месяц"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "l_consumer_500000",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "amount": "500 000 руб.",
+        "interest_rate": "24.9% годовых",
+        "term": "3 года",
+        "status": "предварительное одобрение",
+        "date": "20.05.2024",
+        "purpose": "покрытие текущих расходов и просроченного платежа"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "o_bystry_zaim",
+      "type": "organization",
+      "label": "ООО «Быстрый Займ»",
+      "attributes": {
+        "type": "кредитная организация"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "e_115fz_check",
+      "type": "event",
+      "label": "Проверка по 115-ФЗ",
+      "attributes": {
+        "date": "28.05.2024",
+        "documents_requested": "подтверждение источников происхождения средств",
+        "impact": "отложило сделку до 15.06.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "fm_unfavorable_refi_offer",
+      "type": "event",
+      "label": "Невыгодные условия рефинансирования",
+      "attributes": {
+        "date": "01.06.2024",
+        "interest_rate": "13.8% годовых",
+        "monthly_payment": "65 000 руб.",
+        "comparison": "вместо ожидаемых 12.5%",
+        "impact": "минимально снижало долговую нагрузку"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "l_credit_card_4567",
+      "type": "product",
+      "label": "Кредитная карта № 4567...6789",
+      "attributes": {
+        "debt_amount": "85 000 руб.",
+        "due_date": "07.06.2024",
+        "risk": "дефолт и ухудшение кредитной истории"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "dec_reject_refi_offer",
+      "type": "event",
+      "label": "Отклонение предложения рефинансирования",
+      "attributes": {
+        "reason": "невыгодные условия",
+        "consultation": "с финансовым советником"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "dec_agree_restructure",
+      "type": "event",
+      "label": "Согласие на реструктуризацию и консолидацию",
+      "attributes": {
+        "scope": "ипотека, потребительский кредит, кредитная карта",
+        "new_monthly_payment": "48 000 руб.",
+        "new_term": "25 лет"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "e_payment_holiday_consumer_loan",
+      "type": "event",
+      "label": "Временный платежный отпуск",
+      "attributes": {
+        "duration": "3 месяца",
+        "loan_id": "№ ПОТР-2023-015",
+        "purpose": "стабилизация финансов"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "l_consumer_potr_2023_015",
+      "type": "product",
+      "label": "Потребительский кредит № ПОТР-2023-015",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "l_restructure_consolidate",
+      "type": "product",
+      "label": "Новый договор № РЕСТР-0624-002",
+      "attributes": {
+        "type": "реструктуризация и консолидация",
+        "date_signed": "10.06.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "em_relief_restructure",
+      "type": "event",
+      "label": "Облегчение",
+      "attributes": {
+        "cause": "подписание нового договора"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "e_recommendation_insurance_review",
+      "type": "event",
+      "label": "Рекомендация пересмотреть полисы страхования",
+      "attributes": {
+        "purpose": "оптимизация расходов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "pol_life_2024_003",
+      "type": "document",
+      "label": "Полис страхования жизни № ЖИЗНЬ-2024-003",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "pol_property_2024_004",
+      "type": "document",
+      "label": "Полис страхования имущества № ИМУЩ-2024-004",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "s_property_cost_4800000",
+      "type": "amount",
+      "label": "4 800 000 руб.",
+      "attributes": {
+        "type": "стоимость квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "d_egrn_extract",
+      "type": "document",
+      "label": "Выписка из ЕГРН",
+      "attributes": {},
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_p_agafon_kulagin_1",
+      "source": "p_agafon_kulagin",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_goal_refinance_1",
+      "source": "e_goal_refinance",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_l_mortgage_7500_2020_1",
+      "source": "l_mortgage_7500_2020",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_app_refi_0424_001_1",
+      "source": "app_refi_0424_001",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_credit_history_check_1",
+      "source": "e_credit_history_check",
+      "target": "ep_1",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "relation": "contains"
+    },
+    {
+      "id": "occ_prop_mira_15_78_1",
+      "source": "prop_mira_15_78",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_em_anxiety_refi_1",
+      "source": "em_anxiety_refi",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_roof_repair_expenses_2",
+      "source": "e_roof_repair_expenses",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_prelim_approval_refi_2",
+      "source": "e_prelim_approval_refi",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_request_additional_docs_2",
+      "source": "e_request_additional_docs",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_d_2ndfl_2023_2",
+      "source": "d_2ndfl_2023",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_prop_agafon_mortgage_2",
+      "source": "prop_agafon_mortgage",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_em_frustration_delays_2",
+      "source": "em_frustration_delays",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_fm_pdr_65_percent_2",
+      "source": "fm_pdr_65_percent",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_overdue_payment_april_3",
+      "source": "e_overdue_payment_april",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_consultation_restructuring_3",
+      "source": "e_consultation_restructuring",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_l_consumer_500000_3",
+      "source": "l_consumer_500000",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_115fz_check_3",
+      "source": "e_115fz_check",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_fm_unfavorable_refi_offer_3",
+      "source": "fm_unfavorable_refi_offer",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_l_credit_card_4567_3",
+      "source": "l_credit_card_4567",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_dec_reject_refi_offer_3",
+      "source": "dec_reject_refi_offer",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_dec_agree_restructure_3",
+      "source": "dec_agree_restructure",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_e_payment_holiday_consumer_loan_3",
+      "source": "e_payment_holiday_consumer_loan",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_l_restructure_consolidate_3",
+      "source": "l_restructure_consolidate",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_em_relief_restructure_3",
+      "source": "em_relief_restructure",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_has_income_s_income_167000",
+      "source": "p_agafon_kulagin",
+      "target": "s_income_167000",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_has_goal_e_goal_refinance",
+      "source": "p_agafon_kulagin",
+      "target": "e_goal_refinance",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_has_loan_l_mortgage_7500_2020",
+      "source": "p_agafon_kulagin",
+      "target": "l_mortgage_7500_2020",
+      "relation": "contains",
+      "attributes": {
+        "status": "текущий"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "l_mortgage_7500_2020_issued_by_o_bank_razvitiya",
+      "source": "l_mortgage_7500_2020",
+      "target": "o_bank_razvitiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_applies_for_app_refi_0424_001",
+      "source": "p_agafon_kulagin",
+      "target": "app_refi_0424_001",
+      "relation": "contains",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "app_refi_0424_001_submitted_to_o_nadezhny_bank",
+      "source": "app_refi_0424_001",
+      "target": "o_nadezhny_bank",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_discusses_e_refi_terms_discussion",
+      "source": "o_nadezhny_bank",
+      "target": "e_refi_terms_discussion",
+      "relation": "contains",
+      "attributes": {
+        "with": "p_agafon_kulagin"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_initiates_e_credit_history_check",
+      "source": "o_nadezhny_bank",
+      "target": "e_credit_history_check",
+      "relation": "caused",
+      "attributes": {
+        "for": "p_agafon_kulagin"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_has_spouse_p_zoya_afanasyeva",
+      "source": "p_agafon_kulagin",
+      "target": "p_zoya_afanasyeva",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_zoya_afanasyeva_plans_to_acquire_prop_mira_15_78",
+      "source": "p_zoya_afanasyeva",
+      "target": "prop_mira_15_78",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_experiences_em_anxiety_refi",
+      "source": "p_agafon_kulagin",
+      "target": "em_anxiety_refi",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "l_mortgage_7500_2020_has_current_debt_s_current_debt_6150000",
+      "source": "l_mortgage_7500_2020",
+      "target": "s_current_debt_6150000",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_ksenya_pahomova_transfers_s_transfer_300000",
+      "source": "p_ksenya_pahomova",
+      "target": "s_transfer_300000",
+      "relation": "transferred_to",
+      "attributes": {
+        "date": "10.04.2024",
+        "method": "СБП",
+        "purpose": "частичное досрочное погашение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "s_transfer_300000_to_a_agafon_current",
+      "source": "s_transfer_300000",
+      "target": "a_agafon_current",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_roof_repair_expenses_causes_liquidity_drop",
+      "source": "e_roof_repair_expenses",
+      "target": "a_agafon_current",
+      "relation": "caused",
+      "attributes": {
+        "impact": "падение баланса до 55 000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_approves_e_prelim_approval_refi",
+      "source": "o_nadezhny_bank",
+      "target": "e_prelim_approval_refi",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_requests_e_request_additional_docs",
+      "source": "o_nadezhny_bank",
+      "target": "e_request_additional_docs",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "d_2ndfl_2023_contains_error",
+      "source": "d_2ndfl_2023",
+      "target": "p_agafon_kulagin",
+      "relation": "contains",
+      "attributes": {
+        "date_discovered": "25.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_values_prop_agafon_mortgage",
+      "source": "o_nadezhny_bank",
+      "target": "prop_agafon_mortgage",
+      "relation": "contains",
+      "attributes": {
+        "value": "5 800 000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_experiences_em_frustration_delays",
+      "source": "p_agafon_kulagin",
+      "target": "em_frustration_delays",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_sends_e_online_request_status",
+      "source": "p_agafon_kulagin",
+      "target": "e_online_request_status",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fm_pdr_65_percent_is_critical_for_app_refi_0424_001",
+      "source": "fm_pdr_65_percent",
+      "target": "app_refi_0424_001",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_incurs_e_overdue_payment_april",
+      "source": "p_agafon_kulagin",
+      "target": "e_overdue_payment_april",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_overdue_payment_april_incurs_s_penalty_1250",
+      "source": "e_overdue_payment_april",
+      "target": "s_penalty_1250",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_consults_e_consultation_restructuring",
+      "source": "p_agafon_kulagin",
+      "target": "e_consultation_restructuring",
+      "relation": "contains",
+      "attributes": {
+        "with": "o_bank_razvitiya"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_receives_approval_for_l_consumer_500000",
+      "source": "p_agafon_kulagin",
+      "target": "l_consumer_500000",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "l_consumer_500000_from_o_bystry_zaim",
+      "source": "l_consumer_500000",
+      "target": "o_bystry_zaim",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_requests_e_115fz_check",
+      "source": "o_nadezhny_bank",
+      "target": "e_115fz_check",
+      "relation": "applied_for",
+      "attributes": {
+        "from": "p_agafon_kulagin"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_115fz_check_delays_app_refi_0424_001",
+      "source": "e_115fz_check",
+      "target": "app_refi_0424_001",
+      "relation": "contains",
+      "attributes": {
+        "until": "15.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_nadezhny_bank_offers_fm_unfavorable_refi_offer",
+      "source": "o_nadezhny_bank",
+      "target": "fm_unfavorable_refi_offer",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_has_l_credit_card_4567",
+      "source": "p_agafon_kulagin",
+      "target": "l_credit_card_4567",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_makes_dec_reject_refi_offer",
+      "source": "p_agafon_kulagin",
+      "target": "dec_reject_refi_offer",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_makes_dec_agree_restructure",
+      "source": "p_agafon_kulagin",
+      "target": "dec_agree_restructure",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "dec_agree_restructure_with_o_bank_razvitiya",
+      "source": "dec_agree_restructure",
+      "target": "o_bank_razvitiya",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "dec_agree_restructure_includes_e_payment_holiday_consumer_loan",
+      "source": "dec_agree_restructure",
+      "target": "e_payment_holiday_consumer_loan",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_payment_holiday_consumer_loan_for_l_consumer_potr_2023_015",
+      "source": "e_payment_holiday_consumer_loan",
+      "target": "l_consumer_potr_2023_015",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_signs_l_restructure_consolidate",
+      "source": "p_agafon_kulagin",
+      "target": "l_restructure_consolidate",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "p_agafon_kulagin_experiences_em_relief_restructure",
+      "source": "p_agafon_kulagin",
+      "target": "em_relief_restructure",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "o_bank_razvitiya_recommends_e_recommendation_insurance_review",
+      "source": "o_bank_razvitiya",
+      "target": "e_recommendation_insurance_review",
+      "relation": "cancelled",
+      "attributes": {
+        "to": "p_agafon_kulagin"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_recommendation_insurance_review_for_pol_life_2024_003",
+      "source": "e_recommendation_insurance_review",
+      "target": "pol_life_2024_003",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_recommendation_insurance_review_for_pol_property_2024_004",
+      "source": "e_recommendation_insurance_review",
+      "target": "pol_property_2024_004",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "prop_mira_15_78_has_cost_s_property_cost_4800000",
+      "source": "prop_mira_15_78",
+      "target": "s_property_cost_4800000",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "e_request_additional_docs_includes_d_egrn_extract",
+      "source": "e_request_additional_docs",
+      "target": "d_egrn_extract",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "l_mortgage_7500_2020_has_monthly_payment_s_old_payment_70800",
+      "source": "l_mortgage_7500_2020",
+      "target": "s_old_payment_70800",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_e_credit_history_check",
+      "source": "e_credit_history_check",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

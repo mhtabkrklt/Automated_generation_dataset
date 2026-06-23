@@ -1,0 +1,27 @@
+# секреты
+.env
+
+# окружение и кэш
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.DS_Store
+
+# IDE
+.idea/
+
+# большие данные и дубли
+data/
+dataset_export/
+dataset_export 2/
+logs/
+
+# бинарники
+*.pickle
+confidence_intervals_report.pdf
+
+# из data/ разрешаем только CI
+!data/
+!data/results/
+!data/results/confidence_intervals.json

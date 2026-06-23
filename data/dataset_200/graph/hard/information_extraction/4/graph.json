@@ -1,0 +1,3126 @@
+{
+  "nodes": [
+    {
+      "id": "person_veronika_petrova",
+      "type": "person",
+      "label": "Вероника Болеславовна Петрова",
+      "attributes": {
+        "name": "Вероника Болеславовна Петрова",
+        "age": 44,
+        "job_title": "радиомеханик",
+        "monthly_income": "298000 руб.",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_mortgage_sberbank",
+      "type": "product",
+      "label": "Ипотечный кредит в ПАО Сбербанк",
+      "attributes": {
+        "type": "mortgage",
+        "bank": "ПАО Сбербанк",
+        "interest_rate": "10.5%",
+        "loan_number": "78912345",
+        "outstanding_balance": "7850000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_refinancing_alfabank_application",
+      "type": "product",
+      "label": "Заявка на рефинансирование в АО Альфа-Банк",
+      "attributes": {
+        "type": "mortgage_refinancing",
+        "bank": "АО Альфа-Банк",
+        "application_date": "20.01.2024",
+        "requested_amount": "7500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_consumer_alfabank_approved_initial",
+      "type": "product",
+      "label": "Одобренный потребительский кредит в АО Альфа-Банк",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "approved_amount": "1000000 руб.",
+        "interest_rate": "14.9%",
+        "term": "5 лет",
+        "approval_date": "05.02.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_spiridon_avdeev",
+      "type": "person",
+      "label": "Спиридон Фокич Авдеев",
+      "attributes": {
+        "name": "Спиридон Фокич Авдеев",
+        "job_status": "unemployed",
+        "unemployment_date": "12.02.2024",
+        "monthly_income": "150000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_consumer_alfabank_restructuring_offer",
+      "type": "product",
+      "label": "Предложение по реструктуризации потребительского кредита",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "restructuring_offer_date": "18.02.2024",
+        "new_term": "7 лет",
+        "new_interest_rate": "16.2%"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_consumer_alfabank_new_application",
+      "type": "product",
+      "label": "Новая заявка на потребительский кредит в АО Альфа-Банк",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "application_date": "22.02.2024",
+        "requested_amount": "700000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "loan_refinancing_alfabank_contract",
+      "type": "product",
+      "label": "Кредитный договор на рефинансирование в АО Альфа-Банк",
+      "attributes": {
+        "type": "mortgage_refinancing",
+        "bank": "АО Альфа-Банк",
+        "contract_date": "28.02.2024",
+        "loan_amount": "7500000 руб.",
+        "interest_rate": "9.8%",
+        "loan_number": "12345678"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "loan_consumer_alfabank_received_funds",
+      "type": "product",
+      "label": "Получение средств по потребительскому кредиту",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "received_amount": "700000 руб.",
+        "receipt_date": "05.03.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "loan_consumer_alfabank_partial_prepayment",
+      "type": "product",
+      "label": "Частичное досрочное погашение потребительского кредита",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "prepayment_amount": "150000 руб.",
+        "prepayment_date": "12.03.2024",
+        "new_monthly_payment": "13500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "child_spiridon",
+      "type": "person",
+      "label": "Сын Спиридон",
+      "attributes": {
+        "name": "Спиридон",
+        "age": 17,
+        "health_issue": "needs expensive treatment",
+        "treatment_cost": "300000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "loan_consumer_alfabank_credit_holiday_request",
+      "type": "product",
+      "label": "Запрос кредитных каникул по потребительскому кредиту",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "request_date": "25.03.2024",
+        "status": "pending"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "loan_consumer_alfabank_credit_holiday_rejection",
+      "type": "product",
+      "label": "Отказ в кредитных каникулах по потребительскому кредиту",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "rejection_date": "28.03.2024",
+        "reason": "не соответствует критериям 106-ФЗ"
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "loan_mortgage_alfabank_insurance_offer",
+      "type": "product",
+      "label": "Предложение по страховке ипотеки",
+      "attributes": {
+        "type": "mortgage_insurance",
+        "offer_date": "10.04.2024",
+        "annual_savings": "5000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "loan_mortgage_alfabank_partial_prepayment_final",
+      "type": "product",
+      "label": "Частичное досрочное погашение ипотеки",
+      "attributes": {
+        "type": "mortgage",
+        "bank": "АО Альфа-Банк",
+        "prepayment_amount": "50000 руб.",
+        "prepayment_date": "20.04.2024",
+        "term_reduction": "3 месяца"
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "loan_mortgage_alfabank_outstanding_balance_final",
+      "type": "product",
+      "label": "Остаток задолженности по ипотеке",
+      "attributes": {
+        "type": "mortgage",
+        "bank": "АО Альфа-Банк",
+        "outstanding_balance": "7440000 руб.",
+        "balance_date": "30.04.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "loan_consumer_alfabank_approved_initial_false",
+      "type": "product",
+      "label": "Одобренный потребительский кредит в АО Альфа-Банк (ложное)",
+      "attributes": {
+        "type": "consumer",
+        "bank": "АО Альфа-Банк",
+        "approved_amount": "1050000 руб.",
+        "interest_rate": "14.9%",
+        "term": "5 лет",
+        "approval_date": "05.02.2024"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "loan_mortgage_sberbank_outstanding_false",
+      "type": "product",
+      "label": "Остаток долга по ипотеке в ПАО Сбербанк (ложное)",
+      "attributes": {
+        "type": "mortgage",
+        "bank": "ПАО Сбербанк",
+        "outstanding_balance": "7900000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Справка 2-НДФЛ Вероники Петровой",
+      "attributes": {
+        "type": "справка о доходах",
+        "period": "2023 год",
+        "issuer": "работодатель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "document",
+      "label": "Документы на квартиру Вероники Петровой",
+      "attributes": {
+        "type": "правоустанавливающие",
+        "address": "п. Березники, ул. Ленина, д. 5, кв. 12"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "organization",
+      "label": "ПАО ВТБ",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "Консультация с менеджером Альфа-Банка",
+      "attributes": {
+        "date": "20.01.2024",
+        "topic": "условия рефинансирования"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "person",
+      "label": "Елизавета Юрьевна Некрасова",
+      "attributes": {
+        "name": "Елизавета Юрьевна Некрасова",
+        "relationship": "мать Вероники Петровой"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "person",
+      "label": "Воробьева Пелагея Вадимовна",
+      "attributes": {
+        "name": "Воробьева Пелагея Вадимовна",
+        "relationship": "партнер Вероники Петровой"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "person",
+      "label": "Алексей Петров",
+      "attributes": {
+        "name": "Алексей Петров",
+        "relationship": "сын Вероники Петровой",
+        "age": 10
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Кружок по робототехнике",
+      "attributes": {
+        "type": "дополнительное образование",
+        "cost": "4500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Перевод маме Вероники",
+      "attributes": {
+        "date": "19.01.2024",
+        "amount": "15000 руб.",
+        "purpose": "коммунальные услуги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Перевод маме Пелагеи",
+      "attributes": {
+        "date": "19.01.2024",
+        "amount": "15500 руб.",
+        "purpose": "коммунальные услуги"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "product",
+      "label": "Ипотечный кредит в ПАО ВТБ",
+      "attributes": {
+        "type": "mortgage",
+        "bank": "ПАО ВТБ",
+        "interest_rate": "10.2%",
+        "term": "20 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Предварительное одобрение рефинансирования",
+      "attributes": {
+        "date": "25.01.2024",
+        "bank": "АО Альфа-Банк",
+        "interest_rate": "9.8%",
+        "term": "20 лет",
+        "application_number": "987654"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "document",
+      "label": "Заявка на потребительский кредит (первая)",
+      "attributes": {
+        "type": "заявка",
+        "bank": "АО Альфа-Банк",
+        "application_date": "01.02.2024",
+        "requested_amount": "1200000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Уведомление о повышении ставки по потребительскому кредиту",
+      "attributes": {
+        "date": "10.02.2024",
+        "reason": "отсутствие страхования жизни",
+        "new_interest_rate": "15.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "product",
+      "label": "Страхование жизни",
+      "attributes": {
+        "type": "страховка",
+        "benefit": "снижение процентной ставки",
+        "cost": "дополнительные расходы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Расчет ежемесячного платежа по потребительскому кредиту",
+      "attributes": {
+        "loan_amount": "1000000 руб.",
+        "interest_rate": "15.5%",
+        "term": "5 лет",
+        "monthly_payment": "23900 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Плитка для ванной",
+      "attributes": {
+        "type": "стройматериал",
+        "cost": "80000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Кухонный гарнитур",
+      "attributes": {
+        "type": "мебель",
+        "cost": "350000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "document",
+      "label": "Выписка из трудовой книжки Вероники Петровой",
+      "attributes": {
+        "type": "документ",
+        "purpose": "подтверждение занятости"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "document",
+      "label": "Справка о доходах по форме банка Вероники Петровой",
+      "attributes": {
+        "type": "справка о доходах",
+        "purpose": "подтверждение дохода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "person",
+      "label": "Беляев Варлаам Афанасьевич",
+      "attributes": {
+        "name": "Беляев Варлаам Афанасьевич",
+        "relationship": "друг Вероники Петровой",
+        "occupation": "финансовый консультант"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Консультация с другом",
+      "attributes": {
+        "date": "08.02.2024",
+        "topic": "условия кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "person",
+      "label": "Лазарь Петров",
+      "attributes": {
+        "name": "Лазарь Петров",
+        "relationship": "сын Вероники Петровой",
+        "age": 15
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Перевод сыну Лазарю",
+      "attributes": {
+        "date": "07.02.2024",
+        "amount": "10000 руб.",
+        "purpose": "карманные расходы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Перевод сыну Пелагеи",
+      "attributes": {
+        "date": "07.02.2024",
+        "amount": "10700 руб.",
+        "purpose": "карманные расходы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Интернет-услуги",
+      "attributes": {
+        "provider": "Ростелеком",
+        "cost": "850 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "product",
+      "label": "Мобильная связь Вероники",
+      "attributes": {
+        "provider": "МТС",
+        "cost": "900 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Оплата интернета",
+      "attributes": {
+        "date": "06.02.2024",
+        "amount": "850 руб.",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Оплата мобильной связи Пелагеи",
+      "attributes": {
+        "date": "06.02.2024",
+        "amount": "900 руб.",
+        "channel": "интернет-банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Обращение за реструктуризацией потребительского кредита",
+      "attributes": {
+        "date": "15.02.2024",
+        "bank": "АО Альфа-Банк",
+        "reason": "потеря работы супругом"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Отказ от предложенной реструктуризации",
+      "attributes": {
+        "date": "20.02.2024",
+        "reason": "невыгодные условия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Семейный бюджет",
+      "attributes": {
+        "type": "финансовый инструмент",
+        "purpose": "оптимизация расходов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Консультация по семейному бюджету",
+      "attributes": {
+        "date": "19.02.2024",
+        "topic": "оптимизация расходов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Показатель долговой нагрузки (ПДН)",
+      "attributes": {
+        "type": "финансовый показатель",
+        "purpose": "оценка кредитоспособности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Обсуждение изменения ПДН",
+      "attributes": {
+        "date": "19.02.2024",
+        "factors": "потеря работы, новая сумма кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Поиск новой работы Спиридоном Авдеевым",
+      "attributes": {
+        "status": "активный",
+        "outcome": "безрезультатно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Перевод сыну Алексею на школьные принадлежности",
+      "attributes": {
+        "date": "21.02.2024",
+        "amount": "5000 руб.",
+        "purpose": "школьные принадлежности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Перевод сыну Пелагеи на школьные принадлежности",
+      "attributes": {
+        "date": "21.02.2024",
+        "amount": "5300 руб.",
+        "purpose": "школьные принадлежности"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Подписание кредитного договора на рефинансирование",
+      "attributes": {
+        "date": "28.02.2024",
+        "bank": "АО Альфа-Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Одобрение новой заявки на потребительский кредит",
+      "attributes": {
+        "date": "01.03.2024",
+        "bank": "АО Альфа-Банк",
+        "approved_amount": "700000 руб.",
+        "interest_rate": "15.8%",
+        "term": "5 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "document",
+      "label": "Кредитный договор на потребительский кредит (новый)",
+      "attributes": {
+        "type": "договор",
+        "bank": "АО Альфа-Банк",
+        "date": "03.03.2024",
+        "loan_amount": "700000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Подписание кредитного договора на потребительский кредит",
+      "attributes": {
+        "date": "03.03.2024",
+        "bank": "АО Альфа-Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Поступление средств по потребительскому кредиту",
+      "attributes": {
+        "date": "05.03.2024",
+        "amount": "700000 руб.",
+        "destination": "счет Вероники Петровой"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Выбор варианта досрочного погашения",
+      "attributes": {
+        "date": "10.03.2024",
+        "options": "уменьшение срока, уменьшение платежа",
+        "decision": "уменьшение платежа"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Покупка стройматериалов",
+      "attributes": {
+        "date": "08.03.2024",
+        "cost": "200000 руб.",
+        "purpose": "ремонт"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Начало ремонтных работ",
+      "attributes": {
+        "date": "15.03.2024",
+        "status": "в процессе"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Перевод маме Вероники (помощь)",
+      "attributes": {
+        "date": "14.03.2024",
+        "amount": "10000 руб.",
+        "purpose": "помощь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "date": "13.03.2024",
+        "amount": "7500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Диагностика здоровья сына Спиридона",
+      "attributes": {
+        "date": "20.03.2024",
+        "result": "обнаружено заболевание"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Заболевание сына Спиридона",
+      "attributes": {
+        "type": "хроническое",
+        "treatment_required": "дорогостоящее"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Поиск клиники для лечения",
+      "attributes": {
+        "date": "22.03.2024",
+        "status": "в процессе"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "document",
+      "label": "Медицинские документы сына Спиридона",
+      "attributes": {
+        "type": "выписка",
+        "diagnosis": "подтвержден"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Федеральный закон №106-ФЗ",
+      "attributes": {
+        "title": "О кредитных каникулах",
+        "date": "03.04.2020"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Консультация по кредитным каникулам",
+      "attributes": {
+        "date": "24.03.2024",
+        "topic": "условия предоставления"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Получение отказа в кредитных каникулах",
+      "attributes": {
+        "date": "28.03.2024",
+        "bank": "АО Альфа-Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Поиск альтернативных решений",
+      "attributes": {
+        "date": "29.03.2024",
+        "status": "в процессе",
+        "options": "займы, помощь родственников"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Предложение по страховке ипотеки от Альфа-Банка",
+      "attributes": {
+        "date": "10.04.2024",
+        "type": "перестрахование",
+        "savings": "5000 руб./год"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Рассмотрение предложения по страховке",
+      "attributes": {
+        "date": "12.04.2024",
+        "status": "в процессе"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Принятие решения о частичном досрочном погашении ипотеки",
+      "attributes": {
+        "date": "18.04.2024",
+        "amount": "50000 руб.",
+        "goal": "сокращение срока"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Осуществление частичного досрочного погашения ипотеки",
+      "attributes": {
+        "date": "20.04.2024",
+        "bank": "АО Альфа-Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Перерасчет графика платежей по ипотеке",
+      "attributes": {
+        "date": "22.04.2024",
+        "result": "срок сокращен на 3 месяца"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Обновление информации об остатке задолженности по ипотеке",
+      "attributes": {
+        "date": "30.04.2024",
+        "bank": "АО Альфа-Банк",
+        "new_balance": "7440000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Оплата ежемесячного платежа по потребительскому кредиту",
+      "attributes": {
+        "date": "05.04.2024",
+        "amount": "13500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Оплата ежемесячного платежа по ипотеке",
+      "attributes": {
+        "date": "15.04.2024",
+        "amount": "80000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Поиск работы для Спиридона (продолжение)",
+      "attributes": {
+        "date": "апрель 2024",
+        "status": "активный"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Консультация с юристом по кредитным каникулам",
+      "attributes": {
+        "date": "01.04.2024",
+        "topic": "возможность оспаривания отказа"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "document",
+      "label": "Одобренная заявка на рефинансирование",
+      "attributes": {
+        "type": "уведомление",
+        "bank": "АО Альфа-Банк",
+        "date": "25.01.2024",
+        "rate": "9.8%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "document",
+      "label": "Одобренная заявка на потребительский кредит (первая)",
+      "attributes": {
+        "type": "уведомление",
+        "bank": "АО Альфа-Банк",
+        "date": "05.02.2024",
+        "amount": "1000000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_has_mortgage_sberbank",
+      "source": "person_veronika_petrova",
+      "target": "loan_mortgage_sberbank",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_for_refinancing",
+      "source": "person_veronika_petrova",
+      "target": "loan_refinancing_alfabank_application",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_approved_consumer_loan_initial",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "person_veronika_petrova",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_partner_lost_job",
+      "source": "person_spiridon_avdeev",
+      "target": "person_veronika_petrova",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "spouse",
+        "event": "lost_job",
+        "date": "12.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_offered_restructuring",
+      "source": "loan_consumer_alfabank_restructuring_offer",
+      "target": "person_veronika_petrova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_applies_for_new_consumer_loan",
+      "source": "person_veronika_petrova",
+      "target": "loan_consumer_alfabank_new_application",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_signed_refinancing_contract",
+      "source": "person_veronika_petrova",
+      "target": "loan_refinancing_alfabank_contract",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_received_consumer_funds",
+      "source": "person_veronika_petrova",
+      "target": "loan_consumer_alfabank_received_funds",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_made_partial_prepayment",
+      "source": "person_veronika_petrova",
+      "target": "loan_consumer_alfabank_partial_prepayment",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_child_needs_treatment",
+      "source": "person_veronika_petrova",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "needs_treatment",
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_requested_credit_holidays",
+      "source": "person_veronika_petrova",
+      "target": "loan_consumer_alfabank_credit_holiday_request",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_rejected_credit_holidays",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "person_veronika_petrova",
+      "relation": "rejected",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_received_insurance_offer",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "person_veronika_petrova",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_made_partial_prepayment_mortgage",
+      "source": "person_veronika_petrova",
+      "target": "loan_mortgage_alfabank_partial_prepayment_final",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_has_outstanding_balance",
+      "source": "person_veronika_petrova",
+      "target": "loan_mortgage_alfabank_outstanding_balance_final",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_approved_consumer_loan_initial_false",
+      "source": "loan_consumer_alfabank_approved_initial_false",
+      "target": "person_veronika_petrova",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_has_mortgage_sberbank_outstanding_false",
+      "source": "person_veronika_petrova",
+      "target": "loan_mortgage_sberbank_outstanding_false",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_1",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "loan_mortgage_sberbank",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_4",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_5",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_8",
+      "target": "ctx_node_9",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_10",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_7",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_9",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_14",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_15",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_14",
+      "target": "ctx_node_18",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_14",
+      "target": "ctx_node_19",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_14",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_14",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_22",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_25",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_7",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_29",
+      "target": "ctx_node_27",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_7",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_30",
+      "target": "ctx_node_28",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_31",
+      "relation": "caused",
+      "attributes": {
+        "event": "lost_job"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "loan_consumer_alfabank_restructuring_offer",
+      "target": "ctx_node_32",
+      "relation": "rejected",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_34",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_34",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_36",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_38",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_7",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_69",
+      "target": "loan_refinancing_alfabank_contract",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "ctx_node_41",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "loan_consumer_alfabank_new_application",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_42",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_43",
+      "target": "ctx_node_44",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "loan_consumer_alfabank_received_funds",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "loan_consumer_alfabank_partial_prepayment",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "ctx_node_45",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_47",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "ctx_node_49",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "child_spiridon",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "ctx_node_51",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "child_spiridon",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "loan_consumer_alfabank_credit_holiday_request",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_56",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "loan_mortgage_alfabank_partial_prepayment_final",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_62",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "loan_mortgage_alfabank_outstanding_balance_final",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_68",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_veronika_petrova",
+      "target": "loan_refinancing_alfabank_contract",
+      "relation": "received",
+      "attributes": {
+        "date": "28.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "loan_mortgage_sberbank",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "loan_consumer_alfabank_new_application",
+      "target": "loan_consumer_alfabank_received_funds",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "loan_consumer_alfabank_received_funds",
+      "target": "loan_consumer_alfabank_partial_prepayment",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "7 days"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "child_spiridon",
+      "target": "loan_consumer_alfabank_credit_holiday_request",
+      "relation": "caused",
+      "attributes": {
+        "reason": "expensive treatment"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "loan_consumer_alfabank_credit_holiday_request",
+      "target": "loan_consumer_alfabank_credit_holiday_rejection",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "loan_mortgage_alfabank_insurance_offer",
+      "relation": "resulted_in",
+      "attributes": {
+        "context": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "loan_mortgage_alfabank_partial_prepayment_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "decision_point": "финансовое планирование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "loan_mortgage_alfabank_partial_prepayment_final",
+      "target": "loan_mortgage_alfabank_outstanding_balance_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "effect": "снижение долга"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "loan_mortgage_sberbank",
+      "target": "loan_refinancing_alfabank_application",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "loan_consumer_alfabank_approved_initial",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "16 days"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "person_spiridon_avdeev",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "до потери работы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "person_spiridon_avdeev",
+      "target": "loan_consumer_alfabank_restructuring_offer",
+      "relation": "caused",
+      "attributes": {
+        "reason": "потеря работы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "loan_consumer_alfabank_restructuring_offer",
+      "target": "loan_consumer_alfabank_new_application",
+      "relation": "rejected",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "loan_consumer_alfabank_new_application",
+      "target": "loan_refinancing_alfabank_contract",
+      "relation": "followed_by",
+      "attributes": {
+        "time_difference": "6 days"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "loan_consumer_alfabank_received_funds",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "6 days"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "loan_consumer_alfabank_received_funds",
+      "target": "loan_consumer_alfabank_partial_prepayment",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "loan_consumer_alfabank_partial_prepayment",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "context": "освобождение средств"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "child_spiridon",
+      "target": "loan_consumer_alfabank_credit_holiday_request",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "loan_consumer_alfabank_credit_holiday_request",
+      "target": "loan_consumer_alfabank_credit_holiday_rejection",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "loan_mortgage_alfabank_insurance_offer",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "13 days"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "loan_mortgage_alfabank_partial_prepayment_final",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "loan_mortgage_alfabank_partial_prepayment_final",
+      "target": "loan_mortgage_alfabank_outstanding_balance_final",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "person_veronika_petrova",
+      "target": "loan_mortgage_sberbank_outstanding_false",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "loan_consumer_alfabank_approved_initial_false",
+      "target": "person_veronika_petrova",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_veronika_petrova",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "needs_treatment",
+        "date": "18,01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_spiridon_avdeev",
+      "target": "person_veronika_petrova",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "spouse",
+        "event": "lost_job",
+        "date": "10,81.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "spouse",
+        "event": "lost_job",
+        "date": "9,73.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {
+        "context": "ипотека"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_61",
+      "target": "loan_consumer_alfabank_received_funds",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "5,4 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "needs_treatment",
+        "date": "16,21.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_48",
+      "relation": "caused",
+      "attributes": {
+        "reason": "потеря работы"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_68",
+      "target": "person_spiridon_avdeev",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "до потери работы"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_26",
+      "target": "person_veronika_petrova",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "spouse",
+        "event": "lost_job",
+        "date": "10,82.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "loan_consumer_alfabank_new_application",
+      "target": "ctx_node_57",
+      "relation": "followed_by",
+      "attributes": {
+        "time_difference": "5,4 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_67",
+      "target": "loan_mortgage_sberbank",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,22.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "relationship_type": "spouse",
+        "event": "lost_job",
+        "date": "13,22.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_9",
+      "target": "loan_refinancing_alfabank_contract",
+      "relation": "received",
+      "attributes": {
+        "date": "30,82.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_19",
+      "target": "loan_mortgage_sberbank",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,22.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "loan_mortgage_alfabank_outstanding_balance_final",
+      "relation": "resulted_in",
+      "attributes": {
+        "context": "ипотека"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_39",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "needs_treatment",
+        "date": "19,81.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "loan_consumer_alfabank_received_funds",
+      "target": "loan_consumer_alfabank_restructuring_offer",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "6,3 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_20",
+      "target": "loan_mortgage_sberbank",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,22.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_51",
+      "target": "loan_refinancing_alfabank_contract",
+      "relation": "followed_by",
+      "attributes": {
+        "time_difference": "6,6 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "loan_consumer_alfabank_received_funds",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "7,7 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "14,3 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "loan_consumer_alfabank_new_application",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "ctx_node_42",
+      "target": "loan_consumer_alfabank_received_funds",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "6,6 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "ctx_node_7",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "event": "needs_treatment",
+        "date": "16,21.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "person_spiridon_avdeev",
+      "target": "loan_refinancing_alfabank_application",
+      "relation": "caused",
+      "attributes": {
+        "event": "lost_job"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "person_veronika_petrova",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "person_spiridon_avdeev",
+      "target": "ctx_node_22",
+      "relation": "caused",
+      "attributes": {
+        "reason": "потеря работы"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {
+        "decision_point": "финансовое планирование"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "person_veronika_petrova",
+      "target": "child_spiridon",
+      "relation": "received",
+      "attributes": {
+        "date": "30,82.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_10",
+      "target": "loan_mortgage_alfabank_insurance_offer",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "14,3 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "11,7 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "time_difference": "6,6 days"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_11",
+      "target": "child_spiridon",
+      "relation": "resulted_in",
+      "attributes": {
+        "context": "освобождение средств"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_veronika_petrova",
+      "source": "person_veronika_petrova",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_sberbank",
+      "source": "loan_mortgage_sberbank",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_refinancing_alfabank_application",
+      "source": "loan_refinancing_alfabank_application",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_approved_initial",
+      "source": "loan_consumer_alfabank_approved_initial",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_spiridon_avdeev",
+      "source": "person_spiridon_avdeev",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_restructuring_offer",
+      "source": "loan_consumer_alfabank_restructuring_offer",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_new_application",
+      "source": "loan_consumer_alfabank_new_application",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_refinancing_alfabank_contract",
+      "source": "loan_refinancing_alfabank_contract",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_received_funds",
+      "source": "loan_consumer_alfabank_received_funds",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_partial_prepayment",
+      "source": "loan_consumer_alfabank_partial_prepayment",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_child_spiridon",
+      "source": "child_spiridon",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_credit_holiday_request",
+      "source": "loan_consumer_alfabank_credit_holiday_request",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_credit_holiday_rejection",
+      "source": "loan_consumer_alfabank_credit_holiday_rejection",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_alfabank_insurance_offer",
+      "source": "loan_mortgage_alfabank_insurance_offer",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_alfabank_partial_prepayment_final",
+      "source": "loan_mortgage_alfabank_partial_prepayment_final",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_alfabank_outstanding_balance_final",
+      "source": "loan_mortgage_alfabank_outstanding_balance_final",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_alfabank_approved_initial_false",
+      "source": "loan_consumer_alfabank_approved_initial_false",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_sberbank_outstanding_false",
+      "source": "loan_mortgage_sberbank_outstanding_false",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "information_extraction": [
+    {
+      "question": "На какую сумму изменился регулярный платёж клиентки после консолидации её кредитных обязательств?",
+      "answer": "61000 руб.",
+      "answer_format": "N руб.",
+      "reasoning_path": [
+        "payment_mortgage_2 --[attributes]--> amount: 91500 руб. (прежний ежемесячный платёж)",
+        "payment_refinance_1 --[attributes]--> amount: 30500 руб. (новый ежемесячный платёж)",
+        "вычисление: 91500 − 30500 = 61000 руб."
+      ],
+      "capability": "information_extraction",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "payment_mortgage_2",
+        "payment_refinance_1"
+      ],
+      "decoy_answers": [
+        "60500 руб.",
+        "61500 руб.",
+        "62000 руб."
+      ]
+    }
+  ]
+}

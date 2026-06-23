@@ -1,0 +1,5235 @@
+{
+  "nodes": [
+    {
+      "id": "person_savely_zinoviev",
+      "type": "person",
+      "label": "Савелий Иосипович Зиновьев",
+      "attributes": {
+        "age": "43",
+        "occupation": "швея",
+        "monthly_income": "199000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_auto_refinanced",
+      "type": "product",
+      "label": "Рефинансированный автокредит",
+      "attributes": {
+        "amount": "1200000 руб.",
+        "rate": "15.5%",
+        "term": "3 года",
+        "monthly_payment": "38700 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "loan_consumer_partial_repayment",
+      "type": "product",
+      "label": "Потребительский кредит (частичное погашение)",
+      "attributes": {
+        "amount_repaid": "200000 руб.",
+        "monthly_payment_new": "18500 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "loan_consumer_new",
+      "type": "product",
+      "label": "Новый потребительский кредит",
+      "attributes": {
+        "amount": "50000 руб.",
+        "rate": "19.9%",
+        "term": "1 год",
+        "monthly_payment": "4600 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "loan_consumer_restructured",
+      "type": "product",
+      "label": "Реструктурированный потребительский кредит",
+      "attributes": {
+        "monthly_payment": "15000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "person_aleksandra_pavlova",
+      "type": "person",
+      "label": "Александра Павлова",
+      "attributes": {
+        "age": "72"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "person_evstafiy_zinoviev",
+      "type": "person",
+      "label": "Евстафий Зиновьев",
+      "attributes": {
+        "age": "10"
+      },
+      "ground_truth": false,
+      "episode_hint": 4
+    },
+    {
+      "id": "person_emilia_zinovieva",
+      "type": "person",
+      "label": "Эмилия Зиновьева",
+      "attributes": {
+        "age": "21"
+      },
+      "ground_truth": false,
+      "episode_hint": 4
+    },
+    {
+      "id": "person_vlas_petrov",
+      "type": "person",
+      "label": "Влас Глебович Петров",
+      "attributes": {
+        "age": "17"
+      },
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "account_savings_savely",
+      "type": "account",
+      "label": "Сберегательный счет Савелия",
+      "attributes": {
+        "balance": "3500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_mortgage_application_rejected",
+      "type": "product",
+      "label": "Заявка на ипотеку (отказ)",
+      "attributes": {
+        "rejection_reason": "высокая долговая нагрузка"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "loan_mortgage_application_new",
+      "type": "product",
+      "label": "Новая заявка на ипотеку",
+      "attributes": {
+        "amount": "10000000 руб.",
+        "rate": "16.5%",
+        "term": "20 лет",
+        "monthly_payment": "140000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "loan_mortgage_approved",
+      "type": "product",
+      "label": "Одобренная ипотека",
+      "attributes": {
+        "amount": "10000000 руб.",
+        "rate": "16.5%",
+        "term": "20 лет",
+        "monthly_payment": "140000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "loan_mortgage_approved_false_1",
+      "type": "product",
+      "label": "Одобренная ипотека (ловушка)",
+      "attributes": {
+        "amount": "12500000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "loan_mortgage_approved_false_2",
+      "type": "product",
+      "label": "Одобренная ипотека (ловушка)",
+      "attributes": {
+        "rate": "16.9%"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "organization",
+      "label": "Адрес квартиры",
+      "attributes": {
+        "city": "Москва",
+        "street": "Тверская",
+        "house": "15",
+        "apartment": "7"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Ипотечный кредит (первичная заявка)",
+      "attributes": {
+        "amount": "12500000 руб.",
+        "purpose": "покупка квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "person",
+      "label": "Тамара Даниловна Зимина",
+      "attributes": {
+        "age": "42",
+        "occupation": "бухгалтер",
+        "relationship": "супруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {
+        "period": "12 месяцев",
+        "type": "подтверждение дохода"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "amount",
+      "label": "Среднемесячный доход (до вычета НДФЛ)",
+      "attributes": {
+        "amount": "250000 руб.",
+        "period": "01.03.2023-29.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Потребительский кредит (Тамара)",
+      "attributes": {
+        "amount": "480000 руб.",
+        "rate": "14.9%",
+        "term": "3 года",
+        "purpose": "ремонт дачи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "organization",
+      "label": "Банк Тамары",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Push-уведомление о статусе заявки",
+      "attributes": {
+        "status": "На рассмотрении"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Расчет ежемесячных платежей по ипотеке",
+      "attributes": {
+        "estimated_payment": "150000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "person",
+      "label": "Бирюков Севастьян Евстигнеевич",
+      "attributes": {
+        "age": "76",
+        "relationship": "родитель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "product",
+      "label": "Вклад (Бирюков)",
+      "attributes": {
+        "amount": "95000 руб.",
+        "term": "6 месяцев",
+        "rate": "12%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Кредитный рейтинг Савелия",
+      "attributes": {
+        "score": "850",
+        "max_score": "900",
+        "status": "высокий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "product",
+      "label": "Текущий автокредит",
+      "attributes": {
+        "contract_number": "789012",
+        "outstanding_amount": "1200000 руб.",
+        "rate": "18%",
+        "monthly_payment": "35000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "event",
+      "label": "Консультация по условиям досрочного погашения",
+      "attributes": {
+        "topic": "досрочное погашение ипотеки",
+        "channel": "менеджер банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Консультация по использованию материнского капитала",
+      "attributes": {
+        "topic": "материнский капитал"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Консультация по срокам рассмотрения заявки",
+      "attributes": {
+        "topic": "срок рассмотрения ипотеки",
+        "expected_term": "до 5 рабочих дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Консультация по обязательным страховым продуктам",
+      "attributes": {
+        "topic": "страхование",
+        "required_products": "жизни и имущества"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "Консультация по снижению процентной ставки",
+      "attributes": {
+        "topic": "процентная ставка",
+        "condition": "увеличение первоначального взноса"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "document",
+      "label": "Договор по текущему автокредиту",
+      "attributes": {
+        "contract_number": "789012",
+        "type": "кредитный договор"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "product",
+      "label": "Ипотечный кредит (предварительное одобрение)",
+      "attributes": {
+        "rate": "16.9%",
+        "term": "25 лет",
+        "max_amount": "12500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "event",
+      "label": "Облегчение",
+      "attributes": {
+        "reason": "предварительное одобрение ипотеки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "product",
+      "label": "Потребительский кредит (Тамара, другой банк)",
+      "attributes": {
+        "outstanding_amount": "850000 руб.",
+        "monthly_payment": "25000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "organization",
+      "label": "Другой банк Тамары",
+      "attributes": {
+        "type": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Общая долговая нагрузка семьи",
+      "attributes": {
+        "status": "значительно увеличилась"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "product",
+      "label": "Заявка на рефинансирование автокредита",
+      "attributes": {
+        "contract_number": "789012",
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Потребительский кредит (Александра Павлова)",
+      "attributes": {
+        "outstanding_amount": "150000 руб.",
+        "rate": "20%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "product",
+      "label": "Заявка на рефинансирование потребительского кредита (Александра Павлова)",
+      "attributes": {
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Коэффициент ПДН (показатель долговой нагрузки)",
+      "attributes": {
+        "scope": "семья"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "document",
+      "label": "Список документов для рефинансирования автокредита",
+      "attributes": {
+        "documents": "ПТС, договор купли-продажи автомобиля"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Уведомление о статусе заявки на рефинансирование",
+      "attributes": {
+        "status": "на рассмотрении",
+        "expected_response_time": "3 рабочих дня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Совместное рефинансирование кредитов",
+      "attributes": {
+        "purpose": "получение более выгодных условий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Консультация по опыту рефинансирования",
+      "attributes": {
+        "source": "друг Влас Глебович Петров"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "product",
+      "label": "Условия досрочного погашения автокредита",
+      "attributes": {
+        "penalty": "отсутствует"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "amount",
+      "label": "Информация о дополнительных комиссиях при рефинансировании",
+      "attributes": {
+        "example": "комиссия за выдачу нового кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Полная таблица платежей по рефинансированному автокредиту",
+      "attributes": {
+        "type": "запрос"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "product",
+      "label": "Скорость закрытия старых кредитных счетов",
+      "attributes": {
+        "purpose": "избежать путаницы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "product",
+      "label": "Предложение по рефинансированию автокредита",
+      "attributes": {
+        "rate": "15.5%",
+        "term": "3 года",
+        "monthly_payment": "38700 руб.",
+        "comparison": "на 3700 руб. больше текущего"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Расчет общей переплаты по новому кредиту",
+      "attributes": {
+        "result": "меньше, чем по старому"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Уведомление о финансовой помощи",
+      "attributes": {
+        "amount": "150000 руб.",
+        "reason": "лечение",
+        "recipient": "Александра Павлова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "organization",
+      "label": "КЛХ Корсаков",
+      "attributes": {
+        "type": "работодатель",
+        "location": "Корсаков"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Материнский капитал",
+      "attributes": {
+        "status": "неиспользован"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "document",
+      "label": "ПТС автомобиля",
+      "attributes": {
+        "type": "документ на транспортное средство"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "document",
+      "label": "Договор купли-продажи автомобиля",
+      "attributes": {
+        "type": "документ на транспортное средство"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Звонок супруге",
+      "attributes": {
+        "topic": "одобрение ипотеки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Обсуждение долговой нагрузки",
+      "attributes": {
+        "participants": "Савелий, Тамара"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Обсуждение рефинансирования",
+      "attributes": {
+        "participants": "Савелий, Тамара"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Изучение предложения по рефинансированию",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Подписание договора рефинансирования",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Получение уведомления о помощи",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Запрос справки 2-НДФЛ",
+      "attributes": {
+        "date": "20.03.2024",
+        "requester": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Предоставление справки 2-НДФЛ",
+      "attributes": {
+        "date": "22.03.2024",
+        "provider": "Савелий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Обсуждение потребительского кредита Тамары",
+      "attributes": {
+        "date": "23.03.2024",
+        "participants": "Тамара, банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Проверка кредитного рейтинга",
+      "attributes": {
+        "date": "23.03.2024",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "event",
+      "label": "Перечитывание условий автокредита",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Обнаружение кредита Тамары",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Решение рефинансировать автокредит",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "event",
+      "label": "Подача заявки на рефинансирование автокредита",
+      "attributes": {
+        "date": "08.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "event",
+      "label": "Подача заявки на рефинансирование потребительского кредита Александры",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Запрос расчета ПДН",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Запрос списка документов для рефинансирования",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Получение уведомления о статусе заявки на рефинансирование",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "event",
+      "label": "Проверка условий досрочного погашения автокредита",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Запрос информации о комиссиях при рефинансировании",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Запрос полной таблицы платежей",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Уточнение скорости закрытия старых счетов",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "event",
+      "label": "Предложение рефинансирования автокредита",
+      "attributes": {
+        "date": "10.04.2024",
+        "provider": "банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Принятие предложения по рефинансированию",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "event",
+      "label": "Предоставление финансовой помощи Александре Павловой",
+      "attributes": {
+        "date": "16.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Частичное погашение потребительского кредита",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "event",
+      "label": "Получение нового потребительского кредита",
+      "attributes": {
+        "date": "30.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Отказ в ипотеке",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_74",
+      "type": "event",
+      "label": "Запрос реструктуризации потребительского кредита",
+      "attributes": {
+        "date": "07.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_75",
+      "type": "event",
+      "label": "Согласие на реструктуризацию потребительского кредита",
+      "attributes": {
+        "date": "12.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "event",
+      "label": "Предоставление займа Власу Петрову",
+      "attributes": {
+        "date": "18.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "event",
+      "label": "Повторная подача заявки на ипотеку",
+      "attributes": {
+        "date": "22.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "event",
+      "label": "Предоставление доказательств первоначального взноса",
+      "attributes": {
+        "date": "28.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_79",
+      "type": "event",
+      "label": "Одобрение ипотеки",
+      "attributes": {
+        "date": "30.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_80",
+      "type": "event",
+      "label": "Подача заявки на ипотеку (первичная)",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_82",
+      "type": "product",
+      "label": "Ипотечный кредит (первичная заявка, ловушка 1)",
+      "attributes": {
+        "amount": "12500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_83",
+      "type": "product",
+      "label": "Ипотечный кредит (первичная заявка, ловушка 2)",
+      "attributes": {
+        "rate": "16.9%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_84",
+      "type": "person",
+      "label": "Менеджер банка",
+      "attributes": {
+        "role": "консультант"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_1",
+      "type": "document",
+      "label": "Справка о доходах супруги",
+      "attributes": {
+        "type": "2-НДФЛ",
+        "period": "2023-2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_2",
+      "type": "organization",
+      "label": "ООО 'СтройМастер'",
+      "attributes": {
+        "type": "строительная компания",
+        "address": "ул. Ленина, 5"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_3",
+      "type": "product",
+      "label": "Кредитная карта Тамары",
+      "attributes": {
+        "limit": "150000 руб.",
+        "balance": "70000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_4",
+      "type": "event",
+      "label": "Консультация по страхованию",
+      "attributes": {
+        "date": "23.03.2024",
+        "topic": "ипотечное страхование"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_5",
+      "type": "product",
+      "label": "Инвестиционный портфель Савелия",
+      "attributes": {
+        "value": "500000 руб.",
+        "type": "акции"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_6",
+      "type": "event",
+      "label": "Оценка недвижимости",
+      "attributes": {
+        "date": "20.05.2024",
+        "result": "11500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_7",
+      "type": "document",
+      "label": "Договор купли-продажи квартиры",
+      "attributes": {
+        "date": "29.05.2024",
+        "address": "г. Москва, ул. Тверская, д. 15, кв. 7"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_8",
+      "type": "product",
+      "label": "Потребительский кредит Тамары (рефинансированный)",
+      "attributes": {
+        "amount": "850000 руб.",
+        "rate": "12.9%",
+        "term": "5 лет",
+        "monthly_payment": "19500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_9",
+      "type": "event",
+      "label": "Согласование условий реструктуризации",
+      "attributes": {
+        "date": "10.05.2024",
+        "status": "успешно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "x5_node_10",
+      "type": "person",
+      "label": "Ирина Смирнова",
+      "attributes": {
+        "occupation": "менеджер по ипотеке",
+        "bank": "ПАО Сбербанк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_refinances_auto_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_auto_refinanced",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024",
+        "contract_number": "123456789"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_provides_financial_aid_1",
+      "source": "person_savely_zinoviev",
+      "target": "person_aleksandra_pavlova",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "150000 руб.",
+        "date": "16.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_partially_repays_consumer_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_partial_repayment",
+      "relation": "paid",
+      "attributes": {
+        "date": "20.04.2024",
+        "contract_number": "987654"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_takes_new_consumer_loan_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.04.2024",
+        "contract_number": "102030405"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_receives_rejection_mortgage_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "rejected",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_requests_restructuring_consumer_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_restructured",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "07.05.2024",
+        "contract_number": "987654"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_agrees_to_restructuring_consumer_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_restructured",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.05.2024",
+        "contract_number": "987654"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_lends_money_to_vlas_1",
+      "source": "person_savely_zinoviev",
+      "target": "person_vlas_petrov",
+      "relation": "cancelled",
+      "attributes": {
+        "amount": "10000 руб.",
+        "date": "18.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_applies_for_mortgage_again_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_provides_proof_downpayment_1",
+      "source": "person_savely_zinoviev",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2500000 руб.",
+        "date": "28.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_receives_mortgage_approval_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_approved",
+      "relation": "approved",
+      "attributes": {
+        "date": "30.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 8
+    },
+    {
+      "id": "e_applies_for_mortgage_initial_false_1",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_applies_for_mortgage_initial_false_2",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_3",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "ctx_node_3",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_16",
+      "target": "person_emilia_zinovieva",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "взрослая"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_16",
+      "target": "person_evstafiy_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "еще рано"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_1",
+      "target": "ctx_node_5",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "person_savely_zinoviev",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_5",
+      "target": "ctx_node_6",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_4",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_7",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_9",
+      "relation": "received",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_10",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_11",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_20",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "approved",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024",
+        "topic": "хорошая новость"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_23",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_23",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_26",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "08.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_aleksandra_pavlova",
+      "target": "ctx_node_28",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_28",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_29",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_31",
+      "relation": "received",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_32",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_33",
+      "target": "person_vlas_petrov",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_35",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_36",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "ctx_node_1",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_savely_zinoviev",
+      "target": "loan_auto_refinanced",
+      "relation": "approved",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_41",
+      "relation": "received",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_41",
+      "target": "person_aleksandra_pavlova",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_30",
+      "target": "ctx_node_44",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_30",
+      "target": "ctx_node_45",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_1",
+      "target": "ctx_node_52",
+      "relation": "caused",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_4",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "08.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_aleksandra_pavlova",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_63",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_65",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_1",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_76",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.05.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_77",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.05.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_80",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_82",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_83",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_70",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_1",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "02.04.2024",
+        "purpose": "для ипотеки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_2",
+      "source": "ctx_node_1",
+      "target": "x5_node_1",
+      "relation": "received",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_3",
+      "source": "ctx_node_13",
+      "target": "x5_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024",
+        "service": "ремонт дачи"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_4",
+      "source": "ctx_node_13",
+      "target": "x5_node_3",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_5",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_4",
+      "relation": "cancelled",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_6",
+      "source": "x5_node_4",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_7",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_5",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2022"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_8",
+      "source": "x5_node_5",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2022"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_9",
+      "source": "loan_mortgage_application_new",
+      "target": "x5_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_10",
+      "source": "x5_node_6",
+      "target": "loan_mortgage_approved",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.05.2024",
+        "impact": "положительный"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_11",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_7",
+      "relation": "signed",
+      "attributes": {
+        "date": "29.05.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_12",
+      "source": "loan_mortgage_approved",
+      "target": "x5_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "29.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_13",
+      "source": "ctx_node_13",
+      "target": "x5_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024",
+        "original_loan": "ctx_node_14"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_14",
+      "source": "x5_node_8",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_15",
+      "source": "loan_consumer_restructured",
+      "target": "x5_node_9",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_16",
+      "source": "x5_node_9",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.05.2024",
+        "benefit": "снижение платежа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_17",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024",
+        "topic": "ипотека"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_18",
+      "source": "x5_node_10",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "постоянно"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_19",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2020"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_20",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_2",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_21",
+      "source": "ctx_node_2",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_22",
+      "source": "ctx_node_2",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_23",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_3",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_24",
+      "source": "ctx_node_3",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_25",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_4",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_26",
+      "source": "ctx_node_4",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_27",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_5",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_28",
+      "source": "ctx_node_5",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_29",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_6",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_30",
+      "source": "ctx_node_6",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_31",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_7",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_32",
+      "source": "ctx_node_7",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_33",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_8",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_34",
+      "source": "ctx_node_8",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_35",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_9",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_36",
+      "source": "ctx_node_9",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_37",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_10",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_38",
+      "source": "ctx_node_10",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_39",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_11",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_40",
+      "source": "ctx_node_11",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_41",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_12",
+      "relation": "owns",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_42",
+      "source": "ctx_node_12",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_43",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2000"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_44",
+      "source": "ctx_node_13",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_45",
+      "source": "ctx_node_14",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_46",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.1981"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_47",
+      "source": "ctx_node_16",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_48",
+      "source": "person_savely_zinoviev",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2020"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_49",
+      "source": "account_savings_savely",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2020"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_50",
+      "source": "person_savely_zinoviev",
+      "target": "loan_auto_refinanced",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024",
+        "benefit": "снижение ставки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_51",
+      "source": "loan_auto_refinanced",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_52",
+      "source": "person_savely_zinoviev",
+      "target": "person_aleksandra_pavlova",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.1981"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_53",
+      "source": "person_aleksandra_pavlova",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_54",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_partial_repayment",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_55",
+      "source": "loan_consumer_partial_repayment",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_56",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.04.2024",
+        "purpose": "непредвиденные расходы"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_57",
+      "source": "loan_consumer_new",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_58",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_restructured",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.05.2024",
+        "benefit": "снижение платежа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_59",
+      "source": "loan_consumer_restructured",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_60",
+      "source": "person_savely_zinoviev",
+      "target": "person_vlas_petrov",
+      "relation": "cancelled",
+      "attributes": {
+        "date": "01.01.2020"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_61",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_62",
+      "source": "loan_mortgage_application_rejected",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_63",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_new",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "22.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_64",
+      "source": "loan_mortgage_application_new",
+      "target": "ctx_node_1",
+      "relation": "submitted",
+      "attributes": {
+        "date": "22.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_65",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_approved",
+      "relation": "received",
+      "attributes": {
+        "date": "30.05.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_66",
+      "source": "loan_mortgage_approved",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_67",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_68",
+      "source": "loan_mortgage_approved_false_1",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_69",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_70",
+      "source": "loan_mortgage_approved_false_2",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_71",
+      "source": "person_savely_zinoviev",
+      "target": "person_emilia_zinovieva",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2003"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_72",
+      "source": "person_savely_zinoviev",
+      "target": "person_evstafiy_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.01.2014"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_73",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024",
+        "topic": "ежемесячные платежи"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_74",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024",
+        "topic": "вклад"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_75",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_76",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024",
+        "topic": "снижение ставки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_77",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024",
+        "loan_type": "автокредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_78",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25.03.2024",
+        "news": "предварительное одобрение ипотеки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_79",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024",
+        "debt_type": "потребительский кредит"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_80",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "08.04.2024",
+        "loan_type": "автокредит"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_81",
+      "source": "person_aleksandra_pavlova",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024",
+        "loan_type": "потребительский кредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_82",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024",
+        "metric": "ПДН"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_83",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024",
+        "process": "рефинансирование автокредита"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_84",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024",
+        "topic": "совместное рефинансирование"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_85",
+      "source": "person_savely_zinoviev",
+      "target": "person_vlas_petrov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024",
+        "topic": "опыт рефинансирования"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_86",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024",
+        "loan_type": "автокредит",
+        "condition": "досрочное погашение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_87",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024",
+        "topic": "дополнительные комиссии"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_88",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "09.04.2024",
+        "document_type": "таблица платежей"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_89",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "09.04.2024",
+        "topic": "закрытие старых счетов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_90",
+      "source": "person_savely_zinoviev",
+      "target": "loan_auto_refinanced",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_91",
+      "source": "loan_auto_refinanced",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_92",
+      "source": "person_savely_zinoviev",
+      "target": "loan_auto_refinanced",
+      "relation": "approved",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_93",
+      "source": "person_aleksandra_pavlova",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024",
+        "amount": "150000 руб.",
+        "reason": "лечение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_94",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "caused",
+      "attributes": {
+        "date": "05.05.2024",
+        "reason": "высокая долговая нагрузка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_95",
+      "source": "loan_mortgage_application_rejected",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2024",
+        "context": "повторная заявка после отказа"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_96",
+      "source": "loan_auto_refinanced",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2024",
+        "contribution": "снижение ПДН"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_97",
+      "source": "loan_consumer_partial_repayment",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2024",
+        "contribution": "снижение ПДН"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_98",
+      "source": "loan_consumer_restructured",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.05.2024",
+        "contribution": "снижение ПДН"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_99",
+      "source": "account_savings_savely",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "28.05.2024",
+        "support_type": "первоначальный взнос"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_100",
+      "source": "loan_mortgage_application_new",
+      "target": "loan_mortgage_approved",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "30.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_101",
+      "source": "loan_mortgage_approved_false_1",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.05.2024",
+        "context": "первая заявка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_102",
+      "source": "loan_mortgage_approved_false_2",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.05.2024",
+        "context": "первая заявка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_103",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2024",
+        "topic": "условия досрочного погашения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_104",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2024",
+        "topic": "материнский капитал"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_106",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.03.2024",
+        "document": "справка 2-НДФЛ"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_107",
+      "source": "ctx_node_13",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024",
+        "topic": "потребительский кредит"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_108",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024",
+        "topic": "срок рассмотрения заявки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_109",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "23.03.2024",
+        "topic": "обязательные страховки"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_110",
+      "source": "ctx_node_1",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24.03.2024",
+        "status": "на рассмотрении"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_111",
+      "source": "ctx_node_1",
+      "target": "person_savely_zinoviev",
+      "relation": "approved",
+      "attributes": {
+        "date": "25.03.2024",
+        "product": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_112",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "05.04.2024",
+        "loan_type": "автокредит"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_113",
+      "source": "ctx_node_1",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "06.04.2024",
+        "status": "на рассмотрении",
+        "product": "рефинансирование автокредита"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_114",
+      "source": "ctx_node_1",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024",
+        "product": "рефинансирование автокредита"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_115",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "received",
+      "attributes": {
+        "date": "05.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_116",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_restructured",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "07.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_117",
+      "source": "person_savely_zinoviev",
+      "target": "person_vlas_petrov",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.05.2024",
+        "amount": "10000 руб."
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_118",
+      "source": "person_savely_zinoviev",
+      "target": "account_savings_savely",
+      "relation": "paid",
+      "attributes": {
+        "date": "28.05.2024",
+        "amount": "2500000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_119",
+      "source": "loan_mortgage_approved_false_1",
+      "target": "person_savely_zinoviev",
+      "relation": "owns",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_120",
+      "source": "loan_mortgage_approved_false_2",
+      "target": "person_savely_zinoviev",
+      "relation": "owns",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_121",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_122",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_123",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_124",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_125",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_126",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_127",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_128",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_129",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_130",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_131",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_132",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_133",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_134",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_135",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_136",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_137",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_138",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_139",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_140",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_141",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_142",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_143",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_144",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_145",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_146",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "15.03.2024",
+        "product_type": "ипотека"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_147",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "x5_edge_148",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.0"
+      },
+      "ground_truth": false,
+      "valid": true,
+      "stale": true
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_savely_zinoviev",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2750000 руб.",
+        "date": "28.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,84.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_savely_zinoviev",
+      "target": "loan_consumer_restructured",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,83.2024",
+        "contract_number": "987654"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "x5_node_9",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,04.2024",
+        "product": "рефинансирование автокредита"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_44",
+      "relation": "owns",
+      "attributes": {
+        "date": "1,11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_84",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,91.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "x5_node_4",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_63",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "8,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_48",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,43.2024",
+        "topic": "ежемесячные платежи"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_71",
+      "target": "loan_mortgage_application_rejected",
+      "relation": "received",
+      "attributes": {
+        "date": "5,56.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_79",
+      "target": "person_savely_zinoviev",
+      "relation": "owns",
+      "attributes": {
+        "date": "16,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_2",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_83",
+      "target": "loan_auto_refinanced",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10,84.2024",
+        "benefit": "снижение ставки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_78",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "person_savely_zinoviev",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21,63.2024",
+        "topic": "снижение ставки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "x5_node_6",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,05.2024",
+        "impact": "положительный"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "person_savely_zinoviev",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,43.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_16",
+      "target": "person_savely_zinoviev",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,43.2024",
+        "status": "на рассмотрении"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "ctx_node_1",
+      "target": "x5_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "26,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_60",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "person_savely_zinoviev",
+      "target": "x5_node_10",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "8,14.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "ctx_node_17",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "8,14.2024",
+        "loan_type": "потребительский кредит"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "ctx_node_66",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "person_aleksandra_pavlova",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,54.2024",
+        "amount": "150000 руб.",
+        "reason": "лечение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "ctx_node_53",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,03.2024",
+        "topic": "условия досрочного погашения"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_2",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "27,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "ctx_node_34",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "21,63.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_26",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,23.2024",
+        "document": "справка 2-НДФЛ"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_53",
+      "target": "ctx_node_3",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,94.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_14",
+      "target": "loan_mortgage_approved_false_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "loan_mortgage_approved",
+      "target": "x5_node_4",
+      "relation": "cancelled",
+      "attributes": {
+        "date": "25,33.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv34",
+      "source": "ctx_node_46",
+      "target": "loan_mortgage_application_new",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,85.2024",
+        "contribution": "снижение ПДН"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv35",
+      "source": "ctx_node_17",
+      "target": "loan_consumer_restructured",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "7,76.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv36",
+      "source": "ctx_node_11",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "5,56.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv37",
+      "source": "loan_consumer_restructured",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,05.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv38",
+      "source": "ctx_node_9",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,91.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv39",
+      "source": "x5_node_7",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv40",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_74",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "13,53.2024",
+        "product_type": "ипотека"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv41",
+      "source": "ctx_node_5",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv42",
+      "source": "ctx_node_62",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv43",
+      "source": "ctx_node_4",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,91.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv44",
+      "source": "account_savings_savely",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "4,54.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv45",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_65",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "8,14.2024",
+        "document_type": "таблица платежей"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv46",
+      "source": "ctx_node_63",
+      "target": "ctx_node_26",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "8,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv47",
+      "source": "ctx_node_56",
+      "target": "ctx_node_12",
+      "relation": "owns",
+      "attributes": {
+        "date": "0,91.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv48",
+      "source": "ctx_node_46",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv49",
+      "source": "account_savings_savely",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,91.2020"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv50",
+      "source": "loan_consumer_new",
+      "target": "ctx_node_84",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv51",
+      "source": "ctx_node_1",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv52",
+      "source": "ctx_node_73",
+      "target": "account_savings_savely",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2475000 руб.",
+        "date": "28.04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv53",
+      "source": "x5_node_2",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv54",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,94.2024",
+        "topic": "совместное рефинансирование"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv55",
+      "source": "ctx_node_31",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "25,33.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv56",
+      "source": "ctx_node_2",
+      "target": "ctx_node_77",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,85.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv57",
+      "source": "person_savely_zinoviev",
+      "target": "person_aleksandra_pavlova",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "16,25.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv58",
+      "source": "ctx_node_17",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "9,94.2024",
+        "loan_type": "автокредит",
+        "condition": "досрочное погашение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv59",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_7",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "13,53.2024",
+        "product_type": "ипотека"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv60",
+      "source": "person_savely_zinoviev",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,26.2024",
+        "benefit": "снижение платежа"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv61",
+      "source": "loan_consumer_restructured",
+      "target": "loan_mortgage_approved_false_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv62",
+      "source": "person_aleksandra_pavlova",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,91.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv63",
+      "source": "ctx_node_1",
+      "target": "person_evstafiy_zinoviev",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "22,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv64",
+      "source": "loan_mortgage_application_rejected",
+      "target": "ctx_node_1",
+      "relation": "applied_for",
+      "attributes": {
+        "date": "16,53.2024",
+        "product_type": "ипотека"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_savely_zinoviev",
+      "source": "person_savely_zinoviev",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_auto_refinanced",
+      "source": "loan_auto_refinanced",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_partial_repayment",
+      "source": "loan_consumer_partial_repayment",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_new",
+      "source": "loan_consumer_new",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_consumer_restructured",
+      "source": "loan_consumer_restructured",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_aleksandra_pavlova",
+      "source": "person_aleksandra_pavlova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_vlas_petrov",
+      "source": "person_vlas_petrov",
+      "target": "ep_6",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_account_savings_savely",
+      "source": "account_savings_savely",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_application_rejected",
+      "source": "loan_mortgage_application_rejected",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_application_new",
+      "source": "loan_mortgage_application_new",
+      "target": "ep_7",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_approved",
+      "source": "loan_mortgage_approved",
+      "target": "ep_8",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_approved_false_1",
+      "source": "loan_mortgage_approved_false_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_approved_false_2",
+      "source": "loan_mortgage_approved_false_2",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

@@ -1,0 +1,2678 @@
+{
+  "nodes": [
+    {
+      "id": "vg_alexandrov",
+      "type": "person",
+      "label": "Вячеслав Германович Александров",
+      "attributes": {
+        "age": 54,
+        "job": "Релайтер",
+        "income": 87000,
+        "city": "Калининград"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "grishin_miroslav",
+      "type": "person",
+      "label": "Гришин Мирослав Бенедиктович",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_anisimova",
+      "type": "person",
+      "label": "Марфа Леонидовна Анисимова",
+      "attributes": {
+        "age": 84
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "konstantinov_georgy",
+      "type": "person",
+      "label": "Константинов Георгий Фёдорович",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "radim_son",
+      "type": "person",
+      "label": "Радим",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "varvara_daughter",
+      "type": "person",
+      "label": "Варвара",
+      "attributes": {
+        "age": 13
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "darya_nekrasova",
+      "type": "person",
+      "label": "Дарья Борисовна Некрасова",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "artem_efremov",
+      "type": "person",
+      "label": "Артем Арсеньевич Ефремов",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "bank",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "fastpay_solutions",
+      "type": "organization",
+      "label": "FastPay Solutions",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "gameworld",
+      "type": "service",
+      "label": "GameWorld",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "yandex_plus",
+      "type": "service",
+      "label": "Яндекс Плюс",
+      "attributes": {
+        "cost_rub_month": 299
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "sberprime",
+      "type": "service",
+      "label": "СберПрайм",
+      "attributes": {
+        "cost_rub_month": 199
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "netflix",
+      "type": "service",
+      "label": "Netflix",
+      "attributes": {
+        "cost_rub_month": 999
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "magic_quest",
+      "type": "service",
+      "label": "Magic Quest",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_vg",
+      "type": "card",
+      "label": "Дебетовая карта В.Г.",
+      "attributes": {
+        "number_mask": "4567 **** **** 1234",
+        "expiry_date": "08/26"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "credit_card_vg",
+      "type": "card",
+      "label": "Кредитная карта В.Г.",
+      "attributes": {
+        "number_mask": "5432 **** **** 9876"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "joint_debit_card_vg_mb",
+      "type": "card",
+      "label": "Совместная дебетовая карта В.Г. и М.Б.",
+      "attributes": {
+        "daily_limit_rub": 150000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "main_current_account_vg",
+      "type": "account",
+      "label": "Основной текущий счет В.Г.",
+      "attributes": {
+        "number": "40817810000000001234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_account",
+      "type": "account",
+      "label": "Счет Марфы Леонидовны",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "scammer_safe_account",
+      "type": "account",
+      "label": "«Безопасный счет» мошенников",
+      "attributes": {
+        "phone_number": "+7 (905) 555-11-22"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "decoy_debit_card_vg_alt",
+      "type": "card",
+      "label": "Дебетовая карта В.Г. (декой)",
+      "attributes": {
+        "number_mask": "4567 **** **** 5678",
+        "expiry_date": "09/27"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "mobile_app",
+      "type": "channel",
+      "label": "Мобильное приложение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "sms_channel",
+      "type": "channel",
+      "label": "СМС-сообщение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "hotline_channel",
+      "type": "channel",
+      "label": "Горячая линия",
+      "attributes": {
+        "phone_number": "8-800-123-45-67"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "chat_support",
+      "type": "channel",
+      "label": "Чат поддержки",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "phishing_website",
+      "type": "channel",
+      "label": "Поддельный сайт банка",
+      "attributes": {},
+      "ground_truth": true
+    },
+    {
+      "id": "push_notification",
+      "type": "channel",
+      "label": "Push-уведомление",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "email_channel",
+      "type": "channel",
+      "label": "Электронное письмо",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "internet_bank",
+      "type": "channel",
+      "label": "Интернет-банк",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "bank_branch",
+      "type": "channel",
+      "label": "Отделение банка",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "passport_data_vg",
+      "type": "document",
+      "label": "Паспортные данные В.Г.",
+      "attributes": {
+        "series_number": "4500 123456"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "chargeback_statement_789012",
+      "type": "document",
+      "label": "Заявление на чарджбэк №789012",
+      "attributes": {
+        "number": "789012"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "doc_2ndfl",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "sms_transfer_50k_marfa",
+      "type": "document",
+      "label": "СМС-подтверждение перевода 50k Марфы",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "financial_goal_laptop",
+      "type": "concept",
+      "label": "Финансовая цель: покупка ноутбука",
+      "attributes": {
+        "cost_rub": 120000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_concept",
+      "type": "concept",
+      "label": "Мошенничество",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "115_fz_compliance",
+      "type": "concept",
+      "label": "Проверка по 115-ФЗ",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_state_irritation",
+      "type": "state",
+      "label": "Раздражение",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_state_anxiety",
+      "type": "state",
+      "label": "Тревога/Беспокойство",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_state_frustration",
+      "type": "state",
+      "label": "Фрустрация",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_state_anger_despair",
+      "type": "state",
+      "label": "Гнев и отчаяние",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "emotional_state_relief_fatigue",
+      "type": "state",
+      "label": "Облегчение и усталость",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "digital_financial_freedom",
+      "type": "concept",
+      "label": "Цифровая финансовая свобода",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "social_engineering_concept",
+      "type": "concept",
+      "label": "Социальная инженерия",
+      "attributes": {},
+      "ground_truth": false
+    },
+    {
+      "id": "kaliningrad_branch_leninsky_130",
+      "type": "location",
+      "label": "Отделение на Ленинском проспекте, 130",
+      "attributes": {
+        "address": "Ленинский проспект, 130"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "decoy_income_value",
+      "type": "value",
+      "label": "Декой: Доход 85 000 руб.",
+      "attributes": {
+        "income": 85000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "decoy_laptop_cost_value",
+      "type": "value",
+      "label": "Декой: Стоимость ноутбука 115 000 руб.",
+      "attributes": {
+        "cost_rub": 115000
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "decoy_yandex_plus_cost_value",
+      "type": "value",
+      "label": "Декой: Стоимость Яндекс Плюс 305 руб.",
+      "attributes": {
+        "cost_rub_month": 305
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Вячеслав Германович сталкивается с фишинговой атакой на дебетовую карту."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Вячеслав Германович подает заявление на чарджбэк и сталкивается с проверкой по 115-ФЗ."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Блокировка счета по 115-ФЗ и мошенничество в отношении матери."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4,
+        "summary": "Визит в банк, частичное урегулирование и новый запрос по 115-ФЗ."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5,
+        "summary": "Снятие ограничений, новые инциденты и повышение финансовой бдительности."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "dup_credit_card_vg",
+      "type": "card",
+      "label": "Кредитная карта В.Г.",
+      "attributes": {
+        "number_mask": "5432 **** **** 9876 (устар.)"
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_occurred_in_ep1",
+      "source": "vg_alexandrov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_uses_mobile_app_ep1",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "uses",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_has_income_ep1",
+      "source": "vg_alexandrov",
+      "target": "decoy_income_value",
+      "relation": "has_income",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_has_financial_goal_laptop_ep1",
+      "source": "vg_alexandrov",
+      "target": "financial_goal_laptop",
+      "relation": "has_financial_goal",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "financial_goal_laptop_cost_ep1",
+      "source": "financial_goal_laptop",
+      "target": "decoy_laptop_cost_value",
+      "relation": "has_cost",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_manages_finances_via_mobile_app_ep1",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "manages_finances_via",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "yandex_plus_cost_ep1",
+      "source": "yandex_plus",
+      "target": "decoy_yandex_plus_cost_value",
+      "relation": "has_cost",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_pays_jku_ep1",
+      "source": "vg_alexandrov",
+      "target": "ep_1",
+      "relation": "pays_for_service",
+      "attributes": {
+        "service": "ЖКУ",
+        "amount_rub": 4500
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_transfers_to_miroslav_ep1",
+      "source": "vg_alexandrov",
+      "target": "grishin_miroslav",
+      "relation": "transfers_to",
+      "attributes": {
+        "amount_rub": 10000,
+        "purpose": "совместный отдых"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_receives_phishing_sms_ep1",
+      "source": "vg_alexandrov",
+      "target": "sms_channel",
+      "relation": "receives_via",
+      "attributes": {
+        "sender": "+7 (903) 123-45-67",
+        "message": "временная блокировка дебетовой карты №4567 **** **** 1234"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "phishing_sms_contains_link_ep1",
+      "source": "sms_channel",
+      "target": "phishing_website",
+      "relation": "contains_link_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_clicks_phishing_link_ep1",
+      "source": "vg_alexandrov",
+      "target": "phishing_website",
+      "relation": "clicks_on",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_enters_data_phishing_ep1",
+      "source": "vg_alexandrov",
+      "target": "phishing_website",
+      "relation": "enters_data_on",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_provides_card_data_ep1",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "provides_data_for",
+      "attributes": {
+        "data_type": "full card details (number, expiry, CVV)"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "fraud_attempt_15k_targets_debit_card_ep1",
+      "source": "fastpay_solutions",
+      "target": "debit_card_vg",
+      "relation": "attempts_to_debit_from",
+      "attributes": {
+        "amount_rub": 15000,
+        "time": "14:37"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_blocks_debit_card_ep1",
+      "source": "bank",
+      "target": "debit_card_vg",
+      "relation": "automatically_blocks",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_sends_push_notification_ep1",
+      "source": "bank",
+      "target": "push_notification",
+      "relation": "sends_via",
+      "attributes": {
+        "message": "блокировка карты и попытка несанкционированного списания"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_anxiety_ep1",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_anxiety",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "mobile_app_history_issue_ep1",
+      "source": "mobile_app",
+      "target": "ep_1",
+      "relation": "has_issue",
+      "attributes": {
+        "issue": "временный сбой в работе сервиса 'История операций'"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_irritation_ep1",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_irritation",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_requests_chat_support_ep1",
+      "source": "vg_alexandrov",
+      "target": "chat_support",
+      "relation": "sends_request_via",
+      "attributes": {
+        "query": "причины блокировки карты и детали подозрительной транзакции"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chat_support_auto_response_ep1",
+      "source": "chat_support",
+      "target": "ep_1",
+      "relation": "sends_auto_response",
+      "attributes": {
+        "message": "высокая загрузка, ожидание до 30 минут"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_frustration_ep1",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_frustration",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_considers_card_reissue_ep1",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "considers_reissue_of",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_calls_hotline_ep2",
+      "source": "vg_alexandrov",
+      "target": "hotline_channel",
+      "relation": "calls_via",
+      "attributes": {
+        "time_anchor": "10.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_provides_passport_data_ep2",
+      "source": "vg_alexandrov",
+      "target": "passport_data_vg",
+      "relation": "provides",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_confirms_fraud_15k_ep2",
+      "source": "bank",
+      "target": "fraud_concept",
+      "relation": "confirms",
+      "attributes": {
+        "amount_rub": 15000,
+        "date": "05.05.2024",
+        "time": "14:37"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_submits_chargeback_request_ep2",
+      "source": "vg_alexandrov",
+      "target": "chargeback_statement_789012",
+      "relation": "submits",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_initiates_chargeback_ep2",
+      "source": "bank",
+      "target": "chargeback_statement_789012",
+      "relation": "initiates_procedure_for",
+      "attributes": {
+        "duration_days": 30
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_offers_card_reissue_ep2",
+      "source": "bank",
+      "target": "debit_card_vg",
+      "relation": "offers_reissue_of",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_agrees_card_reissue_ep2",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "agrees_to_reissue_of",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_chooses_branch_ep2",
+      "source": "vg_alexandrov",
+      "target": "kaliningrad_branch_leninsky_130",
+      "relation": "chooses_for_delivery",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "grishin_miroslav_changes_limit_ep2",
+      "source": "grishin_miroslav",
+      "target": "joint_debit_card_vg_mb",
+      "relation": "changes_limit_on",
+      "attributes": {
+        "new_limit_rub": 150000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "grishin_miroslav_plans_furniture_purchase_ep2",
+      "source": "grishin_miroslav",
+      "target": "ep_2",
+      "relation": "plans_purchase",
+      "attributes": {
+        "item": "мебель",
+        "amount_rub": 125000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_discovers_credit_card_fraud_ep2",
+      "source": "vg_alexandrov",
+      "target": "credit_card_vg",
+      "relation": "discovers_fraud_on",
+      "attributes": {
+        "amount_rub": 599,
+        "service": "GameWorld"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_requests_credit_card_blocking_ep2",
+      "source": "vg_alexandrov",
+      "target": "credit_card_vg",
+      "relation": "requests_blocking_of",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_disputes_599_transaction_ep2",
+      "source": "vg_alexandrov",
+      "target": "ep_2",
+      "relation": "disputes_transaction",
+      "attributes": {
+        "amount_rub": 599
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_notifies_115fz_check_ep2",
+      "source": "bank",
+      "target": "push_notification",
+      "relation": "notifies_via",
+      "attributes": {
+        "message": "основной текущий счет может быть временно заблокирован для проверки по 115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "main_current_account_vg_subject_to_115fz_ep2",
+      "source": "main_current_account_vg",
+      "target": "115_fz_compliance",
+      "relation": "subject_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_expresses_discontent_ep2",
+      "source": "vg_alexandrov",
+      "target": "chat_support",
+      "relation": "expresses_discontent_via",
+      "attributes": {
+        "message": "банк не справляется с безопасностью"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_requests_documents_115fz_ep2",
+      "source": "bank",
+      "target": "vg_alexandrov",
+      "relation": "requests_documents_from",
+      "attributes": {
+        "purpose": "подтверждение источника дохода и экономического смысла операций"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "email_contains_document_list_ep2",
+      "source": "email_channel",
+      "target": "doc_2ndfl",
+      "relation": "contains_info_about",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_considers_branch_visit_ep2",
+      "source": "vg_alexandrov",
+      "target": "bank_branch",
+      "relation": "considers_visit_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_searches_branch_info_ep2",
+      "source": "vg_alexandrov",
+      "target": "kaliningrad_branch_leninsky_130",
+      "relation": "searches_info_about",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "main_current_account_vg_blocked_115fz_ep3",
+      "source": "main_current_account_vg",
+      "target": "115_fz_compliance",
+      "relation": "blocked_due_to",
+      "attributes": {
+        "time_anchor": "08.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_attempts_netflix_payment_ep3",
+      "source": "vg_alexandrov",
+      "target": "netflix",
+      "relation": "attempts_payment_for",
+      "attributes": {
+        "amount_rub": 999
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "netflix_payment_declined_ep3",
+      "source": "netflix",
+      "target": "main_current_account_vg",
+      "relation": "payment_declined_from",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_irritation_ep3",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_irritation",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "joint_debit_card_vg_mb_unavailable_ep3",
+      "source": "joint_debit_card_vg_mb",
+      "target": "main_current_account_vg",
+      "relation": "unavailable_due_to_blocking_of",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_anisimova_receives_fraud_call_ep3",
+      "source": "marfa_anisimova",
+      "target": "sms_channel",
+      "relation": "receives_call_from",
+      "attributes": {
+        "caller_id": "+7 (495) 987-65-43",
+        "caller_identity": "сотрудник ЦБ РФ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_call_cb_uses_social_engineering_ep3",
+      "source": "sms_channel",
+      "target": "social_engineering_concept",
+      "relation": "uses",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_anisimova_transfers_50k_ep3",
+      "source": "marfa_anisimova",
+      "target": "scammer_safe_account",
+      "relation": "transfers_to",
+      "attributes": {
+        "amount_rub": 50000,
+        "channel": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_anisimova_receives_sms_confirmation_ep3",
+      "source": "marfa_anisimova",
+      "target": "sms_transfer_50k_marfa",
+      "relation": "receives",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_realizes_mothers_fraud_ep3",
+      "source": "vg_alexandrov",
+      "target": "fraud_concept",
+      "relation": "realizes_fraud_against",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_anger_despair_ep3",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_anger_despair",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_attempts_contact_marfa_bank_ep3",
+      "source": "vg_alexandrov",
+      "target": "bank",
+      "relation": "attempts_contact_for",
+      "attributes": {
+        "target_client": "Марфа Леонидовна Анисимова"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_attempts_transfer_radim_ep3",
+      "source": "vg_alexandrov",
+      "target": "radim_son",
+      "relation": "attempts_transfer_to",
+      "attributes": {
+        "amount_rub": 47500,
+        "purpose": "оплата обучения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "transfer_radim_declined_ep3",
+      "source": "radim_son",
+      "target": "main_current_account_vg",
+      "relation": "transfer_declined_from",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "grishin_miroslav_attempts_transfer_sister_ep3",
+      "source": "grishin_miroslav",
+      "target": "ep_3",
+      "relation": "attempts_transfer_to_sister",
+      "attributes": {
+        "amount_rub": 45000,
+        "channel": "СБП"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "grishin_transfer_declined_ep3",
+      "source": "grishin_miroslav",
+      "target": "joint_debit_card_vg_mb",
+      "relation": "transfer_declined_from",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_plans_branch_visit_ep3",
+      "source": "vg_alexandrov",
+      "target": "bank_branch",
+      "relation": "plans_visit_to",
+      "attributes": {
+        "date": "12.06.2024",
+        "time": "10:00"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_anxiety_ep3",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_anxiety",
+      "relation": "experiences",
+      "attributes": {
+        "intensity": "strong"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_searches_police_info_ep3",
+      "source": "vg_alexandrov",
+      "target": "ep_3",
+      "relation": "searches_info_about",
+      "attributes": {
+        "topic": "подача заявления в полицию по факту мошенничества"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_visits_branch_ep4",
+      "source": "vg_alexandrov",
+      "target": "kaliningrad_branch_leninsky_130",
+      "relation": "visits",
+      "attributes": {
+        "time_anchor": "12.06.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_submits_mother_fraud_statement_ep4",
+      "source": "vg_alexandrov",
+      "target": "marfa_anisimova",
+      "relation": "submits_fraud_statement_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_confirms_50k_loss_ep4",
+      "source": "bank",
+      "target": "marfa_account",
+      "relation": "confirms_funds_withdrawn_from",
+      "attributes": {
+        "amount_rub": 50000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_undergoes_biometric_id_ep4",
+      "source": "vg_alexandrov",
+      "target": "bank_branch",
+      "relation": "undergoes_biometric_identification_at",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_updates_data_ep4",
+      "source": "vg_alexandrov",
+      "target": "ep_4",
+      "relation": "updates_personal_data",
+      "attributes": {
+        "data_type": "email"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_receives_300k_from_father_ep4",
+      "source": "konstantinov_georgy",
+      "target": "vg_alexandrov",
+      "relation": "transfers_to",
+      "attributes": {
+        "amount_rub": 300000,
+        "purpose": "Подарок на юбилей"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_requests_300k_documents_115fz_ep4",
+      "source": "bank",
+      "target": "vg_alexandrov",
+      "relation": "requests_documents_for",
+      "attributes": {
+        "amount_rub": 300000,
+        "purpose": "экономический смысл перевода",
+        "compliance": "115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_frustration_ep4",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_frustration",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_consults_darya_ep4",
+      "source": "vg_alexandrov",
+      "target": "darya_nekrasova",
+      "relation": "consults",
+      "attributes": {
+        "topic": "115-ФЗ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offers_partial_settlement_10k_ep4",
+      "source": "bank",
+      "target": "vg_alexandrov",
+      "relation": "offers_partial_settlement_to",
+      "attributes": {
+        "amount_rub": 10000,
+        "original_fraud_amount_rub": 15000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_accepts_partial_settlement_ep4",
+      "source": "vg_alexandrov",
+      "target": "bank",
+      "relation": "accepts_offer_from",
+      "attributes": {
+        "settlement_amount_rub": 10000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_requests_escalation_115fz_ep4",
+      "source": "vg_alexandrov",
+      "target": "115_fz_compliance",
+      "relation": "requests_escalation_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_confirms_escalation_request_ep4",
+      "source": "bank",
+      "target": "sms_channel",
+      "relation": "confirms_request_via",
+      "attributes": {
+        "request_type": "эскалация 115-ФЗ",
+        "processing_time_days": 5
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_anxiety_ep4",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_anxiety",
+      "relation": "experiences",
+      "attributes": {
+        "intensity": "strong"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "artem_efremov_advises_vg_ep5",
+      "source": "artem_efremov",
+      "target": "vg_alexandrov",
+      "relation": "advises",
+      "attributes": {
+        "advice": "предоставить нотариально заверенный договор дарения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_removes_115fz_restrictions_ep5",
+      "source": "bank",
+      "target": "main_current_account_vg",
+      "relation": "removes_restrictions_from",
+      "attributes": {
+        "reason": "проверка по 115-ФЗ успешно завершена"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_pays_netflix_ep5",
+      "source": "vg_alexandrov",
+      "target": "netflix",
+      "relation": "pays_for",
+      "attributes": {
+        "amount_rub": 999
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_transfers_radim_ep5",
+      "source": "vg_alexandrov",
+      "target": "radim_son",
+      "relation": "transfers_to",
+      "attributes": {
+        "amount_rub": 47500,
+        "purpose": "оплата обучения"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_discovers_magic_quest_charge_ep5",
+      "source": "vg_alexandrov",
+      "target": "magic_quest",
+      "relation": "discovers_unauthorized_charge_for",
+      "attributes": {
+        "amount_rub": 5000,
+        "date": "02.07.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "varvara_daughter_makes_purchase_ep5",
+      "source": "varvara_daughter",
+      "target": "magic_quest",
+      "relation": "makes_purchase_on",
+      "attributes": {
+        "amount_rub": 5000,
+        "method": "привязанная карта отца"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_experiences_relief_fatigue_ep5",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_relief_fatigue",
+      "relation": "experiences",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_detaches_card_ep5",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "detaches_from_devices",
+      "attributes": {
+        "target_person": "Варвара"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_sets_purchase_limit_ep5",
+      "source": "vg_alexandrov",
+      "target": "ep_5",
+      "relation": "sets_limit_on",
+      "attributes": {
+        "limit_rub_month": 500,
+        "target": "детские покупки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_activates_2fa_ep5",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "activates_2fa_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_configures_biometric_access_ep5",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "configures_biometric_access_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_leaves_negative_feedback_ep5",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "leaves_feedback_in",
+      "attributes": {
+        "rating": "2/5",
+        "sentiment": "negative"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_sends_security_recommendations_ep5",
+      "source": "bank",
+      "target": "email_channel",
+      "relation": "sends_recommendations_via",
+      "attributes": {
+        "topic": "повышение безопасности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_verifies_joint_card_limit_ep5",
+      "source": "vg_alexandrov",
+      "target": "joint_debit_card_vg_mb",
+      "relation": "verifies_limit_on",
+      "attributes": {
+        "limit_rub": 150000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_realizes_vigilance_need_ep5",
+      "source": "vg_alexandrov",
+      "target": "digital_financial_freedom",
+      "relation": "realizes_requires_vigilance_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_monitors_transactions_ep5",
+      "source": "vg_alexandrov",
+      "target": "ep_5",
+      "relation": "regularly_monitors_transactions",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_uses_mobile_app_cautiously_ep5",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "uses_cautiously",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_plans_monthly_subscription_review_ep5",
+      "source": "vg_alexandrov",
+      "target": "ep_5",
+      "relation": "plans_monthly_review_of",
+      "attributes": {
+        "topic": "подписки и привязанные карты"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_vg_occurred_in_ep1",
+      "source": "debit_card_vg",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "phishing_website_occurred_in_ep1",
+      "source": "phishing_website",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fastpay_solutions_occurred_in_ep1",
+      "source": "fastpay_solutions",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chargeback_statement_789012_occurred_in_ep2",
+      "source": "chargeback_statement_789012",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_occurred_in_ep1",
+      "source": "bank",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_occurred_in_ep2",
+      "source": "bank",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_occurred_in_ep3",
+      "source": "bank",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_occurred_in_ep4",
+      "source": "bank",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_occurred_in_ep5",
+      "source": "bank",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_anisimova_occurred_in_ep3",
+      "source": "marfa_anisimova",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "scammer_safe_account_occurred_in_ep3",
+      "source": "scammer_safe_account",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_concept_occurred_in_ep1",
+      "source": "fraud_concept",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_concept_occurred_in_ep2",
+      "source": "fraud_concept",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_concept_occurred_in_ep3",
+      "source": "fraud_concept",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_concept_occurred_in_ep5",
+      "source": "fraud_concept",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "115_fz_compliance_occurred_in_ep2",
+      "source": "115_fz_compliance",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "115_fz_compliance_occurred_in_ep3",
+      "source": "115_fz_compliance",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "115_fz_compliance_occurred_in_ep4",
+      "source": "115_fz_compliance",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "115_fz_compliance_occurred_in_ep5",
+      "source": "115_fz_compliance",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "social_engineering_concept_occurred_in_ep3",
+      "source": "social_engineering_concept",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_is_client_of_bank",
+      "source": "vg_alexandrov",
+      "target": "bank",
+      "relation": "is_client_of",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_partner_grishin",
+      "source": "vg_alexandrov",
+      "target": "grishin_miroslav",
+      "relation": "has_partner",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_mother_marfa",
+      "source": "vg_alexandrov",
+      "target": "marfa_anisimova",
+      "relation": "has_mother",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_father_konstantinov",
+      "source": "vg_alexandrov",
+      "target": "konstantinov_georgy",
+      "relation": "has_father",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_son_radim",
+      "source": "vg_alexandrov",
+      "target": "radim_son",
+      "relation": "has_son",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_daughter_varvara",
+      "source": "vg_alexandrov",
+      "target": "varvara_daughter",
+      "relation": "has_daughter",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_acquaintance_darya",
+      "source": "vg_alexandrov",
+      "target": "darya_nekrasova",
+      "relation": "has_acquaintance",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_acquaintance_artem",
+      "source": "vg_alexandrov",
+      "target": "artem_efremov",
+      "relation": "has_acquaintance",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_owns_debit_card",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_owns_credit_card",
+      "source": "vg_alexandrov",
+      "target": "credit_card_vg",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_owns_main_account",
+      "source": "vg_alexandrov",
+      "target": "main_current_account_vg",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_jointly_owns_card",
+      "source": "vg_alexandrov",
+      "target": "joint_debit_card_vg_mb",
+      "relation": "jointly_owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "grishin_miroslav_jointly_owns_card",
+      "source": "grishin_miroslav",
+      "target": "joint_debit_card_vg_mb",
+      "relation": "jointly_owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_anisimova_owns_account",
+      "source": "marfa_anisimova",
+      "target": "marfa_account",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "debit_card_vg_is_target_of_phishing",
+      "source": "phishing_website",
+      "target": "debit_card_vg",
+      "relation": "targets",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "fraud_attempt_15k_is_type_of_fraud",
+      "source": "fastpay_solutions",
+      "target": "fraud_concept",
+      "relation": "is_a_type_of",
+      "attributes": {
+        "amount_rub": 15000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_security_detects_fraud",
+      "source": "bank",
+      "target": "fastpay_solutions",
+      "relation": "detects_fraud_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_blocks_card_due_to_fraud",
+      "source": "bank",
+      "target": "debit_card_vg",
+      "relation": "blocks_due_to_fraud",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_informs_bank_about_fraud",
+      "source": "vg_alexandrov",
+      "target": "bank",
+      "relation": "informs_about_fraud",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "chargeback_statement_targets_fraud",
+      "source": "chargeback_statement_789012",
+      "target": "fastpay_solutions",
+      "relation": "targets_fraud_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_processes_chargeback",
+      "source": "bank",
+      "target": "chargeback_statement_789012",
+      "relation": "processes",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_offers_settlement_for_chargeback",
+      "source": "bank",
+      "target": "chargeback_statement_789012",
+      "relation": "offers_settlement_for",
+      "attributes": {
+        "amount_rub": 10000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_accepts_settlement",
+      "source": "vg_alexandrov",
+      "target": "bank",
+      "relation": "accepts_settlement_from",
+      "attributes": {
+        "amount_rub": 10000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "marfa_receives_fraud_call_is_social_engineering",
+      "source": "marfa_anisimova",
+      "target": "social_engineering_concept",
+      "relation": "victim_of",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "fraud_call_cb_is_type_of_fraud",
+      "source": "sms_channel",
+      "target": "fraud_concept",
+      "relation": "is_a_type_of",
+      "attributes": {
+        "caller_identity": "сотрудник ЦБ РФ"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "marfa_transfers_to_scammer_is_fraud",
+      "source": "marfa_anisimova",
+      "target": "fraud_concept",
+      "relation": "commits_fraudulent_transfer_due_to",
+      "attributes": {
+        "amount_rub": 50000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "scammer_safe_account_receives_fraud_funds",
+      "source": "scammer_safe_account",
+      "target": "marfa_anisimova",
+      "relation": "receives_fraudulent_funds_from",
+      "attributes": {
+        "amount_rub": 50000
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_income_decoy",
+      "source": "vg_alexandrov",
+      "target": "decoy_income_value",
+      "relation": "has_decoy_income",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "financial_goal_laptop_decoy_cost",
+      "source": "financial_goal_laptop",
+      "target": "decoy_laptop_cost_value",
+      "relation": "has_decoy_cost",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "yandex_plus_decoy_cost",
+      "source": "yandex_plus",
+      "target": "decoy_yandex_plus_cost_value",
+      "relation": "has_decoy_cost",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_owns_decoy_debit_card",
+      "source": "vg_alexandrov",
+      "target": "decoy_debit_card_vg_alt",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_manages_finances_via_mobile_app",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "manages_finances_via",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_pays_jku_from_account",
+      "source": "vg_alexandrov",
+      "target": "main_current_account_vg",
+      "relation": "pays_from",
+      "attributes": {
+        "service": "ЖКУ",
+        "amount_rub": 4500
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_transfers_to_miroslav_from_account",
+      "source": "vg_alexandrov",
+      "target": "main_current_account_vg",
+      "relation": "transfers_from",
+      "attributes": {
+        "amount_rub": 10000
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "phishing_sms_from_unknown_number",
+      "source": "sms_channel",
+      "target": "ep_1",
+      "relation": "from_unknown_number",
+      "attributes": {
+        "number": "+7 (903) 123-45-67"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "phishing_sms_requests_link_click",
+      "source": "sms_channel",
+      "target": "phishing_website",
+      "relation": "requests_action_on",
+      "attributes": {
+        "action": "перейти по ссылке для немедленной разблокировки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_irritated_by_possible_failure",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_irritation",
+      "relation": "feels_due_to",
+      "attributes": {
+        "cause": "возможный сбой"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "phishing_website_imitates_bank",
+      "source": "phishing_website",
+      "target": "bank",
+      "relation": "imitates",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_enters_cvv",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "enters_cvv_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "fraud_attempt_15k_by_fastpay",
+      "source": "fastpay_solutions",
+      "target": "debit_card_vg",
+      "relation": "attempts_to_charge",
+      "attributes": {
+        "amount_rub": 15000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_security_system_detects_suspicious",
+      "source": "bank",
+      "target": "fastpay_solutions",
+      "relation": "security_detects_suspicious_activity_from",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_sends_push_about_blocking",
+      "source": "bank",
+      "target": "push_notification",
+      "relation": "sends_notification_about",
+      "attributes": {
+        "event": "блокировка карты и несанкционированное списание"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_feels_confusion_anxiety",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_anxiety",
+      "relation": "feels_confusion_and",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_tries_check_details_mobile_app",
+      "source": "vg_alexandrov",
+      "target": "mobile_app",
+      "relation": "tries_to_check_details_via",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "mobile_app_history_not_displayed",
+      "source": "mobile_app",
+      "target": "ep_1",
+      "relation": "info_not_displayed_in",
+      "attributes": {
+        "section": "История операций"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_irritation_increases",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_irritation",
+      "relation": "increases_due_to",
+      "attributes": {
+        "cause": "сбой в приложении"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_sends_message_to_chat",
+      "source": "vg_alexandrov",
+      "target": "chat_support",
+      "relation": "sends_message_to",
+      "attributes": {
+        "query": "причины блокировки карты и детали подозрительной транзакции"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "chat_bot_reports_high_load",
+      "source": "chat_support",
+      "target": "ep_1",
+      "relation": "chat_bot_reports",
+      "attributes": {
+        "status": "высокая загрузка",
+        "waiting_time": "до 30 минут"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_frustration_from_waiting",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_frustration",
+      "relation": "feels_due_to",
+      "attributes": {
+        "cause": "несоответствие ожиданиям немедленного решения"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_realizes_card_compromised",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "realizes_compromised",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_realizes_potential_loss",
+      "source": "vg_alexandrov",
+      "target": "ep_1",
+      "relation": "realizes_potential_loss",
+      "attributes": {
+        "amount_rub": 15000
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_decides_to_wait_chat",
+      "source": "vg_alexandrov",
+      "target": "chat_support",
+      "relation": "decides_to_wait_for_operator_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_plans_card_reissue",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "plans_reissue_of",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_irritated_by_chat_wait",
+      "source": "vg_alexandrov",
+      "target": "emotional_state_irritation",
+      "relation": "feels_due_to",
+      "attributes": {
+        "cause": "2 часа ожидания в чате"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_employee_requests_id_data",
+      "source": "bank",
+      "target": "vg_alexandrov",
+      "relation": "requests_id_data_from",
+      "attributes": {
+        "data_type": "серия и номер паспорта, кодовое слово"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_provides_codeword",
+      "source": "vg_alexandrov",
+      "target": "ep_2",
+      "relation": "provides_codeword",
+      "attributes": {
+        "codeword": "Калининград"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_confirms_debit_card_compromised",
+      "source": "bank",
+      "target": "debit_card_vg",
+      "relation": "confirms_compromised",
+      "attributes": {
+        "reason": "фишинговая атака"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_informs_chargeback_duration",
+      "source": "bank",
+      "target": "vg_alexandrov",
+      "relation": "informs_about_chargeback_duration",
+      "attributes": {
+        "duration": "до 30 календарных дней"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "vg_alexandrov_agrees_reissue_reluctantly",
+      "source": "vg_alexandrov",
+      "target": "debit_card_vg",
+      "relation": "agrees_to_reissue_reluctantly",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "vg_alexandrov_digital_life_paralyzed",
+      "source": "vg_alexandrov",
+      "target": "digital_financial_freedom",
+      "relation": "feels_paralyzed_without",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n1",
+      "source": "ep_1",
+      "target": "passport_data_vg",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n2",
+      "source": "phishing_website",
+      "target": "passport_data_vg",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n3",
+      "source": "varvara_daughter",
+      "target": "gameworld",
+      "relation": "related_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n4",
+      "source": "decoy_debit_card_vg_alt",
+      "target": "ep_3",
+      "relation": "had_rate",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n5",
+      "source": "decoy_debit_card_vg_alt",
+      "target": "scammer_safe_account",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n6",
+      "source": "passport_data_vg",
+      "target": "artem_efremov",
+      "relation": "paid",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n7",
+      "source": "darya_nekrasova",
+      "target": "credit_card_vg",
+      "relation": "received",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n8",
+      "source": "radim_son",
+      "target": "gameworld",
+      "relation": "contains",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n9",
+      "source": "hotline_channel",
+      "target": "chat_support",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n10",
+      "source": "decoy_laptop_cost_value",
+      "target": "decoy_debit_card_vg_alt",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n11",
+      "source": "bank_branch",
+      "target": "darya_nekrasova",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n12",
+      "source": "konstantinov_georgy",
+      "target": "sms_channel",
+      "relation": "related_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n13",
+      "source": "varvara_daughter",
+      "target": "artem_efremov",
+      "relation": "had_rate",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n14",
+      "source": "ep_2",
+      "target": "email_channel",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n15",
+      "source": "konstantinov_georgy",
+      "target": "chargeback_statement_789012",
+      "relation": "paid",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n16",
+      "source": "chargeback_statement_789012",
+      "target": "emotional_state_anxiety",
+      "relation": "received",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n17",
+      "source": "bank_branch",
+      "target": "sberprime",
+      "relation": "contains",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n18",
+      "source": "varvara_daughter",
+      "target": "emotional_state_anxiety",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n19",
+      "source": "email_channel",
+      "target": "bank",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n20",
+      "source": "main_current_account_vg",
+      "target": "kaliningrad_branch_leninsky_130",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n21",
+      "source": "joint_debit_card_vg_mb",
+      "target": "bank_branch",
+      "relation": "related_to",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n22",
+      "source": "kaliningrad_branch_leninsky_130",
+      "target": "decoy_income_value",
+      "relation": "had_rate",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n23",
+      "source": "115_fz_compliance",
+      "target": "darya_nekrasova",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n24",
+      "source": "doc_2ndfl",
+      "target": "radim_son",
+      "relation": "paid",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n25",
+      "source": "emotional_state_frustration",
+      "target": "emotional_state_irritation",
+      "relation": "received",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_n27",
+      "source": "chargeback_statement_789012",
+      "target": "mobile_app",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

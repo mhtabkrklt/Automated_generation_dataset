@@ -1,0 +1,27 @@
+{
+  "knowledge_update": [
+    {
+      "question": "На сколько процентных пунктов ставка по автокредиту, рекомендованному знакомым клиента-прокурора, превышала доходность накопительного вклада, который его мать открыла в тот же период в другом банке?",
+      "answer": "7.5%",
+      "answer_format": "X.X%",
+      "reasoning_path": [
+        "person_volkov_stepan --[resulted_in]--> person_silantiy_potapov | rate: 15.5% | bank: МегаКредит (автокредит, рекомендованный знакомым)",
+        "person_hohlova_yuliya --[resulted_in]--> deposit_nadezhny | rate: 8.0% (накопительный вклад матери)",
+        "вычисление: 15.5% − 8.0% = 7.5%"
+      ],
+      "capability": "knowledge_update",
+      "difficulty": "hard",
+      "source_node_ids": [
+        "person_volkov_stepan",
+        "person_silantiy_potapov",
+        "person_hohlova_yuliya",
+        "deposit_nadezhny"
+      ],
+      "decoy_answers": [
+        "7.3%",
+        "7.7%",
+        "8.0%"
+      ]
+    }
+  ]
+}

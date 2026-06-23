@@ -1,0 +1,2286 @@
+{
+  "nodes": [
+    {
+      "id": "person_maya_gordeeva",
+      "type": "person",
+      "label": "Майя Кузьминична Гордеева",
+      "attributes": {
+        "age": "27",
+        "gender": "female",
+        "occupation": "инженер-строитель",
+        "income": "68000 руб.",
+        "city": "п. Тавда",
+        "role": "client"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_petrov_iv",
+      "type": "person",
+      "label": "Петров И.В.",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_ivanov_as",
+      "type": "person",
+      "label": "Иванов А.С.",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "person_sidorov_kl",
+      "type": "person",
+      "label": "Сидоров К.Л.",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "person_ivanov_ap",
+      "type": "person",
+      "label": "Иванов А.П.",
+      "attributes": {
+        "role": "acquaintance"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "transaction_mobile_topup_500_10012024",
+      "type": "event",
+      "label": "Пополнение мобильного телефона",
+      "attributes": {
+        "type": "mobile_topup",
+        "amount": "500 руб.",
+        "date": "10.01.2024",
+        "status": "completed",
+        "channel": "mobile_app"
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "transaction_mobile_topup_300_10022024",
+      "type": "event",
+      "label": "Пополнение мобильного телефона",
+      "attributes": {
+        "type": "mobile_topup",
+        "amount": "300 руб.",
+        "date": "10.02.2024",
+        "status": "completed",
+        "channel": "mobile_app"
+      },
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "transaction_mobile_topup_1000_01032024",
+      "type": "event",
+      "label": "Пополнение транспортной карты",
+      "attributes": {
+        "type": "transport_card_topup",
+        "amount": "1000 руб.",
+        "date": "01.03.2024",
+        "status": "completed",
+        "channel": "mobile_app"
+      },
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "Банк 'Надежный'",
+      "attributes": {
+        "type": "коммерческий банк",
+        "region": "Россия"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "product",
+      "label": "Накопительный счет 'Стабильность'",
+      "attributes": {
+        "type": "накопительный счет",
+        "interest_rate": "13.8% годовых",
+        "capitalization_frequency": "ежемесячно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Вклад 'Доходный'",
+      "attributes": {
+        "type": "срочный вклад",
+        "interest_rate": "13.5% годовых",
+        "capitalization_frequency": "ежеквартально",
+        "opening_date": "10.09.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "document",
+      "label": "Выписка по дебетовому счету",
+      "attributes": {
+        "period": "декабрь 2023",
+        "status": "запрошена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "person",
+      "label": "Глафира Евгеньевна Рябова",
+      "attributes": {
+        "role": "mother",
+        "age": "65",
+        "gender": "female"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "product",
+      "label": "Вклад 'Семейный'",
+      "attributes": {
+        "type": "срочный вклад",
+        "power_of_attorney_option": "да",
+        "interest_rate": "13.9% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "event",
+      "label": "Оплата услуг ЖКХ",
+      "attributes": {
+        "type": "bill_payment",
+        "amount": "3800 руб.",
+        "date": "09.01.2024",
+        "status": "исполнен",
+        "period": "январь 2024",
+        "commission": "0 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "person",
+      "label": "Авдеев Константин Витальевич",
+      "attributes": {
+        "role": "партнер",
+        "gender": "male"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "product",
+      "label": "Кредитная карта",
+      "attributes": {
+        "type": "кредитная карта",
+        "grace_period": "120 дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Push-уведомление о кредитной карте",
+      "attributes": {
+        "type": "offer",
+        "date": "09.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "SMS-уведомление о кэшбэке",
+      "attributes": {
+        "type": "cashback_accrual",
+        "amount": "120 руб.",
+        "date": "28.01.2024",
+        "period": "январь"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "account",
+      "label": "Совместный счет",
+      "attributes": {
+        "type": "совместный дебетовый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Дебетовая карта Visa Classic",
+      "attributes": {
+        "type": "debit",
+        "brand": "Visa Classic"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД",
+      "attributes": {
+        "type": "bill_payment",
+        "amount": "250 руб.",
+        "date": "28.01.2024",
+        "status": "исполнен",
+        "fine_number": "12345"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "product",
+      "label": "Накопительный счет 'Родственный'",
+      "attributes": {
+        "type": "накопительный счет",
+        "interest_rate": "14% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "SWIFT-перевод",
+      "attributes": {
+        "type": "international_transfer",
+        "amount_foreign": "100 EUR",
+        "amount_rub": "9800 руб.",
+        "date": "05.02.2024",
+        "currency": "EUR",
+        "commission_foreign": "15 EUR",
+        "destination_country": "Грузия",
+        "purpose": "оплата онлайн-курсов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Уведомление о начислении НДФЛ",
+      "attributes": {
+        "type": "tax_notification",
+        "amount": "7200 руб.",
+        "source": "продажа ценных бумаг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "product",
+      "label": "Вклад 'Привилегия'",
+      "attributes": {
+        "type": "срочный вклад",
+        "interest_rate": "14.2% годовых"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "event",
+      "label": "SMS-предложение 'Вклад Привилегия'",
+      "attributes": {
+        "type": "offer",
+        "date": "05.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Посещение отделения банка",
+      "attributes": {
+        "type": "consultation",
+        "date": "15.02.2024",
+        "purpose": "обсуждение сберегательных продуктов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "document",
+      "label": "Доверенность",
+      "attributes": {
+        "type": "доверенность на управление счетом",
+        "beneficiary": "Глафира Евгеньевна Рябова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "person",
+      "label": "Кулагина Вероника Кузьминична",
+      "attributes": {
+        "role": "дальняя родственница",
+        "gender": "female"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Пополнение мобильного телефона Кулагиной В.К.",
+      "attributes": {
+        "type": "mobile_topup",
+        "amount": "300 руб.",
+        "date": "10.02.2024",
+        "channel": "mobile_app"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Попытка оплаты строительных материалов",
+      "attributes": {
+        "type": "purchase",
+        "amount": "55000 руб.",
+        "date": "10.02.2024",
+        "status": "отклонена",
+        "reason": "превышение лимита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Дневной лимит по карте",
+      "attributes": {
+        "type": "spending_limit",
+        "amount": "50000 руб.",
+        "currency": "руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Звонок в банк",
+      "attributes": {
+        "type": "customer_support_call",
+        "date": "10.02.2024",
+        "purpose": "уточнение лимита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Финансовая цель 'Подушка безопасности'",
+      "attributes": {
+        "target_amount": "1.5 млн руб.",
+        "status": "в процессе"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "person",
+      "label": "Василиса Гордеева",
+      "attributes": {
+        "role": "дочь",
+        "age": "0",
+        "gender": "female"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "event",
+      "label": "Анализ расходов и поступлений",
+      "attributes": {
+        "date": "10.01.2024",
+        "method": "просмотр выписки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "event",
+      "label": "Изучение пенсионных накоплений",
+      "attributes": {
+        "date": "10.01.2024",
+        "beneficiary": "Глафира Евгеньевна Рябова"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "event",
+      "label": "Обсуждение совместного накопительного счета",
+      "attributes": {
+        "date": "09.01.2024",
+        "participants": "Майя Гордеева, Константин Авдеев",
+        "outcome": "отказ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "event",
+      "label": "Проверка статуса платежей",
+      "attributes": {
+        "date": "09.01.2024",
+        "transaction_type": "ЖКХ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Получение SMS о кэшбэке",
+      "attributes": {
+        "date": "28.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Изменение дневного лимита",
+      "attributes": {
+        "date": "27.01.2024",
+        "agent": "Авдеев Константин Витальевич"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Просмотр предложений банка",
+      "attributes": {
+        "date": "05.02.2024",
+        "purpose": "поиск сберегательных продуктов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Запрос консультации по налогообложению",
+      "attributes": {
+        "date": "05.02.2024",
+        "topic": "доходы от ценных бумаг"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Уточнение условий пополнения/снятия",
+      "attributes": {
+        "date": "05.02.2024",
+        "product": "Накопительный счет 'Родственный'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Получение SMS-предложения",
+      "attributes": {
+        "date": "05.02.2024",
+        "product": "Вклад 'Привилегия'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Проверка истории операций по карте",
+      "attributes": {
+        "date": "05.02.2024",
+        "card": "Дебетовая карта Visa Classic"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Запись на консультацию к менеджеру",
+      "attributes": {
+        "date": "05.02.2024",
+        "appointment_date": "15.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Уточнение документов для доверенности",
+      "attributes": {
+        "date": "05.02.2024",
+        "document": "Доверенность"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Пополнение мобильного Кулагиной В.К.",
+      "attributes": {
+        "date": "10.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Попытка оплаты строительных материалов",
+      "attributes": {
+        "date": "10.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Уточнение нового лимита",
+      "attributes": {
+        "date": "10.02.2024",
+        "method": "звонок в банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "account",
+      "label": "Сберегательный счет для дочери",
+      "attributes": {
+        "type": "сберегательный",
+        "beneficiary": "Василиса Гордеева",
+        "status": "планируется"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "document",
+      "label": "Уведомление об изменении условий",
+      "attributes": {
+        "type": "банковское уведомление",
+        "topic": "комиссии, условия обслуживания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Получение push-уведомления",
+      "attributes": {
+        "date": "09.01.2024",
+        "content": "предложение кредитной карты"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Получение уведомления о новом предложении",
+      "attributes": {
+        "date": "09.01.2024",
+        "product": "Накопительный счет 'Стабильность'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Запрос выписки по счету",
+      "attributes": {
+        "date": "10.01.2024",
+        "account_number": "40817810000001234567"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Обнаружение различий в условиях",
+      "attributes": {
+        "date": "10.01.2024",
+        "products": "Накопительный счет 'Стабильность', Вклад 'Доходный'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Планирование обращения в банк",
+      "attributes": {
+        "date": "10.01.2024",
+        "purpose": "получение объяснений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Поступление перевода от Иванова А.С.",
+      "attributes": {
+        "date": "28.01.2024",
+        "amount": "1500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "event",
+      "label": "Оплата штрафа ГИБДД",
+      "attributes": {
+        "date": "28.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "event",
+      "label": "Отправка SWIFT-перевода",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "event",
+      "label": "Получение уведомления о НДФЛ",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_conducts_mobile_topup_500_10012024",
+      "source": "person_maya_gordeeva",
+      "target": "transaction_mobile_topup_500_10012024",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfers_to_petrov_iv_5000_10012024",
+      "source": "person_maya_gordeeva",
+      "target": "person_petrov_iv",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5000 руб.",
+        "date": "10.01.2024",
+        "method": "СБП",
+        "purpose": "совместная покупка строительных материалов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_transfers_to_ivanov_as_1500_28012024",
+      "source": "person_ivanov_as",
+      "target": "person_maya_gordeeva",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1500 руб.",
+        "date": "28.01.2024",
+        "purpose": "возврат долга"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 2
+    },
+    {
+      "id": "e_conducts_mobile_topup_300_10022024",
+      "source": "person_maya_gordeeva",
+      "target": "transaction_mobile_topup_300_10022024",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transfers_to_sidorov_kl_5200_10022024",
+      "source": "person_maya_gordeeva",
+      "target": "person_sidorov_kl",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5200 руб.",
+        "date": "10.02.2024",
+        "method": "СБП",
+        "purpose": "совместный заказ товаров для дома"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_transfers_to_ivanov_ap_2000_20022024",
+      "source": "person_maya_gordeeva",
+      "target": "person_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "2000 руб.",
+        "date": "20.02.2024",
+        "purpose": "совместная покупка билетов на концерт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_conducts_mobile_topup_1000_01032024",
+      "source": "person_maya_gordeeva",
+      "target": "transaction_mobile_topup_1000_01032024",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_27",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_48",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "ctx_node_48",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_2",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "similarity_reason": "высокая ставка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_49",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_49",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_4",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_29",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_50",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_50",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "ctx_node_50",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_30",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_30",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "онлайн-банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_32",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_32",
+      "target": "ctx_node_7",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_8",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_31",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_1",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_47",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_47",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_52",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "ctx_node_52",
+      "target": "person_ivanov_as",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_33",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_33",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_8",
+      "target": "ctx_node_34",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_34",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "ctx_node_13",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_53",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_53",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "mobile_app"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_35",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_35",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_15",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "similarity_reason": "название, ставка"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_54",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_54",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_55",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_55",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_36",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_37",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_37",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_37",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_38",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_38",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_19",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_39",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_39",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_40",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "ctx_node_40",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_41",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "ctx_node_41",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_41",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_42",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_42",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_23",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_43",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_43",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_24",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_44",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "ctx_node_44",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "ctx_node_26",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "ctx_node_2",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "ctx_node_3",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_15",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_18",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_12",
+      "target": "person_maya_gordeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_12",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_13",
+      "target": "person_maya_gordeeva",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_13",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_25",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_28",
+      "target": "person_maya_gordeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_5",
+      "target": "person_maya_gordeeva",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_22",
+      "target": "person_maya_gordeeva",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "дальняя"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "ctx_node_27",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_45",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_17",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_51",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_37",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_41",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_34",
+      "target": "ctx_node_25",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_25",
+      "target": "ctx_node_24",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_26",
+      "target": "ctx_node_25",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_13",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_12",
+      "target": "ctx_node_13",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_1",
+      "target": "ctx_node_10",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_10",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_10",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_1",
+      "target": "ctx_node_11",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_11",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_1",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "ctx_node_19",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_19",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_1",
+      "target": "ctx_node_46",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_46",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_1",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_17",
+      "target": "person_maya_gordeeva",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_1",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "ctx_node_21",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_20",
+      "target": "person_maya_gordeeva",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "ctx_node_20",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "location_type": "отделение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_maya_gordeeva",
+      "target": "person_petrov_iv",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5500 руб.",
+        "date": "10.11.2023",
+        "method": "СБП",
+        "purpose": "совместная покупка строительных материалов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_maya_gordeeva",
+      "target": "person_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1800 руб.",
+        "date": "20.01.2024",
+        "purpose": "совместная покупка билетов на концерт"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_maya_gordeeva",
+      "target": "person_sidorov_kl",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4680 руб.",
+        "date": "10.12.2023",
+        "method": "СБП",
+        "purpose": "совместный заказ товаров для дома"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "person_ivanov_as",
+      "target": "ctx_node_54",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1350 руб.",
+        "date": "28.01.2024",
+        "purpose": "возврат долга"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_22",
+      "target": "person_sidorov_kl",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5148 руб.",
+        "date": "10.12.2023",
+        "method": "СБП",
+        "purpose": "совместный заказ товаров для дома"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_37",
+      "target": "person_petrov_iv",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4950 руб.",
+        "date": "10.11.2023",
+        "method": "СБП",
+        "purpose": "совместная покупка строительных материалов"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_22",
+      "target": "person_ivanov_ap",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "1800 руб.",
+        "date": "20.02.2024",
+        "purpose": "совместная покупка билетов на концерт"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_12",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "similarity_reason": "высокая ставка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "person_maya_gordeeva",
+      "target": "person_petrov_iv",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4680 руб.",
+        "date": "10.02.2024",
+        "method": "СБП",
+        "purpose": "совместный заказ товаров для дома"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_50",
+      "target": "person_petrov_iv",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "5500 руб.",
+        "date": "10.01.2024",
+        "method": "СБП",
+        "purpose": "совместная покупка строительных материалов"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_2",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "similarity_reason": "высокая ставка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_20",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "location_type": "отделение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_50",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4950 руб.",
+        "date": "10.11.2023",
+        "method": "СБП",
+        "purpose": "совместная покупка строительных материалов"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_28",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "онлайн-банк"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_maya_gordeeva",
+      "target": "transaction_mobile_topup_500_10012024",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4680 руб.",
+        "date": "10.02.2024",
+        "method": "СБП",
+        "purpose": "совместный заказ товаров для дома"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_2",
+      "target": "ctx_node_8",
+      "relation": "resulted_in",
+      "attributes": {
+        "similarity_reason": "высокая ставка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_15",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "similarity_reason": "название, ставка"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_53",
+      "target": "transaction_mobile_topup_500_10012024",
+      "relation": "resulted_in",
+      "attributes": {
+        "channel": "mobile_app"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "person_maya_gordeeva",
+      "target": "ctx_node_5",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4500 руб.",
+        "date": "10.01.2024",
+        "method": "СБП",
+        "purpose": "совместная покупка строительных материалов"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_54",
+      "target": "person_sidorov_kl",
+      "relation": "transferred_to",
+      "attributes": {
+        "amount": "4680 руб.",
+        "date": "10.02.2024",
+        "method": "СБП",
+        "purpose": "совместный заказ товаров для дома"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_maya_gordeeva",
+      "source": "person_maya_gordeeva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_petrov_iv",
+      "source": "person_petrov_iv",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_ivanov_as",
+      "source": "person_ivanov_as",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_sidorov_kl",
+      "source": "person_sidorov_kl",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_ivanov_ap",
+      "source": "person_ivanov_ap",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_transaction_mobile_topup_500_10012024",
+      "source": "transaction_mobile_topup_500_10012024",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_transaction_mobile_topup_300_10022024",
+      "source": "transaction_mobile_topup_300_10022024",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_transaction_mobile_topup_1000_01032024",
+      "source": "transaction_mobile_topup_1000_01032024",
+      "target": "ep_5",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

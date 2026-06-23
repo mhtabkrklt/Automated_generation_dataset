@@ -1,0 +1,2813 @@
+{
+  "nodes": [
+    {
+      "id": "person_Lidiya_Soboleva",
+      "type": "person",
+      "label": "Соболева Лидия Ивановна",
+      "attributes": {
+        "age": "70 лет",
+        "occupation": "критик",
+        "location": "клх Шереметьево",
+        "income": "156000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "loan_mortgage_789012",
+      "type": "product",
+      "label": "Ипотечный кредит",
+      "attributes": {
+        "type": "mortgage",
+        "amount": "10000000 руб.",
+        "term": "20 лет",
+        "status": "одобрено",
+        "number": "ИПОТ-2024-001"
+      },
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "ПАО Сбербанк",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "document",
+      "label": "Заявка на ипотеку",
+      "attributes": {
+        "type": "application",
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "product",
+      "label": "Потребительский кредит",
+      "attributes": {
+        "type": "consumer_loan",
+        "amount": "1500000 руб.",
+        "rate": "18.5%",
+        "status": "действующий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "organization",
+      "label": "Банк ВТБ",
+      "attributes": {
+        "type": "банк",
+        "region": "Москва"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "document",
+      "label": "Предварительный расчет ипотеки",
+      "attributes": {
+        "type": "calculation",
+        "date": "15.01.2024",
+        "rate": "15.5%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "document",
+      "label": "Справка 2-НДФЛ",
+      "attributes": {
+        "type": "income_proof",
+        "status": "проблема с получением"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "document",
+      "label": "Выписка из банка",
+      "attributes": {
+        "type": "income_proof",
+        "period": "6 месяцев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "document",
+      "label": "Справка по форме банка",
+      "attributes": {
+        "type": "income_proof"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "document",
+      "label": "Предварительное одобрение ипотеки",
+      "attributes": {
+        "type": "pre_approval",
+        "date": "17.01.2024",
+        "rate": "15.0%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "person",
+      "label": "Лавр Соболев",
+      "attributes": {
+        "relation": "внук",
+        "email": "lavr.sobolev@example.com"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "document",
+      "label": "Паспорт РФ",
+      "attributes": {
+        "series": "4500",
+        "number": "123456"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "person",
+      "label": "Кир Кудряшов",
+      "attributes": {
+        "relation": "партнер"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "product",
+      "label": "Потребительский кредит Кира",
+      "attributes": {
+        "type": "consumer_loan",
+        "amount": "1450000 руб.",
+        "rate": "19%",
+        "status": "не взят"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "product",
+      "label": "Страхование жизни и здоровья",
+      "attributes": {
+        "type": "insurance",
+        "benefit": "снижение ставки"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "person",
+      "label": "Агафья Моисеева",
+      "attributes": {
+        "relation": "подруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "event",
+      "label": "Негативный опыт с кредитом",
+      "attributes": {
+        "description": "скрытые комиссии",
+        "source": "другой банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "amount",
+      "label": "Комиссия за оценку недвижимости",
+      "attributes": {
+        "amount": "5000 руб.",
+        "status": "будет оплачена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "document",
+      "label": "Заявка на рефинансирование",
+      "attributes": {
+        "type": "application",
+        "status": "подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "document",
+      "label": "Справка об остатке задолженности",
+      "attributes": {
+        "type": "debt_proof",
+        "source": "Банк ВТБ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "SMS-уведомление об одобрении",
+      "attributes": {
+        "date": "20.01.2024",
+        "recipient": "+7(903)123-45-67"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "product",
+      "label": "Личный кабинет банка",
+      "attributes": {
+        "status": "настроен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "product",
+      "label": "Страхование титула",
+      "attributes": {
+        "type": "insurance",
+        "cost_percent": "0.3%"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "document",
+      "label": "Выписка из ЕГРН",
+      "attributes": {
+        "type": "property_document"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "document",
+      "label": "Договор купли-продажи",
+      "attributes": {
+        "type": "property_document"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "event",
+      "label": "Проблемы с оценкой дачи",
+      "attributes": {
+        "description": "заниженная оценка",
+        "person": "Агафья Моисеева"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "organization",
+      "label": "Аккредитованный оценщик",
+      "attributes": {
+        "type": "service_provider"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "product",
+      "label": "Потребительский кредит Кира (новая заявка)",
+      "attributes": {
+        "type": "consumer_loan",
+        "amount": "1480000 руб.",
+        "rate": "18.8%",
+        "status": "заявка подана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "document",
+      "label": "СНИЛС",
+      "attributes": {
+        "type": "identification"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "document",
+      "label": "ИНН",
+      "attributes": {
+        "type": "identification"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "document",
+      "label": "Кредитный договор (потребительский)",
+      "attributes": {
+        "type": "loan_agreement",
+        "source": "Банк ВТБ"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "product",
+      "label": "Вклад Лавра",
+      "attributes": {
+        "type": "deposit",
+        "amount": "98000 руб.",
+        "term": "6 месяцев",
+        "source": "другой банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "product",
+      "label": "Вклад в банке",
+      "attributes": {
+        "type": "deposit",
+        "rate": "16%",
+        "term": "6 месяцев",
+        "features": "с пополнением"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "event",
+      "label": "Новая квартира",
+      "attributes": {
+        "location": "клх Шереметьево",
+        "type": "apartment"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "event",
+      "label": "Консультация по ипотеке и рефинансированию",
+      "attributes": {
+        "date": "15.01.2024",
+        "location": "отделение банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Первоначальный взнос",
+      "attributes": {
+        "amount": "2000000 руб.",
+        "method": "наличные"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Статус заявки на ипотеку",
+      "attributes": {
+        "value": "на рассмотрении",
+        "date": "15.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Статус заявки на рефинансирование",
+      "attributes": {
+        "value": "на рассмотрении",
+        "date": "18.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Ежемесячный платеж (потребительский)",
+      "attributes": {
+        "value": "35000 руб.",
+        "status": "текущий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Желаемый ежемесячный платеж (рефинансирование)",
+      "attributes": {
+        "value": "25000 руб.",
+        "status": "цель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Статус ипотечного кредита",
+      "attributes": {
+        "value": "одобрено",
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Электронная почта",
+      "attributes": {
+        "recipient": "Лавр Соболев",
+        "purpose": "отправка условий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Проверка данных паспорта",
+      "attributes": {
+        "date": "17.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Обсуждение потребительского кредита Кира",
+      "attributes": {
+        "date": "17.01.2024",
+        "location": "другой банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Согласие на предоставление документов",
+      "attributes": {
+        "date": "17.01.2024",
+        "deadline": "3 дня"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Подача заявки на рефинансирование",
+      "attributes": {
+        "date": "18.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Одобрение ипотеки",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "event",
+      "label": "Настройка личного кабинета",
+      "attributes": {
+        "date": "20.01.2024",
+        "helper": "Лавр Соболев"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Обсуждение страхования титула",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Напоминание о документах на квартиру",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Уведомление о заявке Кира",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "event",
+      "label": "Запрос документов для рефинансирования",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "event",
+      "label": "Обсуждение вклада",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_53",
+      "type": "organization",
+      "label": "Риэлторское агентство 'Дом Мечты'",
+      "attributes": {
+        "type": "агентство",
+        "service": "поиск недвижимости"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_54",
+      "type": "person",
+      "label": "Менеджер банка",
+      "attributes": {
+        "name": "Иванов Иван"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_55",
+      "type": "document",
+      "label": "Договор ипотеки",
+      "attributes": {
+        "status": "подписан",
+        "date": "27.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_56",
+      "type": "document",
+      "label": "Договор рефинансирования",
+      "attributes": {
+        "status": "ожидает подписания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_57",
+      "type": "event",
+      "label": "Дача Агафьи Моисеевой",
+      "attributes": {
+        "type": "дача",
+        "status": "продана"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_58",
+      "type": "event",
+      "label": "Оценка недвижимости",
+      "attributes": {
+        "status": "предстоит"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_59",
+      "type": "document",
+      "label": "Справка о доходах по форме банка",
+      "attributes": {
+        "type": "income_proof",
+        "status": "предоставлена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_60",
+      "type": "document",
+      "label": "Выписка из банка о доходах",
+      "attributes": {
+        "type": "income_proof",
+        "status": "предоставлена"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_61",
+      "type": "event",
+      "label": "Передача документов для подтверждения дохода",
+      "attributes": {
+        "date": "19.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_62",
+      "type": "event",
+      "label": "Одобрение рефинансирования",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_63",
+      "type": "event",
+      "label": "Статус рефинансирования",
+      "attributes": {
+        "value": "одобрено",
+        "date": "25.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_64",
+      "type": "product",
+      "label": "Рефинансированный потребительский кредит",
+      "attributes": {
+        "type": "consumer_loan",
+        "amount": "1500000 руб.",
+        "rate": "14.0%",
+        "term": "5 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_65",
+      "type": "event",
+      "label": "Ежемесячный платеж (рефинансированный)",
+      "attributes": {
+        "value": "25000 руб.",
+        "status": "планируемый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_66",
+      "type": "event",
+      "label": "Подписание договора рефинансирования",
+      "attributes": {
+        "date": "28.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_67",
+      "type": "event",
+      "label": "Перечисление средств на погашение старого кредита",
+      "attributes": {
+        "date": "29.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_68",
+      "type": "document",
+      "label": "Справка о погашении кредита",
+      "attributes": {
+        "source": "Банк ВТБ",
+        "status": "ожидается"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_69",
+      "type": "event",
+      "label": "Выбор новой квартиры",
+      "attributes": {
+        "date": "23.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_70",
+      "type": "document",
+      "label": "Предварительный договор купли-продажи",
+      "attributes": {
+        "date": "24.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_71",
+      "type": "event",
+      "label": "Заказ оценки недвижимости",
+      "attributes": {
+        "date": "25.01.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_72",
+      "type": "document",
+      "label": "Отчет об оценке недвижимости",
+      "attributes": {
+        "date": "26.01.2024",
+        "value": "10500000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_73",
+      "type": "event",
+      "label": "Регистрация права собственности",
+      "attributes": {
+        "date": "05.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_74",
+      "type": "document",
+      "label": "Выписка из ЕГРН (новая)",
+      "attributes": {
+        "status": "получена",
+        "date": "06.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_75",
+      "type": "event",
+      "label": "Перечисление ипотечных средств",
+      "attributes": {
+        "date": "07.02.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_76",
+      "type": "event",
+      "label": "Покупка страхового полиса",
+      "attributes": {
+        "date": "27.01.2024",
+        "type": "жизнь и здоровье"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_77",
+      "type": "event",
+      "label": "Покупка страхового полиса титула",
+      "attributes": {
+        "date": "27.01.2024",
+        "type": "титул"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_78",
+      "type": "organization",
+      "label": "Страховая компания 'Надежда'",
+      "attributes": {
+        "type": "страховая компания"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_79",
+      "type": "document",
+      "label": "Страховой полис",
+      "attributes": {
+        "type": "жизнь и здоровье",
+        "provider": "Страховая компания 'Надежда'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_80",
+      "type": "document",
+      "label": "Страховой полис титула",
+      "attributes": {
+        "type": "титул",
+        "provider": "Страховая компания 'Надежда'"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_6",
+      "type": "episode",
+      "label": "Эпизод 6",
+      "attributes": {
+        "order": 6
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_7",
+      "type": "episode",
+      "label": "Эпизод 7",
+      "attributes": {
+        "order": 7
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_8",
+      "type": "episode",
+      "label": "Эпизод 8",
+      "attributes": {
+        "order": 8
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_applies_for_mortgage_1",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2024",
+        "initial_payment": "2000000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_mortgage_rate_1",
+      "source": "loan_mortgage_789012",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15.5%",
+        "date": "15.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_mortgage_rate_2",
+      "source": "loan_mortgage_789012",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15.0%",
+        "date": "17.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_mortgage_rate_3",
+      "source": "loan_mortgage_789012",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.5%",
+        "date": "22.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_mortgage_rate_4",
+      "source": "loan_mortgage_789012",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.2%",
+        "date": "09.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_mortgage_rate_5",
+      "source": "loan_mortgage_789012",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "14.0%",
+        "date": "15.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 7
+    },
+    {
+      "id": "e_has_monthly_payment_1",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "131000 руб.",
+        "date": "15.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_has_monthly_payment_2",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "128000 руб.",
+        "date": "01.02.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 5
+    },
+    {
+      "id": "e_has_monthly_payment_3",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "126500 руб.",
+        "date": "09.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 6
+    },
+    {
+      "id": "e_signed_mortgage_contract",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "signed",
+      "attributes": {
+        "date": "27.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.01.2024",
+        "purpose": "ипотека и рефинансирование"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_2",
+      "relation": "submitted",
+      "attributes": {
+        "date": "15.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "ctx_node_2",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "source_bank": "Банк ВТБ"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "ctx_node_3",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_5",
+      "relation": "received",
+      "attributes": {
+        "date": "15.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_5",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "частичная выплата наличными"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_1",
+      "target": "ctx_node_7",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_1",
+      "target": "ctx_node_8",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_9",
+      "relation": "received",
+      "attributes": {
+        "date": "17.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_9",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_10",
+      "relation": "applied_for",
+      "attributes": {
+        "purpose": "получение информации"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_1",
+      "target": "ctx_node_11",
+      "relation": "applied_for",
+      "attributes": {
+        "purpose": "проверка личности"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "ctx_node_12",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "17.01.2024",
+        "location": "другой банк"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "ctx_node_1",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "benefit": "снижение ставки"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_15",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "ctx_node_15",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_1",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "прописана в договоре"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_18",
+      "relation": "submitted",
+      "attributes": {
+        "date": "18.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_18",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_18",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_38",
+      "relation": "paid",
+      "attributes": {
+        "loan_type": "consumer"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_39",
+      "relation": "paid",
+      "attributes": {
+        "loan_type": "refinanced_consumer"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_40",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_1",
+      "target": "ctx_node_20",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "ctx_node_10",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "ctx_node_1",
+      "target": "ctx_node_23",
+      "relation": "applied_for",
+      "attributes": {
+        "purpose": "оценка недвижимости"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "ctx_node_1",
+      "target": "ctx_node_24",
+      "relation": "applied_for",
+      "attributes": {
+        "purpose": "оценка недвижимости"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "ctx_node_15",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "ctx_node_1",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_27",
+      "relation": "received",
+      "attributes": {
+        "date": "20.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_12",
+      "target": "ctx_node_27",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_1",
+      "target": "ctx_node_11",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "ctx_node_1",
+      "target": "ctx_node_28",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "ctx_node_1",
+      "target": "ctx_node_29",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "applied_for",
+      "attributes": {
+        "period": "12 месяцев"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_1",
+      "target": "ctx_node_30",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "ctx_node_10",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "недавно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "ctx_node_1",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {
+        "when": "после оформления кредитов"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_33",
+      "relation": "cancelled",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_2",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_41",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_1",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_12",
+      "target": "ctx_node_43",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_45",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_1",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "ctx_node_1",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "ctx_node_1",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_51",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_53",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "ctx_node_1",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_54",
+      "relation": "resulted_in",
+      "attributes": {
+        "role": "менеджер"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_55",
+      "relation": "signed",
+      "attributes": {
+        "date": "27.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_55",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_56",
+      "relation": "signed",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_3",
+      "target": "ctx_node_57",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "ctx_node_33",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_59",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_60",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_61",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "ctx_node_1",
+      "target": "ctx_node_62",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_18",
+      "target": "ctx_node_63",
+      "relation": "changed_to",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_62",
+      "target": "ctx_node_64",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "ctx_node_64",
+      "target": "ctx_node_65",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_66",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "ctx_node_66",
+      "target": "ctx_node_56",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_1",
+      "target": "ctx_node_67",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "ctx_node_67",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_4",
+      "target": "ctx_node_68",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_69",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_69",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_70",
+      "relation": "signed",
+      "attributes": {
+        "date": "24.01.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_70",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_1",
+      "target": "ctx_node_71",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_71",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_71",
+      "target": "ctx_node_72",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_72",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_73",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "ctx_node_73",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "ctx_node_73",
+      "target": "ctx_node_74",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "ctx_node_1",
+      "target": "ctx_node_75",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "ctx_node_75",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_76",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_77",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "ctx_node_76",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "ctx_node_77",
+      "target": "ctx_node_78",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "ctx_node_76",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "ctx_node_77",
+      "target": "ctx_node_80",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_79",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_80",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_1",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_33",
+      "relation": "owns",
+      "attributes": {
+        "status": "планирует купить"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_1",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "factor": "0.5-1%"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_17",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_17",
+      "target": "ctx_node_58",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_22",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_22",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "ctx_node_23",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "ctx_node_24",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "144100 руб.",
+        "date": "15.11.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "signed",
+      "attributes": {
+        "date": "29,82.2023"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "person_Lidiya_Soboleva",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "139150 руб.",
+        "date": "09.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_23",
+      "target": "ctx_node_5",
+      "relation": "received",
+      "attributes": {
+        "date": "16,51.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "ctx_node_1",
+      "target": "ctx_node_29",
+      "relation": "applied_for",
+      "attributes": {
+        "period": "13,2 месяцев"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_1",
+      "target": "ctx_node_16",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "прописана в договоре"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "source_bank": "Банк ВТБ"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_18",
+      "target": "ctx_node_27",
+      "relation": "received",
+      "attributes": {
+        "date": "18,01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "ctx_node_11",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "прописана в договоре"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_49",
+      "relation": "paid",
+      "attributes": {
+        "value": "125235 руб.",
+        "date": "09.01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "ctx_node_31",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "140800 руб.",
+        "date": "01.02.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_34",
+      "target": "ctx_node_39",
+      "relation": "paid",
+      "attributes": {
+        "loan_type": "refinanced_consumer"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "ctx_node_40",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "18,01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "ctx_node_30",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "недавно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_60",
+      "relation": "received",
+      "attributes": {
+        "date": "16,51.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "ctx_node_1",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "benefit": "снижение ставки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_41",
+      "relation": "signed",
+      "attributes": {
+        "date": "24,31.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_15",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "factor": "0,45-1%"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_50",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "13,5%",
+        "date": "17.01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_53",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {
+        "source_bank": "Банк ВТБ"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "ctx_node_24",
+      "target": "loan_mortgage_789012",
+      "relation": "paid",
+      "attributes": {
+        "value": "129690 руб.",
+        "date": "15.11.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_72",
+      "relation": "applied_for",
+      "attributes": {
+        "purpose": "получение информации"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_6",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "factor": "0,45-1%"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "ctx_node_1",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "benefit": "снижение ставки"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv22",
+      "source": "loan_mortgage_789012",
+      "target": "ctx_node_72",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "15,95%",
+        "date": "22.01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv23",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_43",
+      "relation": "received",
+      "attributes": {
+        "date": "15,31.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv24",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {
+        "reason": "частичная выплата наличными"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv25",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_33",
+      "relation": "paid",
+      "attributes": {
+        "loan_type": "refinanced_consumer"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv26",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_50",
+      "relation": "received",
+      "attributes": {
+        "date": "13,51.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv27",
+      "source": "ctx_node_10",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "недавно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv28",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ctx_node_77",
+      "relation": "signed",
+      "attributes": {
+        "date": "32,8.2023"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv29",
+      "source": "ctx_node_1",
+      "target": "ctx_node_55",
+      "relation": "signed",
+      "attributes": {
+        "date": "24,31.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv30",
+      "source": "ctx_node_33",
+      "target": "loan_mortgage_789012",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,51.2024",
+        "initial_payment": "2000000 руб."
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv31",
+      "source": "ctx_node_12",
+      "target": "ctx_node_18",
+      "relation": "submitted",
+      "attributes": {
+        "date": "19,81.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv32",
+      "source": "ctx_node_58",
+      "target": "person_Lidiya_Soboleva",
+      "relation": "had_rate",
+      "attributes": {
+        "value": "16,5%",
+        "date": "17.01.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv33",
+      "source": "ctx_node_43",
+      "target": "ctx_node_38",
+      "relation": "paid",
+      "attributes": {
+        "loan_type": "consumer"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_5",
+      "source": "ep_5",
+      "target": "ep_6",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_6",
+      "source": "ep_6",
+      "target": "ep_7",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_7",
+      "source": "ep_7",
+      "target": "ep_8",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_Lidiya_Soboleva",
+      "source": "person_Lidiya_Soboleva",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_loan_mortgage_789012",
+      "source": "loan_mortgage_789012",
+      "target": "ep_4",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

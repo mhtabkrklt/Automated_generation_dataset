@@ -1,0 +1,24 @@
+{
+  "information_extraction": [
+    {
+      "question": "Какую сумму Милан Ефимьевич Воронцов внес в качестве первоначального платежа за новый автомобиль?",
+      "answer": "500000 руб.",
+      "answer_format": "Денежная сумма",
+      "reasoning_path": [
+        "Милан Ефимьевич Воронцов --[paid]--> Автокредит | amount: 375000 руб. (stale: true)",
+        "Милан Ефимьевич Воронцов --[paid]--> Автокредит | amount: 500000 руб. (ground_truth: true)"
+      ],
+      "capability": "information_extraction",
+      "difficulty": "medium",
+      "source_node_ids": [
+        "Милан Ефимьевич Воронцов",
+        "Автокредит"
+      ],
+      "decoy_answers": [
+        "375000 руб.",
+        "480000 руб.",
+        "600000 руб."
+      ]
+    }
+  ]
+}

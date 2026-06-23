@@ -1,0 +1,95 @@
+## Детальный финансовый сценарий для Элеоноры Тарасовны Ждановой
+
+### BATCH 1 PLAN
+
+*   **Time Anchor:** 25 января 2024 года
+*   **Personal Introduction:** Я, Элеонора Тарасовна Жданова, 52-летняя оператор ПК из п. Верхотурье, мой ежемесячный доход составляет 245 000 рублей. (CATEGORY: Client Identification Labels)
+*   **Financial Goal:** Планирую крупную покупку — новый кухонный гарнитур стоимостью около 350 000 рублей, но пока не понимаю, как накопить, так как деньги быстро уходят. (CATEGORY: Financial Planning Session)
+*   **Mandatory Event 1:** Оплатила ЖКХ 4 800,00 руб. за квартиру по адресу ул. Мира, д.10, кв.5 через мобильное приложение. (CATEGORY: Daily Banking Operations Labels)
+*   **Distractor:** "Сегодня такая метель была, еле до банка доехала, хорошо, что хоть платежи можно онлайн делать, а то бы совсем замерзла!" (CATEGORY: Emotional State Labels) [DISTRACTOR]
+*   **Mandatory Event 2:** На мою карту поступила зарплата 85 000,00 руб. от ООО "Прогресс-Строй". (CATEGORY: Daily Banking Operations Labels)
+*   **Decoy (Sum & Recipient):** Перевела 4 500,00 руб. своей дочери Таисии на оплату курсов английского языка в школе "Лингва". (CATEGORY: Funds Transfer) [DECOY]
+*   **Mandatory Event 3:** Оплатила штраф ГИБДД 500,00 руб. (постановление №77АА123456) за превышение скорости. (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 4:** Перевела 15 000,00 руб. своей матери Назаровой Галине Львовне через СБП с пометкой "на лекарства". (CATEGORY: Funds Transfer)
+*   **Decoy (Sum & Recipient):** Мой супруг, Христофор Ефимович Князев, перевел 14 000,00 руб. своей матери на ремонт дачи в поселке Заречный. (CATEGORY: Funds Transfer) [DECOY]
+*   **Mandatory Event 5:** Пополнила баланс мобильного телефона Мегафон на 400,00 руб. для своего супруга Христофора Ефимовича Князева. (CATEGORY: Daily Banking Operations Labels)
+*   **Client Frustration:** "Я вот смотрю на эти операции и все равно не понимаю, куда деньги уходят. Чувствую себя растерянной, будто деньги утекают сквозь пальцы." (CATEGORY: Emotional State Labels)
+*   **Vague Credit Inquiry:** "Кстати, а какие у вас сейчас общие условия по потребительским кредитам? Просто для общего понимания, вдруг понадобится на что-то крупное, например, на ремонт." (CATEGORY: Consumer Loan Inquiry)
+*   **Transaction History Request:** Запросила детализацию операций по своей дебетовой карте №4567 **** **** 1234 за последние три месяца, с 25 октября 2023 года по 25 января 2024 года. (CATEGORY: Transaction History Request)
+*   **Identity Verification:** Подтвердила свою личность, назвав кодовое слово "Верхотурье" и последние 4 цифры паспорта 4500. (CATEGORY: Client Identification Labels)
+
+### BATCH 2 PLAN
+
+*   **Time Anchor:** 15 февраля 2024 года
+*   **Loan Application Submission:** Подала заявку на потребительский кредит на 500 000 руб. под 18% годовых на 36 месяцев в вашем банке, номер заявки 876543. (CATEGORY: Loan Application Submission)
+*   **Credit Card Application (Decoy):** Также подала заявку на кредитную карту с лимитом 150 000 руб. в другом банке ("Быстрый Кредит"), с грейс-периодом 90 дней. (CATEGORY: Credit Card Application) [DECOY]
+*   **Spontaneous Purchase:** Купила новое пальто в магазине "Модный Сезон" за 18 000 руб. в рассрочку на 6 месяцев по кредитной карте "Премиум" с лимитом 100 000 руб. (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 6:** Оплатила ЖКХ 4 850,00 руб. за квартиру по адресу ул. Мира, д.10, кв.5 через интернет-банк. (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 7:** На мою карту поступила зарплата 85 000,00 руб. от ООО "Прогресс-Строй". (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 8:** Перевела через СБП 5 000,00 руб. своей дочери Таисии с пометкой "на подарок". (CATEGORY: Funds Transfer)
+*   **Mandatory Event 9:** Перевела через СБП 5 200,00 руб. своей знакомой Мухиной Марфе Владимировне с пометкой "за репетиторство по математике". (CATEGORY: Funds Transfer)
+*   **Missed Payment & Penalty:** Обнаружила, что пропустила минимальный платеж 3 500 руб. по кредитной карте "Платинум" от 20.02.2024, и мне начислили штраф 700 руб. (CATEGORY: Penalty Charges)
+*   **Expresses Urgency:** "Мне срочно нужно разобраться с этим штрафом! Почему мне не пришло уведомление? Я же всегда плачу вовремя, это какая-то ошибка!" (CATEGORY: Emotional State Labels, Expresses Urgency)
+*   **Delegated Action (Family Interference):** "Кстати, мой Христофор Ефимович говорил, что он как-то увеличил лимит по моей кредитной карте "Премиум" до 120 000 руб. Это правда?" (CATEGORY: Cards & Accounts Management Labels)
+*   **Bank Offer (Dismissed):** Сотрудник банка предложил настроить уведомления о предстоящих платежах и показать функцию категоризации расходов в мобильном приложении. (CATEGORY: Alert Configuration, Spending Analytics)
+*   **Client Dismissal:** "Да что там настраивать, мне просто нужно, чтобы деньги не заканчивались. Лучше скажите, можно ли продлить льготный период по этой карте до 120 дней?" (CATEGORY: Emotional State Labels)
+*   **Repayment Terms Inquiry:** Запросила информацию о возможности реструктуризации платежа по кредитной карте или продлении грейс-периода до 120 дней. (CATEGORY: Repayment Terms)
+*   **Identity Verification:** Подтвердила свою личность, назвав дату рождения 12.08.1971 и девичью фамилию "Петрова". (CATEGORY: Client Identification Labels)
+*   **Digital Banking Features:** Попросила показать, как найти историю операций за последний месяц в мобильном приложении. (CATEGORY: Mobile App Functionality)
+
+### BATCH 3 PLAN
+
+*   **Time Anchor:** 10 марта 2024 года
+*   **Mandatory Event 10:** Оплатила мобильную связь Мегафон 500,00 руб. для себя. (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 11:** Оплатила кружок рисования для дочери Клавдии 3 500,00 руб. (получатель: ИП Петров А.И.). (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 12:** Оплатила секцию плавания для дочери Таисии 3 700,00 руб. (получатель: ООО "Спорт-Лайф"). (CATEGORY: Daily Banking Operations Labels)
+*   **Semantic Noise (Contradiction):** "Я вот помню, что Христофор Ефимович говорил, что лимит по моей карте "Премиум" теперь 150 000 руб., а не 120 000, как вы говорите. Он же сам звонил в банк 20 февраля!" (CATEGORY: Cards & Accounts Management Labels) [SEMANTIC NOISE]
+*   **Distractor:** "Кстати, вы не знаете, где лучше купить рассаду помидоров? У нас в Верхотурье что-то совсем плохая в этом году, все вянет." (CATEGORY: Emotional State Labels) [DISTRACTOR]
+*   **Mandatory Event 13:** Запросила выписку по своим счетам за февраль 2024 года через мобильное приложение. (CATEGORY: Account Statement Request)
+*   **Loan Application Status Check:** Проверила статус заявки на потребительский кредит 876543, она все еще "на рассмотрении". (CATEGORY: Loan Approval Status)
+*   **Credit Offer Discussion (Family Interference - Parallel Decoy):** Обсудила с менеджером условия кредита на 480 000 руб. под 19% годовых на 48 месяцев, который рассматривает мой супруг Христофор Ефимович Князев для покупки нового автомобиля "Лада Веста". (CATEGORY: Lending & Credit Labels) [DECOY]
+*   **Client Frustration:** "Я уже устала от этих бумажек и цифр! Мне кажется, я просто не создана для бюджетирования. Деньги просто исчезают, и я не могу это контролировать!" (CATEGORY: Emotional State Labels)
+*   **Digital Banking Feature Inquiry:** Спросила, как можно настроить автоматическую категоризацию расходов в приложении, чтобы не делать это вручную для каждой операции. (CATEGORY: Transaction Categorization)
+*   **Technical Support:** Пожаловалась на то, что push-уведомления о списаниях приходят с задержкой в 10-15 минут, что неудобно. (CATEGORY: Technical Support & Troubleshooting Labels)
+*   **Fees & Commissions Inquiry:** Уточнила, какая комиссия взимается за переводы через СБП на сумму свыше 100 000 руб. в месяц. (CATEGORY: Transfer Commission)
+*   **Product Feature Explanation:** Менеджер объяснил, что функция "Анализ расходов" в мобильном приложении позволяет видеть, куда уходят основные средства, например, на "Развлечения" или "Одежду". (CATEGORY: Spending Analytics)
+*   **Identity Verification:** Подтвердила свою личность, назвав номер договора по дебетовой карте 1234567890. (CATEGORY: Client Identification Labels)
+*   **Offer Acceptance (Decoy):** Моя дочь Таисия оформила подписку на онлайн-кинотеатр "КиноПоиск" за 399 руб. в месяц, используя мою карту, но я об этом узнала только из выписки. (CATEGORY: Transaction Confirmation) [DECOY]
+
+### BATCH 4 PLAN
+
+*   **Time Anchor:** 20 марта 2024 года
+*   **Mandatory Event 14:** Получила персональное предложение по потребительскому кредиту: 14.5% годовых на 5 лет (60 месяцев) на сумму 500 000 руб. от вашего банка. (CATEGORY: Lending & Credit Labels)
+*   **Mandatory Event 15:** Получила персональное предложение по потребительскому кредиту: 14.8% годовых на 5 лет (60 месяцев) на сумму 500 000 руб. от другого банка ("Надежный Кредит"). (CATEGORY: Lending & Credit Labels)
+*   **Loan Approval Status (Rejection):** Моя заявка на потребительский кредит 876543 была отклонена по причине высокого показателя долговой нагрузки (ПДН), который составил 65%. (CATEGORY: Loan Approval Status, Debt-to-Income Ratio)
+*   **Client Frustration & Seeks Reassurance:** "Как отклонена?! У меня же такой хороший доход! Я совсем запуталась, сколько у меня вообще кредитов и сколько я должна платить каждый месяц! Помогите мне, пожалуйста, я не знаю, что делать!" (CATEGORY: Emotional State Labels, Seeks Reassurance)
+*   **Mandatory Event 16:** Оплатила интернет-провайдеру "Ростелеком" 750,00 руб. (CATEGORY: Daily Banking Operations Labels)
+*   **Distractor:** "А еще мне соседка Марфа Владимировна Мухина рассказывала, что ей в другом банке одобрили кредит под 12%, но это, наверное, только для молодых, как она." (CATEGORY: Emotional State Labels) [DISTRACTOR]
+*   **Credit Offer Discussion (Decoy):** Обсудила с менеджером возможность получения кредита на 300 000 руб. под 16% годовых на 3 года для ремонта ванной комнаты. (CATEGORY: Credit Offer Discussion) [DECOY]
+*   **Financial Advisory Request:** Запросила полную финансовую консультацию по управлению семейным бюджетом и оптимизации кредитных обязательств. (CATEGORY: Financial Advisory & Consultation Labels)
+*   **Budget Setup Assistance:** Согласилась на помощь в настройке функции "Бюджет" в мобильном приложении, чтобы отслеживать расходы по категориям: "ЖКХ", "Продукты", "Транспорт", "Развлечения". (CATEGORY: Budget Setup Assistance)
+*   **Spending Analytics:** Попросила сгенерировать отчет по расходам за последние 3 месяца, чтобы увидеть, куда уходят самые большие суммы, например, на "Одежду" и "Рестораны". (CATEGORY: Expense Report Generation)
+*   **Loan Offer Comparison:** Менеджер объяснил разницу между предложениями по кредитам 14.5% и 14.8%, акцентируя внимание на эффективной ставке и полной стоимости кредита. (CATEGORY: Loan Offer Comparison)
+*   **Document Submission:** Предоставила справку 2-НДФЛ за последние 6 месяцев для пересмотра заявки на кредит. (CATEGORY: Document Submission)
+*   **Security & Fraud Prevention:** Уточнила, как можно защитить свои данные от мошенников, учитывая, что мне часто приходят подозрительные СМС с просьбой перейти по ссылке. (CATEGORY: Identity Protection Advice)
+*   **Identity Verification:** Подтвердила свою личность, назвав номер телефона, привязанный к счету: +79001234567. (CATEGORY: Client Identification Labels)
+*   **Service Opt-in:** Согласилась на подключение услуги "Финансовый помощник" с ежемесячной комиссией 99 руб. для получения персонализированных отчетов. (CATEGORY: Service Opt-in, Fees & Commissions Labels)
+
+### BATCH 5 PLAN
+
+*   **Time Anchor:** 01 апреля 2024 года
+*   **Mandatory Event 17:** На мою карту поступила зарплата 85 000,00 руб. от ООО "Прогресс-Строй". (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 18:** Совершила SWIFT-перевод 100 EUR (эквивалент 9 800,00 руб. по курсу ЦБ на 03.04.2024) в пользу отеля "Sunrise Resort" в Турции для бронирования отпуска. (CATEGORY: Funds Transfer)
+*   **Mandatory Event 19:** Оплатила мобильную связь Мегафон 500,00 руб. для своего супруга Христофора Ефимовича Князева. (CATEGORY: Daily Banking Operations Labels)
+*   **Mandatory Event 20:** Запросила справку о состоянии счетов для оформления визы через отделение банка по адресу ул. Ленина, д.5. (CATEGORY: Account Statement Request)
+*   **Budget Setup Assistance (Progress):** Успешно настроила бюджет на апрель, выделив 25 000 руб. на продукты и 10 000 руб. на развлечения, и начала его придерживаться. (CATEGORY: Budget Setup Assistance)
+*   **Spending Analytics (Progress):** Отметила, что благодаря категоризации расходов, впервые за долгое время увидела, что на спонтанные покупки уходит не более 15% от дохода, а не 30%, как раньше. (CATEGORY: Spending Analytics)
+*   **Loan Consolidation:** Подала заявку на рефинансирование двух кредитных карт с общей задолженностью 250 000 руб. в один потребительский кредит под 13.5% годовых на 48 месяцев. (CATEGORY: Loan Offer Comparison, Repayment Terms)
+*   **Satisfied with Outcome:** "Я чувствую себя гораздо спокойнее, когда вижу, куда уходят мои деньги. Спасибо за помощь, это действительно работает, я теперь контролирую свои финансы!" (CATEGORY: Emotional State Labels, Satisfied with Outcome)
+*   **Savings Account Inquiry:** Запросила информацию о накопительных счетах и вкладах, интересуясь ставкой по вкладу "Накопительный" — 12% годовых с возможностью пополнения и частичного снятия. (CATEGORY: Savings Account Inquiry, Deposit Interest Rates)
+*   **Financial Planning Session:** Записалась на повторную финансовую консультацию на 25 апреля 2024 года, чтобы обсудить долгосрочные инвестиции и пенсионные накопления. (CATEGORY: Financial Planning Session)
+*   **Digital Statement Access:** Настроила получение ежемесячных выписок по всем счетам на электронную почту, начиная с апреля 2024 года. (CATEGORY: Digital Statement Access)
+*   **Alert Configuration (Progress):** Подтвердила, что уведомления о предстоящих платежах по кредитам теперь приходят за 5 дней до даты списания, что помогает избежать просрочек. (CATEGORY: Alert Configuration)
+*   **Identity Verification:** Подтвердила свою личность, назвав номер карты 4567 8901 2345 6789. (CATEGORY: Client Identification Labels)
+*   **Distractor:** "Надеюсь, в Турции будет хорошая погода, а то у нас в Верхотурье опять дожди обещают, и картошка еще не посажена." (CATEGORY: Emotional State Labels) [DISTRACTOR]
+*   **Offer Acceptance:** Приняла предложение по рефинансированию кредитных карт, подписав договор №RF-2024-04-01-001 с ежемесячным платежом 6 700 руб. (CATEGORY: Offer Acceptance)

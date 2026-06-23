@@ -1,0 +1,2626 @@
+{
+  "nodes": [
+    {
+      "id": "person_alekseev_emelyan",
+      "type": "person",
+      "label": "Алексеев Емельян Юлианович",
+      "attributes": {
+        "name": "Алексеев Емельян Юлианович",
+        "role": "client",
+        "job_title": "Писатель",
+        "location": "с. Забайкальск",
+        "monthly_income": "341000 руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_premium",
+      "type": "product",
+      "label": "Вклад Премиум",
+      "attributes": {
+        "name": "Премиум",
+        "type": "срочный вклад",
+        "currency": "руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "savings_account_flexible",
+      "type": "account",
+      "label": "Накопительный счет Гибкий",
+      "attributes": {
+        "name": "Гибкий",
+        "currency": "руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "deposit_capital",
+      "type": "product",
+      "label": "Вклад Капитал",
+      "attributes": {
+        "name": "Капитал",
+        "type": "срочный вклад",
+        "currency": "руб."
+      },
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_gleb_simonov",
+      "type": "person",
+      "label": "Глеб Симонов",
+      "attributes": {
+        "name": "Глеб Симонов",
+        "role": "partner"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_komarova_angelina",
+      "type": "person",
+      "label": "Комарова Ангелина Филипповна",
+      "attributes": {
+        "name": "Комарова Ангелина Филипповна",
+        "role": "acquaintance"
+      },
+      "ground_truth": false,
+      "episode_hint": 1
+    },
+    {
+      "id": "person_kuzmina_zoya",
+      "type": "person",
+      "label": "Кузьмина Зоя Львовна",
+      "attributes": {
+        "name": "Кузьмина Зоя Львовна",
+        "role": "parent"
+      },
+      "ground_truth": false,
+      "episode_hint": 4
+    },
+    {
+      "id": "debit_card_alekseev",
+      "type": "product",
+      "label": "Дебетовая карта Алексеева Е.Ю.",
+      "attributes": {},
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "ctx_node_1",
+      "type": "organization",
+      "label": "Банк 'Надежный'",
+      "attributes": {
+        "type": "коммерческий банк",
+        "location": "с. Забайкальск",
+        "rating": "А+"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_2",
+      "type": "person",
+      "label": "Иванова Светлана Петровна",
+      "attributes": {
+        "name": "Иванова Светлана Петровна",
+        "role": "банковский менеджер",
+        "department": "Отдел по работе с частными клиентами"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_3",
+      "type": "document",
+      "label": "Договор вклада Премиум",
+      "attributes": {
+        "document_type": "договор вклада",
+        "number": "789123-ДП",
+        "date": "01.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_4",
+      "type": "account",
+      "label": "Текущий счет Алексеева Е.Ю.",
+      "attributes": {
+        "name": "Текущий счет",
+        "currency": "руб.",
+        "account_number": "40817810000000000001"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_5",
+      "type": "event",
+      "label": "СМС о зачислении процентов",
+      "attributes": {
+        "type": "SMS",
+        "content": "Зачисление процентов по вкладу Премиум за февраль",
+        "amount": "24666 руб.",
+        "date": "10.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_6",
+      "type": "event",
+      "label": "СМС о снижении ставки",
+      "attributes": {
+        "type": "SMS",
+        "content": "Снижение ставки по накопительному счету Гибкий",
+        "new_rate": "10.5%",
+        "date": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_7",
+      "type": "product",
+      "label": "Консультация по вкладам",
+      "attributes": {
+        "service_type": "финансовая консультация",
+        "topic": "вклады с частичным снятием",
+        "date": "20.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_8",
+      "type": "event",
+      "label": "Перевод на дебетовую карту",
+      "attributes": {
+        "type": "перевод",
+        "amount": "30000 руб.",
+        "date": "25.03.2024",
+        "channel": "интернет-банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_9",
+      "type": "event",
+      "label": "Оплата коммунальных услуг",
+      "attributes": {
+        "type": "коммунальные платежи",
+        "period": "март",
+        "total_amount": "7300 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_10",
+      "type": "event",
+      "label": "Оплата электроэнергии",
+      "attributes": {
+        "service": "электроэнергия",
+        "amount": "4500 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_11",
+      "type": "event",
+      "label": "Оплата воды",
+      "attributes": {
+        "service": "вода",
+        "amount": "2800 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_12",
+      "type": "event",
+      "label": "Уведомление о процентах по вкладу",
+      "attributes": {
+        "type": "мобильное приложение",
+        "content": "Начисление процентов по вкладу Премиум за март",
+        "amount": "18500 руб.",
+        "date": "01.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_13",
+      "type": "event",
+      "label": "Накопление на отпуск",
+      "attributes": {
+        "target_amount": "200000 руб.",
+        "purpose": "отпуск"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_14",
+      "type": "event",
+      "label": "Получение наследства",
+      "attributes": {
+        "type": "наследство",
+        "amount": "7500000 руб.",
+        "date": "07.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_15",
+      "type": "person",
+      "label": "Юрист Петров А.В.",
+      "attributes": {
+        "name": "Петров А.В.",
+        "role": "юрист",
+        "specialization": "налоговое право"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_16",
+      "type": "product",
+      "label": "Юридическая консультация",
+      "attributes": {
+        "service_type": "юридическая консультация",
+        "topic": "налогообложение наследства",
+        "date": "10.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_17",
+      "type": "event",
+      "label": "Статья 217 НК РФ",
+      "attributes": {
+        "code": "Налоговый кодекс РФ",
+        "article": "217",
+        "description": "Доходы, не подлежащие налогообложению (освобождаемые от налогообложения)"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_18",
+      "type": "event",
+      "label": "Размещение наследства",
+      "attributes": {
+        "purpose": "максимальная доходность, минимальный риск",
+        "amount": "5000000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_19",
+      "type": "document",
+      "label": "Договор вклада Капитал",
+      "attributes": {
+        "document_type": "договор вклада",
+        "number": "987654-ДП",
+        "date": "15.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_20",
+      "type": "event",
+      "label": "Перевод наследства на накопительный счет",
+      "attributes": {
+        "type": "перевод",
+        "amount": "2500000 руб.",
+        "date": "18.04.2024",
+        "channel": "касса банка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_21",
+      "type": "event",
+      "label": "СМС о процентах по накопительному счету",
+      "attributes": {
+        "type": "SMS",
+        "content": "Зачисление процентов по накопительному счету Гибкий за апрель",
+        "amount": "1300 руб.",
+        "date": "20.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_22",
+      "type": "product",
+      "label": "Консультация по АСВ",
+      "attributes": {
+        "service_type": "финансовая консультация",
+        "topic": "лимиты АСВ",
+        "date": "22.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_23",
+      "type": "event",
+      "label": "Лимиты АСВ",
+      "attributes": {
+        "agency": "Агентство по страхованию вкладов (АСВ)",
+        "max_coverage": "1400000 руб.",
+        "scope": "на один банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_24",
+      "type": "event",
+      "label": "Диверсификация сбережений",
+      "attributes": {
+        "purpose": "снижение рисков",
+        "strategy": "распределение средств по разным банкам/продуктам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_25",
+      "type": "account",
+      "label": "Накопительный счет Кузьминой З.Л.",
+      "attributes": {
+        "name": "Накопительный счет",
+        "currency": "руб.",
+        "account_number": "40817810000000000002"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_26",
+      "type": "event",
+      "label": "Перевод матери",
+      "attributes": {
+        "type": "перевод",
+        "amount": "50000 руб.",
+        "date": "25.04.2024",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_27",
+      "type": "event",
+      "label": "Накопление на бытовую технику",
+      "attributes": {
+        "purpose": "покупка бытовой техники"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_28",
+      "type": "organization",
+      "label": "Отделение банка на Ленина, 15",
+      "attributes": {
+        "address": "ул. Ленина, 15",
+        "city": "с. Забайкальск"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_29",
+      "type": "product",
+      "label": "Мобильное приложение банка",
+      "attributes": {
+        "type": "цифровой канал",
+        "platform": "iOS/Android"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_30",
+      "type": "product",
+      "label": "Интернет-банк",
+      "attributes": {
+        "type": "цифровой канал",
+        "platform": "web"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_31",
+      "type": "product",
+      "label": "Касса банка",
+      "attributes": {
+        "type": "офлайн канал",
+        "location": "Отделение банка на Ленина, 15"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_32",
+      "type": "product",
+      "label": "Ежемесячная капитализация",
+      "attributes": {
+        "feature": "капитализация процентов",
+        "frequency": "ежемесячно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_33",
+      "type": "product",
+      "label": "Возможность частичного снятия",
+      "attributes": {
+        "feature": "частичное снятие",
+        "limit": "100000 руб./месяц",
+        "condition": "без потери процентов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_34",
+      "type": "product",
+      "label": "Без возможности пополнения",
+      "attributes": {
+        "feature": "пополнение",
+        "condition": "невозможно"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_35",
+      "type": "event",
+      "label": "Ликвидность",
+      "attributes": {
+        "metric": "ликвидность",
+        "importance": "высокая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_36",
+      "type": "event",
+      "label": "Доходность",
+      "attributes": {
+        "metric": "доходность",
+        "importance": "высокая"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_37",
+      "type": "event",
+      "label": "Риск",
+      "attributes": {
+        "metric": "риск",
+        "importance": "низкий"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_38",
+      "type": "event",
+      "label": "Легкое беспокойство",
+      "attributes": {
+        "emotion": "беспокойство",
+        "intensity": "легкое"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_39",
+      "type": "event",
+      "label": "Полная неожиданность",
+      "attributes": {
+        "emotion": "удивление",
+        "intensity": "сильная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_40",
+      "type": "event",
+      "label": "Радость",
+      "attributes": {
+        "emotion": "радость",
+        "intensity": "сильная"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_41",
+      "type": "event",
+      "label": "Задумчивость",
+      "attributes": {
+        "emotion": "задумчивость",
+        "intensity": "средняя"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_42",
+      "type": "event",
+      "label": "Резервный фонд",
+      "attributes": {
+        "target_amount": "1000000 руб.",
+        "purpose": "финансовая подушка"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_43",
+      "type": "event",
+      "label": "Пополнение накопительного счета",
+      "attributes": {
+        "type": "пополнение",
+        "amount": "150000 руб.",
+        "date": "05.03.2024",
+        "channel": "мобильное приложение"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_44",
+      "type": "event",
+      "label": "Начисление процентов по вкладу Премиум (февраль)",
+      "attributes": {
+        "type": "начисление процентов",
+        "amount": "24666 руб.",
+        "date": "10.03.2024",
+        "period": "февраль"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_45",
+      "type": "event",
+      "label": "Начисление процентов по вкладу Премиум (март)",
+      "attributes": {
+        "type": "начисление процентов",
+        "amount": "18500 руб.",
+        "date": "01.04.2024",
+        "period": "март"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_46",
+      "type": "event",
+      "label": "Начисление процентов по накопительному счету Гибкий (апрель)",
+      "attributes": {
+        "type": "начисление процентов",
+        "amount": "1300 руб.",
+        "date": "20.04.2024",
+        "period": "апрель"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_47",
+      "type": "product",
+      "label": "Вклад с частичным снятием",
+      "attributes": {
+        "name": "Вклад с частичным снятием",
+        "type": "срочный вклад",
+        "currency": "руб.",
+        "feature": "частичное снятие"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_48",
+      "type": "event",
+      "label": "Супруга",
+      "attributes": {
+        "type": "семейные узы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_49",
+      "type": "event",
+      "label": "Дальний родственник",
+      "attributes": {
+        "type": "родственные связи"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_50",
+      "type": "event",
+      "label": "Мать",
+      "attributes": {
+        "type": "семейные узы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_51",
+      "type": "organization",
+      "label": "Отделение банка",
+      "attributes": {
+        "address": "ул. Ленина, 15",
+        "city": "с. Забайкальск"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_node_52",
+      "type": "product",
+      "label": "Срочный вклад",
+      "attributes": {
+        "category": "депозиты",
+        "description": "вклад на определенный срок"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_4",
+      "type": "episode",
+      "label": "Эпизод 4",
+      "attributes": {
+        "order": 4
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_5",
+      "type": "episode",
+      "label": "Эпизод 5",
+      "attributes": {
+        "order": 5
+      },
+      "ground_truth": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_deposit_premium_amount_stale",
+      "source": "deposit_premium",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2000000 руб.",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_premium_amount_current",
+      "source": "deposit_premium",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2000000 руб.",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_savings_account_flexible_balance_stale",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "150000 руб.",
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_savings_account_flexible_balance_current",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2500000 руб.",
+        "date": "18.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 4
+    },
+    {
+      "id": "e_deposit_premium_interest_stale",
+      "source": "deposit_premium",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "14.8%",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_premium_interest_current",
+      "source": "deposit_premium",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "14.8%",
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_savings_account_flexible_interest_stale",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "10.5%",
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_savings_account_flexible_interest_current",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "10.5%",
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_capital_amount_stale",
+      "source": "deposit_capital",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "5000000 руб.",
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_deposit_capital_amount_current",
+      "source": "deposit_capital",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "5000000 руб.",
+        "date": "15.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 1
+    },
+    {
+      "id": "e_debit_card_limit_stale",
+      "source": "debit_card_alekseev",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "80000 руб.",
+        "date": "12.05.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "e_debit_card_limit_current",
+      "source": "debit_card_alekseev",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "80000 руб.",
+        "date": "12.05.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": true,
+      "episode_hint": 3
+    },
+    {
+      "id": "ctx_edge_1",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_2",
+      "source": "person_alekseev_emelyan",
+      "target": "deposit_premium",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024",
+        "amount": "2000000 руб.",
+        "rate": "14.8%",
+        "term": "12 месяцев"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_3",
+      "source": "deposit_premium",
+      "target": "ctx_node_3",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_4",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_5",
+      "source": "person_alekseev_emelyan",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "150000 руб.",
+        "date": "05.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_6",
+      "source": "savings_account_flexible",
+      "target": "ctx_node_43",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_7",
+      "source": "ctx_node_43",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_8",
+      "source": "ctx_node_1",
+      "target": "ctx_node_5",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_9",
+      "source": "ctx_node_5",
+      "target": "person_alekseev_emelyan",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_10",
+      "source": "ctx_node_5",
+      "target": "ctx_node_44",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_11",
+      "source": "ctx_node_44",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_12",
+      "source": "ctx_node_1",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_13",
+      "source": "ctx_node_6",
+      "target": "person_alekseev_emelyan",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_14",
+      "source": "ctx_node_6",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_15",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_38",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_16",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_17",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_7",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_18",
+      "source": "ctx_node_7",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_19",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_35",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_20",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_8",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_21",
+      "source": "ctx_node_8",
+      "target": "savings_account_flexible",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_22",
+      "source": "ctx_node_8",
+      "target": "debit_card_alekseev",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_23",
+      "source": "ctx_node_8",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_24",
+      "source": "ctx_node_8",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_25",
+      "source": "ctx_node_9",
+      "target": "ctx_node_10",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_26",
+      "source": "ctx_node_9",
+      "target": "ctx_node_11",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_27",
+      "source": "ctx_node_1",
+      "target": "ctx_node_12",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_28",
+      "source": "ctx_node_12",
+      "target": "person_alekseev_emelyan",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_29",
+      "source": "ctx_node_12",
+      "target": "deposit_premium",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_30",
+      "source": "ctx_node_12",
+      "target": "ctx_node_45",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_31",
+      "source": "person_alekseev_emelyan",
+      "target": "person_gleb_simonov",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_32",
+      "source": "person_gleb_simonov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "03.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_33",
+      "source": "person_gleb_simonov",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "накопительный счет"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_34",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_14",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_35",
+      "source": "ctx_node_14",
+      "target": "person_komarova_angelina",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_36",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_39",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "07.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_37",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_38",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_16",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_39",
+      "source": "ctx_node_16",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "topic": "налогообложение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_40",
+      "source": "ctx_node_16",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_41",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_42",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "12.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_43",
+      "source": "ctx_node_18",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_44",
+      "source": "ctx_node_18",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_45",
+      "source": "person_alekseev_emelyan",
+      "target": "deposit_capital",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "15.04.2024",
+        "amount": "5000000 руб.",
+        "rate": "15.2%",
+        "term": "6 месяцев"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_46",
+      "source": "deposit_capital",
+      "target": "ctx_node_19",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_47",
+      "source": "deposit_capital",
+      "target": "ctx_node_34",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_48",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_20",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_49",
+      "source": "ctx_node_20",
+      "target": "ctx_node_14",
+      "relation": "resulted_in",
+      "attributes": {
+        "remaining_amount": "2500000 руб."
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_50",
+      "source": "ctx_node_20",
+      "target": "savings_account_flexible",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_51",
+      "source": "ctx_node_20",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_52",
+      "source": "ctx_node_20",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "увеличение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_53",
+      "source": "ctx_node_1",
+      "target": "ctx_node_21",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_54",
+      "source": "ctx_node_21",
+      "target": "person_alekseev_emelyan",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_55",
+      "source": "ctx_node_21",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_56",
+      "source": "ctx_node_21",
+      "target": "ctx_node_46",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_57",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.04.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_58",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_22",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_59",
+      "source": "ctx_node_22",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_60",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_41",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_61",
+      "source": "ctx_node_41",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_62",
+      "source": "person_alekseev_emelyan",
+      "target": "person_kuzmina_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_63",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_26",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_64",
+      "source": "ctx_node_26",
+      "target": "ctx_node_25",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_65",
+      "source": "ctx_node_26",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_66",
+      "source": "ctx_node_25",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_67",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_1",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_68",
+      "source": "deposit_premium",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_69",
+      "source": "savings_account_flexible",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_70",
+      "source": "deposit_capital",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_71",
+      "source": "debit_card_alekseev",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_72",
+      "source": "ctx_node_2",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_73",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "01.03.2024"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_74",
+      "source": "deposit_premium",
+      "target": "ctx_node_32",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_75",
+      "source": "deposit_premium",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_76",
+      "source": "deposit_capital",
+      "target": "ctx_node_52",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_77",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_4",
+      "relation": "owns",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_78",
+      "source": "ctx_node_4",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_79",
+      "source": "ctx_node_42",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_80",
+      "source": "person_gleb_simonov",
+      "target": "ctx_node_48",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "супруг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_81",
+      "source": "ctx_node_48",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_82",
+      "source": "person_komarova_angelina",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "дальний родственник"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_83",
+      "source": "ctx_node_49",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_84",
+      "source": "person_kuzmina_zoya",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "мать"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_85",
+      "source": "ctx_node_50",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_86",
+      "source": "ctx_node_28",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_87",
+      "source": "ctx_node_51",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_88",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_47",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_89",
+      "source": "ctx_node_47",
+      "target": "ctx_node_33",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_90",
+      "source": "ctx_node_29",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_91",
+      "source": "ctx_node_30",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_92",
+      "source": "ctx_node_31",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_93",
+      "source": "ctx_node_45",
+      "target": "ctx_node_4",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_94",
+      "source": "ctx_node_46",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_95",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_36",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_96",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_37",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_97",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_98",
+      "source": "person_kuzmina_zoya",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_99",
+      "source": "ctx_node_25",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_100",
+      "source": "ctx_node_25",
+      "target": "person_kuzmina_zoya",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_101",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_42",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "in_progress"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_102",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_18",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "achieved"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_103",
+      "source": "person_gleb_simonov",
+      "target": "ctx_node_13",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "planned"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_104",
+      "source": "person_kuzmina_zoya",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "in_progress"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_105",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "status": "considering"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_106",
+      "source": "ctx_node_14",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "effect": "финансовое обогащение"
+      },
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_107",
+      "source": "ctx_node_16",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "effect": "информированность"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_108",
+      "source": "ctx_node_22",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "effect": "размышления о диверсификации"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_109",
+      "source": "ctx_node_38",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_110",
+      "source": "ctx_node_39",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_111",
+      "source": "ctx_node_40",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_112",
+      "source": "ctx_node_41",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_113",
+      "source": "deposit_premium",
+      "target": "ctx_node_4",
+      "relation": "transferred_to",
+      "attributes": {
+        "frequency": "ежемесячно"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_114",
+      "source": "savings_account_flexible",
+      "target": "debit_card_alekseev",
+      "relation": "transferred_to",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_115",
+      "source": "ctx_node_23",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_116",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_29",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "пополнение счета"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_117",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_30",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "оплата услуг"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_118",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_31",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "перевод наследства"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_119",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_51",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "открытие вклада"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_120",
+      "source": "ctx_node_10",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_121",
+      "source": "ctx_node_11",
+      "target": "ctx_node_9",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_122",
+      "source": "ctx_node_44",
+      "target": "deposit_premium",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_123",
+      "source": "ctx_node_45",
+      "target": "deposit_premium",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_124",
+      "source": "ctx_node_46",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_125",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "20.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_126",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_2",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_127",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "10.04.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ctx_edge_128",
+      "source": "ctx_node_24",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": true,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr1",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "2750000 руб.",
+        "date": "18.03.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr2",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "11,55%",
+        "date": "15.01.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_contr3",
+      "source": "savings_account_flexible",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "11,55%",
+        "date": "15.02.2024"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv1",
+      "source": "ctx_node_18",
+      "target": "ctx_node_24",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "24,24.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv2",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_1",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv3",
+      "source": "ctx_node_27",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv4",
+      "source": "ctx_node_20",
+      "target": "person_komarova_angelina",
+      "relation": "resulted_in",
+      "attributes": {
+        "action": "увеличение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv5",
+      "source": "ctx_node_11",
+      "target": "ctx_node_49",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "дальний родственник"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv6",
+      "source": "savings_account_flexible",
+      "target": "ctx_node_6",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "13,53.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv7",
+      "source": "ctx_node_32",
+      "target": "ctx_node_50",
+      "relation": "resulted_in",
+      "attributes": {
+        "relation_type": "мать"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv8",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_27",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "19,84.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv9",
+      "source": "ctx_node_43",
+      "target": "person_alekseev_emelyan",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "11,55%",
+        "date": "15.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv10",
+      "source": "savings_account_flexible",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "165000 руб.",
+        "date": "05.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv11",
+      "source": "savings_account_flexible",
+      "target": "ctx_node_10",
+      "relation": "had_rate",
+      "attributes": {
+        "rate": "11,55%",
+        "date": "15.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv12",
+      "source": "ctx_node_30",
+      "target": "ctx_node_15",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv13",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_17",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "22,03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv14",
+      "source": "ctx_node_7",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "effect": "финансовое обогащение"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv15",
+      "source": "ctx_node_21",
+      "target": "person_alekseev_emelyan",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "4500000 руб.",
+        "date": "15.04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv16",
+      "source": "ctx_node_44",
+      "target": "ctx_node_40",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "11,04.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv17",
+      "source": "ctx_node_44",
+      "target": "savings_account_flexible",
+      "relation": "resulted_in",
+      "attributes": {
+        "type": "накопительный счет"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv18",
+      "source": "savings_account_flexible",
+      "target": "ctx_node_25",
+      "relation": "resulted_in",
+      "attributes": {
+        "amount": "135000 руб.",
+        "date": "05.03.2024"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv19",
+      "source": "deposit_premium",
+      "target": "ctx_node_48",
+      "relation": "transferred_to",
+      "attributes": {
+        "frequency": "ежемесячно"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv20",
+      "source": "ctx_node_1",
+      "target": "deposit_premium",
+      "relation": "resulted_in",
+      "attributes": {
+        "date": "0,93.2024",
+        "amount": "2000000 руб.",
+        "rate": "14.8%",
+        "term": "12 месяцев"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "edge_inv21",
+      "source": "person_alekseev_emelyan",
+      "target": "ctx_node_23",
+      "relation": "resulted_in",
+      "attributes": {
+        "purpose": "пополнение счета"
+      },
+      "valid": false,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_3",
+      "source": "ep_3",
+      "target": "ep_4",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_4",
+      "source": "ep_4",
+      "target": "ep_5",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_person_alekseev_emelyan",
+      "source": "person_alekseev_emelyan",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_deposit_premium",
+      "source": "deposit_premium",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_savings_account_flexible",
+      "source": "savings_account_flexible",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_deposit_capital",
+      "source": "deposit_capital",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_debit_card_alekseev",
+      "source": "debit_card_alekseev",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}

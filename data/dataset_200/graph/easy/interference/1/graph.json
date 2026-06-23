@@ -1,0 +1,1430 @@
+{
+  "nodes": [
+    {
+      "id": "person_trofim_khokhlov",
+      "type": "person",
+      "label": "Трофим Ермолаевич Хохлов",
+      "attributes": {
+        "name": "Трофим Ермолаевич Хохлов",
+        "age": 35,
+        "gender": "female",
+        "occupation": "инженер-лесотехник",
+        "income_monthly": "328000 руб.",
+        "city": "Липецк",
+        "codeword": "Лесоруб"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "bank_main",
+      "type": "organization",
+      "label": "Банк",
+      "attributes": {
+        "name": "Основной Банк"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_1",
+      "type": "episode",
+      "label": "Эпизод 1",
+      "attributes": {
+        "order": 1,
+        "summary": "Трофим Хохлов управляет полисами и сталкивается с просрочками, получает предложения и совершает переводы.",
+        "time_anchor": "15.03.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_2",
+      "type": "episode",
+      "label": "Эпизод 2",
+      "attributes": {
+        "order": 2,
+        "summary": "Трофим Хохлов оспаривает пени, обновляет данные, оплачивает счета и получает новые предложения.",
+        "time_anchor": "05.04.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "ep_3",
+      "type": "episode",
+      "label": "Эпизод 3",
+      "attributes": {
+        "order": 3,
+        "summary": "Трофим Хохлов сталкивается с блокировкой карты, снижением рейтинга, соглашается на реструктуризацию и получает контроль над финансами.",
+        "time_anchor": "10.05.2024"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "policy_osago_7890123456",
+      "type": "product",
+      "label": "Полис ОСАГО",
+      "attributes": {
+        "number": "7890123456",
+        "type": "ОСАГО",
+        "issue_date": "01.09.2023"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "dtp_10032024",
+      "type": "event",
+      "label": "ДТП",
+      "attributes": {
+        "date": "10.03.2024",
+        "type": "дорожно-транспортное происшествие"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_ivanov_as",
+      "type": "person",
+      "label": "Иванов А.С.",
+      "attributes": {
+        "name": "Иванов А.С."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "claim_osago_dtp",
+      "type": "event",
+      "label": "Заявление на выплату ОСАГО",
+      "attributes": {
+        "status": "первичная проверка документов",
+        "expected_review_term": "10 рабочих дней"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "policy_life_1122334455",
+      "type": "product",
+      "label": "Полис страхования жизни",
+      "attributes": {
+        "number": "1122334455",
+        "type": "страхование жизни"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_life_1122334455_overdue",
+      "type": "event",
+      "label": "Просроченный платеж по страхованию жизни",
+      "attributes": {
+        "amount": "3500 руб.",
+        "due_date": "12.03.2024",
+        "status": "просрочен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "statement_request_all",
+      "type": "event",
+      "label": "Запрос детализированной выписки",
+      "attributes": {
+        "period": "последние 3 месяца",
+        "scope": "все счета и полисы"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_consumer_loan_750k",
+      "type": "product",
+      "label": "Предложение потребительского кредита",
+      "attributes": {
+        "amount": "750000 руб.",
+        "interest_rate": "16% годовых",
+        "term": "5 лет",
+        "feature": "возможность рефинансирования"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_yakov_evseev",
+      "type": "person",
+      "label": "Яков Борисович Евсеев",
+      "attributes": {
+        "name": "Яков Борисович Евсеев",
+        "relationship": "знакомый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_repair_bamper",
+      "type": "event",
+      "label": "Компенсация ремонта бампера",
+      "attributes": {
+        "amount": "5000 руб.",
+        "reason": "частичная компенсация за ремонт бампера",
+        "total_damage": "12000 руб.",
+        "covered_by_insurance": false
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "email_notification_life_renewal",
+      "type": "event",
+      "label": "Уведомление о продлении полиса жизни",
+      "attributes": {
+        "channel": "электронная почта",
+        "deadline": "30.03.2024",
+        "new_premium": "45000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_ivanov_ap",
+      "type": "person",
+      "label": "Иванов А.П.",
+      "attributes": {
+        "name": "Иванов А.П.",
+        "role": "страховой агент"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_4567_1234",
+      "type": "product",
+      "label": "Кредитная карта",
+      "attributes": {
+        "number_last_digits": "1234"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_cc_overdue_12800",
+      "type": "event",
+      "label": "Просроченный платеж по кредитной карте",
+      "attributes": {
+        "amount": "12800 руб.",
+        "due_date": "01.04.2024",
+        "penalty_amount": "250 руб.",
+        "status": "просрочен"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "dispute_penalty",
+      "type": "event",
+      "label": "Оспаривание начисления пени",
+      "attributes": {
+        "reason": "неполучение уведомлений"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "contact_data_update_request",
+      "type": "event",
+      "label": "Запрос на обновление контактных данных",
+      "attributes": {
+        "purpose": "избежать просрочек"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "loan_appliance_9876543210",
+      "type": "product",
+      "label": "Кредит на бытовую технику",
+      "attributes": {
+        "number": "9876543210",
+        "type": "потребительский",
+        "purpose": "покупка бытовой техники",
+        "outstanding_balance": "85000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_pankrat_bobylev",
+      "type": "person",
+      "label": "Панкрат Антипович Бобылев",
+      "attributes": {
+        "name": "Панкрат Антипович Бобылев",
+        "relationship": "знакомый"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_consultation_tax_deduction",
+      "type": "event",
+      "label": "Оплата консультации по налоговому вычету",
+      "attributes": {
+        "amount": "5200 руб.",
+        "reason": "консультация по оформлению налогового вычета",
+        "related_to_policy": "1122334455"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "payment_utility_jan",
+      "type": "event",
+      "label": "Оплата ЖКХ за январь",
+      "attributes": {
+        "amount": "8500 руб.",
+        "month": "январь",
+        "date": "25.01.2024",
+        "method": "мобильное приложение, дебетовая карта"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_utility_feb",
+      "type": "event",
+      "label": "Оплата ЖКХ за февраль",
+      "attributes": {
+        "amount": "8700 руб.",
+        "month": "февраль",
+        "date": "25.02.2024",
+        "method": "мобильное приложение",
+        "delay": "5 дней"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "offer_financial_planning",
+      "type": "event",
+      "label": "Предложение по финансовому планированию",
+      "attributes": {
+        "purpose": "оптимизация кредитной нагрузки",
+        "context": "3 активных кредитных карты, 2 потребительских кредита"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_ulyana_terentyeva",
+      "type": "person",
+      "label": "Терентьева Ульяна Юльевна",
+      "attributes": {
+        "name": "Терентьева Ульяна Юльевна",
+        "relationship": "мать"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "payment_dacha_utilities",
+      "type": "event",
+      "label": "Оплата ЖКХ за дачу",
+      "attributes": {
+        "amount": "2000 руб.",
+        "type": "ежемесячный взнос"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "cc_temporary_block",
+      "type": "event",
+      "label": "Временная блокировка кредитной карты",
+      "attributes": {
+        "reason": "подозрительная активность",
+        "suspicious_transactions": "7 мелких транзакций",
+        "suspicious_amount_total": "3500 руб.",
+        "suspicious_period": "последние 2 дня",
+        "suspicious_locations": "разные города"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "policy_property_0012345678",
+      "type": "product",
+      "label": "Полис страхования недвижимости",
+      "attributes": {
+        "number": "0012345678",
+        "type": "страхование недвижимости",
+        "address": "г. Липецк, ул. Лесная, д. 15, кв. 7",
+        "expiration_date": "01.05.2024",
+        "status": "истек"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "credit_rating_decrease",
+      "type": "event",
+      "label": "Снижение кредитного рейтинга",
+      "attributes": {
+        "score": 580,
+        "reason": "просрочки по кредитным картам, нерегулярные платежи по потребительским кредитам"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_consumer_loan_1_5m",
+      "type": "product",
+      "label": "Предложение потребительского кредита (1.5М)",
+      "attributes": {
+        "amount": "1500000 руб.",
+        "interest_rate": "14.5% годовых",
+        "term": "15 лет",
+        "required_insurance": "жизни и здоровья",
+        "condition": "реструктуризация текущих долгов"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "offer_mortgage_5_5m",
+      "type": "product",
+      "label": "Персональное предложение по ипотеке",
+      "attributes": {
+        "amount": "5500000 руб.",
+        "interest_rate": "14.8% годовых",
+        "term": "15 лет",
+        "purpose": "покупка загородного дома",
+        "required_insurance": "приобретаемого имущества и титула"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "person_angelina_kulagina",
+      "type": "person",
+      "label": "Кулагина Ангелина Даниловна",
+      "attributes": {
+        "name": "Кулагина Ангелина Даниловна",
+        "relationship": "супруга"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "policy_dms_9988776655",
+      "type": "product",
+      "label": "Полис ДМС",
+      "attributes": {
+        "number": "9988776655",
+        "type": "ДМС"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "claim_dms_kulagina",
+      "type": "event",
+      "label": "Заявление на выплату по ДМС",
+      "attributes": {
+        "event": "плановое обследование",
+        "clinic": "Здоровье",
+        "event_date": "08.05.2024",
+        "expected_amount": "15000 руб."
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "claim_property_partial_approval",
+      "type": "event",
+      "label": "Частичное одобрение страховой выплаты по имуществу",
+      "attributes": {
+        "approved_amount": "35000 руб.",
+        "claimed_amount": "50000 руб.",
+        "event": "залив квартиры"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "flood_event_20042024",
+      "type": "event",
+      "label": "Залив квартиры",
+      "attributes": {
+        "date": "20.04.2024",
+        "type": "страховой случай"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "debt_restructuring_agreement",
+      "type": "document",
+      "label": "Соглашение о реструктуризации задолженности",
+      "attributes": {
+        "scope": "кредитные карты и потребительские кредиты",
+        "solution": "консолидация долгов",
+        "new_interest_rate": "15% годовых",
+        "new_term": "7 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "loan_consolidated_1001200300",
+      "type": "product",
+      "label": "Консолидированный кредит",
+      "attributes": {
+        "number": "1001200300",
+        "type": "консолидированный",
+        "interest_rate": "15% годовых",
+        "term": "7 лет"
+      },
+      "ground_truth": false
+    },
+    {
+      "id": "notification_card_blocking_1",
+      "type": "event",
+      "label": "Уведомление о блокировке карты",
+      "attributes": {
+        "card_number_last_digits": "1234",
+        "status": "временная",
+        "date": "10.05.2024"
+      },
+      "ground_truth": true
+    },
+    {
+      "id": "event_card_blocking_1",
+      "type": "event",
+      "label": "Блокировка кредитной карты",
+      "attributes": {
+        "card_number_last_digits": "1234",
+        "status": "временная",
+        "date": "10.05.2024"
+      },
+      "ground_truth": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "ep_chain_1",
+      "source": "ep_1",
+      "target": "ep_2",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_chain_2",
+      "source": "ep_2",
+      "target": "ep_3",
+      "relation": "followed_by",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_trofim_khokhlov_ep1",
+      "source": "person_trofim_khokhlov",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_bank_main_ep1",
+      "source": "bank_main",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_policy_osago_7890123456_ep1",
+      "source": "policy_osago_7890123456",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_dtp_10032024_ep1",
+      "source": "dtp_10032024",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_ivanov_as_ep1",
+      "source": "person_ivanov_as",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_claim_osago_dtp_ep1",
+      "source": "claim_osago_dtp",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_policy_life_1122334455_ep1",
+      "source": "policy_life_1122334455",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_life_1122334455_overdue_ep1",
+      "source": "payment_life_1122334455_overdue",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_statement_request_all_ep1",
+      "source": "statement_request_all",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_consumer_loan_750k_ep1",
+      "source": "offer_consumer_loan_750k",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_yakov_evseev_ep1",
+      "source": "person_yakov_evseev",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_repair_bamper_ep1",
+      "source": "payment_repair_bamper",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_email_notification_life_renewal_ep1",
+      "source": "email_notification_life_renewal",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_ivanov_ap_ep1",
+      "source": "person_ivanov_ap",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_trofim_khokhlov_ep2",
+      "source": "person_trofim_khokhlov",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_bank_main_ep2",
+      "source": "bank_main",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_credit_card_4567_1234_ep2",
+      "source": "credit_card_4567_1234",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_cc_overdue_12800_ep2",
+      "source": "payment_cc_overdue_12800",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_dispute_penalty_ep2",
+      "source": "dispute_penalty",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_contact_data_update_request_ep2",
+      "source": "contact_data_update_request",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_loan_appliance_9876543210_ep2",
+      "source": "loan_appliance_9876543210",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_pankrat_bobylev_ep2",
+      "source": "person_pankrat_bobylev",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_consultation_tax_deduction_ep2",
+      "source": "payment_consultation_tax_deduction",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_utility_jan_ep2",
+      "source": "payment_utility_jan",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_utility_feb_ep2",
+      "source": "payment_utility_feb",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_financial_planning_ep2",
+      "source": "offer_financial_planning",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_ulyana_terentyeva_ep2",
+      "source": "person_ulyana_terentyeva",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_payment_dacha_utilities_ep2",
+      "source": "payment_dacha_utilities",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_trofim_khokhlov_ep3",
+      "source": "person_trofim_khokhlov",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_bank_main_ep3",
+      "source": "bank_main",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_cc_temporary_block_ep3",
+      "source": "cc_temporary_block",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_policy_property_0012345678_ep3",
+      "source": "policy_property_0012345678",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_credit_rating_decrease_ep3",
+      "source": "credit_rating_decrease",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_consumer_loan_1_5m_ep3",
+      "source": "offer_consumer_loan_1_5m",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_offer_mortgage_5_5m_ep3",
+      "source": "offer_mortgage_5_5m",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_person_angelina_kulagina_ep3",
+      "source": "person_angelina_kulagina",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_policy_dms_9988776655_ep3",
+      "source": "policy_dms_9988776655",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_claim_dms_kulagina_ep3",
+      "source": "claim_dms_kulagina",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_claim_property_partial_approval_ep3",
+      "source": "claim_property_partial_approval",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_flood_event_20042024_ep3",
+      "source": "flood_event_20042024",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_debt_restructuring_agreement_ep3",
+      "source": "debt_restructuring_agreement",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "occ_loan_consolidated_1001200300_ep3",
+      "source": "loan_consolidated_1001200300",
+      "target": "ep_3",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_manages_osago",
+      "source": "person_trofim_khokhlov",
+      "target": "policy_osago_7890123456",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "policy_osago_related_to_dtp",
+      "source": "policy_osago_7890123456",
+      "target": "dtp_10032024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "dtp_involved_ivanov_as",
+      "source": "dtp_10032024",
+      "target": "person_ivanov_as",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_inquired_osago",
+      "source": "person_trofim_khokhlov",
+      "target": "policy_osago_7890123456",
+      "relation": "contains",
+      "attributes": {
+        "details": "уточнение деталей",
+        "identification_difficulty": "кодовое слово 'Лесоруб'"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_has_claim_osago",
+      "source": "person_trofim_khokhlov",
+      "target": "claim_osago_dtp",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_notified_overdue_life",
+      "source": "bank_main",
+      "target": "person_trofim_khokhlov",
+      "relation": "contains",
+      "attributes": {
+        "item": "просроченный платеж",
+        "policy_number": "1122334455"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "policy_life_has_overdue_payment",
+      "source": "policy_life_1122334455",
+      "target": "payment_life_1122334455_overdue",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_requested_statement",
+      "source": "person_trofim_khokhlov",
+      "target": "statement_request_all",
+      "relation": "applied_for",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offered_consumer_loan",
+      "source": "bank_main",
+      "target": "offer_consumer_loan_750k",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_transferred_repair",
+      "source": "person_trofim_khokhlov",
+      "target": "payment_repair_bamper",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "payment_repair_to_yakov",
+      "source": "payment_repair_bamper",
+      "target": "person_yakov_evseev",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_received_notification_life_renewal",
+      "source": "person_trofim_khokhlov",
+      "target": "email_notification_life_renewal",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "email_notification_concerns_policy_life",
+      "source": "email_notification_life_renewal",
+      "target": "policy_life_1122334455",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "policy_life_managed_by_ivanov_ap",
+      "source": "policy_life_1122334455",
+      "target": "person_ivanov_ap",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_responded_to_offer",
+      "source": "person_trofim_khokhlov",
+      "target": "offer_consumer_loan_750k",
+      "relation": "contains",
+      "attributes": {
+        "response": "подумает, без углубления в детали",
+        "emotional_state": "легкое раздражение"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_received_cc_overdue_notification",
+      "source": "person_trofim_khokhlov",
+      "target": "payment_cc_overdue_12800",
+      "relation": "received",
+      "attributes": {
+        "channel": "СМС"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_has_overdue_payment",
+      "source": "credit_card_4567_1234",
+      "target": "payment_cc_overdue_12800",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_initiated_dispute",
+      "source": "person_trofim_khokhlov",
+      "target": "dispute_penalty",
+      "relation": "caused",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_suggested_data_update",
+      "source": "bank_main",
+      "target": "contact_data_update_request",
+      "relation": "contains",
+      "attributes": {
+        "action": "обновить контактные данные и настроить уведомления"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_inquired_refinancing",
+      "source": "person_trofim_khokhlov",
+      "target": "loan_appliance_9876543210",
+      "relation": "contains",
+      "attributes": {
+        "recalled_offer": "offer_consumer_loan_750k"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_transferred_consultation",
+      "source": "person_trofim_khokhlov",
+      "target": "payment_consultation_tax_deduction",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "payment_consultation_to_pankrat",
+      "source": "payment_consultation_tax_deduction",
+      "target": "person_pankrat_bobylev",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "person_trofim_paid_utility_jan",
+      "source": "person_trofim_khokhlov",
+      "target": "payment_utility_jan",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_paid_utility_feb",
+      "source": "person_trofim_khokhlov",
+      "target": "payment_utility_feb",
+      "relation": "paid",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": true
+    },
+    {
+      "id": "bank_offered_financial_planning",
+      "source": "bank_main",
+      "target": "offer_financial_planning",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_accepted_data_update",
+      "source": "person_trofim_khokhlov",
+      "target": "contact_data_update_request",
+      "relation": "approved",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_rejected_financial_planning",
+      "source": "person_trofim_khokhlov",
+      "target": "offer_financial_planning",
+      "relation": "rejected",
+      "attributes": {
+        "reason": "занятость, 'разберется сама'"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_ulyana_reminded_trofim",
+      "source": "person_ulyana_terentyeva",
+      "target": "person_trofim_khokhlov",
+      "relation": "contains",
+      "attributes": {
+        "item": "оплата ежемесячного взноса за коммунальные услуги по даче"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_pays_for_mother_dacha",
+      "source": "person_trofim_khokhlov",
+      "target": "payment_dacha_utilities",
+      "relation": "paid",
+      "attributes": {
+        "beneficiary": "person_ulyana_terentyeva"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_card_blocked",
+      "source": "credit_card_4567_1234",
+      "target": "cc_temporary_block",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_discovered_policy_expired",
+      "source": "person_trofim_khokhlov",
+      "target": "policy_property_0012345678",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_informed_credit_rating_decrease",
+      "source": "bank_main",
+      "target": "person_trofim_khokhlov",
+      "relation": "contains",
+      "attributes": {
+        "item": "снижение кредитного рейтинга"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_has_credit_rating_decrease",
+      "source": "person_trofim_khokhlov",
+      "target": "credit_rating_decrease",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "credit_rating_caused_denial",
+      "source": "credit_rating_decrease",
+      "target": "person_trofim_khokhlov",
+      "relation": "resulted_in",
+      "attributes": {
+        "denied_item": "увеличение кредитного лимита до 300 000 рублей"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "bank_offered_consumer_loan_1_5m",
+      "source": "bank_main",
+      "target": "offer_consumer_loan_1_5m",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_received_mortgage_offer",
+      "source": "person_trofim_khokhlov",
+      "target": "offer_mortgage_5_5m",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_angelina_is_spouse_of_trofim",
+      "source": "person_angelina_kulagina",
+      "target": "person_trofim_khokhlov",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_angelina_filed_dms_claim",
+      "source": "person_angelina_kulagina",
+      "target": "claim_dms_kulagina",
+      "relation": "submitted",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "claim_dms_concerns_policy_dms",
+      "source": "claim_dms_kulagina",
+      "target": "policy_dms_9988776655",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_received_property_claim_approval",
+      "source": "person_trofim_khokhlov",
+      "target": "claim_property_partial_approval",
+      "relation": "received",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "claim_property_related_to_flood",
+      "source": "claim_property_partial_approval",
+      "target": "flood_event_20042024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "policy_property_related_to_flood",
+      "source": "policy_property_0012345678",
+      "target": "flood_event_20042024",
+      "relation": "contains",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_agreed_to_restructuring",
+      "source": "person_trofim_khokhlov",
+      "target": "debt_restructuring_agreement",
+      "relation": "contains",
+      "attributes": {
+        "reason": "осознание хаоса в финансах"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "debt_restructuring_resulted_in_consolidated_loan",
+      "source": "debt_restructuring_agreement",
+      "target": "loan_consolidated_1001200300",
+      "relation": "resulted_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_interacted_with_consultant",
+      "source": "person_trofim_khokhlov",
+      "target": "bank_main",
+      "relation": "contains",
+      "attributes": {
+        "role": "финансовый консультант",
+        "action": "подписала новые документы, внесла изменения в полисы, настроила автоплатежи"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "person_trofim_provided_positive_feedback",
+      "source": "person_trofim_khokhlov",
+      "target": "bank_main",
+      "relation": "contains",
+      "attributes": {
+        "feedback_type": "положительный",
+        "comment": "консультант помог взять финансы под контроль, чувствует облегчение, задумывается об инвестиционном плане"
+      },
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_notification_card_blocking_1",
+      "source": "notification_card_blocking_1",
+      "target": "ep_1",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    },
+    {
+      "id": "ep_occurs_event_card_blocking_1",
+      "source": "event_card_blocking_1",
+      "target": "ep_2",
+      "relation": "occurred_in",
+      "attributes": {},
+      "valid": true,
+      "stale": false,
+      "ground_truth": false
+    }
+  ]
+}
