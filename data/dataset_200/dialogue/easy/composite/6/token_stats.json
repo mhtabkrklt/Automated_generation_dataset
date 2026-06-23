@@ -1,9 +1,0 @@
-{
-  "original_tokens": 38817,
-  "final_tokens": 24999,
-  "token_limit": 25000,
-  "min_threshold": 20000,
-  "action": "truncate",
-  "batches": 2,
-  "meets_requirement": true
-}

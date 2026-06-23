@@ -17,12 +17,10 @@ FINANCIAL_ARCHETYPES = {
     "Cash_Traditionalist": "Этот человек — 'Традиционалист'. Предпочитает наличные, с трудом доверяет цифровым сервисам. Часто посещает отделения, любит бумажные договоры с печатями. Может задавать наивные вопросы о том, как работает мобильный банк или переводы."
 }
 
-
 def extract_profile_from_events(events: list) -> dict:
     import re
     result = {}
 
-    # паттерн "Фамилия Имя Отчество" — 3 слова с заглавной буквы
     fio_pattern = r'[А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+'
     for event in events:
         match = re.search(fio_pattern, event)
@@ -41,10 +39,8 @@ def extract_profile_from_events(events: list) -> dict:
 
     return result
 
-
 def drop_by_id(char_list: list[dict], target_id: int) -> None:
     char_list[:] = [c for c in char_list if c["id"] != target_id]
-
 
 def pick_archetype(k=1):
     keys = list(FINANCIAL_ARCHETYPES.keys())
@@ -54,13 +50,11 @@ def pick_archetype(k=1):
         archetype_desc += f"{type_key}: {FINANCIAL_ARCHETYPES[type_key]}\n\n"
     return archetype_desc
 
-
 def random_name(gender: str) -> str:
     if gender == "male":
         return fake.first_name_male()
     else:
         return fake.first_name_female()
-
 
 def make_profile_spec():
     gender = random.choice(["male", "female"])
@@ -82,7 +76,6 @@ def make_profile_spec():
     }
     return spec
 
-
 SYSTEM_BIO_PROMPT = """
 Ты — эксперт по профилированию банковских клиентов.
 Твоя задача — создать живое, реалистичное описание человека на основе сухих данных.
@@ -95,7 +88,6 @@ SYSTEM_BIO_PROMPT = """
 
 СТИЛЬ: Профессиональный, психологический портрет.
 """
-
 
 def generate_bio(spec, model=None):
     if model is None:
@@ -110,9 +102,7 @@ def generate_bio(spec, model=None):
     response = model.invoke(messages).content
     return response
 
-
 def _apply_name_collision(relationships: dict) -> None:
-    # намеренное совпадение имён двух родственников для усиления интерференции (hard difficulty)
     partner_list = relationships.get("partner", [])
     children_list = relationships.get("children", [])
     parent_list = relationships.get("parent", [])
@@ -124,7 +114,6 @@ def _apply_name_collision(relationships: dict) -> None:
             (c for c in children_list if c.get("gender") == partner_gender),
             children_list[0]
         )
-        # дети генерируются без фамилии, оставляем только имя
         target_child["name"] = partner_first
         return
 
@@ -136,7 +125,6 @@ def _apply_name_collision(relationships: dict) -> None:
     if parent_list and children_list:
         parent_first = parent_list[0]["name"].split()[0]
         children_list[0]["name"] = parent_first
-
 
 def create_profile(friends_size: int = 3,
                    acquaintances_size: int = 5,
@@ -153,7 +141,6 @@ def create_profile(friends_size: int = 3,
             main_spec['job_title'] = f"сотрудник {events_overrides['employer']}"
 
     main_spec["bio"] = generate_bio(main_spec)
-    # заменяем техническое описание архетипа на живое био
     main_spec["personality_traits"] = main_spec["bio"]
 
     relationships = {}
@@ -267,7 +254,6 @@ def create_profile(friends_size: int = 3,
                 "name": random_name(kid_gender),  # фамилия как у героя подразумевается
                 "age": kid_age
             }
-            # дети всегда создаются новые, не из пула взрослых
             G.add_node(kid["id"], **kid)
             chars.append(kid)
 
@@ -277,7 +263,6 @@ def create_profile(friends_size: int = 3,
         relationships["children"] = children
 
     friends: list[dict] = []
-    # используем отдельный список, так как в цикле меняем chars через drop_by_id
     potential_friends = [p for p in chars[1:] if
                          p["id"] not in [rel["id"] for rel_list in relationships.values() for rel in rel_list]]
 
@@ -301,12 +286,10 @@ def create_profile(friends_size: int = 3,
 
     relationships["acquaintances"] = acquaintances
 
-    # намеренное совпадение имён для hard difficulty (семейная интерференция)
     if random.random() < name_collision_prob:
         _apply_name_collision(relationships)
 
     return main_spec, relationships
-
 
 if __name__ == "__main__":
     import os

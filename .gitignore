@@ -12,16 +12,11 @@ __pycache__/
 .idea/
 
 # большие данные и дубли
-data/
 dataset_export/
 dataset_export 2/
 logs/
+data/results/
+confidence_intervals_report.pdf
 
 # бинарники
 *.pickle
-confidence_intervals_report.pdf
-
-# из data/ разрешаем только CI
-!data/
-!data/results/
-!data/results/confidence_intervals.json

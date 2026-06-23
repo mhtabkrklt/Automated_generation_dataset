@@ -1,9 +1,0 @@
-{
-  "original_tokens": 68431,
-  "final_tokens": 99588,
-  "token_limit": 100000,
-  "min_threshold": 60000,
-  "action": "pad",
-  "batches": 19,
-  "meets_requirement": false
-}

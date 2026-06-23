@@ -27,7 +27,6 @@ RUSSIAN_MONTHS = {
     'декабря': '12', 'декабрь': '12', 'december': '12', 'dec': '12'
 }
 
-
 def get_token_number(text):
     if not text:
         return 0
@@ -40,9 +39,7 @@ def get_token_number(text):
             except Exception:
                 continue
 
-    # кириллица: ~3 символа на токен
     return len(str(text)) // 3
-
 
 def parse_russian_date(date_str: str):
     date_str = date_str.strip()
@@ -77,7 +74,6 @@ def parse_russian_date(date_str: str):
 
     return None
 
-
 def extract_time_anchor(plan_text: str):
     lines = plan_text.strip().split('\n')
     first_bullet = ""
@@ -104,7 +100,6 @@ def extract_time_anchor(plan_text: str):
             return parsed if parsed else date_str
 
     return "Unknown Date"
-
 
 def convert_user_messages_pickle_to_json(input_address: str, output_address: str) -> None:
     with open(input_address, 'rb') as f:
@@ -136,7 +131,6 @@ def convert_user_messages_pickle_to_json(input_address: str, output_address: str
     with open(output_address, "w", encoding="utf-8") as f:
         json.dump(all_batches, f, indent=4, ensure_ascii=False)
 
-
 def convert_chats_pickle_to_json(input_address: str, output_address: str) -> None:
     if not os.path.exists(input_address):
         print(f"File not found: {input_address}")
@@ -146,7 +140,6 @@ def convert_chats_pickle_to_json(input_address: str, output_address: str) -> Non
         batches = pickle.load(f)
 
     all_dialogues = []
-    # плоский список сообщений — оборачиваем в один батч
     if batches and isinstance(batches[0], dict) and 'role' in batches[0]:
         batches = [batches]
 
@@ -177,7 +170,6 @@ def convert_chats_pickle_to_json(input_address: str, output_address: str) -> Non
     with open(output_address, 'w', encoding="utf-8") as f:
         json.dump(all_dialogues, f, indent=2, ensure_ascii=False)
 
-
 def add_ids_to_chats(input_file: str, output_address: str):
     if not os.path.exists(input_file):
         return
@@ -203,7 +195,6 @@ def add_ids_to_chats(input_file: str, output_address: str):
     with open(output_address, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-
 def get_all_chat_dirs(base_dir: str) -> list:
     chat_dirs: list[str] = []
     if not os.path.exists(base_dir):
@@ -221,9 +212,7 @@ def get_all_chat_dirs(base_dir: str) -> list:
                 chat_dirs.append(chat_dir)
     return chat_dirs
 
-
 _EVAL_RESULT_DIRS = {"eval_results", "eval_results_graph", "eval_results_memory", "eval_results_memory_graph"}
-
 
 def get_eval_chat_dirs(base_dir: str) -> list:
     chat_dirs: list[tuple[str, str]] = []
@@ -242,7 +231,6 @@ def get_eval_chat_dirs(base_dir: str) -> list:
         ):
             chat_dirs.append((f"{task_type}/{seq_id}", os.path.join(type_dir, seq_id)))
     return chat_dirs
-
 
 def invoke_with_retries(model_adapter, messages: list, max_retries: int = 3) -> str:
     response = ""
@@ -265,7 +253,6 @@ def invoke_with_retries(model_adapter, messages: list, max_retries: int = 3) -> 
             else:
                 print(f"  ❌ Ошибка вызова модели после {max_retries} попыток: {type(e).__name__}: {e}")
     return response
-
 
 def convert_txt_plan_to_pickle(chat_directory: str):
     input_plan_address = os.path.join(chat_directory, "plan_new.txt")
