@@ -7,18 +7,19 @@ Two independent pipelines:
 - **dialogue** — multi-turn chat + QA tasks over the conversation
 - **graph** — knowledge graph built from the same scenario + navigation tasks
 
-# Prompts and dataset samples
-The benchmark dataset and all generation prompts are in Russian, reflecting the target evaluation domain (Russian-language financial dialogues).
+## Prompts and dataset samples
 
-Russian prompts: prompts_all.py (https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/prompts_all.py)
+The benchmark dataset and all generation prompts are in Russian,
+reflecting the target evaluation domain (Russian-language financial dialogues).
 
-Russian dataset samples: data/dataset_200.zip (https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/data/dataset_200.zip)
+- Russian prompts: [prompts_all.py](https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/prompts_all.py)
+- Russian dataset samples: [data/dataset_200.zip](https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/data/dataset_200.zip)
 
-To support the international research community, we provide English translations of all generation prompts and 10 representative dataset samples:
+To support the international research community, we provide English
+translations of all generation prompts and 10 representative dataset samples:
 
-English prompts: prompts_all_en.py (https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/prompts_all_en.py)
-
-English dataset samples (10 examples): samples_en.zip
+- English prompts: [prompts_all_en.py](https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/prompts_all_en.py)
+- English dataset samples (10 examples): [samples_en.zip](https://github.com/mhtabkrklt/Automated_generation_dataset/blob/main/samples_en.zip)
 
 ---
 
