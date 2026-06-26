@@ -10,12 +10,12 @@ Two independent pipelines:
 # Prompts and dataset samples
 The benchmark dataset and all generation prompts are in Russian, reflecting the target evaluation domain (Russian-language financial dialogues).
 
-Russian prompts: prompts_all.py
-Russian dataset samples: data/dataset_200.zip
+Russian prompts: prompts_all.py (prompts_all.py)
+Russian dataset samples: data/dataset_200.zip (data/dataset_200.zip)
 
 To support the international research community, we provide English translations of all generation prompts and 10 representative dataset samples:
 
-English prompts: prompts_all_en.py
+English prompts: prompts_all_en.py (prompts_all_en.py)
 English dataset samples (10 examples): samples_en.zip
 
 ---
